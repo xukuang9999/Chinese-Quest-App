@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Chinese Quest</title>
-    <link rel="stylesheet" href="styles.css?v=20260430m" />
+    <link rel="stylesheet" href="styles.css?v=20260430p" />
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"
@@ -65,6 +65,13 @@
 
       <main class="flow">
         <section id="loginView" class="screen-card login-card" aria-live="polite">
+          <img
+            class="login-art"
+            src="assets/chinese-quest-login.png?v=20260430b"
+            alt=""
+            aria-hidden="true"
+            onerror="this.hidden = true"
+          />
           <div class="login-scene" aria-hidden="true">
             <span class="login-sun"></span>
             <span class="login-hill hill-back"></span>
@@ -341,6 +348,10 @@
                   <p id="searchDetailMeaningZh"></p>
                   <p id="searchDetailMeaningEn"></p>
                 </div>
+                <div class="info-section">
+                  <h3 data-i18n="fontEvolution">Font Evolution</h3>
+                  <div id="searchFontEvolutionList" class="font-evolution-list compact-font-evolution"></div>
+                </div>
                 <div class="char-facts search-facts">
                   <div>
                     <span data-i18n="radical">Radical</span>
@@ -508,6 +519,10 @@
                 <p id="meaningEn"></p>
               </div>
               <div class="info-section">
+                <h3 data-i18n="fontEvolution">Font Evolution</h3>
+                <div id="fontEvolutionList" class="font-evolution-list"></div>
+              </div>
+              <div class="info-section">
                 <h3 data-i18n="words">Words</h3>
                 <div id="wordList" class="word-list"></div>
               </div>
@@ -617,7 +632,7 @@
             </button>
           </div>
           <p class="profile-hint" data-i18n="profileEditHint">
-            Change the learner name and avatar mark shown on this device.
+            Change the learner name and animal avatar shown on this device.
           </p>
           <div class="profile-form-grid">
             <label>
@@ -625,9 +640,9 @@
               <input id="profileNameInput" type="text" maxlength="24" autocomplete="off" />
             </label>
             <label>
-              <span data-i18n="profileMarkLabel">Avatar mark</span>
-              <input id="profileMarkInput" type="text" maxlength="4" autocomplete="off" />
-              <em data-i18n="profileMarkHint">Use one Chinese character, letter, number, or emoji.</em>
+              <span data-i18n="profileMarkLabel">Animal avatar</span>
+              <select id="profileMarkInput" class="profile-avatar-select"></select>
+              <em data-i18n="profileMarkHint">Choose one animal for this learner.</em>
             </label>
           </div>
           <p id="profileEditValidation" class="custom-validation" role="status" aria-live="polite"></p>
@@ -695,11 +710,6 @@
         </div>
       </dialog>
 
-      <footer class="app-footer">
-        <span data-i18n="contact">Contact</span>
-        <a href="mailto:enquries@optiviseAI.com.au">enquries@optiviseAI.com.au</a>
-        <a href="https://optiviseai.com.au" target="_blank" rel="noreferrer">optiviseai.com.au</a>
-      </footer>
     </div>
 
     <div id="celebrationLayer" class="celebration-layer" aria-hidden="true"></div>

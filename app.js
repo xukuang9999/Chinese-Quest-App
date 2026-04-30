@@ -10,14 +10,36 @@ const XP_PER_LEVEL = 120;
 const STICKERS = ["星", "中", "好", "学", "棒", "✓", "5"];
 const HOME_ANIMAL_SOUND_COOLDOWN_MS = 360;
 const USER_PROFILES = [
-  { id: "xiaoming", name: "小明", mark: "明" },
-  { id: "xiaohong", name: "小红", mark: "红" },
-  { id: "xiaohua", name: "小华", mark: "华" },
-  { id: "xiaoli", name: "小丽", mark: "丽" },
-  { id: "xiaoqiang", name: "小强", mark: "强" },
-  { id: "xiaomei", name: "小美", mark: "美" },
-  { id: "xiaojie", name: "小杰", mark: "杰" },
-  { id: "xiaolan", name: "小兰", mark: "兰" },
+  { id: "xiaoming", name: "小明", mark: "🐼" },
+  { id: "xiaohong", name: "小红", mark: "🐰" },
+  { id: "xiaohua", name: "小华", mark: "🦊" },
+  { id: "xiaoli", name: "小丽", mark: "🐱" },
+  { id: "xiaoqiang", name: "小强", mark: "🐯" },
+  { id: "xiaomei", name: "小美", mark: "🐨" },
+  { id: "xiaojie", name: "小杰", mark: "🐵" },
+  { id: "xiaolan", name: "小兰", mark: "🐧" },
+];
+const PROFILE_AVATAR_OPTIONS = [
+  { value: "🐼", en: "Panda", zh: "熊猫" },
+  { value: "🐰", en: "Rabbit", zh: "兔子" },
+  { value: "🦊", en: "Fox", zh: "狐狸" },
+  { value: "🐱", en: "Cat", zh: "小猫" },
+  { value: "🐯", en: "Tiger", zh: "老虎" },
+  { value: "🐨", en: "Koala", zh: "考拉" },
+  { value: "🐵", en: "Monkey", zh: "猴子" },
+  { value: "🐧", en: "Penguin", zh: "企鹅" },
+  { value: "🐶", en: "Dog", zh: "小狗" },
+  { value: "🐸", en: "Frog", zh: "青蛙" },
+  { value: "🐻", en: "Bear", zh: "小熊" },
+  { value: "🐥", en: "Chick", zh: "小鸡" },
+  { value: "🦔", en: "Hedgehog", zh: "刺猬" },
+  { value: "🐘", en: "Elephant", zh: "大象" },
+  { value: "🦁", en: "Lion", zh: "狮子" },
+  { value: "🐮", en: "Cow", zh: "小牛" },
+  { value: "🐷", en: "Pig", zh: "小猪" },
+  { value: "🐹", en: "Hamster", zh: "仓鼠" },
+  { value: "🐢", en: "Turtle", zh: "乌龟" },
+  { value: "🦉", en: "Owl", zh: "猫头鹰" },
 ];
 const UI_LANGUAGE_OPTIONS = [
   { value: "en", label: "English" },
@@ -55,17 +77,17 @@ const UI_TEXT = {
     editProfile: "Edit",
     editProfileFor: "Edit {name}'s profile",
     profileEditTitle: "Edit learner profile",
-    profileEditHint: "Change the learner name and avatar mark shown on this device.",
+    profileEditHint: "Change the learner name and animal avatar shown on this device.",
     profileNameLabel: "Learner name",
-    profileMarkLabel: "Avatar mark",
-    profileMarkHint: "Use one Chinese character, letter, number, or emoji.",
+    profileMarkLabel: "Animal avatar",
+    profileMarkHint: "Choose one animal for this learner.",
     profileSave: "Save profile",
     profileReset: "Reset",
     profileCancel: "Cancel",
     profileSavedToast: "{name}'s profile was saved.",
     profileResetToast: "Profile reset.",
     profileNameRequired: "Enter a learner name.",
-    profileMarkRequired: "Enter an avatar mark.",
+    profileMarkRequired: "Choose an animal avatar.",
     lastUser: "Last used",
     currentUser: "Current user",
     switchUser: "Switch user",
@@ -107,6 +129,7 @@ const UI_TEXT = {
     playing: "Playing",
     nextCharacter: "next character",
     meaning: "Meaning",
+    fontEvolution: "Font Evolution",
     words: "Words",
     sentences: "Sentences",
     strokeOrder: "Stroke Order",
@@ -270,17 +293,17 @@ const UI_TEXT = {
     editProfile: "编辑",
     editProfileFor: "编辑 {name} 的资料",
     profileEditTitle: "修改学习用户资料",
-    profileEditHint: "修改此设备上显示的学习用户名字和头像标记。",
+    profileEditHint: "修改此设备上显示的学习用户名字和小动物头像。",
     profileNameLabel: "学习用户名字",
-    profileMarkLabel: "头像标记",
-    profileMarkHint: "可使用一个汉字、字母、数字或表情。",
+    profileMarkLabel: "小动物头像",
+    profileMarkHint: "为这个学习用户选择一种小动物。",
     profileSave: "保存资料",
     profileReset: "恢复默认",
     profileCancel: "取消",
     profileSavedToast: "{name} 的资料已保存。",
     profileResetToast: "资料已恢复默认。",
     profileNameRequired: "请输入学习用户名字。",
-    profileMarkRequired: "请输入头像标记。",
+    profileMarkRequired: "请选择小动物头像。",
     lastUser: "上次使用",
     currentUser: "当前用户",
     switchUser: "切换用户",
@@ -322,6 +345,7 @@ const UI_TEXT = {
     playing: "播放中",
     nextCharacter: "下一个汉字",
     meaning: "意思",
+    fontEvolution: "字体演变",
     words: "组词",
     sentences: "造句",
     strokeOrder: "笔顺",
@@ -516,6 +540,7 @@ const UI_TEXT = {
     playing: "再生中",
     nextCharacter: "次の文字",
     meaning: "意味",
+    fontEvolution: "字体の変化",
     words: "単語",
     sentences: "例文",
     strokeOrder: "筆順",
@@ -653,6 +678,7 @@ const UI_TEXT = {
     playing: "재생 중",
     nextCharacter: "다음 글자",
     meaning: "뜻",
+    fontEvolution: "글자체 변화",
     words: "단어",
     sentences: "예문",
     strokeOrder: "필순",
@@ -832,6 +858,7 @@ const els = {
   searchSpeakBtn: document.querySelector("#searchSpeakBtn"),
   searchDetailMeaningZh: document.querySelector("#searchDetailMeaningZh"),
   searchDetailMeaningEn: document.querySelector("#searchDetailMeaningEn"),
+  searchFontEvolutionList: document.querySelector("#searchFontEvolutionList"),
   searchRadicalValue: document.querySelector("#searchRadicalValue"),
   searchStrokeValue: document.querySelector("#searchStrokeValue"),
   searchStructureValue: document.querySelector("#searchStructureValue"),
@@ -887,6 +914,7 @@ const els = {
   meaning: document.querySelector("#meaning"),
   meaningZh: document.querySelector("#meaningZh"),
   meaningEn: document.querySelector("#meaningEn"),
+  fontEvolutionList: document.querySelector("#fontEvolutionList"),
   wordList: document.querySelector("#wordList"),
   sentenceList: document.querySelector("#sentenceList"),
   strokeTarget: document.querySelector("#strokeTarget"),
@@ -1132,19 +1160,20 @@ function cleanMultiline(value) {
   return String(value ?? "").replace(/\s+/g, " ").trim();
 }
 
-function firstProfileMark(name, fallbackMark) {
-  const first = Array.from(cleanText(name))[0];
-  return first ? first.toLocaleUpperCase() : fallbackMark;
+function profileAvatarFallback(fallbackMark) {
+  return PROFILE_AVATAR_OPTIONS.some((option) => option.value === fallbackMark)
+    ? fallbackMark
+    : PROFILE_AVATAR_OPTIONS[0].value;
 }
 
 function normalizeProfileMark(value, fallbackMark) {
-  const mark = Array.from(cleanText(value)).slice(0, 2).join("");
-  return mark || fallbackMark;
+  const mark = cleanText(value);
+  return PROFILE_AVATAR_OPTIONS.some((option) => option.value === mark) ? mark : profileAvatarFallback(fallbackMark);
 }
 
 function normalizeUserProfile(raw, fallbackProfile) {
   const name = cleanText(raw?.name).slice(0, 24) || fallbackProfile.name;
-  const mark = normalizeProfileMark(raw?.mark, firstProfileMark(name, fallbackProfile.mark));
+  const mark = normalizeProfileMark(raw?.mark, fallbackProfile.mark);
   return {
     ...fallbackProfile,
     name,
@@ -1178,6 +1207,25 @@ function resetUserProfile(userId) {
   userProfiles = userProfiles.map((profile) => (profile.id === userId ? resetProfile : profile));
   saveUserProfiles();
   return resetProfile;
+}
+
+function profileAvatarLabel(option) {
+  if (state.uiLanguage === "zh") return `${option.value} ${option.zh}`;
+  if (state.uiLanguage === "bilingual") return `${option.value} ${option.zh} / ${option.en}`;
+  return `${option.value} ${option.en}`;
+}
+
+function populateProfileAvatarOptions(selectedMark = "") {
+  if (!els.profileMarkInput) return;
+  const currentMark = normalizeProfileMark(selectedMark || els.profileMarkInput.value, PROFILE_AVATAR_OPTIONS[0].value);
+  els.profileMarkInput.innerHTML = "";
+  PROFILE_AVATAR_OPTIONS.forEach((avatar) => {
+    const option = document.createElement("option");
+    option.value = avatar.value;
+    option.textContent = profileAvatarLabel(avatar);
+    els.profileMarkInput.append(option);
+  });
+  els.profileMarkInput.value = currentMark;
 }
 
 function customEntryFromRaw(raw) {
@@ -1333,6 +1381,7 @@ function applyStaticText() {
   document.querySelectorAll("[data-i18n-placeholder]").forEach((node) => {
     node.setAttribute("placeholder", t(node.dataset.i18nPlaceholder));
   });
+  populateProfileAvatarOptions(els.profileMarkInput?.value);
 }
 
 function refreshCurrentScreen() {
@@ -1835,6 +1884,7 @@ function setProfileValidation(message, tone = "") {
 function fillProfileForm(profile) {
   if (!profile) return;
   if (els.profileNameInput) els.profileNameInput.value = profile.name;
+  populateProfileAvatarOptions(profile.mark);
   if (els.profileMarkInput) els.profileMarkInput.value = profile.mark;
   setProfileValidation("");
 }
@@ -1875,7 +1925,7 @@ function saveProfileEdit(event) {
     setProfileValidation(t("profileNameRequired"), "needs-review");
     return;
   }
-  const mark = normalizeProfileMark(els.profileMarkInput?.value, firstProfileMark(name, fallbackProfile?.mark || "学"));
+  const mark = normalizeProfileMark(els.profileMarkInput?.value, fallbackProfile?.mark || PROFILE_AVATAR_OPTIONS[0].value);
   if (!mark) {
     setProfileValidation(t("profileMarkRequired"), "needs-review");
     return;
@@ -2296,6 +2346,7 @@ function renderSearchDetail(entry) {
   els.searchRadicalValue.textContent = entry.radical || "—";
   els.searchStrokeValue.textContent = entry.strokes || "—";
   els.searchStructureValue.textContent = entry.structure || "—";
+  renderFontEvolution(els.searchFontEvolutionList, entry);
   renderWordCards(els.searchDetailWords, entry);
   renderSentenceCards(els.searchDetailSentences, entry);
   renderSearchWriter(entry);
@@ -2583,6 +2634,7 @@ function renderLesson() {
   els.nextCharBtn.disabled = isLast;
   els.continueBtn.textContent = isLast ? t("startTest") : t("next");
 
+  renderFontEvolution(els.fontEvolutionList, entry);
   renderWords(entry);
   renderSentences(entry);
   renderWriter(entry);
@@ -2621,6 +2673,35 @@ function renderWordCards(container, entry) {
     container.append(chip);
   });
   staggerChildren(container, ".word-chip");
+}
+
+function renderFontEvolution(container, entry) {
+  container.innerHTML = "";
+  const items = Array.isArray(entry.fontEvolution)
+    ? entry.fontEvolution.filter((item) => item?.imageUrl).slice(0, 6)
+    : [];
+  if (!items.length) {
+    const empty = document.createElement("span");
+    empty.className = "font-evolution-empty";
+    empty.textContent = "—";
+    container.append(empty);
+    return;
+  }
+  items.forEach((item) => {
+    const tile = document.createElement("figure");
+    tile.className = "font-evolution-item";
+    const image = document.createElement("img");
+    image.src = item.imageUrl;
+    image.alt = item.alt || `${entry.char} ${item.label || ""}`.trim();
+    image.loading = "lazy";
+    image.decoding = "async";
+    image.referrerPolicy = "no-referrer";
+    const caption = document.createElement("figcaption");
+    caption.textContent = item.label || t("fontEvolution");
+    tile.append(image, caption);
+    container.append(tile);
+  });
+  staggerChildren(container, ".font-evolution-item");
 }
 
 function renderWords(entry) {

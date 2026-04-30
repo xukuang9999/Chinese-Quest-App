@@ -24,6 +24,7 @@ const data = JSON.parse(match[1]);
 const disallowedTeachingWords = new Set(["亲朋", "朋辈", "努目", "宠儿", "猫头", "业绩"]);
 
 const wordCount = sqliteJson("SELECT COUNT(*) AS count FROM words;")[0].count;
+const dbCharacterCount = sqliteJson("SELECT COUNT(*) AS count FROM characters;")[0]?.count || 0;
 const charWordCount = sqliteJson("SELECT COUNT(*) AS count FROM character_words;")[0].count;
 const sentenceCount = sqliteJson("SELECT COUNT(*) AS count FROM character_sentences;")[0].count;
 const idiomCount = sqliteJson("SELECT COUNT(*) AS count FROM idioms;")[0]?.count || 0;
@@ -34,6 +35,9 @@ const metadata = Object.fromEntries(
 const problems = [];
 if (wordCount !== data.commonWordCount) {
   problems.push(`SQLite words expected ${data.commonWordCount}, got ${wordCount}`);
+}
+if (dbCharacterCount !== data.entries.length) {
+  problems.push(`SQLite characters expected ${data.entries.length}, got ${dbCharacterCount}`);
 }
 if (charWordCount !== data.entries.length * 3) {
   problems.push(`SQLite character_words expected ${data.entries.length * 3}, got ${charWordCount}`);
@@ -84,6 +88,18 @@ data.entries.forEach((entry) => {
   }
   if (!entry.meaningEn || /common Chinese character|Try it|sound of|flashcard/i.test(entry.meaningEn)) {
     problems.push(`${entry.char} suspicious meaningEn`);
+  }
+  if (!entry.sourceUrl || !entry.sourceUrl.startsWith("https://zd.hwxnet.com/search/")) {
+    problems.push(`${entry.char} missing hwxnet sourceUrl`);
+  }
+  if (!Array.isArray(entry.fontEvolution) || entry.fontEvolution.length < 3) {
+    problems.push(`${entry.char} missing fontEvolution`);
+  } else {
+    entry.fontEvolution.forEach((item) => {
+      if (!item.label || !item.imageUrl || !item.imageUrl.startsWith("https://zd.hwxnet.com/fontimgs/")) {
+        problems.push(`${entry.char} invalid fontEvolution item`);
+      }
+    });
   }
   if (!entry.words || entry.words.length !== 3) problems.push(`${entry.char} needs exactly 3 words`);
   if (!entry.sentences || entry.sentences.length !== 3) problems.push(`${entry.char} needs exactly 3 sentences`);
