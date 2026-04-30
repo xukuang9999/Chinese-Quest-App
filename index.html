@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chinese Quest</title>
+    <link rel="stylesheet" href="styles.css?v=20260430c" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"
+    ></script>
+    <script defer src="data.js?v=20260428k"></script>
+    <script defer src="app.js?v=20260430b"></script>
+  </head>
+  <body data-screen="login" data-skin="classic">
+    <div class="cartoon-sky" aria-hidden="true">
+      <span class="cloud cloud-one"></span>
+      <span class="cloud cloud-two"></span>
+      <span class="cloud cloud-three"></span>
+      <span class="sky-star star-one">✦</span>
+      <span class="sky-star star-two">✦</span>
+      <span class="paper-plane plane-one"></span>
+      <span class="paper-plane plane-two"></span>
+      <span class="pencil-float pencil-one"></span>
+      <span class="pencil-float pencil-two"></span>
+      <span class="character-tile tile-one">中</span>
+      <span class="character-tile tile-two">文</span>
+      <span class="character-tile tile-three">课</span>
+    </div>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">
+            <img src="assets/chinese-quest-logo.svg?v=20260427u" alt="" />
+          </div>
+          <div class="brand-title">
+            <h1>Chinese Quest</h1>
+            <p data-i18n="brandTagline">Five characters per lesson</p>
+          </div>
+        </div>
+        <div class="top-actions">
+          <div class="active-user-chip" aria-label="Current user" data-i18n-aria-label="currentUser">
+            <span id="currentUserName">Signed in</span>
+            <button id="switchUserBtn" class="secondary-button compact-button" type="button" data-i18n="switchUser">Switch user</button>
+          </div>
+          <div class="top-stats" aria-label="progress summary" data-i18n-aria-label="progressSummary">
+            <div class="stat-pill">
+              <span data-i18n="level">Level</span>
+              <strong id="levelValue">1</strong>
+            </div>
+            <div class="xp-wrap" aria-label="XP progress" data-i18n-aria-label="xpProgress">
+              <span id="xpLabel">0 XP</span>
+              <div class="xp-track"><div id="xpBar" class="xp-fill"></div></div>
+            </div>
+            <div class="stat-pill">
+              <span data-i18n="streak">Streak</span>
+              <strong id="streakValue">0</strong>
+            </div>
+          </div>
+          <a class="company-logo" href="https://optiviseai.com.au" target="_blank" rel="noreferrer" aria-label="Optivise AI website">
+            <img src="assets/optiviseai-logo.png" alt="Optivise AI" />
+          </a>
+        </div>
+      </header>
+
+      <main class="flow">
+        <section id="loginView" class="screen-card login-card" aria-live="polite">
+          <div class="login-copy">
+            <span class="tiny-label">Chinese Quest</span>
+            <h2 data-i18n="loginTitle">Choose your learner</h2>
+            <p data-i18n="loginHint">Tap a name to log in. No password is needed.</p>
+          </div>
+          <div id="loginUserList" class="login-user-grid" aria-label="learner login choices" data-i18n-aria-label="loginUsers"></div>
+        </section>
+
+        <section id="homeView" class="home-card function-home quest-home hidden" aria-label="function menu" data-i18n-aria-label="functionMenu">
+          <div class="quest-hero">
+            <div class="hero-sign" aria-hidden="true">
+              <img src="assets/chinese-quest-logo.svg?v=20260427u" alt="" />
+            </div>
+            <div class="hero-board" aria-hidden="true">
+              <span>xué</span>
+              <strong>学</strong>
+            </div>
+            <div class="hero-copy">
+              <div class="hero-title">中文课</div>
+              <div class="hero-ribbon">快乐学中文&nbsp;&nbsp;成长每一天</div>
+              <strong>Chinese Quest</strong>
+              <p data-i18n="brandTagline">Five characters per lesson</p>
+            </div>
+            <div class="hero-mascot hero-panda" aria-hidden="true">🐼</div>
+            <div class="hero-mascot hero-bird" aria-hidden="true">🐦</div>
+            <div class="hero-mascot hero-fox" aria-hidden="true">🦊</div>
+            <div class="hero-mascot hero-rabbit" aria-hidden="true">🐰</div>
+            <div class="hero-mascot hero-duck" aria-hidden="true">🐥</div>
+            <div class="home-user-strip">
+              <span id="homeCurrentUserName">Signed in</span>
+              <button id="homeSwitchUserBtn" class="secondary-button compact-button" type="button" data-i18n="switchUser">
+                Switch user
+              </button>
+            </div>
+          </div>
+
+          <article class="function-card database-card quest-database-card" aria-label="Database totals" data-i18n-aria-label="databaseTotals">
+            <div class="function-logo database-logo" aria-hidden="true">
+              <span>
+                <svg class="symbol-icon database-symbol" viewBox="0 0 32 32" focusable="false" aria-hidden="true">
+                  <ellipse cx="16" cy="8" rx="9" ry="4.2" fill="#fffdf7" stroke="currentColor" stroke-width="3" />
+                  <path d="M7 8v12c0 2.3 4 4.2 9 4.2s9-1.9 9-4.2V8" fill="#fff2c3" stroke="currentColor" stroke-width="3" stroke-linejoin="round" />
+                  <path d="M7 14c0 2.3 4 4.2 9 4.2s9-1.9 9-4.2M7 20c0 2.3 4 4.2 9 4.2s9-1.9 9-4.2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+                </svg>
+              </span>
+            </div>
+            <div class="function-copy">
+              <strong data-i18n="databaseTotals">Database totals</strong>
+              <span data-i18n="databaseTotalsHint">Current totals for characters, words, sentences, and idioms.</span>
+            </div>
+            <dl class="database-total-grid">
+              <div>
+                <dt><span aria-hidden="true">字</span><em data-i18n="databaseCharacters">Characters</em></dt>
+                <dd id="databaseCharacterCount">0</dd>
+              </div>
+              <div>
+                <dt><span aria-hidden="true">词</span><em data-i18n="databaseWords">Words</em></dt>
+                <dd id="databaseWordCount">0</dd>
+              </div>
+              <div>
+                <dt><span aria-hidden="true">句</span><em data-i18n="databaseSentences">Sentences</em></dt>
+                <dd id="databaseSentenceCount">0</dd>
+              </div>
+              <div>
+                <dt><span aria-hidden="true">成</span><em data-i18n="databaseIdioms">Idioms</em></dt>
+                <dd id="databaseIdiomCount">0</dd>
+              </div>
+            </dl>
+          </article>
+
+          <div class="function-grid quest-function-grid" aria-label="practice modes" data-i18n-aria-label="practiceModes">
+            <article class="function-card daily-function quest-action-card">
+              <div class="daily-calendar" aria-hidden="true">
+                <span id="dailyMonth">APR</span>
+                <strong id="dailyDay">30</strong>
+              </div>
+              <div class="function-copy">
+                <strong data-i18n="dailyLesson">Daily Lesson</strong>
+                <span id="dailyLessonTitle">Lesson 1</span>
+                <span id="dailyLessonChars" hidden>中 文 学 习 好</span>
+              </div>
+              <div class="card-mascot" aria-hidden="true">🐼</div>
+              <button id="dailyLessonBtn" class="primary-button function-action" type="button" data-i18n="startToday">
+                Start today's lesson
+              </button>
+            </article>
+
+            <article class="function-card course-function quest-action-card">
+              <div class="function-logo course-logo" aria-hidden="true">
+                <span>🎓</span>
+              </div>
+              <div class="function-copy">
+                <strong data-i18n="courseLearning">Course lessons</strong>
+                <span data-i18n="courseLearningHint">Choose one lesson from the 800-character course.</span>
+              </div>
+              <div class="card-mascot" aria-hidden="true">🦊</div>
+              <button id="lessonPickerBtn" class="primary-button function-action" type="button" data-i18n="chooseLessonAction">
+                Choose a lesson
+              </button>
+            </article>
+
+            <article class="function-card dialogue-function quest-action-card">
+              <div class="function-logo dialogue-logo" aria-hidden="true">
+                <span>😎</span>
+              </div>
+              <div class="function-copy">
+                <strong data-i18n="dailyDialogue">Daily dialogue</strong>
+                <span data-i18n="dialogueModeHint">Choose a topic and hear useful words.</span>
+              </div>
+              <div class="speech-bubble" aria-hidden="true">你好！<small>nǐ hǎo!</small></div>
+              <div class="card-mascot" aria-hidden="true">🐶</div>
+              <button id="dialogueModeBtn" class="primary-button function-action" type="button" data-i18n="openDialogue">
+                Open dialogue practice
+              </button>
+            </article>
+
+            <article class="function-card roleplay-function quest-action-card">
+              <div class="function-logo roleplay-logo" aria-hidden="true">
+                <span>🎭</span>
+              </div>
+              <div class="function-copy">
+                <strong data-i18n="rolePlay">Role play</strong>
+                <span data-i18n="roleplayModeHint">Read a short scene aloud.</span>
+              </div>
+              <div class="card-mascot" aria-hidden="true">🐸</div>
+              <button id="roleplayModeBtn" class="primary-button function-action" type="button" data-i18n="openRoleplay">
+                Open role play
+              </button>
+            </article>
+
+            <article class="function-card how-to-play-card quest-action-card">
+              <div class="function-logo guide-logo" aria-hidden="true">
+                <span>?</span>
+              </div>
+              <div class="function-copy">
+                <strong data-i18n="howToPlay">How to play</strong>
+                <span data-i18n="howToPlayHint">See how lessons, tests, stickers, and camera writing work.</span>
+              </div>
+              <div class="card-mascot" aria-hidden="true">🐘</div>
+              <button id="howToPlayBtn" class="primary-button function-action" type="button" data-i18n="openHowToPlay">
+                Open guide
+              </button>
+            </article>
+
+            <article class="function-card custom-function quest-action-card">
+              <div class="function-logo custom-logo" aria-hidden="true">
+                <span>字</span>
+              </div>
+              <div class="function-copy">
+                <strong data-i18n="customCharacter">Add character</strong>
+                <span data-i18n="customCharacterHint">Add your own course character with words and sentences.</span>
+                <span id="customCharacterCount" class="function-meta">No custom characters yet</span>
+              </div>
+              <div class="card-mascot" aria-hidden="true">🐰</div>
+              <button id="customCharacterBtn" class="primary-button function-action" type="button" data-i18n="openCustomCharacter">
+                Add a character
+              </button>
+            </article>
+
+            <article class="function-card search-function quest-action-card">
+              <div class="function-logo search-logo" aria-hidden="true">
+                <span>🔍</span>
+              </div>
+              <div class="function-copy">
+                <strong data-i18n="searchTitle">Search</strong>
+                <span data-i18n="searchModeHint">Type Chinese to find pinyin, words, sentences, stroke order, and radical.</span>
+              </div>
+              <div class="card-mascot" aria-hidden="true">🦔</div>
+              <button id="searchModeBtn" class="primary-button function-action" type="button" data-i18n="openSearch">
+                Open search
+              </button>
+            </article>
+
+            <article class="function-card idiom-function quest-action-card">
+              <div class="function-logo idiom-logo" aria-hidden="true">
+                <span>▦</span>
+              </div>
+              <div class="function-copy">
+                <strong data-i18n="idiomSeries">Idiom series</strong>
+                <span data-i18n="idiomSeriesHint">Learn 200 common Chinese idioms.</span>
+                <span id="idiomHomeCount" class="function-meta">200 idioms</span>
+              </div>
+              <div class="card-mascot" aria-hidden="true">🐥</div>
+              <button id="idiomModeBtn" class="primary-button function-action" type="button" data-i18n="openIdioms">
+                Open idioms
+              </button>
+            </article>
+
+            <article class="function-card setting-function language-function quest-action-card">
+              <div class="function-logo language-logo" aria-hidden="true">
+                <span>文</span>
+              </div>
+              <div class="function-copy">
+                <strong data-i18n="uiLanguage">UI language</strong>
+                <span data-i18n="uiLanguageHint">Choose the display language.</span>
+              </div>
+              <label class="function-select-action" for="uiLanguageSelect">
+                <span data-i18n="uiLanguage">UI language</span>
+                <select id="uiLanguageSelect" aria-label="UI language" data-i18n-aria-label="uiLanguage"></select>
+              </label>
+            </article>
+
+            <article class="function-card setting-function skin-function quest-action-card">
+              <div class="function-logo skin-logo" aria-hidden="true">
+                <span>色</span>
+              </div>
+              <div class="function-copy">
+                <strong data-i18n="uiSkin">UI skin</strong>
+                <span data-i18n="uiSkinHint">Switch the homepage color style.</span>
+              </div>
+              <div class="card-mascot" aria-hidden="true">🎨</div>
+              <label class="function-select-action" for="uiSkinSelect">
+                <span data-i18n="uiSkin">UI skin</span>
+                <select id="uiSkinSelect" aria-label="UI skin" data-i18n-aria-label="uiSkin"></select>
+              </label>
+            </article>
+          </div>
+
+          <div class="quest-footer">
+            <span>每天进步一点点！</span>
+            <strong>一起开启中文之旅吧！</strong>
+            <a href="mailto:enquiries@optiviseAI.com.au">enquiries@optiviseAI.com.au</a>
+          </div>
+        </section>
+
+        <section id="customCharacterView" class="screen-card custom-character-card hidden" aria-live="polite">
+          <div class="screen-head">
+            <button id="customHomeBtn" class="secondary-button compact-button" type="button">
+              <span data-i18n="home">Home</span>
+            </button>
+            <div>
+              <span class="tiny-label" data-i18n="customCharactersLabel">Custom database</span>
+              <h2 data-i18n="customCharacter">Add character</h2>
+            </div>
+          </div>
+
+          <p class="custom-notice" data-i18n="customNotice">
+            Original 300 course characters are locked. Custom characters can be added, but there is no delete action after saving.
+          </p>
+
+          <form id="customCharacterForm" class="custom-form">
+            <fieldset>
+              <legend data-i18n="customBasicTitle">Character details</legend>
+              <div class="custom-form-grid">
+                <label>
+                  <span data-i18n="customCharLabel">Character</span>
+                  <input id="customCharInput" name="char" type="text" maxlength="1" autocomplete="off" required />
+                </label>
+                <label>
+                  <span data-i18n="customPinyinLabel">Pinyin</span>
+                  <input id="customPinyinInput" name="pinyin" type="text" autocomplete="off" required />
+                </label>
+                <label>
+                  <span data-i18n="customMeaningZhLabel">Chinese meaning</span>
+                  <input id="customMeaningZhInput" name="meaningZh" type="text" autocomplete="off" required />
+                </label>
+                <label>
+                  <span data-i18n="customMeaningEnLabel">English meaning</span>
+                  <input id="customMeaningEnInput" name="meaningEn" type="text" autocomplete="off" required />
+                </label>
+                <label>
+                  <span data-i18n="customRadicalLabel">Radical (optional)</span>
+                  <input id="customRadicalInput" name="radical" type="text" autocomplete="off" />
+                </label>
+                <label>
+                  <span data-i18n="customStrokesLabel">Strokes (optional)</span>
+                  <input id="customStrokesInput" name="strokes" type="number" min="1" inputmode="numeric" />
+                </label>
+                <label class="wide-field">
+                  <span data-i18n="customStructureLabel">Shape (optional)</span>
+                  <input id="customStructureInput" name="structure" type="text" autocomplete="off" />
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>
+                <span data-i18n="customWordsTitle">Words</span>
+                <em data-i18n="customRequiredHint">3 required</em>
+              </legend>
+              <div class="custom-repeat-grid">
+                <label>
+                  <span>Word 1 / 组词 1</span>
+                  <input id="customWord1" name="word1" type="text" autocomplete="off" required />
+                </label>
+                <label>
+                  <span>English meaning 1 / 英文意思 1</span>
+                  <input id="customWordMeaning1" name="wordMeaning1" type="text" autocomplete="off" required />
+                </label>
+                <label>
+                  <span>Word 2 / 组词 2</span>
+                  <input id="customWord2" name="word2" type="text" autocomplete="off" required />
+                </label>
+                <label>
+                  <span>English meaning 2 / 英文意思 2</span>
+                  <input id="customWordMeaning2" name="wordMeaning2" type="text" autocomplete="off" required />
+                </label>
+                <label>
+                  <span>Word 3 / 组词 3</span>
+                  <input id="customWord3" name="word3" type="text" autocomplete="off" required />
+                </label>
+                <label>
+                  <span>English meaning 3 / 英文意思 3</span>
+                  <input id="customWordMeaning3" name="wordMeaning3" type="text" autocomplete="off" required />
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>
+                <span data-i18n="customSentencesTitle">Sentences</span>
+                <em data-i18n="customRequiredHint">3 required</em>
+              </legend>
+              <div class="custom-repeat-grid">
+                <label>
+                  <span>Sentence 1 / 造句 1</span>
+                  <textarea id="customSentenceZh1" name="sentenceZh1" rows="2" required></textarea>
+                </label>
+                <label>
+                  <span>English sentence 1 / 英文句子 1</span>
+                  <textarea id="customSentenceEn1" name="sentenceEn1" rows="2" required></textarea>
+                </label>
+                <label>
+                  <span>Sentence 2 / 造句 2</span>
+                  <textarea id="customSentenceZh2" name="sentenceZh2" rows="2" required></textarea>
+                </label>
+                <label>
+                  <span>English sentence 2 / 英文句子 2</span>
+                  <textarea id="customSentenceEn2" name="sentenceEn2" rows="2" required></textarea>
+                </label>
+                <label>
+                  <span>Sentence 3 / 造句 3</span>
+                  <textarea id="customSentenceZh3" name="sentenceZh3" rows="2" required></textarea>
+                </label>
+                <label>
+                  <span>English sentence 3 / 英文句子 3</span>
+                  <textarea id="customSentenceEn3" name="sentenceEn3" rows="2" required></textarea>
+                </label>
+              </div>
+            </fieldset>
+
+            <p id="customValidation" class="custom-validation" role="status" aria-live="polite"></p>
+            <div class="action-row custom-actions">
+              <button class="primary-button" type="submit" data-i18n="customSave">Save character</button>
+              <button id="customResetBtn" class="secondary-button" type="button" data-i18n="customReset">Clear form</button>
+            </div>
+          </form>
+
+          <section class="custom-saved-panel" aria-live="polite">
+            <h3 data-i18n="customSavedTitle">Saved custom characters</h3>
+            <div id="customSavedList" class="custom-saved-list"></div>
+          </section>
+        </section>
+
+        <section id="lessonPickerView" class="screen-card lesson-picker-card hidden" aria-live="polite">
+          <div class="screen-head">
+            <button id="lessonPickerHomeBtn" class="secondary-button compact-button" type="button">
+              <span data-i18n="home">Home</span>
+            </button>
+            <div>
+              <span class="tiny-label" data-i18n="courseLearning">Course lessons</span>
+              <h2 data-i18n="chooseLesson">Choose a lesson</h2>
+            </div>
+          </div>
+          <label class="select-label" for="lessonSelect" data-i18n="chooseLesson">Choose a lesson</label>
+          <select id="lessonSelect"></select>
+          <button id="startLessonBtn" class="primary-button start-button" type="button" data-i18n="startSelectedLesson">
+            Start selected lesson
+          </button>
+        </section>
+
+        <section id="searchView" class="screen-card search-card hidden" aria-live="polite">
+          <div class="screen-head">
+            <button id="searchHomeBtn" class="secondary-button compact-button" type="button">
+              <span data-i18n="home">Home</span>
+            </button>
+            <div>
+              <span class="tiny-label" data-i18n="searchLabel">Course database</span>
+              <h2 data-i18n="searchTitle">Search</h2>
+            </div>
+          </div>
+          <form id="searchForm" class="search-form" role="search">
+            <label for="searchInput" data-i18n="searchInputLabel">Chinese search</label>
+            <input id="searchInput" type="search" inputmode="search" autocomplete="off" data-i18n-placeholder="searchPlaceholder" placeholder="输入中文，例如：新 / 新书" />
+            <button id="searchSubmitBtn" class="primary-button" type="submit" data-i18n="searchAction">Search</button>
+          </form>
+          <p id="searchResultCount" class="search-count" aria-live="polite"></p>
+          <div class="search-layout">
+            <div id="searchResults" class="search-results"></div>
+            <article class="info-card search-detail-card">
+              <p id="searchDetailEmpty" class="search-empty" data-i18n="searchEmpty">Type Chinese to look up a course character.</p>
+              <div id="searchDetailBody" class="search-detail-body hidden">
+                <div class="search-character-overview">
+                  <div>
+                    <strong id="searchDetailChar" class="search-big-char">字</strong>
+                    <span id="searchDetailPinyin" class="pinyin-line"></span>
+                  </div>
+                  <button id="searchSpeakBtn" class="speak-button compact-speak-button" type="button">
+                    <span class="cartoon-speaker-icon speaker-icon-small" aria-hidden="true"></span>
+                    <span data-i18n="speak">Speak</span>
+                  </button>
+                </div>
+                <div class="info-section">
+                  <h3 data-i18n="meaning">Meaning</h3>
+                  <p id="searchDetailMeaningZh"></p>
+                  <p id="searchDetailMeaningEn"></p>
+                </div>
+                <div class="char-facts search-facts">
+                  <div>
+                    <span data-i18n="radical">Radical</span>
+                    <strong id="searchRadicalValue"></strong>
+                  </div>
+                  <div>
+                    <span data-i18n="strokes">Strokes</span>
+                    <strong id="searchStrokeValue"></strong>
+                  </div>
+                  <div>
+                    <span data-i18n="shape">Shape</span>
+                    <strong id="searchStructureValue"></strong>
+                  </div>
+                </div>
+                <div class="info-section">
+                  <h3 data-i18n="words">Words</h3>
+                  <div id="searchDetailWords" class="word-list search-word-list"></div>
+                </div>
+                <div class="info-section">
+                  <h3 data-i18n="sentences">Sentences</h3>
+                  <div id="searchDetailSentences" class="sentence-list search-sentence-list"></div>
+                </div>
+                <div class="info-section">
+                  <h3 data-i18n="strokeOrder">Stroke Order</h3>
+                  <div id="searchStrokeTarget" class="stroke-target search-stroke-target" aria-label="stroke order animation" data-i18n-aria-label="strokeOrderAnimation"></div>
+                </div>
+                <button id="searchOpenLessonBtn" class="primary-button start-button" type="button" data-i18n="openInLesson">Open in lesson</button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="idiomView" class="screen-card idiom-card hidden" aria-live="polite">
+          <div class="screen-head">
+            <button id="idiomHomeBtn" class="secondary-button compact-button" type="button">
+              <span data-i18n="home">Home</span>
+            </button>
+            <div>
+              <span class="tiny-label" data-i18n="idiomLabel">Idiom database</span>
+              <h2 data-i18n="idiomSeries">Idiom series</h2>
+            </div>
+          </div>
+          <div class="idiom-toolbar">
+            <label for="idiomSearchInput" data-i18n="idiomSearchLabel">Find an idiom</label>
+            <input id="idiomSearchInput" type="search" inputmode="search" autocomplete="off" data-i18n-placeholder="idiomSearchPlaceholder" placeholder="搜索成语，例如：一心一意" />
+            <span id="idiomCount" class="search-count">200 idioms</span>
+          </div>
+          <div id="idiomList" class="idiom-list"></div>
+        </section>
+
+        <section id="dialogueView" class="screen-card practice-card hidden" aria-live="polite">
+          <div class="screen-head practice-head">
+            <button id="dialogueHomeBtn" class="secondary-button compact-button" type="button">
+              <span data-i18n="home">Home</span>
+            </button>
+            <div>
+              <span class="tiny-label" data-i18n="practice">Practice</span>
+              <h2 data-i18n="dailyDialogue">Daily dialogue</h2>
+            </div>
+            <label class="practice-select-label" for="dialogueTopicSelect">
+              <span data-i18n="chooseTopic">Choose a topic</span>
+              <select id="dialogueTopicSelect"></select>
+            </label>
+          </div>
+          <div class="practice-layout">
+            <article class="practice-reader dialogue-reader">
+              <div id="dialogueIcon" class="practice-icon" aria-hidden="true">🏫</div>
+              <div>
+                <h3 id="dialogueTopic">学校</h3>
+                <p id="dialoguePinyin" class="pinyin-line">xué xiào</p>
+                <p id="dialogueEnglish" class="practice-english">school</p>
+              </div>
+              <button id="dialoguePhraseBtn" class="speak-button practice-speak-button" type="button">
+                <span class="cartoon-speaker-icon speaker-icon-large" aria-hidden="true"></span>
+                <span data-i18n="readPhrase">Read phrase</span>
+              </button>
+              <div class="practice-phrase">
+                <strong id="dialoguePhrase">我在学校学习中文。</strong>
+                <span id="dialoguePhrasePinyin">wǒ zài xué xiào xué xí zhōng wén.</span>
+              </div>
+            </article>
+            <article class="info-card practice-list-card">
+              <div class="panel-head">
+                <h3 data-i18n="vocabulary">Vocabulary</h3>
+                <button id="dialogueAllBtn" class="small-button" type="button" data-i18n="readAll">Read all</button>
+              </div>
+              <div id="dialogueWords" class="dialogue-word-grid"></div>
+            </article>
+          </div>
+        </section>
+
+        <section id="roleplayView" class="screen-card practice-card hidden" aria-live="polite">
+          <div class="screen-head practice-head">
+            <button id="roleplayHomeBtn" class="secondary-button compact-button" type="button">
+              <span data-i18n="home">Home</span>
+            </button>
+            <div>
+              <span class="tiny-label" data-i18n="practice">Practice</span>
+              <h2 data-i18n="rolePlay">Role play</h2>
+            </div>
+            <label class="practice-select-label" for="roleplaySelect">
+              <span data-i18n="chooseScene">Choose a scene</span>
+              <select id="roleplaySelect"></select>
+            </label>
+          </div>
+          <div class="practice-layout">
+            <article class="practice-reader">
+              <button id="roleplayReadArea" class="roleplay-reading" type="button" aria-label="read role play scene" data-i18n-aria-label="readRoleplayArea">
+                <span id="roleplayIcon" class="practice-icon" aria-hidden="true">🏫</span>
+                <span>
+                  <strong id="roleplayTitle">在学校介绍自己</strong>
+                  <em id="roleplayTitlePinyin">zài xué xiào jiè shào zì jǐ</em>
+                </span>
+                <span id="roleplayText" class="roleplay-text">大家好，我叫小明。我来自澳洲，喜欢中文。</span>
+                <span id="roleplayPinyin" class="pinyin-line">dà jiā hǎo, wǒ jiào xiǎo míng. wǒ lái zì ào zhōu, xǐ huān zhōng wén.</span>
+                <span class="reading-hint" data-i18n="tapToRead">Tap this card to read aloud.</span>
+              </button>
+              <button id="roleplaySpeakBtn" class="speak-button practice-speak-button" type="button">
+                <span class="cartoon-speaker-icon speaker-icon-large" aria-hidden="true"></span>
+                <span data-i18n="readScene">Read scene</span>
+              </button>
+            </article>
+            <article class="info-card practice-list-card">
+              <h3 data-i18n="scenarioWords">Scene words</h3>
+              <div id="roleplayWords" class="dialogue-word-grid"></div>
+            </article>
+          </div>
+        </section>
+
+        <section id="lessonView" class="screen-card hidden" aria-live="polite">
+          <div class="screen-head">
+            <button id="homeBtn" class="secondary-button compact-button" type="button">
+              <span data-i18n="home">Home</span>
+            </button>
+            <div>
+              <span class="tiny-label" data-i18n="lesson">Lesson</span>
+              <h2 id="lessonTitle">Lesson 1</h2>
+            </div>
+            <div id="lessonProgress" class="quiz-progress">1 / 5</div>
+          </div>
+
+          <div class="lesson-stage">
+            <article class="character-card">
+              <div class="character-tools">
+                <button id="prevCharBtn" class="icon-button" type="button" aria-label="previous character" data-i18n-aria-label="previousCharacter">
+                  ‹
+                </button>
+                <button id="speakBtn" class="speak-button" type="button">
+                  <span id="speakIcon" class="cartoon-speaker-icon speaker-icon-large" aria-hidden="true"></span>
+                  <span id="speakLabel" data-i18n="speak">Speak</span>
+                </button>
+                <button id="nextCharBtn" class="icon-button" type="button" aria-label="next character" data-i18n-aria-label="nextCharacter">
+                  ›
+                </button>
+              </div>
+              <div id="bigChar" class="big-char">中</div>
+              <div id="pinyin" class="pinyin">zhōng</div>
+              <div id="meaning" class="meaning">middle; China</div>
+            </article>
+
+            <article class="info-card">
+              <div class="info-section">
+                <h3 data-i18n="meaning">Meaning</h3>
+                <p id="meaningZh"></p>
+                <p id="meaningEn"></p>
+              </div>
+              <div class="info-section">
+                <h3 data-i18n="words">Words</h3>
+                <div id="wordList" class="word-list"></div>
+              </div>
+              <div class="info-section">
+                <h3 data-i18n="sentences">Sentences</h3>
+                <div id="sentenceList" class="sentence-list"></div>
+              </div>
+            </article>
+
+            <article class="writing-card">
+              <div class="panel-head">
+                <h3 data-i18n="strokeOrder">Stroke Order</h3>
+                <div class="writer-actions">
+                  <button id="animateBtn" class="small-button" type="button" data-i18n="animate">Animate</button>
+                  <button id="traceBtn" class="small-button" type="button" data-i18n="trace">Trace</button>
+                  <button id="cameraWriteBtn" class="small-button" type="button" data-i18n="camera">Camera</button>
+                </div>
+              </div>
+              <div id="strokeTarget" class="stroke-target" aria-label="stroke order animation" data-i18n-aria-label="strokeOrderAnimation"></div>
+              <div id="cameraPanel" class="camera-panel hidden" aria-label="camera writing practice" data-i18n-aria-label="cameraPractice">
+                <video id="cameraVideo" class="camera-video" autoplay muted playsinline></video>
+                <canvas
+                  id="cameraCanvas"
+                  class="camera-canvas"
+                  width="640"
+                  height="480"
+                  aria-label="camera writing canvas"
+                  data-i18n-aria-label="cameraCanvas"
+                ></canvas>
+                <div class="camera-toolbar">
+                  <p id="cameraStatus" data-i18n="cameraOff">Camera off</p>
+                  <div>
+                    <button id="cameraClearBtn" class="small-button" type="button" data-i18n="clear">Clear</button>
+                    <button id="cameraCloseBtn" class="small-button" type="button" data-i18n="close">Close</button>
+                  </div>
+                </div>
+              </div>
+              <div class="char-facts">
+                <div>
+                  <span data-i18n="radical">Radical</span>
+                  <strong id="radicalValue"></strong>
+                </div>
+                <div>
+                  <span data-i18n="strokes">Strokes</span>
+                  <strong id="strokeValue"></strong>
+                </div>
+                <div>
+                  <span data-i18n="shape">Shape</span>
+                  <strong id="structureValue"></strong>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="lesson-footer">
+            <p id="coachMessage" data-i18n="coachInitial">Listen, read, trace, then continue.</p>
+            <button id="continueBtn" class="primary-button" type="button" data-i18n="next">Next</button>
+          </div>
+        </section>
+
+        <section id="testView" class="screen-card hidden" aria-live="polite">
+          <div class="screen-head">
+            <div>
+              <span class="tiny-label" data-i18n="test">Test</span>
+              <h2 id="quizTitle">Question 1</h2>
+            </div>
+            <div id="quizProgress" class="quiz-progress">1 / 5</div>
+          </div>
+          <div id="quizBody" class="quiz-body"></div>
+          <div id="quizFeedback" class="quiz-feedback"></div>
+          <div class="lesson-footer">
+            <button id="nextQuestionBtn" class="primary-button hidden" type="button" data-i18n="next">Next</button>
+          </div>
+        </section>
+
+        <section id="resultView" class="screen-card result-card hidden" aria-live="polite">
+          <div class="screen-head">
+            <div>
+              <span class="tiny-label" data-i18n="result">Result</span>
+              <h2 id="resultTitle">Lesson complete</h2>
+            </div>
+            <div id="resultScore" class="quiz-progress">0 / 5</div>
+          </div>
+          <div class="result-body">
+            <p id="resultMessage"></p>
+            <div id="stickerStrip" class="sticker-strip" aria-label="recent stickers" data-i18n-aria-label="recentStickers"></div>
+          </div>
+          <div class="action-row result-actions">
+            <button id="retryBtn" class="secondary-button" type="button" data-i18n="tryTestAgain">Try test again</button>
+            <button id="nextLessonBtn" class="primary-button" type="button" data-i18n="nextLesson">Next lesson</button>
+            <button id="resultHomeBtn" class="secondary-button" type="button">
+              <span data-i18n="home">Home</span>
+            </button>
+          </div>
+        </section>
+      </main>
+
+      <dialog id="howToPlayDialog" class="guide-dialog" aria-labelledby="howToPlayTitle">
+        <div class="home-guide" aria-label="how to use" data-i18n-aria-label="howToUse">
+          <div class="dialog-head">
+            <h2 id="howToPlayTitle" data-i18n="howToPlay">How to play</h2>
+            <form method="dialog">
+              <button class="icon-button dialog-close" type="submit" aria-label="close how to play" data-i18n-aria-label="closeHowToPlay">
+                ×
+              </button>
+            </form>
+          </div>
+          <div class="guide-grid">
+            <div class="guide-step">
+              <span aria-hidden="true">1</span>
+              <p data-i18n-html="guideStep1"><strong>Choose</strong> one lesson.</p>
+            </div>
+            <div class="guide-step">
+              <span aria-hidden="true">2</span>
+              <p data-i18n-html="guideStep2"><strong>Learn</strong> 5 characters with pinyin.</p>
+            </div>
+            <div class="guide-step">
+              <span aria-hidden="true">3</span>
+              <p data-i18n-html="guideStep3"><strong>Listen</strong> and practise stroke order.</p>
+            </div>
+            <div class="guide-step">
+              <span aria-hidden="true">4</span>
+              <p data-i18n-html="guideStep4"><strong>Test</strong> to earn XP and a sticker.</p>
+            </div>
+          </div>
+          <div class="camera-guide">
+            <svg
+              class="camera-guide-art"
+              viewBox="0 0 260 150"
+              role="img"
+              aria-label="camera tracks a fingertip writing in a square"
+              data-i18n-aria-label="cameraGuideAria"
+            >
+              <rect x="10" y="18" width="74" height="54" rx="8" fill="#d9f3ff" stroke="#17324d" stroke-width="5" />
+              <circle cx="47" cy="45" r="16" fill="#fffdf7" stroke="#17324d" stroke-width="5" />
+              <circle cx="47" cy="45" r="6" fill="#2f80ed" />
+              <rect x="25" y="78" width="44" height="10" rx="5" fill="#17324d" />
+              <path d="M88 48 C116 32 132 32 156 48" fill="none" stroke="#ff7078" stroke-width="5" stroke-linecap="round" stroke-dasharray="8 8" />
+              <rect x="156" y="18" width="88" height="88" rx="8" fill="#fffdf7" stroke="#17324d" stroke-width="5" />
+              <path d="M200 25 V99 M163 62 H238" stroke="#dce7ee" stroke-width="3" />
+              <path d="M179 80 C192 68 206 72 220 52" fill="none" stroke="#2f80ed" stroke-width="8" stroke-linecap="round" />
+              <path d="M130 112 C137 89 147 69 158 58 C162 54 170 58 167 66 L162 82 C169 76 175 75 179 80 C184 74 191 75 194 82 C200 80 205 84 205 91 C205 111 193 128 174 132 C158 136 139 129 130 112 Z" fill="#ffd45d" stroke="#17324d" stroke-width="5" stroke-linejoin="round" />
+              <path d="M155 59 L149 97 M174 81 L170 101 M192 83 L187 101" stroke="#17324d" stroke-width="4" stroke-linecap="round" />
+              <circle cx="158" cy="58" r="9" fill="#ff7078" stroke="#17324d" stroke-width="4" />
+            </svg>
+            <div>
+              <h3 data-i18n="cameraWriting">Camera writing</h3>
+              <p data-i18n-html="cameraGuideText">In a lesson, tap <strong>Camera</strong>. The app follows your fingertip so you can write the character inside the box.</p>
+            </div>
+          </div>
+        </div>
+      </dialog>
+
+      <footer class="app-footer">
+        <span data-i18n="contact">Contact</span>
+        <a href="mailto:enquries@optiviseAI.com.au">enquries@optiviseAI.com.au</a>
+        <a href="https://optiviseai.com.au" target="_blank" rel="noreferrer">optiviseai.com.au</a>
+      </footer>
+    </div>
+
+    <div id="celebrationLayer" class="celebration-layer" aria-hidden="true"></div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
