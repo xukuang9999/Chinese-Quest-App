@@ -4,13 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Chinese Quest</title>
-    <link rel="stylesheet" href="styles.css?v=20260430p" />
+    <link rel="stylesheet" href="styles.css?v=20260430s" />
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"
     ></script>
-    <script defer src="data.js?v=20260430a"></script>
-    <script defer src="app.js?v=20260430e"></script>
+    <script defer src="data.js?v=20260430b"></script>
+    <script defer src="app.js?v=20260430h"></script>
   </head>
   <body data-screen="login" data-skin="classic">
     <div class="cartoon-sky" aria-hidden="true">
@@ -30,8 +30,13 @@
     <div class="app-shell">
       <header class="topbar">
         <div class="brand">
-          <div class="brand-mark" aria-hidden="true">
-            <img src="assets/chinese-quest-logo.svg?v=20260427u" alt="" />
+          <div class="brand-left">
+            <div class="brand-mark" aria-hidden="true">
+              <img src="assets/chinese-quest-logo.svg?v=20260427u" alt="" />
+            </div>
+            <a class="company-logo" href="https://optiviseai.com.au" target="_blank" rel="noreferrer" aria-label="Optivise AI website">
+              <img src="assets/optiviseai-logo.png" alt="Optivise AI" />
+            </a>
           </div>
           <div class="brand-title">
             <h1>Chinese Quest</h1>
@@ -41,7 +46,6 @@
         <div class="top-actions">
           <div class="active-user-chip" aria-label="Current user" data-i18n-aria-label="currentUser">
             <span id="currentUserName">Current learner</span>
-            <button id="switchUserBtn" class="secondary-button compact-button" type="button" data-i18n="switchUser">Switch user</button>
           </div>
           <div class="top-stats" aria-label="progress summary" data-i18n-aria-label="progressSummary">
             <div class="stat-pill">
@@ -57,9 +61,6 @@
               <strong id="streakValue">0</strong>
             </div>
           </div>
-          <a class="company-logo" href="https://optiviseai.com.au" target="_blank" rel="noreferrer" aria-label="Optivise AI website">
-            <img src="assets/optiviseai-logo.png" alt="Optivise AI" />
-          </a>
         </div>
       </header>
 
@@ -107,9 +108,6 @@
               alt="Chinese Quest home menu"
             />
 
-            <button id="homeSwitchUserBtn" class="home-hotspot home-sign-hotspot hotspot-switch-user" type="button" data-animal-sound="panda" data-i18n-aria-label="switchUser">
-              Switch user
-            </button>
             <button id="dailyLessonBtn" class="home-hotspot home-card-hotspot hotspot-daily" type="button" data-animal-sound="panda" data-i18n-aria-label="startToday">
               Start today's lesson
             </button>
@@ -158,20 +156,29 @@
               <span id="dailyLessonChars">中 文 学 习 好</span>
               <span id="databaseCharacterCount">0</span>
               <span id="databaseWordCount">0</span>
-              <span id="databaseSentenceCount">0</span>
               <span id="databaseIdiomCount">0</span>
               <span id="customCharacterCount">No custom characters yet</span>
               <span id="idiomHomeCount">200 idioms</span>
+              <div class="home-copy-patch home-database-hint-patch">
+                字、词和成语的当前总数。<br />
+                / Current totals for characters, words, and idioms.
+              </div>
+              <div class="home-copy-patch home-database-sentence-patch"></div>
+              <div class="home-copy-patch home-custom-copy-patch">
+                把自己的汉字和组词加入课程。<br />
+                / Add your own course character with words.
+              </div>
+              <div class="home-copy-patch home-search-copy-patch">
+                输入中文，查找拼音、词、笔顺和部首。<br />
+                / Type Chinese to find pinyin, words, stroke order, and radical.
+              </div>
             </div>
           </div>
         </section>
 
         <section id="customCharacterView" class="screen-card custom-character-card hidden" aria-live="polite">
           <div class="screen-head">
-            <button id="customHomeBtn" class="secondary-button compact-button" type="button">
-              <span data-i18n="home">Home</span>
-            </button>
-            <div>
+            <div class="screen-title-link" role="button" tabindex="0" data-home-title data-i18n-aria-label="customBackToHome">
               <span class="tiny-label" data-i18n="customCharactersLabel">Custom database</span>
               <h2 data-i18n="customCharacter">Add character</h2>
             </div>
@@ -249,39 +256,6 @@
               </div>
             </fieldset>
 
-            <fieldset>
-              <legend>
-                <span data-i18n="customSentencesTitle">Sentences</span>
-                <em data-i18n="customRequiredHint">3 required</em>
-              </legend>
-              <div class="custom-repeat-grid">
-                <label>
-                  <span>Sentence 1 / 造句 1</span>
-                  <textarea id="customSentenceZh1" name="sentenceZh1" rows="2" required></textarea>
-                </label>
-                <label>
-                  <span>English sentence 1 / 英文句子 1</span>
-                  <textarea id="customSentenceEn1" name="sentenceEn1" rows="2" required></textarea>
-                </label>
-                <label>
-                  <span>Sentence 2 / 造句 2</span>
-                  <textarea id="customSentenceZh2" name="sentenceZh2" rows="2" required></textarea>
-                </label>
-                <label>
-                  <span>English sentence 2 / 英文句子 2</span>
-                  <textarea id="customSentenceEn2" name="sentenceEn2" rows="2" required></textarea>
-                </label>
-                <label>
-                  <span>Sentence 3 / 造句 3</span>
-                  <textarea id="customSentenceZh3" name="sentenceZh3" rows="2" required></textarea>
-                </label>
-                <label>
-                  <span>English sentence 3 / 英文句子 3</span>
-                  <textarea id="customSentenceEn3" name="sentenceEn3" rows="2" required></textarea>
-                </label>
-              </div>
-            </fieldset>
-
             <p id="customValidation" class="custom-validation" role="status" aria-live="polite"></p>
             <div class="action-row custom-actions">
               <button class="primary-button" type="submit" data-i18n="customSave">Save character</button>
@@ -297,10 +271,7 @@
 
         <section id="lessonPickerView" class="screen-card lesson-picker-card hidden" aria-live="polite">
           <div class="screen-head">
-            <button id="lessonPickerHomeBtn" class="secondary-button compact-button" type="button">
-              <span data-i18n="home">Home</span>
-            </button>
-            <div>
+            <div class="screen-title-link" role="button" tabindex="0" data-home-title data-i18n-aria-label="customBackToHome">
               <span class="tiny-label" data-i18n="courseLearning">Course lessons</span>
               <h2 data-i18n="chooseLesson">Choose a lesson</h2>
             </div>
@@ -314,10 +285,7 @@
 
         <section id="searchView" class="screen-card search-card hidden" aria-live="polite">
           <div class="screen-head">
-            <button id="searchHomeBtn" class="secondary-button compact-button" type="button">
-              <span data-i18n="home">Home</span>
-            </button>
-            <div>
+            <div class="screen-title-link" role="button" tabindex="0" data-home-title data-i18n-aria-label="customBackToHome">
               <span class="tiny-label" data-i18n="searchLabel">Course database</span>
               <h2 data-i18n="searchTitle">Search</h2>
             </div>
@@ -371,10 +339,6 @@
                   <div id="searchDetailWords" class="word-list search-word-list"></div>
                 </div>
                 <div class="info-section">
-                  <h3 data-i18n="sentences">Sentences</h3>
-                  <div id="searchDetailSentences" class="sentence-list search-sentence-list"></div>
-                </div>
-                <div class="info-section">
                   <h3 data-i18n="strokeOrder">Stroke Order</h3>
                   <div id="searchStrokeTarget" class="stroke-target search-stroke-target" aria-label="stroke order animation" data-i18n-aria-label="strokeOrderAnimation"></div>
                 </div>
@@ -386,10 +350,7 @@
 
         <section id="idiomView" class="screen-card idiom-card hidden" aria-live="polite">
           <div class="screen-head">
-            <button id="idiomHomeBtn" class="secondary-button compact-button" type="button">
-              <span data-i18n="home">Home</span>
-            </button>
-            <div>
+            <div class="screen-title-link" role="button" tabindex="0" data-home-title data-i18n-aria-label="customBackToHome">
               <span class="tiny-label" data-i18n="idiomLabel">Idiom database</span>
               <h2 data-i18n="idiomSeries">Idiom series</h2>
             </div>
@@ -404,10 +365,7 @@
 
         <section id="dialogueView" class="screen-card practice-card hidden" aria-live="polite">
           <div class="screen-head practice-head">
-            <button id="dialogueHomeBtn" class="secondary-button compact-button" type="button">
-              <span data-i18n="home">Home</span>
-            </button>
-            <div>
+            <div class="screen-title-link" role="button" tabindex="0" data-home-title data-i18n-aria-label="customBackToHome">
               <span class="tiny-label" data-i18n="practice">Practice</span>
               <h2 data-i18n="dailyDialogue">Daily dialogue</h2>
             </div>
@@ -445,10 +403,7 @@
 
         <section id="roleplayView" class="screen-card practice-card hidden" aria-live="polite">
           <div class="screen-head practice-head">
-            <button id="roleplayHomeBtn" class="secondary-button compact-button" type="button">
-              <span data-i18n="home">Home</span>
-            </button>
-            <div>
+            <div class="screen-title-link" role="button" tabindex="0" data-home-title data-i18n-aria-label="customBackToHome">
               <span class="tiny-label" data-i18n="practice">Practice</span>
               <h2 data-i18n="rolePlay">Role play</h2>
             </div>
@@ -483,10 +438,7 @@
 
         <section id="lessonView" class="screen-card hidden" aria-live="polite">
           <div class="screen-head">
-            <button id="homeBtn" class="secondary-button compact-button" type="button">
-              <span data-i18n="home">Home</span>
-            </button>
-            <div>
+            <div class="screen-title-link" role="button" tabindex="0" data-home-title data-i18n-aria-label="customBackToHome">
               <span class="tiny-label" data-i18n="lesson">Lesson</span>
               <h2 id="lessonTitle">Lesson 1</h2>
             </div>
@@ -525,10 +477,6 @@
               <div class="info-section">
                 <h3 data-i18n="words">Words</h3>
                 <div id="wordList" class="word-list"></div>
-              </div>
-              <div class="info-section">
-                <h3 data-i18n="sentences">Sentences</h3>
-                <div id="sentenceList" class="sentence-list"></div>
               </div>
             </article>
 
@@ -585,7 +533,7 @@
 
         <section id="testView" class="screen-card hidden" aria-live="polite">
           <div class="screen-head">
-            <div>
+            <div class="screen-title-link" role="button" tabindex="0" data-home-title data-i18n-aria-label="customBackToHome">
               <span class="tiny-label" data-i18n="test">Test</span>
               <h2 id="quizTitle">Question 1</h2>
             </div>
@@ -600,7 +548,7 @@
 
         <section id="resultView" class="screen-card result-card hidden" aria-live="polite">
           <div class="screen-head">
-            <div>
+            <div class="screen-title-link" role="button" tabindex="0" data-home-title data-i18n-aria-label="customBackToHome">
               <span class="tiny-label" data-i18n="result">Result</span>
               <h2 id="resultTitle">Lesson complete</h2>
             </div>
@@ -613,9 +561,6 @@
           <div class="action-row result-actions">
             <button id="retryBtn" class="secondary-button" type="button" data-i18n="tryTestAgain">Try test again</button>
             <button id="nextLessonBtn" class="primary-button" type="button" data-i18n="nextLesson">Next lesson</button>
-            <button id="resultHomeBtn" class="secondary-button" type="button">
-              <span data-i18n="home">Home</span>
-            </button>
           </div>
         </section>
       </main>

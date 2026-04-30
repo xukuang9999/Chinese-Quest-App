@@ -5,7 +5,6 @@ window.CHINESE_STUDY_DATA = {
   "lessonSize": 5,
   "characterCount": 800,
   "commonWordCount": 1914,
-  "sentenceCount": 2400,
   "idiomCount": 200,
   "sources": [
     {
@@ -71,24 +70,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "first"
         }
       ],
-      "sentence": {
-        "zh": "我每天学一个新字。",
-        "en": "I learn one new character every day."
-      },
-      "sentences": [
-        {
-          "zh": "我每天学一个新字。",
-          "en": "I learn one new character every day."
-        },
-        {
-          "zh": "一天，我们一起去学校。",
-          "en": "On one day, we go to school together."
-        },
-        {
-          "zh": "这本书放在第一排。",
-          "en": "This book is on the first row."
-        }
-      ],
       "etymologyHint": "Represents heaven (天), earth (旦), or the number 1",
       "sourceTags": [
         "online-xinhua",
@@ -140,24 +121,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "友好",
           "meaningEn": "friendly"
-        }
-      ],
-      "sentence": {
-        "zh": "同学之间要友爱。",
-        "en": "Classmates should be kind and caring to one another."
-      },
-      "sentences": [
-        {
-          "zh": "同学之间要友爱。",
-          "en": "Classmates should be kind and caring to one another."
-        },
-        {
-          "zh": "我和朋友一起学习。",
-          "en": "I study together with my friend."
-        },
-        {
-          "zh": "他对新同学很友好。",
-          "en": "He is friendly to the new classmate."
         }
       ],
       "etymologyHint": "Two hands 又 joined, representing friendship; 又 also provides the pronunciation",
@@ -213,24 +176,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "oneself"
         }
       ],
-      "sentence": {
-        "zh": "画画时，我喜欢表达自我。",
-        "en": "When I draw, I like to express myself."
-      },
-      "sentences": [
-        {
-          "zh": "画画时，我喜欢表达自我。",
-          "en": "When I draw, I like to express myself."
-        },
-        {
-          "zh": "我骑自行车去公园。",
-          "en": "I ride a bicycle to the park."
-        },
-        {
-          "zh": "我自己整理书包。",
-          "en": "I pack my school bag by myself."
-        }
-      ],
       "etymologyHint": "A nose; in China, people refer to themselves by pointing to their noses",
       "sourceTags": [
         "online-xinhua",
@@ -282,24 +227,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "早安",
           "meaningEn": "good morning"
-        }
-      ],
-      "sentence": {
-        "zh": "早上，我听见小鸟唱歌。",
-        "en": "In the morning, I hear birds singing."
-      },
-      "sentences": [
-        {
-          "zh": "早上，我听见小鸟唱歌。",
-          "en": "In the morning, I hear birds singing."
-        },
-        {
-          "zh": "早饭后，我们去上学。",
-          "en": "After breakfast, we go to school."
-        },
-        {
-          "zh": "见到老师，我说早安。",
-          "en": "When I see the teacher, I say good morning."
         }
       ],
       "etymologyHint": "The first rays 十 of the sun 日",
@@ -357,24 +284,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "indeed"
         }
       ],
-      "sentence": {
-        "zh": "我问：“他呢？”",
-        "en": "I ask, \"what about him?\""
-      },
-      "sentences": [
-        {
-          "zh": "我问：“他呢？”",
-          "en": "I ask, \"what about him?\""
-        },
-        {
-          "zh": "老师听见我问哪呢。",
-          "en": "The teacher hears me ask \"where is it?\""
-        },
-        {
-          "zh": "是呢，我们一起去吧。",
-          "en": "Yes, let's go together."
-        }
-      ],
       "etymologyHint": "mouth",
       "sourceTags": [
         "online-xinhua",
@@ -426,24 +335,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "晚饭",
           "meaningEn": "dinner"
-        }
-      ],
-      "sentence": {
-        "zh": "晚上，我在家读故事。",
-        "en": "In the evening, I read stories at home."
-      },
-      "sentences": [
-        {
-          "zh": "晚上，我在家读故事。",
-          "en": "In the evening, I read stories at home."
-        },
-        {
-          "zh": "睡觉前，我对妈妈说晚安。",
-          "en": "Before going to sleep, I say good night to Mum."
-        },
-        {
-          "zh": "晚饭后，我们一起散步。",
-          "en": "After dinner, we take a walk together."
         }
       ],
       "etymologyHint": "Avoiding 免 the sun 日; 免 also provides the pronunciation",
@@ -500,24 +391,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "let's go"
         }
       ],
-      "sentence": {
-        "zh": "我会说来吧。",
-        "en": "I can say \"come on.\""
-      },
-      "sentences": [
-        {
-          "zh": "我会说来吧。",
-          "en": "I can say \"come on.\""
-        },
-        {
-          "zh": "好吧，我再试一次。",
-          "en": "Okay, I will try once more."
-        },
-        {
-          "zh": "走吧，公交车来了。",
-          "en": "Let's go. The bus is here."
-        }
-      ],
       "etymologyHint": "mouth",
       "sourceTags": [
         "online-xinhua",
@@ -569,24 +442,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "第二",
           "meaningEn": "second"
-        }
-      ],
-      "sentence": {
-        "zh": "二月有学校活动。",
-        "en": "There is a school activity in February."
-      },
-      "sentences": [
-        {
-          "zh": "二月有学校活动。",
-          "en": "There is a school activity in February."
-        },
-        {
-          "zh": "老师在黑板上写下二十。",
-          "en": "The teacher writes twenty on the board."
-        },
-        {
-          "zh": "她排在第二。",
-          "en": "She is in second place."
         }
       ],
       "etymologyHint": "Two  parallel lines; compare 一 (one) and 三 (three)",
@@ -645,24 +500,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "walk"
         }
       ],
-      "sentence": {
-        "zh": "我问：“行吗？”",
-        "en": "I ask, \"is it okay?\""
-      },
-      "sentences": [
-        {
-          "zh": "我问：“行吗？”",
-          "en": "I ask, \"is it okay?\""
-        },
-        {
-          "zh": "放学后，我骑自行车回家。",
-          "en": "After school, I ride my bicycle home."
-        },
-        {
-          "zh": "小朋友在人行道上行走。",
-          "en": "The child walks on the footpath."
-        }
-      ],
       "etymologyHint": "To take small steps 亍 with one's feet 彳",
       "sourceTags": [
         "online-xinhua",
@@ -714,24 +551,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "有名",
           "meaningEn": "famous"
-        }
-      ],
-      "sentence": {
-        "zh": "请写下你的名字。",
-        "en": "Please write down your name."
-      },
-      "sentences": [
-        {
-          "zh": "请写下你的名字。",
-          "en": "Please write down your name."
-        },
-        {
-          "zh": "爸爸把名片放进包里。",
-          "en": "Dad puts the name card into his bag."
-        },
-        {
-          "zh": "这座公园在附近很有名。",
-          "en": "This park is well known nearby."
         }
       ],
       "etymologyHint": "A name called out 口 to hail someone at night 夕",
@@ -787,24 +606,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "third"
         }
       ],
-      "sentence": {
-        "zh": "盒子里有三个苹果。",
-        "en": "There are three apples in the box."
-      },
-      "sentences": [
-        {
-          "zh": "盒子里有三个苹果。",
-          "en": "There are three apples in the box."
-        },
-        {
-          "zh": "三月有学校活动。",
-          "en": "There is a school activity in March."
-        },
-        {
-          "zh": "她排在第三。",
-          "en": "She is in third place."
-        }
-      ],
       "etymologyHint": "Three  parallel lines; compare 一 (one) and 二 (two)",
       "sourceTags": [
         "online-xinhua",
@@ -856,24 +657,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "写字",
           "meaningEn": "write characters"
-        }
-      ],
-      "sentence": {
-        "zh": "这篇短文大约有一千字。",
-        "en": "This short passage has about one thousand characters."
-      },
-      "sentences": [
-        {
-          "zh": "这篇短文大约有一千字。",
-          "en": "This short passage has about one thousand characters."
-        },
-        {
-          "zh": "请在本子上写名字。",
-          "en": "Please write your name in the notebook."
-        },
-        {
-          "zh": "我认真写字。",
-          "en": "I write characters carefully."
         }
       ],
       "etymologyHint": "A child 子 in a house 宀; 子 also provides the pronunciation",
@@ -929,24 +712,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "public bus"
         }
       ],
-      "sentence": {
-        "zh": "公园里有花和树。",
-        "en": "There are flowers and trees in the park."
-      },
-      "sentences": [
-        {
-          "zh": "公园里有花和树。",
-          "en": "There are flowers and trees in the park."
-        },
-        {
-          "zh": "下雨天，我坐公交上学。",
-          "en": "On rainy days, I take public transport to school."
-        },
-        {
-          "zh": "公交车停在学校门口。",
-          "en": "The public bus stops at the school gate."
-        }
-      ],
       "etymologyHint": "To divide 八 what is private 厶",
       "sourceTags": [
         "online-xinhua",
@@ -999,24 +764,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "上下",
           "meaningEn": "up and down"
-        }
-      ],
-      "sentence": {
-        "zh": "早上，我们一起去学校。",
-        "en": "In the morning, we go to school together."
-      },
-      "sentences": [
-        {
-          "zh": "早上，我们一起去学校。",
-          "en": "In the morning, we go to school together."
-        },
-        {
-          "zh": "晚上，我们在家吃饭。",
-          "en": "In the evening, we eat dinner at home."
-        },
-        {
-          "zh": "电梯可以上下走。",
-          "en": "The lift can go up and down."
         }
       ],
       "etymologyHint": "One stroke on top of another; compare 下 (below)",
@@ -1075,24 +822,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "yes"
         }
       ],
-      "sentence": {
-        "zh": "啊呀，我忘了带课本。",
-        "en": "Oh no, I forgot to bring my textbook."
-      },
-      "sentences": [
-        {
-          "zh": "啊呀，我忘了带课本。",
-          "en": "Oh no, I forgot to bring my textbook."
-        },
-        {
-          "zh": "好啊，我们一起读。",
-          "en": "Sure, let's read together."
-        },
-        {
-          "zh": "是啊，我也这样想。",
-          "en": "Yes, I think so too."
-        }
-      ],
       "etymologyHint": "mouth",
       "sourceTags": [
         "online-xinhua",
@@ -1144,24 +873,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "放下",
           "meaningEn": "put down"
-        }
-      ],
-      "sentence": {
-        "zh": "写这个字时，要看清上下结构。",
-        "en": "When writing this character, look carefully at its top-bottom structure."
-      },
-      "sentences": [
-        {
-          "zh": "写这个字时，要看清上下结构。",
-          "en": "When writing this character, look carefully at its top-bottom structure."
-        },
-        {
-          "zh": "上课了，请坐下。",
-          "en": "Class has started. Please sit down."
-        },
-        {
-          "zh": "进教室后，我放下书包。",
-          "en": "After entering the classroom, I put down my school bag."
         }
       ],
       "etymologyHint": "One stroke under another; compare 上 (above)",
@@ -1217,24 +928,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "reason"
         }
       ],
-      "sentence": {
-        "zh": "我会说因为。",
-        "en": "I can say \"because.\""
-      },
-      "sentences": [
-        {
-          "zh": "我会说因为。",
-          "en": "I can say \"because.\""
-        },
-        {
-          "zh": "这节课，我们学习因果。",
-          "en": "In this lesson, we learn about cause and effect."
-        },
-        {
-          "zh": "请说一说迟到的原因。",
-          "en": "Please explain the reason for being late."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "online-xinhua",
@@ -1286,24 +979,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "四个",
           "meaningEn": "four items"
-        }
-      ],
-      "sentence": {
-        "zh": "我们四点开始上课。",
-        "en": "We start class at four o'clock."
-      },
-      "sentences": [
-        {
-          "zh": "我们四点开始上课。",
-          "en": "We start class at four o'clock."
-        },
-        {
-          "zh": "四月有学校活动。",
-          "en": "There is a school activity in April."
-        },
-        {
-          "zh": "盒子里有四个苹果。",
-          "en": "There are four apples in the box."
         }
       ],
       "etymologyHint": "A child 儿 in a room with four walls 囗",
@@ -1359,24 +1034,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "public bus"
         }
       ],
-      "sentence": {
-        "zh": "我把本子交给同桌。",
-        "en": "I hand the notebook to my desk mate."
-      },
-      "sentences": [
-        {
-          "zh": "我把本子交给同桌。",
-          "en": "I hand the notebook to my desk mate."
-        },
-        {
-          "zh": "放学后，我坐公交回家。",
-          "en": "After school, I take public transport home."
-        },
-        {
-          "zh": "我在路上看见一辆公交车。",
-          "en": "I see a bus on the road."
-        }
-      ],
       "etymologyHint": "A person with crossed (intersecting) legs",
       "sourceTags": [
         "online-xinhua",
@@ -1430,24 +1087,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "bird call"
         }
       ],
-      "sentence": {
-        "zh": "这个地方叫做学校。",
-        "en": "This place is called a school."
-      },
-      "sentences": [
-        {
-          "zh": "这个地方叫做学校。",
-          "en": "This place is called a school."
-        },
-        {
-          "zh": "我听见狗叫。",
-          "en": "I hear dog bark."
-        },
-        {
-          "zh": "我听见鸟叫。",
-          "en": "I hear bird call."
-        }
-      ],
       "etymologyHint": "mouth",
       "sourceTags": [
         "online-xinhua",
@@ -1499,24 +1138,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "五个",
           "meaningEn": "five items"
-        }
-      ],
-      "sentence": {
-        "zh": "书架上有五本书。",
-        "en": "There are five books on the shelf."
-      },
-      "sentences": [
-        {
-          "zh": "书架上有五本书。",
-          "en": "There are five books on the shelf."
-        },
-        {
-          "zh": "五月有学校活动。",
-          "en": "There is a school activity in May."
-        },
-        {
-          "zh": "盒子里有五个苹果。",
-          "en": "There are five apples in the box."
         }
       ],
       "etymologyHint": "Five elements (the cross with the extra stroke) between heaven 一 and earth 一 ",
@@ -1574,24 +1195,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "listen and speak"
         }
       ],
-      "sentence": {
-        "zh": "妹妹会说中文。",
-        "en": "My younger sister can speak Chinese."
-      },
-      "sentences": [
-        {
-          "zh": "妹妹会说中文。",
-          "en": "My younger sister can speak Chinese."
-        },
-        {
-          "zh": "我在家练习说中文。",
-          "en": "I practise speaking Chinese at home."
-        },
-        {
-          "zh": "听说练习能帮助发音。",
-          "en": "Listening and speaking practice helps pronunciation."
-        }
-      ],
       "etymologyHint": "speech",
       "sourceTags": [
         "online-xinhua",
@@ -1645,24 +1248,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "road"
         }
       ],
-      "sentence": {
-        "zh": "我在地图上找到路口。",
-        "en": "I find an intersection on the map."
-      },
-      "sentences": [
-        {
-          "zh": "我在地图上找到路口。",
-          "en": "I find an intersection on the map."
-        },
-        {
-          "zh": "我每天走路去学校。",
-          "en": "I walk to school every day."
-        },
-        {
-          "zh": "马路边有一个公交站。",
-          "en": "There is a bus stop beside the road."
-        }
-      ],
       "etymologyHint": "foot",
       "sourceTags": [
         "online-xinhua",
@@ -1714,24 +1299,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "左边",
           "meaningEn": "left side"
-        }
-      ],
-      "sentence": {
-        "zh": "地图上标着左右方向。",
-        "en": "Left and right directions are marked on the map."
-      },
-      "sentences": [
-        {
-          "zh": "地图上标着左右方向。",
-          "en": "Left and right directions are marked on the map."
-        },
-        {
-          "zh": "运动后，我活动左手。",
-          "en": "After exercise, I move my left hand."
-        },
-        {
-          "zh": "书店在学校左边。",
-          "en": "The bookshop is on the left side of the school."
         }
       ],
       "etymologyHint": "A left hand; compare 又",
@@ -1788,24 +1355,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "because"
         }
       ],
-      "sentence": {
-        "zh": "我会说为了。",
-        "en": "I can say \"in order to.\""
-      },
-      "sentences": [
-        {
-          "zh": "我会说为了。",
-          "en": "I can say \"in order to.\""
-        },
-        {
-          "zh": "我问：“为什么？”",
-          "en": "I ask, \"why?\""
-        },
-        {
-          "zh": "因为下雨，我们在家读书。",
-          "en": "Because it is raining, we read at home."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "online-xinhua",
@@ -1859,24 +1408,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "right side"
         }
       ],
-      "sentence": {
-        "zh": "过马路前，我先看左右。",
-        "en": "Before crossing the road, I look left and right."
-      },
-      "sentences": [
-        {
-          "zh": "过马路前，我先看左右。",
-          "en": "Before crossing the road, I look left and right."
-        },
-        {
-          "zh": "我用右手写字。",
-          "en": "I write with my right hand."
-        },
-        {
-          "zh": "公园在车站右边。",
-          "en": "The park is on the right side of the station."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "online-xinhua",
@@ -1928,24 +1459,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "厕所",
           "meaningEn": "toilet"
-        }
-      ],
-      "sentence": {
-        "zh": "我会说所有。",
-        "en": "I can say \"all.\""
-      },
-      "sentences": [
-        {
-          "zh": "我会说所有。",
-          "en": "I can say \"all.\""
-        },
-        {
-          "zh": "我会说所以。",
-          "en": "I can say \"so.\""
-        },
-        {
-          "zh": "请问，厕所在那里？",
-          "en": "Excuse me, where is the toilet?"
         }
       ],
       "etymologyHint": "An axe 斤 swung at a door 户",
@@ -2002,24 +1515,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "six items"
         }
       ],
-      "sentence": {
-        "zh": "草地上有六只小鸟。",
-        "en": "There are six birds on the grass."
-      },
-      "sentences": [
-        {
-          "zh": "草地上有六只小鸟。",
-          "en": "There are six birds on the grass."
-        },
-        {
-          "zh": "六月有学校活动。",
-          "en": "There is a school activity in June."
-        },
-        {
-          "zh": "盒子里有六个苹果。",
-          "en": "There are six apples in the box."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "online-xinhua",
@@ -2071,24 +1566,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "街口",
           "meaningEn": "street entrance"
-        }
-      ],
-      "sentence": {
-        "zh": "这条街道很干净。",
-        "en": "This street is very clean."
-      },
-      "sentences": [
-        {
-          "zh": "这条街道很干净。",
-          "en": "This street is very clean."
-        },
-        {
-          "zh": "放学后，街上很安静。",
-          "en": "After school, the street is quiet."
-        },
-        {
-          "zh": "我们在街口等车。",
-          "en": "We wait for the bus at the street entrance."
         }
       ],
       "etymologyHint": "walk",
@@ -2145,24 +1622,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "reader"
         }
       ],
-      "sentence": {
-        "zh": "晚上，我在房间里读书。",
-        "en": "In the evening, I read in my room."
-      },
-      "sentences": [
-        {
-          "zh": "晚上，我在房间里读书。",
-          "en": "In the evening, I read in my room."
-        },
-        {
-          "zh": "老师示范这个字的读音。",
-          "en": "The teacher demonstrates the pronunciation of this character."
-        },
-        {
-          "zh": "我认识这位读者。",
-          "en": "I know this reader."
-        }
-      ],
       "etymologyHint": "To show off 卖 one's literacy 讠",
       "sourceTags": [
         "online-xinhua",
@@ -2214,24 +1673,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "七个",
           "meaningEn": "seven items"
-        }
-      ],
-      "sentence": {
-        "zh": "妹妹今年七岁。",
-        "en": "My younger sister is seven years old this year."
-      },
-      "sentences": [
-        {
-          "zh": "妹妹今年七岁。",
-          "en": "My younger sister is seven years old this year."
-        },
-        {
-          "zh": "七月有学校活动。",
-          "en": "There is a school activity in July."
-        },
-        {
-          "zh": "盒子里有七个苹果。",
-          "en": "There are seven apples in the box."
         }
       ],
       "etymologyHint": "",
@@ -2287,24 +1728,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "spell"
         }
       ],
-      "sentence": {
-        "zh": "她会写这个新字。",
-        "en": "She can write this new character."
-      },
-      "sentences": [
-        {
-          "zh": "她会写这个新字。",
-          "en": "She can write this new character."
-        },
-        {
-          "zh": "我会写字。",
-          "en": "I can write characters."
-        },
-        {
-          "zh": "英文课上，我们练习拼写。",
-          "en": "In English class, we practise spelling."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "online-xinhua",
@@ -2356,24 +1779,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "饭店",
           "meaningEn": "restaurant"
-        }
-      ],
-      "sentence": {
-        "zh": "商店里有中文书。",
-        "en": "There are Chinese books in the shop."
-      },
-      "sentences": [
-        {
-          "zh": "商店里有中文书。",
-          "en": "There are Chinese books in the shop."
-        },
-        {
-          "zh": "周末，我去书店买书。",
-          "en": "On the weekend, I go to the bookshop to buy books."
-        },
-        {
-          "zh": "饭店里有热面条。",
-          "en": "There are hot noodles in the restaurant."
         }
       ],
       "etymologyHint": "building",
@@ -2429,24 +1834,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "before"
         }
       ],
-      "sentence": {
-        "zh": "地图上标着前后。",
-        "en": "Front and back is marked on the map."
-      },
-      "sentences": [
-        {
-          "zh": "地图上标着前后。",
-          "en": "Front and back is marked on the map."
-        },
-        {
-          "zh": "老师站在教室前面。",
-          "en": "The teacher stands at the front of the classroom."
-        },
-        {
-          "zh": "上课以前，我先拿出课本。",
-          "en": "Before class, I take out my textbook first."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "online-xinhua",
@@ -2500,24 +1887,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "so"
         }
       ],
-      "sentence": {
-        "zh": "以前，我不会写这个字。",
-        "en": "Before, I could not write this character."
-      },
-      "sentences": [
-        {
-          "zh": "以前，我不会写这个字。",
-          "en": "Before, I could not write this character."
-        },
-        {
-          "zh": "以后，我会每天练习。",
-          "en": "Later, I will practise every day."
-        },
-        {
-          "zh": "我认真练习，所以进步了。",
-          "en": "I practised carefully, so I improved."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "online-xinhua",
@@ -2569,24 +1938,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "以后",
           "meaningEn": "after; later"
-        }
-      ],
-      "sentence": {
-        "zh": "排队时，要看前后。",
-        "en": "When lining up, look at the front and back."
-      },
-      "sentences": [
-        {
-          "zh": "排队时，要看前后。",
-          "en": "When lining up, look at the front and back."
-        },
-        {
-          "zh": "地图上标着后面。",
-          "en": "Behind is marked on the map."
-        },
-        {
-          "zh": "下课以后，我去图书馆。",
-          "en": "After class, I go to the library."
         }
       ],
       "etymologyHint": "",
@@ -2643,24 +1994,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "cute"
         }
       ],
-      "sentence": {
-        "zh": "老师听见我说可能。",
-        "en": "The teacher hears me say \"possible.\""
-      },
-      "sentences": [
-        {
-          "zh": "老师听见我说可能。",
-          "en": "The teacher hears me say \"possible.\""
-        },
-        {
-          "zh": "你可以再试一次。",
-          "en": "You can try once more."
-        },
-        {
-          "zh": "她说话很可爱。",
-          "en": "She speaks in a cute way."
-        }
-      ],
       "etymologyHint": "vigorous",
       "sourceTags": [
         "online-xinhua",
@@ -2712,24 +2045,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "八点",
           "meaningEn": "eight o'clock"
-        }
-      ],
-      "sentence": {
-        "zh": "八月有学校活动。",
-        "en": "There is a school activity in August."
-      },
-      "sentences": [
-        {
-          "zh": "八月有学校活动。",
-          "en": "There is a school activity in August."
-        },
-        {
-          "zh": "盒子里有八个苹果。",
-          "en": "There are eight apples in the box."
-        },
-        {
-          "zh": "我们八点开始上课。",
-          "en": "We start class at eight o'clock."
         }
       ],
       "etymologyHint": "Two bent lines meaning \"to divide\"",
@@ -2785,24 +2100,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "yard"
         }
       ],
-      "sentence": {
-        "zh": "姐姐在音乐学院学习。",
-        "en": "My older sister studies at a music college."
-      },
-      "sentences": [
-        {
-          "zh": "姐姐在音乐学院学习。",
-          "en": "My older sister studies at a music college."
-        },
-        {
-          "zh": "爸爸带我去医院。",
-          "en": "Dad takes me to the hospital."
-        },
-        {
-          "zh": "院子里有一棵树。",
-          "en": "There is a tree in the yard."
-        }
-      ],
       "etymologyHint": "place",
       "sourceTags": [
         "online-xinhua",
@@ -2856,24 +2153,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "nice to hear"
         }
       ],
-      "sentence": {
-        "zh": "中文课有听说练习。",
-        "en": "Chinese class has listening and speaking practice."
-      },
-      "sentences": [
-        {
-          "zh": "中文课有听说练习。",
-          "en": "Chinese class has listening and speaking practice."
-        },
-        {
-          "zh": "我听见窗外有鸟叫。",
-          "en": "I hear birds calling outside the window."
-        },
-        {
-          "zh": "这首中文歌很好听。",
-          "en": "This Chinese song sounds very nice."
-        }
-      ],
       "etymologyHint": "Words 口 reaching an ear 斤",
       "sourceTags": [
         "online-xinhua",
@@ -2925,24 +2204,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "九个",
           "meaningEn": "nine items"
-        }
-      ],
-      "sentence": {
-        "zh": "我们九点开始上课。",
-        "en": "We start class at nine o'clock."
-      },
-      "sentences": [
-        {
-          "zh": "我们九点开始上课。",
-          "en": "We start class at nine o'clock."
-        },
-        {
-          "zh": "九月有学校活动。",
-          "en": "There is a school activity in September."
-        },
-        {
-          "zh": "盒子里有九个苹果。",
-          "en": "There are nine apples in the box."
         }
       ],
       "etymologyHint": "An elbow",
@@ -2999,24 +2260,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "read a book"
         }
       ],
-      "sentence": {
-        "zh": "我看见一只小鸟。",
-        "en": "I see a bird."
-      },
-      "sentences": [
-        {
-          "zh": "我看见一只小鸟。",
-          "en": "I see a bird."
-        },
-        {
-          "zh": "眼看要下雨了，我们快回家。",
-          "en": "It looks like it is about to rain, so we hurry home."
-        },
-        {
-          "zh": "晚上，我在房间里看书。",
-          "en": "In the evening, I read a book in my room."
-        }
-      ],
       "etymologyHint": "Shielding one's eyes 目 with a hand 手 to look to the distance",
       "sourceTags": [
         "online-xinhua",
@@ -3068,24 +2311,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "拼图",
           "meaningEn": "puzzle"
-        }
-      ],
-      "sentence": {
-        "zh": "地图上有澳洲。",
-        "en": "Australia is on the map."
-      },
-      "sentences": [
-        {
-          "zh": "地图上有澳洲。",
-          "en": "Australia is on the map."
-        },
-        {
-          "zh": "美术课上，我画了一幅图画。",
-          "en": "In art class, I draw a picture."
-        },
-        {
-          "zh": "弟弟喜欢玩拼图。",
-          "en": "My younger brother likes playing with puzzle."
         }
       ],
       "etymologyHint": "Simplified form of 圖; a map of a district's 啚 borders 囗",
@@ -3141,24 +2366,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "inside and outside"
         }
       ],
-      "sentence": {
-        "zh": "地图上标着里面。",
-        "en": "Inside is marked on the map."
-      },
-      "sentences": [
-        {
-          "zh": "地图上标着里面。",
-          "en": "Inside is marked on the map."
-        },
-        {
-          "zh": "学校在哪里？",
-          "en": "Where is the school?"
-        },
-        {
-          "zh": "请看里外的位置。",
-          "en": "Please look at the position of inside and outside."
-        }
-      ],
       "etymologyHint": "Unit of measure for farm 田 land 土",
       "sourceTags": [
         "online-xinhua",
@@ -3212,24 +2419,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "again"
         }
       ],
-      "sentence": {
-        "zh": "下课后，我们说再见。",
-        "en": "After class, we say goodbye."
-      },
-      "sentences": [
-        {
-          "zh": "下课后，我们说再见。",
-          "en": "After class, we say goodbye."
-        },
-        {
-          "zh": "这题没答对，我想再来一次。",
-          "en": "I did not answer this question correctly, so I want to try again."
-        },
-        {
-          "zh": "老师请我再次读一遍。",
-          "en": "The teacher asks me to read it once again."
-        }
-      ],
       "etymologyHint": "Two fish 冉 caught on a line 一",
       "sourceTags": [
         "online-xinhua",
@@ -3281,24 +2470,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "外面",
           "meaningEn": "outside"
-        }
-      ],
-      "sentence": {
-        "zh": "我把盒子里外都擦干净。",
-        "en": "I wipe the inside and outside of the box clean."
-      },
-      "sentences": [
-        {
-          "zh": "我把盒子里外都擦干净。",
-          "en": "I wipe the inside and outside of the box clean."
-        },
-        {
-          "zh": "他有一个外国朋友。",
-          "en": "He has a foreign friend."
-        },
-        {
-          "zh": "地图上标着外面。",
-          "en": "Outside is marked on the map."
         }
       ],
       "etymologyHint": "Night-time 夕 divinations 卜; the supernatural, the foreign",
@@ -3355,24 +2526,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "goodbye"
         }
       ],
-      "sentence": {
-        "zh": "我会听见。",
-        "en": "I can hear."
-      },
-      "sentences": [
-        {
-          "zh": "我会听见。",
-          "en": "I can hear."
-        },
-        {
-          "zh": "我看见黑板上的新字。",
-          "en": "I see the new character on the board."
-        },
-        {
-          "zh": "老师听见我说再见。",
-          "en": "The teacher hears me say \"goodbye.\""
-        }
-      ],
       "etymologyHint": "Simplified form of 見; a man 儿 with the eye 目 emphasized",
       "sourceTags": [
         "online-xinhua",
@@ -3424,24 +2577,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "十本",
           "meaningEn": "ten books"
-        }
-      ],
-      "sentence": {
-        "zh": "盒子里有十个苹果。",
-        "en": "There are ten apples in the box."
-      },
-      "sentences": [
-        {
-          "zh": "盒子里有十个苹果。",
-          "en": "There are ten apples in the box."
-        },
-        {
-          "zh": "妹妹今年十岁。",
-          "en": "My younger sister is ten years old this year."
-        },
-        {
-          "zh": "书架上有十本书。",
-          "en": "There are ten books on the shelf."
         }
       ],
       "etymologyHint": "",
@@ -3497,24 +2632,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "United Kingdom"
         }
       ],
-      "sentence": {
-        "zh": "我的朋友来自外国。",
-        "en": "My friend comes from another country."
-      },
-      "sentences": [
-        {
-          "zh": "我的朋友来自外国。",
-          "en": "My friend comes from another country."
-        },
-        {
-          "zh": "地图上可以找到中国。",
-          "en": "You can find China on the map."
-        },
-        {
-          "zh": "英国在地图的西边。",
-          "en": "The United Kingdom is on the western side of the map."
-        }
-      ],
       "etymologyHint": "Treasure 玉 within a country's borders 囗",
       "sourceTags": [
         "online-xinhua",
@@ -3566,24 +2683,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "图画",
           "meaningEn": "picture"
-        }
-      ],
-      "sentence": {
-        "zh": "写汉字时，要注意笔画。",
-        "en": "When writing Chinese characters, pay attention to the strokes."
-      },
-      "sentences": [
-        {
-          "zh": "写汉字时，要注意笔画。",
-          "en": "When writing Chinese characters, pay attention to the strokes."
-        },
-        {
-          "zh": "她用画笔画花。",
-          "en": "She uses a paintbrush to draw flowers."
-        },
-        {
-          "zh": "图画里有山水。",
-          "en": "There are mountains and water in the picture."
         }
       ],
       "etymologyHint": "A painting on an easel; compare 畫, which includes the brush",
@@ -3639,24 +2738,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "snack"
         }
       ],
-      "sentence": {
-        "zh": "今天我的错题是零个。",
-        "en": "Today I have zero wrong answers."
-      },
-      "sentences": [
-        {
-          "zh": "今天我的错题是零个。",
-          "en": "Today I have zero wrong answers."
-        },
-        {
-          "zh": "零度时，水会结冰。",
-          "en": "At zero degrees, water can freeze."
-        },
-        {
-          "zh": "下课后，我吃一点零食。",
-          "en": "After class, I eat a little snack."
-        }
-      ],
       "etymologyHint": "raindrop",
       "sourceTags": [
         "online-xinhua",
@@ -3710,24 +2791,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "record"
         }
       ],
-      "sentence": {
-        "zh": "音乐课上，我们一起唱歌。",
-        "en": "In music class, we sing together."
-      },
-      "sentences": [
-        {
-          "zh": "音乐课上，我们一起唱歌。",
-          "en": "In music class, we sing together."
-        },
-        {
-          "zh": "全班一起合唱生日歌。",
-          "en": "The whole class sings the birthday song together."
-        },
-        {
-          "zh": "爷爷家里有旧唱片。",
-          "en": "Grandpa has old records at home."
-        }
-      ],
       "etymologyHint": "mouth",
       "sourceTags": [
         "online-xinhua",
@@ -3779,24 +2842,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "中文",
           "meaningEn": "Chinese language"
-        }
-      ],
-      "sentence": {
-        "zh": "中文课上，我们学习短文。",
-        "en": "In Chinese class, we learn about short text."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，我们学习短文。",
-          "en": "In Chinese class, we learn about short text."
-        },
-        {
-          "zh": "我会说中文。",
-          "en": "I can speak Chinese."
-        },
-        {
-          "zh": "中文课上，我们认真听讲。",
-          "en": "In Chinese class, we listen carefully."
         }
       ],
       "etymologyHint": "A tattooed chest, representing writing",
@@ -3853,24 +2898,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "Chinese language"
         }
       ],
-      "sentence": {
-        "zh": "在中文课上，我们说中文。",
-        "en": "In Chinese class, we speak Chinese."
-      },
-      "sentences": [
-        {
-          "zh": "在中文课上，我们说中文。",
-          "en": "In Chinese class, we speak Chinese."
-        },
-        {
-          "zh": "中文来自中国。",
-          "en": "Chinese comes from China."
-        },
-        {
-          "zh": "我学习中文。",
-          "en": "I study Chinese."
-        }
-      ],
       "etymologyHint": "A line 丨 through the center of a box 口",
       "sourceTags": [
         "online-xinhua",
@@ -3922,24 +2949,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "请问",
           "meaningEn": "excuse me"
-        }
-      ],
-      "sentence": {
-        "zh": "我会说请坐。",
-        "en": "I can say \"please sit.\""
-      },
-      "sentences": [
-        {
-          "zh": "我会说请坐。",
-          "en": "I can say \"please sit.\""
-        },
-        {
-          "zh": "我会说请进。",
-          "en": "I can say \"please come in.\""
-        },
-        {
-          "zh": "我会说请问。",
-          "en": "I can say \"excuse me.\""
         }
       ],
       "etymologyHint": "speech",
@@ -3995,24 +3004,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "east side"
         }
       ],
-      "sentence": {
-        "zh": "书包里有很多东西。",
-        "en": "There are many things in the school bag."
-      },
-      "sentences": [
-        {
-          "zh": "书包里有很多东西。",
-          "en": "There are many things in the school bag."
-        },
-        {
-          "zh": "太阳从东方升起。",
-          "en": "The sun rises in the east."
-        },
-        {
-          "zh": "操场在教学楼的东边。",
-          "en": "The playground is on the east side of the classroom building."
-        }
-      ],
       "etymologyHint": "Simplified form of 東, the sun 日 rising behind a tree 木",
       "sourceTags": [
         "online-xinhua",
@@ -4064,24 +3055,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "感谢",
           "meaningEn": "thank"
-        }
-      ],
-      "sentence": {
-        "zh": "这束花是一份谢礼。",
-        "en": "This bunch of flowers is a thank-you gift."
-      },
-      "sentences": [
-        {
-          "zh": "这束花是一份谢礼。",
-          "en": "This bunch of flowers is a thank-you gift."
-        },
-        {
-          "zh": "谢谢你帮我拿书。",
-          "en": "Thank you for helping me carry the book."
-        },
-        {
-          "zh": "我感谢老师的帮助。",
-          "en": "I thank the teacher for the help."
         }
       ],
       "etymologyHint": "speech",
@@ -4137,24 +3110,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "one hundred years"
         }
       ],
-      "sentence": {
-        "zh": "我会数到一百。",
-        "en": "I can count to one hundred."
-      },
-      "sentences": [
-        {
-          "zh": "我会数到一百。",
-          "en": "I can count to one hundred."
-        },
-        {
-          "zh": "盒子里有百个小贴纸。",
-          "en": "There are one hundred small stickers in the box."
-        },
-        {
-          "zh": "老师在黑板上写下百年。",
-          "en": "The teacher writes one hundred years on the board."
-        }
-      ],
       "etymologyHint": "one",
       "sourceTags": [
         "online-xinhua",
@@ -4206,24 +3161,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "英语",
           "meaningEn": "English language"
-        }
-      ],
-      "sentence": {
-        "zh": "英国有很多学校。",
-        "en": "The United Kingdom has many schools."
-      },
-      "sentences": [
-        {
-          "zh": "英国有很多学校。",
-          "en": "The United Kingdom has many schools."
-        },
-        {
-          "zh": "我会读简单的英文。",
-          "en": "I can read simple written English."
-        },
-        {
-          "zh": "她每天练习英语。",
-          "en": "She practises English every day."
         }
       ],
       "etymologyHint": "flower",
@@ -4280,24 +3217,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "long jump"
         }
       ],
-      "sentence": {
-        "zh": "这节课，我们学习跳高。",
-        "en": "In this lesson, we learn about high jump."
-      },
-      "sentences": [
-        {
-          "zh": "这节课，我们学习跳高。",
-          "en": "In this lesson, we learn about high jump."
-        },
-        {
-          "zh": "音乐响起后，妹妹开始跳舞。",
-          "en": "After the music starts, my younger sister begins to dance."
-        },
-        {
-          "zh": "哥哥在操场上练习跳远。",
-          "en": "My older brother practises long jump on the playground."
-        }
-      ],
       "etymologyHint": "foot",
       "sourceTags": [
         "online-xinhua",
@@ -4349,24 +3268,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "千字",
           "meaningEn": "one thousand characters"
-        }
-      ],
-      "sentence": {
-        "zh": "我们今天走了一千米。",
-        "en": "We walked one kilometre today."
-      },
-      "sentences": [
-        {
-          "zh": "我们今天走了一千米。",
-          "en": "We walked one kilometre today."
-        },
-        {
-          "zh": "老师在黑板上写下一千。",
-          "en": "The teacher writes one thousand on the board."
-        },
-        {
-          "zh": "这篇短文大约有千字。",
-          "en": "This short text has about one thousand characters."
         }
       ],
       "etymologyHint": "",
@@ -4423,24 +3324,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "running track"
         }
       ],
-      "sentence": {
-        "zh": "运动会上，我参加短跑。",
-        "en": "At the sports day, I take part in the sprint."
-      },
-      "sentences": [
-        {
-          "zh": "运动会上，我参加短跑。",
-          "en": "At the sports day, I take part in the sprint."
-        },
-        {
-          "zh": "放学后，我在操场慢跑。",
-          "en": "After school, I jog on the playground."
-        },
-        {
-          "zh": "比赛时，大家沿着跑道向前跑。",
-          "en": "During the race, everyone runs forward along the running track."
-        }
-      ],
       "etymologyHint": "foot",
       "sourceTags": [
         "online-xinhua",
@@ -4492,24 +3375,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "澳元",
           "meaningEn": "Australian dollar"
-        }
-      ],
-      "sentence": {
-        "zh": "我的老师是澳洲人。",
-        "en": "My teacher is Australian."
-      },
-      "sentences": [
-        {
-          "zh": "我的老师是澳洲人。",
-          "en": "My teacher is Australian."
-        },
-        {
-          "zh": "澳洲有很多学校。",
-          "en": "Australia has many schools."
-        },
-        {
-          "zh": "这个本子要两澳元。",
-          "en": "This notebook costs two Australian dollars."
         }
       ],
       "etymologyHint": "water",
@@ -4566,24 +3431,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "south side"
         }
       ],
-      "sentence": {
-        "zh": "地图上可以看到南半球。",
-        "en": "The Southern Hemisphere can be seen on the map."
-      },
-      "sentences": [
-        {
-          "zh": "地图上可以看到南半球。",
-          "en": "The Southern Hemisphere can be seen on the map."
-        },
-        {
-          "zh": "太阳从南方照进教室。",
-          "en": "The sun shines into the classroom from the south."
-        },
-        {
-          "zh": "学校在公园的南边。",
-          "en": "The school is on the south side of the park."
-        }
-      ],
       "etymologyHint": "A musical bell",
       "sourceTags": [
         "online-xinhua",
@@ -4638,24 +3485,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "no problem"
         }
       ],
-      "sentence": {
-        "zh": "我没有忘记带课本。",
-        "en": "I did not forget to bring my textbook."
-      },
-      "sentences": [
-        {
-          "zh": "我没有忘记带课本。",
-          "en": "I did not forget to bring my textbook."
-        },
-        {
-          "zh": "写错了也没关系。",
-          "en": "It is okay if you write it wrong."
-        },
-        {
-          "zh": "没事，我们一起想办法。",
-          "en": "It is okay, we can find a way together."
-        }
-      ],
       "etymologyHint": "water",
       "sourceTags": [
         "online-xinhua",
@@ -4707,24 +3536,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "东西",
           "meaningEn": "thing"
-        }
-      ],
-      "sentence": {
-        "zh": "我每天练习买东西。",
-        "en": "I practise going shopping every day."
-      },
-      "sentences": [
-        {
-          "zh": "我每天练习买东西。",
-          "en": "I practise going shopping every day."
-        },
-        {
-          "zh": "学校义卖时，我们卖东西。",
-          "en": "At the school fair, we sell things."
-        },
-        {
-          "zh": "请把东西放进书包。",
-          "en": "Please put the things into the school bag."
         }
       ],
       "etymologyHint": "A bird settling into its nest, representing sunset; compare 東",
@@ -4781,24 +3592,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "tie shoelaces"
         }
       ],
-      "sentence": {
-        "zh": "他说没关系。",
-        "en": "He says it is no problem."
-      },
-      "sentences": [
-        {
-          "zh": "他说没关系。",
-          "en": "He says it is no problem."
-        },
-        {
-          "zh": "我和同学关系很好。",
-          "en": "My relationship with my classmate is good."
-        },
-        {
-          "zh": "我会系鞋带。",
-          "en": "I can tie shoelaces."
-        }
-      ],
       "etymologyHint": "thread",
       "sourceTags": [
         "online-xinhua",
@@ -4851,24 +3644,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "千万",
           "meaningEn": "ten million; many"
-        }
-      ],
-      "sentence": {
-        "zh": "请把一万圈出来。",
-        "en": "Please circle ten thousand."
-      },
-      "sentences": [
-        {
-          "zh": "请把一万圈出来。",
-          "en": "Please circle ten thousand."
-        },
-        {
-          "zh": "万一下雨，我们就在教室里玩。",
-          "en": "If it rains, we will play in the classroom."
-        },
-        {
-          "zh": "请把千万圈出来。",
-          "en": "Please circle ten million."
         }
       ],
       "etymologyHint": "",
@@ -4924,24 +3699,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "Asia"
         }
       ],
-      "sentence": {
-        "zh": "我的朋友是澳洲人。",
-        "en": "My friend is Australian."
-      },
-      "sentences": [
-        {
-          "zh": "我的朋友是澳洲人。",
-          "en": "My friend is Australian."
-        },
-        {
-          "zh": "澳洲有很多美丽的海边。",
-          "en": "Australia has many beautiful beaches."
-        },
-        {
-          "zh": "中国在亚洲。",
-          "en": "China is in Asia."
-        }
-      ],
       "etymologyHint": "A state 州 surrounded by water 氵; 州 also provides the pronunciation",
       "sourceTags": [
         "online-xinhua",
@@ -4993,24 +3750,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "走开",
           "meaningEn": "walk away"
-        }
-      ],
-      "sentence": {
-        "zh": "我每天练习慢走。",
-        "en": "I practise walking slowly every day."
-      },
-      "sentences": [
-        {
-          "zh": "我每天练习慢走。",
-          "en": "I practise walking slowly every day."
-        },
-        {
-          "zh": "我每天练习走路。",
-          "en": "I practise walking every day."
-        },
-        {
-          "zh": "老师示范走开这个动作。",
-          "en": "The teacher demonstrates the action walk away."
         }
       ],
       "etymologyHint": "Someone 土 stepping with their foot 止",
@@ -5067,24 +3806,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "this one"
         }
       ],
-      "sentence": {
-        "zh": "我有一个苹果。",
-        "en": "I have one apple."
-      },
-      "sentences": [
-        {
-          "zh": "我有一个苹果。",
-          "en": "I have one apple."
-        },
-        {
-          "zh": "老师在黑板上写下三个。",
-          "en": "The teacher writes three items on the board."
-        },
-        {
-          "zh": "这道题问这个。",
-          "en": "This question asks this."
-        }
-      ],
       "etymologyHint": "A tally 丨 of people 人",
       "sourceTags": [
         "online-xinhua",
@@ -5138,24 +3859,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "sit properly"
         }
       ],
-      "sentence": {
-        "zh": "我会坐下。",
-        "en": "I can sit down."
-      },
-      "sentences": [
-        {
-          "zh": "我会坐下。",
-          "en": "I can sit down."
-        },
-        {
-          "zh": "老师微笑着说：请坐。",
-          "en": "The teacher smiles and says: please sit."
-        },
-        {
-          "zh": "老师示范坐好这个动作。",
-          "en": "The teacher demonstrates the action sit properly."
-        }
-      ],
       "etymologyHint": "Two people 从 sitting on the ground 土",
       "sourceTags": [
         "online-xinhua",
@@ -5207,24 +3910,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "一周",
           "meaningEn": "one week"
-        }
-      ],
-      "sentence": {
-        "zh": "周末，我在家读书。",
-        "en": "On the weekend, I read at home."
-      },
-      "sentences": [
-        {
-          "zh": "周末，我在家读书。",
-          "en": "On the weekend, I read at home."
-        },
-        {
-          "zh": "周日，我去中文学校。",
-          "en": "On Sunday, I go to Chinese school."
-        },
-        {
-          "zh": "一周有七天。",
-          "en": "There are seven days in a week."
         }
       ],
       "etymologyHint": "Border 冂 around land 土 with a well 口",
@@ -5281,24 +3966,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "north side"
         }
       ],
-      "sentence": {
-        "zh": "冬天，北风吹得很冷。",
-        "en": "In winter, the north wind feels cold."
-      },
-      "sentences": [
-        {
-          "zh": "冬天，北风吹得很冷。",
-          "en": "In winter, the north wind feels cold."
-        },
-        {
-          "zh": "请看北方的位置。",
-          "en": "Please look at the position of north."
-        },
-        {
-          "zh": "地图上标着北边。",
-          "en": "North side is marked on the map."
-        }
-      ],
       "etymologyHint": "Two people 匕 sitting back-to-back; phonetic loan for \"north\"",
       "sourceTags": [
         "online-xinhua",
@@ -5350,24 +4017,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "爸爸",
           "meaningEn": "dad"
-        }
-      ],
-      "sentence": {
-        "zh": "周末，我和老爸一起吃饭。",
-        "en": "On the weekend, I eat with my dad."
-      },
-      "sentences": [
-        {
-          "zh": "周末，我和老爸一起吃饭。",
-          "en": "On the weekend, I eat with my dad."
-        },
-        {
-          "zh": "老师请大家说说爸妈。",
-          "en": "The teacher asks everyone to talk about parents."
-        },
-        {
-          "zh": "故事里提到爸爸。",
-          "en": "The story mentions dad."
         }
       ],
       "etymologyHint": "father",
@@ -5423,24 +4072,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "tonight"
         }
       ],
-      "sentence": {
-        "zh": "今天，我学了一个新字。",
-        "en": "Today, I learnt a new character."
-      },
-      "sentences": [
-        {
-          "zh": "今天，我学了一个新字。",
-          "en": "Today, I learnt a new character."
-        },
-        {
-          "zh": "今日天气很好。",
-          "en": "The weather is good today."
-        },
-        {
-          "zh": "今晚，我在家读书。",
-          "en": "On tonight, I read at home."
-        }
-      ],
       "etymologyHint": "A mouth 亼 talking about things",
       "sourceTags": [
         "online-xinhua",
@@ -5492,24 +4123,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "妈妈",
           "meaningEn": "mum"
-        }
-      ],
-      "sentence": {
-        "zh": "周末，我和老妈一起吃饭。",
-        "en": "On the weekend, I eat with my mum."
-      },
-      "sentences": [
-        {
-          "zh": "周末，我和老妈一起吃饭。",
-          "en": "On the weekend, I eat with my mum."
-        },
-        {
-          "zh": "周末，我和爸妈一起吃饭。",
-          "en": "On the weekend, I eat with my parents."
-        },
-        {
-          "zh": "我的妈妈在家里等我。",
-          "en": "My mum waits for me at home."
         }
       ],
       "etymologyHint": "woman",
@@ -5566,24 +4179,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "six animals or small items"
         }
       ],
-      "sentence": {
-        "zh": "草地上有一只小鸟。",
-        "en": "There is one bird on the grass."
-      },
-      "sentences": [
-        {
-          "zh": "草地上有一只小鸟。",
-          "en": "There is one bird on the grass."
-        },
-        {
-          "zh": "树上有两只小鸟。",
-          "en": "There are two birds in the tree."
-        },
-        {
-          "zh": "图画里有六只小羊。",
-          "en": "There are six lambs in the picture."
-        }
-      ],
       "etymologyHint": "Simple words 八 coming from the mouth 口",
       "sourceTags": [
         "online-xinhua",
@@ -5635,24 +4230,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "末尾",
           "meaningEn": "end"
-        }
-      ],
-      "sentence": {
-        "zh": "中文课上，我们学习期末。",
-        "en": "In Chinese class, we learn about end of term."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，我们学习期末。",
-          "en": "In Chinese class, we learn about end of term."
-        },
-        {
-          "zh": "周末，我们一起去学校。",
-          "en": "On weekend, we go to school together."
-        },
-        {
-          "zh": "这节课，我们学习末尾。",
-          "en": "In this lesson, we learn about end."
         }
       ],
       "etymologyHint": "The top 一 of a tree 木",
@@ -5708,24 +4285,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "stand properly"
         }
       ],
-      "sentence": {
-        "zh": "我会站立。",
-        "en": "I can stand."
-      },
-      "sentences": [
-        {
-          "zh": "我会站立。",
-          "en": "I can stand."
-        },
-        {
-          "zh": "放学后，我在车站等车。",
-          "en": "After school, I wait for the bus at the station."
-        },
-        {
-          "zh": "排队时，请站好。",
-          "en": "Please stand properly when lining up."
-        }
-      ],
       "etymologyHint": "stand",
       "sourceTags": [
         "online-xinhua",
@@ -5777,24 +4336,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "路口",
           "meaningEn": "intersection"
-        }
-      ],
-      "sentence": {
-        "zh": "这节课，我们学习开口。",
-        "en": "In this lesson, we learn about open your mouth."
-      },
-      "sentences": [
-        {
-          "zh": "这节课，我们学习开口。",
-          "en": "In this lesson, we learn about open your mouth."
-        },
-        {
-          "zh": "我在学校门口等妈妈。",
-          "en": "I wait for Mum at the school gate."
-        },
-        {
-          "zh": "过路口时要看红绿灯。",
-          "en": "When crossing an intersection, look at the traffic lights."
         }
       ],
       "etymologyHint": "An open mouth",
@@ -5850,24 +4391,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "come on"
         }
       ],
-      "sentence": {
-        "zh": "小车在路上来回开。",
-        "en": "The small car goes back and forth on the road."
-      },
-      "sentences": [
-        {
-          "zh": "小车在路上来回开。",
-          "en": "The small car goes back and forth on the road."
-        },
-        {
-          "zh": "下课后，同学们出来玩。",
-          "en": "After class, the classmates come out to play."
-        },
-        {
-          "zh": "来吧，我们一起练习。",
-          "en": "Come on, let's practise together."
-        }
-      ],
       "etymologyHint": "A wheat plant that has not yet borne fruit; compare 來",
       "sourceTags": [
         "online-xinhua",
@@ -5919,24 +4442,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "育苗",
           "meaningEn": "raise seedlings"
-        }
-      ],
-      "sentence": {
-        "zh": "体育课上，我们一起跑步。",
-        "en": "In PE class, we run together."
-      },
-      "sentences": [
-        {
-          "zh": "体育课上，我们一起跑步。",
-          "en": "In PE class, we run together."
-        },
-        {
-          "zh": "学校重视中文教育。",
-          "en": "The school values Chinese education."
-        },
-        {
-          "zh": "春天，农民在田里育苗。",
-          "en": "In spring, farmers raise seedlings in the field."
         }
       ],
       "etymologyHint": "A pregnant woman with a baby ⺼ in her womb",
@@ -5992,24 +4497,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "sky"
         }
       ],
-      "sentence": {
-        "zh": "今天我们上中文课。",
-        "en": "Today we have Chinese class."
-      },
-      "sentences": [
-        {
-          "zh": "今天我们上中文课。",
-          "en": "Today we have Chinese class."
-        },
-        {
-          "zh": "今天的天气很好。",
-          "en": "Today's weather is very good."
-        },
-        {
-          "zh": "天空中有白云。",
-          "en": "There are white clouds in the sky."
-        }
-      ],
       "etymologyHint": "The heavens 一 above a man 大",
       "sourceTags": [
         "online-xinhua",
@@ -6061,24 +4548,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "表哥",
           "meaningEn": "older male cousin"
-        }
-      ],
-      "sentence": {
-        "zh": "周末，我和哥哥一起吃饭。",
-        "en": "On the weekend, I eat with my older brother."
-      },
-      "sentences": [
-        {
-          "zh": "周末，我和哥哥一起吃饭。",
-          "en": "On the weekend, I eat with my older brother."
-        },
-        {
-          "zh": "这节课讲到大哥。",
-          "en": "This lesson talks about older brother."
-        },
-        {
-          "zh": "故事里提到表哥。",
-          "en": "The story mentions older male cousin."
         }
       ],
       "etymologyHint": "One person talking 可 over another 可",
@@ -6134,24 +4603,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "understand"
         }
       ],
-      "sentence": {
-        "zh": "明天我们去图书馆。",
-        "en": "Tomorrow we go to the library."
-      },
-      "sentences": [
-        {
-          "zh": "明天我们去图书馆。",
-          "en": "Tomorrow we go to the library."
-        },
-        {
-          "zh": "教室的灯很明亮。",
-          "en": "The classroom lights are bright."
-        },
-        {
-          "zh": "听完解释，我明白了。",
-          "en": "After hearing the explanation, I understand."
-        }
-      ],
       "etymologyHint": "The light of the sun 日 and moon 月",
       "sourceTags": [
         "online-xinhua",
@@ -6203,24 +4654,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "大姐",
           "meaningEn": "older sister"
-        }
-      ],
-      "sentence": {
-        "zh": "周末，我和姐妹一起吃饭。",
-        "en": "On the weekend, I eat with my sisters."
-      },
-      "sentences": [
-        {
-          "zh": "周末，我和姐妹一起吃饭。",
-          "en": "On the weekend, I eat with my sisters."
-        },
-        {
-          "zh": "周末，我和姐姐一起吃饭。",
-          "en": "On the weekend, I eat with my older sister."
-        },
-        {
-          "zh": "老师请大家说说大姐。",
-          "en": "The teacher asks everyone to talk about older sister."
         }
       ],
       "etymologyHint": "woman",
@@ -6276,24 +4709,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "notebook"
         }
       ],
-      "sentence": {
-        "zh": "请把课本放在桌上。",
-        "en": "Please put the textbook on the desk."
-      },
-      "sentences": [
-        {
-          "zh": "请把课本放在桌上。",
-          "en": "Please put the textbook on the desk."
-        },
-        {
-          "zh": "桌上放着五本书。",
-          "en": "There are five books on the table."
-        },
-        {
-          "zh": "我把本子放进书包。",
-          "en": "I put the notebook into my school bag."
-        }
-      ],
       "etymologyHint": "A tree 木 with its roots highlighted",
       "sourceTags": [
         "online-xinhua",
@@ -6345,24 +4760,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "音乐",
           "meaningEn": "music"
-        }
-      ],
-      "sentence": {
-        "zh": "老师教我们这个字的读音。",
-        "en": "The teacher teaches us the pronunciation of this character."
-      },
-      "sentences": [
-        {
-          "zh": "老师教我们这个字的读音。",
-          "en": "The teacher teaches us the pronunciation of this character."
-        },
-        {
-          "zh": "我听见鼻音。",
-          "en": "I hear nasal sound."
-        },
-        {
-          "zh": "音乐课上，我们唱歌。",
-          "en": "In music class, we sing."
         }
       ],
       "etymologyHint": "A tongue 立 forming a sound in the mouth 日",
@@ -6418,24 +4815,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "go back"
         }
       ],
-      "sentence": {
-        "zh": "去年我学了很多汉字。",
-        "en": "Last year, I learned many Chinese characters."
-      },
-      "sentences": [
-        {
-          "zh": "去年我学了很多汉字。",
-          "en": "Last year, I learned many Chinese characters."
-        },
-        {
-          "zh": "下课后，我们一起出去玩。",
-          "en": "After class, we go out to play together."
-        },
-        {
-          "zh": "天晚了，我要回去。",
-          "en": "It is late, so I need to go back."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "online-xinhua",
@@ -6489,24 +4868,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "read books"
         }
       ],
-      "sentence": {
-        "zh": "中文课上，我们学习书包。",
-        "en": "In Chinese class, we learn about school bag."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，我们学习书包。",
-          "en": "In Chinese class, we learn about school bag."
-        },
-        {
-          "zh": "我买了一本新书。",
-          "en": "I bought a new book."
-        },
-        {
-          "zh": "我每天读书二十分钟。",
-          "en": "I read books for twenty minutes every day."
-        }
-      ],
       "etymologyHint": "A mark made by a pen ⺺",
       "sourceTags": [
         "online-xinhua",
@@ -6558,24 +4919,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "回家",
           "meaningEn": "go home"
-        }
-      ],
-      "sentence": {
-        "zh": "他来回走了两次。",
-        "en": "He walked back and forth twice."
-      },
-      "sentences": [
-        {
-          "zh": "他来回走了两次。",
-          "en": "He walked back and forth twice."
-        },
-        {
-          "zh": "我每天练习回去。",
-          "en": "I practise going back every day."
-        },
-        {
-          "zh": "老师请大家说说回家。",
-          "en": "The teacher asks everyone to talk about go home."
         }
       ],
       "etymologyHint": "Originally, a spiral signifying return",
@@ -6632,24 +4975,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "play and enjoy"
         }
       ],
-      "sentence": {
-        "zh": "生日那天，我很快乐。",
-        "en": "On my birthday, I am very happy."
-      },
-      "sentences": [
-        {
-          "zh": "生日那天，我很快乐。",
-          "en": "On my birthday, I am very happy."
-        },
-        {
-          "zh": "中文课上，我们学习音乐。",
-          "en": "In Chinese class, we learn about music."
-        },
-        {
-          "zh": "老师示范游乐这个动作。",
-          "en": "The teacher demonstrates the action play and enjoy."
-        }
-      ],
       "etymologyHint": "Simplified form of 樂, a musical instrument with wood 木, strings 幺, and a pick 白",
       "sourceTags": [
         "online-xinhua",
@@ -6701,24 +5026,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "昨日",
           "meaningEn": "yesterday"
-        }
-      ],
-      "sentence": {
-        "zh": "昨天我读了一本书。",
-        "en": "Yesterday, I read a book."
-      },
-      "sentences": [
-        {
-          "zh": "昨天我读了一本书。",
-          "en": "Yesterday, I read a book."
-        },
-        {
-          "zh": "昨晚我很早睡觉。",
-          "en": "Last night, I went to bed early."
-        },
-        {
-          "zh": "昨日的作业我已经完成。",
-          "en": "I have already finished yesterday's homework."
         }
       ],
       "etymologyHint": "day",
@@ -6776,24 +5083,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "younger brother"
         }
       ],
-      "sentence": {
-        "zh": "这节课讲到弟弟。",
-        "en": "This lesson talks about younger brother."
-      },
-      "sentences": [
-        {
-          "zh": "这节课讲到弟弟。",
-          "en": "This lesson talks about younger brother."
-        },
-        {
-          "zh": "老师请大家说说兄弟。",
-          "en": "The teacher asks everyone to talk about brothers."
-        },
-        {
-          "zh": "老师请大家说说小弟。",
-          "en": "The teacher asks everyone to talk about younger brother."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "online-xinhua",
@@ -6845,24 +5134,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "新年",
           "meaningEn": "New Year"
-        }
-      ],
-      "sentence": {
-        "zh": "这棵大树已经有百年。",
-        "en": "This big tree is already one hundred years old."
-      },
-      "sentences": [
-        {
-          "zh": "这棵大树已经有百年。",
-          "en": "This big tree is already one hundred years old."
-        },
-        {
-          "zh": "我认识这位少年。",
-          "en": "I know this young person."
-        },
-        {
-          "zh": "新年，我在家读书。",
-          "en": "On new year, I read at home."
         }
       ],
       "etymologyHint": "A man 干 carrying grain, representing the annual harvest",
@@ -6918,24 +5189,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "younger sister"
         }
       ],
-      "sentence": {
-        "zh": "故事里提到姐妹。",
-        "en": "The story mentions sisters."
-      },
-      "sentences": [
-        {
-          "zh": "故事里提到姐妹。",
-          "en": "The story mentions sisters."
-        },
-        {
-          "zh": "老师请大家说说妹妹。",
-          "en": "The teacher asks everyone to talk about younger sister."
-        },
-        {
-          "zh": "这节课讲到小妹。",
-          "en": "This lesson talks about younger sister."
-        }
-      ],
       "etymologyHint": "woman",
       "sourceTags": [
         "online-xinhua",
@@ -6987,24 +5240,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "笔画",
           "meaningEn": "stroke"
-        }
-      ],
-      "sentence": {
-        "zh": "中文课上，我们学习铅笔。",
-        "en": "In Chinese class, we learn about pencil."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，我们学习铅笔。",
-          "en": "In Chinese class, we learn about pencil."
-        },
-        {
-          "zh": "请拿笔写字。",
-          "en": "Please take a pen and write."
-        },
-        {
-          "zh": "汉字有不同的笔画。",
-          "en": "Chinese characters have different strokes."
         }
       ],
       "etymologyHint": "A bamboo rod ⺮ tipped with hair 毛",
@@ -7060,24 +5295,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "smiling face"
         }
       ],
-      "sentence": {
-        "zh": "这幅画的颜色很好看。",
-        "en": "The colours in this picture look nice."
-      },
-      "sentences": [
-        {
-          "zh": "这幅画的颜色很好看。",
-          "en": "The colours in this picture look nice."
-        },
-        {
-          "zh": "我用颜料画花。",
-          "en": "I use paint to draw flowers."
-        },
-        {
-          "zh": "她的笑颜很温暖。",
-          "en": "Her smiling face is warm."
-        }
-      ],
       "etymologyHint": "head",
       "sourceTags": [
         "online-xinhua",
@@ -7129,24 +5346,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "进入",
           "meaningEn": "enter"
-        }
-      ],
-      "sentence": {
-        "zh": "我会进去。",
-        "en": "I can go inside."
-      },
-      "sentences": [
-        {
-          "zh": "我会进去。",
-          "en": "I can go inside."
-        },
-        {
-          "zh": "听到敲门声，老师说请进。",
-          "en": "Hearing a knock, the teacher says please come in."
-        },
-        {
-          "zh": "请安静地进入图书馆。",
-          "en": "Please enter the library quietly."
         }
       ],
       "etymologyHint": "walk",
@@ -7202,24 +5401,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "paper sheet"
         }
       ],
-      "sentence": {
-        "zh": "我在白纸上写名字。",
-        "en": "I write my name on white paper."
-      },
-      "sentences": [
-        {
-          "zh": "我在白纸上写名字。",
-          "en": "I write my name on white paper."
-        },
-        {
-          "zh": "老师在作业上贴了贴纸。",
-          "en": "The teacher put a sticker on the homework."
-        },
-        {
-          "zh": "这些纸张放在桌上。",
-          "en": "These sheets of paper are on the table."
-        }
-      ],
       "etymologyHint": "silk",
       "sourceTags": [
         "online-xinhua",
@@ -7271,24 +5452,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "出门",
           "meaningEn": "go out"
-        }
-      ],
-      "sentence": {
-        "zh": "我在地图上找到出口。",
-        "en": "I find an exit on the map."
-      },
-      "sentences": [
-        {
-          "zh": "我在地图上找到出口。",
-          "en": "I find an exit on the map."
-        },
-        {
-          "zh": "我会出来。",
-          "en": "I can come out."
-        },
-        {
-          "zh": "我会出门。",
-          "en": "I can go out."
         }
       ],
       "etymologyHint": "A sprout 屮 growing out of a container 凵",
@@ -7345,24 +5508,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "red"
         }
       ],
-      "sentence": {
-        "zh": "图画里有一块金色。",
-        "en": "There is some gold colour in the picture."
-      },
-      "sentences": [
-        {
-          "zh": "图画里有一块金色。",
-          "en": "There is some gold colour in the picture."
-        },
-        {
-          "zh": "画画时，我用了颜色。",
-          "en": "When drawing, I use colour."
-        },
-        {
-          "zh": "老师让我们找出红色。",
-          "en": "The teacher asks us to find red."
-        }
-      ],
       "etymologyHint": "What a person ⺈ desires 巴",
       "sourceTags": [
         "online-xinhua",
@@ -7414,24 +5559,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "月饼",
           "meaningEn": "mooncake"
-        }
-      ],
-      "sentence": {
-        "zh": "晚上，月亮很圆。",
-        "en": "At night, the moon is round."
-      },
-      "sentences": [
-        {
-          "zh": "晚上，月亮很圆。",
-          "en": "At night, the moon is round."
-        },
-        {
-          "zh": "老师问现在是几月份。",
-          "en": "The teacher asks what month it is now."
-        },
-        {
-          "zh": "中秋节，我们吃月饼。",
-          "en": "At Mid-Autumn Festival, we eat mooncakes."
         }
       ],
       "etymologyHint": "A crescent moon",
@@ -7487,24 +5614,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "one after another"
         }
       ],
-      "sentence": {
-        "zh": "这位先生是我们的老师。",
-        "en": "This gentleman is our teacher."
-      },
-      "sentences": [
-        {
-          "zh": "这位先生是我们的老师。",
-          "en": "This gentleman is our teacher."
-        },
-        {
-          "zh": "上课前，首先请坐好。",
-          "en": "Before class, first please sit properly."
-        },
-        {
-          "zh": "他们先后走进教室。",
-          "en": "They walk into the classroom one after another."
-        }
-      ],
       "etymologyHint": "Someone stepping 止 in front of another person 儿",
       "sourceTags": [
         "online-xinhua",
@@ -7556,24 +5665,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "日出",
           "meaningEn": "sunrise"
-        }
-      ],
-      "sentence": {
-        "zh": "今天是我的生日。",
-        "en": "Today is my birthday."
-      },
-      "sentences": [
-        {
-          "zh": "今天是我的生日。",
-          "en": "Today is my birthday."
-        },
-        {
-          "zh": "我每天写一篇日记。",
-          "en": "I write a diary entry every day."
-        },
-        {
-          "zh": "早上，我们看日出。",
-          "en": "In the morning, we watch the sunrise."
         }
       ],
       "etymologyHint": "The sun",
@@ -7629,24 +5720,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "female student"
         }
       ],
-      "sentence": {
-        "zh": "中文课上，我们学习师生。",
-        "en": "In Chinese class, we learn about teachers and students."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，我们学习师生。",
-          "en": "In Chinese class, we learn about teachers and students."
-        },
-        {
-          "zh": "王先生是我们的中文老师。",
-          "en": "Mr Wang is our Chinese teacher."
-        },
-        {
-          "zh": "我认识这位女生。",
-          "en": "I know this female student."
-        }
-      ],
       "etymologyHint": " A shoot 屮 growing in the soil 土",
       "sourceTags": [
         "online-xinhua",
@@ -7698,24 +5771,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "澳洲人",
           "meaningEn": "Australian person"
-        }
-      ],
-      "sentence": {
-        "zh": "这节课，我们学习人口。",
-        "en": "In this lesson, we learn about population."
-      },
-      "sentences": [
-        {
-          "zh": "这节课，我们学习人口。",
-          "en": "In this lesson, we learn about population."
-        },
-        {
-          "zh": "这道题问什么人。",
-          "en": "This question asks what person."
-        },
-        {
-          "zh": "我认识这位澳洲人。",
-          "en": "I know this australian person."
         }
       ],
       "etymologyHint": "The legs of a human being",
@@ -7772,24 +5827,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "red bean"
         }
       ],
-      "sentence": {
-        "zh": "我用红色画了一朵花。",
-        "en": "I use red to draw a flower."
-      },
-      "sentences": [
-        {
-          "zh": "我用红色画了一朵花。",
-          "en": "I use red to draw a flower."
-        },
-        {
-          "zh": "图画里画着红花。",
-          "en": "The picture shows red flower."
-        },
-        {
-          "zh": "桌上放着红豆。",
-          "en": "There is a red bean on the table."
-        }
-      ],
       "etymologyHint": "silk",
       "sourceTags": [
         "online-xinhua",
@@ -7841,24 +5878,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "开门",
           "meaningEn": "open the door"
-        }
-      ],
-      "sentence": {
-        "zh": "车来了，请走开一点。",
-        "en": "The car is coming, so please move away a little."
-      },
-      "sentences": [
-        {
-          "zh": "车来了，请走开一点。",
-          "en": "The car is coming, so please move away a little."
-        },
-        {
-          "zh": "门边有一个电灯开关。",
-          "en": "There is a light switch by the door."
-        },
-        {
-          "zh": "请帮我开门。",
-          "en": "Please help me open the door."
         }
       ],
       "etymologyHint": "Simplified form of 開; hands 廾 lifting the latch 一 of a door",
@@ -7914,24 +5933,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "self"
         }
       ],
-      "sentence": {
-        "zh": "我们一起读中文书。",
-        "en": "We read Chinese books together."
-      },
-      "sentences": [
-        {
-          "zh": "我们一起读中文书。",
-          "en": "We read Chinese books together."
-        },
-        {
-          "zh": "这是我的书包吗？",
-          "en": "Is this my school bag?"
-        },
-        {
-          "zh": "上台前，我先做自我介绍。",
-          "en": "Before going on stage, I introduce myself."
-        }
-      ],
       "etymologyHint": "A hand 扌 holding a weapon 戈",
       "sourceTags": [
         "online-xinhua",
@@ -7983,24 +5984,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "关心",
           "meaningEn": "care about"
-        }
-      ],
-      "sentence": {
-        "zh": "这节课，我们学习开关。",
-        "en": "In this lesson, we learn about switch."
-      },
-      "sentences": [
-        {
-          "zh": "这节课，我们学习开关。",
-          "en": "In this lesson, we learn about switch."
-        },
-        {
-          "zh": "老师听见我说没关系。",
-          "en": "The teacher hears me say \"no problem.\""
-        },
-        {
-          "zh": "老师很关心我们。",
-          "en": "The teacher cares about us."
         }
       ],
       "etymologyHint": "",
@@ -8056,24 +6039,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "yellow flower"
         }
       ],
-      "sentence": {
-        "zh": "午饭时，我吃了蛋黄。",
-        "en": "At lunch, I eat egg yolk."
-      },
-      "sentences": [
-        {
-          "zh": "午饭时，我吃了蛋黄。",
-          "en": "At lunch, I eat egg yolk."
-        },
-        {
-          "zh": "老师让我们找出黄色。",
-          "en": "The teacher asks us to find yellow."
-        },
-        {
-          "zh": "图画里画着黄花。",
-          "en": "The picture shows yellow flower."
-        }
-      ],
       "etymologyHint": "A jade pendant",
       "sourceTags": [
         "online-xinhua",
@@ -8125,24 +6090,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "星期天",
           "meaningEn": "Sunday"
-        }
-      ],
-      "sentence": {
-        "zh": "这个星期我每天读中文。",
-        "en": "This week I read Chinese every day."
-      },
-      "sentences": [
-        {
-          "zh": "这个星期我每天读中文。",
-          "en": "This week I read Chinese every day."
-        },
-        {
-          "zh": "图画里画着金星。",
-          "en": "The picture shows venus."
-        },
-        {
-          "zh": "星期天，我在家读书。",
-          "en": "On Sunday, I read at home."
         }
       ],
       "etymologyHint": "sun",
@@ -8199,24 +6146,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "girl"
         }
       ],
-      "sentence": {
-        "zh": "操场上有一位少女。",
-        "en": "There is a young girl on the playground."
-      },
-      "sentences": [
-        {
-          "zh": "操场上有一位少女。",
-          "en": "There is a young girl on the playground."
-        },
-        {
-          "zh": "操场上有一位女生。",
-          "en": "There is a female student on the playground."
-        },
-        {
-          "zh": "我认识这位女孩。",
-          "en": "I know this girl."
-        }
-      ],
       "etymologyHint": "A woman turned to the side",
       "sourceTags": [
         "online-xinhua",
@@ -8269,24 +6198,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "期末",
           "meaningEn": "end of term"
-        }
-      ],
-      "sentence": {
-        "zh": "这个星期我每天练习中文。",
-        "en": "This week, I practise Chinese every day."
-      },
-      "sentences": [
-        {
-          "zh": "这个星期我每天练习中文。",
-          "en": "This week, I practise Chinese every day."
-        },
-        {
-          "zh": "星期天，我们去图书馆。",
-          "en": "On Sunday, we go to the library."
-        },
-        {
-          "zh": "期末，我们有中文表演。",
-          "en": "At the end of the term, we have a Chinese performance."
         }
       ],
       "etymologyHint": "moon",
@@ -8342,24 +6253,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "male student"
         }
       ],
-      "sentence": {
-        "zh": "我认识这位男孩。",
-        "en": "I know this boy."
-      },
-      "sentences": [
-        {
-          "zh": "我认识这位男孩。",
-          "en": "I know this boy."
-        },
-        {
-          "zh": "操场上有一位男士。",
-          "en": "There is a man on the playground."
-        },
-        {
-          "zh": "我认识这位男生。",
-          "en": "I know this male student."
-        }
-      ],
       "etymologyHint": "Someone who can work 力 the farm 田",
       "sourceTags": [
         "online-xinhua",
@@ -8411,24 +6304,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "你的",
           "meaningEn": "your"
-        }
-      ],
-      "sentence": {
-        "zh": "你们今天学了什么？",
-        "en": "What did you all learn today?"
-      },
-      "sentences": [
-        {
-          "zh": "你们今天学了什么？",
-          "en": "What did you all learn today?"
-        },
-        {
-          "zh": "这本书给你。",
-          "en": "This book is for you."
-        },
-        {
-          "zh": "这是你的书包吗？",
-          "en": "Is this your school bag?"
         }
       ],
       "etymologyHint": "Pronoun 尔 for a person 亻",
@@ -8484,24 +6359,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "blueberry"
         }
       ],
-      "sentence": {
-        "zh": "窗外有一片蓝天。",
-        "en": "There is a blue sky outside the window."
-      },
-      "sentences": [
-        {
-          "zh": "窗外有一片蓝天。",
-          "en": "There is a blue sky outside the window."
-        },
-        {
-          "zh": "我喜欢蓝色的书包。",
-          "en": "I like the blue school bag."
-        },
-        {
-          "zh": "盘子里有一些蓝莓。",
-          "en": "There are some blueberries on the plate."
-        }
-      ],
       "etymologyHint": "plant",
       "sourceTags": [
         "online-xinhua",
@@ -8553,24 +6410,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "买书",
           "meaningEn": "buy books"
-        }
-      ],
-      "sentence": {
-        "zh": "我会买东西。",
-        "en": "I can go shopping."
-      },
-      "sentences": [
-        {
-          "zh": "我会买东西。",
-          "en": "I can go shopping."
-        },
-        {
-          "zh": "爸爸下班后去买菜。",
-          "en": "Dad buys vegetables after work."
-        },
-        {
-          "zh": "我会买书。",
-          "en": "I can buy books."
         }
       ],
       "etymologyHint": "",
@@ -8626,24 +6465,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "what about him"
         }
       ],
-      "sentence": {
-        "zh": "他们在操场上跑步。",
-        "en": "They run on the playground."
-      },
-      "sentences": [
-        {
-          "zh": "他们在操场上跑步。",
-          "en": "They run on the playground."
-        },
-        {
-          "zh": "这是他的书包吗？",
-          "en": "Is this his school bag?"
-        },
-        {
-          "zh": "我准备好了，他呢？",
-          "en": "I am ready. What about him?"
-        }
-      ],
       "etymologyHint": "An additional, \"also\" 也  person 亻",
       "sourceTags": [
         "online-xinhua",
@@ -8695,24 +6516,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "卖菜",
           "meaningEn": "sell vegetables"
-        }
-      ],
-      "sentence": {
-        "zh": "我会卖东西。",
-        "en": "I can sell things."
-      },
-      "sentences": [
-        {
-          "zh": "我会卖东西。",
-          "en": "I can sell things."
-        },
-        {
-          "zh": "我会卖花。",
-          "en": "I can sell flowers."
-        },
-        {
-          "zh": "市场里有人卖菜。",
-          "en": "Someone sells vegetables at the market."
         }
       ],
       "etymologyHint": "buy",
@@ -8769,24 +6572,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "green leaf"
         }
       ],
-      "sentence": {
-        "zh": "图画里画着绿草。",
-        "en": "The picture shows green grass."
-      },
-      "sentences": [
-        {
-          "zh": "图画里画着绿草。",
-          "en": "The picture shows green grass."
-        },
-        {
-          "zh": "老师让我们找出绿色。",
-          "en": "The teacher asks us to find green."
-        },
-        {
-          "zh": "我们在课文里读到绿叶。",
-          "en": "We read about green leaf in the lesson text."
-        }
-      ],
       "etymologyHint": "silk",
       "sourceTags": [
         "online-xinhua",
@@ -8840,24 +6625,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "time; moment"
         }
       ],
-      "sentence": {
-        "zh": "我们同时举手回答。",
-        "en": "We raise our hands to answer at the same time."
-      },
-      "sentences": [
-        {
-          "zh": "我们同时举手回答。",
-          "en": "We raise our hands to answer at the same time."
-        },
-        {
-          "zh": "学习时间到了。",
-          "en": "Study time has arrived."
-        },
-        {
-          "zh": "吃饭的时候，请不要看电视。",
-          "en": "When eating, please do not watch TV."
-        }
-      ],
       "etymologyHint": "day",
       "sourceTags": [
         "online-xinhua",
@@ -8909,24 +6676,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "孩子",
           "meaningEn": "child"
-        }
-      ],
-      "sentence": {
-        "zh": "操场上有一位女孩。",
-        "en": "There is a girl on the playground."
-      },
-      "sentences": [
-        {
-          "zh": "操场上有一位女孩。",
-          "en": "There is a girl on the playground."
-        },
-        {
-          "zh": "操场上有一位男孩。",
-          "en": "There is a boy on the playground."
-        },
-        {
-          "zh": "孩子们在操场上玩。",
-          "en": "The children play on the playground."
         }
       ],
       "etymologyHint": "child",
@@ -8983,24 +6732,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "part"
         }
       ],
-      "sentence": {
-        "zh": "她写字十分认真。",
-        "en": "She writes characters very carefully."
-      },
-      "sentences": [
-        {
-          "zh": "她写字十分认真。",
-          "en": "She writes characters very carefully."
-        },
-        {
-          "zh": "请把零分圈出来。",
-          "en": "Please circle zero points."
-        },
-        {
-          "zh": "这节课，我们学习部分。",
-          "en": "In this lesson, we learn about part."
-        }
-      ],
       "etymologyHint": "Pieces 八 being further subdivided with a knife 刀 ",
       "sourceTags": [
         "online-xinhua",
@@ -9053,24 +6784,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "孩子",
           "meaningEn": "child"
-        }
-      ],
-      "sentence": {
-        "zh": "妹妹在本子上画花。",
-        "en": "My younger sister draws a flower in the notebook."
-      },
-      "sentences": [
-        {
-          "zh": "妹妹在本子上画花。",
-          "en": "My younger sister draws a flower in the notebook."
-        },
-        {
-          "zh": "林子里有小鸟。",
-          "en": "There are birds in the woods."
-        },
-        {
-          "zh": "我认识这位孩子。",
-          "en": "I know this child."
         }
       ],
       "etymologyHint": "A child in a wrap, with outstretched arms but bundled legs",
@@ -9127,24 +6840,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "her"
         }
       ],
-      "sentence": {
-        "zh": "这节课讲到她家。",
-        "en": "This lesson talks about her home."
-      },
-      "sentences": [
-        {
-          "zh": "这节课讲到她家。",
-          "en": "This lesson talks about her home."
-        },
-        {
-          "zh": "她们一起去图书馆。",
-          "en": "They go to the library together."
-        },
-        {
-          "zh": "这是她的书包吗？",
-          "en": "Is this her school bag?"
-        }
-      ],
       "etymologyHint": "A woman 女 beside you 也",
       "sourceTags": [
         "online-xinhua",
@@ -9196,24 +6891,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "白菜",
           "meaningEn": "bok choy; Chinese cabbage"
-        }
-      ],
-      "sentence": {
-        "zh": "中文课上，我们学习白纸。",
-        "en": "In Chinese class, we learn about white paper."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，我们学习白纸。",
-          "en": "In Chinese class, we learn about white paper."
-        },
-        {
-          "zh": "窗外有一朵白云。",
-          "en": "There is a white cloud outside the window."
-        },
-        {
-          "zh": "桌上放着白菜。",
-          "en": "There is a bok choy on the table."
         }
       ],
       "etymologyHint": "A burning candle; the rays of the sun",
@@ -9269,24 +6946,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "eat fruit"
         }
       ],
-      "sentence": {
-        "zh": "中午，我们一起吃饭。",
-        "en": "At noon, we eat a meal together."
-      },
-      "sentences": [
-        {
-          "zh": "中午，我们一起吃饭。",
-          "en": "At noon, we eat a meal together."
-        },
-        {
-          "zh": "妈妈做的面很好吃。",
-          "en": "The noodles Mum makes are tasty."
-        },
-        {
-          "zh": "午饭后，我吃水果。",
-          "en": "After lunch, I eat fruit."
-        }
-      ],
       "etymologyHint": "mouth",
       "sourceTags": [
         "online-xinhua",
@@ -9338,24 +6997,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "其它",
           "meaningEn": "other"
-        }
-      ],
-      "sentence": {
-        "zh": "小鸟在树上，它们唱歌。",
-        "en": "The birds are in the tree, and they sing."
-      },
-      "sentences": [
-        {
-          "zh": "小鸟在树上，它们唱歌。",
-          "en": "The birds are in the tree, and they sing."
-        },
-        {
-          "zh": "小狗摇着它的尾巴。",
-          "en": "The puppy wags its tail."
-        },
-        {
-          "zh": "我还认识其它颜色。",
-          "en": "I also know other colours."
         }
       ],
       "etymologyHint": "",
@@ -9413,24 +7054,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "drink water"
         }
       ],
-      "sentence": {
-        "zh": "妈妈喜欢喝茶。",
-        "en": "Mum likes drinking tea."
-      },
-      "sentences": [
-        {
-          "zh": "妈妈喜欢喝茶。",
-          "en": "Mum likes drinking tea."
-        },
-        {
-          "zh": "睡觉前，妹妹喝奶。",
-          "en": "Before sleeping, my younger sister drinks milk."
-        },
-        {
-          "zh": "我每天练习喝水。",
-          "en": "I practise drinking water every day."
-        }
-      ],
       "etymologyHint": "mouth",
       "sourceTags": [
         "online-xinhua",
@@ -9484,24 +7107,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "blackboard"
         }
       ],
-      "sentence": {
-        "zh": "我有一支黑色铅笔。",
-        "en": "I have a black pencil."
-      },
-      "sentences": [
-        {
-          "zh": "我有一支黑色铅笔。",
-          "en": "I have a black pencil."
-        },
-        {
-          "zh": "黑夜里，星星很亮。",
-          "en": "In the dark night, the stars are bright."
-        },
-        {
-          "zh": "老师在黑板上写字。",
-          "en": "The teacher writes characters on the blackboard."
-        }
-      ],
       "etymologyHint": "A man's face blacked by soot from a fire 灬",
       "sourceTags": [
         "online-xinhua",
@@ -9553,24 +7158,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "点心",
           "meaningEn": "snack"
-        }
-      ],
-      "sentence": {
-        "zh": "现在是一点。",
-        "en": "It is one o'clock now."
-      },
-      "sentences": [
-        {
-          "zh": "现在是一点。",
-          "en": "It is one o'clock now."
-        },
-        {
-          "zh": "下午四点，我们放学。",
-          "en": "At four o'clock in the afternoon, school ends."
-        },
-        {
-          "zh": "奶奶做了好吃的点心。",
-          "en": "Grandma makes a tasty snack."
         }
       ],
       "etymologyHint": "fire",
@@ -9627,24 +7214,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "bird"
         }
       ],
-      "sentence": {
-        "zh": "这道题问哪儿。",
-        "en": "This question asks where."
-      },
-      "sentences": [
-        {
-          "zh": "这道题问哪儿。",
-          "en": "This question asks where."
-        },
-        {
-          "zh": "儿童节那天，大家很开心。",
-          "en": "On Children's Day, everyone is happy."
-        },
-        {
-          "zh": "图画里有鸟儿。",
-          "en": "There is bird in the picture."
-        }
-      ],
       "etymologyHint": "Simplified form of 兒, a picture of a child; compare 人",
       "sourceTags": [
         "online-xinhua",
@@ -9698,24 +7267,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "half of one item"
         }
       ],
-      "sentence": {
-        "zh": "澳洲在南半球。",
-        "en": "Australia is in the Southern Hemisphere."
-      },
-      "sentences": [
-        {
-          "zh": "澳洲在南半球。",
-          "en": "Australia is in the Southern Hemisphere."
-        },
-        {
-          "zh": "我用半天完成作业。",
-          "en": "I use half a day to finish my homework."
-        },
-        {
-          "zh": "盒子里有半个苹果。",
-          "en": "There is half an apple in the box."
-        }
-      ],
       "etymologyHint": "A cow 牛 splitting 丷 wood in half",
       "sourceTags": [
         "online-xinhua",
@@ -9767,24 +7318,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "童话",
           "meaningEn": "fairy tale"
-        }
-      ],
-      "sentence": {
-        "zh": "公园里有很多儿童。",
-        "en": "There are many children in the park."
-      },
-      "sentences": [
-        {
-          "zh": "公园里有很多儿童。",
-          "en": "There are many children in the park."
-        },
-        {
-          "zh": "童年的故事很温暖。",
-          "en": "Childhood stories are warm."
-        },
-        {
-          "zh": "睡觉前，妈妈讲童话。",
-          "en": "Before bedtime, Mum tells a fairy tale."
         }
       ],
       "etymologyHint": "A child standing 立 in the village 里",
@@ -9841,24 +7374,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "they"
         }
       ],
-      "sentence": {
-        "zh": "放学后，我们一起回家。",
-        "en": "After school, we go home together."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，我们一起回家。",
-          "en": "After school, we go home together."
-        },
-        {
-          "zh": "老师问你们准备好了吗？",
-          "en": "The teacher asks whether you all are ready."
-        },
-        {
-          "zh": "他们一起读故事。",
-          "en": "They read a story together."
-        }
-      ],
       "etymologyHint": "people",
       "sourceTags": [
         "online-xinhua",
@@ -9912,24 +7427,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "action"
         }
       ],
-      "sentence": {
-        "zh": "我在公园里看见动物。",
-        "en": "I see an animal in the park."
-      },
-      "sentences": [
-        {
-          "zh": "我在公园里看见动物。",
-          "en": "I see an animal in the park."
-        },
-        {
-          "zh": "运动让身体更健康。",
-          "en": "Exercise makes the body healthier."
-        },
-        {
-          "zh": "这个动作很简单。",
-          "en": "This action is simple."
-        }
-      ],
       "etymologyHint": "strength",
       "sourceTags": [
         "online-xinhua",
@@ -9981,24 +7478,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "做饭",
           "meaningEn": "cook a meal"
-        }
-      ],
-      "sentence": {
-        "zh": "这个字叫做“山”。",
-        "en": "This character is called '山'."
-      },
-      "sentences": [
-        {
-          "zh": "这个字叫做“山”。",
-          "en": "This character is called '山'."
-        },
-        {
-          "zh": "做事要认真。",
-          "en": "We should do things carefully."
-        },
-        {
-          "zh": "妈妈在厨房做饭。",
-          "en": "Mum cooks a meal in the kitchen."
         }
       ],
       "etymologyHint": "Someone 亻 who causes things to happen 故; 故 also provides the pronuncation",
@@ -10056,24 +7535,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "his"
         }
       ],
-      "sentence": {
-        "zh": "这是我的铅笔。",
-        "en": "This is my pencil."
-      },
-      "sentences": [
-        {
-          "zh": "这是我的铅笔。",
-          "en": "This is my pencil."
-        },
-        {
-          "zh": "你的名字写得很好。",
-          "en": "Your name is written very well."
-        },
-        {
-          "zh": "他的书包在桌子上。",
-          "en": "His school bag is on the desk."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "online-xinhua",
@@ -10125,24 +7586,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "玩耍",
           "meaningEn": "play"
-        }
-      ],
-      "sentence": {
-        "zh": "弟弟有一个新玩具。",
-        "en": "My younger brother has a new toy."
-      },
-      "sentences": [
-        {
-          "zh": "弟弟有一个新玩具。",
-          "en": "My younger brother has a new toy."
-        },
-        {
-          "zh": "这节课，我们学习玩笑。",
-          "en": "In this lesson, we learn about joke."
-        },
-        {
-          "zh": "孩子们在公园里玩耍。",
-          "en": "The children play in the park."
         }
       ],
       "etymologyHint": "jade",
@@ -10198,24 +7641,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "animal"
         }
       ],
-      "sentence": {
-        "zh": "宠物猫喜欢晒太阳。",
-        "en": "The pet cat likes sitting in the sun."
-      },
-      "sentences": [
-        {
-          "zh": "宠物猫喜欢晒太阳。",
-          "en": "The pet cat likes sitting in the sun."
-        },
-        {
-          "zh": "我给宠物狗准备水。",
-          "en": "I prepare water for the pet dog."
-        },
-        {
-          "zh": "动物园里有很多动物。",
-          "en": "There are many animals at the zoo."
-        }
-      ],
       "etymologyHint": "ox",
       "sourceTags": [
         "online-xinhua",
@@ -10267,24 +7692,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "春天",
           "meaningEn": "spring"
-        }
-      ],
-      "sentence": {
-        "zh": "窗外有春风。",
-        "en": "There is spring wind outside the window."
-      },
-      "sentences": [
-        {
-          "zh": "窗外有春风。",
-          "en": "There is spring wind outside the window."
-        },
-        {
-          "zh": "我们在课文里读到春雨。",
-          "en": "We read about spring rain in the lesson text."
-        },
-        {
-          "zh": "我们在课文里读到春天。",
-          "en": "We read about spring in the lesson text."
         }
       ],
       "etymologyHint": "sun",
@@ -10340,24 +7747,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "beside someone"
         }
       ],
-      "sentence": {
-        "zh": "体育课上，我们锻炼身体。",
-        "en": "In PE class, we exercise our bodies."
-      },
-      "sentences": [
-        {
-          "zh": "体育课上，我们锻炼身体。",
-          "en": "In PE class, we exercise our bodies."
-        },
-        {
-          "zh": "我的身上有雨水。",
-          "en": "There is rainwater on my body."
-        },
-        {
-          "zh": "朋友坐在我身边。",
-          "en": "My friend sits beside me."
-        }
-      ],
       "etymologyHint": "A pregnant woman",
       "sourceTags": [
         "online-xinhua",
@@ -10409,24 +7798,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "夏季",
           "meaningEn": "summer season"
-        }
-      ],
-      "sentence": {
-        "zh": "夏天很热。",
-        "en": "Summer is hot."
-      },
-      "sentences": [
-        {
-          "zh": "夏天很热。",
-          "en": "Summer is hot."
-        },
-        {
-          "zh": "夏日的阳光很亮。",
-          "en": "The sunshine on a summer day is bright."
-        },
-        {
-          "zh": "夏季，我在家读书。",
-          "en": "In the summer season, I read at home."
         }
       ],
       "etymologyHint": "",
@@ -10484,24 +7855,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "physical strength"
         }
       ],
-      "sentence": {
-        "zh": "运动后，我活动身体。",
-        "en": "After exercise, I move my body."
-      },
-      "sentences": [
-        {
-          "zh": "运动后，我活动身体。",
-          "en": "After exercise, I move my body."
-        },
-        {
-          "zh": "中文课上，我们学习体育。",
-          "en": "In Chinese class, we learn about pe."
-        },
-        {
-          "zh": "跑步需要很多体力。",
-          "en": "Running needs a lot of energy."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "online-xinhua",
@@ -10554,24 +7907,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "为了",
           "meaningEn": "in order to"
-        }
-      ],
-      "sentence": {
-        "zh": "你能读完这本书，真了不起。",
-        "en": "It is amazing that you can finish reading this book."
-      },
-      "sentences": [
-        {
-          "zh": "你能读完这本书，真了不起。",
-          "en": "It is amazing that you can finish reading this book."
-        },
-        {
-          "zh": "我会说好了。",
-          "en": "I can say \"finished.\""
-        },
-        {
-          "zh": "为了学好中文，我每天练习。",
-          "en": "To learn Chinese well, I practise every day."
         }
       ],
       "etymologyHint": "A child swaddled in blanklets; compare 子",
@@ -10627,24 +7962,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "telephone"
         }
       ],
-      "sentence": {
-        "zh": "老师用图解释电影。",
-        "en": "The teacher uses a picture to explain movie."
-      },
-      "sentences": [
-        {
-          "zh": "老师用图解释电影。",
-          "en": "The teacher uses a picture to explain movie."
-        },
-        {
-          "zh": "爸爸用电脑联系老师。",
-          "en": "Dad uses computer to contact the teacher."
-        },
-        {
-          "zh": "爸爸用电话联系老师。",
-          "en": "Dad uses telephone to contact the teacher."
-        }
-      ],
       "etymologyHint": "Simplified form of 電; lightning 申 from a storm cloud 雨",
       "sourceTags": [
         "online-xinhua",
@@ -10696,24 +8013,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "午睡",
           "meaningEn": "nap"
-        }
-      ],
-      "sentence": {
-        "zh": "晚上九点，我准备睡觉。",
-        "en": "At nine in the evening, I get ready to sleep."
-      },
-      "sentences": [
-        {
-          "zh": "晚上九点，我准备睡觉。",
-          "en": "At nine in the evening, I get ready to sleep."
-        },
-        {
-          "zh": "晚上，我换上睡衣。",
-          "en": "At night, I put on pyjamas."
-        },
-        {
-          "zh": "午饭后，弟弟午睡。",
-          "en": "After lunch, my younger brother takes a nap."
         }
       ],
       "etymologyHint": "eye",
@@ -10769,24 +8068,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "also is"
         }
       ],
-      "sentence": {
-        "zh": "我会说它是。",
-        "en": "I can say \"it is.\""
-      },
-      "sentences": [
-        {
-          "zh": "我会说它是。",
-          "en": "I can say \"it is.\""
-        },
-        {
-          "zh": "这不是我的本子。",
-          "en": "This is not my notebook."
-        },
-        {
-          "zh": "老师听见我说也是。",
-          "en": "The teacher hears me say \"also is.\""
-        }
-      ],
       "etymologyHint": "To speak 日 directly 疋",
       "sourceTags": [
         "online-xinhua",
@@ -10838,24 +8119,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "起床",
           "meaningEn": "get up"
-        }
-      ],
-      "sentence": {
-        "zh": "她一个人完成任务，真了不起。",
-        "en": "It is amazing that she finished the task by herself."
-      },
-      "sentences": [
-        {
-          "zh": "她一个人完成任务，真了不起。",
-          "en": "It is amazing that she finished the task by herself."
-        },
-        {
-          "zh": "写错了，我说对不起。",
-          "en": "I wrote it wrong, so I said sorry."
-        },
-        {
-          "zh": "我会起床。",
-          "en": "I can get up."
         }
       ],
       "etymologyHint": "walk",
@@ -10911,24 +8174,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "group photo"
         }
       ],
-      "sentence": {
-        "zh": "周末我们看了一部电影。",
-        "en": "We watched a movie on the weekend."
-      },
-      "sentences": [
-        {
-          "zh": "周末我们看了一部电影。",
-          "en": "We watched a movie on the weekend."
-        },
-        {
-          "zh": "阳光下有我的影子。",
-          "en": "I can see my shadow in the sunshine."
-        },
-        {
-          "zh": "毕业那天，我们一起合影。",
-          "en": "On graduation day, we take group photo together."
-        }
-      ],
       "etymologyHint": "sunlight",
       "sourceTags": [
         "online-xinhua",
@@ -10980,24 +8225,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "秋季",
           "meaningEn": "autumn season"
-        }
-      ],
-      "sentence": {
-        "zh": "秋天的天气很凉快。",
-        "en": "The weather in autumn is cool."
-      },
-      "sentences": [
-        {
-          "zh": "秋天的天气很凉快。",
-          "en": "The weather in autumn is cool."
-        },
-        {
-          "zh": "这个秋日阳光很好。",
-          "en": "The sunshine is lovely on this autumn day."
-        },
-        {
-          "zh": "秋季，树叶变黄了。",
-          "en": "In autumn season, the leaves turn yellow."
         }
       ],
       "etymologyHint": "The time of year when farmers would burn 禾 crops 火",
@@ -11054,24 +8281,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "on the head"
         }
       ],
-      "sentence": {
-        "zh": "图画里画着木头。",
-        "en": "The picture shows wood."
-      },
-      "sentences": [
-        {
-          "zh": "图画里画着木头。",
-          "en": "The picture shows wood."
-        },
-        {
-          "zh": "画人像时，她先画头发。",
-          "en": "When drawing a portrait, she draws the hair first."
-        },
-        {
-          "zh": "妹妹头上戴着红花。",
-          "en": "My younger sister wears a red flower on her head."
-        }
-      ],
       "etymologyHint": "high",
       "sourceTags": [
         "online-xinhua",
@@ -11125,24 +8334,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "winter season"
         }
       ],
-      "sentence": {
-        "zh": "冬天，我们穿厚衣服。",
-        "en": "In winter, we wear warm clothes."
-      },
-      "sentences": [
-        {
-          "zh": "冬天，我们穿厚衣服。",
-          "en": "In winter, we wear warm clothes."
-        },
-        {
-          "zh": "这个冬日有点冷。",
-          "en": "This winter day is a little cold."
-        },
-        {
-          "zh": "冬季，学校有假期。",
-          "en": "In winter season, the school has a holiday."
-        }
-      ],
       "etymologyHint": "A man walking 夂 on ice ⺀",
       "sourceTags": [
         "online-xinhua",
@@ -11194,24 +8385,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "洗手",
           "meaningEn": "wash hands"
-        }
-      ],
-      "sentence": {
-        "zh": "他用左手拿书。",
-        "en": "He holds the book with his left hand."
-      },
-      "sentences": [
-        {
-          "zh": "他用左手拿书。",
-          "en": "He holds the book with his left hand."
-        },
-        {
-          "zh": "运动后，我活动右手。",
-          "en": "After exercise, I move my right hand."
-        },
-        {
-          "zh": "我每天练习洗手。",
-          "en": "I practise washing hands every day."
         }
       ],
       "etymologyHint": "A hand with the fingers splayed",
@@ -11268,24 +8441,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "sorry"
         }
       ],
-      "sentence": {
-        "zh": "弟弟自己系好鞋带，真了不起。",
-        "en": "It is amazing that my younger brother tied his shoelaces by himself."
-      },
-      "sentences": [
-        {
-          "zh": "弟弟自己系好鞋带，真了不起。",
-          "en": "It is amazing that my younger brother tied his shoelaces by himself."
-        },
-        {
-          "zh": "我会说不是。",
-          "en": "I can say \"is not.\""
-        },
-        {
-          "zh": "对不起，我来晚了。",
-          "en": "Sorry, I am late."
-        }
-      ],
       "etymologyHint": "A bird flying toward the sky 一",
       "sourceTags": [
         "online-xinhua",
@@ -11339,24 +8494,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "old friend"
         }
       ],
-      "sentence": {
-        "zh": "老师用图解释故事。",
-        "en": "The teacher uses a picture to explain story."
-      },
-      "sentences": [
-        {
-          "zh": "老师用图解释故事。",
-          "en": "The teacher uses a picture to explain story."
-        },
-        {
-          "zh": "奶奶的故乡在中国。",
-          "en": "Grandma's hometown is in China."
-        },
-        {
-          "zh": "爷爷见到一位故人。",
-          "en": "Grandpa meets an old friend."
-        }
-      ],
       "etymologyHint": "tap",
       "sourceTags": [
         "online-xinhua",
@@ -11408,24 +8545,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "穿过",
           "meaningEn": "pass through"
-        }
-      ],
-      "sentence": {
-        "zh": "我会穿衣。",
-        "en": "I can put on clothes."
-      },
-      "sentences": [
-        {
-          "zh": "我会穿衣。",
-          "en": "I can put on clothes."
-        },
-        {
-          "zh": "妹妹穿上新鞋。",
-          "en": "My younger sister puts on new shoes."
-        },
-        {
-          "zh": "我们穿过操场去教室。",
-          "en": "We pass through the playground to the classroom."
         }
       ],
       "etymologyHint": "tooth",
@@ -11482,24 +8601,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "polite"
         }
       ],
-      "sentence": {
-        "zh": "老师听见我说没有。",
-        "en": "The teacher hears me say \"do not have.\""
-      },
-      "sentences": [
-        {
-          "zh": "老师听见我说没有。",
-          "en": "The teacher hears me say \"do not have.\""
-        },
-        {
-          "zh": "所有同学都完成了任务。",
-          "en": "All classmates finished the task."
-        },
-        {
-          "zh": "他说话很有礼。",
-          "en": "He speaks politely."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "online-xinhua",
@@ -11554,24 +8655,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "take a bath or shower"
         }
       ],
-      "sentence": {
-        "zh": "吃饭前，我先洗手。",
-        "en": "Before eating, I wash my hands."
-      },
-      "sentences": [
-        {
-          "zh": "吃饭前，我先洗手。",
-          "en": "Before eating, I wash my hands."
-        },
-        {
-          "zh": "早上起床后，我洗脸。",
-          "en": "After getting up in the morning, I wash my face."
-        },
-        {
-          "zh": "运动后，我回家洗澡。",
-          "en": "After exercise, I go home and take a shower."
-        }
-      ],
       "etymologyHint": "water",
       "sourceTags": [
         "online-xinhua",
@@ -11623,24 +8706,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "没事",
           "meaningEn": "no problem"
-        }
-      ],
-      "sentence": {
-        "zh": "家里有一件喜事。",
-        "en": "There is a happy event in the family."
-      },
-      "sentences": [
-        {
-          "zh": "家里有一件喜事。",
-          "en": "There is a happy event in the family."
-        },
-        {
-          "zh": "老师示范做事这个动作。",
-          "en": "The teacher demonstrates the action do things."
-        },
-        {
-          "zh": "摔倒后，他说没事。",
-          "en": "After falling down, he says he is okay."
         }
       ],
       "etymologyHint": "",
@@ -11697,24 +8762,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "autumn wind"
         }
       ],
-      "sentence": {
-        "zh": "今天有北风，出门要穿暖。",
-        "en": "There is north wind today, so wear warm clothes when going out."
-      },
-      "sentences": [
-        {
-          "zh": "今天有北风，出门要穿暖。",
-          "en": "There is north wind today, so wear warm clothes when going out."
-        },
-        {
-          "zh": "我们在课文里读到春风。",
-          "en": "We read about spring wind in the lesson text."
-        },
-        {
-          "zh": "窗外有秋风。",
-          "en": "There is autumn wind outside the window."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "online-xinhua",
@@ -11766,24 +8813,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "足够",
           "meaningEn": "enough"
-        }
-      ],
-      "sentence": {
-        "zh": "体育课上，我们练习足球。",
-        "en": "In PE class, we practise soccer."
-      },
-      "sentences": [
-        {
-          "zh": "体育课上，我们练习足球。",
-          "en": "In PE class, we practise soccer."
-        },
-        {
-          "zh": "画人像时，她先画手足。",
-          "en": "When drawing a portrait, she draws the hands and feet first."
-        },
-        {
-          "zh": "这些铅笔足够全班用。",
-          "en": "These pencils are enough for the whole class."
         }
       ],
       "etymologyHint": "The leg 口 above the foot",
@@ -11840,24 +8869,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "wind and rain"
         }
       ],
-      "sentence": {
-        "zh": "图画里画着春雨。",
-        "en": "The picture shows spring rain."
-      },
-      "sentences": [
-        {
-          "zh": "图画里画着春雨。",
-          "en": "The picture shows spring rain."
-        },
-        {
-          "zh": "我们在课文里读到雨水。",
-          "en": "We read about rainwater in the lesson text."
-        },
-        {
-          "zh": "我们在课文里读到风雨。",
-          "en": "We read about wind and rain in the lesson text."
-        }
-      ],
       "etymologyHint": "Rain drops falling from a cloud 帀",
       "sourceTags": [
         "online-xinhua",
@@ -11909,24 +8920,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "眼前",
           "meaningEn": "in front of the eyes"
-        }
-      ],
-      "sentence": {
-        "zh": "我眼看着飞机飞走。",
-        "en": "I watch the plane fly away."
-      },
-      "sentences": [
-        {
-          "zh": "我眼看着飞机飞走。",
-          "en": "I watch the plane fly away."
-        },
-        {
-          "zh": "医生检查了我的眼睛。",
-          "en": "The doctor checked my eyes."
-        },
-        {
-          "zh": "我的眼前有一张地图。",
-          "en": "There is a map in front of me."
         }
       ],
       "etymologyHint": "eye",
@@ -11982,24 +8975,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "now"
         }
       ],
-      "sentence": {
-        "zh": "周末我在家写作业。",
-        "en": "On the weekend, I do homework at home."
-      },
-      "sentences": [
-        {
-          "zh": "周末我在家写作业。",
-          "en": "On the weekend, I do homework at home."
-        },
-        {
-          "zh": "我正在写中文作业。",
-          "en": "I am doing my Chinese homework now."
-        },
-        {
-          "zh": "现在，我开始上课。",
-          "en": "Now, I start class."
-        }
-      ],
       "etymologyHint": "earth",
       "sourceTags": [
         "online-xinhua",
@@ -12051,24 +9026,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "运气",
           "meaningEn": "luck"
-        }
-      ],
-      "sentence": {
-        "zh": "地图上有一条运河。",
-        "en": "There is a canal on the map."
-      },
-      "sentences": [
-        {
-          "zh": "地图上有一条运河。",
-          "en": "There is a canal on the map."
-        },
-        {
-          "zh": "放学后，我去运动。",
-          "en": "After school, I exercise."
-        },
-        {
-          "zh": "今天我的运气很好。",
-          "en": "My luck is good today."
         }
       ],
       "etymologyHint": "walk",
@@ -12123,24 +9080,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "给我",
           "meaningEn": "give me"
-        }
-      ],
-      "sentence": {
-        "zh": "我把铅笔给你。",
-        "en": "I give the pencil to you."
-      },
-      "sentences": [
-        {
-          "zh": "我把铅笔给你。",
-          "en": "I give the pencil to you."
-        },
-        {
-          "zh": "请把作业交给老师。",
-          "en": "Please hand the homework to the teacher."
-        },
-        {
-          "zh": "请把那支笔给我。",
-          "en": "Please give that pen to me."
         }
       ],
       "etymologyHint": "thread",
@@ -12199,24 +9138,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "kind and friendly"
         }
       ],
-      "sentence": {
-        "zh": "两个朋友又和好了。",
-        "en": "The two friends made peace again."
-      },
-      "sentences": [
-        {
-          "zh": "两个朋友又和好了。",
-          "en": "The two friends made peace again."
-        },
-        {
-          "zh": "我们喜欢和平。",
-          "en": "We like peace."
-        },
-        {
-          "zh": "她说话很和气。",
-          "en": "She speaks in a kind and friendly way."
-        }
-      ],
       "etymologyHint": "mouth",
       "sourceTags": [
         "online-xinhua",
@@ -12268,24 +9189,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "拿走",
           "meaningEn": "take away"
-        }
-      ],
-      "sentence": {
-        "zh": "我会拿笔。",
-        "en": "I can take a pen."
-      },
-      "sentences": [
-        {
-          "zh": "我会拿笔。",
-          "en": "I can take a pen."
-        },
-        {
-          "zh": "上课前，我先拿书。",
-          "en": "Before class, I take out my book."
-        },
-        {
-          "zh": "老师示范拿走这个动作。",
-          "en": "The teacher demonstrates the action take away."
         }
       ],
       "etymologyHint": "hand",
@@ -12341,24 +9244,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "sports field"
         }
       ],
-      "sentence": {
-        "zh": "地图上，澳洲在南半球。",
-        "en": "On the map, Australia is in the Southern Hemisphere."
-      },
-      "sentences": [
-        {
-          "zh": "地图上，澳洲在南半球。",
-          "en": "On the map, Australia is in the Southern Hemisphere."
-        },
-        {
-          "zh": "下课后，我们踢足球。",
-          "en": "After class, we play soccer."
-        },
-        {
-          "zh": "学生在球场上跑步。",
-          "en": "Students run on the sports field."
-        }
-      ],
       "etymologyHint": "jade",
       "sourceTags": [
         "online-xinhua",
@@ -12410,24 +9295,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "下雪",
           "meaningEn": "snow"
-        }
-      ],
-      "sentence": {
-        "zh": "窗外有冬雪。",
-        "en": "There is winter snow outside the window."
-      },
-      "sentences": [
-        {
-          "zh": "窗外有冬雪。",
-          "en": "There is winter snow outside the window."
-        },
-        {
-          "zh": "图画里画着雪花。",
-          "en": "The picture shows snowflake."
-        },
-        {
-          "zh": "今天有下雪，出门要穿暖。",
-          "en": "There is snow today, so wear warm clothes when going out."
         }
       ],
       "etymologyHint": "rain",
@@ -12483,24 +9350,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "wood ear mushroom"
         }
       ],
-      "sentence": {
-        "zh": "爸爸用耳机联系老师。",
-        "en": "Dad uses earphones to contact the teacher."
-      },
-      "sentences": [
-        {
-          "zh": "爸爸用耳机联系老师。",
-          "en": "Dad uses earphones to contact the teacher."
-        },
-        {
-          "zh": "医生检查了我的耳朵。",
-          "en": "The doctor checked my ears."
-        },
-        {
-          "zh": "桌上放着木耳。",
-          "en": "There is wood ear mushroom on the table."
-        }
-      ],
       "etymologyHint": "An ear",
       "sourceTags": [
         "online-xinhua",
@@ -12552,24 +9401,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "云彩",
           "meaningEn": "clouds"
-        }
-      ],
-      "sentence": {
-        "zh": "天空中飘着白云。",
-        "en": "White clouds float in the sky."
-      },
-      "sentences": [
-        {
-          "zh": "天空中飘着白云。",
-          "en": "White clouds float in the sky."
-        },
-        {
-          "zh": "这朵云朵像小船。",
-          "en": "This cloud looks like a small boat."
-        },
-        {
-          "zh": "夕阳下的云彩很好看。",
-          "en": "The clouds under the sunset look beautiful."
         }
       ],
       "etymologyHint": "A cloud",
@@ -12625,24 +9456,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "tip of the nose"
         }
       ],
-      "sentence": {
-        "zh": "老师用图解释鼻音。",
-        "en": "The teacher uses a picture to explain nasal sound."
-      },
-      "sentences": [
-        {
-          "zh": "老师用图解释鼻音。",
-          "en": "The teacher uses a picture to explain nasal sound."
-        },
-        {
-          "zh": "医生检查了我的鼻子。",
-          "en": "The doctor checked my nose."
-        },
-        {
-          "zh": "医生检查了我的鼻尖。",
-          "en": "The doctor checked my tip of the nose."
-        }
-      ],
       "etymologyHint": "self",
       "sourceTags": [
         "online-xinhua",
@@ -12694,24 +9507,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "很大",
           "meaningEn": "very big"
-        }
-      ],
-      "sentence": {
-        "zh": "这次作业写得很好。",
-        "en": "This homework is written very well."
-      },
-      "sentences": [
-        {
-          "zh": "这次作业写得很好。",
-          "en": "This homework is written very well."
-        },
-        {
-          "zh": "请把很多圈出来。",
-          "en": "Please circle many."
-        },
-        {
-          "zh": "这节课，我们学习很大。",
-          "en": "In this lesson, we learn about very big."
         }
       ],
       "etymologyHint": "step",
@@ -12767,24 +9562,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "game"
         }
       ],
-      "sentence": {
-        "zh": "周末，我们去游乐场玩。",
-        "en": "On the weekend, we go to the playground to play."
-      },
-      "sentences": [
-        {
-          "zh": "周末，我们去游乐场玩。",
-          "en": "On the weekend, we go to the playground to play."
-        },
-        {
-          "zh": "夏天，我喜欢游泳。",
-          "en": "In summer, I like swimming."
-        },
-        {
-          "zh": "下课后，我们玩游戏。",
-          "en": "After class, we play a game."
-        }
-      ],
       "etymologyHint": "To swim freely 斿 through the seas 氵",
       "sourceTags": [
         "online-xinhua",
@@ -12836,24 +9613,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "放下",
           "meaningEn": "put down"
-        }
-      ],
-      "sentence": {
-        "zh": "放学后，我回家读书。",
-        "en": "After school ends, I go home to read."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，我回家读书。",
-          "en": "After school ends, I go home to read."
-        },
-        {
-          "zh": "放假时，我们去公园玩。",
-          "en": "During the holiday, we go to the park to play."
-        },
-        {
-          "zh": "请把书包轻轻放下。",
-          "en": "Please put down the school bag gently."
         }
       ],
       "etymologyHint": "let go",
@@ -12909,24 +9668,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "maybe"
         }
       ],
-      "sentence": {
-        "zh": "她也是我们班的同学。",
-        "en": "She is also a classmate in our class."
-      },
-      "sentences": [
-        {
-          "zh": "她也是我们班的同学。",
-          "en": "She is also a classmate in our class."
-        },
-        {
-          "zh": "这样也好，我们可以多练习。",
-          "en": "That is also fine; we can practise more."
-        },
-        {
-          "zh": "也许明天会下雨。",
-          "en": "Maybe it will rain tomorrow."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "online-xinhua",
@@ -12980,24 +9721,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "search for"
         }
       ],
-      "sentence": {
-        "zh": "我找到正确答案。",
-        "en": "I find the correct answer."
-      },
-      "sentences": [
-        {
-          "zh": "我找到正确答案。",
-          "en": "I find the correct answer."
-        },
-        {
-          "zh": "老师请我找人帮忙。",
-          "en": "The teacher asks me to find someone to help."
-        },
-        {
-          "zh": "我们在图书馆寻找一本书。",
-          "en": "We search for a book in the library."
-        }
-      ],
       "etymologyHint": "To go searching with a spear 戈 in hand 扌",
       "sourceTags": [
         "online-xinhua",
@@ -13049,24 +9772,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "拼音",
           "meaningEn": "pinyin"
-        }
-      ],
-      "sentence": {
-        "zh": "中文课上，我们学习拼写。",
-        "en": "In Chinese class, we learn about spell."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，我们学习拼写。",
-          "en": "In Chinese class, we learn about spell."
-        },
-        {
-          "zh": "这节课，我们学习拼图。",
-          "en": "In this lesson, we learn about puzzle."
-        },
-        {
-          "zh": "中文课上，我们学习拼音。",
-          "en": "In Chinese class, we learn about pinyin."
         }
       ],
       "etymologyHint": "hand",
@@ -13123,24 +9828,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "grass"
         }
       ],
-      "sentence": {
-        "zh": "我用地图找学校。",
-        "en": "I use a map to find the school."
-      },
-      "sentences": [
-        {
-          "zh": "我用地图找学校。",
-          "en": "I use a map to find the school."
-        },
-        {
-          "zh": "农民在土地上种菜。",
-          "en": "Farmers grow vegetables on the land."
-        },
-        {
-          "zh": "孩子们在草地上玩。",
-          "en": "Children play on the grass."
-        }
-      ],
       "etymologyHint": "earth",
       "sourceTags": [
         "online-xinhua",
@@ -13192,24 +9879,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "关心",
           "meaningEn": "care about"
-        }
-      ],
-      "sentence": {
-        "zh": "她用爱心帮助同学。",
-        "en": "She helps classmates with kindness."
-      },
-      "sentences": [
-        {
-          "zh": "她用爱心帮助同学。",
-          "en": "She helps classmates with kindness."
-        },
-        {
-          "zh": "这位同学热心帮助大家。",
-          "en": "This classmate warmly helps everyone."
-        },
-        {
-          "zh": "妈妈很关心我的学习。",
-          "en": "Mum cares about my study."
         }
       ],
       "etymologyHint": "A heart",
@@ -13265,24 +9934,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "volcano"
         }
       ],
-      "sentence": {
-        "zh": "窗外有高山。",
-        "en": "There is high mountain outside the window."
-      },
-      "sentences": [
-        {
-          "zh": "窗外有高山。",
-          "en": "There is high mountain outside the window."
-        },
-        {
-          "zh": "山羊在草地上玩。",
-          "en": "The goat plays on the grass."
-        },
-        {
-          "zh": "图画里画着火山。",
-          "en": "The picture shows volcano."
-        }
-      ],
       "etymologyHint": "Three mountain peaks",
       "sourceTags": [
         "online-xinhua",
@@ -13334,24 +9985,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "吃饭",
           "meaningEn": "eat a meal"
-        }
-      ],
-      "sentence": {
-        "zh": "桌上放着早饭。",
-        "en": "There is a breakfast on the table."
-      },
-      "sentences": [
-        {
-          "zh": "桌上放着早饭。",
-          "en": "There is a breakfast on the table."
-        },
-        {
-          "zh": "桌上放着晚饭。",
-          "en": "There is a dinner on the table."
-        },
-        {
-          "zh": "我们中午一起吃饭。",
-          "en": "We eat lunch together at noon."
         }
       ],
       "etymologyHint": "food",
@@ -13408,24 +10041,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "capital city"
         }
       ],
-      "sentence": {
-        "zh": "我的答案都对。",
-        "en": "All my answers are correct."
-      },
-      "sentences": [
-        {
-          "zh": "我的答案都对。",
-          "en": "All my answers are correct."
-        },
-        {
-          "zh": "他们都会说中文。",
-          "en": "They can all speak Chinese."
-        },
-        {
-          "zh": "周末，我们去了首都。",
-          "en": "On the weekend, we went to capital city."
-        }
-      ],
       "etymologyHint": "city",
       "sourceTags": [
         "online-xinhua",
@@ -13477,24 +10092,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "汉堡",
           "meaningEn": "hamburger"
-        }
-      ],
-      "sentence": {
-        "zh": "我会写五个汉字。",
-        "en": "I can write five Chinese characters."
-      },
-      "sentences": [
-        {
-          "zh": "我会写五个汉字。",
-          "en": "I can write five Chinese characters."
-        },
-        {
-          "zh": "中文课上，我们学习汉语。",
-          "en": "In Chinese class, we learn about chinese language."
-        },
-        {
-          "zh": "我想尝一尝汉堡。",
-          "en": "I want to try hamburger."
         }
       ],
       "etymologyHint": "Simplified form of 漢; the Han 𦰩 river 氵",
@@ -13550,24 +10147,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "question; problem"
         }
       ],
-      "sentence": {
-        "zh": "我们做中文问答练习。",
-        "en": "We do Chinese question-and-answer practice."
-      },
-      "sentences": [
-        {
-          "zh": "我们做中文问答练习。",
-          "en": "We do Chinese question-and-answer practice."
-        },
-        {
-          "zh": "请问，这个字怎么读？",
-          "en": "Excuse me, how do you read this character?"
-        },
-        {
-          "zh": "我有一个问题。",
-          "en": "I have a question."
-        }
-      ],
       "etymologyHint": "mouth",
       "sourceTags": [
         "online-xinhua",
@@ -13619,24 +10198,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "就好",
           "meaningEn": "that will be fine"
-        }
-      ],
-      "sentence": {
-        "zh": "老师听见我说就要。",
-        "en": "The teacher hears me say \"about to.\""
-      },
-      "sentences": [
-        {
-          "zh": "老师听见我说就要。",
-          "en": "The teacher hears me say \"about to.\""
-        },
-        {
-          "zh": "我会说就是。",
-          "en": "I can say \"exactly.\""
-        },
-        {
-          "zh": "你先读一遍就好。",
-          "en": "You only need to read it once first."
         }
       ],
       "etymologyHint": "specialty",
@@ -13693,24 +10254,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "answer"
         }
       ],
-      "sentence": {
-        "zh": "中文课上，我们学习问答。",
-        "en": "In Chinese class, we learn about question and answer."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，我们学习问答。",
-          "en": "In Chinese class, we learn about question and answer."
-        },
-        {
-          "zh": "这道题你答对了。",
-          "en": "You answered this question correctly."
-        },
-        {
-          "zh": "中文课上，我们学习答案。",
-          "en": "In Chinese class, we learn about answer."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "online-xinhua",
@@ -13762,24 +10305,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "全部",
           "meaningEn": "all"
-        }
-      ],
-      "sentence": {
-        "zh": "老师用图解释部分。",
-        "en": "The teacher uses a picture to explain part."
-      },
-      "sentences": [
-        {
-          "zh": "老师用图解释部分。",
-          "en": "The teacher uses a picture to explain part."
-        },
-        {
-          "zh": "这个字的部首是木。",
-          "en": "The radical of this character is wood."
-        },
-        {
-          "zh": "老师在黑板上写下全部。",
-          "en": "The teacher writes all on the board."
         }
       ],
       "etymologyHint": "place",
@@ -13835,24 +10360,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "rainwater"
         }
       ],
-      "sentence": {
-        "zh": "运动后，我喝冷水。",
-        "en": "After exercise, I drink cold water."
-      },
-      "sentences": [
-        {
-          "zh": "运动后，我喝冷水。",
-          "en": "After exercise, I drink cold water."
-        },
-        {
-          "zh": "桌上放着热水。",
-          "en": "There is hot water on the table."
-        },
-        {
-          "zh": "图画里画着雨水。",
-          "en": "The picture shows rainwater."
-        }
-      ],
       "etymologyHint": "A river running between two banks; compare 川",
       "sourceTags": [
         "online-xinhua",
@@ -13904,24 +10411,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "里面",
           "meaningEn": "inside"
-        }
-      ],
-      "sentence": {
-        "zh": "请看前面的位置。",
-        "en": "Please look at the position of front."
-      },
-      "sentences": [
-        {
-          "zh": "请看前面的位置。",
-          "en": "Please look at the position of front."
-        },
-        {
-          "zh": "妹妹坐在我后面。",
-          "en": "My younger sister sits behind me."
-        },
-        {
-          "zh": "书包里面有课本。",
-          "en": "There is a textbook inside the school bag."
         }
       ],
       "etymologyHint": "A person's face",
@@ -13977,24 +10466,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "flame"
         }
       ],
-      "sentence": {
-        "zh": "书上有一张火山的图片。",
-        "en": "There is a picture of a volcano in the book."
-      },
-      "sentences": [
-        {
-          "zh": "书上有一张火山的图片。",
-          "en": "There is a picture of a volcano in the book."
-        },
-        {
-          "zh": "我在车站看见火车。",
-          "en": "I see a train at the station."
-        },
-        {
-          "zh": "火苗很小，请注意安全。",
-          "en": "The flame is small; please be careful."
-        }
-      ],
       "etymologyHint": "Flames",
       "sourceTags": [
         "online-xinhua",
@@ -14046,24 +10517,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "白菜",
           "meaningEn": "bok choy; Chinese cabbage"
-        }
-      ],
-      "sentence": {
-        "zh": "周末，我和妈妈去买菜。",
-        "en": "On the weekend, Mum and I buy vegetables."
-      },
-      "sentences": [
-        {
-          "zh": "周末，我和妈妈去买菜。",
-          "en": "On the weekend, Mum and I buy vegetables."
-        },
-        {
-          "zh": "这家小店卖菜。",
-          "en": "This small shop sells vegetables."
-        },
-        {
-          "zh": "午饭时，我吃了白菜。",
-          "en": "At lunch, I eat bok choy."
         }
       ],
       "etymologyHint": "plant",
@@ -14120,24 +10573,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "want"
         }
       ],
-      "sentence": {
-        "zh": "只要练习，就会进步。",
-        "en": "As long as you practise, you will improve."
-      },
-      "sentences": [
-        {
-          "zh": "只要练习，就会进步。",
-          "en": "As long as you practise, you will improve."
-        },
-        {
-          "zh": "这句话里用到了就要。",
-          "en": "This sentence uses about to."
-        },
-        {
-          "zh": "我想要一本新书。",
-          "en": "I want a new book."
-        }
-      ],
       "etymologyHint": "A woman 女 with hands on her waist 覀",
       "sourceTags": [
         "online-xinhua",
@@ -14189,24 +10624,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "部首",
           "meaningEn": "radical"
-        }
-      ],
-      "sentence": {
-        "zh": "我在地图上找到澳洲的首都。",
-        "en": "I find Australia's capital on the map."
-      },
-      "sentences": [
-        {
-          "zh": "我在地图上找到澳洲的首都。",
-          "en": "I find Australia's capital on the map."
-        },
-        {
-          "zh": "首先，请打开课本。",
-          "en": "First, please open your textbook."
-        },
-        {
-          "zh": "中文课上，我们学习部首。",
-          "en": "In Chinese class, we learn about radical."
         }
       ],
       "etymologyHint": "A deer's head 自 adorned with antlers 丷",
@@ -14263,24 +10680,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "close and understanding"
         }
       ],
-      "sentence": {
-        "zh": "我知道答案在哪里。",
-        "en": "I know where the answer is."
-      },
-      "sentences": [
-        {
-          "zh": "我知道答案在哪里。",
-          "en": "I know where the answer is."
-        },
-        {
-          "zh": "读书可以学到新知识。",
-          "en": "Reading can help us learn new knowledge."
-        },
-        {
-          "zh": "她说话很知心。",
-          "en": "She speaks in a close and understanding way."
-        }
-      ],
       "etymologyHint": "mouth",
       "sourceTags": [
         "online-xinhua",
@@ -14333,24 +10732,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "会说",
           "meaningEn": "can speak"
-        }
-      ],
-      "sentence": {
-        "zh": "我会说都会。",
-        "en": "I can say \"all can.\""
-      },
-      "sentences": [
-        {
-          "zh": "我会说都会。",
-          "en": "I can say \"all can.\""
-        },
-        {
-          "zh": "我会写自己的名字。",
-          "en": "I can write my own name."
-        },
-        {
-          "zh": "妹妹会说简单的中文。",
-          "en": "My younger sister can speak simple Chinese."
         }
       ],
       "etymologyHint": "People 人 speaking 云",
@@ -14406,24 +10787,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "street"
         }
       ],
-      "sentence": {
-        "zh": "体育课上，我们在跑道上跑步。",
-        "en": "In PE class, we run on the running track."
-      },
-      "sentences": [
-        {
-          "zh": "体育课上，我们在跑道上跑步。",
-          "en": "In PE class, we run on the running track."
-        },
-        {
-          "zh": "我知道这个字怎么读。",
-          "en": "I know how to read this character."
-        },
-        {
-          "zh": "街道两边有很多商店。",
-          "en": "There are many shops on both sides of the street."
-        }
-      ],
       "etymologyHint": "walk",
       "sourceTags": [
         "online-xinhua",
@@ -14475,24 +10838,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "勇敢",
           "meaningEn": "brave"
-        }
-      ],
-      "sentence": {
-        "zh": "故事里的勇士保护大家。",
-        "en": "The brave person in the story protects everyone."
-      },
-      "sentences": [
-        {
-          "zh": "故事里的勇士保护大家。",
-          "en": "The brave person in the story protects everyone."
-        },
-        {
-          "zh": "我有勇气回答问题。",
-          "en": "I have the courage to answer the question."
-        },
-        {
-          "zh": "他很勇敢。",
-          "en": "He is brave."
         }
       ],
       "etymologyHint": "strength",
@@ -14548,24 +10893,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "wooden horse"
         }
       ],
-      "sentence": {
-        "zh": "这张桌子是木头做的。",
-        "en": "This table is made of wood."
-      },
-      "sentences": [
-        {
-          "zh": "这张桌子是木头做的。",
-          "en": "This table is made of wood."
-        },
-        {
-          "zh": "公园里有很多树木。",
-          "en": "There are many trees in the park."
-        },
-        {
-          "zh": "弟弟喜欢玩木马。",
-          "en": "My younger brother likes playing on the wooden horse."
-        }
-      ],
       "etymologyHint": "A tree",
       "sourceTags": [
         "online-xinhua",
@@ -14617,24 +10944,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "糖果",
           "meaningEn": "lolly; candy"
-        }
-      ],
-      "sentence": {
-        "zh": "我每天吃水果。",
-        "en": "I eat fruit every day."
-      },
-      "sentences": [
-        {
-          "zh": "我每天吃水果。",
-          "en": "I eat fruit every day."
-        },
-        {
-          "zh": "老师用故事说明因果。",
-          "en": "The teacher uses a story to explain cause and effect."
-        },
-        {
-          "zh": "午饭后，我吃了一颗糖果。",
-          "en": "After lunch, I eat one piece of candy."
         }
       ],
       "etymologyHint": "Fruit 田 growing on a tree 木",
@@ -14690,24 +10999,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "soil"
         }
       ],
-      "sentence": {
-        "zh": "窗外有土地。",
-        "en": "There is land outside the window."
-      },
-      "sentences": [
-        {
-          "zh": "窗外有土地。",
-          "en": "There is land outside the window."
-        },
-        {
-          "zh": "桌上放着土豆。",
-          "en": "There is potato on the table."
-        },
-        {
-          "zh": "我们在课文里读到泥土。",
-          "en": "We read about soil in the lesson text."
-        }
-      ],
       "etymologyHint": "A lump of clay on a potter's wheel",
       "sourceTags": [
         "online-xinhua",
@@ -14759,24 +11050,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "鸡肉",
           "meaningEn": "chicken meat"
-        }
-      ],
-      "sentence": {
-        "zh": "我想尝一尝牛肉。",
-        "en": "I want to try beef."
-      },
-      "sentences": [
-        {
-          "zh": "我想尝一尝牛肉。",
-          "en": "I want to try beef."
-        },
-        {
-          "zh": "我想尝一尝鱼肉。",
-          "en": "I want to try fish meat."
-        },
-        {
-          "zh": "午饭时，我吃了鸡肉。",
-          "en": "At lunch, I eat chicken meat."
         }
       ],
       "etymologyHint": "Meat on the ribs of an animal",
@@ -14833,24 +11106,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "be able to"
         }
       ],
-      "sentence": {
-        "zh": "老师用图解释能力。",
-        "en": "The teacher uses a picture to explain ability."
-      },
-      "sentences": [
-        {
-          "zh": "老师用图解释能力。",
-          "en": "The teacher uses a picture to explain ability."
-        },
-        {
-          "zh": "明天可能会下雨。",
-          "en": "It may rain tomorrow."
-        },
-        {
-          "zh": "我能够自己读这个句子。",
-          "en": "I can read this sentence by myself."
-        }
-      ],
       "etymologyHint": "A bear's head 厶, body ⺼, and claws 匕",
       "sourceTags": [
         "online-xinhua",
@@ -14902,24 +11157,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "努努嘴",
           "meaningEn": "pout one's lips"
-        }
-      ],
-      "sentence": {
-        "zh": "我努力练习写汉字。",
-        "en": "I work hard to practise writing Chinese characters."
-      },
-      "sentences": [
-        {
-          "zh": "我努力练习写汉字。",
-          "en": "I work hard to practise writing Chinese characters."
-        },
-        {
-          "zh": "弟弟努嘴指着桌上的糖。",
-          "en": "My younger brother pouts and points at the candy on the table."
-        },
-        {
-          "zh": "妹妹努努嘴，指向门口。",
-          "en": "My younger sister pouts and points to the door."
         }
       ],
       "etymologyHint": "strength",
@@ -14975,24 +11212,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "confirm"
         }
       ],
-      "sentence": {
-        "zh": "我认识这位新同学。",
-        "en": "I know this new classmate."
-      },
-      "sentences": [
-        {
-          "zh": "我认识这位新同学。",
-          "en": "I know this new classmate."
-        },
-        {
-          "zh": "我认真写每一个字。",
-          "en": "I write every character carefully."
-        },
-        {
-          "zh": "请确认答案是否正确。",
-          "en": "Please check whether the answer is correct."
-        }
-      ],
       "etymologyHint": "speech",
       "sourceTags": [
         "online-xinhua",
@@ -15044,24 +11263,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "想念",
           "meaningEn": "miss; think of"
-        }
-      ],
-      "sentence": {
-        "zh": "妹妹想要一杯水。",
-        "en": "My younger sister wants a cup of water."
-      },
-      "sentences": [
-        {
-          "zh": "妹妹想要一杯水。",
-          "en": "My younger sister wants a cup of water."
-        },
-        {
-          "zh": "我有一个新想法。",
-          "en": "I have a new idea."
-        },
-        {
-          "zh": "我想念在中国的爷爷。",
-          "en": "I miss my grandpa in China."
         }
       ],
       "etymologyHint": "mind",
@@ -15118,24 +11319,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "know characters"
         }
       ],
-      "sentence": {
-        "zh": "中文课上，我们学习知识。",
-        "en": "In Chinese class, we learn about knowledge."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，我们学习知识。",
-          "en": "In Chinese class, we learn about knowledge."
-        },
-        {
-          "zh": "我认识这个汉字。",
-          "en": "I recognise this Chinese character."
-        },
-        {
-          "zh": "中文课上，我们学习识字。",
-          "en": "In Chinese class, we learn about know characters."
-        }
-      ],
       "etymologyHint": "speech",
       "sourceTags": [
         "online-xinhua",
@@ -15187,24 +11370,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "努力",
           "meaningEn": "work hard"
-        }
-      ],
-      "sentence": {
-        "zh": "这节课，我们学习能力。",
-        "en": "In this lesson, we learn about ability."
-      },
-      "sentences": [
-        {
-          "zh": "这节课，我们学习能力。",
-          "en": "In this lesson, we learn about ability."
-        },
-        {
-          "zh": "休息以后，我恢复了体力。",
-          "en": "After resting, I got my energy back."
-        },
-        {
-          "zh": "我努力完成中文作业。",
-          "en": "I work hard to finish my Chinese homework."
         }
       ],
       "etymologyHint": "A plow's head representing strength",
@@ -15260,24 +11425,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "goldfish"
         }
       ],
-      "sentence": {
-        "zh": "晚上，我看见天上的金星。",
-        "en": "At night, I see Venus in the sky."
-      },
-      "sentences": [
-        {
-          "zh": "晚上，我看见天上的金星。",
-          "en": "At night, I see Venus in the sky."
-        },
-        {
-          "zh": "我用金色画星星。",
-          "en": "I use gold colour to draw stars."
-        },
-        {
-          "zh": "鱼缸里有一条金鱼。",
-          "en": "There is a goldfish in the fish tank."
-        }
-      ],
       "etymologyHint": "A cast-iron bell",
       "sourceTags": [
         "online-xinhua",
@@ -15329,24 +11476,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "奶茶",
           "meaningEn": "milk tea"
-        }
-      ],
-      "sentence": {
-        "zh": "弟弟喜欢喝奶。",
-        "en": "My younger brother likes drinking milk."
-      },
-      "sentences": [
-        {
-          "zh": "弟弟喜欢喝奶。",
-          "en": "My younger brother likes drinking milk."
-        },
-        {
-          "zh": "桌上放着牛奶。",
-          "en": "There is milk on the table."
-        },
-        {
-          "zh": "我想尝一尝奶茶。",
-          "en": "I want to try milk tea."
         }
       ],
       "etymologyHint": "woman",
@@ -15402,24 +11531,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "sell flowers"
         }
       ],
-      "sentence": {
-        "zh": "冬天，窗外飘着雪花。",
-        "en": "In winter, snowflakes float outside the window."
-      },
-      "sentences": [
-        {
-          "zh": "冬天，窗外飘着雪花。",
-          "en": "In winter, snowflakes float outside the window."
-        },
-        {
-          "zh": "花园里有很多花。",
-          "en": "There are many flowers in the garden."
-        },
-        {
-          "zh": "店里有人卖花。",
-          "en": "Someone sells flowers in the shop."
-        }
-      ],
       "etymologyHint": "A flower 艹 in bloom 化; 化 also provides the pronunciation",
       "sourceTags": [
         "online-xinhua",
@@ -15471,24 +11582,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "茶水",
           "meaningEn": "tea"
-        }
-      ],
-      "sentence": {
-        "zh": "饭后，爷爷喝茶。",
-        "en": "After the meal, Grandpa drinks tea."
-      },
-      "sentences": [
-        {
-          "zh": "饭后，爷爷喝茶。",
-          "en": "After the meal, Grandpa drinks tea."
-        },
-        {
-          "zh": "桌上放着奶茶。",
-          "en": "There is milk tea on the table."
-        },
-        {
-          "zh": "桌上放着茶水。",
-          "en": "There is tea on the table."
         }
       ],
       "etymologyHint": "plant",
@@ -15544,24 +11637,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "happy event"
         }
       ],
-      "sentence": {
-        "zh": "我喜欢学中文。",
-        "en": "I like learning Chinese."
-      },
-      "sentences": [
-        {
-          "zh": "我喜欢学中文。",
-          "en": "I like learning Chinese."
-        },
-        {
-          "zh": "姐姐喜爱唱歌。",
-          "en": "My older sister loves singing."
-        },
-        {
-          "zh": "妹妹听到喜事，很开心。",
-          "en": "My younger sister is happy when she hears about the happy event."
-        }
-      ],
       "etymologyHint": "Singing 口 and beating drums 壴",
       "sourceTags": [
         "online-xinhua",
@@ -15613,24 +11688,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "中奖",
           "meaningEn": "win a prize"
-        }
-      ],
-      "sentence": {
-        "zh": "完成任务后，我得到奖励。",
-        "en": "After finishing the task, I get a reward."
-      },
-      "sentences": [
-        {
-          "zh": "完成任务后，我得到奖励。",
-          "en": "After finishing the task, I get a reward."
-        },
-        {
-          "zh": "比赛结束后，他得到奖品。",
-          "en": "After the contest, he receives a prize."
-        },
-        {
-          "zh": "他在学校活动中中奖了。",
-          "en": "He won a prize in the school activity."
         }
       ],
       "etymologyHint": "big",
@@ -15686,24 +11743,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "practice characters"
         }
       ],
-      "sentence": {
-        "zh": "学习让我认识新字。",
-        "en": "Studying helps me recognise new characters."
-      },
-      "sentences": [
-        {
-          "zh": "学习让我认识新字。",
-          "en": "Studying helps me recognise new characters."
-        },
-        {
-          "zh": "中文课上，我们学习练习。",
-          "en": "In Chinese class, we learn about practice."
-        },
-        {
-          "zh": "中文课上，我们学习习字。",
-          "en": "In Chinese class, we learn about practice characters."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "online-xinhua",
@@ -15755,24 +11794,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "欢迎",
           "meaningEn": "welcome"
-        }
-      ],
-      "sentence": {
-        "zh": "我喜欢这本故事书。",
-        "en": "I like this storybook."
-      },
-      "sentences": [
-        {
-          "zh": "我喜欢这本故事书。",
-          "en": "I like this storybook."
-        },
-        {
-          "zh": "教室里充满了欢笑。",
-          "en": "The classroom is full of laughter."
-        },
-        {
-          "zh": "同学们欢迎新老师。",
-          "en": "The classmates welcome the new teacher."
         }
       ],
       "etymologyHint": "",
@@ -15828,24 +11849,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "practice singing"
         }
       ],
-      "sentence": {
-        "zh": "我每天练习写汉字。",
-        "en": "I practise writing Chinese characters every day."
-      },
-      "sentences": [
-        {
-          "zh": "我每天练习写汉字。",
-          "en": "I practise writing Chinese characters every day."
-        },
-        {
-          "zh": "中文课上，我们练字。",
-          "en": "In Chinese class, we practise writing characters."
-        },
-        {
-          "zh": "放学后，她去练歌。",
-          "en": "After school, she goes to practise singing."
-        }
-      ],
       "etymologyHint": "thread",
       "sourceTags": [
         "online-xinhua",
@@ -15897,24 +11900,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "激励",
           "meaningEn": "motivate"
-        }
-      ],
-      "sentence": {
-        "zh": "老师给认真听讲的同学奖励。",
-        "en": "The teacher gives a reward to the classmates who listen carefully."
-      },
-      "sentences": [
-        {
-          "zh": "老师给认真听讲的同学奖励。",
-          "en": "The teacher gives a reward to the classmates who listen carefully."
-        },
-        {
-          "zh": "老师鼓励我继续练习。",
-          "en": "The teacher encourages me to keep practising."
-        },
-        {
-          "zh": "老师的话激励我继续练习。",
-          "en": "The teacher's words encourage me to keep practising."
         }
       ],
       "etymologyHint": "strength",
@@ -15970,24 +11955,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "flowers and grass"
         }
       ],
-      "sentence": {
-        "zh": "周末，我们在草地上玩。",
-        "en": "On the weekend, we played on the grass."
-      },
-      "sentences": [
-        {
-          "zh": "周末，我们在草地上玩。",
-          "en": "On the weekend, we played on the grass."
-        },
-        {
-          "zh": "窗外有绿草。",
-          "en": "There is green grass outside the window."
-        },
-        {
-          "zh": "图画里画着花草。",
-          "en": "The picture shows flowers and grass."
-        }
-      ],
       "etymologyHint": "grass",
       "sourceTags": [
         "online-xinhua",
@@ -16039,24 +12006,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "白糖",
           "meaningEn": "white sugar"
-        }
-      ],
-      "sentence": {
-        "zh": "桌上放着糖果。",
-        "en": "There is a lolly on the table."
-      },
-      "sentences": [
-        {
-          "zh": "桌上放着糖果。",
-          "en": "There is a lolly on the table."
-        },
-        {
-          "zh": "午饭时，我吃了糖水。",
-          "en": "At lunch, I eat sweet soup."
-        },
-        {
-          "zh": "我想尝一尝白糖。",
-          "en": "I want to try white sugar."
         }
       ],
       "etymologyHint": "rice",
@@ -16112,24 +12061,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "tree leaf"
         }
       ],
-      "sentence": {
-        "zh": "图画里画着树木。",
-        "en": "The picture shows trees."
-      },
-      "sentences": [
-        {
-          "zh": "图画里画着树木。",
-          "en": "The picture shows trees."
-        },
-        {
-          "zh": "窗外有树林。",
-          "en": "There is woods outside the window."
-        },
-        {
-          "zh": "窗外有树叶。",
-          "en": "There is tree leaf outside the window."
-        }
-      ],
       "etymologyHint": "tree",
       "sourceTags": [
         "online-xinhua",
@@ -16181,24 +12112,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "蛋糕",
           "meaningEn": "cake"
-        }
-      ],
-      "sentence": {
-        "zh": "午饭时，我吃了鸡蛋。",
-        "en": "At lunch, I eat egg."
-      },
-      "sentences": [
-        {
-          "zh": "午饭时，我吃了鸡蛋。",
-          "en": "At lunch, I eat egg."
-        },
-        {
-          "zh": "桌上放着蛋黄。",
-          "en": "There is egg yolk on the table."
-        },
-        {
-          "zh": "我想尝一尝蛋糕。",
-          "en": "I want to try cake."
         }
       ],
       "etymologyHint": "insect",
@@ -16254,24 +12167,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "loving heart"
         }
       ],
-      "sentence": {
-        "zh": "妹妹喜爱唱中文歌。",
-        "en": "My younger sister likes singing Chinese songs."
-      },
-      "sentences": [
-        {
-          "zh": "妹妹喜爱唱中文歌。",
-          "en": "My younger sister likes singing Chinese songs."
-        },
-        {
-          "zh": "我们在班里学习友爱。",
-          "en": "We learn friendly love in class."
-        },
-        {
-          "zh": "她很有爱心。",
-          "en": "She has a loving heart."
-        }
-      ],
       "etymologyHint": "To bring a friend 友 into one's house 冖",
       "sourceTags": [
         "online-xinhua",
@@ -16325,24 +12220,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "put up"
         }
       ],
-      "sentence": {
-        "zh": "我把贴纸贴在本子上。",
-        "en": "I put the sticker on the notebook."
-      },
-      "sentences": [
-        {
-          "zh": "我把贴纸贴在本子上。",
-          "en": "I put the sticker on the notebook."
-        },
-        {
-          "zh": "请把名字贴上去。",
-          "en": "Please stick the name on it."
-        },
-        {
-          "zh": "老师在墙上张贴通知。",
-          "en": "The teacher puts up a notice on the wall."
-        }
-      ],
       "etymologyHint": "money",
       "sourceTags": [
         "online-xinhua",
@@ -16394,24 +12271,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "试题",
           "meaningEn": "test question"
-        }
-      ],
-      "sentence": {
-        "zh": "测试前，我认真复习。",
-        "en": "Before the quiz, I revise carefully."
-      },
-      "sentences": [
-        {
-          "zh": "测试前，我认真复习。",
-          "en": "Before the quiz, I revise carefully."
-        },
-        {
-          "zh": "中文课上，我们学习考试。",
-          "en": "In Chinese class, we learn about exam."
-        },
-        {
-          "zh": "中文课上，我们学习试题。",
-          "en": "In Chinese class, we learn about test question."
         }
       ],
       "etymologyHint": "speech",
@@ -16468,24 +12327,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "very good"
         }
       ],
-      "sentence": {
-        "zh": "我写好了这个字。",
-        "en": "I have finished writing this character."
-      },
-      "sentences": [
-        {
-          "zh": "我写好了这个字。",
-          "en": "I have finished writing this character."
-        },
-        {
-          "zh": "我和朋友和好了。",
-          "en": "My friend and I made up."
-        },
-        {
-          "zh": "你的中文说得很好。",
-          "en": "You speak Chinese very well."
-        }
-      ],
       "etymologyHint": "A woman 女 with a son 子",
       "sourceTags": [
         "online-xinhua",
@@ -16537,24 +12378,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "成绩单",
           "meaningEn": "report card"
-        }
-      ],
-      "sentence": {
-        "zh": "孩子在阅读中成长。",
-        "en": "The child grows through reading."
-      },
-      "sentences": [
-        {
-          "zh": "孩子在阅读中成长。",
-          "en": "The child grows through reading."
-        },
-        {
-          "zh": "这次中文成绩很好。",
-          "en": "This Chinese result is very good."
-        },
-        {
-          "zh": "妈妈看了我的成绩单。",
-          "en": "Mum looked at my report card."
         }
       ],
       "etymologyHint": "",
@@ -16610,24 +12433,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "pet"
         }
       ],
-      "sentence": {
-        "zh": "我给宠物猫倒水。",
-        "en": "I pour water for the pet cat."
-      },
-      "sentences": [
-        {
-          "zh": "我给宠物猫倒水。",
-          "en": "I pour water for the pet cat."
-        },
-        {
-          "zh": "宠物狗在门口等我们。",
-          "en": "The pet dog waits for us at the door."
-        },
-        {
-          "zh": "我家有一只宠物。",
-          "en": "My family has a pet."
-        }
-      ],
       "etymologyHint": "roof",
       "sourceTags": [
         "online-xinhua",
@@ -16679,24 +12484,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "森林",
           "meaningEn": "forest"
-        }
-      ],
-      "sentence": {
-        "zh": "图画里画着树林。",
-        "en": "The picture shows woods."
-      },
-      "sentences": [
-        {
-          "zh": "图画里画着树林。",
-          "en": "The picture shows woods."
-        },
-        {
-          "zh": "我们在课文里读到林子。",
-          "en": "We read about woods in the lesson text."
-        },
-        {
-          "zh": "我们在课文里读到森林。",
-          "en": "We read about forest in the lesson text."
         }
       ],
       "etymologyHint": "Two trees 木 representing a forest",
@@ -16752,24 +12539,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "small fish"
         }
       ],
-      "sentence": {
-        "zh": "我在公园里看见金鱼。",
-        "en": "I see a goldfish in the park."
-      },
-      "sentences": [
-        {
-          "zh": "我在公园里看见金鱼。",
-          "en": "I see a goldfish in the park."
-        },
-        {
-          "zh": "午饭时，我吃了鱼肉。",
-          "en": "At lunch, I eat fish meat."
-        },
-        {
-          "zh": "图画里有小鱼。",
-          "en": "There is small fish in the picture."
-        }
-      ],
       "etymologyHint": "A fish swimming upwards",
       "sourceTags": [
         "online-xinhua",
@@ -16823,24 +12592,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "riverside"
         }
       ],
-      "sentence": {
-        "zh": "我们经过运河。",
-        "en": "We pass by canal."
-      },
-      "sentences": [
-        {
-          "zh": "我们经过运河。",
-          "en": "We pass by canal."
-        },
-        {
-          "zh": "窗外有河水。",
-          "en": "There is river water outside the window."
-        },
-        {
-          "zh": "我在地图上找到河边。",
-          "en": "I find a riverside on the map."
-        }
-      ],
       "etymologyHint": "water",
       "sourceTags": [
         "online-xinhua",
@@ -16892,24 +12643,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "鸡肉",
           "meaningEn": "chicken meat"
-        }
-      ],
-      "sentence": {
-        "zh": "早餐时，我吃鸡蛋。",
-        "en": "At breakfast, I eat eggs."
-      },
-      "sentences": [
-        {
-          "zh": "早餐时，我吃鸡蛋。",
-          "en": "At breakfast, I eat eggs."
-        },
-        {
-          "zh": "院子里有一只小鸡。",
-          "en": "There is a chick in the yard."
-        },
-        {
-          "zh": "晚饭有鸡肉和青菜。",
-          "en": "Dinner has chicken and green vegetables."
         }
       ],
       "etymologyHint": "Another 又 kind of bird 鸟",
@@ -16967,24 +12700,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "sea"
         }
       ],
-      "sentence": {
-        "zh": "老师用图解释很大。",
-        "en": "The teacher uses a picture to explain very big."
-      },
-      "sentences": [
-        {
-          "zh": "老师用图解释很大。",
-          "en": "The teacher uses a picture to explain very big."
-        },
-        {
-          "zh": "这节课，我们学习大小。",
-          "en": "In this lesson, we learn about size."
-        },
-        {
-          "zh": "我们在课文里读到大海。",
-          "en": "We read about sea in the lesson text."
-        }
-      ],
       "etymologyHint": "A man 人 with outstretched arms",
       "sourceTags": [
         "online-xinhua",
@@ -17036,24 +12751,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "等一等",
           "meaningEn": "wait a moment"
-        }
-      ],
-      "sentence": {
-        "zh": "阅读练习分成三个等级。",
-        "en": "The reading practice is divided into three levels."
-      },
-      "sentences": [
-        {
-          "zh": "阅读练习分成三个等级。",
-          "en": "The reading practice is divided into three levels."
-        },
-        {
-          "zh": "我们在车站等待巴士。",
-          "en": "We wait for the bus at the station."
-        },
-        {
-          "zh": "这句话里用到了等一等。",
-          "en": "This sentence uses wait a moment."
         }
       ],
       "etymologyHint": "Bamboo strips ⺮ laid before a court 寺",
@@ -17110,24 +12807,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "good result"
         }
       ],
-      "sentence": {
-        "zh": "我的成绩进步了。",
-        "en": "My result has improved."
-      },
-      "sentences": [
-        {
-          "zh": "我的成绩进步了。",
-          "en": "My result has improved."
-        },
-        {
-          "zh": "老师发下成绩单。",
-          "en": "The teacher hands out the report cards."
-        },
-        {
-          "zh": "认真复习能得到好成绩。",
-          "en": "Careful revision can lead to a good result."
-        }
-      ],
       "etymologyHint": "To complete 纟 one's duties 责; 责 also provides the pronunciation",
       "sourceTags": [
         "online-xinhua",
@@ -17179,24 +12858,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "小猫",
           "meaningEn": "cat"
-        }
-      ],
-      "sentence": {
-        "zh": "老师用图解释大小。",
-        "en": "The teacher uses a picture to explain size."
-      },
-      "sentences": [
-        {
-          "zh": "老师用图解释大小。",
-          "en": "The teacher uses a picture to explain size."
-        },
-        {
-          "zh": "小朋友排队上车。",
-          "en": "The children line up to get on the bus."
-        },
-        {
-          "zh": "我在公园里看见小猫。",
-          "en": "I see a cat in the park."
         }
       ],
       "etymologyHint": "Dividing 八 by a line 亅",
@@ -17252,24 +12913,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "answer correctly"
         }
       ],
-      "sentence": {
-        "zh": "我会说对不起。",
-        "en": "I can say \"sorry.\""
-      },
-      "sentences": [
-        {
-          "zh": "我会说对不起。",
-          "en": "I can say \"sorry.\""
-        },
-        {
-          "zh": "这三道题都对。",
-          "en": "All three questions are correct."
-        },
-        {
-          "zh": "中文课上，我们学习答对。",
-          "en": "In Chinese class, we learn about answer correctly."
-        }
-      ],
       "etymologyHint": "A pair 又 of hands 寸",
       "sourceTags": [
         "online-xinhua",
@@ -17323,24 +12966,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "year level; grade"
         }
       ],
-      "sentence": {
-        "zh": "我们的班级很友好。",
-        "en": "Our class is friendly."
-      },
-      "sentences": [
-        {
-          "zh": "我们的班级很友好。",
-          "en": "Our class is friendly."
-        },
-        {
-          "zh": "这个游戏有不同等级。",
-          "en": "This game has different levels."
-        },
-        {
-          "zh": "中文课上，我们学习年级。",
-          "en": "In Chinese class, we learn about year level."
-        }
-      ],
       "etymologyHint": "silk",
       "sourceTags": [
         "online-xinhua",
@@ -17392,24 +13017,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "海边",
           "meaningEn": "seaside"
-        }
-      ],
-      "sentence": {
-        "zh": "图画里画着大海。",
-        "en": "The picture shows sea."
-      },
-      "sentences": [
-        {
-          "zh": "图画里画着大海。",
-          "en": "The picture shows sea."
-        },
-        {
-          "zh": "图画里画着海水。",
-          "en": "The picture shows sea water."
-        },
-        {
-          "zh": "我在地图上找到海边。",
-          "en": "I find a seaside on the map."
         }
       ],
       "etymologyHint": "water",
@@ -17466,24 +13073,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "kitty"
         }
       ],
-      "sentence": {
-        "zh": "草地上有一只小猫。",
-        "en": "There is a cat on the grass."
-      },
-      "sentences": [
-        {
-          "zh": "草地上有一只小猫。",
-          "en": "There is a cat on the grass."
-        },
-        {
-          "zh": "姐姐照顾家里的宠物猫。",
-          "en": "My older sister takes care of the pet cat at home."
-        },
-        {
-          "zh": "草地上有一只猫咪。",
-          "en": "There is a kitty on the grass."
-        }
-      ],
       "etymologyHint": "animal",
       "sourceTags": [
         "online-xinhua",
@@ -17535,24 +13124,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "田里",
           "meaningEn": "in the field"
-        }
-      ],
-      "sentence": {
-        "zh": "我在地图上找到田园。",
-        "en": "I find a field and garden on the map."
-      },
-      "sentences": [
-        {
-          "zh": "我在地图上找到田园。",
-          "en": "I find a field and garden on the map."
-        },
-        {
-          "zh": "我在地图上找到田地。",
-          "en": "I find a field on the map."
-        },
-        {
-          "zh": "农夫在田里工作。",
-          "en": "The farmer works in the field."
         }
       ],
       "etymologyHint": "The plots of a rice paddy",
@@ -17608,24 +13179,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "dog"
         }
       ],
-      "sentence": {
-        "zh": "这节课，我们学习狗叫。",
-        "en": "In this lesson, we learn about dog bark."
-      },
-      "sentences": [
-        {
-          "zh": "这节课，我们学习狗叫。",
-          "en": "In this lesson, we learn about dog bark."
-        },
-        {
-          "zh": "弟弟带宠物狗去散步。",
-          "en": "My younger brother takes the pet dog for a walk."
-        },
-        {
-          "zh": "我在公园里看见小狗。",
-          "en": "I see a dog in the park."
-        }
-      ],
       "etymologyHint": "dog",
       "sourceTags": [
         "online-xinhua",
@@ -17677,24 +13230,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "多么",
           "meaningEn": "how; very"
-        }
-      ],
-      "sentence": {
-        "zh": "教室里有很多学生。",
-        "en": "There are many students in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "教室里有很多学生。",
-          "en": "There are many students in the classroom."
-        },
-        {
-          "zh": "我问：“多少？”",
-          "en": "I ask, \"how many?\""
-        },
-        {
-          "zh": "我会说多么。",
-          "en": "I can say \"how.\""
         }
       ],
       "etymologyHint": "Two nights 夕, suggesting many",
@@ -17750,24 +13285,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "gift"
         }
       ],
-      "sentence": {
-        "zh": "有礼的孩子会说谢谢。",
-        "en": "A polite child says thank you."
-      },
-      "sentences": [
-        {
-          "zh": "有礼的孩子会说谢谢。",
-          "en": "A polite child says thank you."
-        },
-        {
-          "zh": "他准备了一份小谢礼。",
-          "en": "He prepared a small thank-you gift."
-        },
-        {
-          "zh": "生日那天，我收到礼物。",
-          "en": "On my birthday, I receive a gift."
-        }
-      ],
       "etymologyHint": "spirit",
       "sourceTags": [
         "online-xinhua",
@@ -17819,24 +13336,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "错过",
           "meaningEn": "miss; pass by"
-        }
-      ],
-      "sentence": {
-        "zh": "做完题后，我检查对错。",
-        "en": "After finishing the questions, I check what is right and wrong."
-      },
-      "sentences": [
-        {
-          "zh": "做完题后，我检查对错。",
-          "en": "After finishing the questions, I check what is right and wrong."
-        },
-        {
-          "zh": "我认真改正错题。",
-          "en": "I carefully correct the wrong question."
-        },
-        {
-          "zh": "我不想错过中文课。",
-          "en": "I do not want to miss Chinese class."
         }
       ],
       "etymologyHint": "Gold 钅 that once was 昔 but is lost",
@@ -17893,24 +13392,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "young girl"
         }
       ],
-      "sentence": {
-        "zh": "你认识多少汉字？",
-        "en": "How many Chinese characters do you know?"
-      },
-      "sentences": [
-        {
-          "zh": "你认识多少汉字？",
-          "en": "How many Chinese characters do you know?"
-        },
-        {
-          "zh": "那位少年在操场上跑步。",
-          "en": "That young person is running on the playground."
-        },
-        {
-          "zh": "这位少女在读书。",
-          "en": "This young girl is reading."
-        }
-      ],
       "etymologyHint": "Grains of sand; 小 provides the pronunciation and meaning",
       "sourceTags": [
         "online-xinhua",
@@ -17962,24 +13443,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "真实",
           "meaningEn": "real; true"
-        }
-      ],
-      "sentence": {
-        "zh": "我认真听老师说话。",
-        "en": "I listen to the teacher carefully."
-      },
-      "sentences": [
-        {
-          "zh": "我认真听老师说话。",
-          "en": "I listen to the teacher carefully."
-        },
-        {
-          "zh": "请判断这句话的真假。",
-          "en": "Please decide whether this sentence is true or false."
-        },
-        {
-          "zh": "这节课，我们学习真实。",
-          "en": "In this lesson, we learn about real."
         }
       ],
       "etymologyHint": "A straight 直 (that is, level) table 几",
@@ -18036,24 +13499,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "responsibility"
         }
       ],
-      "sentence": {
-        "zh": "我完成了今天的任务。",
-        "en": "I finished today's task."
-      },
-      "sentences": [
-        {
-          "zh": "我完成了今天的任务。",
-          "en": "I finished today's task."
-        },
-        {
-          "zh": "我会说任意。",
-          "en": "I can say \"any.\""
-        },
-        {
-          "zh": "老师用图解释责任。",
-          "en": "The teacher uses a picture to explain responsibility."
-        }
-      ],
       "etymologyHint": "person",
       "sourceTags": [
         "online-xinhua",
@@ -18107,24 +13552,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "park"
         }
       ],
-      "sentence": {
-        "zh": "我在地图上找到花园。",
-        "en": "I find a garden on the map."
-      },
-      "sentences": [
-        {
-          "zh": "我在地图上找到花园。",
-          "en": "I find a garden on the map."
-        },
-        {
-          "zh": "我们经过田园。",
-          "en": "We pass by field and garden."
-        },
-        {
-          "zh": "周末，我们去公园玩。",
-          "en": "On the weekend, we go to the park to play."
-        }
-      ],
       "etymologyHint": "enclosure",
       "sourceTags": [
         "online-xinhua",
@@ -18176,24 +13603,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "飞鸟",
           "meaningEn": "flying bird"
-        }
-      ],
-      "sentence": {
-        "zh": "这节课，我们学习鸟叫。",
-        "en": "In this lesson, we learn about bird call."
-      },
-      "sentences": [
-        {
-          "zh": "这节课，我们学习鸟叫。",
-          "en": "In this lesson, we learn about bird call."
-        },
-        {
-          "zh": "草地上有一只鸟儿。",
-          "en": "There is a bird on the grass."
-        },
-        {
-          "zh": "飞鸟在草地上玩。",
-          "en": "The flying bird plays on the grass."
         }
       ],
       "etymologyHint": "Simplified form of 烏, a bird",
@@ -18250,24 +13659,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "parent"
         }
       ],
-      "sentence": {
-        "zh": "周末，我去她家玩。",
-        "en": "On the weekend, I go to her house to play."
-      },
-      "sentences": [
-        {
-          "zh": "周末，我去她家玩。",
-          "en": "On the weekend, I go to her house to play."
-        },
-        {
-          "zh": "下雨天，我在家读书。",
-          "en": "On rainy days, I read at home."
-        },
-        {
-          "zh": "周末，我和家长一起吃饭。",
-          "en": "On the weekend, I eat with my parent."
-        }
-      ],
       "etymologyHint": "roof",
       "sourceTags": [
         "online-xinhua",
@@ -18319,24 +13710,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "马车",
           "meaningEn": "horse cart"
-        }
-      ],
-      "sentence": {
-        "zh": "这节课，我们学习木马。",
-        "en": "In this lesson, we learn about wooden horse."
-      },
-      "sentences": [
-        {
-          "zh": "这节课，我们学习木马。",
-          "en": "In this lesson, we learn about wooden horse."
-        },
-        {
-          "zh": "过马路时要注意安全。",
-          "en": "Be careful when crossing the road."
-        },
-        {
-          "zh": "我在路上看见马车。",
-          "en": "I see a horse cart on the road."
         }
       ],
       "etymologyHint": "Simplified form of 馬, a horse galloping to the left",
@@ -18392,24 +13765,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "happy"
         }
       ],
-      "sentence": {
-        "zh": "我们在课文里读到高山。",
-        "en": "We read about high mountain in the lesson text."
-      },
-      "sentences": [
-        {
-          "zh": "我们在课文里读到高山。",
-          "en": "We read about high mountain in the lesson text."
-        },
-        {
-          "zh": "体育课上，他练习跳高。",
-          "en": "In PE class, he practises high jump."
-        },
-        {
-          "zh": "听到好消息，我很高兴。",
-          "en": "I feel happy when I hear the good news."
-        }
-      ],
       "etymologyHint": "A tall palace",
       "sourceTags": [
         "online-xinhua",
@@ -18461,24 +13816,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "家务",
           "meaningEn": "housework"
-        }
-      ],
-      "sentence": {
-        "zh": "老师给我们一个小任务。",
-        "en": "The teacher gives us a small task."
-      },
-      "sentences": [
-        {
-          "zh": "老师给我们一个小任务。",
-          "en": "The teacher gives us a small task."
-        },
-        {
-          "zh": "这节课，我们学习服务。",
-          "en": "In this lesson, we learn about service."
-        },
-        {
-          "zh": "这节课讲到家务。",
-          "en": "This lesson talks about housework."
         }
       ],
       "etymologyHint": "",
@@ -18535,24 +13872,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "holiday"
         }
       ],
-      "sentence": {
-        "zh": "明天学校放假。",
-        "en": "School has a holiday tomorrow."
-      },
-      "sentences": [
-        {
-          "zh": "明天学校放假。",
-          "en": "School has a holiday tomorrow."
-        },
-        {
-          "zh": "这个游戏要分清真假。",
-          "en": "This game asks us to tell true from false."
-        },
-        {
-          "zh": "假日，我们一起去学校。",
-          "en": "On holiday, we go to school together."
-        }
-      ],
       "etymologyHint": "A false 叚 person 亻; 叚 also provides the pronunciation",
       "sourceTags": [
         "online-xinhua",
@@ -18605,24 +13924,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "家长",
           "meaningEn": "parent"
-        }
-      ],
-      "sentence": {
-        "zh": "老师用图解释长短。",
-        "en": "The teacher uses a picture to explain length."
-      },
-      "sentences": [
-        {
-          "zh": "老师用图解释长短。",
-          "en": "The teacher uses a picture to explain length."
-        },
-        {
-          "zh": "我在学习中慢慢成长。",
-          "en": "I grow little by little through learning."
-        },
-        {
-          "zh": "这节课讲到家长。",
-          "en": "This lesson talks about parent."
         }
       ],
       "etymologyHint": "Simplified form of 長; an old man with long hair and a cane",
@@ -18678,24 +13979,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "each"
         }
       ],
-      "sentence": {
-        "zh": "我每天练习写字。",
-        "en": "I practise writing characters every day."
-      },
-      "sentences": [
-        {
-          "zh": "我每天练习写字。",
-          "en": "I practise writing characters every day."
-        },
-        {
-          "zh": "每年春节，我们全家团圆。",
-          "en": "Every year at Spring Festival, our whole family reunites."
-        },
-        {
-          "zh": "每个学生都有一本书。",
-          "en": "Each student has a book."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "online-xinhua",
@@ -18747,24 +14030,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "路程",
           "meaningEn": "distance; journey"
-        }
-      ],
-      "sentence": {
-        "zh": "今天的课程有故事。",
-        "en": "Today's lesson has a story."
-      },
-      "sentences": [
-        {
-          "zh": "今天的课程有故事。",
-          "en": "Today's lesson has a story."
-        },
-        {
-          "zh": "这节课，我们学习过程。",
-          "en": "In this lesson, we learn about process."
-        },
-        {
-          "zh": "从家到学校的路程不远。",
-          "en": "The distance from home to school is not far."
         }
       ],
       "etymologyHint": "grain",
@@ -18820,24 +14085,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "study"
         }
       ],
-      "sentence": {
-        "zh": "学校门口有一棵树。",
-        "en": "There is a tree at the school gate."
-      },
-      "sentences": [
-        {
-          "zh": "学校门口有一棵树。",
-          "en": "There is a tree at the school gate."
-        },
-        {
-          "zh": "这位同学写字很认真。",
-          "en": "This classmate writes characters carefully."
-        },
-        {
-          "zh": "我每天学习中文。",
-          "en": "I study Chinese every day."
-        }
-      ],
       "etymologyHint": "A building 冖 where children 子 study; ⺍ provides the pronunciation",
       "sourceTags": [
         "online-xinhua",
@@ -18889,24 +14136,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "牛羊",
           "meaningEn": "cows and sheep"
-        }
-      ],
-      "sentence": {
-        "zh": "桌上有一盘牛肉。",
-        "en": "There is a plate of beef on the table."
-      },
-      "sentences": [
-        {
-          "zh": "桌上有一盘牛肉。",
-          "en": "There is a plate of beef on the table."
-        },
-        {
-          "zh": "早餐时，我喝牛奶。",
-          "en": "At breakfast, I drink milk."
-        },
-        {
-          "zh": "牛羊在草地上吃草。",
-          "en": "Cows and sheep eat grass on the grassland."
         }
       ],
       "etymologyHint": "An ox's horned head",
@@ -18963,24 +14192,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "principal"
         }
       ],
-      "sentence": {
-        "zh": "我每天去学校。",
-        "en": "I go to school every day."
-      },
-      "sentences": [
-        {
-          "zh": "我每天去学校。",
-          "en": "I go to school every day."
-        },
-        {
-          "zh": "中文课上，我们学习校园。",
-          "en": "In Chinese class, we learn about school campus."
-        },
-        {
-          "zh": "中文课上，我们学习校长。",
-          "en": "In Chinese class, we learn about principal."
-        }
-      ],
       "etymologyHint": "wood",
       "sourceTags": [
         "online-xinhua",
@@ -19033,24 +14244,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "羊毛",
           "meaningEn": "wool"
-        }
-      ],
-      "sentence": {
-        "zh": "我在公园里看见山羊。",
-        "en": "I see a goat in the park."
-      },
-      "sentences": [
-        {
-          "zh": "我在公园里看见山羊。",
-          "en": "I see a goat in the park."
-        },
-        {
-          "zh": "草地上有牛羊。",
-          "en": "There are cows and sheep on the grass."
-        },
-        {
-          "zh": "图画里有羊毛。",
-          "en": "There is wool in the picture."
         }
       ],
       "etymologyHint": "A sheep's head with horns",
@@ -19106,24 +14299,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "sprint"
         }
       ],
-      "sentence": {
-        "zh": "这节课，我们学习长短。",
-        "en": "In this lesson, we learn about length."
-      },
-      "sentences": [
-        {
-          "zh": "这节课，我们学习长短。",
-          "en": "In this lesson, we learn about length."
-        },
-        {
-          "zh": "这篇短文很容易读。",
-          "en": "This short text is easy to read."
-        },
-        {
-          "zh": "体育课上，我们练习短跑。",
-          "en": "In PE class, we practise sprint."
-        }
-      ],
       "etymologyHint": "dart",
       "sourceTags": [
         "online-xinhua",
@@ -19175,24 +14350,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "测一测",
           "meaningEn": "test it"
-        }
-      ],
-      "sentence": {
-        "zh": "今天有中文测试。",
-        "en": "There is a Chinese quiz today."
-      },
-      "sentences": [
-        {
-          "zh": "今天有中文测试。",
-          "en": "There is a Chinese quiz today."
-        },
-        {
-          "zh": "中文课上，我们学习测量。",
-          "en": "In Chinese class, we learn about measure."
-        },
-        {
-          "zh": "中文课上，我们学习测一测。",
-          "en": "In Chinese class, we learn about test it."
         }
       ],
       "etymologyHint": "water",
@@ -19249,24 +14406,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "what"
         }
       ],
-      "sentence": {
-        "zh": "门口站着什么人？",
-        "en": "Who is standing at the door?"
-      },
-      "sentences": [
-        {
-          "zh": "门口站着什么人？",
-          "en": "Who is standing at the door?"
-        },
-        {
-          "zh": "你为什么喜欢这个故事？",
-          "en": "Why do you like this story?"
-        },
-        {
-          "zh": "我问：“什么？”",
-          "en": "I ask, \"what?\""
-        }
-      ],
       "etymologyHint": "A file of ten 十 people 亻",
       "sourceTags": [
         "online-xinhua",
@@ -19318,24 +14457,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "新的",
           "meaningEn": "new one"
-        }
-      ],
-      "sentence": {
-        "zh": "中文课上，我们学习新书。",
-        "en": "In Chinese class, we learn about new book."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，我们学习新书。",
-          "en": "In Chinese class, we learn about new book."
-        },
-        {
-          "zh": "新年，我们和家人吃饭。",
-          "en": "At New Year, we eat with our family."
-        },
-        {
-          "zh": "这节课，我们学习新的。",
-          "en": "In this lesson, we learn about new one."
         }
       ],
       "etymologyHint": "A freshly chopped 斤 tree 亲",
@@ -19393,24 +14514,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "why"
         }
       ],
-      "sentence": {
-        "zh": "我问：“什么人？”",
-        "en": "I ask, \"what person?\""
-      },
-      "sentences": [
-        {
-          "zh": "我问：“什么人？”",
-          "en": "I ask, \"what person?\""
-        },
-        {
-          "zh": "老师听见我说多么。",
-          "en": "The teacher hears me say \"how.\""
-        },
-        {
-          "zh": "你为什么笑？",
-          "en": "Why are you laughing?"
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "online-xinhua",
@@ -19465,24 +14568,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "just right"
         }
       ],
-      "sentence": {
-        "zh": "我会说正在。",
-        "en": "I can say \"in the middle of doing.\""
-      },
-      "sentences": [
-        {
-          "zh": "我会说正在。",
-          "en": "I can say \"in the middle of doing.\""
-        },
-        {
-          "zh": "请用正确的读音读字。",
-          "en": "Please read the character with the correct pronunciation."
-        },
-        {
-          "zh": "老师听见我说正好。",
-          "en": "The teacher hears me say \"just right.\""
-        }
-      ],
       "etymologyHint": "A foot 止 stopping in the right place 一",
       "sourceTags": [
         "online-xinhua",
@@ -19534,24 +14619,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "班上",
           "meaningEn": "in the class"
-        }
-      ],
-      "sentence": {
-        "zh": "班级活动在周五。",
-        "en": "The class activity is on Friday."
-      },
-      "sentences": [
-        {
-          "zh": "班级活动在周五。",
-          "en": "The class activity is on Friday."
-        },
-        {
-          "zh": "中文课上，我们学习班长。",
-          "en": "In Chinese class, we learn about class monitor."
-        },
-        {
-          "zh": "中文课上，我们学习班上。",
-          "en": "In Chinese class, we learn about in the class."
         }
       ],
       "etymologyHint": "Cutting 刂 a piece of jade 王 in two, symbolizing two classes",
@@ -19608,24 +14675,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "train"
         }
       ],
-      "sentence": {
-        "zh": "我在路上看见快车。",
-        "en": "I see fast train or bus on the road."
-      },
-      "sentences": [
-        {
-          "zh": "我在路上看见快车。",
-          "en": "I see fast train or bus on the road."
-        },
-        {
-          "zh": "我在路上看见慢车。",
-          "en": "I see slow train or bus on the road."
-        },
-        {
-          "zh": "我在路上看见火车。",
-          "en": "I see a train on the road."
-        }
-      ],
       "etymologyHint": "Simplified form of 車, a cart with two wheels, seen from above",
       "sourceTags": [
         "online-xinhua",
@@ -19677,24 +14726,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "上课",
           "meaningEn": "have class"
-        }
-      ],
-      "sentence": {
-        "zh": "中文课上，我们学习课本。",
-        "en": "In Chinese class, we learn about textbook."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，我们学习课本。",
-          "en": "In Chinese class, we learn about textbook."
-        },
-        {
-          "zh": "中文课程很有趣。",
-          "en": "The Chinese lesson is interesting."
-        },
-        {
-          "zh": "中文课上，我们学习上课。",
-          "en": "In Chinese class, we learn about have class."
         }
       ],
       "etymologyHint": "speech",
@@ -19750,24 +14781,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "on the boat"
         }
       ],
-      "sentence": {
-        "zh": "河里有很多船只。",
-        "en": "There are many boats in the river."
-      },
-      "sentences": [
-        {
-          "zh": "河里有很多船只。",
-          "en": "There are many boats in the river."
-        },
-        {
-          "zh": "湖边有一只小船。",
-          "en": "There is a small boat by the lake."
-        },
-        {
-          "zh": "我们在船上看海。",
-          "en": "We look at the sea from the boat."
-        }
-      ],
       "etymologyHint": "ship",
       "sourceTags": [
         "online-xinhua",
@@ -19819,24 +14832,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "旧衣",
           "meaningEn": "old clothes"
-        }
-      ],
-      "sentence": {
-        "zh": "中文课上，我们学习旧书。",
-        "en": "In Chinese class, we learn about old book."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，我们学习旧书。",
-          "en": "In Chinese class, we learn about old book."
-        },
-        {
-          "zh": "老师用图解释旧的。",
-          "en": "The teacher uses a picture to explain old one."
-        },
-        {
-          "zh": "老师用图解释旧衣。",
-          "en": "The teacher uses a picture to explain old clothes."
         }
       ],
       "etymologyHint": "Older than 丨 the sun 日",
@@ -19892,24 +14887,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "indeed"
         }
       ],
-      "sentence": {
-        "zh": "我确认书包里有课本。",
-        "en": "I check that the textbook is in my school bag."
-      },
-      "sentences": [
-        {
-          "zh": "我确认书包里有课本。",
-          "en": "I check that the textbook is in my school bag."
-        },
-        {
-          "zh": "这个答案是正确的。",
-          "en": "This answer is correct."
-        },
-        {
-          "zh": "我会说的确。",
-          "en": "I can say \"indeed.\""
-        }
-      ],
       "etymologyHint": "stone",
       "sourceTags": [
         "online-xinhua",
@@ -19963,24 +14940,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "who is it"
         }
       ],
-      "sentence": {
-        "zh": "这是谁的书包？",
-        "en": "Whose school bag is this?"
-      },
-      "sentences": [
-        {
-          "zh": "这是谁的书包？",
-          "en": "Whose school bag is this?"
-        },
-        {
-          "zh": "这本书是谁家的？",
-          "en": "Whose family's book is this?"
-        },
-        {
-          "zh": "门外有人，我问：“谁呀？”",
-          "en": "Someone is outside the door, and I ask who it is."
-        }
-      ],
       "etymologyHint": "speech",
       "sourceTags": [
         "online-xinhua",
@@ -20032,24 +14991,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "冷风",
           "meaningEn": "cold wind"
-        }
-      ],
-      "sentence": {
-        "zh": "今天是个冷天。",
-        "en": "Today is a cold day."
-      },
-      "sentences": [
-        {
-          "zh": "今天是个冷天。",
-          "en": "Today is a cold day."
-        },
-        {
-          "zh": "杯子里有冷水。",
-          "en": "There is cold water in the cup."
-        },
-        {
-          "zh": "窗外吹来冷风。",
-          "en": "A cold wind blows in from outside the window."
         }
       ],
       "etymologyHint": "ice",
@@ -20107,24 +15048,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "where is it"
         }
       ],
-      "sentence": {
-        "zh": "我问：“哪里？”",
-        "en": "I ask, \"where?\""
-      },
-      "sentences": [
-        {
-          "zh": "我问：“哪里？”",
-          "en": "I ask, \"where?\""
-        },
-        {
-          "zh": "老师听见我问哪儿。",
-          "en": "The teacher hears me ask \"where?\""
-        },
-        {
-          "zh": "我的铅笔在哪呢？",
-          "en": "Where is my pencil?"
-        }
-      ],
       "etymologyHint": "mouth",
       "sourceTags": [
         "online-xinhua",
@@ -20176,24 +15099,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "安全",
           "meaningEn": "safe"
-        }
-      ],
-      "sentence": {
-        "zh": "早安，今天我们一起读书。",
-        "en": "Good morning, today we read together."
-      },
-      "sentences": [
-        {
-          "zh": "早安，今天我们一起读书。",
-          "en": "Good morning, today we read together."
-        },
-        {
-          "zh": "弟弟说晚安后去睡觉。",
-          "en": "My younger brother says good night and goes to sleep."
-        },
-        {
-          "zh": "安全第一，大家慢慢走。",
-          "en": "Safety comes first, so everyone walks slowly."
         }
       ],
       "etymologyHint": "A woman 女 safe in a house 宀",
@@ -20249,24 +15154,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "hometown"
         }
       ],
-      "sentence": {
-        "zh": "老师教我们写汉字。",
-        "en": "The teacher teaches us to write Chinese characters."
-      },
-      "sentences": [
-        {
-          "zh": "老师教我们写汉字。",
-          "en": "The teacher teaches us to write Chinese characters."
-        },
-        {
-          "zh": "这位老人喜欢讲故事。",
-          "en": "This elderly person likes telling stories."
-        },
-        {
-          "zh": "春节时，我回老家看家人。",
-          "en": "At Spring Festival, I go back to my hometown to see family."
-        }
-      ],
       "etymologyHint": "A person bent over with long hair 匕 and a crutch; compare 耂",
       "sourceTags": [
         "online-xinhua",
@@ -20318,24 +15205,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "飞走",
           "meaningEn": "fly away"
-        }
-      ],
-      "sentence": {
-        "zh": "我在公园里看见飞鸟。",
-        "en": "I see a flying bird in the park."
-      },
-      "sentences": [
-        {
-          "zh": "我在公园里看见飞鸟。",
-          "en": "I see a flying bird in the park."
-        },
-        {
-          "zh": "放学后，我坐飞机回家。",
-          "en": "After school, I take a plane home."
-        },
-        {
-          "zh": "老师示范飞走这个动作。",
-          "en": "The teacher demonstrates the action fly away."
         }
       ],
       "etymologyHint": "A bird flapping its wings",
@@ -20391,24 +15260,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "teacher or elder"
         }
       ],
-      "sentence": {
-        "zh": "我们向老师问好。",
-        "en": "We greet the teacher."
-      },
-      "sentences": [
-        {
-          "zh": "我们向老师问好。",
-          "en": "We greet the teacher."
-        },
-        {
-          "zh": "全校师生一起唱歌。",
-          "en": "All the teachers and students sing together."
-        },
-        {
-          "zh": "我认识这位师长。",
-          "en": "I know this teacher or elder."
-        }
-      ],
       "etymologyHint": "To skillfully wield 帀 a knife 刂",
       "sourceTags": [
         "online-xinhua",
@@ -20460,24 +15311,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "机器",
           "meaningEn": "machine"
-        }
-      ],
-      "sentence": {
-        "zh": "天空中有一架飞机。",
-        "en": "There is an airplane in the sky."
-      },
-      "sentences": [
-        {
-          "zh": "天空中有一架飞机。",
-          "en": "There is an airplane in the sky."
-        },
-        {
-          "zh": "我用耳机听中文。",
-          "en": "I use earphones to listen to Chinese."
-        },
-        {
-          "zh": "这台机器可以打印。",
-          "en": "This machine can print."
         }
       ],
       "etymologyHint": "A table 几 made of wood 木; 几 also provides the pronunciation",
@@ -20533,24 +15366,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "warm-hearted"
         }
       ],
-      "sentence": {
-        "zh": "这节课，我们学习冷热。",
-        "en": "In this lesson, we learn about hot and cold."
-      },
-      "sentences": [
-        {
-          "zh": "这节课，我们学习冷热。",
-          "en": "In this lesson, we learn about hot and cold."
-        },
-        {
-          "zh": "我想尝一尝热水。",
-          "en": "I want to try hot water."
-        },
-        {
-          "zh": "她很热心，常常帮助同学。",
-          "en": "She is warm-hearted and often helps classmates."
-        }
-      ],
       "etymologyHint": "fire",
       "sourceTags": [
         "online-xinhua",
@@ -20602,24 +15417,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "全对",
           "meaningEn": "all correct"
-        }
-      ],
-      "sentence": {
-        "zh": "我把作业全部写完了。",
-        "en": "I finished all my homework."
-      },
-      "sentences": [
-        {
-          "zh": "我把作业全部写完了。",
-          "en": "I finished all my homework."
-        },
-        {
-          "zh": "学校门口有安全提示。",
-          "en": "There is a safety notice at the school gate."
-        },
-        {
-          "zh": "这次听写我全对。",
-          "en": "I got everything right in this dictation."
         }
       ],
       "etymologyHint": "Jade 玉 put away 入 for safe-keeping",
@@ -20676,24 +15473,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "here"
         }
       ],
-      "sentence": {
-        "zh": "这个字很简单。",
-        "en": "This character is easy."
-      },
-      "sentences": [
-        {
-          "zh": "这个字很简单。",
-          "en": "This character is easy."
-        },
-        {
-          "zh": "请看这边的位置。",
-          "en": "Please look at the position of this side."
-        },
-        {
-          "zh": "这里是我们的教室。",
-          "en": "Here is our classroom."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "online-xinhua",
@@ -20745,24 +15524,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "快慢",
           "meaningEn": "speed"
-        }
-      ],
-      "sentence": {
-        "zh": "和朋友一起学习很快乐。",
-        "en": "Studying with friends is happy."
-      },
-      "sentences": [
-        {
-          "zh": "和朋友一起学习很快乐。",
-          "en": "Studying with friends is happy."
-        },
-        {
-          "zh": "快点，我们要上课了。",
-          "en": "Hurry up; class is about to start."
-        },
-        {
-          "zh": "写字时，要注意快慢。",
-          "en": "When writing characters, pay attention to speed."
         }
       ],
       "etymologyHint": "A decisive 夬 will 忄; 夬 also provides the pronunciation",
@@ -20821,24 +15582,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "there"
         }
       ],
-      "sentence": {
-        "zh": "那个书包是我的。",
-        "en": "That school bag is mine."
-      },
-      "sentences": [
-        {
-          "zh": "那个书包是我的。",
-          "en": "That school bag is mine."
-        },
-        {
-          "zh": "请看那边的位置。",
-          "en": "Please look at the position on that side."
-        },
-        {
-          "zh": "那里有一家书店。",
-          "en": "There is a bookstore there."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "online-xinhua",
@@ -20890,24 +15633,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "帮手",
           "meaningEn": "helper"
-        }
-      ],
-      "sentence": {
-        "zh": "有了老师的帮助，我进步了。",
-        "en": "With the teacher's help, I improved."
-      },
-      "sentences": [
-        {
-          "zh": "有了老师的帮助，我进步了。",
-          "en": "With the teacher's help, I improved."
-        },
-        {
-          "zh": "我会帮忙。",
-          "en": "I can help."
-        },
-        {
-          "zh": "我认识这位帮手。",
-          "en": "I know this helper."
         }
       ],
       "etymologyHint": "A nation's 邦 flag 巾; 邦 also provides the pronunciation",
@@ -20964,24 +15689,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "desk mate"
         }
       ],
-      "sentence": {
-        "zh": "灯和音乐同时开始。",
-        "en": "The lights and music start at the same time."
-      },
-      "sentences": [
-        {
-          "zh": "灯和音乐同时开始。",
-          "en": "The lights and music start at the same time."
-        },
-        {
-          "zh": "我认识这位同学。",
-          "en": "I know this classmate."
-        },
-        {
-          "zh": "我的同桌很友好。",
-          "en": "My desk mate is friendly."
-        }
-      ],
       "etymologyHint": "Sharing a common 凡 tongue 口",
       "sourceTags": [
         "online-xinhua",
@@ -21033,24 +15740,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "尾巴",
           "meaningEn": "tail"
-        }
-      ],
-      "sentence": {
-        "zh": "放学后，我坐巴士回家。",
-        "en": "After school, I take the bus home."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，我坐巴士回家。",
-          "en": "After school, I take the bus home."
-        },
-        {
-          "zh": "弟弟把手放在下巴上。",
-          "en": "My younger brother puts his hand on his chin."
-        },
-        {
-          "zh": "小猫有一条长尾巴。",
-          "en": "The kitten has a long tail."
         }
       ],
       "etymologyHint": "",
@@ -21106,24 +15795,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "child; little friend"
         }
       ],
-      "sentence": {
-        "zh": "我认识这位朋友。",
-        "en": "I know this friend."
-      },
-      "sentences": [
-        {
-          "zh": "我认识这位朋友。",
-          "en": "I know this friend."
-        },
-        {
-          "zh": "周末，我和好朋友一起画画。",
-          "en": "On the weekend, I draw with my good friend."
-        },
-        {
-          "zh": "操场上有一位小朋友。",
-          "en": "There is a child on the playground."
-        }
-      ],
       "etymologyHint": "Two people 月 walking together",
       "sourceTags": [
         "online-xinhua",
@@ -21175,24 +15846,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "勇士",
           "meaningEn": "brave person"
-        }
-      ],
-      "sentence": {
-        "zh": "我认识这位男士。",
-        "en": "I know this man."
-      },
-      "sentences": [
-        {
-          "zh": "我认识这位男士。",
-          "en": "I know this man."
-        },
-        {
-          "zh": "我坐巴士去学校。",
-          "en": "I take the bus to school."
-        },
-        {
-          "zh": "我认识这位勇士。",
-          "en": "I know this brave person."
         }
       ],
       "etymologyHint": "",
@@ -21248,24 +15901,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "walk slowly"
         }
       ],
-      "sentence": {
-        "zh": "早上，我和爸爸一起慢跑。",
-        "en": "In the morning, I jog with Dad."
-      },
-      "sentences": [
-        {
-          "zh": "早上，我和爸爸一起慢跑。",
-          "en": "In the morning, I jog with Dad."
-        },
-        {
-          "zh": "放学后，我坐慢车回家。",
-          "en": "After school, I take slow train or bus home."
-        },
-        {
-          "zh": "下楼梯时请慢走。",
-          "en": "Please walk slowly when going down the stairs."
-        }
-      ],
       "etymologyHint": "heart",
       "sourceTags": [
         "online-xinhua",
@@ -21318,24 +15953,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "助人",
           "meaningEn": "help people"
-        }
-      ],
-      "sentence": {
-        "zh": "谢谢你的帮助。",
-        "en": "Thank you for your help."
-      },
-      "sentences": [
-        {
-          "zh": "谢谢你的帮助。",
-          "en": "Thank you for your help."
-        },
-        {
-          "zh": "操场上有一位助手。",
-          "en": "There is an assistant on the playground."
-        },
-        {
-          "zh": "助人是一件好事。",
-          "en": "Helping others is a good thing."
         }
       ],
       "etymologyHint": "strength",
@@ -21393,24 +16010,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "is that so"
         }
       ],
-      "sentence": {
-        "zh": "这样做行吗？",
-        "en": "Is it okay to do it this way?"
-      },
-      "sentences": [
-        {
-          "zh": "这样做行吗？",
-          "en": "Is it okay to do it this way?"
-        },
-        {
-          "zh": "我们一起练习，好吗？",
-          "en": "Shall we practise together?"
-        },
-        {
-          "zh": "这是你的书，是吗？",
-          "en": "This is your book, right?"
-        }
-      ],
       "etymologyHint": "mouth",
       "sourceTags": [
         "online-xinhua",
@@ -21466,24 +16065,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "factory manager"
         }
       ],
-      "sentence": {
-        "zh": "这家工厂生产书包。",
-        "en": "This factory makes school bags."
-      },
-      "sentences": [
-        {
-          "zh": "这家工厂生产书包。",
-          "en": "This factory makes school bags."
-        },
-        {
-          "zh": "新的厂房很干净。",
-          "en": "The new factory building is clean."
-        },
-        {
-          "zh": "厂长介绍安全规则。",
-          "en": "The factory manager introduces the safety rules."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -21536,24 +16117,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "入门",
           "meaningEn": "beginner level"
-        }
-      ],
-      "sentence": {
-        "zh": "图书馆入口在左边。",
-        "en": "The library entrance is on the left."
-      },
-      "sentences": [
-        {
-          "zh": "图书馆入口在左边。",
-          "en": "The library entrance is on the left."
-        },
-        {
-          "zh": "我加入了中文小组。",
-          "en": "I join the Chinese group."
-        },
-        {
-          "zh": "这本书适合中文入门。",
-          "en": "This book is suitable for beginner Chinese."
         }
       ],
       "etymologyHint": "An arrow indicating \"enter\"",
@@ -21611,24 +16174,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "several books"
         }
       ],
-      "sentence": {
-        "zh": "桌上有几个苹果。",
-        "en": "There are several apples on the table."
-      },
-      "sentences": [
-        {
-          "zh": "桌上有几个苹果。",
-          "en": "There are several apples on the table."
-        },
-        {
-          "zh": "这几天我都练习中文。",
-          "en": "I practise Chinese over these few days."
-        },
-        {
-          "zh": "书包里有几本书。",
-          "en": "There are several books in the school bag."
-        }
-      ],
       "etymologyHint": "A small table; compare 丌",
       "sourceTags": [
         "common-800",
@@ -21681,24 +16226,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "又来",
           "meaningEn": "come again"
-        }
-      ],
-      "sentence": {
-        "zh": "月亮又大又圆。",
-        "en": "The moon is big and round."
-      },
-      "sentences": [
-        {
-          "zh": "月亮又大又圆。",
-          "en": "The moon is big and round."
-        },
-        {
-          "zh": "我又一次写对了这个字。",
-          "en": "I write this character correctly once again."
-        },
-        {
-          "zh": "小朋友又来图书馆借书。",
-          "en": "The child comes to the library again to borrow books."
         }
       ],
       "etymologyHint": "A right hand, representing a pair; compare 左",
@@ -21756,24 +16283,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "tree trunk"
         }
       ],
-      "sentence": {
-        "zh": "教室很干净。",
-        "en": "The classroom is clean."
-      },
-      "sentences": [
-        {
-          "zh": "教室很干净。",
-          "en": "The classroom is clean."
-        },
-        {
-          "zh": "妹妹吃了一块饼干。",
-          "en": "My younger sister eats a biscuit."
-        },
-        {
-          "zh": "这棵树的树干很粗。",
-          "en": "This tree has a thick trunk."
-        }
-      ],
       "etymologyHint": "A club or axe",
       "sourceTags": [
         "common-800",
@@ -21826,24 +16335,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "由于",
           "meaningEn": "due to"
-        }
-      ],
-      "sentence": {
-        "zh": "讨论时，小组同学在作业本上看到于是。",
-        "en": "During discussion, my group members see thereupon in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，小组同学在作业本上看到于是。",
-          "en": "During discussion, my group members see thereupon in the homework book."
-        },
-        {
-          "zh": "讨论时，小组同学谈到属于。",
-          "en": "During discussion, my group members mention how to be classified as."
-        },
-        {
-          "zh": "图片帮助我们了解由于。",
-          "en": "An image helps us understand due to."
         }
       ],
       "etymologyHint": "",
@@ -21900,24 +16391,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "factory"
         }
       ],
-      "sentence": {
-        "zh": "看图时，我在校园里看到工作。",
-        "en": "While looking at a picture, I see how to work on campus."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，我在校园里看到工作。",
-          "en": "While looking at a picture, I see how to work on campus."
-        },
-        {
-          "zh": "看图时，我谈到工人。",
-          "en": "While looking at a picture, I mention worker."
-        },
-        {
-          "zh": "练习帮助我们了解工厂。",
-          "en": "An exercise helps us understand factory."
-        }
-      ],
       "etymologyHint": "A spade or other workman's tool",
       "sourceTags": [
         "common-800",
@@ -21970,24 +16443,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "人才",
           "meaningEn": "talent"
-        }
-      ],
-      "sentence": {
-        "zh": "早读时，同学在家里的书架上看到才能。",
-        "en": "During morning reading, my classmate sees talent on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，同学在家里的书架上看到才能。",
-          "en": "During morning reading, my classmate sees talent on the bookshelf at home."
-        },
-        {
-          "zh": "早读时，同学谈到刚才。",
-          "en": "During morning reading, my classmate mentions just now."
-        },
-        {
-          "zh": "对话帮助我们了解人才。",
-          "en": "A dialogue helps us understand talent."
         }
       ],
       "etymologyHint": "A sprout growing in the ground, representing a budding talent",
@@ -22046,24 +16501,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "give"
         }
       ],
-      "sentence": {
-        "zh": "我参与班级活动。",
-        "en": "I take part in the class activity."
-      },
-      "sentences": [
-        {
-          "zh": "我参与班级活动。",
-          "en": "I take part in the class activity."
-        },
-        {
-          "zh": "这幅画与众不同。",
-          "en": "This picture is different from others."
-        },
-        {
-          "zh": "老师给与我们鼓励。",
-          "en": "The teacher gives us encouragement."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -22116,24 +16553,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "来得及",
           "meaningEn": "have enough time"
-        }
-      ],
-      "sentence": {
-        "zh": "下雨前，我们及时回家。",
-        "en": "Before it rains, we get home in time."
-      },
-      "sentences": [
-        {
-          "zh": "下雨前，我们及时回家。",
-          "en": "Before it rains, we get home in time."
-        },
-        {
-          "zh": "这次考试我及格了。",
-          "en": "I passed this test."
-        },
-        {
-          "zh": "现在出发还来得及。",
-          "en": "If we leave now, there is still enough time."
         }
       ],
       "etymologyHint": "",
@@ -22191,24 +16610,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "broadcast"
         }
       ],
-      "sentence": {
-        "zh": "阅读时，朋友在故事书里看到广告。",
-        "en": "While reading, my friend sees how to advertise in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，朋友在故事书里看到广告。",
-          "en": "While reading, my friend sees how to advertise in a storybook."
-        },
-        {
-          "zh": "阅读时，朋友谈到广场。",
-          "en": "While reading, my friend mentions public square."
-        },
-        {
-          "zh": "书本帮助我们了解广播。",
-          "en": "A book helps us understand broadcast."
-        }
-      ],
       "etymologyHint": "A lean-to 厂, suggesting a building",
       "sourceTags": [
         "common-800",
@@ -22261,24 +16662,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "专门",
           "meaningEn": "specialist"
-        }
-      ],
-      "sentence": {
-        "zh": "写作业时，我们在练习册里看到门口。",
-        "en": "While doing homework, we see doorway in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，我们在练习册里看到门口。",
-          "en": "While doing homework, we see doorway in a workbook."
-        },
-        {
-          "zh": "写作业时，我们谈到部门。",
-          "en": "While doing homework, we mention department."
-        },
-        {
-          "zh": "图画帮助我们了解专门。",
-          "en": "A picture helps us understand specialist."
         }
       ],
       "etymologyHint": "An open doorway or gate",
@@ -22335,24 +16718,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "volunteer"
         }
       ],
-      "sentence": {
-        "zh": "这个故事很有意义。",
-        "en": "This story has meaning."
-      },
-      "sentences": [
-        {
-          "zh": "这个故事很有意义。",
-          "en": "This story has meaning."
-        },
-        {
-          "zh": "故事里的英雄保护正义。",
-          "en": "The hero in the story protects justice."
-        },
-        {
-          "zh": "周末，义工来学校帮忙。",
-          "en": "On the weekend, volunteers come to help at school."
-        }
-      ],
       "etymologyHint": "sheep; simplified form of 義",
       "sourceTags": [
         "common-800",
@@ -22405,24 +16770,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "之间",
           "meaningEn": "between"
-        }
-      ],
-      "sentence": {
-        "zh": "上课之前，我准备好书本。",
-        "en": "Before class, I get my books ready."
-      },
-      "sentences": [
-        {
-          "zh": "上课之前，我准备好书本。",
-          "en": "Before class, I get my books ready."
-        },
-        {
-          "zh": "放学之后，我回家读书。",
-          "en": "After school, I go home to read."
-        },
-        {
-          "zh": "我坐在两个同学之间。",
-          "en": "I sit between two classmates."
         }
       ],
       "etymologyHint": "A foot meaning \"to follow\"; cursive version of 止",
@@ -22479,24 +16826,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "put others before oneself"
         }
       ],
-      "sentence": {
-        "zh": "这件事我自己完成。",
-        "en": "I finish this matter by myself."
-      },
-      "sentences": [
-        {
-          "zh": "这件事我自己完成。",
-          "en": "I finish this matter by myself."
-        },
-        {
-          "zh": "好朋友也是知己。",
-          "en": "A good friend is also a close friend."
-        },
-        {
-          "zh": "故事里的哥哥懂得舍己为人。",
-          "en": "The older brother in the story knows how to put others before himself."
-        }
-      ],
       "etymologyHint": "A loom woven with thread",
       "sourceTags": [
         "common-800",
@@ -22549,24 +16878,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "早已",
           "meaningEn": "long already"
-        }
-      ],
-      "sentence": {
-        "zh": "我已经完成作业。",
-        "en": "I have already finished my homework."
-      },
-      "sentences": [
-        {
-          "zh": "我已经完成作业。",
-          "en": "I have already finished my homework."
-        },
-        {
-          "zh": "这道题有两个已知条件。",
-          "en": "This question has two known conditions."
-        },
-        {
-          "zh": "妈妈早已准备好晚饭。",
-          "en": "Mum has already prepared dinner."
         }
       ],
       "etymologyHint": "",
@@ -22624,24 +16935,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "king"
         }
       ],
-      "sentence": {
-        "zh": "讨论时，姐姐在阅读时间里看到王子。",
-        "en": "During discussion, my older sister sees prince during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，姐姐在阅读时间里看到王子。",
-          "en": "During discussion, my older sister sees prince during reading time."
-        },
-        {
-          "zh": "讨论时，姐姐谈到王国。",
-          "en": "During discussion, my older sister mentions kingdom."
-        },
-        {
-          "zh": "图片帮助我们了解国王。",
-          "en": "An image helps us understand king."
-        }
-      ],
       "etymologyHint": "A man 十 bridging heaven and earth (both 一)",
       "sourceTags": [
         "common-800",
@@ -22694,24 +16987,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "元宵",
           "meaningEn": "sweet rice dumpling"
-        }
-      ],
-      "sentence": {
-        "zh": "元旦那天，我们给朋友送祝福。",
-        "en": "On New Year's Day, we send wishes to friends."
-      },
-      "sentences": [
-        {
-          "zh": "元旦那天，我们给朋友送祝福。",
-          "en": "On New Year's Day, we send wishes to friends."
-        },
-        {
-          "zh": "早睡早起让人有元气。",
-          "en": "Sleeping early and waking early gives people energy."
-        },
-        {
-          "zh": "元宵节，我们吃元宵。",
-          "en": "At Lantern Festival, we eat sweet rice dumplings."
         }
       ],
       "etymologyHint": "A man 儿 with two lines emphasizing their head 二",
@@ -22768,24 +17043,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "boundless"
         }
       ],
-      "sentence": {
-        "zh": "图书馆里无声无息。",
-        "en": "The library is silent."
-      },
-      "sentences": [
-        {
-          "zh": "图书馆里无声无息。",
-          "en": "The library is silent."
-        },
-        {
-          "zh": "无论下雨还是晴天，我都练习中文。",
-          "en": "No matter whether it rains or is sunny, I practise Chinese."
-        },
-        {
-          "zh": "图画里有无边的大海。",
-          "en": "The picture shows a boundless sea."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -22838,24 +17095,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "专长",
           "meaningEn": "special skill"
-        }
-      ],
-      "sentence": {
-        "zh": "上课时，我专心听讲。",
-        "en": "In class, I listen with focus."
-      },
-      "sentences": [
-        {
-          "zh": "上课时，我专心听讲。",
-          "en": "In class, I listen with focus."
-        },
-        {
-          "zh": "妈妈专门给我买了字帖。",
-          "en": "Mum specially buys me a handwriting book."
-        },
-        {
-          "zh": "他的专长是画画。",
-          "en": "His special skill is drawing."
         }
       ],
       "etymologyHint": "",
@@ -22912,24 +17151,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to provide assistance"
         }
       ],
-      "sentence": {
-        "zh": "放学后，妹妹在家里的书架上看到支持。",
-        "en": "After school, my younger sister sees how to be in favor of on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，妹妹在家里的书架上看到支持。",
-          "en": "After school, my younger sister sees how to be in favor of on the bookshelf at home."
-        },
-        {
-          "zh": "放学后，妹妹谈到支付。",
-          "en": "After school, my younger sister mentions how to pay."
-        },
-        {
-          "zh": "词卡帮助我们了解支援。",
-          "en": "A word card helps us understand how to provide assistance."
-        }
-      ],
       "etymologyHint": "A hand 又 holding a branch 十 for support",
       "sourceTags": [
         "common-800",
@@ -22982,24 +17203,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "太空",
           "meaningEn": "outer space"
-        }
-      ],
-      "sentence": {
-        "zh": "阅读时，小组同学在图书馆里看到太太。",
-        "en": "While reading, my group members see married woman in the library."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，小组同学在图书馆里看到太太。",
-          "en": "While reading, my group members see married woman in the library."
-        },
-        {
-          "zh": "阅读时，小组同学谈到太阳。",
-          "en": "While reading, my group members mention sun."
-        },
-        {
-          "zh": "书本帮助我们了解太空。",
-          "en": "A book helps us understand outer space."
         }
       ],
       "etymologyHint": "A giant 大 with a normal-sized man 丶 for scale",
@@ -23057,24 +17260,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to differentiate"
         }
       ],
-      "sentence": {
-        "zh": "写作业时，我在教室里看到区域。",
-        "en": "While doing homework, I see area in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，我在教室里看到区域。",
-          "en": "While doing homework, I see area in the classroom."
-        },
-        {
-          "zh": "写作业时，我谈到社区。",
-          "en": "While doing homework, I mention community."
-        },
-        {
-          "zh": "图画帮助我们了解区分。",
-          "en": "A picture helps us understand how to differentiate."
-        }
-      ],
       "etymologyHint": "A place 匸 under a lord's control 乂",
       "sourceTags": [
         "common-800",
@@ -23129,24 +17314,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "course"
         }
       ],
-      "sentence": {
-        "zh": "周末，同学在故事书里看到历史。",
-        "en": "On the weekend, my classmate sees history in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "周末，同学在故事书里看到历史。",
-          "en": "On the weekend, my classmate sees history in a storybook."
-        },
-        {
-          "zh": "周末，同学谈到经历。",
-          "en": "On the weekend, my classmate mentions experience."
-        },
-        {
-          "zh": "故事帮助我们了解历程。",
-          "en": "A story helps us understand course."
-        }
-      ],
       "etymologyHint": "calendar",
       "sourceTags": [
         "common-800",
@@ -23199,24 +17366,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "比例",
           "meaningEn": "proportion"
-        }
-      ],
-      "sentence": {
-        "zh": "午饭后，姐姐在练习册里看到比赛。",
-        "en": "After lunch, my older sister sees competition in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，姐姐在练习册里看到比赛。",
-          "en": "After lunch, my older sister sees competition in a workbook."
-        },
-        {
-          "zh": "午饭后，姐姐谈到比较。",
-          "en": "After lunch, my older sister mentions how to compare."
-        },
-        {
-          "zh": "例子帮助我们了解比例。",
-          "en": "An example helps us understand proportion."
         }
       ],
       "etymologyHint": "Two spoons 匕 side-by-side; 匕 also provides the pronunciation",
@@ -23274,24 +17423,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "cut vegetables"
         }
       ],
-      "sentence": {
-        "zh": "一切准备好了。",
-        "en": "Everything is ready."
-      },
-      "sentences": [
-        {
-          "zh": "一切准备好了。",
-          "en": "Everything is ready."
-        },
-        {
-          "zh": "老师说话很亲切。",
-          "en": "The teacher speaks kindly."
-        },
-        {
-          "zh": "妈妈在厨房切菜。",
-          "en": "Mum cuts vegetables in the kitchen."
-        }
-      ],
       "etymologyHint": "knife",
       "sourceTags": [
         "common-800",
@@ -23345,24 +17476,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "内心",
           "meaningEn": "inner heart"
-        }
-      ],
-      "sentence": {
-        "zh": "下雨时，我们在室内活动。",
-        "en": "When it rains, we do activities indoors."
-      },
-      "sentences": [
-        {
-          "zh": "下雨时，我们在室内活动。",
-          "en": "When it rains, we do activities indoors."
-        },
-        {
-          "zh": "这本书的内容很有趣。",
-          "en": "The content of this book is interesting."
-        },
-        {
-          "zh": "她内心很高兴。",
-          "en": "She is happy in her heart."
         }
       ],
       "etymologyHint": "A man 人  entering a door 冂",
@@ -23419,24 +17532,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "courage"
         }
       ],
-      "sentence": {
-        "zh": "讨论时，我们在课外书里看到天气。",
-        "en": "During discussion, we see weather in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，我们在课外书里看到天气。",
-          "en": "During discussion, we see weather in an extracurricular book."
-        },
-        {
-          "zh": "讨论时，我们谈到空气。",
-          "en": "During discussion, we mention air."
-        },
-        {
-          "zh": "图片帮助我们了解勇气。",
-          "en": "An image helps us understand courage."
-        }
-      ],
       "etymologyHint": "A person 亻 breathing air",
       "sourceTags": [
         "common-800",
@@ -23489,24 +17584,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "毛巾",
           "meaningEn": "towel"
-        }
-      ],
-      "sentence": {
-        "zh": "看图时，妹妹在中文角里看到毛病。",
-        "en": "While looking at a picture, my younger sister sees fault in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，妹妹在中文角里看到毛病。",
-          "en": "While looking at a picture, my younger sister sees fault in the Chinese corner."
-        },
-        {
-          "zh": "看图时，妹妹谈到毛衣。",
-          "en": "While looking at a picture, my younger sister mentions sweater."
-        },
-        {
-          "zh": "练习帮助我们了解毛巾。",
-          "en": "An exercise helps us understand towel."
         }
       ],
       "etymologyHint": "",
@@ -23564,24 +17641,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "gramophone record"
         }
       ],
-      "sentence": {
-        "zh": "早读时，小组同学在阅读时间里看到照片。",
-        "en": "During morning reading, my group members see photograph during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，小组同学在阅读时间里看到照片。",
-          "en": "During morning reading, my group members see photograph during reading time."
-        },
-        {
-          "zh": "早读时，小组同学谈到片段。",
-          "en": "During morning reading, my group members mention fragment."
-        },
-        {
-          "zh": "对话帮助我们了解唱片。",
-          "en": "A dialogue helps us understand gramophone record."
-        }
-      ],
       "etymologyHint": "Half of a tree trunk; compare 爿",
       "sourceTags": [
         "common-800",
@@ -23637,24 +17696,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "fossil"
         }
       ],
-      "sentence": {
-        "zh": "天气有很大的变化。",
-        "en": "The weather has a big change."
-      },
-      "sentences": [
-        {
-          "zh": "天气有很大的变化。",
-          "en": "The weather has a big change."
-        },
-        {
-          "zh": "中文课介绍中国文化。",
-          "en": "Chinese class introduces Chinese culture."
-        },
-        {
-          "zh": "博物馆里有恐龙化石。",
-          "en": "There are dinosaur fossils in the museum."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -23707,24 +17748,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "反省",
           "meaningEn": "to reflect upon oneself"
-        }
-      ],
-      "sentence": {
-        "zh": "放学后，同学在作业本上看到反应。",
-        "en": "After school, my classmate sees how to react in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，同学在作业本上看到反应。",
-          "en": "After school, my classmate sees how to react in the homework book."
-        },
-        {
-          "zh": "放学后，同学谈到反对。",
-          "en": "After school, my classmate mentions how to oppose."
-        },
-        {
-          "zh": "词卡帮助我们了解反省。",
-          "en": "A word card helps us understand how to reflect upon oneself."
         }
       ],
       "etymologyHint": "A hand 又 held up against a cliff 厂",
@@ -23782,24 +17805,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "never"
         }
       ],
-      "sentence": {
-        "zh": "阅读时，姐姐在校园里看到从未。",
-        "en": "While reading, my older sister sees never on campus."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，姐姐在校园里看到从未。",
-          "en": "While reading, my older sister sees never on campus."
-        },
-        {
-          "zh": "阅读时，姐姐谈到从事。",
-          "en": "While reading, my older sister mentions how to go for."
-        },
-        {
-          "zh": "书本帮助我们了解从不。",
-          "en": "A book helps us understand never."
-        }
-      ],
       "etymologyHint": "One person 人 following another",
       "sourceTags": [
         "common-800",
@@ -23852,24 +17857,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "方便",
           "meaningEn": "convenient"
-        }
-      ],
-      "sentence": {
-        "zh": "写作业时，哥哥在家里的书架上看到方式。",
-        "en": "While doing homework, my older brother sees way on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，哥哥在家里的书架上看到方式。",
-          "en": "While doing homework, my older brother sees way on the bookshelf at home."
-        },
-        {
-          "zh": "写作业时，哥哥谈到方向。",
-          "en": "While doing homework, my older brother mentions direction."
-        },
-        {
-          "zh": "图画帮助我们了解方便。",
-          "en": "A picture helps us understand convenient."
         }
       ],
       "etymologyHint": "",
@@ -23927,24 +17914,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "fighting spirit"
         }
       ],
-      "sentence": {
-        "zh": "晚上，我们看见北斗。",
-        "en": "At night, we see the Big Dipper."
-      },
-      "sentences": [
-        {
-          "zh": "晚上，我们看见北斗。",
-          "en": "At night, we see the Big Dipper."
-        },
-        {
-          "zh": "故事里的小王子穿着斗篷。",
-          "en": "The little prince in the story wears a cloak."
-        },
-        {
-          "zh": "运动员很有斗志。",
-          "en": "The athlete has strong fighting spirit."
-        }
-      ],
       "etymologyHint": "A hand holding a measuring dipper",
       "sourceTags": [
         "common-800",
@@ -23997,24 +17966,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "设计",
           "meaningEn": "to design"
-        }
-      ],
-      "sentence": {
-        "zh": "午饭后，我们在教室里看到计划。",
-        "en": "After lunch, we see plan in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，我们在教室里看到计划。",
-          "en": "After lunch, we see plan in the classroom."
-        },
-        {
-          "zh": "午饭后，我们谈到计算。",
-          "en": "After lunch, we mention how to count."
-        },
-        {
-          "zh": "例子帮助我们了解设计。",
-          "en": "An example helps us understand how to design."
         }
       ],
       "etymologyHint": "speech",
@@ -24071,24 +18022,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to draw into"
         }
       ],
-      "sentence": {
-        "zh": "活动课上，妹妹在故事书里看到引起。",
-        "en": "During activity class, my younger sister sees how to give rise to in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，妹妹在故事书里看到引起。",
-          "en": "During activity class, my younger sister sees how to give rise to in a storybook."
-        },
-        {
-          "zh": "活动课上，妹妹谈到引发。",
-          "en": "During activity class, my younger sister mentions how to lead to."
-        },
-        {
-          "zh": "卡片帮助我们了解引入。",
-          "en": "A card helps us understand how to draw into."
-        }
-      ],
       "etymologyHint": "To pull back a bow's 弓 drawstring 丨",
       "sourceTags": [
         "common-800",
@@ -24141,24 +18074,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "队长",
           "meaningEn": "captain"
-        }
-      ],
-      "sentence": {
-        "zh": "复习时，小组同学在练习册里看到队伍。",
-        "en": "While reviewing, my group members see ranks in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，小组同学在练习册里看到队伍。",
-          "en": "While reviewing, my group members see ranks in a workbook."
-        },
-        {
-          "zh": "复习时，小组同学谈到队员。",
-          "en": "While reviewing, my group members mention team member."
-        },
-        {
-          "zh": "阅读卡帮助我们了解队长。",
-          "en": "A reading card helps us understand captain."
         }
       ],
       "etymologyHint": "A group of people 人 gathered in one place 阝",
@@ -24215,24 +18130,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to organize"
         }
       ],
-      "sentence": {
-        "zh": "讨论时，我在学校展板上看到办法。",
-        "en": "During discussion, I see means on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，我在学校展板上看到办法。",
-          "en": "During discussion, I see means on the school display board."
-        },
-        {
-          "zh": "讨论时，我谈到办事。",
-          "en": "During discussion, I mention how to handle."
-        },
-        {
-          "zh": "图片帮助我们了解主办。",
-          "en": "An image helps us understand how to organize."
-        }
-      ],
       "etymologyHint": "strength",
       "sourceTags": [
         "common-800",
@@ -24285,24 +18182,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "展示",
           "meaningEn": "to reveal"
-        }
-      ],
-      "sentence": {
-        "zh": "看图时，同学在小组活动中看到表示。",
-        "en": "While looking at a picture, my classmate sees how to express during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，同学在小组活动中看到表示。",
-          "en": "While looking at a picture, my classmate sees how to express during a group activity."
-        },
-        {
-          "zh": "看图时，同学谈到显示。",
-          "en": "While looking at a picture, my classmate mentions how to show."
-        },
-        {
-          "zh": "练习帮助我们了解展示。",
-          "en": "An exercise helps us understand how to reveal."
         }
       ],
       "etymologyHint": "An altar",
@@ -24360,24 +18239,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to hit"
         }
       ],
-      "sentence": {
-        "zh": "早读时，姐姐在课外书里看到打开。",
-        "en": "During morning reading, my older sister sees how to open in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，姐姐在课外书里看到打开。",
-          "en": "During morning reading, my older sister sees how to open in an extracurricular book."
-        },
-        {
-          "zh": "早读时，姐姐谈到打算。",
-          "en": "During morning reading, my older sister mentions how to plan."
-        },
-        {
-          "zh": "对话帮助我们了解打击。",
-          "en": "A dialogue helps us understand how to hit."
-        }
-      ],
       "etymologyHint": "hand",
       "sourceTags": [
         "common-800",
@@ -24430,24 +18291,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "世代",
           "meaningEn": "generations"
-        }
-      ],
-      "sentence": {
-        "zh": "世界上有很多语言。",
-        "en": "There are many languages in the world."
-      },
-      "sentences": [
-        {
-          "zh": "世界上有很多语言。",
-          "en": "There are many languages in the world."
-        },
-        {
-          "zh": "二十一世纪有很多新科技。",
-          "en": "The twenty-first century has many new technologies."
-        },
-        {
-          "zh": "这个故事世代相传。",
-          "en": "This story is passed down through generations."
         }
       ],
       "etymologyHint": "Three leaves on a branch",
@@ -24503,24 +18346,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "细节",
           "meaningEn": "details"
-        }
-      ],
-      "sentence": {
-        "zh": "放学后，朋友在阅读时间里看到节目。",
-        "en": "After school, my friend sees program during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，朋友在阅读时间里看到节目。",
-          "en": "After school, my friend sees program during reading time."
-        },
-        {
-          "zh": "放学后，朋友谈到节日。",
-          "en": "After school, my friend mentions holiday."
-        },
-        {
-          "zh": "词卡帮助我们了解细节。",
-          "en": "A word card helps us understand details."
         }
       ],
       "etymologyHint": "Simplified form of 節; sections of bamboo ⺮",
@@ -24579,24 +18404,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "magic trick"
         }
       ],
-      "sentence": {
-        "zh": "美术课上，我们画花。",
-        "en": "In art class, we draw flowers."
-      },
-      "sentences": [
-        {
-          "zh": "美术课上，我们画花。",
-          "en": "In art class, we draw flowers."
-        },
-        {
-          "zh": "新的技术让学习更方便。",
-          "en": "New technology makes learning more convenient."
-        },
-        {
-          "zh": "哥哥会表演魔术。",
-          "en": "My older brother can perform magic tricks."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -24650,24 +18457,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "钻石",
           "meaningEn": "diamond"
-        }
-      ],
-      "sentence": {
-        "zh": "写作业时，妹妹在作业本上看到石油。",
-        "en": "While doing homework, my younger sister sees oil in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，妹妹在作业本上看到石油。",
-          "en": "While doing homework, my younger sister sees oil in the homework book."
-        },
-        {
-          "zh": "写作业时，妹妹谈到石头。",
-          "en": "While doing homework, my younger sister mentions stone."
-        },
-        {
-          "zh": "图画帮助我们了解钻石。",
-          "en": "A picture helps us understand diamond."
         }
       ],
       "etymologyHint": "A rock 口 at the base of a cliff 厂",
@@ -24724,24 +18513,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "posting on a bulletin board"
         }
       ],
-      "sentence": {
-        "zh": "周末，小组同学在校园里看到布置。",
-        "en": "On the weekend, my group members see how to put in order on campus."
-      },
-      "sentences": [
-        {
-          "zh": "周末，小组同学在校园里看到布置。",
-          "en": "On the weekend, my group members see how to put in order on campus."
-        },
-        {
-          "zh": "周末，小组同学谈到布局。",
-          "en": "On the weekend, my group members mention arrangement."
-        },
-        {
-          "zh": "故事帮助我们了解布告。",
-          "en": "A story helps us understand posting on a bulletin board."
-        }
-      ],
       "etymologyHint": "Cloth 巾 held in a hand",
       "sourceTags": [
         "common-800",
@@ -24794,24 +18565,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "龙灯",
           "meaningEn": "dragon lantern"
-        }
-      ],
-      "sentence": {
-        "zh": "端午节，人们划龙舟。",
-        "en": "At Dragon Boat Festival, people race dragon boats."
-      },
-      "sentences": [
-        {
-          "zh": "端午节，人们划龙舟。",
-          "en": "At Dragon Boat Festival, people race dragon boats."
-        },
-        {
-          "zh": "博物馆里有恐龙模型。",
-          "en": "There is a dinosaur model in the museum."
-        },
-        {
-          "zh": "春节时，街上有龙灯。",
-          "en": "During Spring Festival, there are dragon lanterns on the street."
         }
       ],
       "etymologyHint": "A dragon",
@@ -24868,24 +18621,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "commonplace"
         }
       ],
-      "sentence": {
-        "zh": "活动课上，同学在图书馆里看到平时。",
-        "en": "During activity class, my classmate sees ordinarily in the library."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，同学在图书馆里看到平时。",
-          "en": "During activity class, my classmate sees ordinarily in the library."
-        },
-        {
-          "zh": "活动课上，同学谈到平衡。",
-          "en": "During activity class, my classmate mentions balance."
-        },
-        {
-          "zh": "卡片帮助我们了解平凡。",
-          "en": "A card helps us understand commonplace."
-        }
-      ],
       "etymologyHint": "A leveling scale",
       "sourceTags": [
         "common-800",
@@ -24940,24 +18675,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "agriculture"
         }
       ],
-      "sentence": {
-        "zh": "我认真完成作业。",
-        "en": "I finish my homework carefully."
-      },
-      "sentences": [
-        {
-          "zh": "我认真完成作业。",
-          "en": "I finish my homework carefully."
-        },
-        {
-          "zh": "哥哥今年小学毕业。",
-          "en": "My older brother graduates from primary school this year."
-        },
-        {
-          "zh": "农业和种菜有关。",
-          "en": "Agriculture is related to growing vegetables."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -25010,24 +18727,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "目光",
           "meaningEn": "gaze"
-        }
-      ],
-      "sentence": {
-        "zh": "讨论时，哥哥在故事书里看到目前。",
-        "en": "During discussion, my older brother sees at the present time in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，哥哥在故事书里看到目前。",
-          "en": "During discussion, my older brother sees at the present time in a storybook."
-        },
-        {
-          "zh": "讨论时，哥哥谈到目标。",
-          "en": "During discussion, my older brother mentions target."
-        },
-        {
-          "zh": "图片帮助我们了解目光。",
-          "en": "An image helps us understand gaze."
         }
       ],
       "etymologyHint": "An eye drawn on its side",
@@ -25085,24 +18784,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "wait a moment"
         }
       ],
-      "sentence": {
-        "zh": "这本书有趣，而且容易读。",
-        "en": "This book is interesting and also easy to read."
-      },
-      "sentences": [
-        {
-          "zh": "这本书有趣，而且容易读。",
-          "en": "This book is interesting and also easy to read."
-        },
-        {
-          "zh": "他认真并且有礼貌。",
-          "en": "He is careful and polite."
-        },
-        {
-          "zh": "且慢，我们先看清题目。",
-          "en": "Wait a moment; let's read the question clearly first."
-        }
-      ],
       "etymologyHint": "A stone altar",
       "sourceTags": [
         "common-800",
@@ -25156,24 +18837,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "符号",
           "meaningEn": "symbol"
-        }
-      ],
-      "sentence": {
-        "zh": "早读时，我们在学校展板上看到号码。",
-        "en": "During morning reading, we see number on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，我们在学校展板上看到号码。",
-          "en": "During morning reading, we see number on the school display board."
-        },
-        {
-          "zh": "早读时，我们谈到信号。",
-          "en": "During morning reading, we mention signal."
-        },
-        {
-          "zh": "对话帮助我们了解符号。",
-          "en": "A dialogue helps us understand symbol."
         }
       ],
       "etymologyHint": "mouth",
@@ -25230,24 +18893,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "origin"
         }
       ],
-      "sentence": {
-        "zh": "中文课上，妹妹在小组活动中看到由于。",
-        "en": "In Chinese class, my younger sister sees due to during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，妹妹在小组活动中看到由于。",
-          "en": "In Chinese class, my younger sister sees due to during a group activity."
-        },
-        {
-          "zh": "中文课上，妹妹谈到理由。",
-          "en": "In Chinese class, my younger sister mentions reason."
-        },
-        {
-          "zh": "小组活动帮助我们了解由来。",
-          "en": "A group activity helps us understand origin."
-        }
-      ],
       "etymologyHint": "Road 丨 leading to the farm 田",
       "sourceTags": [
         "common-800",
@@ -25300,24 +18945,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "史前",
           "meaningEn": "prehistoric"
-        }
-      ],
-      "sentence": {
-        "zh": "我喜欢听历史故事。",
-        "en": "I like listening to history stories."
-      },
-      "sentences": [
-        {
-          "zh": "我喜欢听历史故事。",
-          "en": "I like listening to history stories."
-        },
-        {
-          "zh": "图书馆里有很多史书。",
-          "en": "There are many history books in the library."
-        },
-        {
-          "zh": "史前动物很有趣。",
-          "en": "Prehistoric animals are interesting."
         }
       ],
       "etymologyHint": "A hand 乂 using a pen to record a history",
@@ -25374,24 +19001,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to replace"
         }
       ],
-      "sentence": {
-        "zh": "阅读时，我在中文角里看到代表。",
-        "en": "While reading, I see representative in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，我在中文角里看到代表。",
-          "en": "While reading, I see representative in the Chinese corner."
-        },
-        {
-          "zh": "阅读时，我谈到代价。",
-          "en": "While reading, I mention price."
-        },
-        {
-          "zh": "书本帮助我们了解取代。",
-          "en": "A book helps us understand how to replace."
-        }
-      ],
       "etymologyHint": "A man 亻 caught 弋 by the passing of time",
       "sourceTags": [
         "common-800",
@@ -25444,24 +19053,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "使用",
           "meaningEn": "to use"
-        }
-      ],
-      "sentence": {
-        "zh": "写作业时，同学在阅读时间里看到用于。",
-        "en": "While doing homework, my classmate sees how to use in during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，同学在阅读时间里看到用于。",
-          "en": "While doing homework, my classmate sees how to use in during reading time."
-        },
-        {
-          "zh": "写作业时，同学谈到用来。",
-          "en": "While doing homework, my classmate mentions how to be used for."
-        },
-        {
-          "zh": "图画帮助我们了解使用。",
-          "en": "A picture helps us understand how to use."
         }
       ],
       "etymologyHint": "",
@@ -25519,24 +19110,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "all over the place"
         }
       ],
-      "sentence": {
-        "zh": "周末，姐姐在画册里看到处理。",
-        "en": "On the weekend, my older sister sees how to handle in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "周末，姐姐在画册里看到处理。",
-          "en": "On the weekend, my older sister sees how to handle in a picture book."
-        },
-        {
-          "zh": "周末，姐姐谈到处处。",
-          "en": "On the weekend, my older sister mentions everywhere."
-        },
-        {
-          "zh": "故事帮助我们了解四处。",
-          "en": "A story helps us understand all over the place."
-        }
-      ],
       "etymologyHint": "To go somewhere 夂 and put down a flag 卜",
       "sourceTags": [
         "common-800",
@@ -25589,24 +19162,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "书包",
           "meaningEn": "schoolbag"
-        }
-      ],
-      "sentence": {
-        "zh": "午饭后，哥哥在作业本上看到包括。",
-        "en": "After lunch, my older brother sees how to comprise in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，哥哥在作业本上看到包括。",
-          "en": "After lunch, my older brother sees how to comprise in the homework book."
-        },
-        {
-          "zh": "午饭后，哥哥谈到包装。",
-          "en": "After lunch, my older brother mentions how to pack."
-        },
-        {
-          "zh": "例子帮助我们了解书包。",
-          "en": "An example helps us understand schoolbag."
         }
       ],
       "etymologyHint": "To swaddle 勹 a baby 巳; 勹 also provides the pronunciation",
@@ -25663,24 +19218,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "master"
         }
       ],
-      "sentence": {
-        "zh": "活动课上，朋友在校园里看到主题。",
-        "en": "During activity class, my friend sees theme on campus."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，朋友在校园里看到主题。",
-          "en": "During activity class, my friend sees theme on campus."
-        },
-        {
-          "zh": "活动课上，朋友谈到主任。",
-          "en": "During activity class, my friend mentions director."
-        },
-        {
-          "zh": "卡片帮助我们了解主人。",
-          "en": "A card helps us understand master."
-        }
-      ],
       "etymologyHint": "A lamp 王 with a flame 丶",
       "sourceTags": [
         "common-800",
@@ -25733,24 +19270,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "超市",
           "meaningEn": "supermarket"
-        }
-      ],
-      "sentence": {
-        "zh": "这座城市很干净。",
-        "en": "This city is very clean."
-      },
-      "sentences": [
-        {
-          "zh": "这座城市很干净。",
-          "en": "This city is very clean."
-        },
-        {
-          "zh": "周末，我们去市场买菜。",
-          "en": "On the weekend, we go to the market to buy vegetables."
-        },
-        {
-          "zh": "超市里有很多水果。",
-          "en": "There are many fruits in the supermarket."
         }
       ],
       "etymologyHint": "",
@@ -25807,24 +19326,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to establish"
         }
       ],
-      "sentence": {
-        "zh": "讨论时，妹妹在图书馆里看到立即。",
-        "en": "During discussion, my younger sister sees immediately in the library."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，妹妹在图书馆里看到立即。",
-          "en": "During discussion, my younger sister sees immediately in the library."
-        },
-        {
-          "zh": "讨论时，妹妹谈到立刻。",
-          "en": "During discussion, my younger sister mentions forthwith."
-        },
-        {
-          "zh": "图片帮助我们了解建立。",
-          "en": "An image helps us understand how to establish."
-        }
-      ],
       "etymologyHint": "A man standing on the ground 一",
       "sourceTags": [
         "common-800",
@@ -25877,24 +19378,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "协议",
           "meaningEn": "agreement"
-        }
-      ],
-      "sentence": {
-        "zh": "看图时，小组同学在教室里看到议员。",
-        "en": "While looking at a picture, my group members see member in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，小组同学在教室里看到议员。",
-          "en": "While looking at a picture, my group members see member in the classroom."
-        },
-        {
-          "zh": "看图时，小组同学谈到建议。",
-          "en": "While looking at a picture, my group members mention how to propose."
-        },
-        {
-          "zh": "练习帮助我们了解协议。",
-          "en": "An exercise helps us understand agreement."
         }
       ],
       "etymologyHint": "speech",
@@ -25951,24 +19434,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to need"
         }
       ],
-      "sentence": {
-        "zh": "早读时，我在故事书里看到必须。",
-        "en": "During morning reading, I see how to have to in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，我在故事书里看到必须。",
-          "en": "During morning reading, I see how to have to in a storybook."
-        },
-        {
-          "zh": "早读时，我谈到必要。",
-          "en": "During morning reading, I mention necessary."
-        },
-        {
-          "zh": "对话帮助我们了解必需。",
-          "en": "A dialogue helps us understand how to need."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -26021,24 +19486,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "记忆",
           "meaningEn": "to remember"
-        }
-      ],
-      "sentence": {
-        "zh": "中文课上，同学在练习册里看到记得。",
-        "en": "In Chinese class, my classmate sees how to remember in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，同学在练习册里看到记得。",
-          "en": "In Chinese class, my classmate sees how to remember in a workbook."
-        },
-        {
-          "zh": "中文课上，同学谈到记录。",
-          "en": "In Chinese class, my classmate mentions how to record."
-        },
-        {
-          "zh": "小组活动帮助我们了解记忆。",
-          "en": "A group activity helps us understand how to remember."
         }
       ],
       "etymologyHint": "A private 己 note 讠; 己 also provides the pronunciation",
@@ -26095,24 +19542,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "folk"
         }
       ],
-      "sentence": {
-        "zh": "人民喜欢和平。",
-        "en": "People like peace."
-      },
-      "sentences": [
-        {
-          "zh": "人民喜欢和平。",
-          "en": "People like peace."
-        },
-        {
-          "zh": "音乐课上，我们学唱民歌。",
-          "en": "In music class, we learn to sing a folk song."
-        },
-        {
-          "zh": "这个故事来自民间。",
-          "en": "This story comes from folk tradition."
-        }
-      ],
       "etymologyHint": "An eye 巳 pierced by a dagger 戈, an old mark of slavery",
       "sourceTags": [
         "common-800",
@@ -26167,24 +19596,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "plus"
         }
       ],
-      "sentence": {
-        "zh": "阅读时，哥哥在小组活动中看到加入。",
-        "en": "While reading, my older brother sees how to become a member during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，哥哥在小组活动中看到加入。",
-          "en": "While reading, my older brother sees how to become a member during a group activity."
-        },
-        {
-          "zh": "阅读时，哥哥谈到加油。",
-          "en": "While reading, my older brother mentions how to add oil."
-        },
-        {
-          "zh": "书本帮助我们了解加上。",
-          "en": "A book helps us understand plus."
-        }
-      ],
       "etymologyHint": "Supporting a cause with the strength 力 of one's words 口",
       "sourceTags": [
         "common-800",
@@ -26237,24 +19648,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "这边",
           "meaningEn": "this side"
-        }
-      ],
-      "sentence": {
-        "zh": "写作业时，朋友在课外书里看到身边。",
-        "en": "While doing homework, my friend sees at one's side in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，朋友在课外书里看到身边。",
-          "en": "While doing homework, my friend sees at one's side in an extracurricular book."
-        },
-        {
-          "zh": "写作业时，朋友谈到那边。",
-          "en": "While doing homework, my friend mentions over there."
-        },
-        {
-          "zh": "图画帮助我们了解这边。",
-          "en": "A picture helps us understand this side."
         }
       ],
       "etymologyHint": "walk",
@@ -26312,24 +19705,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "hair"
         }
       ],
-      "sentence": {
-        "zh": "周末，我们在中文角里看到发现。",
-        "en": "On the weekend, we see how to notice in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "周末，我们在中文角里看到发现。",
-          "en": "On the weekend, we see how to notice in the Chinese corner."
-        },
-        {
-          "zh": "周末，我们谈到发生。",
-          "en": "On the weekend, we mention how to happen."
-        },
-        {
-          "zh": "故事帮助我们了解头发。",
-          "en": "A story helps us understand hair."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -26382,24 +19757,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "模式",
           "meaningEn": "mode"
-        }
-      ],
-      "sentence": {
-        "zh": "午饭后，妹妹在阅读时间里看到方式。",
-        "en": "After lunch, my younger sister sees way during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，妹妹在阅读时间里看到方式。",
-          "en": "After lunch, my younger sister sees way during reading time."
-        },
-        {
-          "zh": "午饭后，妹妹谈到正式。",
-          "en": "After lunch, my younger sister mentions formal."
-        },
-        {
-          "zh": "例子帮助我们了解模式。",
-          "en": "An example helps us understand mode."
         }
       ],
       "etymologyHint": "A craftsman using an awl 弋 and a measuring square 工",
@@ -26457,24 +19814,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "the scene"
         }
       ],
-      "sentence": {
-        "zh": "活动课上，小组同学在画册里看到场景。",
-        "en": "During activity class, my group members see scene in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，小组同学在画册里看到场景。",
-          "en": "During activity class, my group members see scene in a picture book."
-        },
-        {
-          "zh": "活动课上，小组同学谈到场面。",
-          "en": "During activity class, my group members mention scene."
-        },
-        {
-          "zh": "卡片帮助我们了解现场。",
-          "en": "A card helps us understand the scene."
-        }
-      ],
       "etymologyHint": "earth",
       "sourceTags": [
         "common-800",
@@ -26530,24 +19869,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to have altogether"
         }
       ],
-      "sentence": {
-        "zh": "复习时，我在作业本上看到共同。",
-        "en": "While reviewing, I see common in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，我在作业本上看到共同。",
-          "en": "While reviewing, I see common in the homework book."
-        },
-        {
-          "zh": "复习时，我谈到共享。",
-          "en": "While reviewing, I mention how to share."
-        },
-        {
-          "zh": "阅读卡帮助我们了解共有。",
-          "en": "A reading card helps us understand how to have altogether."
-        }
-      ],
       "etymologyHint": "Two hands 八 holding one object 廾",
       "sourceTags": [
         "common-800",
@@ -26600,24 +19921,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "权杖",
           "meaningEn": "scepter"
-        }
-      ],
-      "sentence": {
-        "zh": "每个孩子都有学习的权利。",
-        "en": "Every child has the right to learn."
-      },
-      "sentences": [
-        {
-          "zh": "每个孩子都有学习的权利。",
-          "en": "Every child has the right to learn."
-        },
-        {
-          "zh": "书上写着版权信息。",
-          "en": "The book shows copyright information."
-        },
-        {
-          "zh": "故事里的国王拿着权杖。",
-          "en": "The king in the story holds a scepter."
         }
       ],
       "etymologyHint": "wood",
@@ -26675,24 +19978,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to pass"
         }
       ],
-      "sentence": {
-        "zh": "看图时，姐姐在家里的书架上看到过程。",
-        "en": "While looking at a picture, my older sister sees course of events on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，姐姐在家里的书架上看到过程。",
-          "en": "While looking at a picture, my older sister sees course of events on the bookshelf at home."
-        },
-        {
-          "zh": "看图时，姐姐谈到通过。",
-          "en": "While looking at a picture, my older sister mentions how to pass through."
-        },
-        {
-          "zh": "练习帮助我们了解经过。",
-          "en": "An exercise helps us understand how to pass."
-        }
-      ],
       "etymologyHint": "walk",
       "sourceTags": [
         "common-800",
@@ -26746,24 +20031,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "气压",
           "meaningEn": "air pressure"
-        }
-      ],
-      "sentence": {
-        "zh": "考试前，我有一点压力。",
-        "en": "Before the test, I feel a little pressure."
-      },
-      "sentences": [
-        {
-          "zh": "考试前，我有一点压力。",
-          "en": "Before the test, I feel a little pressure."
-        },
-        {
-          "zh": "请用手压住纸角。",
-          "en": "Please press down the corner of the paper with your hand."
-        },
-        {
-          "zh": "科学课上，我们学习气压。",
-          "en": "In science class, we learn about air pressure."
         }
       ],
       "etymologyHint": "Soil 土 crushed under pressure 厂",
@@ -26820,24 +20087,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "save money"
         }
       ],
-      "sentence": {
-        "zh": "我把作文保存在电脑里。",
-        "en": "I save my composition on the computer."
-      },
-      "sentences": [
-        {
-          "zh": "我把作文保存在电脑里。",
-          "en": "I save my composition on the computer."
-        },
-        {
-          "zh": "空气存在于我们身边。",
-          "en": "Air exists around us."
-        },
-        {
-          "zh": "我每周存钱买书。",
-          "en": "I save money every week to buy books."
-        }
-      ],
       "etymologyHint": "seed",
       "sourceTags": [
         "common-800",
@@ -26890,24 +20139,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "然而",
           "meaningEn": "however"
-        }
-      ],
-      "sentence": {
-        "zh": "放学后，我们在故事书里看到而且。",
-        "en": "After school, we see but also in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，我们在故事书里看到而且。",
-          "en": "After school, we see but also in a storybook."
-        },
-        {
-          "zh": "放学后，我们谈到而已。",
-          "en": "After school, we mention that's all."
-        },
-        {
-          "zh": "词卡帮助我们了解然而。",
-          "en": "A word card helps us understand however."
         }
       ],
       "etymologyHint": "",
@@ -26964,24 +20195,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to pass on"
         }
       ],
-      "sentence": {
-        "zh": "阅读时，妹妹在练习册里看到达到。",
-        "en": "While reading, my younger sister sees how to reach in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，妹妹在练习册里看到达到。",
-          "en": "While reading, my younger sister sees how to reach in a workbook."
-        },
-        {
-          "zh": "阅读时，妹妹谈到达成。",
-          "en": "While reading, my younger sister mentions how to reach."
-        },
-        {
-          "zh": "书本帮助我们了解传达。",
-          "en": "A book helps us understand how to pass on."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -27034,24 +20247,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "列入",
           "meaningEn": "to include on a list"
-        }
-      ],
-      "sentence": {
-        "zh": "写作业时，小组同学在学校展板上看到列车。",
-        "en": "While doing homework, my group members see train on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，小组同学在学校展板上看到列车。",
-          "en": "While doing homework, my group members see train on the school display board."
-        },
-        {
-          "zh": "写作业时，小组同学谈到系列。",
-          "en": "While doing homework, my group members mention series."
-        },
-        {
-          "zh": "图画帮助我们了解列入。",
-          "en": "A picture helps us understand how to include on a list."
         }
       ],
       "etymologyHint": "line",
@@ -27109,24 +20304,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to draw up a plan"
         }
       ],
-      "sentence": {
-        "zh": "周末，我在小组活动中看到计划。",
-        "en": "On the weekend, I see plan during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "周末，我在小组活动中看到计划。",
-          "en": "On the weekend, I see plan during a group activity."
-        },
-        {
-          "zh": "周末，我谈到策划。",
-          "en": "On the weekend, I mention how to plot."
-        },
-        {
-          "zh": "故事帮助我们了解规划。",
-          "en": "A story helps us understand how to draw up a plan."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -27179,24 +20356,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "冬至",
           "meaningEn": "Winter Solstice"
-        }
-      ],
-      "sentence": {
-        "zh": "我每天至少读十分钟。",
-        "en": "I read for at least ten minutes every day."
-      },
-      "sentences": [
-        {
-          "zh": "我每天至少读十分钟。",
-          "en": "I read for at least ten minutes every day."
-        },
-        {
-          "zh": "他甚至会写很难的字。",
-          "en": "He can even write difficult characters."
-        },
-        {
-          "zh": "冬至那天，白天很短。",
-          "en": "On the Winter Solstice, the day is short."
         }
       ],
       "etymologyHint": "A bird alighting on the ground 土",
@@ -27253,24 +20412,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "before this"
         }
       ],
-      "sentence": {
-        "zh": "活动课上，姐姐在中文角里看到此刻。",
-        "en": "During activity class, my older sister sees this moment in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，姐姐在中文角里看到此刻。",
-          "en": "During activity class, my older sister sees this moment in the Chinese corner."
-        },
-        {
-          "zh": "活动课上，姐姐谈到此事。",
-          "en": "During activity class, my older sister mentions this matter."
-        },
-        {
-          "zh": "卡片帮助我们了解此前。",
-          "en": "A card helps us understand before this."
-        }
-      ],
       "etymologyHint": "sitting man",
       "sourceTags": [
         "common-800",
@@ -27323,24 +20464,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "观光",
           "meaningEn": "to tour"
-        }
-      ],
-      "sentence": {
-        "zh": "复习时，哥哥在阅读时间里看到光芒。",
-        "en": "While reviewing, my older brother sees rays of light during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，哥哥在阅读时间里看到光芒。",
-          "en": "While reviewing, my older brother sees rays of light during reading time."
-        },
-        {
-          "zh": "复习时，哥哥谈到目光。",
-          "en": "While reviewing, my older brother mentions gaze."
-        },
-        {
-          "zh": "阅读卡帮助我们了解观光。",
-          "en": "A reading card helps us understand how to tour."
         }
       ],
       "etymologyHint": "A person 儿 carrying a torch 火",
@@ -27398,24 +20521,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "local"
         }
       ],
-      "sentence": {
-        "zh": "讨论时，朋友在画册里看到当然。",
-        "en": "During discussion, my friend sees only natural in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，朋友在画册里看到当然。",
-          "en": "During discussion, my friend sees only natural in a picture book."
-        },
-        {
-          "zh": "讨论时，朋友谈到当时。",
-          "en": "During discussion, my friend mentions then."
-        },
-        {
-          "zh": "图片帮助我们了解当地。",
-          "en": "An image helps us understand local."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -27470,24 +20575,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "rice ball"
         }
       ],
-      "sentence": {
-        "zh": "我们的团队一起完成任务。",
-        "en": "Our team completes the task together."
-      },
-      "sentences": [
-        {
-          "zh": "我们的团队一起完成任务。",
-          "en": "Our team completes the task together."
-        },
-        {
-          "zh": "春节是家人团圆的时候。",
-          "en": "Spring Festival is a time for family reunion."
-        },
-        {
-          "zh": "午饭时，我吃了一个饭团。",
-          "en": "At lunch, I eat a rice ball."
-        }
-      ],
       "etymologyHint": "A lot of talent 才 gathered in one place 囗",
       "sourceTags": [
         "common-800",
@@ -27540,24 +20627,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "原则",
           "meaningEn": "principle"
-        }
-      ],
-      "sentence": {
-        "zh": "早读时，妹妹在校园里看到否则。",
-        "en": "During morning reading, my younger sister sees otherwise on campus."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，妹妹在校园里看到否则。",
-          "en": "During morning reading, my younger sister sees otherwise on campus."
-        },
-        {
-          "zh": "早读时，妹妹谈到规则。",
-          "en": "During morning reading, my younger sister mentions rule."
-        },
-        {
-          "zh": "对话帮助我们了解原则。",
-          "en": "A dialogue helps us understand principle."
         }
       ],
       "etymologyHint": "Laws inscribed 刂 on a slate 贝",
@@ -27615,24 +20684,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to teach"
         }
       ],
-      "sentence": {
-        "zh": "中文课上，小组同学在家里的书架上看到传统。",
-        "en": "In Chinese class, my group members see tradition on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，小组同学在家里的书架上看到传统。",
-          "en": "In Chinese class, my group members see tradition on the bookshelf at home."
-        },
-        {
-          "zh": "中文课上，小组同学谈到传达。",
-          "en": "In Chinese class, my group members mention how to pass on."
-        },
-        {
-          "zh": "小组活动帮助我们了解传人。",
-          "en": "A group activity helps us understand how to teach."
-        }
-      ],
       "etymologyHint": "people",
       "sourceTags": [
         "common-800",
@@ -27685,24 +20736,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "信件",
           "meaningEn": "letter"
-        }
-      ],
-      "sentence": {
-        "zh": "放学后，我在图书馆里看到事件。",
-        "en": "After school, I see event in the library."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，我在图书馆里看到事件。",
-          "en": "After school, I see event in the library."
-        },
-        {
-          "zh": "放学后，我谈到条件。",
-          "en": "After school, I mention condition."
-        },
-        {
-          "zh": "词卡帮助我们了解信件。",
-          "en": "A word card helps us understand letter."
         }
       ],
       "etymologyHint": "A man 亻 dividing up a cow 牛",
@@ -27761,24 +20794,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "price"
         }
       ],
-      "sentence": {
-        "zh": "阅读时，同学在教室里看到价值。",
-        "en": "While reading, my classmate sees value in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，同学在教室里看到价值。",
-          "en": "While reading, my classmate sees value in the classroom."
-        },
-        {
-          "zh": "阅读时，同学谈到价格。",
-          "en": "While reading, my classmate mentions price."
-        },
-        {
-          "zh": "书本帮助我们了解代价。",
-          "en": "A book helps us understand price."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -27835,24 +20850,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "talent"
         }
       ],
-      "sentence": {
-        "zh": "写作业时，姐姐在故事书里看到华丽。",
-        "en": "While doing homework, my older sister sees gorgeous in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，姐姐在故事书里看到华丽。",
-          "en": "While doing homework, my older sister sees gorgeous in a storybook."
-        },
-        {
-          "zh": "写作业时，姐姐谈到豪华。",
-          "en": "While doing homework, my older sister mentions luxurious."
-        },
-        {
-          "zh": "图画帮助我们了解才华。",
-          "en": "A picture helps us understand talent."
-        }
-      ],
       "etymologyHint": "ten",
       "sourceTags": [
         "common-800",
@@ -27905,24 +20902,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "向上",
           "meaningEn": "upward"
-        }
-      ],
-      "sentence": {
-        "zh": "指南针可以指出方向。",
-        "en": "A compass can show direction."
-      },
-      "sentences": [
-        {
-          "zh": "指南针可以指出方向。",
-          "en": "A compass can show direction."
-        },
-        {
-          "zh": "跑步时，我们向前看。",
-          "en": "When running, we look forward."
-        },
-        {
-          "zh": "小树向上生长。",
-          "en": "The small tree grows upward."
         }
       ],
       "etymologyHint": "",
@@ -27980,24 +20959,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to combine"
         }
       ],
-      "sentence": {
-        "zh": "午饭后，朋友在学校展板上看到合并。",
-        "en": "After lunch, my friend sees how to merge on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，朋友在学校展板上看到合并。",
-          "en": "After lunch, my friend sees how to merge on the school display board."
-        },
-        {
-          "zh": "午饭后，朋友谈到适合。",
-          "en": "After lunch, my friend mentions how to fit."
-        },
-        {
-          "zh": "例子帮助我们了解联合。",
-          "en": "An example helps us understand how to combine."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -28050,24 +21011,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "观众",
           "meaningEn": "spectators"
-        }
-      ],
-      "sentence": {
-        "zh": "活动课上，我们在小组活动中看到众多。",
-        "en": "During activity class, we see numerous during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，我们在小组活动中看到众多。",
-          "en": "During activity class, we see numerous during a group activity."
-        },
-        {
-          "zh": "活动课上，我们谈到众人。",
-          "en": "During activity class, we mention everyone."
-        },
-        {
-          "zh": "卡片帮助我们了解观众。",
-          "en": "A card helps us understand spectators."
         }
       ],
       "etymologyHint": "Three people 人 representing a crowd",
@@ -28125,24 +21068,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "every"
         }
       ],
-      "sentence": {
-        "zh": "复习时，妹妹在课外书里看到各位。",
-        "en": "While reviewing, my younger sister sees everybody in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，妹妹在课外书里看到各位。",
-          "en": "While reviewing, my younger sister sees everybody in an extracurricular book."
-        },
-        {
-          "zh": "复习时，妹妹谈到各种。",
-          "en": "While reviewing, my younger sister mentions every kind of."
-        },
-        {
-          "zh": "阅读卡帮助我们了解各个。",
-          "en": "A reading card helps us understand every."
-        }
-      ],
       "etymologyHint": "Walking 夂 and talking 口",
       "sourceTags": [
         "common-800",
@@ -28195,24 +21120,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "争光",
           "meaningEn": "win honour"
-        }
-      ],
-      "sentence": {
-        "zh": "我争取每天进步一点。",
-        "en": "I strive to improve a little every day."
-      },
-      "sentences": [
-        {
-          "zh": "我争取每天进步一点。",
-          "en": "I strive to improve a little every day."
-        },
-        {
-          "zh": "运动会上，大家争先向前跑。",
-          "en": "At the sports day, everyone tries to be first and runs forward."
-        },
-        {
-          "zh": "我们努力学习，为班级争光。",
-          "en": "We study hard and win honour for the class."
         }
       ],
       "etymologyHint": "Simplified form of 爭, two hands 爪 and 彐 fighting over 亅",
@@ -28269,24 +21176,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "number of times"
         }
       ],
-      "sentence": {
-        "zh": "看图时，我在阅读时间里看到再次。",
-        "en": "While looking at a picture, I see one more time during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，我在阅读时间里看到再次。",
-          "en": "While looking at a picture, I see one more time during reading time."
-        },
-        {
-          "zh": "看图时，我谈到下次。",
-          "en": "While looking at a picture, I mention next time."
-        },
-        {
-          "zh": "练习帮助我们了解次数。",
-          "en": "An exercise helps us understand number of times."
-        }
-      ],
       "etymologyHint": "A person 欠 yawning multiple times 冫",
       "sourceTags": [
         "common-800",
@@ -28341,24 +21230,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "place of origin"
         }
       ],
-      "sentence": {
-        "zh": "这个产品是一个新书包。",
-        "en": "This product is a new school bag."
-      },
-      "sentences": [
-        {
-          "zh": "这个产品是一个新书包。",
-          "en": "This product is a new school bag."
-        },
-        {
-          "zh": "工厂生产很多文具。",
-          "en": "The factory produces many stationery items."
-        },
-        {
-          "zh": "包装上写着水果的产地。",
-          "en": "The package shows the fruit's place of origin."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -28411,24 +21282,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "解决",
           "meaningEn": "to solve"
-        }
-      ],
-      "sentence": {
-        "zh": "中文课上，姐姐在作业本上看到决定。",
-        "en": "In Chinese class, my older sister sees how to decide in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，姐姐在作业本上看到决定。",
-          "en": "In Chinese class, my older sister sees how to decide in the homework book."
-        },
-        {
-          "zh": "中文课上，姐姐谈到决赛。",
-          "en": "In Chinese class, my older sister mentions finals."
-        },
-        {
-          "zh": "小组活动帮助我们了解解决。",
-          "en": "A group activity helps us understand how to solve."
         }
       ],
       "etymologyHint": "",
@@ -28486,24 +21339,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "side by side"
         }
       ],
-      "sentence": {
-        "zh": "她会唱歌，并且会画画。",
-        "en": "She can sing, and she can draw."
-      },
-      "sentences": [
-        {
-          "zh": "她会唱歌，并且会画画。",
-          "en": "She can sing, and she can draw."
-        },
-        {
-          "zh": "请把两个文件合并。",
-          "en": "Please combine the two files."
-        },
-        {
-          "zh": "两张桌子并排放着。",
-          "en": "The two desks are placed side by side."
-        }
-      ],
       "etymologyHint": "Simplified form of 並; two men standing side-by-side",
       "sourceTags": [
         "common-800",
@@ -28556,24 +21391,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "大米",
           "meaningEn": "rice"
-        }
-      ],
-      "sentence": {
-        "zh": "阅读时，朋友在家里的书架上看到玉米。",
-        "en": "While reading, my friend sees corn on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，朋友在家里的书架上看到玉米。",
-          "en": "While reading, my friend sees corn on the bookshelf at home."
-        },
-        {
-          "zh": "阅读时，朋友谈到米饭。",
-          "en": "While reading, my friend mentions rice."
-        },
-        {
-          "zh": "书本帮助我们了解大米。",
-          "en": "A book helps us understand rice."
         }
       ],
       "etymologyHint": "Grains of rice",
@@ -28630,24 +21447,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "river water"
         }
       ],
-      "sentence": {
-        "zh": "长江是中国的大河。",
-        "en": "The Yangtze River is a large river in China."
-      },
-      "sentences": [
-        {
-          "zh": "长江是中国的大河。",
-          "en": "The Yangtze River is a large river in China."
-        },
-        {
-          "zh": "地图上有很多江河。",
-          "en": "There are many rivers on the map."
-        },
-        {
-          "zh": "春天的江水很清。",
-          "en": "The river water is clear in spring."
-        }
-      ],
       "etymologyHint": "water",
       "sourceTags": [
         "common-800",
@@ -28700,24 +21499,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "将军",
           "meaningEn": "general"
-        }
-      ],
-      "sentence": {
-        "zh": "周末，妹妹在教室里看到军队。",
-        "en": "On the weekend, my younger sister sees armed forces in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "周末，妹妹在教室里看到军队。",
-          "en": "On the weekend, my younger sister sees armed forces in the classroom."
-        },
-        {
-          "zh": "周末，妹妹谈到军事。",
-          "en": "On the weekend, my younger sister mentions military affairs."
-        },
-        {
-          "zh": "故事帮助我们了解将军。",
-          "en": "A story helps us understand general."
         }
       ],
       "etymologyHint": "Soldiers 冖 (distorted 力) in a cart 车",
@@ -28775,24 +21556,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "perhaps"
         }
       ],
-      "sentence": {
-        "zh": "午饭后，小组同学在故事书里看到许多。",
-        "en": "After lunch, my group members see many in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，小组同学在故事书里看到许多。",
-          "en": "After lunch, my group members see many in a storybook."
-        },
-        {
-          "zh": "午饭后，小组同学谈到也许。",
-          "en": "After lunch, my group members mention perhaps."
-        },
-        {
-          "zh": "例子帮助我们了解或许。",
-          "en": "An example helps us understand perhaps."
-        }
-      ],
       "etymologyHint": "speech",
       "sourceTags": [
         "common-800",
@@ -28846,24 +21609,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "无论",
           "meaningEn": "no matter what or how"
-        }
-      ],
-      "sentence": {
-        "zh": "活动课上，我在练习册里看到论文。",
-        "en": "During activity class, I see paper in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，我在练习册里看到论文。",
-          "en": "During activity class, I see paper in a workbook."
-        },
-        {
-          "zh": "活动课上，我谈到讨论。",
-          "en": "During activity class, I mention how to discuss."
-        },
-        {
-          "zh": "卡片帮助我们了解无论。",
-          "en": "A card helps us understand no matter what or how."
         }
       ],
       "etymologyHint": "Speech 讠 that explains the logic 仑; 仑 also provides the pronunciation",
@@ -28920,24 +21665,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "agriculture"
         }
       ],
-      "sentence": {
-        "zh": "复习时，同学在学校展板上看到农民。",
-        "en": "While reviewing, my classmate sees peasant on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，同学在学校展板上看到农民。",
-          "en": "While reviewing, my classmate sees peasant on the school display board."
-        },
-        {
-          "zh": "复习时，同学谈到农场。",
-          "en": "While reviewing, my classmate mentions farm."
-        },
-        {
-          "zh": "阅读卡帮助我们了解农业。",
-          "en": "A reading card helps us understand agriculture."
-        }
-      ],
       "etymologyHint": "Simplified form of 農, tilling the field 田 with a hoe 辰",
       "sourceTags": [
         "common-800",
@@ -28990,24 +21717,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "设置",
           "meaningEn": "to set up"
-        }
-      ],
-      "sentence": {
-        "zh": "讨论时，姐姐在小组活动中看到设计。",
-        "en": "During discussion, my older sister sees how to design during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，姐姐在小组活动中看到设计。",
-          "en": "During discussion, my older sister sees how to design during a group activity."
-        },
-        {
-          "zh": "讨论时，姐姐谈到设备。",
-          "en": "During discussion, my older sister mentions equipment."
-        },
-        {
-          "zh": "图片帮助我们了解设置。",
-          "en": "An image helps us understand how to set up."
         }
       ],
       "etymologyHint": "speech",
@@ -29064,24 +21773,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "lead"
         }
       ],
-      "sentence": {
-        "zh": "看图时，哥哥在课外书里看到导致。",
-        "en": "While looking at a picture, my older brother sees how to lead to in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，哥哥在课外书里看到导致。",
-          "en": "While looking at a picture, my older brother sees how to lead to in an extracurricular book."
-        },
-        {
-          "zh": "看图时，哥哥谈到导演。",
-          "en": "While looking at a picture, my older brother mentions how to direct."
-        },
-        {
-          "zh": "练习帮助我们了解领导。",
-          "en": "An exercise helps us understand lead."
-        }
-      ],
       "etymologyHint": "A hand 寸 pointing the way to someplace 巳",
       "sourceTags": [
         "common-800",
@@ -29134,24 +21825,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "收集",
           "meaningEn": "to gather"
-        }
-      ],
-      "sentence": {
-        "zh": "早读时，朋友在中文角里看到收到。",
-        "en": "During morning reading, my friend sees how to receive in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，朋友在中文角里看到收到。",
-          "en": "During morning reading, my friend sees how to receive in the Chinese corner."
-        },
-        {
-          "zh": "早读时，朋友谈到收入。",
-          "en": "During morning reading, my friend mentions how to take in."
-        },
-        {
-          "zh": "对话帮助我们了解收集。",
-          "en": "A dialogue helps us understand how to gather."
         }
       ],
       "etymologyHint": "hand",
@@ -29208,24 +21881,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "social class"
         }
       ],
-      "sentence": {
-        "zh": "中文课上，我们在阅读时间里看到阶段。",
-        "en": "In Chinese class, we see stage during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，我们在阅读时间里看到阶段。",
-          "en": "In Chinese class, we see stage during reading time."
-        },
-        {
-          "zh": "中文课上，我们谈到阶级。",
-          "en": "In Chinese class, we mention class."
-        },
-        {
-          "zh": "小组活动帮助我们了解阶层。",
-          "en": "A group activity helps us understand social class."
-        }
-      ],
       "etymologyHint": "hill",
       "sourceTags": [
         "common-800",
@@ -29278,24 +21933,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "如下",
           "meaningEn": "as follows"
-        }
-      ],
-      "sentence": {
-        "zh": "放学后，妹妹在画册里看到如何。",
-        "en": "After school, my younger sister sees how in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，妹妹在画册里看到如何。",
-          "en": "After school, my younger sister sees how in a picture book."
-        },
-        {
-          "zh": "放学后，妹妹谈到如今。",
-          "en": "After school, my younger sister mentions nowadays."
-        },
-        {
-          "zh": "词卡帮助我们了解如下。",
-          "en": "A word card helps us understand as follows."
         }
       ],
       "etymologyHint": "A wife 女 following her husband's words 口",
@@ -29353,24 +21990,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to tour"
         }
       ],
-      "sentence": {
-        "zh": "阅读时，小组同学在作业本上看到观众。",
-        "en": "While reading, my group members see spectators in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，小组同学在作业本上看到观众。",
-          "en": "While reading, my group members see spectators in the homework book."
-        },
-        {
-          "zh": "阅读时，小组同学谈到参观。",
-          "en": "While reading, my group members mention how to look around."
-        },
-        {
-          "zh": "书本帮助我们了解观光。",
-          "en": "A book helps us understand how to tour."
-        }
-      ],
       "etymologyHint": "To see 见 again 又",
       "sourceTags": [
         "common-800",
@@ -29424,24 +22043,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "大约",
           "meaningEn": "approximately"
-        }
-      ],
-      "sentence": {
-        "zh": "写作业时，我在校园里看到约会。",
-        "en": "While doing homework, I see appointment on campus."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，我在校园里看到约会。",
-          "en": "While doing homework, I see appointment on campus."
-        },
-        {
-          "zh": "写作业时，我谈到约定。",
-          "en": "While doing homework, I mention how to agree on sth."
-        },
-        {
-          "zh": "图画帮助我们了解大约。",
-          "en": "A picture helps us understand approximately."
         }
       ],
       "etymologyHint": "thread",
@@ -29498,24 +22099,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "outer appearance"
         }
       ],
-      "sentence": {
-        "zh": "周末，同学在家里的书架上看到形象。",
-        "en": "On the weekend, my classmate sees image on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "周末，同学在家里的书架上看到形象。",
-          "en": "On the weekend, my classmate sees image on the bookshelf at home."
-        },
-        {
-          "zh": "周末，同学谈到形成。",
-          "en": "On the weekend, my classmate mentions how to form."
-        },
-        {
-          "zh": "故事帮助我们了解形式。",
-          "en": "A story helps us understand outer appearance."
-        }
-      ],
       "etymologyHint": "Sunlight 彡 streaming through a window 开",
       "sourceTags": [
         "common-800",
@@ -29568,24 +22151,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "技能",
           "meaningEn": "technical ability"
-        }
-      ],
-      "sentence": {
-        "zh": "午饭后，姐姐在图书馆里看到技术。",
-        "en": "After lunch, my older sister sees technology in the library."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，姐姐在图书馆里看到技术。",
-          "en": "After lunch, my older sister sees technology in the library."
-        },
-        {
-          "zh": "午饭后，姐姐谈到技巧。",
-          "en": "After lunch, my older sister mentions skill."
-        },
-        {
-          "zh": "例子帮助我们了解技能。",
-          "en": "An example helps us understand technical ability."
         }
       ],
       "etymologyHint": "hand",
@@ -29642,24 +22207,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "sign"
         }
       ],
-      "sentence": {
-        "zh": "活动课上，哥哥在教室里看到同志。",
-        "en": "During activity class, my older brother sees comrade in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，哥哥在教室里看到同志。",
-          "en": "During activity class, my older brother sees comrade in the classroom."
-        },
-        {
-          "zh": "活动课上，哥哥谈到杂志。",
-          "en": "During activity class, my older brother mentions magazine."
-        },
-        {
-          "zh": "卡片帮助我们了解标志。",
-          "en": "A card helps us understand sign."
-        }
-      ],
       "etymologyHint": "The mind 心 of a scholar 士; 士 also provides the pronunciation",
       "sourceTags": [
         "common-800",
@@ -29712,24 +22259,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "声称",
           "meaningEn": "to claim"
-        }
-      ],
-      "sentence": {
-        "zh": "复习时，朋友在故事书里看到声音。",
-        "en": "While reviewing, my friend sees voice in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，朋友在故事书里看到声音。",
-          "en": "While reviewing, my friend sees voice in a storybook."
-        },
-        {
-          "zh": "复习时，朋友谈到声明。",
-          "en": "While reviewing, my friend mentions how to state."
-        },
-        {
-          "zh": "阅读卡帮助我们了解声称。",
-          "en": "A reading card helps us understand how to claim."
         }
       ],
       "etymologyHint": "Simplified form of 聲; see that character for the etymology",
@@ -29787,24 +22316,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "trick"
         }
       ],
-      "sentence": {
-        "zh": "我有把握读准这个字。",
-        "en": "I am confident I can read this character correctly."
-      },
-      "sentences": [
-        {
-          "zh": "我有把握读准这个字。",
-          "en": "I am confident I can read this character correctly."
-        },
-        {
-          "zh": "门上的把手很干净。",
-          "en": "The handle on the door is clean."
-        },
-        {
-          "zh": "这个把戏很有趣。",
-          "en": "This trick is interesting."
-        }
-      ],
       "etymologyHint": "hand",
       "sourceTags": [
         "common-800",
@@ -29857,24 +22368,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "报告",
           "meaningEn": "report"
-        }
-      ],
-      "sentence": {
-        "zh": "爷爷每天读报纸。",
-        "en": "Grandpa reads the newspaper every day."
-      },
-      "sentences": [
-        {
-          "zh": "爷爷每天读报纸。",
-          "en": "Grandpa reads the newspaper every day."
-        },
-        {
-          "zh": "我报名参加中文比赛。",
-          "en": "I sign up for the Chinese competition."
-        },
-        {
-          "zh": "她在课堂上做报告。",
-          "en": "She gives a report in class."
         }
       ],
       "etymologyHint": "A hand 扌 cuffing 又 a criminal 卩, representing sentencing",
@@ -29931,24 +22424,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "nevertheless"
         }
       ],
-      "sentence": {
-        "zh": "早读时，小组同学在小组活动中看到冷却。",
-        "en": "During morning reading, my group members see how to cool during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，小组同学在小组活动中看到冷却。",
-          "en": "During morning reading, my group members see how to cool during a group activity."
-        },
-        {
-          "zh": "早读时，小组同学谈到退却。",
-          "en": "During morning reading, my group members mention how to retreat."
-        },
-        {
-          "zh": "对话帮助我们了解却是。",
-          "en": "A dialogue helps us understand nevertheless."
-        }
-      ],
       "etymologyHint": "seal",
       "sourceTags": [
         "common-800",
@@ -30001,24 +22476,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "严肃",
           "meaningEn": "solemn"
-        }
-      ],
-      "sentence": {
-        "zh": "中文课上，我在课外书里看到严重。",
-        "en": "In Chinese class, I see grave in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，我在课外书里看到严重。",
-          "en": "In Chinese class, I see grave in an extracurricular book."
-        },
-        {
-          "zh": "中文课上，我谈到严格。",
-          "en": "In Chinese class, I mention strict."
-        },
-        {
-          "zh": "小组活动帮助我们了解严肃。",
-          "en": "A group activity helps us understand solemn."
         }
       ],
       "etymologyHint": "",
@@ -30075,24 +22532,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "contribution"
         }
       ],
-      "sentence": {
-        "zh": "放学后，同学在中文角里看到劳动。",
-        "en": "After school, my classmate sees work in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，同学在中文角里看到劳动。",
-          "en": "After school, my classmate sees work in the Chinese corner."
-        },
-        {
-          "zh": "放学后，同学谈到疲劳。",
-          "en": "After school, my classmate mentions fatigue."
-        },
-        {
-          "zh": "词卡帮助我们了解功劳。",
-          "en": "A word card helps us understand contribution."
-        }
-      ],
       "etymologyHint": "A man lifting 力 a load 冖 of grass 艹",
       "sourceTags": [
         "common-800",
@@ -30145,24 +22584,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "巧克力",
           "meaningEn": "chocolate"
-        }
-      ],
-      "sentence": {
-        "zh": "这袋米有两千克。",
-        "en": "This bag of rice weighs two kilograms."
-      },
-      "sentences": [
-        {
-          "zh": "这袋米有两千克。",
-          "en": "This bag of rice weighs two kilograms."
-        },
-        {
-          "zh": "我会克服这个困难。",
-          "en": "I will overcome this difficulty."
-        },
-        {
-          "zh": "妹妹喜欢吃巧克力。",
-          "en": "My younger sister likes eating chocolate."
         }
       ],
       "etymologyHint": "A weapon 十 used to subdue a beast 兄",
@@ -30219,24 +22640,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "extreme"
         }
       ],
-      "sentence": {
-        "zh": "写作业时，哥哥在画册里看到极了。",
-        "en": "While doing homework, my older brother sees extremely in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，哥哥在画册里看到极了。",
-          "en": "While doing homework, my older brother sees extremely in a picture book."
-        },
-        {
-          "zh": "写作业时，哥哥谈到极其。",
-          "en": "While doing homework, my older brother mentions extremely."
-        },
-        {
-          "zh": "图画帮助我们了解极端。",
-          "en": "A picture helps us understand extreme."
-        }
-      ],
       "etymologyHint": "wood",
       "sourceTags": [
         "common-800",
@@ -30289,24 +22692,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "请求",
           "meaningEn": "to request"
-        }
-      ],
-      "sentence": {
-        "zh": "周末，朋友在作业本上看到要求。",
-        "en": "On the weekend, my friend sees how to request in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "周末，朋友在作业本上看到要求。",
-          "en": "On the weekend, my friend sees how to request in the homework book."
-        },
-        {
-          "zh": "周末，朋友谈到追求。",
-          "en": "On the weekend, my friend mentions how to pursue stubbornly."
-        },
-        {
-          "zh": "故事帮助我们了解请求。",
-          "en": "A story helps us understand how to request."
         }
       ],
       "etymologyHint": "",
@@ -30364,24 +22749,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to replace"
         }
       ],
-      "sentence": {
-        "zh": "午饭后，我们在校园里看到更加。",
-        "en": "After lunch, we see more on campus."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，我们在校园里看到更加。",
-          "en": "After lunch, we see more on campus."
-        },
-        {
-          "zh": "午饭后，我们谈到更新。",
-          "en": "After lunch, we mention how to replace the old with new."
-        },
-        {
-          "zh": "例子帮助我们了解更换。",
-          "en": "An example helps us understand how to replace."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -30434,24 +22801,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "两岸",
           "meaningEn": "both banks"
-        }
-      ],
-      "sentence": {
-        "zh": "路的两边都有树。",
-        "en": "There are trees on both sides of the road."
-      },
-      "sentences": [
-        {
-          "zh": "路的两边都有树。",
-          "en": "There are trees on both sides of the road."
-        },
-        {
-          "zh": "教室两侧都有窗户。",
-          "en": "There are windows on both sides of the classroom."
-        },
-        {
-          "zh": "河的两岸开满了花。",
-          "en": "Flowers bloom on both banks of the river."
         }
       ],
       "etymologyHint": "Two people 从 together in a cart",
@@ -30509,24 +22858,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to repay"
         }
       ],
-      "sentence": {
-        "zh": "复习时，小组同学在图书馆里看到还有。",
-        "en": "While reviewing, my group members see furthermore in the library."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，小组同学在图书馆里看到还有。",
-          "en": "While reviewing, my group members see furthermore in the library."
-        },
-        {
-          "zh": "复习时，小组同学谈到还是。",
-          "en": "While reviewing, my group members mention still."
-        },
-        {
-          "zh": "阅读卡帮助我们了解偿还。",
-          "en": "A reading card helps us understand how to repay."
-        }
-      ],
       "etymologyHint": "Not 不 moving 辶",
       "sourceTags": [
         "common-800",
@@ -30579,24 +22910,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "一连",
           "meaningEn": "in a row"
-        }
-      ],
-      "sentence": {
-        "zh": "讨论时，我在教室里看到连续。",
-        "en": "During discussion, I see continuous in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，我在教室里看到连续。",
-          "en": "During discussion, I see continuous in the classroom."
-        },
-        {
-          "zh": "讨论时，我谈到连接。",
-          "en": "During discussion, I mention how to link."
-        },
-        {
-          "zh": "图片帮助我们了解一连。",
-          "en": "An image helps us understand in a row."
         }
       ],
       "etymologyHint": "A cart 车 moving 辶 goods between cities",
@@ -30653,24 +22966,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to run"
         }
       ],
-      "sentence": {
-        "zh": "看图时，同学在故事书里看到进步。",
-        "en": "While looking at a picture, my classmate sees progress in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，同学在故事书里看到进步。",
-          "en": "While looking at a picture, my classmate sees progress in a storybook."
-        },
-        {
-          "zh": "看图时，同学谈到步伐。",
-          "en": "While looking at a picture, my classmate mentions pace."
-        },
-        {
-          "zh": "练习帮助我们了解跑步。",
-          "en": "An exercise helps us understand how to run."
-        }
-      ],
       "etymologyHint": "Modern form of 歨; putting one foot 止 in front of the other",
       "sourceTags": [
         "common-800",
@@ -30724,24 +23019,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "市县",
           "meaningEn": "cities and counties"
-        }
-      ],
-      "sentence": {
-        "zh": "这个县城有一所新学校。",
-        "en": "This county town has a new school."
-      },
-      "sentences": [
-        {
-          "zh": "这个县城有一所新学校。",
-          "en": "This county town has a new school."
-        },
-        {
-          "zh": "县长来学校看学生。",
-          "en": "The county head visits the students at school."
-        },
-        {
-          "zh": "我们认识了几个市县的名字。",
-          "en": "We learn the names of several cities and counties."
         }
       ],
       "etymologyHint": "",
@@ -30800,24 +23077,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "member"
         }
       ],
-      "sentence": {
-        "zh": "中文课上，哥哥在学校展板上看到员工。",
-        "en": "In Chinese class, my older brother sees staff on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，哥哥在学校展板上看到员工。",
-          "en": "In Chinese class, my older brother sees staff on the school display board."
-        },
-        {
-          "zh": "中文课上，哥哥谈到队员。",
-          "en": "In Chinese class, my older brother mentions team member."
-        },
-        {
-          "zh": "小组活动帮助我们了解议员。",
-          "en": "A group activity helps us understand member."
-        }
-      ],
       "etymologyHint": "money",
       "sourceTags": [
         "common-800",
@@ -30873,24 +23132,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "villa"
         }
       ],
-      "sentence": {
-        "zh": "放学后，朋友在小组活动中看到别人。",
-        "en": "After school, my friend sees other people during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，朋友在小组活动中看到别人。",
-          "en": "After school, my friend sees other people during a group activity."
-        },
-        {
-          "zh": "放学后，朋友谈到别的。",
-          "en": "After school, my friend mentions else."
-        },
-        {
-          "zh": "词卡帮助我们了解别墅。",
-          "en": "A word card helps us understand villa."
-        }
-      ],
       "etymologyHint": "To draw boundaries 刂 between classes 另",
       "sourceTags": [
         "common-800",
@@ -30943,24 +23184,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "利润",
           "meaningEn": "profits"
-        }
-      ],
-      "sentence": {
-        "zh": "阅读时，我们在课外书里看到利用。",
-        "en": "While reading, we see how to exploit in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，我们在课外书里看到利用。",
-          "en": "While reading, we see how to exploit in an extracurricular book."
-        },
-        {
-          "zh": "阅读时，我们谈到利益。",
-          "en": "While reading, we mention benefit."
-        },
-        {
-          "zh": "书本帮助我们了解利润。",
-          "en": "A book helps us understand profits."
         }
       ],
       "etymologyHint": "Harvesting 刂 grain 禾",
@@ -31019,24 +23242,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "how"
         }
       ],
-      "sentence": {
-        "zh": "写作业时，妹妹在中文角里看到何时。",
-        "en": "While doing homework, my younger sister sees when in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，妹妹在中文角里看到何时。",
-          "en": "While doing homework, my younger sister sees when in the Chinese corner."
-        },
-        {
-          "zh": "写作业时，妹妹谈到任何。",
-          "en": "While doing homework, my younger sister mentions any."
-        },
-        {
-          "zh": "图画帮助我们了解如何。",
-          "en": "A picture helps us understand how."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -31089,24 +23294,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "不但",
           "meaningEn": "not only"
-        }
-      ],
-      "sentence": {
-        "zh": "周末，小组同学在阅读时间里看到但是。",
-        "en": "On the weekend, my group members see but during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "周末，小组同学在阅读时间里看到但是。",
-          "en": "On the weekend, my group members see but during reading time."
-        },
-        {
-          "zh": "周末，小组同学谈到但愿。",
-          "en": "On the weekend, my group members mention if only."
-        },
-        {
-          "zh": "故事帮助我们了解不但。",
-          "en": "A story helps us understand not only."
         }
       ],
       "etymologyHint": "",
@@ -31164,24 +23351,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "movement"
         }
       ],
-      "sentence": {
-        "zh": "午饭后，我在画册里看到作业。",
-        "en": "After lunch, I see school assignment in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，我在画册里看到作业。",
-          "en": "After lunch, I see school assignment in a picture book."
-        },
-        {
-          "zh": "午饭后，我谈到工作。",
-          "en": "After lunch, I mention how to work."
-        },
-        {
-          "zh": "例子帮助我们了解动作。",
-          "en": "An example helps us understand movement."
-        }
-      ],
       "etymologyHint": "A person 亻 making something for the first time 乍; 乍 also provides the pronunciation",
       "sourceTags": [
         "common-800",
@@ -31234,24 +23403,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "低调",
           "meaningEn": "low-key"
-        }
-      ],
-      "sentence": {
-        "zh": "他低头认真写字。",
-        "en": "He lowers his head and writes carefully."
-      },
-      "sentences": [
-        {
-          "zh": "他低头认真写字。",
-          "en": "He lowers his head and writes carefully."
-        },
-        {
-          "zh": "图书馆里，我们低声说话。",
-          "en": "In the library, we speak in low voices."
-        },
-        {
-          "zh": "她做事很低调。",
-          "en": "She does things in a low-key way."
         }
       ],
       "etymologyHint": "",
@@ -31308,24 +23459,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to grab hold of"
         }
       ],
-      "sentence": {
-        "zh": "复习时，姐姐在校园里看到住院。",
-        "en": "While reviewing, my older sister sees how to be in hospital on campus."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，姐姐在校园里看到住院。",
-          "en": "While reviewing, my older sister sees how to be in hospital on campus."
-        },
-        {
-          "zh": "复习时，姐姐谈到住宅。",
-          "en": "While reviewing, my older sister mentions residence."
-        },
-        {
-          "zh": "阅读卡帮助我们了解抓住。",
-          "en": "A reading card helps us understand how to grab hold of."
-        }
-      ],
       "etymologyHint": "A person 亻 who hosts 主; 主 also provides the pronunciation",
       "sourceTags": [
         "common-800",
@@ -31380,24 +23513,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "unit"
         }
       ],
-      "sentence": {
-        "zh": "讨论时，哥哥在家里的书架上看到位置。",
-        "en": "During discussion, my older brother sees position on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，哥哥在家里的书架上看到位置。",
-          "en": "During discussion, my older brother sees position on the bookshelf at home."
-        },
-        {
-          "zh": "讨论时，哥哥谈到各位。",
-          "en": "During discussion, my older brother mentions everybody."
-        },
-        {
-          "zh": "图片帮助我们了解单位。",
-          "en": "An image helps us understand unit."
-        }
-      ],
       "etymologyHint": "The place where a person 亻 stands 立",
       "sourceTags": [
         "common-800",
@@ -31450,24 +23565,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "接近",
           "meaningEn": "to approach"
-        }
-      ],
-      "sentence": {
-        "zh": "看图时，朋友在图书馆里看到最近。",
-        "en": "While looking at a picture, my friend sees recently in the library."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，朋友在图书馆里看到最近。",
-          "en": "While looking at a picture, my friend sees recently in the library."
-        },
-        {
-          "zh": "看图时，朋友谈到附近。",
-          "en": "While looking at a picture, my friend mentions nearby."
-        },
-        {
-          "zh": "练习帮助我们了解接近。",
-          "en": "An exercise helps us understand how to approach."
         }
       ],
       "etymologyHint": "walk",
@@ -31525,24 +23622,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "triangle"
         }
       ],
-      "sentence": {
-        "zh": "早读时，我们在教室里看到角色。",
-        "en": "During morning reading, we see role in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，我们在教室里看到角色。",
-          "en": "During morning reading, we see role in the classroom."
-        },
-        {
-          "zh": "早读时，我们谈到角度。",
-          "en": "During morning reading, we mention angle."
-        },
-        {
-          "zh": "对话帮助我们了解三角。",
-          "en": "A dialogue helps us understand triangle."
-        }
-      ],
       "etymologyHint": "A rhinoceros or other animal horn",
       "sourceTags": [
         "common-800",
@@ -31596,24 +23675,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "面条",
           "meaningEn": "noodles"
-        }
-      ],
-      "sentence": {
-        "zh": "中文课上，妹妹在故事书里看到条件。",
-        "en": "In Chinese class, my younger sister sees condition in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，妹妹在故事书里看到条件。",
-          "en": "In Chinese class, my younger sister sees condition in a storybook."
-        },
-        {
-          "zh": "中文课上，妹妹谈到条例。",
-          "en": "In Chinese class, my younger sister mentions regulations."
-        },
-        {
-          "zh": "小组活动帮助我们了解面条。",
-          "en": "A group activity helps us understand noodles."
         }
       ],
       "etymologyHint": "",
@@ -31670,24 +23731,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "top scorer in the palace examination"
         }
       ],
-      "sentence": {
-        "zh": "放学后，小组同学在练习册里看到状态。",
-        "en": "After school, my group members see condition in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，小组同学在练习册里看到状态。",
-          "en": "After school, my group members see condition in a workbook."
-        },
-        {
-          "zh": "放学后，小组同学谈到状况。",
-          "en": "After school, my group members mention condition."
-        },
-        {
-          "zh": "词卡帮助我们了解状元。",
-          "en": "A word card helps us understand top scorer in the palace examination."
-        }
-      ],
       "etymologyHint": "dog",
       "sourceTags": [
         "common-800",
@@ -31740,24 +23783,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "况且",
           "meaningEn": "moreover"
-        }
-      ],
-      "sentence": {
-        "zh": "阅读时，我在学校展板上看到情况。",
-        "en": "While reading, I see circumstances on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，我在学校展板上看到情况。",
-          "en": "While reading, I see circumstances on the school display board."
-        },
-        {
-          "zh": "阅读时，我谈到状况。",
-          "en": "While reading, I mention condition."
-        },
-        {
-          "zh": "书本帮助我们了解况且。",
-          "en": "A book helps us understand moreover."
         }
       ],
       "etymologyHint": "",
@@ -31815,24 +23840,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to deal with"
         }
       ],
-      "sentence": {
-        "zh": "写作业时，同学在小组活动中看到应该。",
-        "en": "While doing homework, my classmate sees ought to during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，同学在小组活动中看到应该。",
-          "en": "While doing homework, my classmate sees ought to during a group activity."
-        },
-        {
-          "zh": "写作业时，同学谈到应当。",
-          "en": "While doing homework, my classmate mentions should."
-        },
-        {
-          "zh": "图画帮助我们了解应付。",
-          "en": "A picture helps us understand how to deal with."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -31886,24 +23893,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "空间",
           "meaningEn": "space"
-        }
-      ],
-      "sentence": {
-        "zh": "周末，姐姐在课外书里看到时间。",
-        "en": "On the weekend, my older sister sees time in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "周末，姐姐在课外书里看到时间。",
-          "en": "On the weekend, my older sister sees time in an extracurricular book."
-        },
-        {
-          "zh": "周末，姐姐谈到房间。",
-          "en": "On the weekend, my older sister mentions room."
-        },
-        {
-          "zh": "故事帮助我们了解空间。",
-          "en": "A story helps us understand space."
         }
       ],
       "etymologyHint": "The sun 日 shining through a doorway 门",
@@ -31960,24 +23949,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to be finished"
         }
       ],
-      "sentence": {
-        "zh": "午饭后，哥哥在中文角里看到完全。",
-        "en": "After lunch, my older brother sees complete in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，哥哥在中文角里看到完全。",
-          "en": "After lunch, my older brother sees complete in the Chinese corner."
-        },
-        {
-          "zh": "午饭后，哥哥谈到完成。",
-          "en": "After lunch, my older brother mentions how to complete."
-        },
-        {
-          "zh": "例子帮助我们了解完了。",
-          "en": "An example helps us understand how to be finished."
-        }
-      ],
       "etymologyHint": "roof",
       "sourceTags": [
         "common-800",
@@ -32030,24 +24001,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "终究",
           "meaningEn": "in the end"
-        }
-      ],
-      "sentence": {
-        "zh": "这究竟是什么意思？",
-        "en": "What exactly does this mean?"
-      },
-      "sentences": [
-        {
-          "zh": "这究竟是什么意思？",
-          "en": "What exactly does this mean?"
-        },
-        {
-          "zh": "老师带我们研究汉字。",
-          "en": "The teacher leads us to research Chinese characters."
-        },
-        {
-          "zh": "认真练习终究会进步。",
-          "en": "Careful practice will lead to improvement in the end."
         }
       ],
       "etymologyHint": "cave",
@@ -32104,24 +24057,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to confirm"
         }
       ],
-      "sentence": {
-        "zh": "复习时，我们在画册里看到证明。",
-        "en": "While reviewing, we see proof in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，我们在画册里看到证明。",
-          "en": "While reviewing, we see proof in a picture book."
-        },
-        {
-          "zh": "复习时，我们谈到证据。",
-          "en": "While reviewing, we mention evidence."
-        },
-        {
-          "zh": "阅读卡帮助我们了解证实。",
-          "en": "A reading card helps us understand how to confirm."
-        }
-      ],
       "etymologyHint": "To speak 讠 the truth 正; 正 also provides the pronunciation",
       "sourceTags": [
         "common-800",
@@ -32174,24 +24109,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "社交",
           "meaningEn": "interaction"
-        }
-      ],
-      "sentence": {
-        "zh": "讨论时，妹妹在作业本上看到社会。",
-        "en": "During discussion, my younger sister sees society in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，妹妹在作业本上看到社会。",
-          "en": "During discussion, my younger sister sees society in the homework book."
-        },
-        {
-          "zh": "讨论时，妹妹谈到社区。",
-          "en": "During discussion, my younger sister mentions community."
-        },
-        {
-          "zh": "图片帮助我们了解社交。",
-          "en": "An image helps us understand interaction."
         }
       ],
       "etymologyHint": "An earth 土 spirit 礻; 礻 also provides the pronunciation",
@@ -32248,24 +24165,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "even if"
         }
       ],
-      "sentence": {
-        "zh": "即使下雨，我们也去上课。",
-        "en": "Even if it rains, we still go to class."
-      },
-      "sentences": [
-        {
-          "zh": "即使下雨，我们也去上课。",
-          "en": "Even if it rains, we still go to class."
-        },
-        {
-          "zh": "中文课即将开始。",
-          "en": "Chinese class is about to begin."
-        },
-        {
-          "zh": "即便很难，我也会练习。",
-          "en": "Even if it is difficult, I will practise."
-        }
-      ],
       "etymologyHint": "A hungry person卩 kneeling over food 皀; compare 既",
       "sourceTags": [
         "common-800",
@@ -32318,24 +24217,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "高层",
           "meaningEn": "high-rise"
-        }
-      ],
-      "sentence": {
-        "zh": "早读时，我在家里的书架上看到层次。",
-        "en": "During morning reading, I see layer on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，我在家里的书架上看到层次。",
-          "en": "During morning reading, I see layer on the bookshelf at home."
-        },
-        {
-          "zh": "早读时，我谈到层面。",
-          "en": "During morning reading, I mention aspect."
-        },
-        {
-          "zh": "对话帮助我们了解高层。",
-          "en": "A dialogue helps us understand high-rise."
         }
       ],
       "etymologyHint": "Simplified form of 層; 曾 provides the pronunciation",
@@ -32392,24 +24273,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "arrangement"
         }
       ],
-      "sentence": {
-        "zh": "中文课上，同学在图书馆里看到局长。",
-        "en": "In Chinese class, my classmate sees bureau chief in the library."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，同学在图书馆里看到局长。",
-          "en": "In Chinese class, my classmate sees bureau chief in the library."
-        },
-        {
-          "zh": "中文课上，同学谈到局势。",
-          "en": "In Chinese class, my classmate mentions situation."
-        },
-        {
-          "zh": "小组活动帮助我们了解布局。",
-          "en": "A group activity helps us understand arrangement."
-        }
-      ],
       "etymologyHint": "A place where measures 尺 are discussed 口",
       "sourceTags": [
         "common-800",
@@ -32462,24 +24325,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "改善",
           "meaningEn": "to make better"
-        }
-      ],
-      "sentence": {
-        "zh": "放学后，姐姐在教室里看到改变。",
-        "en": "After school, my older sister sees how to change in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，姐姐在教室里看到改变。",
-          "en": "After school, my older sister sees how to change in the classroom."
-        },
-        {
-          "zh": "放学后，姐姐谈到改造。",
-          "en": "After school, my older sister mentions how to transform."
-        },
-        {
-          "zh": "词卡帮助我们了解改善。",
-          "en": "A word card helps us understand how to make better."
         }
       ],
       "etymologyHint": "A hand with a stick 攵 disciplining a kneeling child 己",
@@ -32536,24 +24381,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to advocate"
         }
       ],
-      "sentence": {
-        "zh": "阅读时，哥哥在故事书里看到紧张。",
-        "en": "While reading, my older brother sees nervous in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，哥哥在故事书里看到紧张。",
-          "en": "While reading, my older brother sees nervous in a storybook."
-        },
-        {
-          "zh": "阅读时，哥哥谈到夸张。",
-          "en": "While reading, my older brother mentions how to exaggerate."
-        },
-        {
-          "zh": "书本帮助我们了解主张。",
-          "en": "A book helps us understand how to advocate."
-        }
-      ],
       "etymologyHint": "bow",
       "sourceTags": [
         "common-800",
@@ -32606,24 +24433,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "交际",
           "meaningEn": "communication"
-        }
-      ],
-      "sentence": {
-        "zh": "写作业时，朋友在练习册里看到国际。",
-        "en": "While doing homework, my friend sees international in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，朋友在练习册里看到国际。",
-          "en": "While doing homework, my friend sees international in a workbook."
-        },
-        {
-          "zh": "写作业时，朋友谈到实际。",
-          "en": "While doing homework, my friend mentions reality."
-        },
-        {
-          "zh": "图画帮助我们了解交际。",
-          "en": "A picture helps us understand communication."
         }
       ],
       "etymologyHint": "hill",
@@ -32680,24 +24489,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "frog"
         }
       ],
-      "sentence": {
-        "zh": "周末，我们在学校展板上看到青年。",
-        "en": "On the weekend, we see youth on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "周末，我们在学校展板上看到青年。",
-          "en": "On the weekend, we see youth on the school display board."
-        },
-        {
-          "zh": "周末，我们谈到青春。",
-          "en": "On the weekend, we mention youth."
-        },
-        {
-          "zh": "故事帮助我们了解青蛙。",
-          "en": "A story helps us understand frog."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -32750,24 +24541,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "现实",
           "meaningEn": "reality"
-        }
-      ],
-      "sentence": {
-        "zh": "午饭后，妹妹在小组活动中看到现在。",
-        "en": "After lunch, my younger sister sees now during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，妹妹在小组活动中看到现在。",
-          "en": "After lunch, my younger sister sees now during a group activity."
-        },
-        {
-          "zh": "午饭后，妹妹谈到现场。",
-          "en": "After lunch, my younger sister mentions the scene."
-        },
-        {
-          "zh": "例子帮助我们了解现实。",
-          "en": "An example helps us understand reality."
         }
       ],
       "etymologyHint": "To see 见 jade 王; 见 also provides the pronunciation",
@@ -32824,24 +24597,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "representative"
         }
       ],
-      "sentence": {
-        "zh": "活动课上，小组同学在课外书里看到表现。",
-        "en": "During activity class, my group members see how to show in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，小组同学在课外书里看到表现。",
-          "en": "During activity class, my group members see how to show in an extracurricular book."
-        },
-        {
-          "zh": "活动课上，小组同学谈到表示。",
-          "en": "During activity class, my group members mention how to express."
-        },
-        {
-          "zh": "卡片帮助我们了解代表。",
-          "en": "A card helps us understand representative."
-        }
-      ],
       "etymologyHint": "Fur 毛 clothing 衣; a shawl or wrap",
       "sourceTags": [
         "common-800",
@@ -32896,24 +24651,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to draw up a plan"
         }
       ],
-      "sentence": {
-        "zh": "复习时，我在中文角里看到规定。",
-        "en": "While reviewing, I see how to stipulate in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，我在中文角里看到规定。",
-          "en": "While reviewing, I see how to stipulate in the Chinese corner."
-        },
-        {
-          "zh": "复习时，我谈到规则。",
-          "en": "While reviewing, I mention rule."
-        },
-        {
-          "zh": "阅读卡帮助我们了解规划。",
-          "en": "A reading card helps us understand how to draw up a plan."
-        }
-      ],
       "etymologyHint": "observe",
       "sourceTags": [
         "common-800",
@@ -32966,24 +24703,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "读者",
           "meaningEn": "reader"
-        }
-      ],
-      "sentence": {
-        "zh": "讨论时，同学在阅读时间里看到或者。",
-        "en": "During discussion, my classmate sees or during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，同学在阅读时间里看到或者。",
-          "en": "During discussion, my classmate sees or during reading time."
-        },
-        {
-          "zh": "讨论时，同学谈到记者。",
-          "en": "During discussion, my classmate mentions reporter."
-        },
-        {
-          "zh": "图片帮助我们了解读者。",
-          "en": "An image helps us understand reader."
         }
       ],
       "etymologyHint": "",
@@ -33041,24 +24760,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to pull"
         }
       ],
-      "sentence": {
-        "zh": "看图时，姐姐在画册里看到拉开。",
-        "en": "While looking at a picture, my older sister sees how to pull open in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，姐姐在画册里看到拉开。",
-          "en": "While looking at a picture, my older sister sees how to pull open in a picture book."
-        },
-        {
-          "zh": "看图时，姐姐谈到拉拢。",
-          "en": "While looking at a picture, my older sister mentions how to rope in."
-        },
-        {
-          "zh": "练习帮助我们了解拉动。",
-          "en": "An exercise helps us understand how to pull."
-        }
-      ],
       "etymologyHint": "hand",
       "sourceTags": [
         "common-800",
@@ -33112,24 +24813,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "极其",
           "meaningEn": "extremely"
-        }
-      ],
-      "sentence": {
-        "zh": "早读时，哥哥在作业本上看到其中。",
-        "en": "During morning reading, my older brother sees among in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，哥哥在作业本上看到其中。",
-          "en": "During morning reading, my older brother sees among in the homework book."
-        },
-        {
-          "zh": "早读时，哥哥谈到尤其。",
-          "en": "During morning reading, my older brother mentions especially."
-        },
-        {
-          "zh": "对话帮助我们了解极其。",
-          "en": "A dialogue helps us understand extremely."
         }
       ],
       "etymologyHint": "",
@@ -33186,24 +24869,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to fight for"
         }
       ],
-      "sentence": {
-        "zh": "中文课上，朋友在校园里看到取代。",
-        "en": "In Chinese class, my friend sees how to replace on campus."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，朋友在校园里看到取代。",
-          "en": "In Chinese class, my friend sees how to replace on campus."
-        },
-        {
-          "zh": "中文课上，朋友谈到采取。",
-          "en": "In Chinese class, my friend mentions how to adopt or carry out."
-        },
-        {
-          "zh": "小组活动帮助我们了解争取。",
-          "en": "A group activity helps us understand how to fight for."
-        }
-      ],
       "etymologyHint": "A hand 又 taking the ear 耳 of a fallen enemy",
       "sourceTags": [
         "common-800",
@@ -33256,24 +24921,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "一直",
           "meaningEn": "always; continuously"
-        }
-      ],
-      "sentence": {
-        "zh": "请直接回答问题。",
-        "en": "Please answer the question directly."
-      },
-      "sentences": [
-        {
-          "zh": "请直接回答问题。",
-          "en": "Please answer the question directly."
-        },
-        {
-          "zh": "我们一直读书，直到下课。",
-          "en": "We keep reading until class ends."
-        },
-        {
-          "zh": "她一直认真学习中文。",
-          "en": "She always studies Chinese carefully."
         }
       ],
       "etymologyHint": "To look someone in the eye 目",
@@ -33330,24 +24977,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "structure"
         }
       ],
-      "sentence": {
-        "zh": "阅读时，妹妹在图书馆里看到构成。",
-        "en": "While reading, my younger sister sees how to constitute in the library."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，妹妹在图书馆里看到构成。",
-          "en": "While reading, my younger sister sees how to constitute in the library."
-        },
-        {
-          "zh": "阅读时，妹妹谈到机构。",
-          "en": "While reading, my younger sister mentions mechanism."
-        },
-        {
-          "zh": "书本帮助我们了解结构。",
-          "en": "A book helps us understand structure."
-        }
-      ],
       "etymologyHint": "wood",
       "sourceTags": [
         "common-800",
@@ -33402,24 +25031,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "or"
         }
       ],
-      "sentence": {
-        "zh": "写作业时，小组同学在教室里看到或许。",
-        "en": "While doing homework, my group members see perhaps in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，小组同学在教室里看到或许。",
-          "en": "While doing homework, my group members see perhaps in the classroom."
-        },
-        {
-          "zh": "写作业时，小组同学谈到或是。",
-          "en": "While doing homework, my group members mention or."
-        },
-        {
-          "zh": "图画帮助我们了解或者。",
-          "en": "A picture helps us understand or."
-        }
-      ],
       "etymologyHint": "To defend yourself 口 with a spear 戈; \"or else\"",
       "sourceTags": [
         "common-800",
@@ -33472,24 +25083,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "矿泉水",
           "meaningEn": "mineral water"
-        }
-      ],
-      "sentence": {
-        "zh": "周末，我在故事书里看到煤矿。",
-        "en": "On the weekend, I see coal mine in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "周末，我在故事书里看到煤矿。",
-          "en": "On the weekend, I see coal mine in a storybook."
-        },
-        {
-          "zh": "周末，我谈到采矿。",
-          "en": "On the weekend, I mention mining."
-        },
-        {
-          "zh": "故事帮助我们了解矿泉水。",
-          "en": "A story helps us understand mineral water."
         }
       ],
       "etymologyHint": "mineral",
@@ -33547,24 +25140,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to turn round"
         }
       ],
-      "sentence": {
-        "zh": "午饭后，同学在练习册里看到转移。",
-        "en": "After lunch, my classmate sees how to shift in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，同学在练习册里看到转移。",
-          "en": "After lunch, my classmate sees how to shift in a workbook."
-        },
-        {
-          "zh": "午饭后，同学谈到转变。",
-          "en": "After lunch, my classmate mentions how to change."
-        },
-        {
-          "zh": "例子帮助我们了解转身。",
-          "en": "An example helps us understand how to turn round."
-        }
-      ],
       "etymologyHint": "cart",
       "sourceTags": [
         "common-800",
@@ -33619,24 +25194,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to find"
         }
       ],
-      "sentence": {
-        "zh": "活动课上，姐姐在学校展板上看到到底。",
-        "en": "During activity class, my older sister sees finally on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，姐姐在学校展板上看到到底。",
-          "en": "During activity class, my older sister sees finally on the school display board."
-        },
-        {
-          "zh": "活动课上，姐姐谈到得到。",
-          "en": "During activity class, my older sister mentions how to get."
-        },
-        {
-          "zh": "卡片帮助我们了解找到。",
-          "en": "A card helps us understand how to find."
-        }
-      ],
       "etymologyHint": "arrive",
       "sourceTags": [
         "common-800",
@@ -33689,24 +25246,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "非洲",
           "meaningEn": "Africa"
-        }
-      ],
-      "sentence": {
-        "zh": "今天我非常开心。",
-        "en": "I am very happy today."
-      },
-      "sentences": [
-        {
-          "zh": "今天我非常开心。",
-          "en": "I am very happy today."
-        },
-        {
-          "zh": "这道题并非很难。",
-          "en": "This question is not really difficult."
-        },
-        {
-          "zh": "非洲有很多国家。",
-          "en": "Africa has many countries."
         }
       ],
       "etymologyHint": "Two bird's wings opposed; two people back-to-back",
@@ -33764,24 +25303,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "these"
         }
       ],
-      "sentence": {
-        "zh": "讨论时，朋友在课外书里看到一些。",
-        "en": "During discussion, my friend sees some in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，朋友在课外书里看到一些。",
-          "en": "During discussion, my friend sees some in an extracurricular book."
-        },
-        {
-          "zh": "讨论时，朋友谈到那些。",
-          "en": "During discussion, my friend mentions those."
-        },
-        {
-          "zh": "图片帮助我们了解这些。",
-          "en": "An image helps us understand these."
-        }
-      ],
       "etymologyHint": "two",
       "sourceTags": [
         "common-800",
@@ -33834,24 +25355,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "玩具",
           "meaningEn": "plaything"
-        }
-      ],
-      "sentence": {
-        "zh": "看图时，我们在中文角里看到具体。",
-        "en": "While looking at a picture, we see concrete in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，我们在中文角里看到具体。",
-          "en": "While looking at a picture, we see concrete in the Chinese corner."
-        },
-        {
-          "zh": "看图时，我们谈到具备。",
-          "en": "While looking at a picture, we mention how to possess."
-        },
-        {
-          "zh": "练习帮助我们了解玩具。",
-          "en": "An exercise helps us understand plaything."
         }
       ],
       "etymologyHint": "Two hands 八 writing on a tablet 目",
@@ -33908,24 +25411,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "easily"
         }
       ],
-      "sentence": {
-        "zh": "早读时，妹妹在阅读时间里看到容易。",
-        "en": "During morning reading, my younger sister sees easy during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，妹妹在阅读时间里看到容易。",
-          "en": "During morning reading, my younger sister sees easy during reading time."
-        },
-        {
-          "zh": "早读时，妹妹谈到交易。",
-          "en": "During morning reading, my younger sister mentions how to deal."
-        },
-        {
-          "zh": "对话帮助我们了解轻易。",
-          "en": "A dialogue helps us understand easily."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -33978,24 +25463,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "复制",
           "meaningEn": "to duplicate"
-        }
-      ],
-      "sentence": {
-        "zh": "中文课上，小组同学在画册里看到制造。",
-        "en": "In Chinese class, my group members see how to manufacture in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，小组同学在画册里看到制造。",
-          "en": "In Chinese class, my group members see how to manufacture in a picture book."
-        },
-        {
-          "zh": "中文课上，小组同学谈到制作。",
-          "en": "In Chinese class, my group members mention how to make."
-        },
-        {
-          "zh": "小组活动帮助我们了解复制。",
-          "en": "A group activity helps us understand how to duplicate."
         }
       ],
       "etymologyHint": "knife",
@@ -34053,24 +25520,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "evaluation committee"
         }
       ],
-      "sentence": {
-        "zh": "放学后，我在作业本上看到委托。",
-        "en": "After school, I see how to entrust in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，我在作业本上看到委托。",
-          "en": "After school, I see how to entrust in the homework book."
-        },
-        {
-          "zh": "放学后，我谈到委员。",
-          "en": "After school, I mention committee member."
-        },
-        {
-          "zh": "词卡帮助我们了解评委。",
-          "en": "A word card helps us understand evaluation committee."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -34123,24 +25572,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "使命",
           "meaningEn": "mission"
-        }
-      ],
-      "sentence": {
-        "zh": "阅读时，同学在校园里看到使用。",
-        "en": "While reading, my classmate sees how to use on campus."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，同学在校园里看到使用。",
-          "en": "While reading, my classmate sees how to use on campus."
-        },
-        {
-          "zh": "阅读时，同学谈到即使。",
-          "en": "While reading, my classmate mentions even if."
-        },
-        {
-          "zh": "书本帮助我们了解使命。",
-          "en": "A book helps us understand mission."
         }
       ],
       "etymologyHint": "A person 亻 working for the government 吏",
@@ -34197,24 +25628,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "regulations"
         }
       ],
-      "sentence": {
-        "zh": "写作业时，姐姐在家里的书架上看到例外。",
-        "en": "While doing homework, my older sister sees exception on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，姐姐在家里的书架上看到例外。",
-          "en": "While doing homework, my older sister sees exception on the bookshelf at home."
-        },
-        {
-          "zh": "写作业时，姐姐谈到比例。",
-          "en": "While doing homework, my older sister mentions proportion."
-        },
-        {
-          "zh": "图画帮助我们了解条例。",
-          "en": "A picture helps us understand regulations."
-        }
-      ],
       "etymologyHint": "person",
       "sourceTags": [
         "common-800",
@@ -34267,24 +25680,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "质地",
           "meaningEn": "texture"
-        }
-      ],
-      "sentence": {
-        "zh": "这个书包质量很好。",
-        "en": "This school bag has good quality."
-      },
-      "sentences": [
-        {
-          "zh": "这个书包质量很好。",
-          "en": "This school bag has good quality."
-        },
-        {
-          "zh": "故事的本质是友爱。",
-          "en": "The essence of the story is kindness."
-        },
-        {
-          "zh": "这块布的质地很柔软。",
-          "en": "The texture of this cloth is soft."
         }
       ],
       "etymologyHint": "shell",
@@ -34341,24 +25736,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "dealings"
         }
       ],
-      "sentence": {
-        "zh": "午饭后，朋友在教室里看到往往。",
-        "en": "After lunch, my friend sees usually in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，朋友在教室里看到往往。",
-          "en": "After lunch, my friend sees usually in the classroom."
-        },
-        {
-          "zh": "午饭后，朋友谈到往事。",
-          "en": "After lunch, my friend mentions past events."
-        },
-        {
-          "zh": "例子帮助我们了解往来。",
-          "en": "An example helps us understand dealings."
-        }
-      ],
       "etymologyHint": "step",
       "sourceTags": [
         "common-800",
@@ -34411,24 +25788,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "使命",
           "meaningEn": "mission"
-        }
-      ],
-      "sentence": {
-        "zh": "老师没有命令我们快跑。",
-        "en": "The teacher does not order us to run fast."
-      },
-      "sentences": [
-        {
-          "zh": "老师没有命令我们快跑。",
-          "en": "The teacher does not order us to run fast."
-        },
-        {
-          "zh": "水对生命很重要。",
-          "en": "Water is important for life."
-        },
-        {
-          "zh": "保护环境是大家的使命。",
-          "en": "Protecting the environment is everyone's mission."
         }
       ],
       "etymologyHint": "An order 令 given by mouth 口",
@@ -34486,24 +25845,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to adopt"
         }
       ],
-      "sentence": {
-        "zh": "复习时，妹妹在练习册里看到采取。",
-        "en": "While reviewing, my younger sister sees how to adopt or carry out in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，妹妹在练习册里看到采取。",
-          "en": "While reviewing, my younger sister sees how to adopt or carry out in a workbook."
-        },
-        {
-          "zh": "复习时，妹妹谈到采访。",
-          "en": "While reviewing, my younger sister mentions how to interview."
-        },
-        {
-          "zh": "阅读卡帮助我们了解采用。",
-          "en": "A reading card helps us understand how to adopt."
-        }
-      ],
       "etymologyHint": "A hand picking 爫 fruit from a tree 木",
       "sourceTags": [
         "common-800",
@@ -34556,24 +25897,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "接受",
           "meaningEn": "to accept"
-        }
-      ],
-      "sentence": {
-        "zh": "讨论时，小组同学在学校展板上看到受到。",
-        "en": "During discussion, my group members see how to receive on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，小组同学在学校展板上看到受到。",
-          "en": "During discussion, my group members see how to receive on the school display board."
-        },
-        {
-          "zh": "讨论时，小组同学谈到受伤。",
-          "en": "During discussion, my group members mention how to sustain injuries."
-        },
-        {
-          "zh": "图片帮助我们了解接受。",
-          "en": "An image helps us understand how to accept."
         }
       ],
       "etymologyHint": "Something 冖 passed from one hand 爫 to another 又",
@@ -34630,24 +25953,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "equipment"
         }
       ],
-      "sentence": {
-        "zh": "看图时，我在小组活动中看到准备。",
-        "en": "While looking at a picture, I see preparation during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，我在小组活动中看到准备。",
-          "en": "While looking at a picture, I see preparation during a group activity."
-        },
-        {
-          "zh": "看图时，我谈到设备。",
-          "en": "While looking at a picture, I mention equipment."
-        },
-        {
-          "zh": "练习帮助我们了解装备。",
-          "en": "An exercise helps us understand equipment."
-        }
-      ],
       "etymologyHint": "To go 夂 to the farm 田 to prepare for a harvest",
       "sourceTags": [
         "common-800",
@@ -34700,24 +26005,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "改变",
           "meaningEn": "to change"
-        }
-      ],
-      "sentence": {
-        "zh": "早读时，同学在课外书里看到变成。",
-        "en": "During morning reading, my classmate sees how to change into in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，同学在课外书里看到变成。",
-          "en": "During morning reading, my classmate sees how to change into in an extracurricular book."
-        },
-        {
-          "zh": "早读时，同学谈到变化。",
-          "en": "During morning reading, my classmate mentions how to change."
-        },
-        {
-          "zh": "对话帮助我们了解改变。",
-          "en": "A dialogue helps us understand how to change."
         }
       ],
       "etymologyHint": "",
@@ -34774,24 +26061,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "capital of a country"
         }
       ],
-      "sentence": {
-        "zh": "中文课上，姐姐在中文角里看到北京。",
-        "en": "In Chinese class, my older sister sees Beijing, capital of the People's Republic of China in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，姐姐在中文角里看到北京。",
-          "en": "In Chinese class, my older sister sees Beijing, capital of the People's Republic of China in the Chinese corner."
-        },
-        {
-          "zh": "中文课上，姐姐谈到京剧。",
-          "en": "In Chinese class, my older sister mentions Beijing opera."
-        },
-        {
-          "zh": "小组活动帮助我们了解京兆。",
-          "en": "A group activity helps us understand capital of a country."
-        }
-      ],
       "etymologyHint": "A capital building on a hill",
       "sourceTags": [
         "common-800",
@@ -34844,24 +26113,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "府上",
           "meaningEn": "your home"
-        }
-      ],
-      "sentence": {
-        "zh": "放学后，哥哥在阅读时间里看到政府。",
-        "en": "After school, my older brother sees government during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，哥哥在阅读时间里看到政府。",
-          "en": "After school, my older brother sees government during reading time."
-        },
-        {
-          "zh": "放学后，哥哥谈到首府。",
-          "en": "After school, my older brother mentions capital city of an autonomous region."
-        },
-        {
-          "zh": "词卡帮助我们了解府上。",
-          "en": "A word card helps us understand your home."
         }
       ],
       "etymologyHint": "wide",
@@ -34920,24 +26171,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "single"
         }
       ],
-      "sentence": {
-        "zh": "阅读时，朋友在画册里看到单位。",
-        "en": "While reading, my friend sees unit in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，朋友在画册里看到单位。",
-          "en": "While reading, my friend sees unit in a picture book."
-        },
-        {
-          "zh": "阅读时，朋友谈到单身。",
-          "en": "While reading, my friend mentions unmarried."
-        },
-        {
-          "zh": "书本帮助我们了解单一。",
-          "en": "A book helps us understand single."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -34990,24 +26223,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "无法",
           "meaningEn": "unable"
-        }
-      ],
-      "sentence": {
-        "zh": "写作业时，我们在作业本上看到法律。",
-        "en": "While doing homework, we see law in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，我们在作业本上看到法律。",
-          "en": "While doing homework, we see law in the homework book."
-        },
-        {
-          "zh": "写作业时，我们谈到办法。",
-          "en": "While doing homework, we mention means."
-        },
-        {
-          "zh": "图画帮助我们了解无法。",
-          "en": "A picture helps us understand unable."
         }
       ],
       "etymologyHint": "The course 去 followed by a stream 氵",
@@ -35064,24 +26279,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "gasoline"
         }
       ],
-      "sentence": {
-        "zh": "周末，妹妹在校园里看到加油。",
-        "en": "On the weekend, my younger sister sees how to add oil on campus."
-      },
-      "sentences": [
-        {
-          "zh": "周末，妹妹在校园里看到加油。",
-          "en": "On the weekend, my younger sister sees how to add oil on campus."
-        },
-        {
-          "zh": "周末，妹妹谈到石油。",
-          "en": "On the weekend, my younger sister mentions oil."
-        },
-        {
-          "zh": "故事帮助我们了解汽油。",
-          "en": "A story helps us understand gasoline."
-        }
-      ],
       "etymologyHint": "water",
       "sourceTags": [
         "common-800",
@@ -35134,24 +26331,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "治愈",
           "meaningEn": "to cure"
-        }
-      ],
-      "sentence": {
-        "zh": "午饭后，小组同学在家里的书架上看到治疗。",
-        "en": "After lunch, my group members see how to treat on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，小组同学在家里的书架上看到治疗。",
-          "en": "After lunch, my group members see how to treat on the bookshelf at home."
-        },
-        {
-          "zh": "午饭后，小组同学谈到治安。",
-          "en": "After lunch, my group members mention law and order."
-        },
-        {
-          "zh": "例子帮助我们了解治愈。",
-          "en": "An example helps us understand how to cure."
         }
       ],
       "etymologyHint": "A structure 台 that directs the flow of water 氵",
@@ -35208,24 +26387,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "woman; female"
         }
       ],
-      "sentence": {
-        "zh": "他的性格很开朗。",
-        "en": "His personality is cheerful."
-      },
-      "sentences": [
-        {
-          "zh": "他的性格很开朗。",
-          "en": "His personality is cheerful."
-        },
-        {
-          "zh": "每个人都有自己的个性。",
-          "en": "Everyone has their own individuality."
-        },
-        {
-          "zh": "这本书介绍了很多女性作家。",
-          "en": "This book introduces many women writers."
-        }
-      ],
       "etymologyHint": "heart",
       "sourceTags": [
         "common-800",
@@ -35278,24 +26439,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "决定",
           "meaningEn": "to decide"
-        }
-      ],
-      "sentence": {
-        "zh": "复习时，同学在教室里看到一定。",
-        "en": "While reviewing, my classmate sees surely in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，同学在教室里看到一定。",
-          "en": "While reviewing, my classmate sees surely in the classroom."
-        },
-        {
-          "zh": "复习时，同学谈到定位。",
-          "en": "While reviewing, my classmate mentions how to orientate."
-        },
-        {
-          "zh": "阅读卡帮助我们了解决定。",
-          "en": "A reading card helps us understand how to decide."
         }
       ],
       "etymologyHint": "A person 疋 settling under a roof 宀",
@@ -35354,24 +26497,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "in the sky"
         }
       ],
-      "sentence": {
-        "zh": "讨论时，姐姐在故事书里看到空间。",
-        "en": "During discussion, my older sister sees space in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，姐姐在故事书里看到空间。",
-          "en": "During discussion, my older sister sees space in a storybook."
-        },
-        {
-          "zh": "讨论时，姐姐谈到空气。",
-          "en": "During discussion, my older sister mentions air."
-        },
-        {
-          "zh": "图片帮助我们了解空中。",
-          "en": "An image helps us understand in the sky."
-        }
-      ],
       "etymologyHint": "cave",
       "sourceTags": [
         "common-800",
@@ -35424,24 +26549,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "实际",
           "meaningEn": "reality"
-        }
-      ],
-      "sentence": {
-        "zh": "看图时，哥哥在练习册里看到实现。",
-        "en": "While looking at a picture, my older brother sees how to achieve in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，哥哥在练习册里看到实现。",
-          "en": "While looking at a picture, my older brother sees how to achieve in a workbook."
-        },
-        {
-          "zh": "看图时，哥哥谈到实验。",
-          "en": "While looking at a picture, my older brother mentions experiment."
-        },
-        {
-          "zh": "练习帮助我们了解实际。",
-          "en": "An exercise helps us understand reality."
         }
       ],
       "etymologyHint": "",
@@ -35498,24 +26605,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "children's fairy tales"
         }
       ],
-      "sentence": {
-        "zh": "早读时，朋友在学校展板上看到电话。",
-        "en": "During morning reading, my friend sees telephone on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，朋友在学校展板上看到电话。",
-          "en": "During morning reading, my friend sees telephone on the school display board."
-        },
-        {
-          "zh": "早读时，朋友谈到说话。",
-          "en": "During morning reading, my friend mentions how to speak."
-        },
-        {
-          "zh": "对话帮助我们了解童话。",
-          "en": "A dialogue helps us understand children's fairy tales."
-        }
-      ],
       "etymologyHint": "A spoken 讠 tongue 舌; 舌 also provides the pronunciation",
       "sourceTags": [
         "common-800",
@@ -35568,24 +26657,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "不该",
           "meaningEn": "should not"
-        }
-      ],
-      "sentence": {
-        "zh": "中文课上，我们在小组活动中看到应该。",
-        "en": "In Chinese class, we see ought to during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，我们在小组活动中看到应该。",
-          "en": "In Chinese class, we see ought to during a group activity."
-        },
-        {
-          "zh": "中文课上，我们谈到活该。",
-          "en": "In Chinese class, we mention serve sb right."
-        },
-        {
-          "zh": "小组活动帮助我们了解不该。",
-          "en": "A group activity helps us understand should not."
         }
       ],
       "etymologyHint": "speech",
@@ -35642,24 +26713,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to establish diplomatic relations"
         }
       ],
-      "sentence": {
-        "zh": "放学后，妹妹在课外书里看到建议。",
-        "en": "After school, my younger sister sees how to propose in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，妹妹在课外书里看到建议。",
-          "en": "After school, my younger sister sees how to propose in an extracurricular book."
-        },
-        {
-          "zh": "放学后，妹妹谈到建立。",
-          "en": "After school, my younger sister mentions how to establish."
-        },
-        {
-          "zh": "词卡帮助我们了解建交。",
-          "en": "A word card helps us understand how to establish diplomatic relations."
-        }
-      ],
       "etymologyHint": "action",
       "sourceTags": [
         "common-800",
@@ -35712,24 +26765,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "原始",
           "meaningEn": "primitive; original"
-        }
-      ],
-      "sentence": {
-        "zh": "他始终认真听课。",
-        "en": "He listens carefully from beginning to end."
-      },
-      "sentences": [
-        {
-          "zh": "他始终认真听课。",
-          "en": "He listens carefully from beginning to end."
-        },
-        {
-          "zh": "音乐响起，课程开始了。",
-          "en": "When the music starts, the lesson begins."
-        },
-        {
-          "zh": "博物馆里有原始工具。",
-          "en": "There are primitive tools in the museum."
         }
       ],
       "etymologyHint": "woman",
@@ -35789,24 +26824,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to look around"
         }
       ],
-      "sentence": {
-        "zh": "写作业时，我在阅读时间里看到参加。",
-        "en": "While doing homework, I see how to participate during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，我在阅读时间里看到参加。",
-          "en": "While doing homework, I see how to participate during reading time."
-        },
-        {
-          "zh": "写作业时，我谈到参与。",
-          "en": "While doing homework, I mention how to participate."
-        },
-        {
-          "zh": "图画帮助我们了解参观。",
-          "en": "A picture helps us understand how to look around."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -35859,24 +26876,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "一线",
           "meaningEn": "front line"
-        }
-      ],
-      "sentence": {
-        "zh": "故事里有一个重要线索。",
-        "en": "There is an important clue in the story."
-      },
-      "sentences": [
-        {
-          "zh": "故事里有一个重要线索。",
-          "en": "There is an important clue in the story."
-        },
-        {
-          "zh": "这条公交线路经过学校。",
-          "en": "This bus route passes the school."
-        },
-        {
-          "zh": "医生工作在一线。",
-          "en": "Doctors work on the front line."
         }
       ],
       "etymologyHint": "thread",
@@ -35933,24 +26932,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to form"
         }
       ],
-      "sentence": {
-        "zh": "午饭后，姐姐在作业本上看到组织。",
-        "en": "After lunch, my older sister sees how to organize in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，姐姐在作业本上看到组织。",
-          "en": "After lunch, my older sister sees how to organize in the homework book."
-        },
-        {
-          "zh": "午饭后，姐姐谈到组合。",
-          "en": "After lunch, my older sister mentions how to assemble."
-        },
-        {
-          "zh": "例子帮助我们了解组成。",
-          "en": "An example helps us understand how to form."
-        }
-      ],
       "etymologyHint": "thread",
       "sourceTags": [
         "common-800",
@@ -36003,24 +26984,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "仔细",
           "meaningEn": "careful"
-        }
-      ],
-      "sentence": {
-        "zh": "活动课上，哥哥在校园里看到细节。",
-        "en": "During activity class, my older brother sees details on campus."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，哥哥在校园里看到细节。",
-          "en": "During activity class, my older brother sees details on campus."
-        },
-        {
-          "zh": "活动课上，哥哥谈到细胞。",
-          "en": "During activity class, my older brother mentions cell."
-        },
-        {
-          "zh": "卡片帮助我们了解仔细。",
-          "en": "A card helps us understand careful."
         }
       ],
       "etymologyHint": "silk",
@@ -36078,24 +27041,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "spinning and weaving"
         }
       ],
-      "sentence": {
-        "zh": "复习时，朋友在家里的书架上看到组织。",
-        "en": "While reviewing, my friend sees how to organize on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，朋友在家里的书架上看到组织。",
-          "en": "While reviewing, my friend sees how to organize on the bookshelf at home."
-        },
-        {
-          "zh": "复习时，朋友谈到编织。",
-          "en": "While reviewing, my friend mentions how to weave."
-        },
-        {
-          "zh": "阅读卡帮助我们了解纺织。",
-          "en": "A reading card helps us understand spinning and weaving."
-        }
-      ],
       "etymologyHint": "thread",
       "sourceTags": [
         "common-800",
@@ -36148,24 +27093,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "经历",
           "meaningEn": "experience"
-        }
-      ],
-      "sentence": {
-        "zh": "讨论时，我们在图书馆里看到经过。",
-        "en": "During discussion, we see how to pass in the library."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，我们在图书馆里看到经过。",
-          "en": "During discussion, we see how to pass in the library."
-        },
-        {
-          "zh": "讨论时，我们谈到经常。",
-          "en": "During discussion, we mention frequently."
-        },
-        {
-          "zh": "图片帮助我们了解经历。",
-          "en": "An image helps us understand experience."
         }
       ],
       "etymologyHint": "thread",
@@ -36222,24 +27149,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to model"
         }
       ],
-      "sentence": {
-        "zh": "看图时，妹妹在教室里看到类型。",
-        "en": "While looking at a picture, my younger sister sees type in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，妹妹在教室里看到类型。",
-          "en": "While looking at a picture, my younger sister sees type in the classroom."
-        },
-        {
-          "zh": "看图时，妹妹谈到大型。",
-          "en": "While looking at a picture, my younger sister mentions large."
-        },
-        {
-          "zh": "练习帮助我们了解造型。",
-          "en": "An exercise helps us understand how to model."
-        }
-      ],
       "etymologyHint": "earth",
       "sourceTags": [
         "common-800",
@@ -36292,24 +27201,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "支持",
           "meaningEn": "to be in favor of"
-        }
-      ],
-      "sentence": {
-        "zh": "早读时，小组同学在故事书里看到持续。",
-        "en": "During morning reading, my group members see how to continue in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，小组同学在故事书里看到持续。",
-          "en": "During morning reading, my group members see how to continue in a storybook."
-        },
-        {
-          "zh": "早读时，小组同学谈到持有。",
-          "en": "During morning reading, my group members mention how to hold."
-        },
-        {
-          "zh": "对话帮助我们了解支持。",
-          "en": "A dialogue helps us understand how to be in favor of."
         }
       ],
       "etymologyHint": "hand",
@@ -36366,24 +27257,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "policy"
         }
       ],
-      "sentence": {
-        "zh": "中文课上，我在练习册里看到政府。",
-        "en": "In Chinese class, I see government in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，我在练习册里看到政府。",
-          "en": "In Chinese class, I see government in a workbook."
-        },
-        {
-          "zh": "中文课上，我谈到政治。",
-          "en": "In Chinese class, I mention politics."
-        },
-        {
-          "zh": "小组活动帮助我们了解政策。",
-          "en": "A group activity helps us understand policy."
-        }
-      ],
       "etymologyHint": "script",
       "sourceTags": [
         "common-800",
@@ -36438,24 +27311,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to conduct"
         }
       ],
-      "sentence": {
-        "zh": "放学后，同学在学校展板上看到指导。",
-        "en": "After school, my classmate sees how to guide on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，同学在学校展板上看到指导。",
-          "en": "After school, my classmate sees how to guide on the school display board."
-        },
-        {
-          "zh": "放学后，同学谈到指出。",
-          "en": "After school, my classmate mentions how to indicate."
-        },
-        {
-          "zh": "词卡帮助我们了解指挥。",
-          "en": "A word card helps us understand how to conduct."
-        }
-      ],
       "etymologyHint": "To point 旨 by hand 扌; 旨 also provides the pronunciation",
       "sourceTags": [
         "common-800",
@@ -36508,24 +27363,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "按时",
           "meaningEn": "on time"
-        }
-      ],
-      "sentence": {
-        "zh": "阅读时，姐姐在小组活动中看到按照。",
-        "en": "While reading, my older sister sees according to during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，姐姐在小组活动中看到按照。",
-          "en": "While reading, my older sister sees according to during a group activity."
-        },
-        {
-          "zh": "阅读时，姐姐谈到按摩。",
-          "en": "While reading, my older sister mentions massage."
-        },
-        {
-          "zh": "书本帮助我们了解按时。",
-          "en": "A book helps us understand on time."
         }
       ],
       "etymologyHint": "hand",
@@ -36583,24 +27420,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "transformation"
         }
       ],
-      "sentence": {
-        "zh": "历史课上，我们学习革命故事。",
-        "en": "In history class, we study a revolutionary story."
-      },
-      "sentences": [
-        {
-          "zh": "历史课上，我们学习革命故事。",
-          "en": "In history class, we study a revolutionary story."
-        },
-        {
-          "zh": "学校进行新的改革。",
-          "en": "The school carries out a new reform."
-        },
-        {
-          "zh": "科技带来了很多变革。",
-          "en": "Technology has brought many transformations."
-        }
-      ],
       "etymologyHint": "An animal being skinned",
       "sourceTags": [
         "common-800",
@@ -36655,24 +27474,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to have as a feature or characteristic"
         }
       ],
-      "sentence": {
-        "zh": "周末，朋友在中文角里看到带来。",
-        "en": "On the weekend, my friend sees how to bring in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "周末，朋友在中文角里看到带来。",
-          "en": "On the weekend, my friend sees how to bring in the Chinese corner."
-        },
-        {
-          "zh": "周末，朋友谈到带领。",
-          "en": "On the weekend, my friend mentions how to guide."
-        },
-        {
-          "zh": "故事帮助我们了解带有。",
-          "en": "A story helps us understand how to have as a feature or characteristic."
-        }
-      ],
       "etymologyHint": "A belt, creasing one's robe above 卅 but not below 巾",
       "sourceTags": [
         "common-800",
@@ -36725,24 +27526,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "目标",
           "meaningEn": "target"
-        }
-      ],
-      "sentence": {
-        "zh": "午饭后，我们在阅读时间里看到标准。",
-        "en": "After lunch, we see standard during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，我们在阅读时间里看到标准。",
-          "en": "After lunch, we see standard during reading time."
-        },
-        {
-          "zh": "午饭后，我们谈到标志。",
-          "en": "After lunch, we mention sign."
-        },
-        {
-          "zh": "例子帮助我们了解目标。",
-          "en": "An example helps us understand target."
         }
       ],
       "etymologyHint": "wood",
@@ -36800,24 +27583,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "each other"
         }
       ],
-      "sentence": {
-        "zh": "活动课上，妹妹在画册里看到相信。",
-        "en": "During activity class, my younger sister sees how to be convinced in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，妹妹在画册里看到相信。",
-          "en": "During activity class, my younger sister sees how to be convinced in a picture book."
-        },
-        {
-          "zh": "活动课上，妹妹谈到相当。",
-          "en": "During activity class, my younger sister mentions equivalent to."
-        },
-        {
-          "zh": "卡片帮助我们了解相互。",
-          "en": "A card helps us understand each other."
-        }
-      ],
       "etymologyHint": "To stare 目 at a tree 木, meaning to observe",
       "sourceTags": [
         "common-800",
@@ -36871,24 +27636,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "查出",
           "meaningEn": "to find out"
-        }
-      ],
-      "sentence": {
-        "zh": "复习时，小组同学在作业本上看到查看。",
-        "en": "While reviewing, my group members see how to look over in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，小组同学在作业本上看到查看。",
-          "en": "While reviewing, my group members see how to look over in the homework book."
-        },
-        {
-          "zh": "复习时，小组同学谈到调查。",
-          "en": "While reviewing, my group members mention investigation."
-        },
-        {
-          "zh": "阅读卡帮助我们了解查出。",
-          "en": "A reading card helps us understand how to find out."
         }
       ],
       "etymologyHint": "",
@@ -36946,24 +27693,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to research and manufacture"
         }
       ],
-      "sentence": {
-        "zh": "讨论时，我在校园里看到研究。",
-        "en": "During discussion, I see research on campus."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，我在校园里看到研究。",
-          "en": "During discussion, I see research on campus."
-        },
-        {
-          "zh": "讨论时，我谈到研发。",
-          "en": "During discussion, I mention research and development."
-        },
-        {
-          "zh": "图片帮助我们了解研制。",
-          "en": "An image helps us understand how to research and manufacture."
-        }
-      ],
       "etymologyHint": "stone",
       "sourceTags": [
         "common-800",
@@ -37016,24 +27745,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "战鼓",
           "meaningEn": "war drum"
-        }
-      ],
-      "sentence": {
-        "zh": "这道题是一个小挑战。",
-        "en": "This question is a small challenge."
-      },
-      "sentences": [
-        {
-          "zh": "这道题是一个小挑战。",
-          "en": "This question is a small challenge."
-        },
-        {
-          "zh": "我努力战胜困难。",
-          "en": "I work hard to overcome difficulties."
-        },
-        {
-          "zh": "故事里响起了战鼓。",
-          "en": "A war drum sounds in the story."
         }
       ],
       "etymologyHint": "spear",
@@ -37091,24 +27802,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to simplify matters"
         }
       ],
-      "sentence": {
-        "zh": "早读时，姐姐在图书馆里看到节省。",
-        "en": "During morning reading, my older sister sees saving in the library."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，姐姐在图书馆里看到节省。",
-          "en": "During morning reading, my older sister sees saving in the library."
-        },
-        {
-          "zh": "早读时，姐姐谈到反省。",
-          "en": "During morning reading, my older sister mentions how to reflect upon oneself."
-        },
-        {
-          "zh": "对话帮助我们了解省事。",
-          "en": "A dialogue helps us understand how to simplify matters."
-        }
-      ],
       "etymologyHint": "division",
       "sourceTags": [
         "common-800",
@@ -37161,24 +27854,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "界定",
           "meaningEn": "definition"
-        }
-      ],
-      "sentence": {
-        "zh": "中文课上，哥哥在教室里看到世界。",
-        "en": "In Chinese class, my older brother sees world in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，哥哥在教室里看到世界。",
-          "en": "In Chinese class, my older brother sees world in the classroom."
-        },
-        {
-          "zh": "中文课上，哥哥谈到界限。",
-          "en": "In Chinese class, my older brother mentions boundary."
-        },
-        {
-          "zh": "小组活动帮助我们了解界定。",
-          "en": "A group activity helps us understand definition."
         }
       ],
       "etymologyHint": "farm",
@@ -37236,24 +27911,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "idea"
         }
       ],
-      "sentence": {
-        "zh": "放学后，朋友在故事书里看到思想。",
-        "en": "After school, my friend sees thought in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，朋友在故事书里看到思想。",
-          "en": "After school, my friend sees thought in a storybook."
-        },
-        {
-          "zh": "放学后，朋友谈到思考。",
-          "en": "After school, my friend mentions how to reflect on."
-        },
-        {
-          "zh": "词卡帮助我们了解意思。",
-          "en": "A word card helps us understand idea."
-        }
-      ],
       "etymologyHint": "Weighing something with your mind 囟 (altered) and heart 心",
       "sourceTags": [
         "common-800",
@@ -37306,24 +27963,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "品位",
           "meaningEn": "rank"
-        }
-      ],
-      "sentence": {
-        "zh": "阅读时，我们在练习册里看到品牌。",
-        "en": "While reading, we see trademark in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，我们在练习册里看到品牌。",
-          "en": "While reading, we see trademark in a workbook."
-        },
-        {
-          "zh": "阅读时，我们谈到产品。",
-          "en": "While reading, we mention goods."
-        },
-        {
-          "zh": "书本帮助我们了解品位。",
-          "en": "A book helps us understand rank."
         }
       ],
       "etymologyHint": "Something that everyone is talking 口 about",
@@ -37380,24 +28019,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to respond to"
         }
       ],
-      "sentence": {
-        "zh": "写作业时，妹妹在学校展板上看到影响。",
-        "en": "While doing homework, my younger sister sees influence on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，妹妹在学校展板上看到影响。",
-          "en": "While doing homework, my younger sister sees influence on the school display board."
-        },
-        {
-          "zh": "写作业时，妹妹谈到响起。",
-          "en": "While doing homework, my younger sister mentions how to come forth."
-        },
-        {
-          "zh": "图画帮助我们了解响应。",
-          "en": "A picture helps us understand how to respond to."
-        }
-      ],
       "etymologyHint": "mouth",
       "sourceTags": [
         "common-800",
@@ -37452,24 +28073,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "choice of person"
         }
       ],
-      "sentence": {
-        "zh": "周末，小组同学在小组活动中看到选择。",
-        "en": "On the weekend, my group members see how to select during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "周末，小组同学在小组活动中看到选择。",
-          "en": "On the weekend, my group members see how to select during a group activity."
-        },
-        {
-          "zh": "周末，小组同学谈到选手。",
-          "en": "On the weekend, my group members mention athlete."
-        },
-        {
-          "zh": "故事帮助我们了解人选。",
-          "en": "A story helps us understand choice of person."
-        }
-      ],
       "etymologyHint": "walk",
       "sourceTags": [
         "common-800",
@@ -37522,24 +28125,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "不适",
           "meaningEn": "unwell"
-        }
-      ],
-      "sentence": {
-        "zh": "午饭后，我在课外书里看到适合。",
-        "en": "After lunch, I see how to fit in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，我在课外书里看到适合。",
-          "en": "After lunch, I see how to fit in an extracurricular book."
-        },
-        {
-          "zh": "午饭后，我谈到适应。",
-          "en": "After lunch, I mention how to adapt."
-        },
-        {
-          "zh": "例子帮助我们了解不适。",
-          "en": "An example helps us understand unwell."
         }
       ],
       "etymologyHint": "walk",
@@ -37598,24 +28183,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "seed"
         }
       ],
-      "sentence": {
-        "zh": "活动课上，同学在中文角里看到种种。",
-        "en": "During activity class, my classmate sees all kinds of in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，同学在中文角里看到种种。",
-          "en": "During activity class, my classmate sees all kinds of in the Chinese corner."
-        },
-        {
-          "zh": "活动课上，同学谈到各种。",
-          "en": "During activity class, my classmate mentions every kind of."
-        },
-        {
-          "zh": "卡片帮助我们了解种子。",
-          "en": "A card helps us understand seed."
-        }
-      ],
       "etymologyHint": "grain",
       "sourceTags": [
         "common-800",
@@ -37668,24 +28235,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "外科",
           "meaningEn": "surgery"
-        }
-      ],
-      "sentence": {
-        "zh": "复习时，姐姐在阅读时间里看到科学。",
-        "en": "While reviewing, my older sister sees science during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，姐姐在阅读时间里看到科学。",
-          "en": "While reviewing, my older sister sees science during reading time."
-        },
-        {
-          "zh": "复习时，姐姐谈到科技。",
-          "en": "While reviewing, my older sister mentions science and technology."
-        },
-        {
-          "zh": "阅读卡帮助我们了解外科。",
-          "en": "A reading card helps us understand surgery."
         }
       ],
       "etymologyHint": "A hand measuring 斗 grain 禾",
@@ -37743,24 +28292,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "key point"
         }
       ],
-      "sentence": {
-        "zh": "认真听讲很重要。",
-        "en": "Listening carefully is important."
-      },
-      "sentences": [
-        {
-          "zh": "认真听讲很重要。",
-          "en": "Listening carefully is important."
-        },
-        {
-          "zh": "写错了，我重新写一遍。",
-          "en": "I wrote it wrong, so I write it again."
-        },
-        {
-          "zh": "老师圈出了今天的重点。",
-          "en": "The teacher circles today's key point."
-        }
-      ],
       "etymologyHint": "A burden carried for a thousand 千 miles 里",
       "sourceTags": [
         "common-800",
@@ -37815,24 +28346,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to duplicate"
         }
       ],
-      "sentence": {
-        "zh": "看图时，朋友在作业本上看到复杂。",
-        "en": "While looking at a picture, my friend sees complicated in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，朋友在作业本上看到复杂。",
-          "en": "While looking at a picture, my friend sees complicated in the homework book."
-        },
-        {
-          "zh": "看图时，朋友谈到恢复。",
-          "en": "While looking at a picture, my friend mentions how to reinstate."
-        },
-        {
-          "zh": "练习帮助我们了解复制。",
-          "en": "An exercise helps us understand how to duplicate."
-        }
-      ],
       "etymologyHint": "A person 亻 who goes  somewhere 夂 every day 日",
       "sourceTags": [
         "common-800",
@@ -37885,24 +28398,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "片段",
           "meaningEn": "fragment"
-        }
-      ],
-      "sentence": {
-        "zh": "早读时，我们在校园里看到阶段。",
-        "en": "During morning reading, we see stage on campus."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，我们在校园里看到阶段。",
-          "en": "During morning reading, we see stage on campus."
-        },
-        {
-          "zh": "早读时，我们谈到手段。",
-          "en": "During morning reading, we mention method."
-        },
-        {
-          "zh": "对话帮助我们了解片段。",
-          "en": "A dialogue helps us understand fragment."
         }
       ],
       "etymologyHint": "A hand using a chisel 殳 to cut stone",
@@ -37960,24 +28455,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "convenient"
         }
       ],
-      "sentence": {
-        "zh": "这支铅笔很便宜。",
-        "en": "This pencil is cheap."
-      },
-      "sentences": [
-        {
-          "zh": "这支铅笔很便宜。",
-          "en": "This pencil is cheap."
-        },
-        {
-          "zh": "这里的交通很便利。",
-          "en": "The transport here is convenient."
-        },
-        {
-          "zh": "用字典查字很方便。",
-          "en": "It is convenient to look up characters in a dictionary."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -38030,24 +28507,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "保佑",
           "meaningEn": "to bless and protect"
-        }
-      ],
-      "sentence": {
-        "zh": "放学后，小组同学在图书馆里看到保护。",
-        "en": "After school, my group members see how to protect in the library."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，小组同学在图书馆里看到保护。",
-          "en": "After school, my group members see how to protect in the library."
-        },
-        {
-          "zh": "放学后，小组同学谈到保存。",
-          "en": "After school, my group members mention how to conserve."
-        },
-        {
-          "zh": "词卡帮助我们了解保佑。",
-          "en": "A word card helps us understand how to bless and protect."
         }
       ],
       "etymologyHint": "person",
@@ -38105,24 +28564,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to be convinced"
         }
       ],
-      "sentence": {
-        "zh": "阅读时，我在教室里看到信号。",
-        "en": "While reading, I see signal in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，我在教室里看到信号。",
-          "en": "While reading, I see signal in the classroom."
-        },
-        {
-          "zh": "阅读时，我谈到信仰。",
-          "en": "While reading, I mention how to believe in."
-        },
-        {
-          "zh": "书本帮助我们了解相信。",
-          "en": "A book helps us understand how to be convinced."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -38177,24 +28618,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "rule"
         }
       ],
-      "sentence": {
-        "zh": "写作业时，同学在故事书里看到律师。",
-        "en": "While doing homework, my classmate sees lawyer in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，同学在故事书里看到律师。",
-          "en": "While doing homework, my classmate sees lawyer in a storybook."
-        },
-        {
-          "zh": "写作业时，同学谈到法律。",
-          "en": "While doing homework, my classmate mentions law."
-        },
-        {
-          "zh": "图画帮助我们了解规律。",
-          "en": "A picture helps us understand rule."
-        }
-      ],
       "etymologyHint": "To walk 彳 as required by law 聿",
       "sourceTags": [
         "common-800",
@@ -38247,24 +28670,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "胡须",
           "meaningEn": "beard"
-        }
-      ],
-      "sentence": {
-        "zh": "周末，姐姐在练习册里看到必须。",
-        "en": "On the weekend, my older sister sees how to have to in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "周末，姐姐在练习册里看到必须。",
-          "en": "On the weekend, my older sister sees how to have to in a workbook."
-        },
-        {
-          "zh": "周末，姐姐谈到无须。",
-          "en": "On the weekend, my older sister mentions need not."
-        },
-        {
-          "zh": "故事帮助我们了解胡须。",
-          "en": "A story helps us understand beard."
         }
       ],
       "etymologyHint": "Hair 彡 growing on the face 页",
@@ -38322,24 +28727,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "on the eve of"
         }
       ],
-      "sentence": {
-        "zh": "午饭后，哥哥在学校展板上看到将军。",
-        "en": "After lunch, my older brother sees general on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，哥哥在学校展板上看到将军。",
-          "en": "After lunch, my older brother sees general on the school display board."
-        },
-        {
-          "zh": "午饭后，哥哥谈到将来。",
-          "en": "After lunch, my older brother mentions in the future."
-        },
-        {
-          "zh": "例子帮助我们了解即将。",
-          "en": "An example helps us understand on the eve of."
-        }
-      ],
       "etymologyHint": "Going to bed 丬 at night 夕, a predictable future",
       "sourceTags": [
         "common-800",
@@ -38393,24 +28780,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "度假",
           "meaningEn": "to go on holidays"
-        }
-      ],
-      "sentence": {
-        "zh": "活动课上，朋友在小组活动中看到度过。",
-        "en": "During activity class, my friend sees how to pass during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，朋友在小组活动中看到度过。",
-          "en": "During activity class, my friend sees how to pass during a group activity."
-        },
-        {
-          "zh": "活动课上，朋友谈到程度。",
-          "en": "During activity class, my friend mentions degree."
-        },
-        {
-          "zh": "卡片帮助我们了解度假。",
-          "en": "A card helps us understand how to go on holidays."
         }
       ],
       "etymologyHint": "Twenty 廿 people 又 meeting inside a building 广 to deliberate",
@@ -38468,24 +28837,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "intimate"
         }
       ],
-      "sentence": {
-        "zh": "复习时，我们在课外书里看到亲爱。",
-        "en": "While reviewing, we see dear in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，我们在课外书里看到亲爱。",
-          "en": "While reviewing, we see dear in an extracurricular book."
-        },
-        {
-          "zh": "复习时，我们谈到亲自。",
-          "en": "While reviewing, we mention personally."
-        },
-        {
-          "zh": "阅读卡帮助我们了解亲密。",
-          "en": "A reading card helps us understand intimate."
-        }
-      ],
       "etymologyHint": "A tree 木 bearing fruit 立",
       "sourceTags": [
         "common-800",
@@ -38538,24 +28889,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "休养",
           "meaningEn": "to recuperate"
-        }
-      ],
-      "sentence": {
-        "zh": "讨论时，妹妹在中文角里看到培养。",
-        "en": "During discussion, my younger sister sees how to cultivate in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，妹妹在中文角里看到培养。",
-          "en": "During discussion, my younger sister sees how to cultivate in the Chinese corner."
-        },
-        {
-          "zh": "讨论时，妹妹谈到保养。",
-          "en": "During discussion, my younger sister mentions how to take good care of one's health."
-        },
-        {
-          "zh": "图片帮助我们了解休养。",
-          "en": "An image helps us understand how to recuperate."
         }
       ],
       "etymologyHint": "child",
@@ -38612,24 +28945,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "beauty"
         }
       ],
-      "sentence": {
-        "zh": "看图时，小组同学在阅读时间里看到美丽。",
-        "en": "While looking at a picture, my group members see beautiful during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，小组同学在阅读时间里看到美丽。",
-          "en": "While looking at a picture, my group members see beautiful during reading time."
-        },
-        {
-          "zh": "看图时，小组同学谈到美好。",
-          "en": "While looking at a picture, my group members mention beautiful."
-        },
-        {
-          "zh": "练习帮助我们了解美人。",
-          "en": "An exercise helps us understand beauty."
-        }
-      ],
       "etymologyHint": "A person 大 wearing an elegant crown 羊",
       "sourceTags": [
         "common-800",
@@ -38682,24 +28997,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "人类",
           "meaningEn": "humanity"
-        }
-      ],
-      "sentence": {
-        "zh": "早读时，我在画册里看到类似。",
-        "en": "During morning reading, I see similar in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，我在画册里看到类似。",
-          "en": "During morning reading, I see similar in a picture book."
-        },
-        {
-          "zh": "早读时，我谈到类型。",
-          "en": "During morning reading, I mention type."
-        },
-        {
-          "zh": "对话帮助我们了解人类。",
-          "en": "A dialogue helps us understand humanity."
         }
       ],
       "etymologyHint": "",
@@ -38756,24 +29053,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "general headquarters"
         }
       ],
-      "sentence": {
-        "zh": "中文课上，同学在作业本上看到总是。",
-        "en": "In Chinese class, my classmate sees always in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，同学在作业本上看到总是。",
-          "en": "In Chinese class, my classmate sees always in the homework book."
-        },
-        {
-          "zh": "中文课上，同学谈到总统。",
-          "en": "In Chinese class, my classmate mentions president."
-        },
-        {
-          "zh": "小组活动帮助我们了解总部。",
-          "en": "A group activity helps us understand general headquarters."
-        }
-      ],
       "etymologyHint": "Many mouths 口 speaking with one mind 心",
       "sourceTags": [
         "common-800",
@@ -38826,24 +29105,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "生活",
           "meaningEn": "to live"
-        }
-      ],
-      "sentence": {
-        "zh": "放学后，姐姐在校园里看到活动。",
-        "en": "After school, my older sister sees how to exercise on campus."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，姐姐在校园里看到活动。",
-          "en": "After school, my older sister sees how to exercise on campus."
-        },
-        {
-          "zh": "放学后，姐姐谈到活力。",
-          "en": "After school, my older sister mentions energy."
-        },
-        {
-          "zh": "词卡帮助我们了解生活。",
-          "en": "A word card helps us understand how to live."
         }
       ],
       "etymologyHint": "water",
@@ -38901,24 +29162,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "group"
         }
       ],
-      "sentence": {
-        "zh": "阅读时，哥哥在家里的书架上看到派出。",
-        "en": "While reading, my older brother sees how to send on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，哥哥在家里的书架上看到派出。",
-          "en": "While reading, my older brother sees how to send on the bookshelf at home."
-        },
-        {
-          "zh": "阅读时，哥哥谈到派遣。",
-          "en": "While reading, my older brother mentions how to send."
-        },
-        {
-          "zh": "书本帮助我们了解派别。",
-          "en": "A book helps us understand group."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -38974,24 +29217,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to give material assistance to"
         }
       ],
-      "sentence": {
-        "zh": "写作业时，朋友在图书馆里看到经济。",
-        "en": "While doing homework, my friend sees economy in the library."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，朋友在图书馆里看到经济。",
-          "en": "While doing homework, my friend sees economy in the library."
-        },
-        {
-          "zh": "写作业时，朋友谈到救济。",
-          "en": "While doing homework, my friend mentions emergency relief."
-        },
-        {
-          "zh": "图画帮助我们了解接济。",
-          "en": "A picture helps us understand how to give material assistance to."
-        }
-      ],
       "etymologyHint": "water",
       "sourceTags": [
         "common-800",
@@ -39044,24 +29269,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "清除",
           "meaningEn": "clear away"
-        }
-      ],
-      "sentence": {
-        "zh": "除了中文，我还喜欢数学。",
-        "en": "Besides Chinese, I also like maths."
-      },
-      "sentences": [
-        {
-          "zh": "除了中文，我还喜欢数学。",
-          "en": "Besides Chinese, I also like maths."
-        },
-        {
-          "zh": "除夕晚上，全家一起吃饭。",
-          "en": "On Chinese New Year's Eve, the whole family eats together."
-        },
-        {
-          "zh": "我们一起清除桌上的纸屑。",
-          "en": "We clear away the paper scraps on the table together."
         }
       ],
       "etymologyHint": "The waste 余 produced by a city 阝",
@@ -39119,24 +29326,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to marry"
         }
       ],
-      "sentence": {
-        "zh": "午饭后，妹妹在故事书里看到结果。",
-        "en": "After lunch, my younger sister sees how to bear fruit in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，妹妹在故事书里看到结果。",
-          "en": "After lunch, my younger sister sees how to bear fruit in a storybook."
-        },
-        {
-          "zh": "午饭后，妹妹谈到结束。",
-          "en": "After lunch, my younger sister mentions termination."
-        },
-        {
-          "zh": "例子帮助我们了解结婚。",
-          "en": "An example helps us understand how to marry."
-        }
-      ],
       "etymologyHint": "thread",
       "sourceTags": [
         "common-800",
@@ -39189,24 +29378,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "统统",
           "meaningEn": "totally"
-        }
-      ],
-      "sentence": {
-        "zh": "活动课上，小组同学在练习册里看到统一。",
-        "en": "During activity class, my group members see how to unify in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，小组同学在练习册里看到统一。",
-          "en": "During activity class, my group members see how to unify in a workbook."
-        },
-        {
-          "zh": "活动课上，小组同学谈到统计。",
-          "en": "During activity class, my group members mention statistics."
-        },
-        {
-          "zh": "卡片帮助我们了解统统。",
-          "en": "A card helps us understand totally."
         }
       ],
       "etymologyHint": "thread",
@@ -39263,24 +29434,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "element"
         }
       ],
-      "sentence": {
-        "zh": "复习时，我在学校展板上看到因素。",
-        "en": "While reviewing, I see element on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，我在学校展板上看到因素。",
-          "en": "While reviewing, I see element on the school display board."
-        },
-        {
-          "zh": "复习时，我谈到素质。",
-          "en": "While reviewing, I mention inner quality."
-        },
-        {
-          "zh": "阅读卡帮助我们了解元素。",
-          "en": "A reading card helps us understand element."
-        }
-      ],
       "etymologyHint": "A silken thread 糸 hanging off a tree 龶",
       "sourceTags": [
         "common-800",
@@ -39333,24 +29486,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "严格",
           "meaningEn": "strict"
-        }
-      ],
-      "sentence": {
-        "zh": "讨论时，同学在小组活动中看到风格。",
-        "en": "During discussion, my classmate sees style during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，同学在小组活动中看到风格。",
-          "en": "During discussion, my classmate sees style during a group activity."
-        },
-        {
-          "zh": "讨论时，同学谈到价格。",
-          "en": "During discussion, my classmate mentions price."
-        },
-        {
-          "zh": "图片帮助我们了解严格。",
-          "en": "An image helps us understand strict."
         }
       ],
       "etymologyHint": "wood",
@@ -39407,24 +29542,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "this kind of"
         }
       ],
-      "sentence": {
-        "zh": "看图时，姐姐在课外书里看到样子。",
-        "en": "While looking at a picture, my older sister sees appearance in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，姐姐在课外书里看到样子。",
-          "en": "While looking at a picture, my older sister sees appearance in an extracurricular book."
-        },
-        {
-          "zh": "看图时，姐姐谈到一样。",
-          "en": "While looking at a picture, my older sister mentions same."
-        },
-        {
-          "zh": "练习帮助我们了解这样。",
-          "en": "An exercise helps us understand this kind of."
-        }
-      ],
       "etymologyHint": "tree",
       "sourceTags": [
         "common-800",
@@ -39477,24 +29594,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "根基",
           "meaningEn": "foundation"
-        }
-      ],
-      "sentence": {
-        "zh": "早读时，哥哥在中文角里看到根本。",
-        "en": "During morning reading, my older brother sees fundamental in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，哥哥在中文角里看到根本。",
-          "en": "During morning reading, my older brother sees fundamental in the Chinese corner."
-        },
-        {
-          "zh": "早读时，哥哥谈到根据。",
-          "en": "During morning reading, my older brother mentions according to."
-        },
-        {
-          "zh": "对话帮助我们了解根基。",
-          "en": "A dialogue helps us understand foundation."
         }
       ],
       "etymologyHint": "tree",
@@ -39551,24 +29650,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "rapid"
         }
       ],
-      "sentence": {
-        "zh": "中文课上，朋友在阅读时间里看到速度。",
-        "en": "In Chinese class, my friend sees speed during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，朋友在阅读时间里看到速度。",
-          "en": "In Chinese class, my friend sees speed during reading time."
-        },
-        {
-          "zh": "中文课上，朋友谈到快速。",
-          "en": "In Chinese class, my friend mentions fast."
-        },
-        {
-          "zh": "小组活动帮助我们了解迅速。",
-          "en": "A group activity helps us understand rapid."
-        }
-      ],
       "etymologyHint": "walk",
       "sourceTags": [
         "common-800",
@@ -39621,24 +29702,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "原则",
           "meaningEn": "principle"
-        }
-      ],
-      "sentence": {
-        "zh": "放学后，我们在画册里看到原因。",
-        "en": "After school, we see cause in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，我们在画册里看到原因。",
-          "en": "After school, we see cause in a picture book."
-        },
-        {
-          "zh": "放学后，我们谈到原来。",
-          "en": "After school, we mention original."
-        },
-        {
-          "zh": "词卡帮助我们了解原则。",
-          "en": "A word card helps us understand principle."
         }
       ],
       "etymologyHint": "cliff",
@@ -39695,24 +29758,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to match one's strength with"
         }
       ],
-      "sentence": {
-        "zh": "阅读时，妹妹在作业本上看到比较。",
-        "en": "While reading, my younger sister sees how to compare in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，妹妹在作业本上看到比较。",
-          "en": "While reading, my younger sister sees how to compare in the homework book."
-        },
-        {
-          "zh": "阅读时，妹妹谈到较量。",
-          "en": "While reading, my younger sister mentions how to pit oneself against sb."
-        },
-        {
-          "zh": "书本帮助我们了解较劲。",
-          "en": "A book helps us understand how to match one's strength with."
-        }
-      ],
       "etymologyHint": "cart",
       "sourceTags": [
         "common-800",
@@ -39765,24 +29810,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "乱党",
           "meaningEn": "the rebel party"
-        }
-      ],
-      "sentence": {
-        "zh": "写作业时，小组同学在校园里看到政党。",
-        "en": "While doing homework, my group members see political party on campus."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，小组同学在校园里看到政党。",
-          "en": "While doing homework, my group members see political party on campus."
-        },
-        {
-          "zh": "写作业时，小组同学谈到一党。",
-          "en": "While doing homework, my group members mention one-party."
-        },
-        {
-          "zh": "图画帮助我们了解乱党。",
-          "en": "A picture helps us understand the rebel party."
         }
       ],
       "etymologyHint": "elder brother",
@@ -39839,24 +29866,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to have a reunion"
         }
       ],
-      "sentence": {
-        "zh": "周末，我在家里的书架上看到圆满。",
-        "en": "On the weekend, I see satisfactory on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "周末，我在家里的书架上看到圆满。",
-          "en": "On the weekend, I see satisfactory on the bookshelf at home."
-        },
-        {
-          "zh": "周末，我谈到圆形。",
-          "en": "On the weekend, I mention round."
-        },
-        {
-          "zh": "故事帮助我们了解团圆。",
-          "en": "A story helps us understand how to have a reunion."
-        }
-      ],
       "etymologyHint": "enclosure",
       "sourceTags": [
         "common-800",
@@ -39909,24 +29918,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "钢铁",
           "meaningEn": "steel"
-        }
-      ],
-      "sentence": {
-        "zh": "午饭后，同学在图书馆里看到铁路。",
-        "en": "After lunch, my classmate sees railroad in the library."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，同学在图书馆里看到铁路。",
-          "en": "After lunch, my classmate sees railroad in the library."
-        },
-        {
-          "zh": "午饭后，同学谈到地铁。",
-          "en": "After lunch, my classmate mentions subway train."
-        },
-        {
-          "zh": "例子帮助我们了解钢铁。",
-          "en": "An example helps us understand steel."
         }
       ],
       "etymologyHint": "metal",
@@ -39983,24 +29974,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "characteristic"
         }
       ],
-      "sentence": {
-        "zh": "活动课上，姐姐在教室里看到特别。",
-        "en": "During activity class, my older sister sees unusual in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，姐姐在教室里看到特别。",
-          "en": "During activity class, my older sister sees unusual in the classroom."
-        },
-        {
-          "zh": "活动课上，姐姐谈到特殊。",
-          "en": "During activity class, my older sister mentions special."
-        },
-        {
-          "zh": "卡片帮助我们了解特征。",
-          "en": "A card helps us understand characteristic."
-        }
-      ],
       "etymologyHint": "ox",
       "sourceTags": [
         "common-800",
@@ -40055,24 +30028,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to manufacture"
         }
       ],
-      "sentence": {
-        "zh": "复习时，哥哥在故事书里看到造成。",
-        "en": "While reviewing, my older brother sees how to bring about in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，哥哥在故事书里看到造成。",
-          "en": "While reviewing, my older brother sees how to bring about in a storybook."
-        },
-        {
-          "zh": "复习时，哥哥谈到造型。",
-          "en": "While reviewing, my older brother mentions how to model."
-        },
-        {
-          "zh": "阅读卡帮助我们了解制造。",
-          "en": "A reading card helps us understand how to manufacture."
-        }
-      ],
       "etymologyHint": "walk",
       "sourceTags": [
         "common-800",
@@ -40125,24 +30080,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "积蓄",
           "meaningEn": "to save"
-        }
-      ],
-      "sentence": {
-        "zh": "讨论时，朋友在练习册里看到积极。",
-        "en": "During discussion, my friend sees active in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，朋友在练习册里看到积极。",
-          "en": "During discussion, my friend sees active in a workbook."
-        },
-        {
-          "zh": "讨论时，朋友谈到积累。",
-          "en": "During discussion, my friend mentions how to accumulate."
-        },
-        {
-          "zh": "图片帮助我们了解积蓄。",
-          "en": "An image helps us understand how to save."
         }
       ],
       "etymologyHint": "grain",
@@ -40201,24 +30138,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to be called"
         }
       ],
-      "sentence": {
-        "zh": "看图时，我们在学校展板上看到称为。",
-        "en": "While looking at a picture, we see how to be called on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，我们在学校展板上看到称为。",
-          "en": "While looking at a picture, we see how to be called on the school display board."
-        },
-        {
-          "zh": "看图时，我们谈到称呼。",
-          "en": "While looking at a picture, we mention how to call."
-        },
-        {
-          "zh": "练习帮助我们了解称作。",
-          "en": "An exercise helps us understand how to be called."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -40271,24 +30190,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "增值",
           "meaningEn": "to appreciate"
-        }
-      ],
-      "sentence": {
-        "zh": "早读时，妹妹在小组活动中看到价值。",
-        "en": "During morning reading, my younger sister sees value during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，妹妹在小组活动中看到价值。",
-          "en": "During morning reading, my younger sister sees value during a group activity."
-        },
-        {
-          "zh": "早读时，妹妹谈到升值。",
-          "en": "During morning reading, my younger sister mentions how to rise in value."
-        },
-        {
-          "zh": "对话帮助我们了解增值。",
-          "en": "A dialogue helps us understand how to appreciate."
         }
       ],
       "etymologyHint": "person",
@@ -40345,24 +30246,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to give one's respects"
         }
       ],
-      "sentence": {
-        "zh": "中文课上，小组同学在课外书里看到时候。",
-        "en": "In Chinese class, my group members see time in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，小组同学在课外书里看到时候。",
-          "en": "In Chinese class, my group members see time in an extracurricular book."
-        },
-        {
-          "zh": "中文课上，小组同学谈到等候。",
-          "en": "In Chinese class, my group members mention how to wait."
-        },
-        {
-          "zh": "小组活动帮助我们了解问候。",
-          "en": "A group activity helps us understand how to give one's respects."
-        }
-      ],
       "etymologyHint": "person",
       "sourceTags": [
         "common-800",
@@ -40415,24 +30298,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "万般",
           "meaningEn": "all kinds of"
-        }
-      ],
-      "sentence": {
-        "zh": "这是一道一般难度的题。",
-        "en": "This is a question of ordinary difficulty."
-      },
-      "sentences": [
-        {
-          "zh": "这是一道一般难度的题。",
-          "en": "This is a question of ordinary difficulty."
-        },
-        {
-          "zh": "这般努力值得表扬。",
-          "en": "This kind of effort deserves praise."
-        },
-        {
-          "zh": "生活里有万般变化。",
-          "en": "There are all kinds of changes in life."
         }
       ],
       "etymologyHint": "Using a tool 殳 to sort items on a tray 舟",
@@ -40489,24 +30354,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "standard"
         }
       ],
-      "sentence": {
-        "zh": "阅读时，同学在阅读时间里看到准备。",
-        "en": "While reading, my classmate sees preparation during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，同学在阅读时间里看到准备。",
-          "en": "While reading, my classmate sees preparation during reading time."
-        },
-        {
-          "zh": "阅读时，同学谈到准确。",
-          "en": "While reading, my classmate mentions accurate."
-        },
-        {
-          "zh": "书本帮助我们了解标准。",
-          "en": "A book helps us understand standard."
-        }
-      ],
       "etymologyHint": "water in a spirit level",
       "sourceTags": [
         "common-800",
@@ -40559,24 +30406,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "效力",
           "meaningEn": "effectiveness"
-        }
-      ],
-      "sentence": {
-        "zh": "写作业时，姐姐在画册里看到效果。",
-        "en": "While doing homework, my older sister sees result in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，姐姐在画册里看到效果。",
-          "en": "While doing homework, my older sister sees result in a picture book."
-        },
-        {
-          "zh": "写作业时，姐姐谈到效率。",
-          "en": "While doing homework, my older sister mentions efficiency."
-        },
-        {
-          "zh": "图画帮助我们了解效力。",
-          "en": "A picture helps us understand effectiveness."
         }
       ],
       "etymologyHint": "strike",
@@ -40633,24 +30462,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to separate"
         }
       ],
-      "sentence": {
-        "zh": "周末，哥哥在作业本上看到离开。",
-        "en": "On the weekend, my older brother sees how to depart in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "周末，哥哥在作业本上看到离开。",
-          "en": "On the weekend, my older brother sees how to depart in the homework book."
-        },
-        {
-          "zh": "周末，哥哥谈到离婚。",
-          "en": "On the weekend, my older brother mentions how to divorce."
-        },
-        {
-          "zh": "故事帮助我们了解分离。",
-          "en": "A story helps us understand how to separate."
-        }
-      ],
       "etymologyHint": "An animal standing straight; 亠 is the head",
       "sourceTags": [
         "common-800",
@@ -40703,24 +30514,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "资格",
           "meaningEn": "qualifications"
-        }
-      ],
-      "sentence": {
-        "zh": "午饭后，朋友在校园里看到资料。",
-        "en": "After lunch, my friend sees material on campus."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，朋友在校园里看到资料。",
-          "en": "After lunch, my friend sees material on campus."
-        },
-        {
-          "zh": "午饭后，朋友谈到资金。",
-          "en": "After lunch, my friend mentions funds."
-        },
-        {
-          "zh": "例子帮助我们了解资格。",
-          "en": "An example helps us understand qualifications."
         }
       ],
       "etymologyHint": "money",
@@ -40777,24 +30570,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "drink"
         }
       ],
-      "sentence": {
-        "zh": "活动课上，我们在家里的书架上看到资料。",
-        "en": "During activity class, we see material on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，我们在家里的书架上看到资料。",
-          "en": "During activity class, we see material on the bookshelf at home."
-        },
-        {
-          "zh": "活动课上，我们谈到材料。",
-          "en": "During activity class, we mention material."
-        },
-        {
-          "zh": "卡片帮助我们了解饮料。",
-          "en": "A card helps us understand drink."
-        }
-      ],
       "etymologyHint": "A hand measuring 斗 a cup of rice 米",
       "sourceTags": [
         "common-800",
@@ -40847,24 +30622,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "消防",
           "meaningEn": "firefighting"
-        }
-      ],
-      "sentence": {
-        "zh": "复习时，妹妹在图书馆里看到消息。",
-        "en": "While reviewing, my younger sister sees news in the library."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，妹妹在图书馆里看到消息。",
-          "en": "While reviewing, my younger sister sees news in the library."
-        },
-        {
-          "zh": "复习时，妹妹谈到消失。",
-          "en": "While reviewing, my younger sister mentions how to disappear."
-        },
-        {
-          "zh": "阅读卡帮助我们了解消防。",
-          "en": "A reading card helps us understand firefighting."
         }
       ],
       "etymologyHint": "water",
@@ -40921,24 +30678,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "top quality"
         }
       ],
-      "sentence": {
-        "zh": "讨论时，小组同学在教室里看到流行。",
-        "en": "During discussion, my group members see how to spread in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，小组同学在教室里看到流行。",
-          "en": "During discussion, my group members see how to spread in the classroom."
-        },
-        {
-          "zh": "讨论时，小组同学谈到流氓。",
-          "en": "During discussion, my group members mention rogue."
-        },
-        {
-          "zh": "图片帮助我们了解一流。",
-          "en": "An image helps us understand top quality."
-        }
-      ],
       "etymologyHint": "water",
       "sourceTags": [
         "common-800",
@@ -40991,24 +30730,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "容器",
           "meaningEn": "receptacle"
-        }
-      ],
-      "sentence": {
-        "zh": "看图时，我在故事书里看到容易。",
-        "en": "While looking at a picture, I see easy in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，我在故事书里看到容易。",
-          "en": "While looking at a picture, I see easy in a storybook."
-        },
-        {
-          "zh": "看图时，我谈到内容。",
-          "en": "While looking at a picture, I mention content."
-        },
-        {
-          "zh": "练习帮助我们了解容器。",
-          "en": "An exercise helps us understand receptacle."
         }
       ],
       "etymologyHint": "roof",
@@ -41064,24 +30785,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "被动",
           "meaningEn": "passive"
-        }
-      ],
-      "sentence": {
-        "zh": "早读时，同学在练习册里看到被告。",
-        "en": "During morning reading, my classmate sees defendant in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，同学在练习册里看到被告。",
-          "en": "During morning reading, my classmate sees defendant in a workbook."
-        },
-        {
-          "zh": "早读时，同学谈到被迫。",
-          "en": "During morning reading, my classmate mentions how to be compelled."
-        },
-        {
-          "zh": "对话帮助我们了解被动。",
-          "en": "A dialogue helps us understand passive."
         }
       ],
       "etymologyHint": "cloth",
@@ -41140,24 +30843,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "low pitch"
         }
       ],
-      "sentence": {
-        "zh": "中文课上，姐姐在学校展板上看到调查。",
-        "en": "In Chinese class, my older sister sees investigation on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，姐姐在学校展板上看到调查。",
-          "en": "In Chinese class, my older sister sees investigation on the school display board."
-        },
-        {
-          "zh": "中文课上，姐姐谈到强调。",
-          "en": "In Chinese class, my older sister mentions how to emphasize."
-        },
-        {
-          "zh": "小组活动帮助我们了解低调。",
-          "en": "A group activity helps us understand low pitch."
-        }
-      ],
       "etymologyHint": "speech",
       "sourceTags": [
         "common-800",
@@ -41210,24 +30895,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "展出",
           "meaningEn": "to put on display"
-        }
-      ],
-      "sentence": {
-        "zh": "放学后，哥哥在小组活动中看到展示。",
-        "en": "After school, my older brother sees how to reveal during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，哥哥在小组活动中看到展示。",
-          "en": "After school, my older brother sees how to reveal during a group activity."
-        },
-        {
-          "zh": "放学后，哥哥谈到展开。",
-          "en": "After school, my older brother mentions how to unfold."
-        },
-        {
-          "zh": "词卡帮助我们了解展出。",
-          "en": "A word card helps us understand how to put on display."
         }
       ],
       "etymologyHint": "Laying out clothes 㠭 for sale in a market 尸; compare 㠭",
@@ -41283,24 +30950,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "通讯",
           "meaningEn": "communications"
-        }
-      ],
-      "sentence": {
-        "zh": "阅读时，朋友在课外书里看到通过。",
-        "en": "While reading, my friend sees how to pass through in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，朋友在课外书里看到通过。",
-          "en": "While reading, my friend sees how to pass through in an extracurricular book."
-        },
-        {
-          "zh": "阅读时，朋友谈到通知。",
-          "en": "While reading, my friend mentions how to notify."
-        },
-        {
-          "zh": "书本帮助我们了解通讯。",
-          "en": "A book helps us understand communications."
         }
       ],
       "etymologyHint": "walk",
@@ -41359,24 +31008,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to be hard on sb"
         }
       ],
-      "sentence": {
-        "zh": "写作业时，我们在中文角里看到难道。",
-        "en": "While doing homework, we see don't tell me ... in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，我们在中文角里看到难道。",
-          "en": "While doing homework, we see don't tell me ... in the Chinese corner."
-        },
-        {
-          "zh": "写作业时，我们谈到难以。",
-          "en": "While doing homework, we mention hard to."
-        },
-        {
-          "zh": "图画帮助我们了解刁难。",
-          "en": "A picture helps us understand how to be hard on sb."
-        }
-      ],
       "etymologyHint": "A hand 又 trying to grasp at a bird 隹",
       "sourceTags": [
         "common-800",
@@ -41431,24 +31062,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to test"
         }
       ],
-      "sentence": {
-        "zh": "周末，妹妹在阅读时间里看到经验。",
-        "en": "On the weekend, my younger sister sees experience during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "周末，妹妹在阅读时间里看到经验。",
-          "en": "On the weekend, my younger sister sees experience during reading time."
-        },
-        {
-          "zh": "周末，妹妹谈到实验。",
-          "en": "On the weekend, my younger sister mentions experiment."
-        },
-        {
-          "zh": "故事帮助我们了解考验。",
-          "en": "A story helps us understand how to test."
-        }
-      ],
       "etymologyHint": "horse",
       "sourceTags": [
         "common-800",
@@ -41501,24 +31114,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "处理",
           "meaningEn": "to handle"
-        }
-      ],
-      "sentence": {
-        "zh": "午饭后，小组同学在画册里看到理解。",
-        "en": "After lunch, my group members see how to comprehend in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，小组同学在画册里看到理解。",
-          "en": "After lunch, my group members see how to comprehend in a picture book."
-        },
-        {
-          "zh": "午饭后，小组同学谈到理由。",
-          "en": "After lunch, my group members mention reason."
-        },
-        {
-          "zh": "例子帮助我们了解处理。",
-          "en": "An example helps us understand how to handle."
         }
       ],
       "etymologyHint": "king",
@@ -41576,24 +31171,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "instructor"
         }
       ],
-      "sentence": {
-        "zh": "活动课上，我在作业本上看到教育。",
-        "en": "During activity class, I see how to educate in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，我在作业本上看到教育。",
-          "en": "During activity class, I see how to educate in the homework book."
-        },
-        {
-          "zh": "活动课上，我谈到教授。",
-          "en": "During activity class, I mention professor."
-        },
-        {
-          "zh": "卡片帮助我们了解教练。",
-          "en": "A card helps us understand instructor."
-        }
-      ],
       "etymologyHint": "script",
       "sourceTags": [
         "common-800",
@@ -41646,24 +31223,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "接到",
           "meaningEn": "to receive"
-        }
-      ],
-      "sentence": {
-        "zh": "复习时，同学在校园里看到接受。",
-        "en": "While reviewing, my classmate sees how to accept on campus."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，同学在校园里看到接受。",
-          "en": "While reviewing, my classmate sees how to accept on campus."
-        },
-        {
-          "zh": "复习时，同学谈到接着。",
-          "en": "While reviewing, my classmate mentions how to catch and hold on."
-        },
-        {
-          "zh": "阅读卡帮助我们了解接到。",
-          "en": "A reading card helps us understand how to receive."
         }
       ],
       "etymologyHint": "hand",
@@ -41721,24 +31280,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "data"
         }
       ],
-      "sentence": {
-        "zh": "讨论时，姐姐在家里的书架上看到据说。",
-        "en": "During discussion, my older sister sees it is said that on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，姐姐在家里的书架上看到据说。",
-          "en": "During discussion, my older sister sees it is said that on the bookshelf at home."
-        },
-        {
-          "zh": "讨论时，姐姐谈到根据。",
-          "en": "During discussion, my older sister mentions according to."
-        },
-        {
-          "zh": "图片帮助我们了解数据。",
-          "en": "An image helps us understand data."
-        }
-      ],
       "etymologyHint": "hand",
       "sourceTags": [
         "common-800",
@@ -41791,24 +31332,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "根基",
           "meaningEn": "foundation"
-        }
-      ],
-      "sentence": {
-        "zh": "看图时，哥哥在图书馆里看到基本。",
-        "en": "While looking at a picture, my older brother sees basic in the library."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，哥哥在图书馆里看到基本。",
-          "en": "While looking at a picture, my older brother sees basic in the library."
-        },
-        {
-          "zh": "看图时，哥哥谈到基因。",
-          "en": "While looking at a picture, my older brother mentions gene."
-        },
-        {
-          "zh": "练习帮助我们了解根基。",
-          "en": "An exercise helps us understand foundation."
         }
       ],
       "etymologyHint": "earth",
@@ -41865,24 +31388,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "frequently"
         }
       ],
-      "sentence": {
-        "zh": "早读时，朋友在教室里看到常常。",
-        "en": "During morning reading, my friend sees frequently in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，朋友在教室里看到常常。",
-          "en": "During morning reading, my friend sees frequently in the classroom."
-        },
-        {
-          "zh": "早读时，朋友谈到非常。",
-          "en": "During morning reading, my friend mentions very."
-        },
-        {
-          "zh": "对话帮助我们了解经常。",
-          "en": "A dialogue helps us understand frequently."
-        }
-      ],
       "etymologyHint": "cloth",
       "sourceTags": [
         "common-800",
@@ -41935,24 +31440,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "第一手",
           "meaningEn": "first-hand"
-        }
-      ],
-      "sentence": {
-        "zh": "中文课上，我们在故事书里看到第一。",
-        "en": "In Chinese class, we see first in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，我们在故事书里看到第一。",
-          "en": "In Chinese class, we see first in a storybook."
-        },
-        {
-          "zh": "中文课上，我们谈到第二。",
-          "en": "In Chinese class, we mention second."
-        },
-        {
-          "zh": "小组活动帮助我们了解第一手。",
-          "en": "A group activity helps us understand first-hand."
         }
       ],
       "etymologyHint": "Bamboo strips ⺮ arrayed in sequence; 弟 provides the pronunciation",
@@ -42011,24 +31498,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "all right!"
         }
       ],
-      "sentence": {
-        "zh": "放学后，妹妹在练习册里看到得到。",
-        "en": "After school, my younger sister sees how to get in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，妹妹在练习册里看到得到。",
-          "en": "After school, my younger sister sees how to get in a workbook."
-        },
-        {
-          "zh": "放学后，妹妹谈到得知。",
-          "en": "After school, my younger sister mentions how to find out."
-        },
-        {
-          "zh": "词卡帮助我们了解得了。",
-          "en": "A word card helps us understand all right!."
-        }
-      ],
       "etymologyHint": "A hand 寸 grabbing a shell 旦",
       "sourceTags": [
         "common-800",
@@ -42081,24 +31550,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "带领",
           "meaningEn": "to guide"
-        }
-      ],
-      "sentence": {
-        "zh": "阅读时，小组同学在学校展板上看到领导。",
-        "en": "While reading, my group members see lead on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，小组同学在学校展板上看到领导。",
-          "en": "While reading, my group members see lead on the school display board."
-        },
-        {
-          "zh": "阅读时，小组同学谈到领域。",
-          "en": "While reading, my group members mention domain."
-        },
-        {
-          "zh": "书本帮助我们了解带领。",
-          "en": "A book helps us understand how to guide."
         }
       ],
       "etymologyHint": "head",
@@ -42155,24 +31606,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to imagine"
         }
       ],
-      "sentence": {
-        "zh": "写作业时，我在小组活动中看到象征。",
-        "en": "While doing homework, I see emblem during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，我在小组活动中看到象征。",
-          "en": "While doing homework, I see emblem during a group activity."
-        },
-        {
-          "zh": "写作业时，我谈到对象。",
-          "en": "While doing homework, I mention target."
-        },
-        {
-          "zh": "图画帮助我们了解想象。",
-          "en": "A picture helps us understand how to imagine."
-        }
-      ],
       "etymologyHint": "boar",
       "sourceTags": [
         "common-800",
@@ -42225,24 +31658,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "厂商",
           "meaningEn": "manufacturer"
-        }
-      ],
-      "sentence": {
-        "zh": "周末，同学在课外书里看到商店。",
-        "en": "On the weekend, my classmate sees store in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "周末，同学在课外书里看到商店。",
-          "en": "On the weekend, my classmate sees store in an extracurricular book."
-        },
-        {
-          "zh": "周末，同学谈到商人。",
-          "en": "On the weekend, my classmate mentions merchant."
-        },
-        {
-          "zh": "故事帮助我们了解厂商。",
-          "en": "A story helps us understand manufacturer."
         }
       ],
       "etymologyHint": "bright",
@@ -42299,24 +31714,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "lord"
         }
       ],
-      "sentence": {
-        "zh": "午饭后，姐姐在中文角里看到家族。",
-        "en": "After lunch, my older sister sees family in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，姐姐在中文角里看到家族。",
-          "en": "After lunch, my older sister sees family in the Chinese corner."
-        },
-        {
-          "zh": "午饭后，姐姐谈到民族。",
-          "en": "After lunch, my older sister mentions nationality."
-        },
-        {
-          "zh": "例子帮助我们了解贵族。",
-          "en": "An example helps us understand lord."
-        }
-      ],
       "etymologyHint": "A group of people that swear by 矢 a single flag 方",
       "sourceTags": [
         "common-800",
@@ -42369,24 +31766,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "几率",
           "meaningEn": "probability"
-        }
-      ],
-      "sentence": {
-        "zh": "活动课上，哥哥在阅读时间里看到频率。",
-        "en": "During activity class, my older brother sees frequency during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，哥哥在阅读时间里看到频率。",
-          "en": "During activity class, my older brother sees frequency during reading time."
-        },
-        {
-          "zh": "活动课上，哥哥谈到效率。",
-          "en": "During activity class, my older brother mentions efficiency."
-        },
-        {
-          "zh": "卡片帮助我们了解几率。",
-          "en": "A card helps us understand probability."
         }
       ],
       "etymologyHint": "A string 幺 vibrating in an instrument 亠十",
@@ -42446,24 +31825,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "put effort into"
         }
       ],
-      "sentence": {
-        "zh": "找不到书包时，我很着急。",
-        "en": "When I cannot find my school bag, I feel anxious."
-      },
-      "sentences": [
-        {
-          "zh": "找不到书包时，我很着急。",
-          "en": "When I cannot find my school bag, I feel anxious."
-        },
-        {
-          "zh": "我们先读课文，接着写字。",
-          "en": "First we read the text, then we write characters."
-        },
-        {
-          "zh": "学校着力提高阅读能力。",
-          "en": "The school puts effort into improving reading ability."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -42516,24 +31877,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "诊断",
           "meaningEn": "to diagnose"
-        }
-      ],
-      "sentence": {
-        "zh": "讨论时，我们在作业本上看到不断。",
-        "en": "During discussion, we see unceasing in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，我们在作业本上看到不断。",
-          "en": "During discussion, we see unceasing in the homework book."
-        },
-        {
-          "zh": "讨论时，我们谈到判断。",
-          "en": "During discussion, we mention how to judge."
-        },
-        {
-          "zh": "图片帮助我们了解诊断。",
-          "en": "An image helps us understand how to diagnose."
         }
       ],
       "etymologyHint": "Using an axe 斤 to harvest grain 米",
@@ -42590,24 +31933,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "clear-headed"
         }
       ],
-      "sentence": {
-        "zh": "看图时，妹妹在校园里看到清楚。",
-        "en": "While looking at a picture, my younger sister sees clear on campus."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，妹妹在校园里看到清楚。",
-          "en": "While looking at a picture, my younger sister sees clear on campus."
-        },
-        {
-          "zh": "看图时，妹妹谈到清理。",
-          "en": "While looking at a picture, my younger sister mentions how to clear up."
-        },
-        {
-          "zh": "练习帮助我们了解清醒。",
-          "en": "An exercise helps us understand clear-headed."
-        }
-      ],
       "etymologyHint": "water",
       "sourceTags": [
         "common-800",
@@ -42660,24 +31985,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "深信",
           "meaningEn": "to believe firmly"
-        }
-      ],
-      "sentence": {
-        "zh": "早读时，小组同学在家里的书架上看到深深。",
-        "en": "During morning reading, my group members see deep on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，小组同学在家里的书架上看到深深。",
-          "en": "During morning reading, my group members see deep on the bookshelf at home."
-        },
-        {
-          "zh": "早读时，小组同学谈到深入。",
-          "en": "During morning reading, my group members mention how to penetrate deeply."
-        },
-        {
-          "zh": "对话帮助我们了解深信。",
-          "en": "A dialogue helps us understand how to believe firmly."
         }
       ],
       "etymologyHint": "Deep 罙 water 氵",
@@ -42734,24 +32041,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "situation"
         }
       ],
-      "sentence": {
-        "zh": "今天我的心情很好。",
-        "en": "My mood is good today."
-      },
-      "sentences": [
-        {
-          "zh": "今天我的心情很好。",
-          "en": "My mood is good today."
-        },
-        {
-          "zh": "这件事情很重要。",
-          "en": "This matter is important."
-        },
-        {
-          "zh": "老师了解每个学生的情况。",
-          "en": "The teacher understands each student's situation."
-        }
-      ],
       "etymologyHint": "heart",
       "sourceTags": [
         "common-800",
@@ -42806,24 +32095,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "three-dimensional"
         }
       ],
-      "sentence": {
-        "zh": "放学后，同学在教室里看到维持。",
-        "en": "After school, my classmate sees how to keep in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，同学在教室里看到维持。",
-          "en": "After school, my classmate sees how to keep in the classroom."
-        },
-        {
-          "zh": "放学后，同学谈到维护。",
-          "en": "After school, my classmate mentions how to defend."
-        },
-        {
-          "zh": "词卡帮助我们了解三维。",
-          "en": "A word card helps us understand three-dimensional."
-        }
-      ],
       "etymologyHint": "thread",
       "sourceTags": [
         "common-800",
@@ -42876,24 +32147,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "优越",
           "meaningEn": "superior"
-        }
-      ],
-      "sentence": {
-        "zh": "阅读时，姐姐在故事书里看到超越。",
-        "en": "While reading, my older sister sees how to surpass in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，姐姐在故事书里看到超越。",
-          "en": "While reading, my older sister sees how to surpass in a storybook."
-        },
-        {
-          "zh": "阅读时，姐姐谈到穿越。",
-          "en": "While reading, my older sister mentions how to pass through."
-        },
-        {
-          "zh": "书本帮助我们了解优越。",
-          "en": "A book helps us understand superior."
         }
       ],
       "etymologyHint": "run",
@@ -42952,24 +32205,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to submit"
         }
       ],
-      "sentence": {
-        "zh": "写作业时，哥哥在练习册里看到提供。",
-        "en": "While doing homework, my older brother sees how to offer in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，哥哥在练习册里看到提供。",
-          "en": "While doing homework, my older brother sees how to offer in a workbook."
-        },
-        {
-          "zh": "写作业时，哥哥谈到提出。",
-          "en": "While doing homework, my older brother mentions how to raise."
-        },
-        {
-          "zh": "图画帮助我们了解提交。",
-          "en": "A picture helps us understand how to submit."
-        }
-      ],
       "etymologyHint": "hand",
       "sourceTags": [
         "common-800",
@@ -43022,24 +32257,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "伊斯兰教",
           "meaningEn": "Islam"
-        }
-      ],
-      "sentence": {
-        "zh": "周末，朋友在学校展板上看到斯文。",
-        "en": "On the weekend, my friend sees refined on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "周末，朋友在学校展板上看到斯文。",
-          "en": "On the weekend, my friend sees refined on the school display board."
-        },
-        {
-          "zh": "周末，朋友谈到穆斯林。",
-          "en": "On the weekend, my friend mentions Muslim."
-        },
-        {
-          "zh": "故事帮助我们了解伊斯兰教。",
-          "en": "A story helps us understand Islam."
         }
       ],
       "etymologyHint": "",
@@ -43096,24 +32313,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "alliance"
         }
       ],
-      "sentence": {
-        "zh": "午饭后，我们在小组活动中看到联系。",
-        "en": "After lunch, we see connection during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，我们在小组活动中看到联系。",
-          "en": "After lunch, we see connection during a group activity."
-        },
-        {
-          "zh": "午饭后，我们谈到联合。",
-          "en": "After lunch, we mention how to combine."
-        },
-        {
-          "zh": "例子帮助我们了解联盟。",
-          "en": "An example helps us understand alliance."
-        }
-      ],
       "etymologyHint": "ear",
       "sourceTags": [
         "common-800",
@@ -43166,24 +32365,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "最佳",
           "meaningEn": "optimum"
-        }
-      ],
-      "sentence": {
-        "zh": "活动课上，妹妹在课外书里看到最后。",
-        "en": "During activity class, my younger sister sees final in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，妹妹在课外书里看到最后。",
-          "en": "During activity class, my younger sister sees final in an extracurricular book."
-        },
-        {
-          "zh": "活动课上，妹妹谈到最近。",
-          "en": "During activity class, my younger sister mentions recently."
-        },
-        {
-          "zh": "卡片帮助我们了解最佳。",
-          "en": "A card helps us understand optimum."
         }
       ],
       "etymologyHint": "To take place 取 under the sun 日 (that is, everywhere)",
@@ -43241,24 +32422,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "quality"
         }
       ],
-      "sentence": {
-        "zh": "复习时，小组同学在中文角里看到力量。",
-        "en": "While reviewing, my group members see power in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，小组同学在中文角里看到力量。",
-          "en": "While reviewing, my group members see power in the Chinese corner."
-        },
-        {
-          "zh": "复习时，小组同学谈到大量。",
-          "en": "While reviewing, my group members mention great amount."
-        },
-        {
-          "zh": "阅读卡帮助我们了解质量。",
-          "en": "A reading card helps us understand quality."
-        }
-      ],
       "etymologyHint": "unit",
       "sourceTags": [
         "common-800",
@@ -43311,24 +32474,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "收集",
           "meaningEn": "to gather"
-        }
-      ],
-      "sentence": {
-        "zh": "讨论时，我在阅读时间里看到集中。",
-        "en": "During discussion, I see how to concentrate during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，我在阅读时间里看到集中。",
-          "en": "During discussion, I see how to concentrate during reading time."
-        },
-        {
-          "zh": "讨论时，我谈到集团。",
-          "en": "During discussion, I mention group."
-        },
-        {
-          "zh": "图片帮助我们了解收集。",
-          "en": "An image helps us understand how to gather."
         }
       ],
       "etymologyHint": "Birds 隹 flocking on a tree 木",
@@ -43385,24 +32530,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "only natural"
         }
       ],
-      "sentence": {
-        "zh": "看图时，同学在画册里看到然后。",
-        "en": "While looking at a picture, my classmate sees then in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，同学在画册里看到然后。",
-          "en": "While looking at a picture, my classmate sees then in a picture book."
-        },
-        {
-          "zh": "看图时，同学谈到然而。",
-          "en": "While looking at a picture, my classmate mentions however."
-        },
-        {
-          "zh": "练习帮助我们了解当然。",
-          "en": "An exercise helps us understand only natural."
-        }
-      ],
       "etymologyHint": "fire",
       "sourceTags": [
         "common-800",
@@ -43455,24 +32582,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "装饰",
           "meaningEn": "to decorate"
-        }
-      ],
-      "sentence": {
-        "zh": "早读时，姐姐在作业本上看到装备。",
-        "en": "During morning reading, my older sister sees equipment in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，姐姐在作业本上看到装备。",
-          "en": "During morning reading, my older sister sees equipment in the homework book."
-        },
-        {
-          "zh": "早读时，姐姐谈到装置。",
-          "en": "During morning reading, my older sister mentions how to install."
-        },
-        {
-          "zh": "对话帮助我们了解装饰。",
-          "en": "A dialogue helps us understand how to decorate."
         }
       ],
       "etymologyHint": "clothes",
@@ -43529,24 +32638,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "gentle and soft"
         }
       ],
-      "sentence": {
-        "zh": "中文课上，哥哥在校园里看到温暖。",
-        "en": "In Chinese class, my older brother sees warm on campus."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，哥哥在校园里看到温暖。",
-          "en": "In Chinese class, my older brother sees warm on campus."
-        },
-        {
-          "zh": "中文课上，哥哥谈到温度。",
-          "en": "In Chinese class, my older brother mentions temperature."
-        },
-        {
-          "zh": "小组活动帮助我们了解温柔。",
-          "en": "A group activity helps us understand gentle and soft."
-        }
-      ],
       "etymologyHint": "water",
       "sourceTags": [
         "common-800",
@@ -43600,24 +32691,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "家属",
           "meaningEn": "family member"
-        }
-      ],
-      "sentence": {
-        "zh": "放学后，朋友在家里的书架上看到属于。",
-        "en": "After school, my friend sees how to be classified as on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，朋友在家里的书架上看到属于。",
-          "en": "After school, my friend sees how to be classified as on the bookshelf at home."
-        },
-        {
-          "zh": "放学后，朋友谈到金属。",
-          "en": "After school, my friend mentions metal."
-        },
-        {
-          "zh": "词卡帮助我们了解家属。",
-          "en": "A word card helps us understand family member."
         }
       ],
       "etymologyHint": "body",
@@ -43676,24 +32749,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to emphasize"
         }
       ],
-      "sentence": {
-        "zh": "阅读时，我们在图书馆里看到强大。",
-        "en": "While reading, we see large in the library."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，我们在图书馆里看到强大。",
-          "en": "While reading, we see large in the library."
-        },
-        {
-          "zh": "阅读时，我们谈到强烈。",
-          "en": "While reading, we mention strong."
-        },
-        {
-          "zh": "书本帮助我们了解强调。",
-          "en": "A book helps us understand how to emphasize."
-        }
-      ],
       "etymologyHint": "bow",
       "sourceTags": [
         "common-800",
@@ -43746,24 +32801,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "感动",
           "meaningEn": "moved"
-        }
-      ],
-      "sentence": {
-        "zh": "我感觉今天很开心。",
-        "en": "I feel very happy today."
-      },
-      "sentences": [
-        {
-          "zh": "我感觉今天很开心。",
-          "en": "I feel very happy today."
-        },
-        {
-          "zh": "我要感谢老师的帮助。",
-          "en": "I want to thank the teacher for the help."
-        },
-        {
-          "zh": "这个故事让我很感动。",
-          "en": "This story makes me feel moved."
         }
       ],
       "etymologyHint": "Two hearts 心 beating together 咸",
@@ -43820,24 +32857,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "according to"
         }
       ],
-      "sentence": {
-        "zh": "周末，小组同学在故事书里看到照片。",
-        "en": "On the weekend, my group members see photograph in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "周末，小组同学在故事书里看到照片。",
-          "en": "On the weekend, my group members see photograph in a storybook."
-        },
-        {
-          "zh": "周末，小组同学谈到照顾。",
-          "en": "On the weekend, my group members mention how to take care of."
-        },
-        {
-          "zh": "故事帮助我们了解按照。",
-          "en": "A story helps us understand according to."
-        }
-      ],
       "etymologyHint": "fire",
       "sourceTags": [
         "common-800",
@@ -43890,24 +32909,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "设置",
           "meaningEn": "to set up"
-        }
-      ],
-      "sentence": {
-        "zh": "午饭后，我在练习册里看到位置。",
-        "en": "After lunch, I see position in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，我在练习册里看到位置。",
-          "en": "After lunch, I see position in a workbook."
-        },
-        {
-          "zh": "午饭后，我谈到装置。",
-          "en": "After lunch, I mention how to install."
-        },
-        {
-          "zh": "例子帮助我们了解设置。",
-          "en": "An example helps us understand how to set up."
         }
       ],
       "etymologyHint": "net",
@@ -43966,24 +32967,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to comprehend"
         }
       ],
-      "sentence": {
-        "zh": "活动课上，同学在学校展板上看到解决。",
-        "en": "During activity class, my classmate sees how to solve on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，同学在学校展板上看到解决。",
-          "en": "During activity class, my classmate sees how to solve on the school display board."
-        },
-        {
-          "zh": "活动课上，同学谈到了解。",
-          "en": "During activity class, my classmate mentions how to understand."
-        },
-        {
-          "zh": "卡片帮助我们了解理解。",
-          "en": "A card helps us understand how to comprehend."
-        }
-      ],
       "etymologyHint": "To cut 刀 the horns 角 off of an ox 牛; 角 also provides the pronunciation",
       "sourceTags": [
         "common-800",
@@ -44036,24 +33019,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "满意",
           "meaningEn": "satisfied"
-        }
-      ],
-      "sentence": {
-        "zh": "复习时，姐姐在小组活动中看到意义。",
-        "en": "While reviewing, my older sister sees sense during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，姐姐在小组活动中看到意义。",
-          "en": "While reviewing, my older sister sees sense during a group activity."
-        },
-        {
-          "zh": "复习时，姐姐谈到意思。",
-          "en": "While reviewing, my older sister mentions idea."
-        },
-        {
-          "zh": "阅读卡帮助我们了解满意。",
-          "en": "A reading card helps us understand satisfied."
         }
       ],
       "etymologyHint": "heart",
@@ -44112,24 +33077,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "grade"
         }
       ],
-      "sentence": {
-        "zh": "讨论时，哥哥在课外书里看到数据。",
-        "en": "During discussion, my older brother sees data in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，哥哥在课外书里看到数据。",
-          "en": "During discussion, my older brother sees data in an extracurricular book."
-        },
-        {
-          "zh": "讨论时，哥哥谈到数字。",
-          "en": "During discussion, my older brother mentions numeral."
-        },
-        {
-          "zh": "图片帮助我们了解分数。",
-          "en": "An image helps us understand grade."
-        }
-      ],
       "etymologyHint": "script",
       "sourceTags": [
         "common-800",
@@ -44182,24 +33129,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "充满",
           "meaningEn": "full of"
-        }
-      ],
-      "sentence": {
-        "zh": "看图时，朋友在中文角里看到满足。",
-        "en": "While looking at a picture, my friend sees how to satisfy in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，朋友在中文角里看到满足。",
-          "en": "While looking at a picture, my friend sees how to satisfy in the Chinese corner."
-        },
-        {
-          "zh": "看图时，朋友谈到满意。",
-          "en": "While looking at a picture, my friend mentions satisfied."
-        },
-        {
-          "zh": "练习帮助我们了解充满。",
-          "en": "An exercise helps us understand full of."
         }
       ],
       "etymologyHint": "water",
@@ -44256,24 +33185,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "crowd"
         }
       ],
-      "sentence": {
-        "zh": "早读时，我们在阅读时间里看到群众。",
-        "en": "During morning reading, we see mass during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，我们在阅读时间里看到群众。",
-          "en": "During morning reading, we see mass during reading time."
-        },
-        {
-          "zh": "早读时，我们谈到群体。",
-          "en": "During morning reading, we mention community."
-        },
-        {
-          "zh": "对话帮助我们了解人群。",
-          "en": "A dialogue helps us understand crowd."
-        }
-      ],
       "etymologyHint": "sheep",
       "sourceTags": [
         "common-800",
@@ -44326,24 +33237,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "辛酸",
           "meaningEn": "hardship"
-        }
-      ],
-      "sentence": {
-        "zh": "早餐时，我喝酸奶。",
-        "en": "At breakfast, I drink yogurt."
-      },
-      "sentences": [
-        {
-          "zh": "早餐时，我喝酸奶。",
-          "en": "At breakfast, I drink yogurt."
-        },
-        {
-          "zh": "听到这个故事，我有点心酸。",
-          "en": "When I hear this story, I feel a little sad."
-        },
-        {
-          "zh": "爷爷讲起过去的辛酸。",
-          "en": "Grandpa talks about past hardship."
         }
       ],
       "etymologyHint": "Wine 酉 aged too long 夋; 夋 also provides the pronunciation",
@@ -44400,24 +33293,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "necessary"
         }
       ],
-      "sentence": {
-        "zh": "学习中文需要耐心。",
-        "en": "Learning Chinese needs patience."
-      },
-      "sentences": [
-        {
-          "zh": "学习中文需要耐心。",
-          "en": "Learning Chinese needs patience."
-        },
-        {
-          "zh": "老师了解学生的需求。",
-          "en": "The teacher understands the students' needs."
-        },
-        {
-          "zh": "水是生活必需的东西。",
-          "en": "Water is something necessary for life."
-        }
-      ],
       "etymologyHint": "Rain 雨 needed for crops to grow",
       "sourceTags": [
         "common-800",
@@ -44470,24 +33345,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "打算",
           "meaningEn": "to plan"
-        }
-      ],
-      "sentence": {
-        "zh": "阅读时，我在校园里看到算是。",
-        "en": "While reading, I see considered to be on campus."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，我在校园里看到算是。",
-          "en": "While reading, I see considered to be on campus."
-        },
-        {
-          "zh": "阅读时，我谈到算了。",
-          "en": "While reading, I mention let it be."
-        },
-        {
-          "zh": "书本帮助我们了解打算。",
-          "en": "A book helps us understand how to plan."
         }
       ],
       "etymologyHint": "A bamboo ⺮ abacus 具",
@@ -44544,24 +33401,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "tubing"
         }
       ],
-      "sentence": {
-        "zh": "写作业时，同学在家里的书架上看到管理。",
-        "en": "While doing homework, my classmate sees how to supervise on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，同学在家里的书架上看到管理。",
-          "en": "While doing homework, my classmate sees how to supervise on the bookshelf at home."
-        },
-        {
-          "zh": "写作业时，同学谈到不管。",
-          "en": "While doing homework, my classmate mentions not to be concerned."
-        },
-        {
-          "zh": "图画帮助我们了解管道。",
-          "en": "A picture helps us understand tubing."
-        }
-      ],
       "etymologyHint": "bamboo",
       "sourceTags": [
         "common-800",
@@ -44614,24 +33453,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "精力",
           "meaningEn": "energy"
-        }
-      ],
-      "sentence": {
-        "zh": "周末，姐姐在图书馆里看到精神。",
-        "en": "On the weekend, my older sister sees spirit in the library."
-      },
-      "sentences": [
-        {
-          "zh": "周末，姐姐在图书馆里看到精神。",
-          "en": "On the weekend, my older sister sees spirit in the library."
-        },
-        {
-          "zh": "周末，姐姐谈到精彩。",
-          "en": "On the weekend, my older sister mentions wonderful."
-        },
-        {
-          "zh": "故事帮助我们了解精力。",
-          "en": "A story helps us understand energy."
         }
       ],
       "etymologyHint": "grain",
@@ -44688,24 +33509,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to appreciate"
         }
       ],
-      "sentence": {
-        "zh": "午饭后，哥哥在教室里看到增加。",
-        "en": "After lunch, my older brother sees how to raise in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，哥哥在教室里看到增加。",
-          "en": "After lunch, my older brother sees how to raise in the classroom."
-        },
-        {
-          "zh": "午饭后，哥哥谈到增长。",
-          "en": "After lunch, my older brother mentions how to grow."
-        },
-        {
-          "zh": "例子帮助我们了解增值。",
-          "en": "An example helps us understand how to appreciate."
-        }
-      ],
       "etymologyHint": "earth",
       "sourceTags": [
         "common-800",
@@ -44758,24 +33561,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "试题",
           "meaningEn": "exam question"
-        }
-      ],
-      "sentence": {
-        "zh": "活动课上，朋友在故事书里看到问题。",
-        "en": "During activity class, my friend sees question in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，朋友在故事书里看到问题。",
-          "en": "During activity class, my friend sees question in a storybook."
-        },
-        {
-          "zh": "活动课上，朋友谈到主题。",
-          "en": "During activity class, my friend mentions theme."
-        },
-        {
-          "zh": "卡片帮助我们了解试题。",
-          "en": "A card helps us understand exam question."
         }
       ],
       "etymologyHint": "head",
@@ -44832,24 +33617,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to arrange"
         }
       ],
-      "sentence": {
-        "zh": "复习时，我们在练习册里看到整个。",
-        "en": "While reviewing, we see whole in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，我们在练习册里看到整个。",
-          "en": "While reviewing, we see whole in a workbook."
-        },
-        {
-          "zh": "复习时，我们谈到整整。",
-          "en": "While reviewing, we mention whole."
-        },
-        {
-          "zh": "阅读卡帮助我们了解整理。",
-          "en": "A reading card helps us understand how to arrange."
-        }
-      ],
       "etymologyHint": "order",
       "sourceTags": [
         "common-800",
@@ -44904,24 +33671,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "instrument"
         }
       ],
-      "sentence": {
-        "zh": "讨论时，妹妹在学校展板上看到器官。",
-        "en": "During discussion, my younger sister sees organ on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，妹妹在学校展板上看到器官。",
-          "en": "During discussion, my younger sister sees organ on the school display board."
-        },
-        {
-          "zh": "讨论时，妹妹谈到机器。",
-          "en": "During discussion, my younger sister mentions machine."
-        },
-        {
-          "zh": "图片帮助我们了解仪器。",
-          "en": "An image helps us understand instrument."
-        }
-      ],
       "etymologyHint": "Four cooking vessels 口 guarded by a dog 犬",
       "sourceTags": [
         "common-800",
@@ -44974,24 +33723,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "乙基",
           "meaningEn": "ethyl group"
-        }
-      ],
-      "sentence": {
-        "zh": "看图时，小组同学在小组活动中看到乙丑。",
-        "en": "While looking at a picture, my group members see second year B2 of the 60 year cycle, e.g. 1985 or 2045 during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，小组同学在小组活动中看到乙丑。",
-          "en": "While looking at a picture, my group members see second year B2 of the 60 year cycle, e.g. 1985 or 2045 during a group activity."
-        },
-        {
-          "zh": "看图时，小组同学谈到乙型。",
-          "en": "While looking at a picture, my group members mention type B."
-        },
-        {
-          "zh": "练习帮助我们了解乙基。",
-          "en": "An exercise helps us understand ethyl group."
         }
       ],
       "etymologyHint": "A swallow",
@@ -45049,24 +33780,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "population"
         }
       ],
-      "sentence": {
-        "zh": "园丁每天照顾花草。",
-        "en": "The gardener looks after the flowers and plants every day."
-      },
-      "sentences": [
-        {
-          "zh": "园丁每天照顾花草。",
-          "en": "The gardener looks after the flowers and plants every day."
-        },
-        {
-          "zh": "门铃发出丁冬的声音。",
-          "en": "The doorbell makes a ding-dong sound."
-        },
-        {
-          "zh": "这个村子人丁兴旺。",
-          "en": "This village has a thriving population."
-        }
-      ],
       "etymologyHint": "A nail",
       "sourceTags": [
         "common-800",
@@ -45120,24 +33833,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "卜占",
           "meaningEn": "to divine"
-        }
-      ],
-      "sentence": {
-        "zh": "中文课上，同学在中文角里看到萝卜。",
-        "en": "In Chinese class, my classmate sees radish , esp. white radish in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，同学在中文角里看到萝卜。",
-          "en": "In Chinese class, my classmate sees radish , esp. white radish in the Chinese corner."
-        },
-        {
-          "zh": "中文课上，同学谈到占卜。",
-          "en": "In Chinese class, my classmate mentions how to divine."
-        },
-        {
-          "zh": "小组活动帮助我们了解卜占。",
-          "en": "A group activity helps us understand how to divine."
         }
       ],
       "etymologyHint": "A crack on an oracle bone",
@@ -45194,24 +33889,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "cutting tool"
         }
       ],
-      "sentence": {
-        "zh": "放学后，姐姐在阅读时间里看到剪刀。",
-        "en": "After school, my older sister sees scissors during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，姐姐在阅读时间里看到剪刀。",
-          "en": "After school, my older sister sees scissors during reading time."
-        },
-        {
-          "zh": "放学后，姐姐谈到刀俎。",
-          "en": "After school, my older sister mentions sacrificial knife and altar."
-        },
-        {
-          "zh": "词卡帮助我们了解刀具。",
-          "en": "A word card helps us understand cutting tool."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -45264,24 +33941,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "乃尔",
           "meaningEn": "thus"
-        }
-      ],
-      "sentence": {
-        "zh": "阅读时，哥哥在画册里看到乃至。",
-        "en": "While reading, my older brother sees and even in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，哥哥在画册里看到乃至。",
-          "en": "While reading, my older brother sees and even in a picture book."
-        },
-        {
-          "zh": "阅读时，哥哥谈到乃是。",
-          "en": "While reading, my older brother mentions equivalent to either or."
-        },
-        {
-          "zh": "书本帮助我们了解乃尔。",
-          "en": "A book helps us understand thus."
         }
       ],
       "etymologyHint": "A pregnant woman; compare 孕",
@@ -45338,24 +33997,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to treat sb unfairly"
         }
       ],
-      "sentence": {
-        "zh": "写作业时，朋友在作业本上看到幸亏。",
-        "en": "While doing homework, my friend sees fortunately in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，朋友在作业本上看到幸亏。",
-          "en": "While doing homework, my friend sees fortunately in the homework book."
-        },
-        {
-          "zh": "写作业时，朋友谈到亏损。",
-          "en": "While doing homework, my friend mentions deficit."
-        },
-        {
-          "zh": "图画帮助我们了解亏待。",
-          "en": "A picture helps us understand how to treat sb unfairly."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -45408,24 +34049,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "一寸",
           "meaningEn": "one cun"
-        }
-      ],
-      "sentence": {
-        "zh": "这件衣服的尺寸正好。",
-        "en": "The size of this piece of clothing is just right."
-      },
-      "sentences": [
-        {
-          "zh": "这件衣服的尺寸正好。",
-          "en": "The size of this piece of clothing is just right."
-        },
-        {
-          "zh": "说话要注意分寸。",
-          "en": "When speaking, we should pay attention to propriety."
-        },
-        {
-          "zh": "尺子上有一寸的标记。",
-          "en": "There is a one-cun mark on the ruler."
         }
       ],
       "etymologyHint": "A hand with a dot indicating where the pulse can be felt, about an inch up the wrist",
@@ -45482,24 +34105,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "wife's mother"
         }
       ],
-      "sentence": {
-        "zh": "午饭后，妹妹在家里的书架上看到丈夫。",
-        "en": "After lunch, my younger sister sees husband on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，妹妹在家里的书架上看到丈夫。",
-          "en": "After lunch, my younger sister sees husband on the bookshelf at home."
-        },
-        {
-          "zh": "午饭后，妹妹谈到丈人。",
-          "en": "After lunch, my younger sister mentions wife's father."
-        },
-        {
-          "zh": "例子帮助我们了解丈母。",
-          "en": "An example helps us understand wife's mother."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -45552,24 +34157,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "巾帼",
           "meaningEn": "woman"
-        }
-      ],
-      "sentence": {
-        "zh": "活动课上，小组同学在图书馆里看到毛巾。",
-        "en": "During activity class, my group members see towel in the library."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，小组同学在图书馆里看到毛巾。",
-          "en": "During activity class, my group members see towel in the library."
-        },
-        {
-          "zh": "活动课上，小组同学谈到围巾。",
-          "en": "During activity class, my group members mention scarf."
-        },
-        {
-          "zh": "卡片帮助我们了解巾帼。",
-          "en": "A card helps us understand woman."
         }
       ],
       "etymologyHint": "A curtain or towel hanging from a rack",
@@ -45626,24 +34213,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to beg"
         }
       ],
-      "sentence": {
-        "zh": "复习时，我在教室里看到乞丐。",
-        "en": "While reviewing, I see beggar in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，我在教室里看到乞丐。",
-          "en": "While reviewing, I see beggar in the classroom."
-        },
-        {
-          "zh": "复习时，我谈到乞讨。",
-          "en": "While reviewing, I mention how to beg."
-        },
-        {
-          "zh": "阅读卡帮助我们了解乞求。",
-          "en": "A reading card helps us understand how to beg."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -45696,24 +34265,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "川谷",
           "meaningEn": "same as 薏苡"
-        }
-      ],
-      "sentence": {
-        "zh": "讨论时，同学在故事书里看到山川。",
-        "en": "During discussion, my classmate sees mountains and rivers in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，同学在故事书里看到山川。",
-          "en": "During discussion, my classmate sees mountains and rivers in a storybook."
-        },
-        {
-          "zh": "讨论时，同学谈到川泽。",
-          "en": "During discussion, my classmate mentions marshes."
-        },
-        {
-          "zh": "图片帮助我们了解川谷。",
-          "en": "An image helps us understand same as."
         }
       ],
       "etymologyHint": "A river's flow; compare 巛",
@@ -45770,24 +34321,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "myriads"
         }
       ],
-      "sentence": {
-        "zh": "看图时，姐姐在练习册里看到亿万。",
-        "en": "While looking at a picture, my older sister sees millions and millions in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，姐姐在练习册里看到亿万。",
-          "en": "While looking at a picture, my older sister sees millions and millions in a workbook."
-        },
-        {
-          "zh": "看图时，姐姐谈到十亿。",
-          "en": "While looking at a picture, my older sister mentions one billion."
-        },
-        {
-          "zh": "练习帮助我们了解千亿。",
-          "en": "An exercise helps us understand myriads."
-        }
-      ],
       "etymologyHint": "people",
       "sourceTags": [
         "common-800",
@@ -45840,24 +34373,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "除夕",
           "meaningEn": "lunar New Year's Eve"
-        }
-      ],
-      "sentence": {
-        "zh": "早读时，哥哥在学校展板上看到夕阳。",
-        "en": "During morning reading, my older brother sees sunset on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，哥哥在学校展板上看到夕阳。",
-          "en": "During morning reading, my older brother sees sunset on the school display board."
-        },
-        {
-          "zh": "早读时，哥哥谈到前夕。",
-          "en": "During morning reading, my older brother mentions eve."
-        },
-        {
-          "zh": "对话帮助我们了解除夕。",
-          "en": "A dialogue helps us understand lunar New Year's Eve."
         }
       ],
       "etymologyHint": "A crescent moon",
@@ -45914,24 +34429,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "honorific: I've long looked forward to meeting you."
         }
       ],
-      "sentence": {
-        "zh": "中文课上，朋友在小组活动中看到永久。",
-        "en": "In Chinese class, my friend sees everlasting during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，朋友在小组活动中看到永久。",
-          "en": "In Chinese class, my friend sees everlasting during a group activity."
-        },
-        {
-          "zh": "中文课上，朋友谈到持久。",
-          "en": "In Chinese class, my friend mentions lasting."
-        },
-        {
-          "zh": "小组活动帮助我们了解久仰。",
-          "en": "A group activity helps us understand honorific: I've long looked forward to meeting you.."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -45984,24 +34481,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "公勺",
           "meaningEn": "serving spoon"
-        }
-      ],
-      "sentence": {
-        "zh": "放学后，我们在课外书里看到勺子。",
-        "en": "After school, we see scoop in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，我们在课外书里看到勺子。",
-          "en": "After school, we see scoop in an extracurricular book."
-        },
-        {
-          "zh": "放学后，我们谈到勺鸡。",
-          "en": "After school, we mention koklass pheasant."
-        },
-        {
-          "zh": "词卡帮助我们了解公勺。",
-          "en": "A word card helps us understand serving spoon."
         }
       ],
       "etymologyHint": "A spoon 勹 with something in it 丶",
@@ -46058,24 +34537,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "out of the ordinary"
         }
       ],
-      "sentence": {
-        "zh": "阅读时，妹妹在中文角里看到凡是。",
-        "en": "While reading, my younger sister sees each and every in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，妹妹在中文角里看到凡是。",
-          "en": "While reading, my younger sister sees each and every in the Chinese corner."
-        },
-        {
-          "zh": "阅读时，妹妹谈到平凡。",
-          "en": "While reading, my younger sister mentions commonplace."
-        },
-        {
-          "zh": "书本帮助我们了解非凡。",
-          "en": "A book helps us understand out of the ordinary."
-        }
-      ],
       "etymologyHint": "A plate or flat dish; an everyday item",
       "sourceTags": [
         "common-800",
@@ -46128,24 +34589,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "定心丸",
           "meaningEn": "reassurance"
-        }
-      ],
-      "sentence": {
-        "zh": "汤里有几个丸子。",
-        "en": "There are a few meatballs in the soup."
-      },
-      "sentences": [
-        {
-          "zh": "汤里有几个丸子。",
-          "en": "There are a few meatballs in the soup."
-        },
-        {
-          "zh": "医生给了我一瓶丸剂。",
-          "en": "The doctor gives me a bottle of pills."
-        },
-        {
-          "zh": "老师的话像一颗定心丸。",
-          "en": "The teacher's words feel like reassurance."
         }
       ],
       "etymologyHint": "A fist 九 holding a pebble 丶",
@@ -46203,24 +34646,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "the character 亡"
         }
       ],
-      "sentence": {
-        "zh": "亡羊补牢告诉我们要及时改正。",
-        "en": "Mending the pen after losing sheep teaches us to correct mistakes in time."
-      },
-      "sentences": [
-        {
-          "zh": "亡羊补牢告诉我们要及时改正。",
-          "en": "Mending the pen after losing sheep teaches us to correct mistakes in time."
-        },
-        {
-          "zh": "忘字上面有亡字头。",
-          "en": "The character wang has the wang radical top."
-        },
-        {
-          "zh": "亡字的笔画不多。",
-          "en": "The character wang does not have many strokes."
-        }
-      ],
       "etymologyHint": "A man 人 in a coffin; see 亾",
       "sourceTags": [
         "common-800",
@@ -46273,24 +34698,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "尸部",
           "meaningEn": "shi radical section"
-        }
-      ],
-      "sentence": {
-        "zh": "尸字的笔画很少。",
-        "en": "The character shi has few strokes."
-      },
-      "sentences": [
-        {
-          "zh": "尸字的笔画很少。",
-          "en": "The character shi has few strokes."
-        },
-        {
-          "zh": "尾字上面有尸字头。",
-          "en": "The character wei has the shi radical top."
-        },
-        {
-          "zh": "字典里可以查到尸部。",
-          "en": "The shi radical section can be found in the dictionary."
         }
       ],
       "etymologyHint": "A man keeled over",
@@ -46347,24 +34754,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "circular segment"
         }
       ],
-      "sentence": {
-        "zh": "活动课上，姐姐在校园里看到弓弦。",
-        "en": "During activity class, my older sister sees bowstring on campus."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，姐姐在校园里看到弓弦。",
-          "en": "During activity class, my older sister sees bowstring on campus."
-        },
-        {
-          "zh": "活动课上，姐姐谈到弓弩。",
-          "en": "During activity class, my older sister mentions bow and crossbow."
-        },
-        {
-          "zh": "卡片帮助我们了解弓形。",
-          "en": "A card helps us understand circular segment."
-        }
-      ],
       "etymologyHint": "A bow aimed to the left",
       "sourceTags": [
         "common-800",
@@ -46419,24 +34808,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to defend"
         }
       ],
-      "sentence": {
-        "zh": "复习时，哥哥在家里的书架上看到卫生。",
-        "en": "While reviewing, my older brother sees health on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，哥哥在家里的书架上看到卫生。",
-          "en": "While reviewing, my older brother sees health on the bookshelf at home."
-        },
-        {
-          "zh": "复习时，哥哥谈到卫星。",
-          "en": "While reviewing, my older brother mentions satellite."
-        },
-        {
-          "zh": "阅读卡帮助我们了解保卫。",
-          "en": "A reading card helps us understand how to defend."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -46489,24 +34860,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "利刃",
           "meaningEn": "sharp blade"
-        }
-      ],
-      "sentence": {
-        "zh": "刀刃很锋利，请小心。",
-        "en": "The knife blade is sharp, so please be careful."
-      },
-      "sentences": [
-        {
-          "zh": "刀刃很锋利，请小心。",
-          "en": "The knife blade is sharp, so please be careful."
-        },
-        {
-          "zh": "刃具要放在安全的地方。",
-          "en": "Cutting tools should be kept in a safe place."
-        },
-        {
-          "zh": "故事里提到一把利刃。",
-          "en": "The story mentions a sharp blade."
         }
       ],
       "etymologyHint": "A knife 刀 sharp enough to draw blood 丶",
@@ -46565,24 +34918,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "cross product"
         }
       ],
-      "sentence": {
-        "zh": "看图时，我们在教室里看到交叉。",
-        "en": "While looking at a picture, we see how to cross in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，我们在教室里看到交叉。",
-          "en": "While looking at a picture, we see how to cross in the classroom."
-        },
-        {
-          "zh": "看图时，我们谈到叉子。",
-          "en": "While looking at a picture, we mention fork."
-        },
-        {
-          "zh": "练习帮助我们了解叉乘。",
-          "en": "An exercise helps us understand cross product."
-        }
-      ],
       "etymologyHint": "A hand 又 grasping an object 丶",
       "sourceTags": [
         "common-800",
@@ -46635,24 +34970,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "下乡",
           "meaningEn": "to go to the countryside"
-        }
-      ],
-      "sentence": {
-        "zh": "早读时，妹妹在故事书里看到乡村。",
-        "en": "During morning reading, my younger sister sees rustic in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，妹妹在故事书里看到乡村。",
-          "en": "During morning reading, my younger sister sees rustic in a storybook."
-        },
-        {
-          "zh": "早读时，妹妹谈到故乡。",
-          "en": "During morning reading, my younger sister mentions home."
-        },
-        {
-          "zh": "对话帮助我们了解下乡。",
-          "en": "A dialogue helps us understand how to go to the countryside."
         }
       ],
       "etymologyHint": "",
@@ -46709,24 +35026,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "bumper harvest"
         }
       ],
-      "sentence": {
-        "zh": "中文课上，小组同学在练习册里看到丰富。",
-        "en": "In Chinese class, my group members see how to enrich in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，小组同学在练习册里看到丰富。",
-          "en": "In Chinese class, my group members see how to enrich in a workbook."
-        },
-        {
-          "zh": "中文课上，小组同学谈到丰厚。",
-          "en": "In Chinese class, my group members mention generous."
-        },
-        {
-          "zh": "小组活动帮助我们了解丰收。",
-          "en": "A group activity helps us understand bumper harvest."
-        }
-      ],
       "etymologyHint": "An ear of grass",
       "sourceTags": [
         "common-800",
@@ -46779,24 +35078,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "井水",
           "meaningEn": "well water"
-        }
-      ],
-      "sentence": {
-        "zh": "村里有一口水井。",
-        "en": "There is a water well in the village."
-      },
-      "sentences": [
-        {
-          "zh": "村里有一口水井。",
-          "en": "There is a water well in the village."
-        },
-        {
-          "zh": "井口旁边有一块石头。",
-          "en": "There is a stone beside the well opening."
-        },
-        {
-          "zh": "井水很清凉。",
-          "en": "The well water is cool and clear."
         }
       ],
       "etymologyHint": "A mine or well",
@@ -46852,24 +35133,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "夫妻",
           "meaningEn": "husband and wife"
-        }
-      ],
-      "sentence": {
-        "zh": "阅读时，同学在小组活动中看到夫人。",
-        "en": "While reading, my classmate sees lady during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，同学在小组活动中看到夫人。",
-          "en": "While reading, my classmate sees lady during a group activity."
-        },
-        {
-          "zh": "阅读时，同学谈到夫妇。",
-          "en": "While reading, my classmate mentions a couple."
-        },
-        {
-          "zh": "书本帮助我们了解夫妻。",
-          "en": "A book helps us understand husband and wife."
         }
       ],
       "etymologyHint": "A man 大 wearing a coming-of-age hairpin 一",
@@ -46928,24 +35191,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to station"
         }
       ],
-      "sentence": {
-        "zh": "写作业时，姐姐在课外书里看到挣扎。",
-        "en": "While doing homework, my older sister sees how to struggle in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，姐姐在课外书里看到挣扎。",
-          "en": "While doing homework, my older sister sees how to struggle in an extracurricular book."
-        },
-        {
-          "zh": "写作业时，姐姐谈到扎实。",
-          "en": "While doing homework, my older sister mentions strong."
-        },
-        {
-          "zh": "图画帮助我们了解驻扎。",
-          "en": "A picture helps us understand how to station."
-        }
-      ],
       "etymologyHint": "A hand 扌 tying a bundle with string 乚",
       "sourceTags": [
         "common-800",
@@ -46998,24 +35243,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "工艺",
           "meaningEn": "arts and crafts"
-        }
-      ],
-      "sentence": {
-        "zh": "周末，哥哥在中文角里看到艺术。",
-        "en": "On the weekend, my older brother sees art in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "周末，哥哥在中文角里看到艺术。",
-          "en": "On the weekend, my older brother sees art in the Chinese corner."
-        },
-        {
-          "zh": "周末，哥哥谈到艺人。",
-          "en": "On the weekend, my older brother mentions performing artist."
-        },
-        {
-          "zh": "故事帮助我们了解工艺。",
-          "en": "A story helps us understand arts and crafts."
         }
       ],
       "etymologyHint": "grass",
@@ -47072,24 +35299,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "drawing room"
         }
       ],
-      "sentence": {
-        "zh": "午饭后，朋友在阅读时间里看到餐厅。",
-        "en": "After lunch, my friend sees dining hall during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，朋友在阅读时间里看到餐厅。",
-          "en": "After lunch, my friend sees dining hall during reading time."
-        },
-        {
-          "zh": "午饭后，朋友谈到大厅。",
-          "en": "After lunch, my friend mentions hall."
-        },
-        {
-          "zh": "例子帮助我们了解客厅。",
-          "en": "An example helps us understand drawing room."
-        }
-      ],
       "etymologyHint": "spacious",
       "sourceTags": [
         "common-800",
@@ -47142,24 +35351,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "犬儒",
           "meaningEn": "cynic"
-        }
-      ],
-      "sentence": {
-        "zh": "活动课上，我们在画册里看到猎犬。",
-        "en": "During activity class, we see hound in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，我们在画册里看到猎犬。",
-          "en": "During activity class, we see hound in a picture book."
-        },
-        {
-          "zh": "活动课上，我们谈到犬伤。",
-          "en": "During activity class, we mention dog bite."
-        },
-        {
-          "zh": "卡片帮助我们了解犬儒。",
-          "en": "A card helps us understand cynic."
         }
       ],
       "etymologyHint": "A dog turned to the side",
@@ -47216,24 +35407,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "especially"
         }
       ],
-      "sentence": {
-        "zh": "复习时，妹妹在作业本上看到尤其。",
-        "en": "While reviewing, my younger sister sees especially in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，妹妹在作业本上看到尤其。",
-          "en": "While reviewing, my younger sister sees especially in the homework book."
-        },
-        {
-          "zh": "复习时，妹妹谈到尤为。",
-          "en": "While reviewing, my younger sister mentions especially."
-        },
-        {
-          "zh": "阅读卡帮助我们了解尤指。",
-          "en": "A reading card helps us understand especially."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -47286,24 +35459,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "布匹",
           "meaningEn": "cloth"
-        }
-      ],
-      "sentence": {
-        "zh": "这个答案和题目很匹配。",
-        "en": "This answer matches the question well."
-      },
-      "sentences": [
-        {
-          "zh": "这个答案和题目很匹配。",
-          "en": "This answer matches the question well."
-        },
-        {
-          "zh": "草原上有很多马匹。",
-          "en": "There are many horses on the grassland."
-        },
-        {
-          "zh": "店里摆着不同颜色的布匹。",
-          "en": "The shop displays cloth in different colours."
         }
       ],
       "etymologyHint": "A roll of cloth",
@@ -47360,24 +35515,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "giant star"
         }
       ],
-      "sentence": {
-        "zh": "看图时，我在家里的书架上看到巨大。",
-        "en": "While looking at a picture, I see huge on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，我在家里的书架上看到巨大。",
-          "en": "While looking at a picture, I see huge on the bookshelf at home."
-        },
-        {
-          "zh": "看图时，我谈到巨人。",
-          "en": "While looking at a picture, I mention giant."
-        },
-        {
-          "zh": "练习帮助我们了解巨星。",
-          "en": "An exercise helps us understand giant star."
-        }
-      ],
       "etymologyHint": "A hand holding a large carpenter's square 工",
       "sourceTags": [
         "common-800",
@@ -47430,24 +35567,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "牙刷",
           "meaningEn": "toothbrush"
-        }
-      ],
-      "sentence": {
-        "zh": "早读时，同学在图书馆里看到牙齿。",
-        "en": "During morning reading, my classmate sees tooth in the library."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，同学在图书馆里看到牙齿。",
-          "en": "During morning reading, my classmate sees tooth in the library."
-        },
-        {
-          "zh": "早读时，同学谈到牙膏。",
-          "en": "During morning reading, my classmate mentions toothpaste."
-        },
-        {
-          "zh": "对话帮助我们了解牙刷。",
-          "en": "A dialogue helps us understand toothbrush."
         }
       ],
       "etymologyHint": "",
@@ -47505,24 +35624,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to garrison"
         }
       ],
-      "sentence": {
-        "zh": "中文课上，姐姐在教室里看到屯垦。",
-        "en": "In Chinese class, my older sister sees how to garrison troops to open up land in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，姐姐在教室里看到屯垦。",
-          "en": "In Chinese class, my older sister sees how to garrison troops to open up land in the classroom."
-        },
-        {
-          "zh": "中文课上，姐姐谈到屯子。",
-          "en": "In Chinese class, my older sister mentions village."
-        },
-        {
-          "zh": "小组活动帮助我们了解屯戍。",
-          "en": "A group activity helps us understand how to garrison."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -47575,24 +35676,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "互信",
           "meaningEn": "mutual trust"
-        }
-      ],
-      "sentence": {
-        "zh": "放学后，哥哥在故事书里看到相互。",
-        "en": "After school, my older brother sees each other in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，哥哥在故事书里看到相互。",
-          "en": "After school, my older brother sees each other in a storybook."
-        },
-        {
-          "zh": "放学后，哥哥谈到互助。",
-          "en": "After school, my older brother mentions how to help each other."
-        },
-        {
-          "zh": "词卡帮助我们了解互信。",
-          "en": "A word card helps us understand mutual trust."
         }
       ],
       "etymologyHint": "Two hooks hooking eachother",
@@ -47650,24 +35733,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "kilowatt"
         }
       ],
-      "sentence": {
-        "zh": "阅读时，朋友在练习册里看到瓦解。",
-        "en": "While reading, my friend sees how to collapse in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，朋友在练习册里看到瓦解。",
-          "en": "While reading, my friend sees how to collapse in a workbook."
-        },
-        {
-          "zh": "阅读时，朋友谈到砖瓦。",
-          "en": "While reading, my friend mentions tiles and bricks."
-        },
-        {
-          "zh": "书本帮助我们了解千瓦。",
-          "en": "A book helps us understand kilowatt."
-        }
-      ],
       "etymologyHint": "An interlocking roof tile",
       "sourceTags": [
         "common-800",
@@ -47720,24 +35785,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "止咳",
           "meaningEn": "to suppress coughing"
-        }
-      ],
-      "sentence": {
-        "zh": "写作业时，我们在学校展板上看到停止。",
-        "en": "While doing homework, we see how to stop on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，我们在学校展板上看到停止。",
-          "en": "While doing homework, we see how to stop on the school display board."
-        },
-        {
-          "zh": "写作业时，我们谈到为止。",
-          "en": "While doing homework, we mention until."
-        },
-        {
-          "zh": "图画帮助我们了解止咳。",
-          "en": "A picture helps us understand how to suppress coughing."
         }
       ],
       "etymologyHint": "A foot",
@@ -47794,24 +35841,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "scallop"
         }
       ],
-      "sentence": {
-        "zh": "这本书是我的宝贝。",
-        "en": "This book is my treasure."
-      },
-      "sentences": [
-        {
-          "zh": "这本书是我的宝贝。",
-          "en": "This book is my treasure."
-        },
-        {
-          "zh": "沙滩上有很多贝壳。",
-          "en": "There are many shells on the beach."
-        },
-        {
-          "zh": "海鲜店里有扇贝。",
-          "en": "There are scallops in the seafood shop."
-        }
-      ],
       "etymologyHint": "A sea shell, once used as currency",
       "sourceTags": [
         "common-800",
@@ -47864,24 +35893,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "冈陵",
           "meaningEn": "low hills"
-        }
-      ],
-      "sentence": {
-        "zh": "山冈上开着小花。",
-        "en": "Small flowers bloom on the hill."
-      },
-      "sentences": [
-        {
-          "zh": "山冈上开着小花。",
-          "en": "Small flowers bloom on the hill."
-        },
-        {
-          "zh": "远处的冈峦连在一起。",
-          "en": "The distant hills are linked together."
-        },
-        {
-          "zh": "地图上画着一片冈陵。",
-          "en": "A stretch of low hills is drawn on the map."
         }
       ],
       "etymologyHint": "Simplified form of 岡, clouds 网 forming over a mountain 山",
@@ -47938,24 +35949,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to take a nap"
         }
       ],
-      "sentence": {
-        "zh": "活动课上，我在中文角里看到午餐。",
-        "en": "During activity class, I see lunch in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，我在中文角里看到午餐。",
-          "en": "During activity class, I see lunch in the Chinese corner."
-        },
-        {
-          "zh": "活动课上，我谈到下午。",
-          "en": "During activity class, I mention afternoon."
-        },
-        {
-          "zh": "卡片帮助我们了解午睡。",
-          "en": "A card helps us understand how to take a nap."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -48010,24 +36003,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to rise in value"
         }
       ],
-      "sentence": {
-        "zh": "复习时，同学在阅读时间里看到升级。",
-        "en": "While reviewing, my classmate sees how to go up by one grade during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，同学在阅读时间里看到升级。",
-          "en": "While reviewing, my classmate sees how to go up by one grade during reading time."
-        },
-        {
-          "zh": "复习时，同学谈到上升。",
-          "en": "While reviewing, my classmate mentions how to rise."
-        },
-        {
-          "zh": "阅读卡帮助我们了解升值。",
-          "en": "A reading card helps us understand how to rise in value."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -48080,24 +36055,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "仁厚",
           "meaningEn": "kindhearted"
-        }
-      ],
-      "sentence": {
-        "zh": "讨论时，姐姐在画册里看到仁慈。",
-        "en": "During discussion, my older sister sees benevolent in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，姐姐在画册里看到仁慈。",
-          "en": "During discussion, my older sister sees benevolent in a picture book."
-        },
-        {
-          "zh": "讨论时，姐姐谈到仁化。",
-          "en": "During discussion, my older sister mentions this word."
-        },
-        {
-          "zh": "图片帮助我们了解仁厚。",
-          "en": "An image helps us understand kindhearted."
         }
       ],
       "etymologyHint": "A caring relationship between two 二 people 亻",
@@ -48155,24 +36112,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "attendant"
         }
       ],
-      "sentence": {
-        "zh": "警察是人民的公仆。",
-        "en": "Police officers are public servants."
-      },
-      "sentences": [
-        {
-          "zh": "警察是人民的公仆。",
-          "en": "Police officers are public servants."
-        },
-        {
-          "zh": "故事里的仆人帮主人开门。",
-          "en": "The servant in the story helps open the door."
-        },
-        {
-          "zh": "古代有仆从跟在车旁。",
-          "en": "In ancient times, an attendant followed beside the cart."
-        }
-      ],
       "etymologyHint": "person",
       "sourceTags": [
         "common-800",
@@ -48226,24 +36165,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "仇字",
           "meaningEn": "the character 仇"
-        }
-      ],
-      "sentence": {
-        "zh": "仇姓是一个中文姓氏。",
-        "en": "Qiu is a Chinese surname."
-      },
-      "sentences": [
-        {
-          "zh": "仇姓是一个中文姓氏。",
-          "en": "Qiu is a Chinese surname."
-        },
-        {
-          "zh": "仇英是古代画家。",
-          "en": "Qiu Ying was an ancient painter."
-        },
-        {
-          "zh": "仇字左边是单人旁。",
-          "en": "The character chou has the person radical on the left."
         }
       ],
       "etymologyHint": "person",
@@ -48300,24 +36221,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "foreign currency"
         }
       ],
-      "sentence": {
-        "zh": "中文课上，我们在家里的书架上看到货币。",
-        "en": "In Chinese class, we see currency on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，我们在家里的书架上看到货币。",
-          "en": "In Chinese class, we see currency on the bookshelf at home."
-        },
-        {
-          "zh": "中文课上，我们谈到硬币。",
-          "en": "In Chinese class, we mention coin."
-        },
-        {
-          "zh": "小组活动帮助我们了解外币。",
-          "en": "A group activity helps us understand foreign currency."
-        }
-      ],
       "etymologyHint": "Bills written on silk 巾",
       "sourceTags": [
         "common-800",
@@ -48370,24 +36273,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "频仍",
           "meaningEn": "frequent"
-        }
-      ],
-      "sentence": {
-        "zh": "放学后，妹妹在图书馆里看到仍然。",
-        "en": "After school, my younger sister sees still in the library."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，妹妹在图书馆里看到仍然。",
-          "en": "After school, my younger sister sees still in the library."
-        },
-        {
-          "zh": "放学后，妹妹谈到仍旧。",
-          "en": "After school, my younger sister mentions still."
-        },
-        {
-          "zh": "词卡帮助我们了解频仍。",
-          "en": "A word card helps us understand frequent."
         }
       ],
       "etymologyHint": "then",
@@ -48445,24 +36330,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "not only"
         }
       ],
-      "sentence": {
-        "zh": "阅读时，小组同学在教室里看到仅仅。",
-        "en": "While reading, my group members see barely in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，小组同学在教室里看到仅仅。",
-          "en": "While reading, my group members see barely in the classroom."
-        },
-        {
-          "zh": "阅读时，小组同学谈到不仅。",
-          "en": "While reading, my group members mention not just."
-        },
-        {
-          "zh": "书本帮助我们了解不仅仅。",
-          "en": "A book helps us understand not only."
-        }
-      ],
       "etymologyHint": "person",
       "sourceTags": [
         "common-800",
@@ -48515,24 +36382,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "市斤",
           "meaningEn": "Chinese unit of weight equal to 0.5 kg"
-        }
-      ],
-      "sentence": {
-        "zh": "写作业时，我在故事书里看到公斤。",
-        "en": "While doing homework, I see kilogram in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，我在故事书里看到公斤。",
-          "en": "While doing homework, I see kilogram in a storybook."
-        },
-        {
-          "zh": "写作业时，我谈到斤两。",
-          "en": "While doing homework, I mention weight."
-        },
-        {
-          "zh": "图画帮助我们了解市斤。",
-          "en": "A picture helps us understand Chinese unit of weight equal to 0.5 kg."
         }
       ],
       "etymologyHint": "",
@@ -48590,24 +36439,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "paw print"
         }
       ],
-      "sentence": {
-        "zh": "周末，同学在练习册里看到爪子。",
-        "en": "On the weekend, my classmate sees claw in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "周末，同学在练习册里看到爪子。",
-          "en": "On the weekend, my classmate sees claw in a workbook."
-        },
-        {
-          "zh": "周末，同学谈到爪儿。",
-          "en": "On the weekend, my classmate mentions paws."
-        },
-        {
-          "zh": "故事帮助我们了解爪印。",
-          "en": "A story helps us understand paw print."
-        }
-      ],
       "etymologyHint": "A bird's talons",
       "sourceTags": [
         "common-800",
@@ -48660,24 +36491,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "介于",
           "meaningEn": "between"
-        }
-      ],
-      "sentence": {
-        "zh": "午饭后，姐姐在学校展板上看到介绍。",
-        "en": "After lunch, my older sister sees how to introduce on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，姐姐在学校展板上看到介绍。",
-          "en": "After lunch, my older sister sees how to introduce on the school display board."
-        },
-        {
-          "zh": "午饭后，姐姐谈到介入。",
-          "en": "After lunch, my older sister mentions how to intervene."
-        },
-        {
-          "zh": "例子帮助我们了解介于。",
-          "en": "An example helps us understand between."
         }
       ],
       "etymologyHint": "A border 八 dividing people 人",
@@ -48735,24 +36548,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "father and son"
         }
       ],
-      "sentence": {
-        "zh": "活动课上，哥哥在小组活动中看到父亲。",
-        "en": "During activity class, my older brother sees father during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，哥哥在小组活动中看到父亲。",
-          "en": "During activity class, my older brother sees father during a group activity."
-        },
-        {
-          "zh": "活动课上，哥哥谈到父母。",
-          "en": "During activity class, my older brother mentions father and mother."
-        },
-        {
-          "zh": "卡片帮助我们了解父子。",
-          "en": "A card helps us understand father and son."
-        }
-      ],
       "etymologyHint": "A hand 乂 holding an axe 八",
       "sourceTags": [
         "common-800",
@@ -48805,24 +36600,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "吉凶",
           "meaningEn": "fortune and misfortune"
-        }
-      ],
-      "sentence": {
-        "zh": "故事里的老虎很凶猛。",
-        "en": "The tiger in the story is fierce."
-      },
-      "sentences": [
-        {
-          "zh": "故事里的老虎很凶猛。",
-          "en": "The tiger in the story is fierce."
-        },
-        {
-          "zh": "凶字里面有一个叉。",
-          "en": "The character xiong has a cross shape inside."
-        },
-        {
-          "zh": "古人常常谈吉凶。",
-          "en": "Ancient people often talked about fortune and misfortune."
         }
       ],
       "etymologyHint": "A container 凵 of wickedness 乂",
@@ -48879,24 +36656,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "lacking in strength"
         }
       ],
-      "sentence": {
-        "zh": "讨论时，我们在中文角里看到缺乏。",
-        "en": "During discussion, we see how to lack in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，我们在中文角里看到缺乏。",
-          "en": "During discussion, we see how to lack in the Chinese corner."
-        },
-        {
-          "zh": "讨论时，我们谈到贫乏。",
-          "en": "During discussion, we mention impoverished."
-        },
-        {
-          "zh": "图片帮助我们了解乏力。",
-          "en": "An image helps us understand lacking in strength."
-        }
-      ],
       "etymologyHint": "A foot 之 running into a wall or barrier 丿",
       "sourceTags": [
         "common-800",
@@ -48949,24 +36708,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "仓位",
           "meaningEn": "storage space"
-        }
-      ],
-      "sentence": {
-        "zh": "仓库里放着很多书。",
-        "en": "Many books are stored in the warehouse."
-      },
-      "sentences": [
-        {
-          "zh": "仓库里放着很多书。",
-          "en": "Many books are stored in the warehouse."
-        },
-        {
-          "zh": "仓促出门容易忘东西。",
-          "en": "Leaving in a hurry makes it easy to forget things."
-        },
-        {
-          "zh": "这个箱子占了一个仓位。",
-          "en": "This box takes up one storage space."
         }
       ],
       "etymologyHint": "Simplified form of 倉; grains 食 kept in storage 口",
@@ -49024,24 +36765,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "clan"
         }
       ],
-      "sentence": {
-        "zh": "早读时，小组同学在画册里看到姓氏。",
-        "en": "During morning reading, my group members see family name in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，小组同学在画册里看到姓氏。",
-          "en": "During morning reading, my group members see family name in a picture book."
-        },
-        {
-          "zh": "早读时，小组同学谈到摄氏度。",
-          "en": "During morning reading, my group members mention °C."
-        },
-        {
-          "zh": "对话帮助我们了解氏族。",
-          "en": "A dialogue helps us understand clan."
-        }
-      ],
       "etymologyHint": "A person bowing down",
       "sourceTags": [
         "common-800",
@@ -49094,24 +36817,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "勿忘我",
           "meaningEn": "forget-me-not, genus Myosotis"
-        }
-      ],
-      "sentence": {
-        "zh": "中文课上，我在作业本上看到切勿。",
-        "en": "In Chinese class, I see by no means in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，我在作业本上看到切勿。",
-          "en": "In Chinese class, I see by no means in the homework book."
-        },
-        {
-          "zh": "中文课上，我谈到勿求人。",
-          "en": "In Chinese class, I mention this word."
-        },
-        {
-          "zh": "小组活动帮助我们了解勿忘我。",
-          "en": "A group activity helps us understand forget-me-not, genus Myosotis."
         }
       ],
       "etymologyHint": "A knife 勹 cutting fragments 丿 off",
@@ -49168,24 +36873,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "IOU"
         }
       ],
-      "sentence": {
-        "zh": "放学后，同学在校园里看到欠缺。",
-        "en": "After school, my classmate sees how to be deficient in on campus."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，同学在校园里看到欠缺。",
-          "en": "After school, my classmate sees how to be deficient in on campus."
-        },
-        {
-          "zh": "放学后，同学谈到拖欠。",
-          "en": "After school, my classmate mentions in arrears."
-        },
-        {
-          "zh": "词卡帮助我们了解欠条。",
-          "en": "A word card helps us understand IOU."
-        }
-      ],
       "etymologyHint": "A man 人 yawning ⺈",
       "sourceTags": [
         "common-800",
@@ -49240,24 +36927,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "loyal heart"
         }
       ],
-      "sentence": {
-        "zh": "花园里的牡丹开了。",
-        "en": "The peonies in the garden have bloomed."
-      },
-      "sentences": [
-        {
-          "zh": "花园里的牡丹开了。",
-          "en": "The peonies in the garden have bloomed."
-        },
-        {
-          "zh": "这幅丹青画得很美。",
-          "en": "This painting is very beautiful."
-        },
-        {
-          "zh": "故事里的英雄有一片丹心。",
-          "en": "The hero in the story has a loyal heart."
-        }
-      ],
       "etymologyHint": "A red pellet 丶 from a mine 井",
       "sourceTags": [
         "common-800",
@@ -49310,24 +36979,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "匀整",
           "meaningEn": "neat and well-spaced"
-        }
-      ],
-      "sentence": {
-        "zh": "写作业时，哥哥在图书馆里看到均匀。",
-        "en": "While doing homework, my older brother sees even in the library."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，哥哥在图书馆里看到均匀。",
-          "en": "While doing homework, my older brother sees even in the library."
-        },
-        {
-          "zh": "写作业时，哥哥谈到匀实。",
-          "en": "While doing homework, my older brother mentions even."
-        },
-        {
-          "zh": "图画帮助我们了解匀整。",
-          "en": "A picture helps us understand neat and well-spaced."
         }
       ],
       "etymologyHint": "Using a spoon 勹 to measure out two equal parts 冫",
@@ -49385,24 +37036,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "lustrous and black"
         }
       ],
-      "sentence": {
-        "zh": "周末，朋友在教室里看到乌云。",
-        "en": "On the weekend, my friend sees black cloud in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "周末，朋友在教室里看到乌云。",
-          "en": "On the weekend, my friend sees black cloud in the classroom."
-        },
-        {
-          "zh": "周末，朋友谈到乌黑。",
-          "en": "On the weekend, my friend mentions jet-black."
-        },
-        {
-          "zh": "故事帮助我们了解乌亮。",
-          "en": "A story helps us understand lustrous and black."
-        }
-      ],
       "etymologyHint": "Simplified form of 烏; a crow; compare 鸟",
       "sourceTags": [
         "common-800",
@@ -49456,24 +37089,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "勾起",
           "meaningEn": "bring to mind"
-        }
-      ],
-      "sentence": {
-        "zh": "我用铅笔勾画小山。",
-        "en": "I use a pencil to sketch a small mountain."
-      },
-      "sentences": [
-        {
-          "zh": "我用铅笔勾画小山。",
-          "en": "I use a pencil to sketch a small mountain."
-        },
-        {
-          "zh": "请在正确答案旁边勾选。",
-          "en": "Please tick beside the correct answer."
-        },
-        {
-          "zh": "这首歌勾起我的回忆。",
-          "en": "This song brings back my memories."
         }
       ],
       "etymologyHint": "",
@@ -49530,24 +37145,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "pineapple"
         }
       ],
-      "sentence": {
-        "zh": "活动课上，妹妹在练习册里看到凤凰。",
-        "en": "During activity class, my younger sister sees phoenix in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，妹妹在练习册里看到凤凰。",
-          "en": "During activity class, my younger sister sees phoenix in a workbook."
-        },
-        {
-          "zh": "活动课上，妹妹谈到丹凤。",
-          "en": "During activity class, my younger sister mentions red phoenix."
-        },
-        {
-          "zh": "卡片帮助我们了解凤梨。",
-          "en": "A card helps us understand pineapple."
-        }
-      ],
       "etymologyHint": "simplified form of 鳥 bird",
       "sourceTags": [
         "common-800",
@@ -49600,24 +37197,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "回忆录",
           "meaningEn": "memoir"
-        }
-      ],
-      "sentence": {
-        "zh": "复习时，小组同学在学校展板上看到记忆。",
-        "en": "While reviewing, my group members see how to remember on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，小组同学在学校展板上看到记忆。",
-          "en": "While reviewing, my group members see how to remember on the school display board."
-        },
-        {
-          "zh": "复习时，小组同学谈到回忆。",
-          "en": "While reviewing, my group members mention how to recall."
-        },
-        {
-          "zh": "阅读卡帮助我们了解回忆录。",
-          "en": "A reading card helps us understand memoir."
         }
       ],
       "etymologyHint": "heart",
@@ -49674,24 +37253,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to place an order"
         }
       ],
-      "sentence": {
-        "zh": "讨论时，我在小组活动中看到订单。",
-        "en": "During discussion, I see order during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，我在小组活动中看到订单。",
-          "en": "During discussion, I see order during a group activity."
-        },
-        {
-          "zh": "讨论时，我谈到订婚。",
-          "en": "During discussion, I mention how to get engaged."
-        },
-        {
-          "zh": "图片帮助我们了解预订。",
-          "en": "An image helps us understand how to place an order."
-        }
-      ],
       "etymologyHint": "speech",
       "sourceTags": [
         "common-800",
@@ -49744,24 +37305,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "窗户",
           "meaningEn": "window"
-        }
-      ],
-      "sentence": {
-        "zh": "看图时，同学在课外书里看到客户。",
-        "en": "While looking at a picture, my classmate sees client in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，同学在课外书里看到客户。",
-          "en": "While looking at a picture, my classmate sees client in an extracurricular book."
-        },
-        {
-          "zh": "看图时，同学谈到户外。",
-          "en": "While looking at a picture, my classmate mentions outdoor."
-        },
-        {
-          "zh": "练习帮助我们了解窗户。",
-          "en": "An exercise helps us understand window."
         }
       ],
       "etymologyHint": "Simplified form of 戶; a door swinging on its hinge",
@@ -49819,24 +37362,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "ruler"
         }
       ],
-      "sentence": {
-        "zh": "早读时，姐姐在中文角里看到尺寸。",
-        "en": "During morning reading, my older sister sees size in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，姐姐在中文角里看到尺寸。",
-          "en": "During morning reading, my older sister sees size in the Chinese corner."
-        },
-        {
-          "zh": "早读时，姐姐谈到尺度。",
-          "en": "During morning reading, my older sister mentions scale."
-        },
-        {
-          "zh": "对话帮助我们了解尺子。",
-          "en": "A dialogue helps us understand ruler."
-        }
-      ],
       "etymologyHint": "Picture of a man measuring by pacing",
       "sourceTags": [
         "common-800",
@@ -49889,24 +37414,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "小丑",
           "meaningEn": "clown"
-        }
-      ],
-      "sentence": {
-        "zh": "中文课上，哥哥在阅读时间里看到丑闻。",
-        "en": "In Chinese class, my older brother sees scandal during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，哥哥在阅读时间里看到丑闻。",
-          "en": "In Chinese class, my older brother sees scandal during reading time."
-        },
-        {
-          "zh": "中文课上，哥哥谈到丑陋。",
-          "en": "In Chinese class, my older brother mentions ugly."
-        },
-        {
-          "zh": "小组活动帮助我们了解小丑。",
-          "en": "A group activity helps us understand clown."
         }
       ],
       "etymologyHint": "",
@@ -49963,24 +37470,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "face"
         }
       ],
-      "sentence": {
-        "zh": "孔子是中国古代的老师。",
-        "en": "Confucius was a teacher in ancient China."
-      },
-      "sentences": [
-        {
-          "zh": "孔子是中国古代的老师。",
-          "en": "Confucius was a teacher in ancient China."
-        },
-        {
-          "zh": "纸上有一个小孔。",
-          "en": "There is a small hole in the paper."
-        },
-        {
-          "zh": "他的面孔带着笑容。",
-          "en": "His face has a smile."
-        }
-      ],
       "etymologyHint": "The mouth 乚 of a crying baby 子",
       "sourceTags": [
         "common-800",
@@ -50033,24 +37522,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "允宜",
           "meaningEn": "appropriate"
-        }
-      ],
-      "sentence": {
-        "zh": "阅读时，我们在作业本上看到允许。",
-        "en": "While reading, we see how to permit in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，我们在作业本上看到允许。",
-          "en": "While reading, we see how to permit in the homework book."
-        },
-        {
-          "zh": "阅读时，我们谈到允准。",
-          "en": "While reading, we mention how to approve."
-        },
-        {
-          "zh": "书本帮助我们了解允宜。",
-          "en": "A book helps us understand appropriate."
         }
       ],
       "etymologyHint": "",
@@ -50108,24 +37579,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to assign"
         }
       ],
-      "sentence": {
-        "zh": "写作业时，妹妹在校园里看到给予。",
-        "en": "While doing homework, my younger sister sees how to give on campus."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，妹妹在校园里看到给予。",
-          "en": "While doing homework, my younger sister sees how to give on campus."
-        },
-        {
-          "zh": "写作业时，妹妹谈到予以。",
-          "en": "While doing homework, my younger sister mentions how to give."
-        },
-        {
-          "zh": "图画帮助我们了解赋予。",
-          "en": "A picture helps us understand how to assign."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -50178,24 +37631,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "劝阻",
           "meaningEn": "to advise against"
-        }
-      ],
-      "sentence": {
-        "zh": "周末，小组同学在家里的书架上看到劝说。",
-        "en": "On the weekend, my group members see how to persuade on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "周末，小组同学在家里的书架上看到劝说。",
-          "en": "On the weekend, my group members see how to persuade on the bookshelf at home."
-        },
-        {
-          "zh": "周末，小组同学谈到劝告。",
-          "en": "On the weekend, my group members mention how to advise."
-        },
-        {
-          "zh": "故事帮助我们了解劝阻。",
-          "en": "A story helps us understand how to advise against."
         }
       ],
       "etymologyHint": "The power 力 beside 又 the throne",
@@ -50252,24 +37687,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "double"
         }
       ],
-      "sentence": {
-        "zh": "午饭后，我在图书馆里看到双方。",
-        "en": "After lunch, I see bilateral in the library."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，我在图书馆里看到双方。",
-          "en": "After lunch, I see bilateral in the library."
-        },
-        {
-          "zh": "午饭后，我谈到双手。",
-          "en": "After lunch, I mention both hands."
-        },
-        {
-          "zh": "例子帮助我们了解双重。",
-          "en": "An example helps us understand double."
-        }
-      ],
       "etymologyHint": "Two hands 又 side-by-side",
       "sourceTags": [
         "common-800",
@@ -50322,24 +37739,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "梦幻",
           "meaningEn": "dreamlike"
-        }
-      ],
-      "sentence": {
-        "zh": "他喜欢写充满幻想的故事。",
-        "en": "He likes writing stories full of fantasy."
-      },
-      "sentences": [
-        {
-          "zh": "他喜欢写充满幻想的故事。",
-          "en": "He likes writing stories full of fantasy."
-        },
-        {
-          "zh": "太累的时候，人可能会有幻觉。",
-          "en": "When people are too tired, they may have illusions."
-        },
-        {
-          "zh": "舞台上的灯光很梦幻。",
-          "en": "The lights on the stage are dreamlike."
         }
       ],
       "etymologyHint": "An inversion of 予, \"to give\"",
@@ -50396,24 +37795,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "magnolia"
         }
       ],
-      "sentence": {
-        "zh": "晚饭有甜玉米。",
-        "en": "Dinner has sweet corn."
-      },
-      "sentences": [
-        {
-          "zh": "晚饭有甜玉米。",
-          "en": "Dinner has sweet corn."
-        },
-        {
-          "zh": "博物馆里有玉石。",
-          "en": "There are jade stones in the museum."
-        },
-        {
-          "zh": "院子里的玉兰很香。",
-          "en": "The magnolia in the yard smells lovely."
-        }
-      ],
       "etymologyHint": "A necklace 丨 adorned with three pieces of jade",
       "sourceTags": [
         "common-800",
@@ -50466,24 +37847,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "报刊",
           "meaningEn": "newspapers and periodicals"
-        }
-      ],
-      "sentence": {
-        "zh": "讨论时，哥哥在练习册里看到刊登。",
-        "en": "During discussion, my older brother sees how to carry a story in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，哥哥在练习册里看到刊登。",
-          "en": "During discussion, my older brother sees how to carry a story in a workbook."
-        },
-        {
-          "zh": "讨论时，哥哥谈到刊物。",
-          "en": "During discussion, my older brother mentions publication."
-        },
-        {
-          "zh": "图片帮助我们了解报刊。",
-          "en": "An image helps us understand newspapers and periodicals."
         }
       ],
       "etymologyHint": "knife",
@@ -50540,24 +37903,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "not having undergone"
         }
       ],
-      "sentence": {
-        "zh": "看图时，朋友在学校展板上看到未来。",
-        "en": "While looking at a picture, my friend sees future on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，朋友在学校展板上看到未来。",
-          "en": "While looking at a picture, my friend sees future on the school display board."
-        },
-        {
-          "zh": "看图时，朋友谈到从未。",
-          "en": "While looking at a picture, my friend mentions never."
-        },
-        {
-          "zh": "练习帮助我们了解未经。",
-          "en": "An exercise helps us understand not having undergone."
-        }
-      ],
       "etymologyHint": "A wheat plant that has not yet borne fruit; compare 來",
       "sourceTags": [
         "common-800",
@@ -50610,24 +37955,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "袭击",
           "meaningEn": "attack"
-        }
-      ],
-      "sentence": {
-        "zh": "早读时，我们在小组活动中看到攻击。",
-        "en": "During morning reading, we see how to attack during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，我们在小组活动中看到攻击。",
-          "en": "During morning reading, we see how to attack during a group activity."
-        },
-        {
-          "zh": "早读时，我们谈到打击。",
-          "en": "During morning reading, we mention how to hit."
-        },
-        {
-          "zh": "对话帮助我们了解袭击。",
-          "en": "A dialogue helps us understand attack."
         }
       ],
       "etymologyHint": "Simplified form of 擊; 手 provides the meaning",
@@ -50684,24 +38011,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "ingenious"
         }
       ],
-      "sentence": {
-        "zh": "中文课上，妹妹在课外书里看到巧合。",
-        "en": "In Chinese class, my younger sister sees coincidence in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，妹妹在课外书里看到巧合。",
-          "en": "In Chinese class, my younger sister sees coincidence in an extracurricular book."
-        },
-        {
-          "zh": "中文课上，妹妹谈到技巧。",
-          "en": "In Chinese class, my younger sister mentions skill."
-        },
-        {
-          "zh": "小组活动帮助我们了解巧妙。",
-          "en": "A group activity helps us understand ingenious."
-        }
-      ],
       "etymologyHint": "work",
       "sourceTags": [
         "common-800",
@@ -50754,24 +38063,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "红扑扑",
           "meaningEn": "rosy"
-        }
-      ],
-      "sentence": {
-        "zh": "消防员扑灭了小火。",
-        "en": "The firefighter puts out the small fire."
-      },
-      "sentences": [
-        {
-          "zh": "消防员扑灭了小火。",
-          "en": "The firefighter puts out the small fire."
-        },
-        {
-          "zh": "桌上放着一副扑克。",
-          "en": "There is a deck of playing cards on the table."
-        },
-        {
-          "zh": "妹妹跑完步，脸红扑扑的。",
-          "en": "After running, my younger sister's face is rosy."
         }
       ],
       "etymologyHint": "hand",
@@ -50829,24 +38120,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to gather together as with a rake"
         }
       ],
-      "sentence": {
-        "zh": "阅读时，我在阅读时间里看到扒手。",
-        "en": "While reading, I see pickpocket during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，我在阅读时间里看到扒手。",
-          "en": "While reading, I see pickpocket during reading time."
-        },
-        {
-          "zh": "阅读时，我谈到扒拉。",
-          "en": "While reading, I mention how to push lightly."
-        },
-        {
-          "zh": "书本帮助我们了解扒搂。",
-          "en": "A book helps us understand how to gather together as with a rake."
-        }
-      ],
       "etymologyHint": "hand",
       "sourceTags": [
         "common-800",
@@ -50899,24 +38172,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "功劳",
           "meaningEn": "contribution"
-        }
-      ],
-      "sentence": {
-        "zh": "写作业时，同学在画册里看到功能。",
-        "en": "While doing homework, my classmate sees function in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，同学在画册里看到功能。",
-          "en": "While doing homework, my classmate sees function in a picture book."
-        },
-        {
-          "zh": "写作业时，同学谈到功夫。",
-          "en": "While doing homework, my classmate mentions skill."
-        },
-        {
-          "zh": "图画帮助我们了解功劳。",
-          "en": "A picture helps us understand contribution."
         }
       ],
       "etymologyHint": "Results produced by capable 力 labor 工; 工 also provides the pronunciation",
@@ -50973,24 +38228,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to abandon"
         }
       ],
-      "sentence": {
-        "zh": "周末，姐姐在作业本上看到扔下。",
-        "en": "On the weekend, my older sister sees how to throw down in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "周末，姐姐在作业本上看到扔下。",
-          "en": "On the weekend, my older sister sees how to throw down in the homework book."
-        },
-        {
-          "zh": "周末，姐姐谈到扔掉。",
-          "en": "On the weekend, my older sister mentions how to throw away."
-        },
-        {
-          "zh": "故事帮助我们了解扔弃。",
-          "en": "A story helps us understand how to abandon."
-        }
-      ],
       "etymologyHint": "hand",
       "sourceTags": [
         "common-800",
@@ -51043,24 +38280,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "甘于",
           "meaningEn": "to be willing to"
-        }
-      ],
-      "sentence": {
-        "zh": "午饭后，哥哥在校园里看到甘心。",
-        "en": "After lunch, my older brother sees how to be willing to on campus."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，哥哥在校园里看到甘心。",
-          "en": "After lunch, my older brother sees how to be willing to on campus."
-        },
-        {
-          "zh": "午饭后，哥哥谈到甘味。",
-          "en": "After lunch, my older brother mentions sweetness."
-        },
-        {
-          "zh": "例子帮助我们了解甘于。",
-          "en": "An example helps us understand how to be willing to."
         }
       ],
       "etymologyHint": "Picture of a tongue with 一 marking the sweet spot",
@@ -51117,24 +38336,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "people of ancient times"
         }
       ],
-      "sentence": {
-        "zh": "活动课上，朋友在家里的书架上看到古老。",
-        "en": "During activity class, my friend sees ancient on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，朋友在家里的书架上看到古老。",
-          "en": "During activity class, my friend sees ancient on the bookshelf at home."
-        },
-        {
-          "zh": "活动课上，朋友谈到古代。",
-          "en": "During activity class, my friend mentions ancient times."
-        },
-        {
-          "zh": "卡片帮助我们了解古人。",
-          "en": "A card helps us understand people of ancient times."
-        }
-      ],
       "etymologyHint": "Words passing through ten 十 mouths 口",
       "sourceTags": [
         "common-800",
@@ -51187,24 +38388,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "丙等",
           "meaningEn": "grade C"
-        }
-      ],
-      "sentence": {
-        "zh": "哥哥在丙班上课。",
-        "en": "My older brother studies in Class C."
-      },
-      "sentences": [
-        {
-          "zh": "哥哥在丙班上课。",
-          "en": "My older brother studies in Class C."
-        },
-        {
-          "zh": "丙字的笔画不多。",
-          "en": "The character bing does not have many strokes."
-        },
-        {
-          "zh": "这个结果是丙等。",
-          "en": "This result is grade C."
         }
       ],
       "etymologyHint": "",
@@ -51261,24 +38444,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "stern voice"
         }
       ],
-      "sentence": {
-        "zh": "讨论时，妹妹在教室里看到厉害。",
-        "en": "During discussion, my younger sister sees terrible in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，妹妹在教室里看到厉害。",
-          "en": "During discussion, my younger sister sees terrible in the classroom."
-        },
-        {
-          "zh": "讨论时，妹妹谈到严厉。",
-          "en": "During discussion, my younger sister mentions severe."
-        },
-        {
-          "zh": "图片帮助我们了解厉声。",
-          "en": "An image helps us understand stern voice."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -51331,24 +38496,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "灭亡",
           "meaningEn": "to be destroyed"
-        }
-      ],
-      "sentence": {
-        "zh": "看图时，小组同学在故事书里看到消灭。",
-        "en": "While looking at a picture, my group members see how to put an end to in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，小组同学在故事书里看到消灭。",
-          "en": "While looking at a picture, my group members see how to put an end to in a storybook."
-        },
-        {
-          "zh": "看图时，小组同学谈到毁灭。",
-          "en": "While looking at a picture, my group members mention how to perish."
-        },
-        {
-          "zh": "练习帮助我们了解灭亡。",
-          "en": "An exercise helps us understand how to be destroyed."
         }
       ],
       "etymologyHint": "To cover 一 a flame 火",
@@ -51407,24 +38554,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to compete and squeeze each other out"
         }
       ],
-      "sentence": {
-        "zh": "早读时，我在练习册里看到轧制。",
-        "en": "During morning reading, I see rolling metal in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，我在练习册里看到轧制。",
-          "en": "During morning reading, I see rolling metal in a workbook."
-        },
-        {
-          "zh": "早读时，我谈到轧钢。",
-          "en": "During morning reading, I mention how to roll steel."
-        },
-        {
-          "zh": "对话帮助我们了解倾轧。",
-          "en": "A dialogue helps us understand how to compete and squeeze each other out."
-        }
-      ],
       "etymologyHint": "cart",
       "sourceTags": [
         "common-800",
@@ -51478,24 +38607,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "卡通",
           "meaningEn": "cartoon"
-        }
-      ],
-      "sentence": {
-        "zh": "中文课上，同学在学校展板上看到卡车。",
-        "en": "In Chinese class, my classmate sees truck on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，同学在学校展板上看到卡车。",
-          "en": "In Chinese class, my classmate sees truck on the school display board."
-        },
-        {
-          "zh": "中文课上，同学谈到卡片。",
-          "en": "In Chinese class, my classmate mentions card."
-        },
-        {
-          "zh": "小组活动帮助我们了解卡通。",
-          "en": "A group activity helps us understand cartoon."
         }
       ],
       "etymologyHint": "A card squeezed between 上 and 下",
@@ -51553,24 +38664,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to occupy"
         }
       ],
-      "sentence": {
-        "zh": "放学后，姐姐在小组活动中看到占据。",
-        "en": "After school, my older sister sees how to occupy during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，姐姐在小组活动中看到占据。",
-          "en": "After school, my older sister sees how to occupy during a group activity."
-        },
-        {
-          "zh": "放学后，姐姐谈到占领。",
-          "en": "After school, my older sister mentions how to capture."
-        },
-        {
-          "zh": "词卡帮助我们了解占用。",
-          "en": "A word card helps us understand how to occupy."
-        }
-      ],
       "etymologyHint": "To speak 口 omens ⺊",
       "sourceTags": [
         "common-800",
@@ -51623,24 +38716,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "主帅",
           "meaningEn": "commander-in-chief"
-        }
-      ],
-      "sentence": {
-        "zh": "阅读时，哥哥在课外书里看到帅哥。",
-        "en": "While reading, my older brother sees handsome guy in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，哥哥在课外书里看到帅哥。",
-          "en": "While reading, my older brother sees handsome guy in an extracurricular book."
-        },
-        {
-          "zh": "阅读时，哥哥谈到帅气。",
-          "en": "While reading, my older brother mentions handsome."
-        },
-        {
-          "zh": "书本帮助我们了解主帅。",
-          "en": "A book helps us understand commander-in-chief."
         }
       ],
       "etymologyHint": "An army officer carrying a weapon 刂 and a flag 巾",
@@ -51697,24 +38772,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to return sth"
         }
       ],
-      "sentence": {
-        "zh": "写作业时，朋友在中文角里看到归来。",
-        "en": "While doing homework, my friend sees how to return in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，朋友在中文角里看到归来。",
-          "en": "While doing homework, my friend sees how to return in the Chinese corner."
-        },
-        {
-          "zh": "写作业时，朋友谈到回归。",
-          "en": "While doing homework, my friend mentions how to return to."
-        },
-        {
-          "zh": "图画帮助我们了解归还。",
-          "en": "A picture helps us understand how to return sth."
-        }
-      ],
       "etymologyHint": "Simplified form of 歸; a wife 帚 returning home; 追 provides the pronunciation",
       "sourceTags": [
         "common-800",
@@ -51767,24 +38824,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "旦夕",
           "meaningEn": "morning and evening"
-        }
-      ],
-      "sentence": {
-        "zh": "一旦开始，就要认真完成。",
-        "en": "Once we begin, we should finish carefully."
-      },
-      "sentences": [
-        {
-          "zh": "一旦开始，就要认真完成。",
-          "en": "Once we begin, we should finish carefully."
-        },
-        {
-          "zh": "元旦那天，学校放假。",
-          "en": "On New Year's Day, school is closed."
-        },
-        {
-          "zh": "他旦夕练习书法。",
-          "en": "He practises calligraphy morning and evening."
         }
       ],
       "etymologyHint": "The sun 日 rising over the horizon 一",
@@ -51842,24 +38881,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "tree leaves"
         }
       ],
-      "sentence": {
-        "zh": "午饭后，妹妹在画册里看到叶子。",
-        "en": "After lunch, my younger sister sees leaf in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，妹妹在画册里看到叶子。",
-          "en": "After lunch, my younger sister sees leaf in a picture book."
-        },
-        {
-          "zh": "午饭后，妹妹谈到茶叶。",
-          "en": "After lunch, my younger sister mentions tea."
-        },
-        {
-          "zh": "例子帮助我们了解树叶。",
-          "en": "An example helps us understand tree leaves."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -51912,24 +38933,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "甲型",
           "meaningEn": "type A"
-        }
-      ],
-      "sentence": {
-        "zh": "活动课上，小组同学在作业本上看到指甲。",
-        "en": "During activity class, my group members see fingernail in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，小组同学在作业本上看到指甲。",
-          "en": "During activity class, my group members see fingernail in the homework book."
-        },
-        {
-          "zh": "活动课上，小组同学谈到甲亢。",
-          "en": "During activity class, my group members mention hyperthyroidism."
-        },
-        {
-          "zh": "卡片帮助我们了解甲型。",
-          "en": "A card helps us understand type A."
         }
       ],
       "etymologyHint": "",
@@ -51986,24 +38989,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to apply"
         }
       ],
-      "sentence": {
-        "zh": "复习时，我在校园里看到申请。",
-        "en": "While reviewing, I see how to apply for sth on campus."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，我在校园里看到申请。",
-          "en": "While reviewing, I see how to apply for sth on campus."
-        },
-        {
-          "zh": "复习时，我谈到申报。",
-          "en": "While reviewing, I mention how to report."
-        },
-        {
-          "zh": "阅读卡帮助我们了解申领。",
-          "en": "A reading card helps us understand how to apply."
-        }
-      ],
       "etymologyHint": "A bolt of lightning",
       "sourceTags": [
         "common-800",
@@ -52056,24 +39041,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "叮咚",
           "meaningEn": "ding dong"
-        }
-      ],
-      "sentence": {
-        "zh": "讨论时，同学在家里的书架上看到叮嘱。",
-        "en": "During discussion, my classmate sees how to warn repeatedly on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，同学在家里的书架上看到叮嘱。",
-          "en": "During discussion, my classmate sees how to warn repeatedly on the bookshelf at home."
-        },
-        {
-          "zh": "讨论时，同学谈到叮叮。",
-          "en": "During discussion, my classmate mentions tinkling or jingling sound."
-        },
-        {
-          "zh": "图片帮助我们了解叮咚。",
-          "en": "An image helps us understand ding dong."
         }
       ],
       "etymologyHint": "mouth",
@@ -52130,24 +39097,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to ask"
         }
       ],
-      "sentence": {
-        "zh": "看图时，姐姐在图书馆里看到中央。",
-        "en": "While looking at a picture, my older sister sees central in the library."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，姐姐在图书馆里看到中央。",
-          "en": "While looking at a picture, my older sister sees central in the library."
-        },
-        {
-          "zh": "看图时，姐姐谈到央中。",
-          "en": "While looking at a picture, my older sister mentions how to ask for mediation."
-        },
-        {
-          "zh": "练习帮助我们了解央及。",
-          "en": "An exercise helps us understand how to ask."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -52202,24 +39151,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "elder brother and his wife"
         }
       ],
-      "sentence": {
-        "zh": "早读时，哥哥在教室里看到兄弟。",
-        "en": "During morning reading, my older brother sees brothers in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，哥哥在教室里看到兄弟。",
-          "en": "During morning reading, my older brother sees brothers in the classroom."
-        },
-        {
-          "zh": "早读时，哥哥谈到兄妹。",
-          "en": "During morning reading, my older brother mentions brother and sister."
-        },
-        {
-          "zh": "对话帮助我们了解兄嫂。",
-          "en": "A dialogue helps us understand elder brother and his wife."
-        }
-      ],
       "etymologyHint": "Older brother 儿 speaking 口 to younger ones",
       "sourceTags": [
         "common-800",
@@ -52272,24 +39203,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "叼着",
           "meaningEn": "to hold in the mouth"
-        }
-      ],
-      "sentence": {
-        "zh": "中文课上，朋友在故事书里看到叼走。",
-        "en": "In Chinese class, my friend sees how to carry away in the mouth in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，朋友在故事书里看到叼走。",
-          "en": "In Chinese class, my friend sees how to carry away in the mouth in a storybook."
-        },
-        {
-          "zh": "中文课上，朋友谈到叼住。",
-          "en": "In Chinese class, my friend mentions how to grip with the mouth."
-        },
-        {
-          "zh": "小组活动帮助我们了解叼着。",
-          "en": "A group activity helps us understand how to hold in the mouth."
         }
       ],
       "etymologyHint": "mouth",
@@ -52347,24 +39260,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to chatter"
         }
       ],
-      "sentence": {
-        "zh": "放学后，我们在练习册里看到唠叨。",
-        "en": "After school, we see how to prattle in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，我们在练习册里看到唠叨。",
-          "en": "After school, we see how to prattle in a workbook."
-        },
-        {
-          "zh": "放学后，我们谈到絮叨。",
-          "en": "After school, we mention long-winded."
-        },
-        {
-          "zh": "词卡帮助我们了解叨叨。",
-          "en": "A word card helps us understand how to chatter."
-        }
-      ],
       "etymologyHint": "mouth",
       "sourceTags": [
         "common-800",
@@ -52417,24 +39312,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "另一",
           "meaningEn": "another"
-        }
-      ],
-      "sentence": {
-        "zh": "阅读时，妹妹在学校展板上看到另外。",
-        "en": "While reading, my younger sister sees additional on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，妹妹在学校展板上看到另外。",
-          "en": "While reading, my younger sister sees additional on the school display board."
-        },
-        {
-          "zh": "阅读时，妹妹谈到另一方面。",
-          "en": "While reading, my younger sister mentions on the other hand."
-        },
-        {
-          "zh": "书本帮助我们了解另一。",
-          "en": "A book helps us understand another."
         }
       ],
       "etymologyHint": "",
@@ -52491,24 +39368,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to sigh"
         }
       ],
-      "sentence": {
-        "zh": "写作业时，小组同学在小组活动中看到惊叹。",
-        "en": "While doing homework, my group members see how to exclaim in admiration during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，小组同学在小组活动中看到惊叹。",
-          "en": "While doing homework, my group members see how to exclaim in admiration during a group activity."
-        },
-        {
-          "zh": "写作业时，小组同学谈到叹气。",
-          "en": "While doing homework, my group members mention how to sigh."
-        },
-        {
-          "zh": "图画帮助我们了解感叹。",
-          "en": "A picture helps us understand how to sigh."
-        }
-      ],
       "etymologyHint": "A mouth 口 exhaling 又",
       "sourceTags": [
         "common-800",
@@ -52561,24 +39420,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "失望",
           "meaningEn": "disappointed"
-        }
-      ],
-      "sentence": {
-        "zh": "周末，我在课外书里看到失去。",
-        "en": "On the weekend, I see how to lose in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "周末，我在课外书里看到失去。",
-          "en": "On the weekend, I see how to lose in an extracurricular book."
-        },
-        {
-          "zh": "周末，我谈到失败。",
-          "en": "On the weekend, I mention how to be defeated."
-        },
-        {
-          "zh": "故事帮助我们了解失望。",
-          "en": "A story helps us understand disappointed."
         }
       ],
       "etymologyHint": "Something 丿 falling from a hand 夫",
@@ -52635,24 +39476,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "straw"
         }
       ],
-      "sentence": {
-        "zh": "午饭后，同学在中文角里看到禾苗。",
-        "en": "After lunch, my classmate sees seedling in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，同学在中文角里看到禾苗。",
-          "en": "After lunch, my classmate sees seedling in the Chinese corner."
-        },
-        {
-          "zh": "午饭后，同学谈到禾场。",
-          "en": "After lunch, my classmate mentions threshing floor."
-        },
-        {
-          "zh": "例子帮助我们了解禾秆。",
-          "en": "An example helps us understand straw."
-        }
-      ],
       "etymologyHint": "A plant stalk with a sagging head",
       "sourceTags": [
         "common-800",
@@ -52705,24 +39528,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "丘壑",
           "meaningEn": "hills and valleys"
-        }
-      ],
-      "sentence": {
-        "zh": "活动课上，姐姐在阅读时间里看到丘陵。",
-        "en": "During activity class, my older sister sees hills during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，姐姐在阅读时间里看到丘陵。",
-          "en": "During activity class, my older sister sees hills during reading time."
-        },
-        {
-          "zh": "活动课上，姐姐谈到丘八。",
-          "en": "During activity class, my older sister mentions soldier."
-        },
-        {
-          "zh": "卡片帮助我们了解丘壑。",
-          "en": "A card helps us understand hills and valleys."
         }
       ],
       "etymologyHint": "Two hills",
@@ -52779,24 +39584,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to deal with"
         }
       ],
-      "sentence": {
-        "zh": "复习时，哥哥在画册里看到付出。",
-        "en": "While reviewing, my older brother sees how to pay in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，哥哥在画册里看到付出。",
-          "en": "While reviewing, my older brother sees how to pay in a picture book."
-        },
-        {
-          "zh": "复习时，哥哥谈到支付。",
-          "en": "While reviewing, my older brother mentions how to pay."
-        },
-        {
-          "zh": "阅读卡帮助我们了解应付。",
-          "en": "A reading card helps us understand how to deal with."
-        }
-      ],
       "etymologyHint": "To hand 寸 something over to someone 亻 ",
       "sourceTags": [
         "common-800",
@@ -52849,24 +39636,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "仗恃",
           "meaningEn": "to rely on"
-        }
-      ],
-      "sentence": {
-        "zh": "讨论时，朋友在作业本上看到打仗。",
-        "en": "During discussion, my friend sees how to fight a battle in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，朋友在作业本上看到打仗。",
-          "en": "During discussion, my friend sees how to fight a battle in the homework book."
-        },
-        {
-          "zh": "讨论时，朋友谈到仗势。",
-          "en": "During discussion, my friend mentions how to rely on power."
-        },
-        {
-          "zh": "图片帮助我们了解仗恃。",
-          "en": "An image helps us understand how to rely on."
         }
       ],
       "etymologyHint": "person",
@@ -52923,24 +39692,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "red-crowned crane"
         }
       ],
-      "sentence": {
-        "zh": "看图时，我们在校园里看到仙女。",
-        "en": "While looking at a picture, we see fairy on campus."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，我们在校园里看到仙女。",
-          "en": "While looking at a picture, we see fairy on campus."
-        },
-        {
-          "zh": "看图时，我们谈到神仙。",
-          "en": "While looking at a picture, we mention Daoist immortal."
-        },
-        {
-          "zh": "练习帮助我们了解仙鹤。",
-          "en": "An exercise helps us understand red-crowned crane."
-        }
-      ],
       "etymologyHint": "person",
       "sourceTags": [
         "common-800",
@@ -52993,24 +39744,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "仪表",
           "meaningEn": "appearance"
-        }
-      ],
-      "sentence": {
-        "zh": "早读时，妹妹在家里的书架上看到仪式。",
-        "en": "During morning reading, my younger sister sees ceremony on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，妹妹在家里的书架上看到仪式。",
-          "en": "During morning reading, my younger sister sees ceremony on the bookshelf at home."
-        },
-        {
-          "zh": "早读时，妹妹谈到仪器。",
-          "en": "During morning reading, my younger sister mentions instrument."
-        },
-        {
-          "zh": "对话帮助我们了解仪表。",
-          "en": "A dialogue helps us understand appearance."
         }
       ],
       "etymologyHint": "",
@@ -53069,24 +39802,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "closely woven"
         }
       ],
-      "sentence": {
-        "zh": "中文课上，小组同学在图书馆里看到仔细。",
-        "en": "In Chinese class, my group members see careful in the library."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，小组同学在图书馆里看到仔细。",
-          "en": "In Chinese class, my group members see careful in the library."
-        },
-        {
-          "zh": "中文课上，小组同学谈到牛仔裤。",
-          "en": "In Chinese class, my group members mention jeans."
-        },
-        {
-          "zh": "小组活动帮助我们了解仔密。",
-          "en": "A group activity helps us understand closely woven."
-        }
-      ],
       "etymologyHint": "A person 亻 keeping watch over a child 子; 子 also provides the pronunciation",
       "sourceTags": [
         "common-800",
@@ -53139,24 +39854,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "斥力",
           "meaningEn": "repulsion"
-        }
-      ],
-      "sentence": {
-        "zh": "放学后，我在教室里看到排斥。",
-        "en": "After school, I see how to reject in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，我在教室里看到排斥。",
-          "en": "After school, I see how to reject in the classroom."
-        },
-        {
-          "zh": "放学后，我谈到斥候。",
-          "en": "After school, I mention how to reconnoiter."
-        },
-        {
-          "zh": "词卡帮助我们了解斥力。",
-          "en": "A word card helps us understand repulsion."
         }
       ],
       "etymologyHint": "Someone scolded for cutting themselves 丶 with an axe 斤",
@@ -53213,24 +39910,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to partition"
         }
       ],
-      "sentence": {
-        "zh": "阅读时，同学在故事书里看到傻瓜。",
-        "en": "While reading, my classmate sees idiot in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，同学在故事书里看到傻瓜。",
-          "en": "While reading, my classmate sees idiot in a storybook."
-        },
-        {
-          "zh": "阅读时，同学谈到瓜子。",
-          "en": "While reading, my classmate mentions melon seed."
-        },
-        {
-          "zh": "书本帮助我们了解瓜分。",
-          "en": "A book helps us understand how to partition."
-        }
-      ],
       "etymologyHint": "Vines growing with a melon at their base",
       "sourceTags": [
         "common-800",
@@ -53285,24 +39964,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to care about"
         }
       ],
-      "sentence": {
-        "zh": "写作业时，姐姐在练习册里看到几乎。",
-        "en": "While doing homework, my older sister sees almost in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，姐姐在练习册里看到几乎。",
-          "en": "While doing homework, my older sister sees almost in a workbook."
-        },
-        {
-          "zh": "写作业时，姐姐谈到似乎。",
-          "en": "While doing homework, my older sister mentions it seems."
-        },
-        {
-          "zh": "图画帮助我们了解在乎。",
-          "en": "A picture helps us understand how to care about."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -53355,24 +40016,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "丛书",
           "meaningEn": "a series of books"
-        }
-      ],
-      "sentence": {
-        "zh": "周末，哥哥在学校展板上看到丛林。",
-        "en": "On the weekend, my older brother sees jungle on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "周末，哥哥在学校展板上看到丛林。",
-          "en": "On the weekend, my older brother sees jungle on the school display board."
-        },
-        {
-          "zh": "周末，哥哥谈到丛冢。",
-          "en": "On the weekend, my older brother mentions mass grave."
-        },
-        {
-          "zh": "故事帮助我们了解丛书。",
-          "en": "A story helps us understand a series of books."
         }
       ],
       "etymologyHint": "one",
@@ -53431,24 +40074,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "commanding officer"
         }
       ],
-      "sentence": {
-        "zh": "午饭后，朋友在小组活动中看到命令。",
-        "en": "After lunch, my friend sees order during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，朋友在小组活动中看到命令。",
-          "en": "After lunch, my friend sees order during a group activity."
-        },
-        {
-          "zh": "午饭后，朋友谈到指令。",
-          "en": "After lunch, my friend mentions order."
-        },
-        {
-          "zh": "例子帮助我们了解司令。",
-          "en": "An example helps us understand commanding officer."
-        }
-      ],
       "etymologyHint": "A person kneeling before a master 人",
       "sourceTags": [
         "common-800",
@@ -53503,24 +40128,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to shake"
         }
       ],
-      "sentence": {
-        "zh": "活动课上，我们在课外书里看到甩上。",
-        "en": "During activity class, we see how to slam in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，我们在课外书里看到甩上。",
-          "en": "During activity class, we see how to slam in an extracurricular book."
-        },
-        {
-          "zh": "活动课上，我们谈到甩干。",
-          "en": "During activity class, we mention how to remove excess moisture by spinning."
-        },
-        {
-          "zh": "卡片帮助我们了解甩动。",
-          "en": "A card helps us understand how to shake."
-        }
-      ],
       "etymologyHint": "The opposite of \"to use\" 用",
       "sourceTags": [
         "common-800",
@@ -53573,24 +40180,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "打印",
           "meaningEn": "print"
-        }
-      ],
-      "sentence": {
-        "zh": "这节课给我留下好印象。",
-        "en": "This lesson leaves me with a good impression."
-      },
-      "sentences": [
-        {
-          "zh": "这节课给我留下好印象。",
-          "en": "This lesson leaves me with a good impression."
-        },
-        {
-          "zh": "这本书的印刷很清楚。",
-          "en": "The printing in this book is clear."
-        },
-        {
-          "zh": "我把作业打印出来。",
-          "en": "I print out my homework."
         }
       ],
       "etymologyHint": "A hand 爪 stamping a seal 卩",
@@ -53648,24 +40237,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "sentence pattern"
         }
       ],
-      "sentence": {
-        "zh": "讨论时，小组同学在阅读时间里看到句子。",
-        "en": "During discussion, my group members see sentence during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，小组同学在阅读时间里看到句子。",
-          "en": "During discussion, my group members see sentence during reading time."
-        },
-        {
-          "zh": "讨论时，小组同学谈到一句话。",
-          "en": "During discussion, my group members mention in a word."
-        },
-        {
-          "zh": "图片帮助我们了解句型。",
-          "en": "An image helps us understand sentence pattern."
-        }
-      ],
       "etymologyHint": "A phrase 勹 from the mouth 口",
       "sourceTags": [
         "common-800",
@@ -53718,24 +40289,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "匆促",
           "meaningEn": "hastily"
-        }
-      ],
-      "sentence": {
-        "zh": "看图时，我在画册里看到匆匆。",
-        "en": "While looking at a picture, I see hurriedly in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，我在画册里看到匆匆。",
-          "en": "While looking at a picture, I see hurriedly in a picture book."
-        },
-        {
-          "zh": "看图时，我谈到匆忙。",
-          "en": "While looking at a picture, I mention hasty."
-        },
-        {
-          "zh": "练习帮助我们了解匆促。",
-          "en": "An exercise helps us understand hastily."
         }
       ],
       "etymologyHint": "",
@@ -53792,24 +40345,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "picture album"
         }
       ],
-      "sentence": {
-        "zh": "早读时，同学在作业本上看到注册。",
-        "en": "During morning reading, my classmate sees how to register in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，同学在作业本上看到注册。",
-          "en": "During morning reading, my classmate sees how to register in the homework book."
-        },
-        {
-          "zh": "早读时，同学谈到手册。",
-          "en": "During morning reading, my classmate mentions manual."
-        },
-        {
-          "zh": "对话帮助我们了解画册。",
-          "en": "A dialogue helps us understand picture album."
-        }
-      ],
       "etymologyHint": "Bamboo strips 冂 tied together to form a book",
       "sourceTags": [
         "common-800",
@@ -53862,24 +40397,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "犯规",
           "meaningEn": "break a rule"
-        }
-      ],
-      "sentence": {
-        "zh": "犯错后要认真改正。",
-        "en": "After making a mistake, we should correct it carefully."
-      },
-      "sentences": [
-        {
-          "zh": "犯错后要认真改正。",
-          "en": "After making a mistake, we should correct it carefully."
-        },
-        {
-          "zh": "下午上课时，我有点犯困。",
-          "en": "During afternoon class, I feel a little sleepy."
-        },
-        {
-          "zh": "比赛时不能犯规。",
-          "en": "During a match, we must not break the rules."
         }
       ],
       "etymologyHint": "dog",
@@ -53936,24 +40453,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "hungry and thirsty"
         }
       ],
-      "sentence": {
-        "zh": "放学后，哥哥在家里的书架上看到饥饿。",
-        "en": "After school, my older brother sees hunger on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，哥哥在家里的书架上看到饥饿。",
-          "en": "After school, my older brother sees hunger on the bookshelf at home."
-        },
-        {
-          "zh": "放学后，哥哥谈到充饥。",
-          "en": "After school, my older brother mentions how to allay one's hunger."
-        },
-        {
-          "zh": "词卡帮助我们了解饥渴。",
-          "en": "A word card helps us understand hungry and thirsty."
-        }
-      ],
       "etymologyHint": "food",
       "sourceTags": [
         "common-800",
@@ -54006,24 +40505,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "闪闪",
           "meaningEn": "flickering"
-        }
-      ],
-      "sentence": {
-        "zh": "阅读时，朋友在图书馆里看到闪电。",
-        "en": "While reading, my friend sees lightning in the library."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，朋友在图书馆里看到闪电。",
-          "en": "While reading, my friend sees lightning in the library."
-        },
-        {
-          "zh": "阅读时，朋友谈到闪烁。",
-          "en": "While reading, my friend mentions flickering."
-        },
-        {
-          "zh": "书本帮助我们了解闪闪。",
-          "en": "A book helps us understand flickering."
         }
       ],
       "etymologyHint": "A man 人 just glimpsed through a door 门",
@@ -54080,24 +40561,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "magnolia"
         }
       ],
-      "sentence": {
-        "zh": "窗台上有一盆兰花。",
-        "en": "There is a pot of orchids on the windowsill."
-      },
-      "sentences": [
-        {
-          "zh": "窗台上有一盆兰花。",
-          "en": "There is a pot of orchids on the windowsill."
-        },
-        {
-          "zh": "兰草的叶子又细又长。",
-          "en": "The orchid grass has long thin leaves."
-        },
-        {
-          "zh": "春天，玉兰开花了。",
-          "en": "In spring, the magnolia blooms."
-        }
-      ],
       "etymologyHint": "An orchid in bloom",
       "sourceTags": [
         "common-800",
@@ -54152,24 +40615,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "juice"
         }
       ],
-      "sentence": {
-        "zh": "周末，妹妹在故事书里看到果汁。",
-        "en": "On the weekend, my younger sister sees fruit juice in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "周末，妹妹在故事书里看到果汁。",
-          "en": "On the weekend, my younger sister sees fruit juice in a storybook."
-        },
-        {
-          "zh": "周末，妹妹谈到橙汁。",
-          "en": "On the weekend, my younger sister mentions orange juice."
-        },
-        {
-          "zh": "故事帮助我们了解汁水。",
-          "en": "A story helps us understand juice."
-        }
-      ],
       "etymologyHint": "water",
       "sourceTags": [
         "common-800",
@@ -54222,24 +40667,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "汇聚",
           "meaningEn": "convergence"
-        }
-      ],
-      "sentence": {
-        "zh": "午饭后，小组同学在练习册里看到汇报。",
-        "en": "After lunch, my group members see how to report in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，小组同学在练习册里看到汇报。",
-          "en": "After lunch, my group members see how to report in a workbook."
-        },
-        {
-          "zh": "午饭后，小组同学谈到词汇。",
-          "en": "After lunch, my group members mention vocabulary."
-        },
-        {
-          "zh": "例子帮助我们了解汇聚。",
-          "en": "An example helps us understand convergence."
         }
       ],
       "etymologyHint": "Water 氵 collected in a container 匚",
@@ -54297,24 +40724,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "would rather..."
         }
       ],
-      "sentence": {
-        "zh": "活动课上，我在学校展板上看到宁静。",
-        "en": "During activity class, I see tranquil on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，我在学校展板上看到宁静。",
-          "en": "During activity class, I see tranquil on the school display board."
-        },
-        {
-          "zh": "活动课上，我谈到宁可。",
-          "en": "During activity class, I mention preferably."
-        },
-        {
-          "zh": "卡片帮助我们了解宁肯。",
-          "en": "A card helps us understand would rather...."
-        }
-      ],
       "etymologyHint": "roof",
       "sourceTags": [
         "common-800",
@@ -54367,24 +40776,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "穴居",
           "meaningEn": "to live in a cave"
-        }
-      ],
-      "sentence": {
-        "zh": "复习时，同学在小组活动中看到洞穴。",
-        "en": "While reviewing, my classmate sees cave during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，同学在小组活动中看到洞穴。",
-          "en": "While reviewing, my classmate sees cave during a group activity."
-        },
-        {
-          "zh": "复习时，同学谈到穴位。",
-          "en": "While reviewing, my classmate mentions acupuncture point."
-        },
-        {
-          "zh": "阅读卡帮助我们了解穴居。",
-          "en": "A reading card helps us understand how to live in a cave."
         }
       ],
       "etymologyHint": "The mouth of a cave",
@@ -54441,24 +40832,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to beg"
         }
       ],
-      "sentence": {
-        "zh": "讨论时，姐姐在课外书里看到讨论。",
-        "en": "During discussion, my older sister sees how to discuss in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，姐姐在课外书里看到讨论。",
-          "en": "During discussion, my older sister sees how to discuss in an extracurricular book."
-        },
-        {
-          "zh": "讨论时，姐姐谈到讨厌。",
-          "en": "During discussion, my older sister mentions how to dislike."
-        },
-        {
-          "zh": "图片帮助我们了解乞讨。",
-          "en": "An image helps us understand how to beg."
-        }
-      ],
       "etymologyHint": "To ask 讠 for something 寸",
       "sourceTags": [
         "common-800",
@@ -54511,24 +40884,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "退让",
           "meaningEn": "to move aside"
-        }
-      ],
-      "sentence": {
-        "zh": "看图时，哥哥在中文角里看到让步。",
-        "en": "While looking at a picture, my older brother sees how to concede in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，哥哥在中文角里看到让步。",
-          "en": "While looking at a picture, my older brother sees how to concede in the Chinese corner."
-        },
-        {
-          "zh": "看图时，哥哥谈到转让。",
-          "en": "While looking at a picture, my older brother mentions how to transfer."
-        },
-        {
-          "zh": "练习帮助我们了解退让。",
-          "en": "An exercise helps us understand how to move aside."
         }
       ],
       "etymologyHint": "speech",
@@ -54585,24 +40940,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to cultivate"
         }
       ],
-      "sentence": {
-        "zh": "早读时，朋友在阅读时间里看到训练。",
-        "en": "During morning reading, my friend sees how to train during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，朋友在阅读时间里看到训练。",
-          "en": "During morning reading, my friend sees how to train during reading time."
-        },
-        {
-          "zh": "早读时，朋友谈到教训。",
-          "en": "During morning reading, my friend mentions how to provide guidance."
-        },
-        {
-          "zh": "对话帮助我们了解培训。",
-          "en": "A dialogue helps us understand how to cultivate."
-        }
-      ],
       "etymologyHint": "speech",
       "sourceTags": [
         "common-800",
@@ -54655,24 +40992,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "电讯",
           "meaningEn": "telecommunications"
-        }
-      ],
-      "sentence": {
-        "zh": "中文课上，我们在画册里看到通讯。",
-        "en": "In Chinese class, we see communications in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，我们在画册里看到通讯。",
-          "en": "In Chinese class, we see communications in a picture book."
-        },
-        {
-          "zh": "中文课上，我们谈到资讯。",
-          "en": "In Chinese class, we mention information."
-        },
-        {
-          "zh": "小组活动帮助我们了解电讯。",
-          "en": "A group activity helps us understand telecommunications."
         }
       ],
       "etymologyHint": "speech",
@@ -54729,24 +41048,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "everlasting"
         }
       ],
-      "sentence": {
-        "zh": "放学后，妹妹在作业本上看到永远。",
-        "en": "After school, my younger sister sees forever in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，妹妹在作业本上看到永远。",
-          "en": "After school, my younger sister sees forever in the homework book."
-        },
-        {
-          "zh": "放学后，妹妹谈到永不。",
-          "en": "After school, my younger sister mentions never."
-        },
-        {
-          "zh": "词卡帮助我们了解永久。",
-          "en": "A word card helps us understand everlasting."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -54799,24 +41100,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "司令",
           "meaningEn": "commanding officer"
-        }
-      ],
-      "sentence": {
-        "zh": "阅读时，小组同学在校园里看到司机。",
-        "en": "While reading, my group members see chauffeur on campus."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，小组同学在校园里看到司机。",
-          "en": "While reading, my group members see chauffeur on campus."
-        },
-        {
-          "zh": "阅读时，小组同学谈到司法。",
-          "en": "While reading, my group members mention judicial."
-        },
-        {
-          "zh": "书本帮助我们了解司令。",
-          "en": "A book helps us understand commanding officer."
         }
       ],
       "etymologyHint": "A person speaking orders 口 and raising their arm",
@@ -54873,24 +41156,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "nit , unit of luminance"
         }
       ],
-      "sentence": {
-        "zh": "写作业时，我在家里的书架上看到尼龙。",
-        "en": "While doing homework, I see nylon on the bookshelf at home."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，我在家里的书架上看到尼龙。",
-          "en": "While doing homework, I see nylon on the bookshelf at home."
-        },
-        {
-          "zh": "写作业时，我谈到尼姆。",
-          "en": "While doing homework, I mention Nîmes."
-        },
-        {
-          "zh": "图画帮助我们了解尼特。",
-          "en": "A picture helps us understand nit , unit of luminance."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -54945,24 +41210,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "Liaodong peninsula between Bohai 渤海 and Yellow sea"
         }
       ],
-      "sentence": {
-        "zh": "周末，同学在图书馆里看到辽阔。",
-        "en": "On the weekend, my classmate sees vast in the library."
-      },
-      "sentences": [
-        {
-          "zh": "周末，同学在图书馆里看到辽阔。",
-          "en": "On the weekend, my classmate sees vast in the library."
-        },
-        {
-          "zh": "周末，同学谈到辽远。",
-          "en": "On the weekend, my classmate mentions distant."
-        },
-        {
-          "zh": "故事帮助我们了解辽东。",
-          "en": "A story helps us understand Liaodong peninsula between Bohai and Yellow sea."
-        }
-      ],
       "etymologyHint": "walk",
       "sourceTags": [
         "common-800",
@@ -55015,24 +41262,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "奴字形",
           "meaningEn": "shape of the character 奴"
-        }
-      ],
-      "sentence": {
-        "zh": "历史书里提到匈奴。",
-        "en": "The history book mentions the Xiongnu."
-      },
-      "sentences": [
-        {
-          "zh": "历史书里提到匈奴。",
-          "en": "The history book mentions the Xiongnu."
-        },
-        {
-          "zh": "奴字由女和又组成。",
-          "en": "The character nu is made from 女 and 又."
-        },
-        {
-          "zh": "卡片上展示奴字形。",
-          "en": "The card shows the shape of the character nu."
         }
       ],
       "etymologyHint": "A woman 女 standing by her master's right hand 又; 女 also provides the pronunciation",
@@ -55090,24 +41319,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to call"
         }
       ],
-      "sentence": {
-        "zh": "活动课上，哥哥在故事书里看到召开。",
-        "en": "During activity class, my older brother sees how to convene in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，哥哥在故事书里看到召开。",
-          "en": "During activity class, my older brother sees how to convene in a storybook."
-        },
-        {
-          "zh": "活动课上，哥哥谈到召集。",
-          "en": "During activity class, my older brother mentions how to convene."
-        },
-        {
-          "zh": "卡片帮助我们了解号召。",
-          "en": "A card helps us understand how to call."
-        }
-      ],
       "etymologyHint": "mouth",
       "sourceTags": [
         "common-800",
@@ -55160,24 +41371,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "皮鞋",
           "meaningEn": "leather shoes"
-        }
-      ],
-      "sentence": {
-        "zh": "复习时，朋友在练习册里看到皮肤。",
-        "en": "While reviewing, my friend sees skin in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，朋友在练习册里看到皮肤。",
-          "en": "While reviewing, my friend sees skin in a workbook."
-        },
-        {
-          "zh": "复习时，朋友谈到皮带。",
-          "en": "While reviewing, my friend mentions strap."
-        },
-        {
-          "zh": "阅读卡帮助我们了解皮鞋。",
-          "en": "A reading card helps us understand leather shoes."
         }
       ],
       "etymologyHint": "A hand using a tool 攴 to strip the hide from a carcass",
@@ -55234,24 +41427,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to be pregnant"
         }
       ],
-      "sentence": {
-        "zh": "讨论时，我们在学校展板上看到怀孕。",
-        "en": "During discussion, we see pregnant on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，我们在学校展板上看到怀孕。",
-          "en": "During discussion, we see pregnant on the school display board."
-        },
-        {
-          "zh": "讨论时，我们谈到孕妇。",
-          "en": "During discussion, we mention pregnant woman."
-        },
-        {
-          "zh": "图片帮助我们了解孕育。",
-          "en": "An image helps us understand how to be pregnant."
-        }
-      ],
       "etymologyHint": "A woman delivering 乃 a child 子",
       "sourceTags": [
         "common-800",
@@ -55304,24 +41479,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "圣贤",
           "meaningEn": "a sage"
-        }
-      ],
-      "sentence": {
-        "zh": "看图时，妹妹在小组活动中看到神圣。",
-        "en": "While looking at a picture, my younger sister sees divine during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，妹妹在小组活动中看到神圣。",
-          "en": "While looking at a picture, my younger sister sees divine during a group activity."
-        },
-        {
-          "zh": "看图时，妹妹谈到圣诞节。",
-          "en": "While looking at a picture, my younger sister mentions Christmas time."
-        },
-        {
-          "zh": "练习帮助我们了解圣贤。",
-          "en": "An exercise helps us understand a sage."
         }
       ],
       "etymologyHint": "Simplified form of 聖; a king 王 of listening 耳  and speaking口",
@@ -55379,24 +41536,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "steps"
         }
       ],
-      "sentence": {
-        "zh": "早读时，小组同学在课外书里看到台上。",
-        "en": "During morning reading, my group members see on stage in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，小组同学在课外书里看到台上。",
-          "en": "During morning reading, my group members see on stage in an extracurricular book."
-        },
-        {
-          "zh": "早读时，小组同学谈到舞台。",
-          "en": "During morning reading, my group members mention stage."
-        },
-        {
-          "zh": "对话帮助我们了解台阶。",
-          "en": "A dialogue helps us understand steps."
-        }
-      ],
       "etymologyHint": "",
       "sourceTags": [
         "common-800",
@@ -55449,24 +41588,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "矛柄",
           "meaningEn": "shaft"
-        }
-      ],
-      "sentence": {
-        "zh": "中文课上，我在中文角里看到矛盾。",
-        "en": "In Chinese class, I see contradiction in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，我在中文角里看到矛盾。",
-          "en": "In Chinese class, I see contradiction in the Chinese corner."
-        },
-        {
-          "zh": "中文课上，我谈到矛头。",
-          "en": "In Chinese class, I mention spearhead."
-        },
-        {
-          "zh": "小组活动帮助我们了解矛柄。",
-          "en": "A group activity helps us understand shaft."
         }
       ],
       "etymologyHint": "A spear pointed up and to the right",
@@ -55523,24 +41644,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to be in a tangle"
         }
       ],
-      "sentence": {
-        "zh": "放学后，同学在阅读时间里看到纠正。",
-        "en": "After school, my classmate sees how to correct during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，同学在阅读时间里看到纠正。",
-          "en": "After school, my classmate sees how to correct during reading time."
-        },
-        {
-          "zh": "放学后，同学谈到纠纷。",
-          "en": "After school, my classmate mentions dispute."
-        },
-        {
-          "zh": "词卡帮助我们了解纠缠。",
-          "en": "A word card helps us understand how to be in a tangle."
-        }
-      ],
       "etymologyHint": "To connect 丩 threads 纟; 丩 also provides the pronunciation",
       "sourceTags": [
         "common-800",
@@ -55593,24 +41696,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "字母",
           "meaningEn": "letter"
-        }
-      ],
-      "sentence": {
-        "zh": "阅读时，姐姐在画册里看到母亲。",
-        "en": "While reading, my older sister sees mother in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，姐姐在画册里看到母亲。",
-          "en": "While reading, my older sister sees mother in a picture book."
-        },
-        {
-          "zh": "阅读时，姐姐谈到父母。",
-          "en": "While reading, my older sister mentions father and mother."
-        },
-        {
-          "zh": "书本帮助我们了解字母。",
-          "en": "A book helps us understand letter."
         }
       ],
       "etymologyHint": "A mother's breasts",
@@ -55667,24 +41752,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "childish; immature"
         }
       ],
-      "sentence": {
-        "zh": "幼儿需要大人照顾。",
-        "en": "Young children need adults to look after them."
-      },
-      "sentences": [
-        {
-          "zh": "幼儿需要大人照顾。",
-          "en": "Young children need adults to look after them."
-        },
-        {
-          "zh": "妹妹每天去幼儿园。",
-          "en": "My younger sister goes to kindergarten every day."
-        },
-        {
-          "zh": "这个想法有点幼稚。",
-          "en": "This idea is a little immature."
-        }
-      ],
       "etymologyHint": "One with little 幺 strength 力; 幺 also provides the pronunciation",
       "sourceTags": [
         "common-800",
@@ -55739,24 +41806,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "silk cloth"
         }
       ],
-      "sentence": {
-        "zh": "周末，朋友在校园里看到丝毫。",
-        "en": "On the weekend, my friend sees the slightest amount or degree on campus."
-      },
-      "sentences": [
-        {
-          "zh": "周末，朋友在校园里看到丝毫。",
-          "en": "On the weekend, my friend sees the slightest amount or degree on campus."
-        },
-        {
-          "zh": "周末，朋友谈到粉丝。",
-          "en": "On the weekend, my friend mentions bean vermicelli."
-        },
-        {
-          "zh": "故事帮助我们了解丝绸。",
-          "en": "A story helps us understand silk cloth."
-        }
-      ],
       "etymologyHint": "Simplified form of 絲, two threads",
       "sourceTags": [
         "common-800",
@@ -55809,24 +41858,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "刑字形",
           "meaningEn": "shape of the character 刑"
-        }
-      ],
-      "sentence": {
-        "zh": "桌上有一张刑字卡。",
-        "en": "There is a character card for xing on the table."
-      },
-      "sentences": [
-        {
-          "zh": "桌上有一张刑字卡。",
-          "en": "There is a character card for xing on the table."
-        },
-        {
-          "zh": "刑字右边是立刀旁。",
-          "en": "The character xing has the knife radical on the right."
-        },
-        {
-          "zh": "字卡上画着刑字形。",
-          "en": "The character card shows the shape of the character xing."
         }
       ],
       "etymologyHint": "A man 刂 in jail 开",
@@ -55884,24 +41915,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to carry on the shoulder"
         }
       ],
-      "sentence": {
-        "zh": "活动课上，妹妹在图书馆里看到扛住。",
-        "en": "During activity class, my younger sister sees how to withstand in the library."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，妹妹在图书馆里看到扛住。",
-          "en": "During activity class, my younger sister sees how to withstand in the library."
-        },
-        {
-          "zh": "活动课上，妹妹谈到扛起。",
-          "en": "During activity class, my younger sister mentions how to lift onto the shoulder."
-        },
-        {
-          "zh": "卡片帮助我们了解肩扛。",
-          "en": "A card helps us understand how to carry on the shoulder."
-        }
-      ],
       "etymologyHint": "Labor 工 done by hand 扌; 工 also provides the pronunciation",
       "sourceTags": [
         "common-800",
@@ -55954,24 +41967,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "寺院",
           "meaningEn": "cloister"
-        }
-      ],
-      "sentence": {
-        "zh": "复习时，小组同学在教室里看到寺庙。",
-        "en": "While reviewing, my group members see temple in the classroom."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，小组同学在教室里看到寺庙。",
-          "en": "While reviewing, my group members see temple in the classroom."
-        },
-        {
-          "zh": "复习时，小组同学谈到清真寺。",
-          "en": "While reviewing, my group members mention mosque."
-        },
-        {
-          "zh": "阅读卡帮助我们了解寺院。",
-          "en": "A reading card helps us understand cloister."
         }
       ],
       "etymologyHint": "An offering 土 in your hand 寸",
@@ -56028,24 +42023,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "lucky; auspicious"
         }
       ],
-      "sentence": {
-        "zh": "哥哥会弹吉他。",
-        "en": "My older brother can play the guitar."
-      },
-      "sentences": [
-        {
-          "zh": "哥哥会弹吉他。",
-          "en": "My older brother can play the guitar."
-        },
-        {
-          "zh": "红色在春节里很吉祥。",
-          "en": "Red is auspicious during Spring Festival."
-        },
-        {
-          "zh": "大家都喜欢吉利的话。",
-          "en": "Everyone likes auspicious words."
-        }
-      ],
       "etymologyHint": "The words 口 of a scholar 士",
       "sourceTags": [
         "common-800",
@@ -56098,24 +42075,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "折扣",
           "meaningEn": "discount"
-        }
-      ],
-      "sentence": {
-        "zh": "看图时，同学在练习册里看到扣除。",
-        "en": "While looking at a picture, my classmate sees how to deduct in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "看图时，同学在练习册里看到扣除。",
-          "en": "While looking at a picture, my classmate sees how to deduct in a workbook."
-        },
-        {
-          "zh": "看图时，同学谈到扣押。",
-          "en": "While looking at a picture, my classmate mentions how to detain."
-        },
-        {
-          "zh": "练习帮助我们了解折扣。",
-          "en": "An exercise helps us understand discount."
         }
       ],
       "etymologyHint": "hand",
@@ -56172,24 +42131,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to test"
         }
       ],
-      "sentence": {
-        "zh": "早读时，姐姐在学校展板上看到考虑。",
-        "en": "During morning reading, my older sister sees how to think over on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，姐姐在学校展板上看到考虑。",
-          "en": "During morning reading, my older sister sees how to think over on the school display board."
-        },
-        {
-          "zh": "早读时，姐姐谈到考试。",
-          "en": "During morning reading, my older sister mentions how to take an exam."
-        },
-        {
-          "zh": "对话帮助我们了解考验。",
-          "en": "A dialogue helps us understand how to test."
-        }
-      ],
       "etymologyHint": "old",
       "sourceTags": [
         "common-800",
@@ -56242,24 +42183,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "托付",
           "meaningEn": "to entrust"
-        }
-      ],
-      "sentence": {
-        "zh": "中文课上，哥哥在小组活动中看到委托。",
-        "en": "In Chinese class, my older brother sees how to entrust during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，哥哥在小组活动中看到委托。",
-          "en": "In Chinese class, my older brother sees how to entrust during a group activity."
-        },
-        {
-          "zh": "中文课上，哥哥谈到拜托。",
-          "en": "In Chinese class, my older brother mentions how to request sb to do sth."
-        },
-        {
-          "zh": "小组活动帮助我们了解托付。",
-          "en": "A group activity helps us understand how to entrust."
         }
       ],
       "etymologyHint": "Using one's hands 扌 for support 乇; 乇 also provides the pronunciation",
@@ -56316,24 +42239,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "Gong surname"
         }
       ],
-      "sentence": {
-        "zh": "复习可以巩固知识。",
-        "en": "Review can consolidate knowledge."
-      },
-      "sentences": [
-        {
-          "zh": "复习可以巩固知识。",
-          "en": "Review can consolidate knowledge."
-        },
-        {
-          "zh": "巩义是一个地名。",
-          "en": "Gongyi is a place name."
-        },
-        {
-          "zh": "巩姓是一个中文姓氏。",
-          "en": "Gong is a Chinese surname."
-        }
-      ],
       "etymologyHint": "all",
       "sourceTags": [
         "common-800",
@@ -56386,24 +42291,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "垃圾车",
           "meaningEn": "garbage truck"
-        }
-      ],
-      "sentence": {
-        "zh": "请把垃圾放进垃圾桶。",
-        "en": "Please put the trash into the rubbish bin."
-      },
-      "sentences": [
-        {
-          "zh": "请把垃圾放进垃圾桶。",
-          "en": "Please put the trash into the rubbish bin."
-        },
-        {
-          "zh": "教室门口有一个垃圾桶。",
-          "en": "There is a rubbish bin by the classroom door."
-        },
-        {
-          "zh": "早上，垃圾车开过街道。",
-          "en": "In the morning, the garbage truck drives along the street."
         }
       ],
       "etymologyHint": "earth",
@@ -56460,24 +42347,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to dispute"
         }
       ],
-      "sentence": {
-        "zh": "写作业时，妹妹在阅读时间里看到执行。",
-        "en": "While doing homework, my younger sister sees how to implement during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，妹妹在阅读时间里看到执行。",
-          "en": "While doing homework, my younger sister sees how to implement during reading time."
-        },
-        {
-          "zh": "写作业时，妹妹谈到执法。",
-          "en": "While doing homework, my younger sister mentions how to enforce a law."
-        },
-        {
-          "zh": "图画帮助我们了解争执。",
-          "en": "A picture helps us understand how to dispute."
-        }
-      ],
       "etymologyHint": "A hand 扌 clutching a pebble 丸",
       "sourceTags": [
         "common-800",
@@ -56530,24 +42399,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "扩充",
           "meaningEn": "to expand"
-        }
-      ],
-      "sentence": {
-        "zh": "周末，小组同学在画册里看到扩大。",
-        "en": "On the weekend, my group members see how to expand in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "周末，小组同学在画册里看到扩大。",
-          "en": "On the weekend, my group members see how to expand in a picture book."
-        },
-        {
-          "zh": "周末，小组同学谈到扩散。",
-          "en": "On the weekend, my group members mention how to spread."
-        },
-        {
-          "zh": "故事帮助我们了解扩充。",
-          "en": "A story helps us understand how to expand."
         }
       ],
       "etymologyHint": "wide",
@@ -56605,24 +42456,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to sweep a grave"
         }
       ],
-      "sentence": {
-        "zh": "午饭后，我在作业本上看到扫描。",
-        "en": "After lunch, I see how to scan in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，我在作业本上看到扫描。",
-          "en": "After lunch, I see how to scan in the homework book."
-        },
-        {
-          "zh": "午饭后，我谈到打扫。",
-          "en": "After lunch, I mention how to clean."
-        },
-        {
-          "zh": "例子帮助我们了解扫墓。",
-          "en": "An example helps us understand how to sweep a grave."
-        }
-      ],
       "etymologyHint": "Simplified form of 掃; to use 扌 a broom 帚; 帚 also provides the pronunciation",
       "sourceTags": [
         "common-800",
@@ -56675,24 +42508,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "宣扬",
           "meaningEn": "to publicize"
-        }
-      ],
-      "sentence": {
-        "zh": "活动课上，同学在校园里看到表扬。",
-        "en": "During activity class, my classmate sees how to praise on campus."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，同学在校园里看到表扬。",
-          "en": "During activity class, my classmate sees how to praise on campus."
-        },
-        {
-          "zh": "活动课上，同学谈到赞扬。",
-          "en": "During activity class, my classmate mentions how to praise."
-        },
-        {
-          "zh": "卡片帮助我们了解宣扬。",
-          "en": "A card helps us understand how to publicize."
         }
       ],
       "etymologyHint": "hand",
@@ -56749,24 +42564,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "sharp edge"
         }
       ],
-      "sentence": {
-        "zh": "我喜欢吃甜甜的芒果。",
-        "en": "I like eating sweet mangoes."
-      },
-      "sentences": [
-        {
-          "zh": "我喜欢吃甜甜的芒果。",
-          "en": "I like eating sweet mangoes."
-        },
-        {
-          "zh": "太阳发出温暖的光芒。",
-          "en": "The sun gives off warm light."
-        },
-        {
-          "zh": "他说话收起了锋芒。",
-          "en": "He speaks without showing a sharp edge."
-        }
-      ],
       "etymologyHint": "grass",
       "sourceTags": [
         "common-800",
@@ -56819,24 +42616,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "亚运会",
           "meaningEn": "Asian Games"
-        }
-      ],
-      "sentence": {
-        "zh": "讨论时，哥哥在图书馆里看到亚洲。",
-        "en": "During discussion, my older brother sees Asia in the library."
-      },
-      "sentences": [
-        {
-          "zh": "讨论时，哥哥在图书馆里看到亚洲。",
-          "en": "During discussion, my older brother sees Asia in the library."
-        },
-        {
-          "zh": "讨论时，哥哥谈到亚军。",
-          "en": "During discussion, my older brother mentions second place."
-        },
-        {
-          "zh": "图片帮助我们了解亚运会。",
-          "en": "An image helps us understand Asian Games."
         }
       ],
       "etymologyHint": "Picture of a cross-shaped house or temple",
@@ -56893,24 +42672,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "cheese"
         }
       ],
-      "sentence": {
-        "zh": "面包上有芝麻。",
-        "en": "There are sesame seeds on the bread."
-      },
-      "sentences": [
-        {
-          "zh": "面包上有芝麻。",
-          "en": "There are sesame seeds on the bread."
-        },
-        {
-          "zh": "书上介绍了灵芝。",
-          "en": "The book introduces lingzhi mushrooms."
-        },
-        {
-          "zh": "我喜欢吃芝士面包。",
-          "en": "I like eating cheese bread."
-        }
-      ],
       "etymologyHint": "plant",
       "sourceTags": [
         "common-800",
@@ -56963,24 +42724,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "朽木",
           "meaningEn": "rotten wood"
-        }
-      ],
-      "sentence": {
-        "zh": "早读时，我们在故事书里看到腐朽。",
-        "en": "During morning reading, we see rotten in a storybook."
-      },
-      "sentences": [
-        {
-          "zh": "早读时，我们在故事书里看到腐朽。",
-          "en": "During morning reading, we see rotten in a storybook."
-        },
-        {
-          "zh": "早读时，我们谈到朽坏。",
-          "en": "During morning reading, we mention rotten."
-        },
-        {
-          "zh": "对话帮助我们了解朽木。",
-          "en": "A dialogue helps us understand rotten wood."
         }
       ],
       "etymologyHint": "The wood of a dying 丂 tree 木",
@@ -57040,24 +42783,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "simple"
         }
       ],
-      "sentence": {
-        "zh": "中文课上，妹妹在练习册里看到朴素。",
-        "en": "In Chinese class, my younger sister sees plain and simple in a workbook."
-      },
-      "sentences": [
-        {
-          "zh": "中文课上，妹妹在练习册里看到朴素。",
-          "en": "In Chinese class, my younger sister sees plain and simple in a workbook."
-        },
-        {
-          "zh": "中文课上，妹妹谈到朴实。",
-          "en": "In Chinese class, my younger sister mentions plain."
-        },
-        {
-          "zh": "小组活动帮助我们了解质朴。",
-          "en": "A group activity helps us understand simple."
-        }
-      ],
       "etymologyHint": "tree",
       "sourceTags": [
         "common-800",
@@ -57110,24 +42835,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "臣下",
           "meaningEn": "official in feudal court"
-        }
-      ],
-      "sentence": {
-        "zh": "放学后，小组同学在学校展板上看到大臣。",
-        "en": "After school, my group members see chancellor on the school display board."
-      },
-      "sentences": [
-        {
-          "zh": "放学后，小组同学在学校展板上看到大臣。",
-          "en": "After school, my group members see chancellor on the school display board."
-        },
-        {
-          "zh": "放学后，小组同学谈到功臣。",
-          "en": "After school, my group members mention minister who has given outstanding service."
-        },
-        {
-          "zh": "词卡帮助我们了解臣下。",
-          "en": "A word card helps us understand official in feudal court."
         }
       ],
       "etymologyHint": "",
@@ -57184,24 +42891,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "cooperation"
         }
       ],
-      "sentence": {
-        "zh": "阅读时，我在小组活动中看到协议。",
-        "en": "While reading, I see agreement during a group activity."
-      },
-      "sentences": [
-        {
-          "zh": "阅读时，我在小组活动中看到协议。",
-          "en": "While reading, I see agreement during a group activity."
-        },
-        {
-          "zh": "阅读时，我谈到协助。",
-          "en": "While reading, I mention how to provide assistance."
-        },
-        {
-          "zh": "书本帮助我们了解协作。",
-          "en": "A book helps us understand cooperation."
-        }
-      ],
       "etymologyHint": "manage",
       "sourceTags": [
         "common-800",
@@ -57254,24 +42943,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "厌恶",
           "meaningEn": "to loathe"
-        }
-      ],
-      "sentence": {
-        "zh": "写作业时，同学在课外书里看到讨厌。",
-        "en": "While doing homework, my classmate sees how to dislike in an extracurricular book."
-      },
-      "sentences": [
-        {
-          "zh": "写作业时，同学在课外书里看到讨厌。",
-          "en": "While doing homework, my classmate sees how to dislike in an extracurricular book."
-        },
-        {
-          "zh": "写作业时，同学谈到厌倦。",
-          "en": "While doing homework, my classmate mentions how to be weary of."
-        },
-        {
-          "zh": "图画帮助我们了解厌恶。",
-          "en": "A picture helps us understand how to loathe."
         }
       ],
       "etymologyHint": "cliff",
@@ -57328,24 +42999,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "previous page"
         }
       ],
-      "sentence": {
-        "zh": "周末，姐姐在中文角里看到网页。",
-        "en": "On the weekend, my older sister sees web page in the Chinese corner."
-      },
-      "sentences": [
-        {
-          "zh": "周末，姐姐在中文角里看到网页。",
-          "en": "On the weekend, my older sister sees web page in the Chinese corner."
-        },
-        {
-          "zh": "周末，姐姐谈到主页。",
-          "en": "On the weekend, my older sister mentions home page."
-        },
-        {
-          "zh": "故事帮助我们了解上页。",
-          "en": "A story helps us understand previous page."
-        }
-      ],
       "etymologyHint": "A person's head",
       "sourceTags": [
         "common-800",
@@ -57398,24 +43051,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "大匠",
           "meaningEn": "master craftsman"
-        }
-      ],
-      "sentence": {
-        "zh": "午饭后，哥哥在阅读时间里看到木匠。",
-        "en": "After lunch, my older brother sees carpenter during reading time."
-      },
-      "sentences": [
-        {
-          "zh": "午饭后，哥哥在阅读时间里看到木匠。",
-          "en": "After lunch, my older brother sees carpenter during reading time."
-        },
-        {
-          "zh": "午饭后，哥哥谈到匠心。",
-          "en": "After lunch, my older brother mentions ingenuity."
-        },
-        {
-          "zh": "例子帮助我们了解大匠。",
-          "en": "An example helps us understand master craftsman."
         }
       ],
       "etymologyHint": "",
@@ -57473,24 +43108,6 @@ window.CHINESE_STUDY_DATA = {
           "meaningEn": "to exaggerate"
         }
       ],
-      "sentence": {
-        "zh": "活动课上，朋友在画册里看到夸张。",
-        "en": "During activity class, my friend sees how to exaggerate in a picture book."
-      },
-      "sentences": [
-        {
-          "zh": "活动课上，朋友在画册里看到夸张。",
-          "en": "During activity class, my friend sees how to exaggerate in a picture book."
-        },
-        {
-          "zh": "活动课上，朋友谈到夸奖。",
-          "en": "During activity class, my friend mentions how to praise."
-        },
-        {
-          "zh": "卡片帮助我们了解夸大。",
-          "en": "A card helps us understand how to exaggerate."
-        }
-      ],
       "etymologyHint": "great",
       "sourceTags": [
         "common-800",
@@ -57543,24 +43160,6 @@ window.CHINESE_STUDY_DATA = {
         {
           "word": "争夺",
           "meaningEn": "to fight over"
-        }
-      ],
-      "sentence": {
-        "zh": "复习时，我们在作业本上看到夺取。",
-        "en": "While reviewing, we see how to seize in the homework book."
-      },
-      "sentences": [
-        {
-          "zh": "复习时，我们在作业本上看到夺取。",
-          "en": "While reviewing, we see how to seize in the homework book."
-        },
-        {
-          "zh": "复习时，我们谈到夺冠。",
-          "en": "While reviewing, we mention how to seize the crown."
-        },
-        {
-          "zh": "阅读卡帮助我们了解争夺。",
-          "en": "A reading card helps us understand how to fight over."
         }
       ],
       "etymologyHint": "A man 大 grasping something 寸",

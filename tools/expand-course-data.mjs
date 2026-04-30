@@ -2605,7 +2605,6 @@ function genericMeaningZh(words) {
 
 function makeEntry({ char, id, common, xinhua, make, cedictIndex, priorityWords }) {
   const words = chooseWords(char, cedictIndex, priorityWords);
-  const sentences = sentenceRowsForEntry(id, words);
   const pinyinValues = [
     ...(common?.pinyin || []),
     ...(xinhua?.pinyin ? [xinhua.pinyin] : []),
@@ -2630,11 +2629,14 @@ function makeEntry({ char, id, common, xinhua, make, cedictIndex, priorityWords 
     strokes: Number(common?.strokes || xinhua?.strokes || make?.matches?.length || 0),
     structure: STRUCTURE_LABELS[common?.structure] || "standard character",
     words,
-    sentence: sentences[0],
-    sentences,
     etymologyHint: make?.etymology?.hint || "",
     sourceTags: sourceTags({ common, xinhua, make }),
   };
+}
+
+function stripSentenceData(entry) {
+  const { sentence, sentences, ...rest } = entry;
+  return rest;
 }
 
 function applyEntryRepairs(entries) {
@@ -2644,10 +2646,6 @@ function applyEntryRepairs(entries) {
     if (repair.words) {
       entry.words = repair.words.map(([word, meaningEn]) => ({ word, meaningEn }));
       if (!repair.meaningZh) entry.meaningZh = genericMeaningZh(entry.words);
-    }
-    if (repair.sentences) {
-      entry.sentences = repair.sentences.map(([zh, en]) => ({ zh, en }));
-      entry.sentence = entry.sentences[0];
     }
     if (repair.meaningEn) entry.meaningEn = repair.meaningEn;
     if (repair.meaningZh) entry.meaningZh = repair.meaningZh;
@@ -2724,19 +2722,16 @@ function sqlValue(value) {
 async function writeSqlite(entries, idioms) {
   const uniqueWords = new Map();
   let characterWordCount = 0;
-  let sentenceCount = 0;
   entries.forEach((entry) => {
     characterWordCount += entry.words.length;
-    sentenceCount += entry.sentences.length;
-    entry.words.forEach((word, index) => {
+    entry.words.forEach((word) => {
       if (!uniqueWords.has(word.word)) {
-        const sentence = entry.sentences[index] || entry.sentences[0];
         uniqueWords.set(word.word, {
           word: word.word,
           meaningEn: word.meaningEn,
           category: "course",
-          exampleZh: sentence.zh,
-          exampleEn: sentence.en,
+          exampleZh: "",
+          exampleEn: "",
         });
       }
     });
@@ -2754,14 +2749,12 @@ async function writeSqlite(entries, idioms) {
     "CREATE TABLE characters (id INTEGER PRIMARY KEY, char TEXT NOT NULL UNIQUE, pinyin TEXT NOT NULL, pinyin_alt_json TEXT NOT NULL, meaning_zh TEXT NOT NULL, meaning_en TEXT NOT NULL, radical TEXT NOT NULL, strokes INTEGER NOT NULL, structure TEXT NOT NULL, etymology_hint TEXT NOT NULL, font_evolution_json TEXT NOT NULL, source_url TEXT NOT NULL, source_tags_json TEXT NOT NULL);",
     "CREATE TABLE words (id INTEGER PRIMARY KEY, word TEXT NOT NULL UNIQUE, meaning_en TEXT NOT NULL, category TEXT NOT NULL, example_zh TEXT NOT NULL, example_en TEXT NOT NULL);",
     "CREATE TABLE character_words (char TEXT NOT NULL, sort_order INTEGER NOT NULL, word TEXT NOT NULL, meaning_en TEXT NOT NULL, PRIMARY KEY (char, sort_order));",
-    "CREATE TABLE character_sentences (char TEXT NOT NULL, sort_order INTEGER NOT NULL, zh TEXT NOT NULL, en TEXT NOT NULL, PRIMARY KEY (char, sort_order));",
     "CREATE TABLE idioms (id INTEGER PRIMARY KEY, word TEXT NOT NULL UNIQUE, pinyin TEXT NOT NULL, explanation TEXT NOT NULL, example_zh TEXT NOT NULL, derivation TEXT NOT NULL);",
     `INSERT INTO metadata VALUES ('character_count', ${sqlValue(entries.length)});`,
     `INSERT INTO metadata VALUES ('lesson_size', ${sqlValue(LESSON_SIZE)});`,
     `INSERT INTO metadata VALUES ('lesson_count', ${sqlValue(entries.length / LESSON_SIZE)});`,
     `INSERT INTO metadata VALUES ('common_word_count', ${sqlValue(uniqueWords.size)});`,
     `INSERT INTO metadata VALUES ('character_word_count', ${sqlValue(characterWordCount)});`,
-    `INSERT INTO metadata VALUES ('sentence_count', ${sqlValue(sentenceCount)});`,
     `INSERT INTO metadata VALUES ('idiom_count', ${sqlValue(idioms.length)});`,
     `INSERT INTO metadata VALUES ('font_evolution_count', ${sqlValue(
       entries.filter((entry) => entry.fontEvolution?.length).length
@@ -2795,13 +2788,6 @@ async function writeSqlite(entries, idioms) {
         )});`
       );
     });
-    entry.sentences.forEach((sentence, index) => {
-      statements.push(
-        `INSERT INTO character_sentences VALUES (${sqlValue(entry.char)}, ${index + 1}, ${sqlValue(sentence.zh)}, ${sqlValue(
-          sentence.en
-        )});`
-      );
-    });
   });
   idioms.forEach((idiom) => {
     statements.push(
@@ -2819,7 +2805,6 @@ async function writeSqlite(entries, idioms) {
     characterCount: entries.length,
     commonWordCount: uniqueWords.size,
     characterWordCount,
-    sentenceCount,
     idiomCount: idioms.length,
   };
 }
@@ -2836,12 +2821,7 @@ function assertEntries(entries) {
     assert(entry.sourceUrl, `${entry.char} missing hwxnet source URL`);
     assert(entry.fontEvolution?.length >= 3, `${entry.char} missing font evolution`);
     assert(entry.words.length === 3, `${entry.char} needs 3 words`);
-    assert(entry.sentences.length === 3, `${entry.char} needs 3 sentences`);
     entry.words.forEach((word) => assert(word.word.includes(entry.char), `${entry.char} word missing char: ${word.word}`));
-    entry.sentences.forEach((sentence, index) => {
-      assert(sentence.zh.includes(entry.char), `${entry.char} sentence missing char`);
-      assert(sentence.zh.includes(entry.words[index].word), `${entry.char} sentence missing word ${entry.words[index].word}`);
-    });
   });
 }
 
@@ -2869,7 +2849,7 @@ const courseChars = pickCourseChars(preservedEntries, commonRows);
 const existingByChar = new Map(preservedEntries.map((entry) => [entry.char, entry]));
 const entries = courseChars.map((char, index) => {
   const existing = existingByChar.get(char);
-  if (existing) return { ...existing, id: index + 1 };
+  if (existing) return stripSentenceData({ ...existing, id: index + 1 });
   return makeEntry({
     char,
     id: index + 1,
@@ -2906,7 +2886,6 @@ window.CHINESE_STUDY_DATA = ${JSON.stringify(
     lessonSize: LESSON_SIZE,
     characterCount: databaseCounts.characterCount,
     commonWordCount: databaseCounts.commonWordCount,
-    sentenceCount: databaseCounts.sentenceCount,
     idiomCount: databaseCounts.idiomCount,
     sources: [
       {
@@ -2966,7 +2945,6 @@ console.log(
       entries: entries.length,
       lessons: entries.length / LESSON_SIZE,
       commonWordCount: databaseCounts.commonWordCount,
-      sentenceCount: databaseCounts.sentenceCount,
       idioms: idioms.length,
       hwxnet: hwxnet.stats,
     },

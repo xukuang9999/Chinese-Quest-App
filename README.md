@@ -22,7 +22,7 @@ node tools/validate-data.mjs
 ```
 
 The generated dataset keeps 800 Simplified Chinese characters, 3 word examples
-per character, 3 sentence examples per character, and 200 idioms. It combines
+per character, and 200 idioms. It combines
 汉文学网在线新华字典 character explanations, English glosses, source URLs, and
 font-evolution image references with Xinhua-style phrase data, common-character
 stroke metadata, learner-friendly English definitions, CC-CEDICT word data, HSK

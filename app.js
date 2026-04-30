@@ -90,7 +90,6 @@ const UI_TEXT = {
     profileMarkRequired: "Choose an animal avatar.",
     lastUser: "Last used",
     currentUser: "Current user",
-    switchUser: "Switch user",
     signedInAs: "Current learner: {name}",
     loginToast: "Welcome back, {name}.",
     dailyLesson: "Daily Lesson",
@@ -131,7 +130,6 @@ const UI_TEXT = {
     meaning: "Meaning",
     fontEvolution: "Font Evolution",
     words: "Words",
-    sentences: "Sentences",
     strokeOrder: "Stroke Order",
     animate: "Animate",
     trace: "Trace",
@@ -162,7 +160,6 @@ const UI_TEXT = {
     characterCount: "Character {current} of {total}.",
     playLabel: "play {label}",
     playingLabel: "Playing {label}.",
-    sentenceLabel: "sentence {n}",
     strokesCount: "{char} · {count} strokes",
     pinchToDraw: "Pinch to draw inside the box.",
     touchDraw: "Touch or mouse can draw here.",
@@ -207,10 +204,9 @@ const UI_TEXT = {
     openRoleplay: "Open role play",
     practiceModes: "practice modes",
     databaseTotals: "Database totals",
-    databaseTotalsHint: "Current totals for characters, words, sentences, and idioms.",
+    databaseTotalsHint: "Current totals for characters, words, and idioms.",
     databaseCharacters: "Characters",
     databaseWords: "Words",
-    databaseSentences: "Sentences",
     databaseIdioms: "Idioms",
     dailyDialogue: "Daily dialogue",
     dialogueModeHint: "Choose a topic and hear useful words.",
@@ -229,7 +225,7 @@ const UI_TEXT = {
     dialogueToast: "Topic: {topic}.",
     roleplayToast: "Scene: {title}.",
     customCharacter: "Add character",
-    customCharacterHint: "Add your own course character with words and sentences.",
+    customCharacterHint: "Add your own course character with words.",
     openCustomCharacter: "Add a character",
     customCharacterCount: "{count} saved custom characters",
     customCharacterEmpty: "No custom characters yet",
@@ -245,12 +241,9 @@ const UI_TEXT = {
     customStrokesLabel: "Strokes (optional)",
     customStructureLabel: "Shape (optional)",
     customWordsTitle: "Words",
-    customSentencesTitle: "Sentences",
     customRequiredHint: "3 required",
     customWordLabel: "Word {n}",
     customWordMeaningLabel: "English meaning {n}",
-    customSentenceZhLabel: "Sentence {n}",
-    customSentenceEnLabel: "English sentence {n}",
     customSave: "Save character",
     customReset: "Clear form",
     customSavedTitle: "Saved custom characters",
@@ -258,12 +251,11 @@ const UI_TEXT = {
     customInvalidChar: "Enter one Chinese character.",
     customMissingRequired: "Please fill in every required field.",
     customWordMustUseChar: "Each word should include {char}.",
-    customSentenceMustUseChar: "Each Chinese sentence should include {char}.",
     customOriginalLocked: "{char} is one of the original course characters and cannot be changed.",
     customAlreadyExists: "{char} has already been added.",
     customSavedToast: "{char} was saved to Course lessons.",
     searchTitle: "Search",
-    searchModeHint: "Type Chinese to find pinyin, words, sentences, stroke order, and radical.",
+    searchModeHint: "Type Chinese to find pinyin, words, stroke order, and radical.",
     openSearch: "Open search",
     searchLabel: "Course database",
     searchInputLabel: "Chinese search",
@@ -306,7 +298,6 @@ const UI_TEXT = {
     profileMarkRequired: "请选择小动物头像。",
     lastUser: "上次使用",
     currentUser: "当前用户",
-    switchUser: "切换用户",
     signedInAs: "当前学习用户：{name}",
     loginToast: "{name}，欢迎回来。",
     dailyLesson: "一日一课",
@@ -347,7 +338,6 @@ const UI_TEXT = {
     meaning: "意思",
     fontEvolution: "字体演变",
     words: "组词",
-    sentences: "造句",
     strokeOrder: "笔顺",
     animate: "演示",
     trace: "描红",
@@ -378,7 +368,6 @@ const UI_TEXT = {
     characterCount: "第 {current} / {total} 个字。",
     playLabel: "播放 {label}",
     playingLabel: "正在播放 {label}。",
-    sentenceLabel: "句子 {n}",
     strokesCount: "{char} · {count} 画",
     pinchToDraw: "捏合手指，在方格里写字。",
     touchDraw: "也可以用触摸或鼠标写字。",
@@ -423,10 +412,9 @@ const UI_TEXT = {
     openRoleplay: "进入角色扮演",
     practiceModes: "练习模式",
     databaseTotals: "数据库总量",
-    databaseTotalsHint: "字、词、句和成语的当前总数。",
+    databaseTotalsHint: "字、词和成语的当前总数。",
     databaseCharacters: "字",
     databaseWords: "词",
-    databaseSentences: "句",
     databaseIdioms: "成语",
     dailyDialogue: "日常对话练习",
     dialogueModeHint: "选择主题，听读常用词语。",
@@ -445,7 +433,7 @@ const UI_TEXT = {
     dialogueToast: "主题：{topic}。",
     roleplayToast: "情景：{title}。",
     customCharacter: "新增汉字",
-    customCharacterHint: "把自己的汉字、组词和造句加入课程。",
+    customCharacterHint: "把自己的汉字和组词加入课程。",
     openCustomCharacter: "新增一个汉字",
     customCharacterCount: "已保存 {count} 个自定义汉字",
     customCharacterEmpty: "还没有自定义汉字",
@@ -461,12 +449,9 @@ const UI_TEXT = {
     customStrokesLabel: "笔画（可选）",
     customStructureLabel: "结构（可选）",
     customWordsTitle: "组词",
-    customSentencesTitle: "造句",
     customRequiredHint: "必须填写 3 个",
     customWordLabel: "组词 {n}",
     customWordMeaningLabel: "英文意思 {n}",
-    customSentenceZhLabel: "造句 {n}",
-    customSentenceEnLabel: "英文句子 {n}",
     customSave: "保存汉字",
     customReset: "清空表单",
     customSavedTitle: "已保存的自定义汉字",
@@ -474,12 +459,11 @@ const UI_TEXT = {
     customInvalidChar: "请输入一个汉字。",
     customMissingRequired: "请填写所有必填内容。",
     customWordMustUseChar: "每个组词都应该包含“{char}”。",
-    customSentenceMustUseChar: "每个中文句子都应该包含“{char}”。",
     customOriginalLocked: "“{char}”属于原始课程汉字，不能修改。",
     customAlreadyExists: "“{char}”已经添加过。",
     customSavedToast: "“{char}”已保存到课程学习。",
     searchTitle: "搜索",
-    searchModeHint: "输入中文，查找拼音、组词、造句、笔顺和部首。",
+    searchModeHint: "输入中文，查找拼音、组词、笔顺和部首。",
     openSearch: "打开搜索",
     searchLabel: "课程数据库",
     searchInputLabel: "中文搜索",
@@ -542,7 +526,6 @@ const UI_TEXT = {
     meaning: "意味",
     fontEvolution: "字体の変化",
     words: "単語",
-    sentences: "例文",
     strokeOrder: "筆順",
     animate: "再生",
     trace: "なぞる",
@@ -573,7 +556,6 @@ const UI_TEXT = {
     characterCount: "{current} / {total} 文字目。",
     playLabel: "{label} を再生",
     playingLabel: "{label} を再生中。",
-    sentenceLabel: "例文 {n}",
     strokesCount: "{char} · {count}画",
     pinchToDraw: "指をつまんで枠内に書きます。",
     touchDraw: "タッチやマウスでも書けます。",
@@ -618,10 +600,9 @@ const UI_TEXT = {
     openRoleplay: "ロールプレイを開く",
     practiceModes: "練習モード",
     databaseTotals: "データベース総数",
-    databaseTotalsHint: "文字、単語、例文、成語の現在の総数です。",
+    databaseTotalsHint: "文字、単語、成語の現在の総数です。",
     databaseCharacters: "文字",
     databaseWords: "単語",
-    databaseSentences: "例文",
     databaseIdioms: "成語",
     dailyDialogue: "日常会話練習",
     dialogueModeHint: "テーマを選び、役立つ語句を聞きます。",
@@ -680,7 +661,6 @@ const UI_TEXT = {
     meaning: "뜻",
     fontEvolution: "글자체 변화",
     words: "단어",
-    sentences: "예문",
     strokeOrder: "필순",
     animate: "재생",
     trace: "따라쓰기",
@@ -711,7 +691,6 @@ const UI_TEXT = {
     characterCount: "{current} / {total}번째 글자.",
     playLabel: "{label} 재생",
     playingLabel: "{label} 재생 중.",
-    sentenceLabel: "예문 {n}",
     strokesCount: "{char} · {count}획",
     pinchToDraw: "손가락을 오므려 네모 안에 쓰세요.",
     touchDraw: "터치나 마우스로도 쓸 수 있습니다.",
@@ -756,10 +735,9 @@ const UI_TEXT = {
     openRoleplay: "역할 놀이 열기",
     practiceModes: "연습 모드",
     databaseTotals: "데이터베이스 총수",
-    databaseTotalsHint: "글자, 단어, 예문, 성어의 현재 총수입니다.",
+    databaseTotalsHint: "글자, 단어, 성어의 현재 총수입니다.",
     databaseCharacters: "글자",
     databaseWords: "단어",
-    databaseSentences: "예문",
     databaseIdioms: "성어",
     dailyDialogue: "일상 대화 연습",
     dialogueModeHint: "주제를 고르고 유용한 말을 들어요.",
@@ -793,6 +771,7 @@ const els = {
   profileEditCancelBtn: document.querySelector("#profileEditCancelBtn"),
   homeView: document.querySelector("#homeView"),
   homeHotspots: document.querySelectorAll(".home-hotspot"),
+  screenHomeTitles: document.querySelectorAll("[data-home-title]"),
   lessonPickerView: document.querySelector("#lessonPickerView"),
   customCharacterView: document.querySelector("#customCharacterView"),
   searchView: document.querySelector("#searchView"),
@@ -808,9 +787,7 @@ const els = {
   xpBar: document.querySelector("#xpBar"),
   streakValue: document.querySelector("#streakValue"),
   currentUserName: document.querySelector("#currentUserName"),
-  switchUserBtn: document.querySelector("#switchUserBtn"),
   homeCurrentUserName: document.querySelector("#homeCurrentUserName"),
-  homeSwitchUserBtn: document.querySelector("#homeSwitchUserBtn"),
   lessonSelect: document.querySelector("#lessonSelect"),
   startLessonBtn: document.querySelector("#startLessonBtn"),
   uiLanguageSelect: document.querySelector("#uiLanguageSelect"),
@@ -824,7 +801,6 @@ const els = {
   howToPlayBtn: document.querySelector("#howToPlayBtn"),
   howToPlayDialog: document.querySelector("#howToPlayDialog"),
   lessonPickerBtn: document.querySelector("#lessonPickerBtn"),
-  lessonPickerHomeBtn: document.querySelector("#lessonPickerHomeBtn"),
   customCharacterBtn: document.querySelector("#customCharacterBtn"),
   customCharacterCount: document.querySelector("#customCharacterCount"),
   searchModeBtn: document.querySelector("#searchModeBtn"),
@@ -832,9 +808,7 @@ const els = {
   idiomHomeCount: document.querySelector("#idiomHomeCount"),
   databaseCharacterCount: document.querySelector("#databaseCharacterCount"),
   databaseWordCount: document.querySelector("#databaseWordCount"),
-  databaseSentenceCount: document.querySelector("#databaseSentenceCount"),
   databaseIdiomCount: document.querySelector("#databaseIdiomCount"),
-  customHomeBtn: document.querySelector("#customHomeBtn"),
   customCharacterForm: document.querySelector("#customCharacterForm"),
   customCharInput: document.querySelector("#customCharInput"),
   customPinyinInput: document.querySelector("#customPinyinInput"),
@@ -846,7 +820,6 @@ const els = {
   customValidation: document.querySelector("#customValidation"),
   customResetBtn: document.querySelector("#customResetBtn"),
   customSavedList: document.querySelector("#customSavedList"),
-  searchHomeBtn: document.querySelector("#searchHomeBtn"),
   searchForm: document.querySelector("#searchForm"),
   searchInput: document.querySelector("#searchInput"),
   searchResultCount: document.querySelector("#searchResultCount"),
@@ -863,10 +836,8 @@ const els = {
   searchStrokeValue: document.querySelector("#searchStrokeValue"),
   searchStructureValue: document.querySelector("#searchStructureValue"),
   searchDetailWords: document.querySelector("#searchDetailWords"),
-  searchDetailSentences: document.querySelector("#searchDetailSentences"),
   searchStrokeTarget: document.querySelector("#searchStrokeTarget"),
   searchOpenLessonBtn: document.querySelector("#searchOpenLessonBtn"),
-  idiomHomeBtn: document.querySelector("#idiomHomeBtn"),
   idiomSearchInput: document.querySelector("#idiomSearchInput"),
   idiomCount: document.querySelector("#idiomCount"),
   idiomList: document.querySelector("#idiomList"),
@@ -874,14 +845,8 @@ const els = {
     word: document.querySelector(`#customWord${index}`),
     meaningEn: document.querySelector(`#customWordMeaning${index}`),
   })),
-  customSentences: [1, 2, 3].map((index) => ({
-    zh: document.querySelector(`#customSentenceZh${index}`),
-    en: document.querySelector(`#customSentenceEn${index}`),
-  })),
   dialogueModeBtn: document.querySelector("#dialogueModeBtn"),
   roleplayModeBtn: document.querySelector("#roleplayModeBtn"),
-  dialogueHomeBtn: document.querySelector("#dialogueHomeBtn"),
-  roleplayHomeBtn: document.querySelector("#roleplayHomeBtn"),
   dialogueTopicSelect: document.querySelector("#dialogueTopicSelect"),
   dialogueIcon: document.querySelector("#dialogueIcon"),
   dialogueTopic: document.querySelector("#dialogueTopic"),
@@ -901,8 +866,6 @@ const els = {
   roleplayPinyin: document.querySelector("#roleplayPinyin"),
   roleplaySpeakBtn: document.querySelector("#roleplaySpeakBtn"),
   roleplayWords: document.querySelector("#roleplayWords"),
-  homeBtn: document.querySelector("#homeBtn"),
-  resultHomeBtn: document.querySelector("#resultHomeBtn"),
   lessonTitle: document.querySelector("#lessonTitle"),
   lessonProgress: document.querySelector("#lessonProgress"),
   prevCharBtn: document.querySelector("#prevCharBtn"),
@@ -916,7 +879,6 @@ const els = {
   meaningEn: document.querySelector("#meaningEn"),
   fontEvolutionList: document.querySelector("#fontEvolutionList"),
   wordList: document.querySelector("#wordList"),
-  sentenceList: document.querySelector("#sentenceList"),
   strokeTarget: document.querySelector("#strokeTarget"),
   animateBtn: document.querySelector("#animateBtn"),
   traceBtn: document.querySelector("#traceBtn"),
@@ -1243,17 +1205,8 @@ function customEntryFromRaw(raw) {
         .filter((word) => word.word && word.meaningEn)
         .slice(0, 3)
     : [];
-  const sentences = Array.isArray(raw.sentences)
-    ? raw.sentences
-        .map((sentence) => ({
-          zh: cleanMultiline(sentence?.zh),
-          en: cleanText(sentence?.en),
-        }))
-        .filter((sentence) => sentence.zh && sentence.en)
-        .slice(0, 3)
-    : [];
 
-  if (!char || !pinyin || !meaningZh || !meaningEn || words.length !== 3 || sentences.length !== 3) {
+  if (!char || !pinyin || !meaningZh || !meaningEn || words.length !== 3) {
     return null;
   }
 
@@ -1268,8 +1221,6 @@ function customEntryFromRaw(raw) {
     strokes: Number.isFinite(Number(raw.strokes)) && Number(raw.strokes) > 0 ? Number(raw.strokes) : "",
     structure: cleanText(raw.structure) || "custom character",
     words,
-    sentence: sentences[0],
-    sentences,
     etymologyHint: cleanText(raw.etymologyHint) || "Added by user",
     sourceTags: ["custom-local"],
     custom: true,
@@ -1299,13 +1250,6 @@ function countEntryWords(entries) {
   return entries.reduce((total, entry) => total + (Array.isArray(entry.words) ? entry.words.length : 0), 0);
 }
 
-function countEntrySentences(entries) {
-  return entries.reduce((total, entry) => {
-    if (Array.isArray(entry.sentences)) return total + entry.sentences.length;
-    return total + (entry.sentence ? 1 : 0);
-  }, 0);
-}
-
 function numericDataValue(key, fallback) {
   const value = Number(DATA[key]);
   return Number.isFinite(value) ? value : fallback;
@@ -1315,7 +1259,6 @@ function databaseTotals() {
   return {
     characters: numericDataValue("characterCount", BASE_ENTRIES.length) + customEntries.length,
     words: numericDataValue("commonWordCount", countEntryWords(BASE_ENTRIES)) + countEntryWords(customEntries),
-    sentences: numericDataValue("sentenceCount", countEntrySentences(BASE_ENTRIES)) + countEntrySentences(customEntries),
     idioms: numericDataValue("idiomCount", IDIOMS.length),
   };
 }
@@ -1951,19 +1894,6 @@ function resetProfileEdit() {
   showToast(t("profileResetToast"));
 }
 
-function switchUser() {
-  const uiLanguage = state.uiLanguage;
-  const uiSkin = state.uiSkin;
-  stopSpeech();
-  stopCameraWriting({ quiet: true });
-  activeUser = null;
-  state = normalizeLoadedState({ uiLanguage, uiSkin });
-  resetSessionViews();
-  applyStaticText();
-  updateActiveUserLabels();
-  renderLogin();
-}
-
 function screenElementFor(screen) {
   return {
     login: els.loginView,
@@ -2042,7 +1972,6 @@ function renderDatabaseTotals() {
   [
     [els.databaseCharacterCount, totals.characters],
     [els.databaseWordCount, totals.words],
-    [els.databaseSentenceCount, totals.sentences],
     [els.databaseIdiomCount, totals.idioms],
   ].forEach(([node, value]) => {
     if (node) node.textContent = formatCount(value);
@@ -2120,10 +2049,6 @@ function readCustomEntryDraft() {
       word: cleanText(fields.word.value),
       meaningEn: cleanText(fields.meaningEn.value),
     })),
-    sentences: els.customSentences.map((fields) => ({
-      zh: cleanMultiline(fields.zh.value),
-      en: cleanText(fields.en.value),
-    })),
   };
 }
 
@@ -2141,9 +2066,6 @@ function validateCustomEntryDraft(draft) {
   if (draft.words.some((word) => !word.word || !word.meaningEn)) {
     return t("customMissingRequired");
   }
-  if (draft.sentences.some((sentence) => !sentence.zh || !sentence.en)) {
-    return t("customMissingRequired");
-  }
   if (BASE_ENTRIES.some((entry) => entry.char === draft.char)) {
     return t("customOriginalLocked", { char: draft.char });
   }
@@ -2153,19 +2075,12 @@ function validateCustomEntryDraft(draft) {
   if (draft.words.some((word) => !word.word.includes(draft.char))) {
     return t("customWordMustUseChar", { char: draft.char });
   }
-  if (draft.sentences.some((sentence) => !sentence.zh.includes(draft.char))) {
-    return t("customSentenceMustUseChar", { char: draft.char });
-  }
   return "";
 }
 
 function createCustomEntry(draft) {
   const createdAt = new Date().toISOString();
   const strokes = Number(draft.strokes);
-  const sentences = draft.sentences.map((sentence) => ({
-    zh: sentence.zh,
-    en: sentence.en,
-  }));
   return {
     id: `custom-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`,
     char: draft.char,
@@ -2180,8 +2095,6 @@ function createCustomEntry(draft) {
       word: word.word,
       meaningEn: word.meaningEn,
     })),
-    sentence: sentences[0],
-    sentences,
     etymologyHint: "Added by user",
     sourceTags: ["custom-local"],
     custom: true,
@@ -2348,7 +2261,6 @@ function renderSearchDetail(entry) {
   els.searchStructureValue.textContent = entry.structure || "—";
   renderFontEvolution(els.searchFontEvolutionList, entry);
   renderWordCards(els.searchDetailWords, entry);
-  renderSentenceCards(els.searchDetailSentences, entry);
   renderSearchWriter(entry);
   replayClass(els.searchDetailChar, "char-pop");
 }
@@ -2636,7 +2548,6 @@ function renderLesson() {
 
   renderFontEvolution(els.fontEvolutionList, entry);
   renderWords(entry);
-  renderSentences(entry);
   renderWriter(entry);
   replayClass(els.bigChar, "char-pop");
   replayClass(els.lessonProgress, "counter-bump");
@@ -2706,36 +2617,6 @@ function renderFontEvolution(container, entry) {
 
 function renderWords(entry) {
   renderWordCards(els.wordList, entry);
-}
-
-function renderSentenceCards(container, entry) {
-  const sentences = entry.sentences?.length ? entry.sentences : [entry.sentence];
-  container.innerHTML = "";
-  sentences.forEach((sentence, index) => {
-    const item = document.createElement("div");
-    item.className = "sentence-item";
-
-    const number = document.createElement("span");
-    number.className = "sentence-number";
-    number.textContent = String(index + 1);
-
-    const text = document.createElement("div");
-    const zh = document.createElement("p");
-    zh.className = "sentence";
-    zh.textContent = sentence.zh;
-    const en = document.createElement("p");
-    en.className = "sentence-en";
-    en.textContent = sentence.en;
-    text.append(zh, en);
-
-    item.append(number, text, makeAudioButton(sentence.zh, t("sentenceLabel", { n: index + 1 }), "sentence"));
-    container.append(item);
-  });
-  staggerChildren(container, ".sentence-item");
-}
-
-function renderSentences(entry) {
-  renderSentenceCards(els.sentenceList, entry);
 }
 
 function renderWriter(entry) {
@@ -3294,6 +3175,12 @@ function speakRoleplayScene(triggerButton = els.roleplaySpeakBtn) {
 function goHome() {
   quiz = null;
   renderHome();
+}
+
+function handleHomeTitleKeydown(event) {
+  if (event.key !== "Enter" && event.key !== " ") return;
+  event.preventDefault();
+  goHome();
 }
 
 function moveChar(delta) {
@@ -3998,8 +3885,10 @@ function bindEvents() {
     hotspot.addEventListener("pointerdown", handleHomeHotspotPress);
     hotspot.addEventListener("pointerenter", handleHomeAnimalHover);
   });
-  els.switchUserBtn.addEventListener("click", switchUser);
-  els.homeSwitchUserBtn.addEventListener("click", switchUser);
+  els.screenHomeTitles.forEach((title) => {
+    title.addEventListener("click", goHome);
+    title.addEventListener("keydown", handleHomeTitleKeydown);
+  });
   els.lessonSelect.addEventListener("change", (event) => {
     state.lessonIndex = Number(event.target.value);
     saveState();
@@ -4008,27 +3897,21 @@ function bindEvents() {
   els.uiLanguageSelect.addEventListener("change", changeUiLanguage);
   els.uiSkinSelect.addEventListener("change", changeUiSkin);
   els.lessonPickerBtn.addEventListener("click", openLessonPicker);
-  els.lessonPickerHomeBtn.addEventListener("click", goHome);
   els.customCharacterBtn.addEventListener("click", openCustomCharacter);
-  els.customHomeBtn.addEventListener("click", goHome);
   els.customCharacterForm.addEventListener("submit", saveCustomCharacter);
   els.customResetBtn.addEventListener("click", clearCustomCharacterForm);
   els.searchModeBtn.addEventListener("click", openSearchView);
-  els.searchHomeBtn.addEventListener("click", goHome);
   els.searchForm.addEventListener("submit", submitSearch);
   els.searchInput.addEventListener("input", updateSearchInput);
   els.searchSpeakBtn.addEventListener("click", speakSelectedSearchEntry);
   els.searchOpenLessonBtn.addEventListener("click", openSelectedSearchEntryInLesson);
   els.idiomModeBtn.addEventListener("click", openIdiomSeries);
-  els.idiomHomeBtn.addEventListener("click", goHome);
   els.idiomSearchInput.addEventListener("input", renderIdiomSeries);
   els.startLessonBtn.addEventListener("click", startLesson);
   els.dailyLessonBtn.addEventListener("click", startDailyLesson);
   els.dailyLessonCtaBtn?.addEventListener("click", startDailyLesson);
   els.dialogueModeBtn.addEventListener("click", openDialoguePractice);
   els.roleplayModeBtn.addEventListener("click", openRoleplayPractice);
-  els.dialogueHomeBtn.addEventListener("click", goHome);
-  els.roleplayHomeBtn.addEventListener("click", goHome);
   els.dialogueTopicSelect.addEventListener("change", changeDialogueCategory);
   els.dialoguePhraseBtn.addEventListener("click", speakDialoguePhrase);
   els.dialogueAllBtn.addEventListener("click", speakDialogueAll);
@@ -4037,8 +3920,6 @@ function bindEvents() {
   els.roleplaySpeakBtn.addEventListener("click", () => speakRoleplayScene(els.roleplaySpeakBtn));
   els.howToPlayBtn.addEventListener("click", openHowToPlay);
   els.howToPlayDialog.addEventListener("click", closeHowToPlayOnBackdrop);
-  els.homeBtn.addEventListener("click", goHome);
-  els.resultHomeBtn.addEventListener("click", goHome);
   els.prevCharBtn.addEventListener("click", () => moveChar(-1));
   els.nextCharBtn.addEventListener("click", () => moveChar(1));
   els.speakBtn.addEventListener("click", speakCurrent);

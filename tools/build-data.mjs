@@ -2533,8 +2533,8 @@ function mergePhraseSources(...sources) {
 
 function fallbackWordSentence(word) {
   return {
-    zh: `我会用“${word}”造句。`,
-    en: `I can make a sentence with "${word}".`,
+    zh: `我会使用“${word}”。`,
+    en: `I can use "${word}".`,
   };
 }
 

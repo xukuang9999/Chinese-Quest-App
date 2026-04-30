@@ -421,9 +421,16 @@ a:focus-visible {
 .brand {
   display: grid;
   flex: 1 1 360px;
-  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-columns: minmax(112px, 160px) minmax(0, 1fr);
   align-items: center;
   gap: 14px;
+  min-width: 0;
+}
+
+.brand-left {
+  display: grid;
+  justify-items: start;
+  gap: 8px;
   min-width: 0;
 }
 
@@ -493,8 +500,8 @@ h1 {
   display: flex;
   align-items: center;
   gap: 8px;
-  min-height: 58px;
-  padding: 8px;
+  min-height: 42px;
+  padding: 8px 12px;
   border: 2px solid var(--ink);
   border-radius: var(--radius);
   background: var(--paper);
@@ -505,12 +512,6 @@ h1 {
   font-size: 0.86rem;
   font-weight: 900;
   white-space: nowrap;
-}
-
-.active-user-chip .compact-button {
-  min-width: 104px;
-  height: 38px;
-  padding: 0 10px;
 }
 
 .language-control,
@@ -631,13 +632,12 @@ body:not([data-screen="home"]) .daily-lesson {
 
 .company-logo {
   display: grid;
-  flex: 0 1 clamp(116px, 13vw, 170px);
-  width: clamp(116px, 13vw, 170px);
+  width: clamp(112px, 11vw, 156px);
   max-width: 100%;
-  min-height: 36px;
+  min-height: 28px;
   overflow: hidden;
   place-items: center;
-  align-self: flex-start;
+  justify-self: start;
   padding: 0;
   border: 0;
   border-radius: 0;
@@ -650,7 +650,7 @@ body:not([data-screen="home"]) .daily-lesson {
   width: 100%;
   max-width: 100%;
   height: auto;
-  max-height: 36px;
+  max-height: 32px;
   object-fit: contain;
 }
 
@@ -1271,8 +1271,7 @@ select {
   animation-delay: calc(var(--stagger, 0) * 46ms);
 }
 
-.word-chip:hover,
-.sentence-item:hover {
+.word-chip:hover {
   transform: translateY(-2px);
 }
 
@@ -1316,66 +1315,6 @@ select {
 
 .audio-button.is-playing {
   background: var(--sun);
-}
-
-.sentence-list {
-  display: grid;
-  gap: 8px;
-}
-
-.sentence-item {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: 10px;
-  align-items: center;
-  min-width: 0;
-  padding: 8px;
-  border: 2px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--paper);
-  transition:
-    transform 170ms ease,
-    background 170ms ease,
-    border-color 170ms ease;
-  animation: itemRise 360ms ease both;
-  animation-delay: calc(var(--stagger, 0) * 48ms);
-}
-
-.sentence-item:hover {
-  border-color: rgba(47, 128, 237, 0.48);
-  background: #f8fcff;
-}
-
-.sentence-number {
-  display: grid;
-  width: 28px;
-  height: 28px;
-  place-items: center;
-  border: 2px solid var(--ink);
-  border-radius: 50%;
-  background: var(--sun);
-  font-weight: 900;
-}
-
-.sentence-item > div {
-  min-width: 0;
-  justify-self: stretch;
-  text-align: left;
-}
-
-.sentence-item .audio-button {
-  grid-row: 1;
-  grid-column: 3;
-}
-
-.sentence {
-  color: var(--ink) !important;
-  font-size: 1.06rem;
-  font-weight: 900;
-}
-
-.sentence-en {
-  font-size: 0.94rem;
 }
 
 .writing-card {
@@ -4852,9 +4791,60 @@ body[data-screen="home"] .flow {
   white-space: nowrap;
 }
 
+.home-copy-patch {
+  position: absolute;
+  z-index: 5;
+  clip: auto;
+  overflow: hidden;
+  color: #0d2f55;
+  font-size: clamp(0.34rem, 1.2cqw, 0.88rem);
+  font-weight: 650;
+  line-height: 1.22;
+  letter-spacing: 0;
+  pointer-events: none;
+  white-space: normal;
+}
+
+.home-database-hint-patch {
+  top: 25.12%;
+  left: 13.2%;
+  width: 58.6%;
+  height: 3.1%;
+  background: #fff9ec;
+}
+
+.home-database-sentence-patch {
+  top: 29.2%;
+  left: 50.2%;
+  width: 20.8%;
+  height: 9.7%;
+  border-radius: 1.1cqw;
+  background: #fff9ec;
+}
+
+.home-custom-copy-patch,
+.home-search-copy-patch {
+  top: 71.84%;
+  height: 7.8%;
+  padding: 0.15cqw 0.2cqw;
+  font-size: clamp(0.34rem, 1.03cqw, 0.8rem);
+  font-weight: 700;
+}
+
+.home-custom-copy-patch {
+  left: 3.25%;
+  width: 16.3%;
+  background: #f3ffe8;
+}
+
+.home-search-copy-patch {
+  left: 22.1%;
+  width: 15.95%;
+  background: #fff6e8;
+}
+
 #databaseCharacterCount,
 #databaseWordCount,
-#databaseSentenceCount,
 #databaseIdiomCount {
   display: flex;
   align-items: center;
@@ -4888,23 +4878,10 @@ body[data-screen="home"] .flow {
   width: 8.2%;
 }
 
-#databaseSentenceCount {
-  top: 31.92%;
-  left: 57.98%;
-  width: 8.65%;
-}
-
 #databaseIdiomCount {
   top: 31.92%;
   left: 81.35%;
   width: 5.5%;
-}
-
-.hotspot-switch-user {
-  top: 1.05%;
-  left: 1.95%;
-  width: 17.6%;
-  height: 6.35%;
 }
 
 .hotspot-daily {
@@ -5902,7 +5879,7 @@ body[data-screen="home"] .flow {
 
 .screen-head {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
   gap: 12px;
   min-height: 70px;
@@ -5910,6 +5887,24 @@ body[data-screen="home"] .flow {
   border: 2px solid var(--ink);
   border-radius: var(--radius);
   background: linear-gradient(90deg, rgba(84, 184, 106, 0.16), rgba(123, 216, 238, 0.16));
+}
+
+.screen-title-link {
+  min-width: 0;
+  margin: -4px -6px;
+  padding: 4px 6px;
+  border-radius: 10px;
+  color: inherit;
+  cursor: pointer;
+}
+
+.screen-title-link:hover {
+  background: rgba(255, 253, 247, 0.56);
+}
+
+.screen-title-link:focus-visible {
+  outline: 3px solid var(--sky);
+  outline-offset: 3px;
 }
 
 .screen-head h2 {
@@ -6388,7 +6383,6 @@ button:disabled {
   .function-card,
   .practice-icon,
   .word-chip,
-  .sentence-item,
   .dialogue-word-card,
   .answer-option,
   .sticker,
@@ -6454,6 +6448,11 @@ button:disabled {
 
   .brand {
     gap: 8px;
+    grid-template-columns: 78px minmax(0, 1fr);
+  }
+
+  .brand-left {
+    gap: 4px;
   }
 
   .brand-mark {
@@ -6530,19 +6529,15 @@ button:disabled {
   }
 
   .company-logo {
-    grid-column: 2;
-    grid-row: 1;
-    justify-self: end;
-    align-self: start;
-    width: min(112px, 100%);
-    min-height: 28px;
-    margin-right: 0;
+    justify-self: start;
+    width: 78px;
+    min-height: 18px;
   }
 
   .company-logo img {
     width: 100%;
     max-width: 100%;
-    max-height: 26px;
+    max-height: 18px;
     object-position: center;
   }
 
