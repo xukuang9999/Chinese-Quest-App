@@ -1,12 +1,14 @@
 const DATA = window.CHINESE_STUDY_DATA;
 const STORAGE_KEY = "chinese-quest-300-state-v2";
 const ACTIVE_USER_KEY = "chinese-quest-active-user-v1";
+const USER_PROFILES_KEY = "chinese-quest-user-profiles-v1";
 const CUSTOM_ENTRIES_KEY = "chinese-quest-custom-entries-v1";
 const BASE_ENTRIES = Array.isArray(DATA.entries) ? DATA.entries : [];
 const IDIOMS = Array.isArray(DATA.idioms) ? DATA.idioms : [];
 const LESSON_SIZE = DATA.lessonSize || 5;
 const XP_PER_LEVEL = 120;
 const STICKERS = ["星", "中", "好", "学", "棒", "✓", "5"];
+const HOME_ANIMAL_SOUND_COOLDOWN_MS = 360;
 const USER_PROFILES = [
   { id: "xiaoming", name: "小明", mark: "明" },
   { id: "xiaohong", name: "小红", mark: "红" },
@@ -17,7 +19,6 @@ const USER_PROFILES = [
   { id: "xiaojie", name: "小杰", mark: "杰" },
   { id: "xiaolan", name: "小兰", mark: "兰" },
   { id: "xiaoyu", name: "小宇", mark: "宇" },
-  { id: "xiaoyue", name: "小月", mark: "月" },
 ];
 const UI_LANGUAGE_OPTIONS = [
   { value: "en", label: "English" },
@@ -51,15 +52,27 @@ const UI_TEXT = {
   en: {
     brandTagline: "Five characters per lesson",
     loginTitle: "Choose your learner",
-    loginHint: "Tap a name to log in. No password is needed.",
-    loginUsers: "learner login choices",
-    loginAction: "Log in",
+    loginUsers: "learner choices",
+    editProfile: "Edit",
+    editProfileFor: "Edit {name}'s profile",
+    profileEditTitle: "Edit learner profile",
+    profileEditHint: "Change the learner name and avatar mark shown on this device.",
+    profileNameLabel: "Learner name",
+    profileMarkLabel: "Avatar mark",
+    profileMarkHint: "Use one Chinese character, letter, number, or emoji.",
+    profileSave: "Save profile",
+    profileReset: "Reset",
+    profileCancel: "Cancel",
+    profileSavedToast: "{name}'s profile was saved.",
+    profileResetToast: "Profile reset.",
+    profileNameRequired: "Enter a learner name.",
+    profileMarkRequired: "Enter an avatar mark.",
     loginProgressMeta: "{xp} XP · Level {level} · {lessons} lessons complete",
     lastUser: "Last used",
     currentUser: "Current user",
     switchUser: "Switch user",
-    signedInAs: "Signed in as {name}",
-    loginToast: "{name} logged in.",
+    signedInAs: "Current learner: {name}",
+    loginToast: "Welcome back, {name}.",
     dailyLesson: "Daily Lesson",
     startToday: "Start today's lesson",
     uiLanguage: "UI language",
@@ -255,15 +268,27 @@ const UI_TEXT = {
   zh: {
     brandTagline: "每节课 5 个汉字",
     loginTitle: "选择学习用户",
-    loginHint: "点击名字即可登录，不需要密码。",
-    loginUsers: "学习用户登录选项",
-    loginAction: "登录",
+    loginUsers: "学习用户选择选项",
+    editProfile: "编辑",
+    editProfileFor: "编辑 {name} 的资料",
+    profileEditTitle: "修改学习用户资料",
+    profileEditHint: "修改此设备上显示的学习用户名字和头像标记。",
+    profileNameLabel: "学习用户名字",
+    profileMarkLabel: "头像标记",
+    profileMarkHint: "可使用一个汉字、字母、数字或表情。",
+    profileSave: "保存资料",
+    profileReset: "恢复默认",
+    profileCancel: "取消",
+    profileSavedToast: "{name} 的资料已保存。",
+    profileResetToast: "资料已恢复默认。",
+    profileNameRequired: "请输入学习用户名字。",
+    profileMarkRequired: "请输入头像标记。",
     loginProgressMeta: "{xp} 经验 · {level} 级 · 已完成 {lessons} 课",
     lastUser: "上次使用",
     currentUser: "当前用户",
     switchUser: "切换用户",
-    signedInAs: "已登录：{name}",
-    loginToast: "{name} 已登录。",
+    signedInAs: "当前学习用户：{name}",
+    loginToast: "{name}，欢迎回来。",
     dailyLesson: "一日一课",
     startToday: "开始今天的一课",
     uiLanguage: "界面语言",
@@ -735,7 +760,16 @@ const UI_TEXT = {
 const els = {
   loginView: document.querySelector("#loginView"),
   loginUserList: document.querySelector("#loginUserList"),
+  profileEditDialog: document.querySelector("#profileEditDialog"),
+  profileEditForm: document.querySelector("#profileEditForm"),
+  profileEditTitle: document.querySelector("#profileEditTitle"),
+  profileNameInput: document.querySelector("#profileNameInput"),
+  profileMarkInput: document.querySelector("#profileMarkInput"),
+  profileEditValidation: document.querySelector("#profileEditValidation"),
+  profileEditResetBtn: document.querySelector("#profileEditResetBtn"),
+  profileEditCancelBtn: document.querySelector("#profileEditCancelBtn"),
   homeView: document.querySelector("#homeView"),
+  homeHotspots: document.querySelectorAll(".home-hotspot"),
   lessonPickerView: document.querySelector("#lessonPickerView"),
   customCharacterView: document.querySelector("#customCharacterView"),
   searchView: document.querySelector("#searchView"),
@@ -763,6 +797,7 @@ const els = {
   dailyLessonTitle: document.querySelector("#dailyLessonTitle"),
   dailyLessonChars: document.querySelector("#dailyLessonChars"),
   dailyLessonBtn: document.querySelector("#dailyLessonBtn"),
+  dailyLessonCtaBtn: document.querySelector("#dailyLessonCtaBtn"),
   howToPlayBtn: document.querySelector("#howToPlayBtn"),
   howToPlayDialog: document.querySelector("#howToPlayDialog"),
   lessonPickerBtn: document.querySelector("#lessonPickerBtn"),
@@ -890,6 +925,9 @@ const els = {
 let writer = null;
 let searchWriter = null;
 let selectedSearchEntry = null;
+let homeAudioContext = null;
+let lastHomeAnimalSound = "";
+let lastHomeAnimalSoundAt = 0;
 let quiz = null;
 let lastResult = null;
 let toastTimer = null;
@@ -1027,10 +1065,12 @@ const defaultState = {
 };
 
 let customEntries = loadCustomEntries();
+let userProfiles = loadUserProfiles();
 let activeUser = null;
 let state = freshDefaultState();
 let lastRenderedXp = null;
 let lastRenderedLevel = null;
+let editingProfileId = null;
 
 function freshDefaultState() {
   return {
@@ -1093,6 +1133,54 @@ function cleanText(value) {
 
 function cleanMultiline(value) {
   return String(value ?? "").replace(/\s+/g, " ").trim();
+}
+
+function firstProfileMark(name, fallbackMark) {
+  const first = Array.from(cleanText(name))[0];
+  return first ? first.toLocaleUpperCase() : fallbackMark;
+}
+
+function normalizeProfileMark(value, fallbackMark) {
+  const mark = Array.from(cleanText(value)).slice(0, 2).join("");
+  return mark || fallbackMark;
+}
+
+function normalizeUserProfile(raw, fallbackProfile) {
+  const name = cleanText(raw?.name).slice(0, 24) || fallbackProfile.name;
+  const mark = normalizeProfileMark(raw?.mark, firstProfileMark(name, fallbackProfile.mark));
+  return {
+    ...fallbackProfile,
+    name,
+    mark,
+  };
+}
+
+function profileStoragePayload() {
+  return Object.fromEntries(userProfiles.map(({ id, name, mark }) => [id, { name, mark }]));
+}
+
+function loadUserProfiles() {
+  let savedProfiles = {};
+  try {
+    const parsed = JSON.parse(localStorage.getItem(USER_PROFILES_KEY));
+    if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) savedProfiles = parsed;
+  } catch {
+    savedProfiles = {};
+  }
+  return USER_PROFILES.map((profile) => normalizeUserProfile(savedProfiles[profile.id], profile));
+}
+
+function saveUserProfiles() {
+  localStorage.setItem(USER_PROFILES_KEY, JSON.stringify(profileStoragePayload()));
+}
+
+function resetUserProfile(userId) {
+  const fallbackProfile = USER_PROFILES.find((profile) => profile.id === userId);
+  if (!fallbackProfile) return null;
+  const resetProfile = { ...fallbackProfile };
+  userProfiles = userProfiles.map((profile) => (profile.id === userId ? resetProfile : profile));
+  saveUserProfiles();
+  return resetProfile;
 }
 
 function customEntryFromRaw(raw) {
@@ -1416,6 +1504,159 @@ function replayClass(element, className) {
   element.classList.add(className);
 }
 
+function getHomeAudioContext() {
+  const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+  if (!AudioContextClass) return null;
+  if (!homeAudioContext || homeAudioContext.state === "closed") {
+    homeAudioContext = new AudioContextClass();
+  }
+  return homeAudioContext;
+}
+
+function unlockHomeAnimalAudio() {
+  const ctx = getHomeAudioContext();
+  if (!ctx || ctx.state !== "suspended") return;
+  ctx.resume().catch(() => {});
+}
+
+function scheduleAnimalTone(ctx, destination, options) {
+  const {
+    at = 0,
+    duration = 0.16,
+    type = "sine",
+    from = 440,
+    to = from,
+    gain = 0.08,
+    attack = 0.015,
+  } = options;
+  const start = ctx.currentTime + at;
+  const end = start + duration;
+  const oscillator = ctx.createOscillator();
+  const envelope = ctx.createGain();
+  oscillator.type = type;
+  oscillator.frequency.setValueAtTime(Math.max(1, from), start);
+  oscillator.frequency.exponentialRampToValueAtTime(Math.max(1, to), Math.max(start + 0.01, end - 0.018));
+  envelope.gain.setValueAtTime(0.0001, start);
+  envelope.gain.exponentialRampToValueAtTime(gain, start + attack);
+  envelope.gain.exponentialRampToValueAtTime(0.0001, end);
+  oscillator.connect(envelope);
+  envelope.connect(destination);
+  oscillator.start(start);
+  oscillator.stop(end + 0.04);
+}
+
+function scheduleAnimalNoise(ctx, destination, options) {
+  const {
+    at = 0,
+    duration = 0.16,
+    gain = 0.04,
+    filterType = "bandpass",
+    frequency = 700,
+    q = 4,
+  } = options;
+  const start = ctx.currentTime + at;
+  const frameCount = Math.max(1, Math.floor(ctx.sampleRate * duration));
+  const buffer = ctx.createBuffer(1, frameCount, ctx.sampleRate);
+  const samples = buffer.getChannelData(0);
+  for (let index = 0; index < frameCount; index += 1) {
+    samples[index] = Math.random() * 2 - 1;
+  }
+
+  const source = ctx.createBufferSource();
+  const filter = ctx.createBiquadFilter();
+  const envelope = ctx.createGain();
+  source.buffer = buffer;
+  filter.type = filterType;
+  filter.frequency.setValueAtTime(frequency, start);
+  filter.Q.setValueAtTime(q, start);
+  envelope.gain.setValueAtTime(0.0001, start);
+  envelope.gain.exponentialRampToValueAtTime(gain, start + 0.018);
+  envelope.gain.exponentialRampToValueAtTime(0.0001, start + duration);
+  source.connect(filter);
+  filter.connect(envelope);
+  envelope.connect(destination);
+  source.start(start);
+  source.stop(start + duration + 0.03);
+}
+
+function scheduleHomeAnimalSound(kind, ctx, destination) {
+  switch (kind) {
+    case "dog":
+      scheduleAnimalTone(ctx, destination, { type: "square", from: 180, to: 92, duration: 0.09, gain: 0.09 });
+      scheduleAnimalTone(ctx, destination, { at: 0.11, type: "square", from: 230, to: 120, duration: 0.08, gain: 0.07 });
+      break;
+    case "frog":
+      scheduleAnimalTone(ctx, destination, { type: "sine", from: 105, to: 72, duration: 0.23, gain: 0.09, attack: 0.035 });
+      scheduleAnimalTone(ctx, destination, { at: 0.04, type: "sawtooth", from: 145, to: 88, duration: 0.18, gain: 0.045 });
+      break;
+    case "duck":
+      scheduleAnimalTone(ctx, destination, { type: "sawtooth", from: 450, to: 260, duration: 0.12, gain: 0.075 });
+      scheduleAnimalTone(ctx, destination, { at: 0.15, type: "sawtooth", from: 420, to: 250, duration: 0.11, gain: 0.07 });
+      break;
+    case "elephant":
+      scheduleAnimalTone(ctx, destination, { type: "sawtooth", from: 520, to: 900, duration: 0.22, gain: 0.055 });
+      scheduleAnimalTone(ctx, destination, { at: 0.04, type: "triangle", from: 340, to: 720, duration: 0.18, gain: 0.045 });
+      scheduleAnimalTone(ctx, destination, { at: 0.2, type: "sawtooth", from: 820, to: 520, duration: 0.18, gain: 0.04 });
+      break;
+    case "fox":
+      scheduleAnimalTone(ctx, destination, { type: "triangle", from: 780, to: 1180, duration: 0.08, gain: 0.06 });
+      scheduleAnimalTone(ctx, destination, { at: 0.1, type: "triangle", from: 540, to: 850, duration: 0.09, gain: 0.055 });
+      break;
+    case "rabbit":
+      scheduleAnimalTone(ctx, destination, { type: "sine", from: 1250, to: 1620, duration: 0.055, gain: 0.045 });
+      scheduleAnimalTone(ctx, destination, { at: 0.075, type: "sine", from: 980, to: 1450, duration: 0.06, gain: 0.04 });
+      break;
+    case "hedgehog":
+      scheduleAnimalNoise(ctx, destination, { duration: 0.15, gain: 0.035, frequency: 880, q: 6 });
+      scheduleAnimalNoise(ctx, destination, { at: 0.15, duration: 0.12, gain: 0.03, frequency: 620, q: 5 });
+      scheduleAnimalTone(ctx, destination, { at: 0.05, type: "triangle", from: 640, to: 520, duration: 0.04, gain: 0.025 });
+      break;
+    case "bear":
+      scheduleAnimalTone(ctx, destination, { type: "sawtooth", from: 92, to: 62, duration: 0.28, gain: 0.065, attack: 0.035 });
+      scheduleAnimalNoise(ctx, destination, { duration: 0.26, gain: 0.032, filterType: "lowpass", frequency: 190, q: 1.2 });
+      break;
+    case "panda":
+    default:
+      scheduleAnimalTone(ctx, destination, { type: "triangle", from: 250, to: 182, duration: 0.16, gain: 0.065, attack: 0.025 });
+      scheduleAnimalTone(ctx, destination, { at: 0.12, type: "sine", from: 330, to: 230, duration: 0.12, gain: 0.045 });
+      break;
+  }
+}
+
+async function playHomeAnimalSound(kind) {
+  const ctx = getHomeAudioContext();
+  if (!ctx) return;
+  if (ctx.state === "suspended") {
+    await ctx.resume();
+  }
+  const master = ctx.createGain();
+  master.gain.setValueAtTime(0.72, ctx.currentTime);
+  master.connect(ctx.destination);
+  scheduleHomeAnimalSound(kind, ctx, master);
+  window.setTimeout(() => {
+    try {
+      master.disconnect();
+    } catch {
+      // The sound may already have been disconnected by the browser.
+    }
+  }, 720);
+}
+
+function handleHomeAnimalHover(event) {
+  if (event.pointerType === "touch") return;
+  const target = event.currentTarget;
+  if (!(target instanceof HTMLElement)) return;
+  const sound = target.dataset.animalSound;
+  if (!sound) return;
+  const now = performance.now();
+  if (sound === lastHomeAnimalSound && now - lastHomeAnimalSoundAt < HOME_ANIMAL_SOUND_COOLDOWN_MS) return;
+  if (now - lastHomeAnimalSoundAt < 110) return;
+  lastHomeAnimalSound = sound;
+  lastHomeAnimalSoundAt = now;
+  replayClass(target, "hotspot-sound");
+  playHomeAnimalSound(sound).catch(() => {});
+}
+
 function staggerChildren(container, selector) {
   if (!container) return;
   [...container.querySelectorAll(selector)].forEach((child, index) => {
@@ -1489,7 +1730,7 @@ function coach(message, toast = false) {
 }
 
 function userById(userId) {
-  return USER_PROFILES.find((user) => user.id === userId) || null;
+  return userProfiles.find((user) => user.id === userId) || null;
 }
 
 function levelForState(userState) {
@@ -1516,14 +1757,13 @@ function renderLoginUsers() {
   if (!els.loginUserList) return;
   const lastUserId = localStorage.getItem(ACTIVE_USER_KEY);
   els.loginUserList.innerHTML = "";
-  USER_PROFILES.forEach((profile) => {
+  userProfiles.forEach((profile) => {
     const previewState = loadStateForUser(profile.id);
     const completedCount = Array.isArray(previewState.completedLessons) ? previewState.completedLessons.length : 0;
-    const button = document.createElement("button");
-    button.className = "login-user-card";
-    if (profile.id === lastUserId) button.classList.add("last-used");
-    button.type = "button";
-    button.dataset.userId = profile.id;
+    const card = document.createElement("article");
+    card.className = "login-user-card";
+    if (profile.id === lastUserId) card.classList.add("last-used");
+    card.dataset.userId = profile.id;
 
     const avatar = document.createElement("span");
     avatar.className = "login-user-avatar";
@@ -1541,18 +1781,27 @@ function renderLoginUsers() {
     });
     copy.append(name, meta);
 
-    const action = document.createElement("span");
-    action.className = "login-user-action";
-    action.textContent = t("loginAction");
-    button.append(avatar, copy, action);
+    const actions = document.createElement("span");
+    actions.className = "login-user-actions";
+
+    const editAction = document.createElement("button");
+    editAction.className = "login-profile-edit";
+    editAction.type = "button";
+    editAction.dataset.editProfileId = profile.id;
+    editAction.textContent = "✎";
+    editAction.title = t("editProfile");
+    editAction.setAttribute("aria-label", t("editProfileFor", { name: profile.name }));
+
+    actions.append(editAction);
+    card.append(avatar, copy, actions);
 
     if (profile.id === lastUserId) {
       const badge = document.createElement("em");
       badge.textContent = t("lastUser");
-      button.append(badge);
+      card.append(badge);
     }
 
-    els.loginUserList.append(button);
+    els.loginUserList.append(card);
   });
 }
 
@@ -1564,6 +1813,7 @@ function renderLogin() {
 function loginUser(userId) {
   const user = userById(userId);
   if (!user) return;
+  unlockHomeAnimalAudio();
   activeUser = user;
   state = loadStateForUser(user.id);
   normalizeStateCoursePointers();
@@ -1577,9 +1827,89 @@ function loginUser(userId) {
 
 function handleLoginUserClick(event) {
   const source = event.target instanceof Element ? event.target : null;
-  const button = source?.closest("[data-user-id]");
-  if (!button) return;
-  loginUser(button.dataset.userId);
+  const editButton = source?.closest("[data-edit-profile-id]");
+  if (editButton) {
+    openProfileEditor(editButton.dataset.editProfileId);
+    return;
+  }
+  const card = source?.closest("[data-user-id]");
+  if (!card) return;
+  loginUser(card.dataset.userId);
+}
+
+function setProfileValidation(message, tone = "") {
+  if (!els.profileEditValidation) return;
+  els.profileEditValidation.textContent = message;
+  els.profileEditValidation.className = `custom-validation${tone ? ` ${tone}` : ""}`;
+}
+
+function fillProfileForm(profile) {
+  if (!profile) return;
+  if (els.profileNameInput) els.profileNameInput.value = profile.name;
+  if (els.profileMarkInput) els.profileMarkInput.value = profile.mark;
+  setProfileValidation("");
+}
+
+function openProfileEditor(userId) {
+  const profile = userById(userId);
+  if (!profile || !els.profileEditDialog) return;
+  editingProfileId = userId;
+  fillProfileForm(profile);
+  if (typeof els.profileEditDialog.showModal === "function") {
+    els.profileEditDialog.showModal();
+  } else {
+    els.profileEditDialog.setAttribute("open", "");
+  }
+  requestAnimationFrame(() => replayClass(els.profileEditDialog.querySelector(".profile-panel"), "guide-pop"));
+}
+
+function closeProfileEditor() {
+  editingProfileId = null;
+  if (!els.profileEditDialog) return;
+  if (typeof els.profileEditDialog.close === "function") {
+    els.profileEditDialog.close();
+  } else {
+    els.profileEditDialog.removeAttribute("open");
+  }
+}
+
+function closeProfileEditorOnBackdrop(event) {
+  if (event.target === els.profileEditDialog) closeProfileEditor();
+}
+
+function saveProfileEdit(event) {
+  event.preventDefault();
+  if (!editingProfileId) return;
+  const name = cleanText(els.profileNameInput?.value).slice(0, 24);
+  const fallbackProfile = USER_PROFILES.find((profile) => profile.id === editingProfileId);
+  if (!name) {
+    setProfileValidation(t("profileNameRequired"), "needs-review");
+    return;
+  }
+  const mark = normalizeProfileMark(els.profileMarkInput?.value, firstProfileMark(name, fallbackProfile?.mark || "学"));
+  if (!mark) {
+    setProfileValidation(t("profileMarkRequired"), "needs-review");
+    return;
+  }
+  const nextProfile = normalizeUserProfile({ name, mark }, fallbackProfile || { id: editingProfileId, name, mark });
+  userProfiles = userProfiles.map((profile) => (profile.id === editingProfileId ? { ...profile, ...nextProfile } : profile));
+  saveUserProfiles();
+  if (activeUser?.id === editingProfileId) activeUser = userById(editingProfileId);
+  updateActiveUserLabels();
+  renderLoginUsers();
+  closeProfileEditor();
+  showToast(t("profileSavedToast", { name: nextProfile.name }));
+}
+
+function resetProfileEdit() {
+  if (!editingProfileId) return;
+  const resetProfile = resetUserProfile(editingProfileId);
+  if (!resetProfile) return;
+  if (activeUser?.id === editingProfileId) activeUser = userById(editingProfileId);
+  fillProfileForm(resetProfile);
+  updateActiveUserLabels();
+  renderLoginUsers();
+  showToast(t("profileResetToast"));
 }
 
 function switchUser() {
@@ -3571,8 +3901,33 @@ function closeHowToPlayOnBackdrop(event) {
   }
 }
 
+function handleHomeHotspotPress(event) {
+  unlockHomeAnimalAudio();
+  const target = event.currentTarget;
+  if (!(target instanceof HTMLElement)) return;
+  const rect = target.getBoundingClientRect();
+  target.style.setProperty("--hotspot-x", `${event.clientX - rect.left}px`);
+  target.style.setProperty("--hotspot-y", `${event.clientY - rect.top}px`);
+  replayClass(target, "hotspot-press");
+}
+
 function bindEvents() {
   els.loginUserList.addEventListener("click", handleLoginUserClick);
+  els.profileEditForm?.addEventListener("submit", saveProfileEdit);
+  els.profileEditForm?.addEventListener("click", (event) => {
+    const source = event.target instanceof Element ? event.target : null;
+    if (source?.closest("[data-close-profile]")) closeProfileEditor();
+  });
+  els.profileEditResetBtn?.addEventListener("click", resetProfileEdit);
+  els.profileEditCancelBtn?.addEventListener("click", closeProfileEditor);
+  els.profileEditDialog?.addEventListener("click", closeProfileEditorOnBackdrop);
+  els.profileEditDialog?.addEventListener("close", () => {
+    editingProfileId = null;
+  });
+  els.homeHotspots.forEach((hotspot) => {
+    hotspot.addEventListener("pointerdown", handleHomeHotspotPress);
+    hotspot.addEventListener("pointerenter", handleHomeAnimalHover);
+  });
   els.switchUserBtn.addEventListener("click", switchUser);
   els.homeSwitchUserBtn.addEventListener("click", switchUser);
   els.lessonSelect.addEventListener("change", (event) => {
@@ -3599,6 +3954,7 @@ function bindEvents() {
   els.idiomSearchInput.addEventListener("input", renderIdiomSeries);
   els.startLessonBtn.addEventListener("click", startLesson);
   els.dailyLessonBtn.addEventListener("click", startDailyLesson);
+  els.dailyLessonCtaBtn?.addEventListener("click", startDailyLesson);
   els.dialogueModeBtn.addEventListener("click", openDialoguePractice);
   els.roleplayModeBtn.addEventListener("click", openRoleplayPractice);
   els.dialogueHomeBtn.addEventListener("click", goHome);

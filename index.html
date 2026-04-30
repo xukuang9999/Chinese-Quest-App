@@ -4,13 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Chinese Quest</title>
-    <link rel="stylesheet" href="styles.css?v=20260430c" />
+    <link rel="stylesheet" href="styles.css?v=20260430i" />
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"
     ></script>
     <script defer src="data.js?v=20260428k"></script>
-    <script defer src="app.js?v=20260430b"></script>
+    <script defer src="app.js?v=20260430d"></script>
   </head>
   <body data-screen="login" data-skin="classic">
     <div class="cartoon-sky" aria-hidden="true">
@@ -40,7 +40,7 @@
         </div>
         <div class="top-actions">
           <div class="active-user-chip" aria-label="Current user" data-i18n-aria-label="currentUser">
-            <span id="currentUserName">Signed in</span>
+            <span id="currentUserName">Current learner</span>
             <button id="switchUserBtn" class="secondary-button compact-button" type="button" data-i18n="switchUser">Switch user</button>
           </div>
           <div class="top-stats" aria-label="progress summary" data-i18n-aria-label="progressSummary">
@@ -65,228 +65,97 @@
 
       <main class="flow">
         <section id="loginView" class="screen-card login-card" aria-live="polite">
+          <div class="login-scene" aria-hidden="true">
+            <span class="login-sun"></span>
+            <span class="login-hill hill-back"></span>
+            <span class="login-hill hill-front"></span>
+            <span class="login-river"></span>
+            <span class="login-bridge"></span>
+            <span class="login-lantern lantern-one"></span>
+            <span class="login-lantern lantern-two"></span>
+            <span class="login-kite"></span>
+            <span class="login-stroke stroke-one">一</span>
+            <span class="login-stroke stroke-two">人</span>
+            <span class="login-stroke stroke-three">口</span>
+            <span class="login-floating-card floating-card-one">学</span>
+            <span class="login-floating-card floating-card-two">中</span>
+            <span class="login-floating-card floating-card-three">文</span>
+            <span class="login-floating-card floating-card-four">好</span>
+            <span class="login-spark spark-one">✦</span>
+            <span class="login-spark spark-two">✦</span>
+            <span class="login-spark spark-three">✦</span>
+          </div>
           <div class="login-copy">
             <span class="tiny-label">Chinese Quest</span>
             <h2 data-i18n="loginTitle">Choose your learner</h2>
-            <p data-i18n="loginHint">Tap a name to log in. No password is needed.</p>
           </div>
-          <div id="loginUserList" class="login-user-grid" aria-label="learner login choices" data-i18n-aria-label="loginUsers"></div>
+          <div id="loginUserList" class="login-user-grid" aria-label="learner choices" data-i18n-aria-label="loginUsers"></div>
         </section>
 
-        <section id="homeView" class="home-card function-home quest-home hidden" aria-label="function menu" data-i18n-aria-label="functionMenu">
-          <div class="quest-hero">
-            <div class="hero-sign" aria-hidden="true">
-              <img src="assets/chinese-quest-logo.svg?v=20260427u" alt="" />
+        <section id="homeView" class="home-card image-home hidden" aria-label="function menu" data-i18n-aria-label="functionMenu">
+          <div class="home-image-stage">
+            <img
+              class="home-image"
+              src="assets/chinese-quest-home.png?v=20260430a"
+              alt="Chinese Quest home menu"
+            />
+
+            <button id="homeSwitchUserBtn" class="home-hotspot home-sign-hotspot hotspot-switch-user" type="button" data-animal-sound="panda" data-i18n-aria-label="switchUser">
+              Switch user
+            </button>
+            <button id="dailyLessonBtn" class="home-hotspot home-card-hotspot hotspot-daily" type="button" data-animal-sound="panda" data-i18n-aria-label="startToday">
+              Start today's lesson
+            </button>
+            <button id="lessonPickerBtn" class="home-hotspot home-card-hotspot hotspot-course" type="button" data-animal-sound="fox" data-i18n-aria-label="chooseLessonAction">
+              Choose a lesson
+            </button>
+            <button id="dialogueModeBtn" class="home-hotspot home-card-hotspot hotspot-dialogue" type="button" data-animal-sound="dog" data-i18n-aria-label="openDialogue">
+              Open dialogue practice
+            </button>
+            <button id="roleplayModeBtn" class="home-hotspot home-card-hotspot hotspot-roleplay" type="button" data-animal-sound="frog" data-i18n-aria-label="openRoleplay">
+              Open role play
+            </button>
+            <button id="howToPlayBtn" class="home-hotspot home-card-hotspot hotspot-guide" type="button" data-animal-sound="elephant" data-i18n-aria-label="openHowToPlay">
+              Open guide
+            </button>
+            <button id="customCharacterBtn" class="home-hotspot home-card-hotspot hotspot-custom" type="button" data-animal-sound="rabbit" data-i18n-aria-label="openCustomCharacter">
+              Add a character
+            </button>
+            <button id="searchModeBtn" class="home-hotspot home-card-hotspot hotspot-search" type="button" data-animal-sound="hedgehog" data-i18n-aria-label="openSearch">
+              Open search
+            </button>
+            <button id="idiomModeBtn" class="home-hotspot home-card-hotspot hotspot-idioms" type="button" data-animal-sound="duck" data-i18n-aria-label="openIdioms">
+              Open idioms
+            </button>
+            <button id="dailyLessonCtaBtn" class="home-hotspot home-pill-hotspot hotspot-main-cta" type="button" data-animal-sound="panda" data-i18n-aria-label="startToday">
+              Start today's lesson
+            </button>
+
+            <label class="home-hotspot home-card-hotspot home-select-hotspot hotspot-language" for="uiLanguageSelect" data-animal-sound="fox">
+              <span data-i18n="uiLanguage">UI language</span>
+              <select id="uiLanguageSelect" aria-label="UI language" data-i18n-aria-label="uiLanguage"></select>
+            </label>
+            <label class="home-hotspot home-card-hotspot home-select-hotspot hotspot-skin" for="uiSkinSelect" data-animal-sound="bear">
+              <span data-i18n="uiSkin">UI skin</span>
+              <select id="uiSkinSelect" aria-label="UI skin" data-i18n-aria-label="uiSkin"></select>
+            </label>
+            <a class="home-hotspot home-footer-hotspot hotspot-contact" href="mailto:enquiries@optiviseAI.com.au" aria-label="Contact Optivise AI">
+              Contact
+            </a>
+
+            <div class="home-data-nodes" aria-hidden="true">
+              <span id="homeCurrentUserName">Current learner</span>
+              <span id="dailyMonth">APR</span>
+              <span id="dailyDay">30</span>
+              <span id="dailyLessonTitle">Lesson 1</span>
+              <span id="dailyLessonChars">中 文 学 习 好</span>
+              <span id="databaseCharacterCount">0</span>
+              <span id="databaseWordCount">0</span>
+              <span id="databaseSentenceCount">0</span>
+              <span id="databaseIdiomCount">0</span>
+              <span id="customCharacterCount">No custom characters yet</span>
+              <span id="idiomHomeCount">200 idioms</span>
             </div>
-            <div class="hero-board" aria-hidden="true">
-              <span>xué</span>
-              <strong>学</strong>
-            </div>
-            <div class="hero-copy">
-              <div class="hero-title">中文课</div>
-              <div class="hero-ribbon">快乐学中文&nbsp;&nbsp;成长每一天</div>
-              <strong>Chinese Quest</strong>
-              <p data-i18n="brandTagline">Five characters per lesson</p>
-            </div>
-            <div class="hero-mascot hero-panda" aria-hidden="true">🐼</div>
-            <div class="hero-mascot hero-bird" aria-hidden="true">🐦</div>
-            <div class="hero-mascot hero-fox" aria-hidden="true">🦊</div>
-            <div class="hero-mascot hero-rabbit" aria-hidden="true">🐰</div>
-            <div class="hero-mascot hero-duck" aria-hidden="true">🐥</div>
-            <div class="home-user-strip">
-              <span id="homeCurrentUserName">Signed in</span>
-              <button id="homeSwitchUserBtn" class="secondary-button compact-button" type="button" data-i18n="switchUser">
-                Switch user
-              </button>
-            </div>
-          </div>
-
-          <article class="function-card database-card quest-database-card" aria-label="Database totals" data-i18n-aria-label="databaseTotals">
-            <div class="function-logo database-logo" aria-hidden="true">
-              <span>
-                <svg class="symbol-icon database-symbol" viewBox="0 0 32 32" focusable="false" aria-hidden="true">
-                  <ellipse cx="16" cy="8" rx="9" ry="4.2" fill="#fffdf7" stroke="currentColor" stroke-width="3" />
-                  <path d="M7 8v12c0 2.3 4 4.2 9 4.2s9-1.9 9-4.2V8" fill="#fff2c3" stroke="currentColor" stroke-width="3" stroke-linejoin="round" />
-                  <path d="M7 14c0 2.3 4 4.2 9 4.2s9-1.9 9-4.2M7 20c0 2.3 4 4.2 9 4.2s9-1.9 9-4.2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
-                </svg>
-              </span>
-            </div>
-            <div class="function-copy">
-              <strong data-i18n="databaseTotals">Database totals</strong>
-              <span data-i18n="databaseTotalsHint">Current totals for characters, words, sentences, and idioms.</span>
-            </div>
-            <dl class="database-total-grid">
-              <div>
-                <dt><span aria-hidden="true">字</span><em data-i18n="databaseCharacters">Characters</em></dt>
-                <dd id="databaseCharacterCount">0</dd>
-              </div>
-              <div>
-                <dt><span aria-hidden="true">词</span><em data-i18n="databaseWords">Words</em></dt>
-                <dd id="databaseWordCount">0</dd>
-              </div>
-              <div>
-                <dt><span aria-hidden="true">句</span><em data-i18n="databaseSentences">Sentences</em></dt>
-                <dd id="databaseSentenceCount">0</dd>
-              </div>
-              <div>
-                <dt><span aria-hidden="true">成</span><em data-i18n="databaseIdioms">Idioms</em></dt>
-                <dd id="databaseIdiomCount">0</dd>
-              </div>
-            </dl>
-          </article>
-
-          <div class="function-grid quest-function-grid" aria-label="practice modes" data-i18n-aria-label="practiceModes">
-            <article class="function-card daily-function quest-action-card">
-              <div class="daily-calendar" aria-hidden="true">
-                <span id="dailyMonth">APR</span>
-                <strong id="dailyDay">30</strong>
-              </div>
-              <div class="function-copy">
-                <strong data-i18n="dailyLesson">Daily Lesson</strong>
-                <span id="dailyLessonTitle">Lesson 1</span>
-                <span id="dailyLessonChars" hidden>中 文 学 习 好</span>
-              </div>
-              <div class="card-mascot" aria-hidden="true">🐼</div>
-              <button id="dailyLessonBtn" class="primary-button function-action" type="button" data-i18n="startToday">
-                Start today's lesson
-              </button>
-            </article>
-
-            <article class="function-card course-function quest-action-card">
-              <div class="function-logo course-logo" aria-hidden="true">
-                <span>🎓</span>
-              </div>
-              <div class="function-copy">
-                <strong data-i18n="courseLearning">Course lessons</strong>
-                <span data-i18n="courseLearningHint">Choose one lesson from the 800-character course.</span>
-              </div>
-              <div class="card-mascot" aria-hidden="true">🦊</div>
-              <button id="lessonPickerBtn" class="primary-button function-action" type="button" data-i18n="chooseLessonAction">
-                Choose a lesson
-              </button>
-            </article>
-
-            <article class="function-card dialogue-function quest-action-card">
-              <div class="function-logo dialogue-logo" aria-hidden="true">
-                <span>😎</span>
-              </div>
-              <div class="function-copy">
-                <strong data-i18n="dailyDialogue">Daily dialogue</strong>
-                <span data-i18n="dialogueModeHint">Choose a topic and hear useful words.</span>
-              </div>
-              <div class="speech-bubble" aria-hidden="true">你好！<small>nǐ hǎo!</small></div>
-              <div class="card-mascot" aria-hidden="true">🐶</div>
-              <button id="dialogueModeBtn" class="primary-button function-action" type="button" data-i18n="openDialogue">
-                Open dialogue practice
-              </button>
-            </article>
-
-            <article class="function-card roleplay-function quest-action-card">
-              <div class="function-logo roleplay-logo" aria-hidden="true">
-                <span>🎭</span>
-              </div>
-              <div class="function-copy">
-                <strong data-i18n="rolePlay">Role play</strong>
-                <span data-i18n="roleplayModeHint">Read a short scene aloud.</span>
-              </div>
-              <div class="card-mascot" aria-hidden="true">🐸</div>
-              <button id="roleplayModeBtn" class="primary-button function-action" type="button" data-i18n="openRoleplay">
-                Open role play
-              </button>
-            </article>
-
-            <article class="function-card how-to-play-card quest-action-card">
-              <div class="function-logo guide-logo" aria-hidden="true">
-                <span>?</span>
-              </div>
-              <div class="function-copy">
-                <strong data-i18n="howToPlay">How to play</strong>
-                <span data-i18n="howToPlayHint">See how lessons, tests, stickers, and camera writing work.</span>
-              </div>
-              <div class="card-mascot" aria-hidden="true">🐘</div>
-              <button id="howToPlayBtn" class="primary-button function-action" type="button" data-i18n="openHowToPlay">
-                Open guide
-              </button>
-            </article>
-
-            <article class="function-card custom-function quest-action-card">
-              <div class="function-logo custom-logo" aria-hidden="true">
-                <span>字</span>
-              </div>
-              <div class="function-copy">
-                <strong data-i18n="customCharacter">Add character</strong>
-                <span data-i18n="customCharacterHint">Add your own course character with words and sentences.</span>
-                <span id="customCharacterCount" class="function-meta">No custom characters yet</span>
-              </div>
-              <div class="card-mascot" aria-hidden="true">🐰</div>
-              <button id="customCharacterBtn" class="primary-button function-action" type="button" data-i18n="openCustomCharacter">
-                Add a character
-              </button>
-            </article>
-
-            <article class="function-card search-function quest-action-card">
-              <div class="function-logo search-logo" aria-hidden="true">
-                <span>🔍</span>
-              </div>
-              <div class="function-copy">
-                <strong data-i18n="searchTitle">Search</strong>
-                <span data-i18n="searchModeHint">Type Chinese to find pinyin, words, sentences, stroke order, and radical.</span>
-              </div>
-              <div class="card-mascot" aria-hidden="true">🦔</div>
-              <button id="searchModeBtn" class="primary-button function-action" type="button" data-i18n="openSearch">
-                Open search
-              </button>
-            </article>
-
-            <article class="function-card idiom-function quest-action-card">
-              <div class="function-logo idiom-logo" aria-hidden="true">
-                <span>▦</span>
-              </div>
-              <div class="function-copy">
-                <strong data-i18n="idiomSeries">Idiom series</strong>
-                <span data-i18n="idiomSeriesHint">Learn 200 common Chinese idioms.</span>
-                <span id="idiomHomeCount" class="function-meta">200 idioms</span>
-              </div>
-              <div class="card-mascot" aria-hidden="true">🐥</div>
-              <button id="idiomModeBtn" class="primary-button function-action" type="button" data-i18n="openIdioms">
-                Open idioms
-              </button>
-            </article>
-
-            <article class="function-card setting-function language-function quest-action-card">
-              <div class="function-logo language-logo" aria-hidden="true">
-                <span>文</span>
-              </div>
-              <div class="function-copy">
-                <strong data-i18n="uiLanguage">UI language</strong>
-                <span data-i18n="uiLanguageHint">Choose the display language.</span>
-              </div>
-              <label class="function-select-action" for="uiLanguageSelect">
-                <span data-i18n="uiLanguage">UI language</span>
-                <select id="uiLanguageSelect" aria-label="UI language" data-i18n-aria-label="uiLanguage"></select>
-              </label>
-            </article>
-
-            <article class="function-card setting-function skin-function quest-action-card">
-              <div class="function-logo skin-logo" aria-hidden="true">
-                <span>色</span>
-              </div>
-              <div class="function-copy">
-                <strong data-i18n="uiSkin">UI skin</strong>
-                <span data-i18n="uiSkinHint">Switch the homepage color style.</span>
-              </div>
-              <div class="card-mascot" aria-hidden="true">🎨</div>
-              <label class="function-select-action" for="uiSkinSelect">
-                <span data-i18n="uiSkin">UI skin</span>
-                <select id="uiSkinSelect" aria-label="UI skin" data-i18n-aria-label="uiSkin"></select>
-              </label>
-            </article>
-          </div>
-
-          <div class="quest-footer">
-            <span>每天进步一点点！</span>
-            <strong>一起开启中文之旅吧！</strong>
-            <a href="mailto:enquiries@optiviseAI.com.au">enquiries@optiviseAI.com.au</a>
           </div>
         </section>
 
@@ -735,6 +604,40 @@
           </div>
         </section>
       </main>
+
+      <dialog id="profileEditDialog" class="profile-dialog" aria-labelledby="profileEditTitle">
+        <form id="profileEditForm" class="profile-panel">
+          <div class="dialog-head">
+            <div>
+              <span class="tiny-label" data-i18n="editProfile">Edit</span>
+              <h2 id="profileEditTitle" data-i18n="profileEditTitle">Edit learner profile</h2>
+            </div>
+            <button id="profileEditCancelBtn" class="icon-button dialog-close" type="button" aria-label="Close" data-i18n-aria-label="close">
+              ×
+            </button>
+          </div>
+          <p class="profile-hint" data-i18n="profileEditHint">
+            Change the learner name and avatar mark shown on this device.
+          </p>
+          <div class="profile-form-grid">
+            <label>
+              <span data-i18n="profileNameLabel">Learner name</span>
+              <input id="profileNameInput" type="text" maxlength="24" autocomplete="off" />
+            </label>
+            <label>
+              <span data-i18n="profileMarkLabel">Avatar mark</span>
+              <input id="profileMarkInput" type="text" maxlength="4" autocomplete="off" />
+              <em data-i18n="profileMarkHint">Use one Chinese character, letter, number, or emoji.</em>
+            </label>
+          </div>
+          <p id="profileEditValidation" class="custom-validation" role="status" aria-live="polite"></p>
+          <div class="action-row profile-actions">
+            <button class="primary-button" type="submit" data-i18n="profileSave">Save profile</button>
+            <button id="profileEditResetBtn" class="secondary-button" type="button" data-i18n="profileReset">Reset</button>
+            <button class="secondary-button" type="button" data-i18n="profileCancel" data-close-profile>Cancel</button>
+          </div>
+        </form>
+      </dialog>
 
       <dialog id="howToPlayDialog" class="guide-dialog" aria-labelledby="howToPlayTitle">
         <div class="home-guide" aria-label="how to use" data-i18n-aria-label="howToUse">
