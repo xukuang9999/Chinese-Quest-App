@@ -27,6 +27,9 @@ const wordCount = sqliteJson("SELECT COUNT(*) AS count FROM words;")[0].count;
 const charWordCount = sqliteJson("SELECT COUNT(*) AS count FROM character_words;")[0].count;
 const sentenceCount = sqliteJson("SELECT COUNT(*) AS count FROM character_sentences;")[0].count;
 const idiomCount = sqliteJson("SELECT COUNT(*) AS count FROM idioms;")[0]?.count || 0;
+const metadata = Object.fromEntries(
+  sqliteJson("SELECT key, value FROM metadata;").map((row) => [row.key, Number(row.value)])
+);
 
 const problems = [];
 if (wordCount !== data.commonWordCount) {
@@ -40,12 +43,27 @@ if (sentenceCount !== data.entries.length * 3) {
 }
 if (data.entries.length !== 800) problems.push(`data.js entries expected 800, got ${data.entries.length}`);
 if (data.lessonSize !== 5) problems.push(`data.js lessonSize expected 5, got ${data.lessonSize}`);
+if (data.characterCount !== data.entries.length) {
+  problems.push(`data.js characterCount expected ${data.entries.length}, got ${data.characterCount}`);
+}
+if (data.sentenceCount !== sentenceCount) {
+  problems.push(`data.js sentenceCount expected ${sentenceCount}, got ${data.sentenceCount}`);
+}
 if (!Array.isArray(data.idioms) || data.idioms.length !== 200) {
   problems.push(`data.js idioms expected 200, got ${data.idioms?.length || 0}`);
 }
 if (idiomCount !== 200) problems.push(`SQLite idioms expected 200, got ${idiomCount}`);
 if (data.commonWordCount !== wordCount) {
   problems.push(`data.js commonWordCount expected ${wordCount}, got ${data.commonWordCount}`);
+}
+if (metadata.character_count !== data.entries.length) {
+  problems.push(`SQLite metadata character_count expected ${data.entries.length}, got ${metadata.character_count}`);
+}
+if (metadata.common_word_count !== wordCount) {
+  problems.push(`SQLite metadata common_word_count expected ${wordCount}, got ${metadata.common_word_count}`);
+}
+if (metadata.sentence_count !== sentenceCount) {
+  problems.push(`SQLite metadata sentence_count expected ${sentenceCount}, got ${metadata.sentence_count}`);
 }
 
 const chars = new Set();

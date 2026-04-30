@@ -3,7 +3,9 @@ window.CHINESE_STUDY_DATA = {
   "generatedAt": "2026-04-28",
   "scope": "800 Simplified Chinese characters, five characters per lesson, with 200 idioms",
   "lessonSize": 5,
+  "characterCount": 800,
   "commonWordCount": 1914,
+  "sentenceCount": 2400,
   "idiomCount": 200,
   "sources": [
     {

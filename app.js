@@ -18,7 +18,6 @@ const USER_PROFILES = [
   { id: "xiaomei", name: "小美", mark: "美" },
   { id: "xiaojie", name: "小杰", mark: "杰" },
   { id: "xiaolan", name: "小兰", mark: "兰" },
-  { id: "xiaoyu", name: "小宇", mark: "宇" },
 ];
 const UI_LANGUAGE_OPTIONS = [
   { value: "en", label: "English" },
@@ -67,7 +66,6 @@ const UI_TEXT = {
     profileResetToast: "Profile reset.",
     profileNameRequired: "Enter a learner name.",
     profileMarkRequired: "Enter an avatar mark.",
-    loginProgressMeta: "{xp} XP · Level {level} · {lessons} lessons complete",
     lastUser: "Last used",
     currentUser: "Current user",
     switchUser: "Switch user",
@@ -283,7 +281,6 @@ const UI_TEXT = {
     profileResetToast: "资料已恢复默认。",
     profileNameRequired: "请输入学习用户名字。",
     profileMarkRequired: "请输入头像标记。",
-    loginProgressMeta: "{xp} 经验 · {level} 级 · 已完成 {lessons} 课",
     lastUser: "上次使用",
     currentUser: "当前用户",
     switchUser: "切换用户",
@@ -1268,7 +1265,7 @@ function numericDataValue(key, fallback) {
 
 function databaseTotals() {
   return {
-    characters: allEntries().length,
+    characters: numericDataValue("characterCount", BASE_ENTRIES.length) + customEntries.length,
     words: numericDataValue("commonWordCount", countEntryWords(BASE_ENTRIES)) + countEntryWords(customEntries),
     sentences: numericDataValue("sentenceCount", countEntrySentences(BASE_ENTRIES)) + countEntrySentences(customEntries),
     idioms: numericDataValue("idiomCount", IDIOMS.length),
@@ -1758,8 +1755,6 @@ function renderLoginUsers() {
   const lastUserId = localStorage.getItem(ACTIVE_USER_KEY);
   els.loginUserList.innerHTML = "";
   userProfiles.forEach((profile) => {
-    const previewState = loadStateForUser(profile.id);
-    const completedCount = Array.isArray(previewState.completedLessons) ? previewState.completedLessons.length : 0;
     const card = document.createElement("article");
     card.className = "login-user-card";
     if (profile.id === lastUserId) card.classList.add("last-used");
@@ -1773,13 +1768,7 @@ function renderLoginUsers() {
     copy.className = "login-user-copy";
     const name = document.createElement("strong");
     name.textContent = profile.name;
-    const meta = document.createElement("span");
-    meta.textContent = t("loginProgressMeta", {
-      xp: Number(previewState.xp) || 0,
-      level: levelForState(previewState),
-      lessons: completedCount,
-    });
-    copy.append(name, meta);
+    copy.append(name);
 
     const actions = document.createElement("span");
     actions.className = "login-user-actions";
