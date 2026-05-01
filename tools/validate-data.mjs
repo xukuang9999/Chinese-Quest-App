@@ -27,6 +27,8 @@ const wordCount = sqliteJson("SELECT COUNT(*) AS count FROM words;")[0].count;
 const dbCharacterCount = sqliteJson("SELECT COUNT(*) AS count FROM characters;")[0]?.count || 0;
 const charWordCount = sqliteJson("SELECT COUNT(*) AS count FROM character_words;")[0].count;
 const idiomCount = sqliteJson("SELECT COUNT(*) AS count FROM idioms;")[0]?.count || 0;
+const zdicTableExists = sqliteJson("SELECT name FROM sqlite_master WHERE type = 'table' AND name = 'character_zdic';").length > 0;
+const zdicCount = zdicTableExists ? sqliteJson("SELECT COUNT(*) AS count FROM character_zdic;")[0]?.count || 0 : 0;
 const metadata = Object.fromEntries(
   sqliteJson("SELECT key, value FROM metadata;").map((row) => [row.key, Number(row.value)])
 );
@@ -52,6 +54,13 @@ if (!Array.isArray(data.idioms) || data.idioms.length !== 200) {
 if (idiomCount !== 200) problems.push(`SQLite idioms expected 200, got ${idiomCount}`);
 if (data.commonWordCount !== wordCount) {
   problems.push(`data.js commonWordCount expected ${wordCount}, got ${data.commonWordCount}`);
+}
+const dataZdicCount = data.entries.filter((entry) => entry.zdic).length;
+if (dataZdicCount !== data.entries.length) {
+  problems.push(`data.js ZDIC entries expected ${data.entries.length}, got ${dataZdicCount}`);
+}
+if (zdicCount !== dataZdicCount) {
+  problems.push(`SQLite character_zdic expected ${dataZdicCount}, got ${zdicCount}`);
 }
 if (metadata.character_count !== data.entries.length) {
   problems.push(`SQLite metadata character_count expected ${data.entries.length}, got ${metadata.character_count}`);
@@ -92,6 +101,8 @@ data.entries.forEach((entry) => {
       problems.push(`${entry.char} placeholder word: ${word.word}`);
     }
   });
+  if (!entry.zdic?.basic?.definitions?.length) problems.push(`${entry.char} missing ZDIC basic definitions`);
+  if (!entry.zdic?.unicode) problems.push(`${entry.char} missing ZDIC unicode`);
 });
 
 if (problems.length) {
@@ -107,6 +118,7 @@ console.log(
       sqliteWords: wordCount,
       characterWords: charWordCount,
       idioms: idiomCount,
+      zdicEntries: dataZdicCount,
     },
     null,
     2

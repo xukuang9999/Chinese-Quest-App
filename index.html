@@ -4,13 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Chinese Quest</title>
-    <link rel="stylesheet" href="styles.css?v=20260430s" />
+    <link rel="stylesheet" href="styles.css?v=20260501a" />
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"
     ></script>
-    <script defer src="data.js?v=20260430b"></script>
-    <script defer src="app.js?v=20260430h"></script>
+    <script defer src="data.js?v=20260501a"></script>
+    <script defer src="app.js?v=20260501a"></script>
   </head>
   <body data-screen="login" data-skin="classic">
     <div class="cartoon-sky" aria-hidden="true">
@@ -31,9 +31,9 @@
       <header class="topbar">
         <div class="brand">
           <div class="brand-left">
-            <div class="brand-mark" aria-hidden="true">
+            <button class="brand-mark" type="button" data-home-title data-i18n-aria-label="customBackToHome">
               <img src="assets/chinese-quest-logo.svg?v=20260427u" alt="" />
-            </div>
+            </button>
             <a class="company-logo" href="https://optiviseai.com.au" target="_blank" rel="noreferrer" aria-label="Optivise AI website">
               <img src="assets/optiviseai-logo.png" alt="Optivise AI" />
             </a>
@@ -104,75 +104,134 @@
           <div class="home-image-stage">
             <img
               class="home-image"
-              src="assets/chinese-quest-home.png?v=20260430a"
+              src="assets/chinese-quest-home.png?v=20260501b"
               alt="Chinese Quest home menu"
             />
 
-            <button id="dailyLessonBtn" class="home-hotspot home-card-hotspot hotspot-daily" type="button" data-animal-sound="panda" data-i18n-aria-label="startToday">
-              Start today's lesson
+            <div class="home-data-nodes" aria-label="Database totals" data-i18n-aria-label="databaseTotals">
+              <div class="home-learner-chip">
+                <span class="home-mini-icon" aria-hidden="true">学</span>
+                <strong id="homeCurrentUserName">Current learner</strong>
+              </div>
+              <div class="home-stat-item">
+                <span class="home-mini-icon" aria-hidden="true">字</span>
+                <strong id="databaseCharacterCount">0</strong>
+                <em data-i18n="databaseCharacters">Characters</em>
+              </div>
+              <div class="home-stat-item">
+                <span class="home-mini-icon" aria-hidden="true">词</span>
+                <strong id="databaseWordCount">0</strong>
+                <em data-i18n="databaseWords">Words</em>
+              </div>
+              <div class="home-stat-item">
+                <span class="home-mini-icon" aria-hidden="true">成</span>
+                <strong id="databaseIdiomCount">0</strong>
+                <em data-i18n="databaseIdioms">Idioms</em>
+              </div>
+            </div>
+
+            <button id="dailyLessonBtn" class="home-hotspot home-card-hotspot hotspot-daily home-action-card" type="button" data-animal-sound="panda" data-i18n-aria-label="startToday">
+              <span class="home-action-icon home-calendar-icon" aria-hidden="true">
+                <span id="dailyMonth">APR</span>
+                <strong id="dailyDay">30</strong>
+              </span>
+              <span class="home-action-copy">
+                <strong data-i18n="dailyLesson">Daily Lesson</strong>
+                <span class="home-action-detail">
+                  <span id="dailyLessonTitle">Lesson 1</span>
+                  <span id="dailyLessonChars">中 文 学 习 好</span>
+                </span>
+                <em data-i18n="startToday">Start today's lesson</em>
+              </span>
+              <span class="home-action-arrow" aria-hidden="true">›</span>
             </button>
-            <button id="lessonPickerBtn" class="home-hotspot home-card-hotspot hotspot-course" type="button" data-animal-sound="fox" data-i18n-aria-label="chooseLessonAction">
-              Choose a lesson
+            <button id="lessonPickerBtn" class="home-hotspot home-card-hotspot hotspot-course home-action-card" type="button" data-animal-sound="fox" data-i18n-aria-label="chooseLessonAction">
+              <span class="home-action-icon" aria-hidden="true">课</span>
+              <span class="home-action-copy">
+                <strong data-i18n="courseLearning">Course lessons</strong>
+                <span data-i18n="courseLearningHint">Choose one lesson from the 800-character course.</span>
+                <em data-i18n="chooseLessonAction">Choose a lesson</em>
+              </span>
+              <span class="home-action-arrow" aria-hidden="true">›</span>
             </button>
-            <button id="dialogueModeBtn" class="home-hotspot home-card-hotspot hotspot-dialogue" type="button" data-animal-sound="dog" data-i18n-aria-label="openDialogue">
-              Open dialogue practice
+            <button id="dialogueModeBtn" class="home-hotspot home-card-hotspot hotspot-dialogue home-action-card" type="button" data-animal-sound="dog" data-i18n-aria-label="openDialogue">
+              <span class="home-action-icon" aria-hidden="true">话</span>
+              <span class="home-action-copy">
+                <strong data-i18n="dailyDialogue">Daily dialogue</strong>
+                <span data-i18n="dialogueModeHint">Choose a topic and hear useful words.</span>
+                <em data-i18n="openDialogue">Open dialogue practice</em>
+              </span>
+              <span class="home-action-arrow" aria-hidden="true">›</span>
             </button>
-            <button id="roleplayModeBtn" class="home-hotspot home-card-hotspot hotspot-roleplay" type="button" data-animal-sound="frog" data-i18n-aria-label="openRoleplay">
-              Open role play
+            <button id="roleplayModeBtn" class="home-hotspot home-card-hotspot hotspot-roleplay home-action-card" type="button" data-animal-sound="frog" data-i18n-aria-label="openRoleplay">
+              <span class="home-action-icon" aria-hidden="true">演</span>
+              <span class="home-action-copy">
+                <strong data-i18n="rolePlay">Role play</strong>
+                <span data-i18n="roleplayModeHint">Read a short scene aloud.</span>
+                <em data-i18n="openRoleplay">Open role play</em>
+              </span>
+              <span class="home-action-arrow" aria-hidden="true">›</span>
             </button>
-            <button id="howToPlayBtn" class="home-hotspot home-card-hotspot hotspot-guide" type="button" data-animal-sound="elephant" data-i18n-aria-label="openHowToPlay">
-              Open guide
+            <button id="howToPlayBtn" class="home-hotspot home-card-hotspot hotspot-guide home-action-card" type="button" data-animal-sound="elephant" data-i18n-aria-label="openHowToPlay">
+              <span class="home-action-icon" aria-hidden="true">?</span>
+              <span class="home-action-copy">
+                <strong data-i18n="howToPlay">How to play</strong>
+                <span data-i18n="howToPlayHint">See how lessons, tests, stickers, and camera writing work.</span>
+                <em data-i18n="openHowToPlay">Open guide</em>
+              </span>
+              <span class="home-action-arrow" aria-hidden="true">›</span>
             </button>
-            <button id="customCharacterBtn" class="home-hotspot home-card-hotspot hotspot-custom" type="button" data-animal-sound="rabbit" data-i18n-aria-label="openCustomCharacter">
-              Add a character
+            <button id="customCharacterBtn" class="home-hotspot home-card-hotspot hotspot-custom home-action-card" type="button" data-animal-sound="rabbit" data-i18n-aria-label="openCustomCharacter">
+              <span class="home-action-icon" aria-hidden="true">新</span>
+              <span class="home-action-copy">
+                <strong data-i18n="customCharacter">Add character</strong>
+                <span data-i18n="customCharacterHint">Add your own course character with words.</span>
+                <em id="customCharacterCount">No custom characters yet</em>
+              </span>
+              <span class="home-action-arrow" aria-hidden="true">›</span>
             </button>
-            <button id="searchModeBtn" class="home-hotspot home-card-hotspot hotspot-search" type="button" data-animal-sound="hedgehog" data-i18n-aria-label="openSearch">
-              Open search
+            <button id="searchModeBtn" class="home-hotspot home-card-hotspot hotspot-search home-action-card" type="button" data-animal-sound="hedgehog" data-i18n-aria-label="openSearch">
+              <span class="home-action-icon" aria-hidden="true">查</span>
+              <span class="home-action-copy">
+                <strong data-i18n="searchTitle">Search</strong>
+                <span data-i18n="searchModeHint">Type Chinese to find pinyin, words, stroke order, and radical.</span>
+                <em data-i18n="openSearch">Open search</em>
+              </span>
+              <span class="home-action-arrow" aria-hidden="true">›</span>
             </button>
-            <button id="idiomModeBtn" class="home-hotspot home-card-hotspot hotspot-idioms" type="button" data-animal-sound="duck" data-i18n-aria-label="openIdioms">
-              Open idioms
-            </button>
-            <button id="dailyLessonCtaBtn" class="home-hotspot home-pill-hotspot hotspot-main-cta" type="button" data-animal-sound="panda" data-i18n-aria-label="startToday">
-              Start today's lesson
+            <button id="idiomModeBtn" class="home-hotspot home-card-hotspot hotspot-idioms home-action-card" type="button" data-animal-sound="duck" data-i18n-aria-label="openIdioms">
+              <span class="home-action-icon" aria-hidden="true">成</span>
+              <span class="home-action-copy">
+                <strong data-i18n="idiomSeries">Idiom series</strong>
+                <span data-i18n="idiomSeriesHint">Learn 200 common Chinese idioms.</span>
+                <em id="idiomHomeCount">200 idioms</em>
+              </span>
+              <span class="home-action-arrow" aria-hidden="true">›</span>
             </button>
 
-            <label class="home-hotspot home-card-hotspot home-select-hotspot hotspot-language" for="uiLanguageSelect" data-animal-sound="fox">
-              <span data-i18n="uiLanguage">UI language</span>
+            <label class="home-hotspot home-card-hotspot home-select-hotspot hotspot-language home-action-card" for="uiLanguageSelect" data-animal-sound="fox">
+              <span class="home-action-icon" aria-hidden="true">文</span>
+              <span class="home-action-copy">
+                <strong data-i18n="uiLanguage">UI language</strong>
+                <span data-i18n="uiLanguageHint">Choose the display language.</span>
+              </span>
               <select id="uiLanguageSelect" aria-label="UI language" data-i18n-aria-label="uiLanguage"></select>
             </label>
-            <label class="home-hotspot home-card-hotspot home-select-hotspot hotspot-skin" for="uiSkinSelect" data-animal-sound="bear">
-              <span data-i18n="uiSkin">UI skin</span>
+            <label class="home-hotspot home-card-hotspot home-select-hotspot hotspot-skin home-action-card" for="uiSkinSelect" data-animal-sound="bear">
+              <span class="home-action-icon" aria-hidden="true">色</span>
+              <span class="home-action-copy">
+                <strong data-i18n="uiSkin">UI skin</strong>
+                <span data-i18n="uiSkinHint">Switch the homepage color style.</span>
+              </span>
               <select id="uiSkinSelect" aria-label="UI skin" data-i18n-aria-label="uiSkin"></select>
             </label>
+            <button id="dailyLessonCtaBtn" class="home-hotspot home-pill-hotspot hotspot-main-cta" type="button" data-animal-sound="panda" data-i18n-aria-label="startToday">
+              <span aria-hidden="true">★</span>
+              <strong data-i18n="startToday">Start today's lesson</strong>
+            </button>
             <a class="home-hotspot home-footer-hotspot hotspot-contact" href="mailto:enquiries@optiviseAI.com.au" aria-label="Contact Optivise AI">
               Contact
             </a>
-
-            <div class="home-data-nodes" aria-hidden="true">
-              <span id="homeCurrentUserName">Current learner</span>
-              <span id="dailyMonth">APR</span>
-              <span id="dailyDay">30</span>
-              <span id="dailyLessonTitle">Lesson 1</span>
-              <span id="dailyLessonChars">中 文 学 习 好</span>
-              <span id="databaseCharacterCount">0</span>
-              <span id="databaseWordCount">0</span>
-              <span id="databaseIdiomCount">0</span>
-              <span id="customCharacterCount">No custom characters yet</span>
-              <span id="idiomHomeCount">200 idioms</span>
-              <div class="home-copy-patch home-database-hint-patch">
-                字、词和成语的当前总数。<br />
-                / Current totals for characters, words, and idioms.
-              </div>
-              <div class="home-copy-patch home-database-sentence-patch"></div>
-              <div class="home-copy-patch home-custom-copy-patch">
-                把自己的汉字和组词加入课程。<br />
-                / Add your own course character with words.
-              </div>
-              <div class="home-copy-patch home-search-copy-patch">
-                输入中文，查找拼音、词、笔顺和部首。<br />
-                / Type Chinese to find pinyin, words, stroke order, and radical.
-              </div>
-            </div>
           </div>
         </section>
 
@@ -338,6 +397,7 @@
                   <h3 data-i18n="words">Words</h3>
                   <div id="searchDetailWords" class="word-list search-word-list"></div>
                 </div>
+                <div id="searchZdicPanel" class="info-section zdic-panel hidden"></div>
                 <div class="info-section">
                   <h3 data-i18n="strokeOrder">Stroke Order</h3>
                   <div id="searchStrokeTarget" class="stroke-target search-stroke-target" aria-label="stroke order animation" data-i18n-aria-label="strokeOrderAnimation"></div>
@@ -478,6 +538,7 @@
                 <h3 data-i18n="words">Words</h3>
                 <div id="wordList" class="word-list"></div>
               </div>
+              <div id="lessonZdicPanel" class="info-section zdic-panel hidden"></div>
             </article>
 
             <article class="writing-card">

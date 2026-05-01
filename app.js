@@ -130,6 +130,25 @@ const UI_TEXT = {
     meaning: "Meaning",
     fontEvolution: "Font Evolution",
     words: "Words",
+    zdicDictionary: "Dictionary Details",
+    zdicOfflineSource: "Offline {source} data",
+    zdicBasic: "Basic explanation",
+    zdicDetailed: "Detailed explanation",
+    zdicMandarin: "Mandarin dictionary",
+    zdicKangxi: "Kangxi dictionary",
+    zdicPhonetics: "Phonetics and dialects",
+    zdicGlyph: "Glyph and variants",
+    zhuyin: "Zhuyin",
+    outerStrokes: "Outer strokes",
+    strokeCode: "Stroke code",
+    unicode: "Unicode",
+    wubi: "Wubi",
+    cangjie: "Cangjie",
+    zhengma: "Zhengma",
+    fourCorner: "Four-corner",
+    variants: "Variants",
+    translations: "Translations",
+    commonTerms: "Common terms",
     strokeOrder: "Stroke Order",
     animate: "Animate",
     trace: "Trace",
@@ -338,6 +357,25 @@ const UI_TEXT = {
     meaning: "意思",
     fontEvolution: "字体演变",
     words: "组词",
+    zdicDictionary: "字典资料",
+    zdicOfflineSource: "已内置的{source}数据",
+    zdicBasic: "基本解释",
+    zdicDetailed: "详细解释",
+    zdicMandarin: "国语辞典",
+    zdicKangxi: "康熙字典",
+    zdicPhonetics: "音韵方言",
+    zdicGlyph: "字源字形",
+    zhuyin: "注音",
+    outerStrokes: "部外笔画",
+    strokeCode: "笔顺编号",
+    unicode: "统一码",
+    wubi: "五笔",
+    cangjie: "仓颉",
+    zhengma: "郑码",
+    fourCorner: "四角",
+    variants: "异体字",
+    translations: "外文释义",
+    commonTerms: "常用词组",
     strokeOrder: "笔顺",
     animate: "演示",
     trace: "描红",
@@ -836,6 +874,7 @@ const els = {
   searchStrokeValue: document.querySelector("#searchStrokeValue"),
   searchStructureValue: document.querySelector("#searchStructureValue"),
   searchDetailWords: document.querySelector("#searchDetailWords"),
+  searchZdicPanel: document.querySelector("#searchZdicPanel"),
   searchStrokeTarget: document.querySelector("#searchStrokeTarget"),
   searchOpenLessonBtn: document.querySelector("#searchOpenLessonBtn"),
   idiomSearchInput: document.querySelector("#idiomSearchInput"),
@@ -879,6 +918,7 @@ const els = {
   meaningEn: document.querySelector("#meaningEn"),
   fontEvolutionList: document.querySelector("#fontEvolutionList"),
   wordList: document.querySelector("#wordList"),
+  lessonZdicPanel: document.querySelector("#lessonZdicPanel"),
   strokeTarget: document.querySelector("#strokeTarget"),
   animateBtn: document.querySelector("#animateBtn"),
   traceBtn: document.querySelector("#traceBtn"),
@@ -2247,6 +2287,7 @@ function renderSearchDetail(entry) {
     els.searchDetailEmpty.textContent = cleanText(els.searchInput.value) ? t("searchNoMatches") : t("searchEmpty");
     searchWriter = null;
     els.searchStrokeTarget.innerHTML = "";
+    renderZdicPanel(els.searchZdicPanel, null);
     return;
   }
   selectedSearchEntry = entry;
@@ -2261,6 +2302,7 @@ function renderSearchDetail(entry) {
   els.searchStructureValue.textContent = entry.structure || "—";
   renderFontEvolution(els.searchFontEvolutionList, entry);
   renderWordCards(els.searchDetailWords, entry);
+  renderZdicPanel(els.searchZdicPanel, entry);
   renderSearchWriter(entry);
   replayClass(els.searchDetailChar, "char-pop");
 }
@@ -2548,6 +2590,7 @@ function renderLesson() {
 
   renderFontEvolution(els.fontEvolutionList, entry);
   renderWords(entry);
+  renderZdicPanel(els.lessonZdicPanel, entry);
   renderWriter(entry);
   replayClass(els.bigChar, "char-pop");
   replayClass(els.lessonProgress, "counter-bump");
@@ -2613,6 +2656,163 @@ function renderFontEvolution(container, entry) {
     container.append(tile);
   });
   staggerChildren(container, ".font-evolution-item");
+}
+
+function appendZdicText(container, text, className = "zdic-text") {
+  const value = cleanMultiline(text);
+  if (!value) return false;
+  const paragraph = document.createElement("p");
+  paragraph.className = className;
+  paragraph.textContent = value;
+  container.append(paragraph);
+  return true;
+}
+
+function appendZdicChipList(container, items, labelKey) {
+  const values = Array.isArray(items) ? items.map(cleanText).filter(Boolean) : [];
+  if (!values.length) return false;
+  const group = document.createElement("div");
+  group.className = "zdic-chip-group";
+  if (labelKey) {
+    const label = document.createElement("span");
+    label.className = "zdic-chip-label";
+    label.textContent = t(labelKey);
+    group.append(label);
+  }
+  values.forEach((value) => {
+    const chip = document.createElement("span");
+    chip.className = "zdic-chip";
+    chip.textContent = value;
+    group.append(chip);
+  });
+  container.append(group);
+  return true;
+}
+
+function appendZdicDefinitionList(container, definitions) {
+  const items = Array.isArray(definitions) ? definitions.map(cleanText).filter(Boolean) : [];
+  if (!items.length) return false;
+  const list = document.createElement("ol");
+  list.className = "zdic-definition-list";
+  items.forEach((item) => {
+    const row = document.createElement("li");
+    row.textContent = item;
+    list.append(row);
+  });
+  container.append(list);
+  return true;
+}
+
+function appendZdicTranslations(container, translations) {
+  const rows = Object.entries(translations || {}).filter(([, value]) => cleanText(value));
+  if (!rows.length) return false;
+  const table = document.createElement("div");
+  table.className = "zdic-translation-grid";
+  rows.forEach(([label, value]) => {
+    const term = document.createElement("span");
+    term.textContent = label;
+    const description = document.createElement("strong");
+    description.textContent = cleanText(value);
+    table.append(term, description);
+  });
+  container.append(table);
+  return true;
+}
+
+function makeZdicSection(titleKey, build, open = false) {
+  const body = document.createElement("div");
+  body.className = "zdic-section-body";
+  build(body);
+  if (!body.childElementCount) return null;
+
+  const details = document.createElement("details");
+  details.className = "zdic-section";
+  details.open = open;
+  const summary = document.createElement("summary");
+  summary.textContent = t(titleKey);
+  details.append(summary, body);
+  return details;
+}
+
+function renderZdicFacts(container, zdic) {
+  const facts = [
+    [t("pinyinFallback"), Array.isArray(zdic.pinyin) ? zdic.pinyin.join(" / ") : ""],
+    [t("zhuyin"), Array.isArray(zdic.zhuyin) ? zdic.zhuyin.join(" / ") : ""],
+    [t("radical"), zdic.radical],
+    [t("outerStrokes"), zdic.outerStrokes ?? ""],
+    [t("strokes"), zdic.totalStrokes ?? ""],
+    [t("shape"), zdic.structure],
+    [t("strokeCode"), zdic.strokeOrder],
+    [t("unicode"), zdic.unicode],
+    [t("wubi"), zdic.codes?.wubi],
+    [t("cangjie"), zdic.codes?.cangjie],
+    [t("zhengma"), zdic.codes?.zhengma],
+    [t("fourCorner"), zdic.codes?.fourCorner],
+  ].filter(([, value]) => cleanText(value));
+
+  if (!facts.length) return false;
+  const grid = document.createElement("div");
+  grid.className = "zdic-fact-grid";
+  facts.forEach(([label, value]) => {
+    const item = document.createElement("div");
+    const labelEl = document.createElement("span");
+    labelEl.textContent = label;
+    const valueEl = document.createElement("strong");
+    valueEl.textContent = value;
+    item.append(labelEl, valueEl);
+    grid.append(item);
+  });
+  container.append(grid);
+  return true;
+}
+
+function renderZdicPanel(container, entry) {
+  if (!container) return;
+  container.innerHTML = "";
+  const zdic = entry?.zdic;
+  if (!zdic) {
+    container.classList.add("hidden");
+    return;
+  }
+
+  const header = document.createElement("div");
+  header.className = "zdic-header";
+  const title = document.createElement("h3");
+  title.textContent = t("zdicDictionary");
+  const badge = document.createElement("span");
+  badge.textContent = t("zdicOfflineSource", { source: zdic.sourceName || "汉典" });
+  header.append(title, badge);
+  container.append(header);
+  renderZdicFacts(container, zdic);
+
+  [
+    makeZdicSection(
+      "zdicBasic",
+      (body) => {
+        appendZdicDefinitionList(body, zdic.basic?.definitions);
+        appendZdicTranslations(body, zdic.basic?.translations);
+      },
+      true
+    ),
+    makeZdicSection("zdicDetailed", (body) => {
+      appendZdicText(body, zdic.detailed?.text);
+      appendZdicChipList(body, zdic.detailed?.commonTerms, "commonTerms");
+    }),
+    makeZdicSection("zdicMandarin", (body) => appendZdicText(body, zdic.mandarin?.text)),
+    makeZdicSection("zdicKangxi", (body) => appendZdicText(body, zdic.kangxi?.text)),
+    makeZdicSection("zdicPhonetics", (body) => {
+      appendZdicChipList(body, zdic.phonetics?.categories);
+      appendZdicText(body, zdic.phonetics?.text);
+    }),
+    makeZdicSection("zdicGlyph", (body) => {
+      appendZdicChipList(body, zdic.glyph?.variants || zdic.variants, "variants");
+      appendZdicText(body, zdic.glyph?.text);
+    }),
+  ]
+    .filter(Boolean)
+    .forEach((section) => container.append(section));
+
+  container.classList.toggle("hidden", container.childElementCount <= 1);
 }
 
 function renderWords(entry) {

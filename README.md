@@ -18,6 +18,7 @@ Open `http://localhost:4173`.
 
 ```bash
 node tools/expand-course-data.mjs
+node tools/scrape-zdic-common.mjs --count=800
 node tools/validate-data.mjs
 ```
 
@@ -26,10 +27,14 @@ per character, and 200 idioms. It combines
 汉文学网在线新华字典 character explanations, English glosses, source URLs, and
 font-evolution image references with Xinhua-style phrase data, common-character
 stroke metadata, learner-friendly English definitions, CC-CEDICT word data, HSK
-vocabulary priority data, and Hanzi Writer stroke-order animation at runtime.
+vocabulary priority data, offline 汉典 fields for all 800 course
+characters, and Hanzi Writer stroke-order animation at runtime.
 
 SQLite includes a `characters` table for character-level pinyin, Chinese and
-English meanings, source URL, source tags, and `font_evolution_json`.
+English meanings, source URL, source tags, and `font_evolution_json`. The
+`character_zdic` table stores the 800 汉典 payloads locally; `data.js`
+exports those payloads into each matching entry so the app does not request or
+link to 汉典 at runtime.
 
 ## Custom characters
 
