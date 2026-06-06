@@ -3,9 +3,14 @@ const STORAGE_KEY = "chinese-quest-300-state-v2";
 const ACTIVE_USER_KEY = "chinese-quest-active-user-v1";
 const USER_PROFILES_KEY = "chinese-quest-user-profiles-v1";
 const CUSTOM_ENTRIES_KEY = "chinese-quest-custom-entries-v1";
+const API_BASE = "";
 const BASE_ENTRIES = Array.isArray(DATA.entries) ? DATA.entries : [];
 const IDIOMS = Array.isArray(DATA.idioms) ? DATA.idioms : [];
+const EVOLUTION_VIDEO_DIR = "assets/font-evolution-videos";
 const LESSON_SIZE = DATA.lessonSize || 5;
+const EXAM_SIZE = 20;
+const EXAM_TYPES = ["pinyin", "meaning", "strokes"];
+const AI_TEACHER_STORY_MAX_CHINESE_CHARS = 100;
 const XP_PER_LEVEL = 120;
 const STICKERS = ["星", "中", "好", "学", "棒", "✓", "5"];
 const HOME_ANIMAL_SOUND_COOLDOWN_MS = 360;
@@ -74,6 +79,29 @@ const UI_TEXT = {
     brandTagline: "Five characters per lesson",
     loginTitle: "Choose your learner",
     loginUsers: "learner choices",
+    signInTitle: "Sign in",
+    signInAction: "Sign in",
+    guestLoginAction: "访客登陆",
+    registerTitle: "Create profile",
+    registerAction: "Create profile",
+    registerNewAccount: "Register new account",
+    registerPromptHint: "Create a private learner profile with email, child details, and avatar.",
+    backToLogin: "Back to login",
+    usernameLabel: "ID / Username",
+    pinLabel: "4-digit password",
+    emailLabel: "Email",
+    childNameLabel: "Child name",
+    childAgeLabel: "Age",
+    childInterestsLabel: "Interests",
+    authRequired: "Please fill in the required fields.",
+    authPinInvalid: "Password must be exactly 4 digits.",
+    authRegistering: "Creating profile...",
+    authSigningIn: "Signing in...",
+    authBackendUnavailable: "Start the Chinese Quest server to use profiles.",
+    registerToast: "{name}'s profile was created.",
+    logoutAction: "Sign out",
+    logoutConfirm: "Sign out and return to the ID login page?",
+    logoutToast: "Signed out.",
     editProfile: "Edit",
     editProfileFor: "Edit {name}'s profile",
     profileEditTitle: "Edit learner profile",
@@ -93,6 +121,30 @@ const UI_TEXT = {
     signedInAs: "Current learner: {name}",
     loginToast: "Welcome back, {name}.",
     dailyLesson: "Daily Lesson",
+    dailyPersonalLesson: "Personalized lesson",
+    examTitle: "Exam",
+    examLabel: "Assessment",
+    examHint: "20 questions from known characters.",
+    examHomeReady: "20 questions",
+    openExam: "Start exam",
+    startExam: "Start exam",
+    examComplete: "Exam complete",
+    examResultSummary: "Score {score} / {total} · {percent}% · {time}",
+    examNoHistory: "No exam history yet.",
+    examNeedsKnown: "Mark known characters in Self Assessment before starting an exam.",
+    examNotEnoughKnown: "Using {count} known characters for this exam.",
+    lastExamSummary: "Last exam: {score} / {total} · {percent}% · {time}",
+    wrongWordsTitle: "Wrong words",
+    wrongWordsHint: "Review characters missed in exams.",
+    openWrongWords: "Open wrong words",
+    wrongWordsEmpty: "No wrong words yet.",
+    wrongWordsCount: "{count} wrong",
+    wrongWordsCountOne: "1 wrong",
+    wrongWordMistakes: "{count} mistakes",
+    wrongWordMistakesOne: "1 mistake",
+    howManyStrokes: "How many strokes does {char} have?",
+    learnedStatus: "Learned",
+    notLearnedStatus: "Not learned",
     startToday: "Start today's lesson",
     uiLanguage: "UI language",
     uiLanguageHint: "Choose the display language.",
@@ -112,12 +164,53 @@ const UI_TEXT = {
     howToPlay: "How to play",
     howToUse: "how to use",
     closeHowToPlay: "close how to play",
-    howToPlayHint: "See how lessons, tests, stickers, and camera writing work.",
+    howToPlayHint: "See what every module does and how to use it.",
     openHowToPlay: "Open guide",
     guideStep1: "<strong>Choose</strong> one lesson.",
     guideStep2: "<strong>Learn</strong> 5 characters with pinyin.",
     guideStep3: "<strong>Listen</strong> and practise stroke order.",
     guideStep4: "<strong>Test</strong> to earn XP and a sticker.",
+    guideModulesLabel: "module guide",
+    guideModulesTitle: "Module guide",
+    guideStatsTitle: "Home progress",
+    guideStatsUse: "<strong>Use:</strong> see known-character progress and database totals.",
+    guideStatsPlay: "<strong>Play:</strong> update known characters in Self Assessment, then watch the Home progress bar and totals for characters, words, and idioms.",
+    guideDailyTitle: "Daily Lesson",
+    guideDailyUse: "<strong>Use:</strong> start the lesson selected for today.",
+    guideDailyPlay: "<strong>Play:</strong> learn 5 characters, listen to pinyin, view meaning and words, practise stroke order or camera writing, then finish the test.",
+    guideCourseTitle: "Course lessons",
+    guideCourseUse: "<strong>Use:</strong> choose any lesson from the 800-character course.",
+    guideCoursePlay: "<strong>Play:</strong> select a lesson, study each character card, use audio and stroke tools, then take the lesson test to save progress.",
+    guideKnownTitle: "Self Assessment",
+    guideKnownUse: "<strong>Use:</strong> record which characters this learner already knows.",
+    guideKnownPlay: "<strong>Play:</strong> tick known characters in a 100-character batch, save to the profile, and use this list to power exams and the home progress bar.",
+    guideExamTitle: "Exam",
+    guideExamUse: "<strong>Use:</strong> check understanding with 20 questions from known characters.",
+    guideExamPlay: "<strong>Play:</strong> answer pinyin, meaning, and stroke-count questions. Results are saved, and missed characters are sent to Wrong words.",
+    guideWrongTitle: "Wrong words",
+    guideWrongUse: "<strong>Use:</strong> review characters missed in exams.",
+    guideWrongPlay: "<strong>Play:</strong> read each mistake card, check pinyin and meaning, then start another exam when ready.",
+    guideDialogueTitle: "Daily dialogue",
+    guideDialogueUse: "<strong>Use:</strong> practise useful spoken Chinese by topic.",
+    guideDialoguePlay: "<strong>Play:</strong> choose a topic, tap the sentence to hear it, use Read all, and tap word cards for vocabulary practice.",
+    guideRoleplayTitle: "Role play",
+    guideRoleplayUse: "<strong>Use:</strong> practise reading short real-life scenes aloud.",
+    guideRoleplayPlay: "<strong>Play:</strong> choose a scene, listen to the full line, repeat it aloud, and review the scene vocabulary below.",
+    guideCustomTitle: "Add character",
+    guideCustomUse: "<strong>Use:</strong> add a custom character that is not already in the course.",
+    guideCustomPlay: "<strong>Play:</strong> enter the character, pinyin, Chinese and English meanings, plus 3 example words. Saved custom characters appear in Course lessons.",
+    guideSearchTitle: "Search",
+    guideSearchUse: "<strong>Use:</strong> look up characters or words in the course database.",
+    guideSearchPlay: "<strong>Play:</strong> type Chinese, open a result, listen to pronunciation, inspect meanings, words, dictionary details, and jump into its lesson.",
+    guideIdiomTitle: "Idiom series",
+    guideIdiomUse: "<strong>Use:</strong> learn 200 common Chinese idioms.",
+    guideIdiomPlay: "<strong>Play:</strong> browse or search an idiom, read its meaning, example sentence, and source, then practise using it in speech or writing.",
+    guideLanguageTitle: "UI language",
+    guideLanguageUse: "<strong>Use:</strong> change the app display language.",
+    guideLanguagePlay: "<strong>Play:</strong> choose Chinese, English, bilingual, Japanese, or Korean. The setting is saved in the learner profile.",
+    guideLogoutTitle: "Sign out",
+    guideLogoutUse: "<strong>Use:</strong> leave the current learner profile and return to the ID login page.",
+    guideLogoutPlay: "<strong>Play:</strong> tap Sign out at the bottom of Home, confirm, then another learner can log in with their ID and 4-digit password.",
     cameraGuideAria: "camera tracks a fingertip writing in a square",
     cameraWriting: "Camera writing",
     cameraGuideText: "In a lesson, tap <strong>Camera</strong>. The app follows your fingertip so you can write the character inside the box.",
@@ -129,6 +222,8 @@ const UI_TEXT = {
     nextCharacter: "next character",
     meaning: "Meaning",
     fontEvolution: "Font Evolution",
+    fontEvolutionVideo: "Evolution Video",
+    fontEvolutionVideoAria: "character evolution video",
     words: "Words",
     zdicDictionary: "Dictionary Details",
     zdicOfflineSource: "Offline {source} data",
@@ -173,12 +268,15 @@ const UI_TEXT = {
     lessonN: "Lesson {n}",
     lessonOption: "Lesson {n}{done}: {chars}",
     startTodayAria: "Start today's Lesson {n}",
+    startDailyGeneratedAria: "Start today's personalized lesson",
     englishLabel: "English",
     pinyinFallback: "pinyin",
     startTest: "Start test",
     characterCount: "Character {current} of {total}.",
     playLabel: "play {label}",
     playingLabel: "Playing {label}.",
+    readMeaning: "read Chinese meaning",
+    playingMeaning: "Reading the Chinese meaning for {char}.",
     strokesCount: "{char} · {count} strokes",
     pinchToDraw: "Pinch to draw inside the box.",
     touchDraw: "Touch or mouse can draw here.",
@@ -214,6 +312,29 @@ const UI_TEXT = {
     resultSaved: "Result saved.",
     tryReview: "Try again after a quick review.",
     dailyToast: "Today's lesson: Lesson {n}.",
+    dailyGeneratedToast: "Today's personalized lesson is ready.",
+    aiTeacherTitle: "AI teacher",
+    aiTeacherLabel: "Personal reading",
+    aiTeacherHint: "Generate a short article from known characters.",
+    aiTeacherHomeAction: "Open AI teacher",
+    openAiTeacher: "Open AI teacher",
+    aiTeacherNotice: "The AI teacher writes a short article with mostly known characters and a few new words. Generation runs only on the server.",
+    aiTeacherGenerate: "Generate article",
+    aiTeacherGenerating: "Generating article...",
+    aiTeacherReadAll: "Read article",
+    aiTeacherReadArea: "Tap to read the AI teacher article",
+    aiTeacherEmptyTitle: "Ready for a new article",
+    aiTeacherEmptyMeta: "Use Generate article to create a reading under 100 Chinese characters.",
+    aiTeacherEmptyText: "Generate a short article, then tap any character or the article to hear it.",
+    aiTeacherReady: "AI teacher article is ready.",
+    aiTeacherNeedsKnown: "Mark known characters first for a better personalized article.",
+    aiTeacherKnownSummary: "{count} known characters",
+    aiTeacherKnownSummaryOne: "1 known character",
+    aiTeacherUsedKnownSummary: "{count} known characters used",
+    aiTeacherNewWords: "New words",
+    aiTeacherNoNewWords: "New words will appear here after generation.",
+    aiTeacherCharCount: "{count} Chinese characters",
+    aiTeacherGenerateFailed: "AI teacher could not generate an article.",
     functionMenu: "function menu",
     courseLearning: "Course lessons",
     courseLearningHint: "Choose one lesson from the 800-character course.",
@@ -273,12 +394,28 @@ const UI_TEXT = {
     customOriginalLocked: "{char} is one of the original course characters and cannot be changed.",
     customAlreadyExists: "{char} has already been added.",
     customSavedToast: "{char} was saved to Course lessons.",
+    knownCharactersTitle: "Self Assessment",
+    knownCharactersHint: "Pick the characters this learner already knows.",
+    openKnownCharacters: "Open Self Assessment",
+    knownCharactersProgressLabel: "Known characters",
+    knownCharactersLabel: "Learner profile",
+    knownCharactersPageHint: "Choose the characters this learner already knows. The saved result is kept in the current learner profile.",
+    knownCharactersNewBatch: "New 100",
+    knownCharactersSelectAll: "Select all",
+    knownCharactersClear: "Clear",
+    knownCharactersSave: "Save to profile",
+    knownCharactersSelected: "{selected} selected in this set · {total} saved",
+    knownCharactersBatch: "{count} database characters",
+    knownCharactersCount: "{count} known",
+    knownCharactersCountOne: "1 known",
+    knownCharactersEmpty: "0 known",
+    knownCharactersSavedToast: "{selected} from this set saved. {total} known in this profile.",
     searchTitle: "Search",
     searchModeHint: "Type Chinese to find pinyin, words, stroke order, and radical.",
     openSearch: "Open search",
     searchLabel: "Course database",
     searchInputLabel: "Chinese search",
-    searchPlaceholder: "输入中文，例如：新 / 新书",
+    searchPlaceholder: "Enter Chinese, for example: 新 / 新书",
     searchAction: "Search",
     searchEmpty: "Type Chinese to look up a course character.",
     searchNoMatches: "No matching course character found.",
@@ -289,7 +426,7 @@ const UI_TEXT = {
     openIdioms: "Open idioms",
     idiomLabel: "Idiom database",
     idiomSearchLabel: "Find an idiom",
-    idiomSearchPlaceholder: "搜索成语，例如：一心一意",
+    idiomSearchPlaceholder: "Search idioms, for example: 一心一意",
     idiomCount: "{count} idioms",
     idiomCountOne: "1 idiom",
     idiomMeaning: "Meaning",
@@ -304,6 +441,29 @@ const UI_TEXT = {
     editProfile: "编辑",
     editProfileFor: "编辑 {name} 的资料",
     profileEditTitle: "修改学习用户资料",
+    signInTitle: "登录",
+    signInAction: "登录",
+    guestLoginAction: "访客登陆",
+    registerTitle: "建立档案",
+    registerAction: "建立档案",
+    registerNewAccount: "注册新账户",
+    registerPromptHint: "建立只属于这个孩子的档案，包含邮箱、孩子信息和头像。",
+    backToLogin: "返回登录",
+    usernameLabel: "ID / 用户名",
+    pinLabel: "4 位密码",
+    emailLabel: "邮箱",
+    childNameLabel: "孩子名字",
+    childAgeLabel: "年龄",
+    childInterestsLabel: "喜好",
+    authRequired: "请填写必填内容。",
+    authPinInvalid: "密码必须是 4 位数字。",
+    authRegistering: "正在建立档案...",
+    authSigningIn: "正在登录...",
+    authBackendUnavailable: "请先启动 Chinese Quest 后台服务，才能使用学习档案。",
+    registerToast: "{name} 的档案已建立。",
+    logoutAction: "退出登录",
+    logoutConfirm: "确定要退出登录并返回 ID 登录页面吗？",
+    logoutToast: "已退出登录。",
     profileEditHint: "修改此设备上显示的学习用户名字和小动物头像。",
     profileNameLabel: "学习用户名字",
     profileMarkLabel: "小动物头像",
@@ -320,6 +480,30 @@ const UI_TEXT = {
     signedInAs: "当前学习用户：{name}",
     loginToast: "{name}，欢迎回来。",
     dailyLesson: "一日一课",
+    dailyPersonalLesson: "个性一日课",
+    examTitle: "考试",
+    examLabel: "测评",
+    examHint: "从会的字中抽 20 题。",
+    examHomeReady: "20 题",
+    openExam: "开始考试",
+    startExam: "开始考试",
+    examComplete: "考试完成",
+    examResultSummary: "成绩 {score} / {total} · {percent}% · {time}",
+    examNoHistory: "还没有考试记录。",
+    examNeedsKnown: "请先在识字自评里标记会的字，再开始考试。",
+    examNotEnoughKnown: "本次使用 {count} 个已认识的字考试。",
+    lastExamSummary: "上次考试：{score} / {total} · {percent}% · {time}",
+    wrongWordsTitle: "错词数据库",
+    wrongWordsHint: "复习考试答错的字。",
+    openWrongWords: "打开错词数据库",
+    wrongWordsEmpty: "还没有错词。",
+    wrongWordsCount: "{count} 个错词",
+    wrongWordsCountOne: "1 个错词",
+    wrongWordMistakes: "错 {count} 次",
+    wrongWordMistakesOne: "错 1 次",
+    howManyStrokes: "“{char}”有多少笔画？",
+    learnedStatus: "已学过",
+    notLearnedStatus: "未学过",
     startToday: "开始今天的一课",
     uiLanguage: "界面语言",
     uiLanguageHint: "选择界面显示语言。",
@@ -339,12 +523,53 @@ const UI_TEXT = {
     howToPlay: "使用说明",
     howToUse: "如何使用",
     closeHowToPlay: "关闭使用说明",
-    howToPlayHint: "查看课程、测试、贴纸和摄像头写字的用法。",
+    howToPlayHint: "查看每个模块的用途和具体玩法。",
     openHowToPlay: "打开说明",
     guideStep1: "<strong>选择</strong> 一节课。",
     guideStep2: "<strong>学习</strong> 5 个汉字和拼音。",
     guideStep3: "<strong>听读</strong> 并练习笔顺。",
     guideStep4: "<strong>测试</strong> 后获得经验和贴纸。",
+    guideModulesLabel: "模块使用说明",
+    guideModulesTitle: "各模块具体玩法",
+    guideStatsTitle: "主页进度",
+    guideStatsUse: "<strong>用处：</strong>查看已认识汉字进度，以及数据库里字、词、成语的总量。",
+    guideStatsPlay: "<strong>玩法：</strong>先在 Self Assessment 更新会的字，再回主页看进度条变化；字、词、成语总量用于了解当前可学习内容规模。",
+    guideDailyTitle: "一日一课",
+    guideDailyUse: "<strong>用处：</strong>进入系统为今天安排的学习内容。",
+    guideDailyPlay: "<strong>玩法：</strong>一次学习 5 个汉字，听拼音，看意思和组词，练习笔顺或摄像头写字，最后完成测试保存进度。",
+    guideCourseTitle: "课程学习",
+    guideCourseUse: "<strong>用处：</strong>从 800 个汉字课程中自由选择任意一课。",
+    guideCoursePlay: "<strong>玩法：</strong>选择课号，逐个查看汉字卡片，用发音、笔顺、描红和摄像头练习，完成本课测试后记录 XP 和贴纸。",
+    guideKnownTitle: "Self Assessment",
+    guideKnownUse: "<strong>用处：</strong>记录这个学习用户已经认识哪些汉字。",
+    guideKnownPlay: "<strong>玩法：</strong>每次从 100 个字里勾选会的字，保存到学习档案；这个记录会更新主页进度条，并作为考试抽题范围。",
+    guideExamTitle: "考试",
+    guideExamUse: "<strong>用处：</strong>用 20 道题检查已认识汉字的掌握情况。",
+    guideExamPlay: "<strong>玩法：</strong>回答拼音、意思和笔画数题目；考试结果会保存，答错的字会自动进入错词数据库。",
+    guideWrongTitle: "错词数据库",
+    guideWrongUse: "<strong>用处：</strong>集中复习考试里答错的汉字。",
+    guideWrongPlay: "<strong>玩法：</strong>查看每张错词卡的拼音、意思和出错次数，复习后可以再次开始考试巩固。",
+    guideDialogueTitle: "日常对话",
+    guideDialogueUse: "<strong>用处：</strong>按主题练习常用中文口语。",
+    guideDialoguePlay: "<strong>玩法：</strong>选择主题，点击句子听读，使用“全部朗读”，再点击词语卡片练习相关词汇。",
+    guideRoleplayTitle: "角色扮演",
+    guideRoleplayUse: "<strong>用处：</strong>练习真实生活场景中的短句朗读。",
+    guideRoleplayPlay: "<strong>玩法：</strong>选择情景，听完整台词，跟读并大声复述，再复习下面的情景词语。",
+    guideCustomTitle: "新增汉字",
+    guideCustomUse: "<strong>用处：</strong>加入课程里没有的自定义汉字。",
+    guideCustomPlay: "<strong>玩法：</strong>填写汉字、拼音、中文意思、英文意思和 3 个组词；保存后会出现在课程学习中，原始课程汉字不能覆盖。",
+    guideSearchTitle: "搜索",
+    guideSearchUse: "<strong>用处：</strong>快速查询课程数据库里的汉字或词语。",
+    guideSearchPlay: "<strong>玩法：</strong>输入中文，打开结果，听发音，查看意思、组词、字典资料和笔顺，也可以直接跳到包含该字的课程。",
+    guideIdiomTitle: "成语系列",
+    guideIdiomUse: "<strong>用处：</strong>学习 200 条常用中文成语。",
+    guideIdiomPlay: "<strong>玩法：</strong>浏览或搜索成语，阅读意思、例句和出处，再尝试把成语用在口头表达或写作里。",
+    guideLanguageTitle: "界面语言",
+    guideLanguageUse: "<strong>用处：</strong>切换应用显示语言。",
+    guideLanguagePlay: "<strong>玩法：</strong>选择中文、英文、双语、日文或韩文；设置会保存在当前学习用户档案里。",
+    guideLogoutTitle: "退出登录",
+    guideLogoutUse: "<strong>用处：</strong>离开当前学习用户档案，回到 ID 登录页面。",
+    guideLogoutPlay: "<strong>玩法：</strong>在主页最下方点击退出登录，确认后返回登录页，其他学习用户可以用自己的 ID 和 4 位密码登录。",
     cameraGuideAria: "摄像头追踪手指在方格中写字",
     cameraWriting: "摄像头写字",
     cameraGuideText: "在课程里点击 <strong>摄像头</strong>，应用会追踪手指尖，让你在方格里写字。",
@@ -356,6 +581,8 @@ const UI_TEXT = {
     nextCharacter: "下一个汉字",
     meaning: "意思",
     fontEvolution: "字体演变",
+    fontEvolutionVideo: "字形演化视频",
+    fontEvolutionVideoAria: "汉字字形演化视频",
     words: "组词",
     zdicDictionary: "字典资料",
     zdicOfflineSource: "已内置的{source}数据",
@@ -400,12 +627,15 @@ const UI_TEXT = {
     lessonN: "第 {n} 课",
     lessonOption: "第 {n} 课{done}: {chars}",
     startTodayAria: "开始今天的第 {n} 课",
+    startDailyGeneratedAria: "开始今天的个性一日课",
     englishLabel: "英语",
     pinyinFallback: "拼音",
     startTest: "开始测试",
     characterCount: "第 {current} / {total} 个字。",
     playLabel: "播放 {label}",
     playingLabel: "正在播放 {label}。",
+    readMeaning: "朗读中文意思",
+    playingMeaning: "正在朗读“{char}”的中文意思。",
     strokesCount: "{char} · {count} 画",
     pinchToDraw: "捏合手指，在方格里写字。",
     touchDraw: "也可以用触摸或鼠标写字。",
@@ -441,6 +671,29 @@ const UI_TEXT = {
     resultSaved: "结果已保存。",
     tryReview: "快速复习后再试一次。",
     dailyToast: "今日课程：第 {n} 课。",
+    dailyGeneratedToast: "今日个性一日课已生成。",
+    aiTeacherTitle: "AI老师",
+    aiTeacherLabel: "个性阅读",
+    aiTeacherHint: "用已会汉字生成一篇短文。",
+    aiTeacherHomeAction: "打开AI老师",
+    openAiTeacher: "打开AI老师",
+    aiTeacherNotice: "AI老师会尽量使用学生已经会的字词，加入少量新字词。文章生成只在后台服务端进行。",
+    aiTeacherGenerate: "生成文章",
+    aiTeacherGenerating: "正在生成文章...",
+    aiTeacherReadAll: "朗读文章",
+    aiTeacherReadArea: "点击朗读AI老师文章",
+    aiTeacherEmptyTitle: "准备生成新文章",
+    aiTeacherEmptyMeta: "点击生成文章，创建一篇 100 个汉字以内的阅读。",
+    aiTeacherEmptyText: "生成短文后，可以点击任意汉字或整篇文章听读。",
+    aiTeacherReady: "AI老师文章已生成。",
+    aiTeacherNeedsKnown: "先在识字自评里标记会的字，个性文章会更准确。",
+    aiTeacherKnownSummary: "已认识 {count} 个字",
+    aiTeacherKnownSummaryOne: "已认识 1 个字",
+    aiTeacherUsedKnownSummary: "使用了 {count} 个已会字",
+    aiTeacherNewWords: "新字词",
+    aiTeacherNoNewWords: "生成文章后，新字词会显示在这里。",
+    aiTeacherCharCount: "{count} 个汉字",
+    aiTeacherGenerateFailed: "AI老师暂时无法生成文章。",
     functionMenu: "功能菜单",
     courseLearning: "课程学习",
     courseLearningHint: "从 800 字课程中选择一课学习。",
@@ -500,6 +753,22 @@ const UI_TEXT = {
     customOriginalLocked: "“{char}”属于原始课程汉字，不能修改。",
     customAlreadyExists: "“{char}”已经添加过。",
     customSavedToast: "“{char}”已保存到课程学习。",
+    knownCharactersTitle: "识字自评",
+    knownCharactersHint: "选择这个学习用户已经认识的字。",
+    openKnownCharacters: "打开识字自评",
+    knownCharactersProgressLabel: "已认识汉字",
+    knownCharactersLabel: "学习用户档案",
+    knownCharactersPageHint: "从这 100 个数据库汉字里选择已经认识的字，保存到当前学习用户档案。",
+    knownCharactersNewBatch: "换 100 个",
+    knownCharactersSelectAll: "全选",
+    knownCharactersClear: "清空",
+    knownCharactersSave: "保存到档案",
+    knownCharactersSelected: "本组已选 {selected} 个 · 档案共 {total} 个",
+    knownCharactersBatch: "{count} 个数据库汉字",
+    knownCharactersCount: "已认识 {count} 个字",
+    knownCharactersCountOne: "已认识 1 个字",
+    knownCharactersEmpty: "还没有记录认识的字",
+    knownCharactersSavedToast: "本组保存 {selected} 个，档案共记录 {total} 个。",
     searchTitle: "搜索",
     searchModeHint: "输入中文，查找拼音、组词、笔顺和部首。",
     openSearch: "打开搜索",
@@ -526,6 +795,9 @@ const UI_TEXT = {
   },
   ja: {
     brandTagline: "1レッスン5文字",
+    logoutAction: "サインアウト",
+    logoutConfirm: "サインアウトしてIDログイン画面に戻りますか？",
+    logoutToast: "サインアウトしました。",
     dailyLesson: "今日のレッスン",
     startToday: "今日のレッスンを開始",
     uiLanguage: "UI言語",
@@ -563,6 +835,8 @@ const UI_TEXT = {
     nextCharacter: "次の文字",
     meaning: "意味",
     fontEvolution: "字体の変化",
+    fontEvolutionVideo: "字形変化ビデオ",
+    fontEvolutionVideoAria: "文字の字形変化ビデオ",
     words: "単語",
     strokeOrder: "筆順",
     animate: "再生",
@@ -594,6 +868,8 @@ const UI_TEXT = {
     characterCount: "{current} / {total} 文字目。",
     playLabel: "{label} を再生",
     playingLabel: "{label} を再生中。",
+    readMeaning: "中国語の意味を読む",
+    playingMeaning: "{char} の中国語の意味を読み上げ中。",
     strokesCount: "{char} · {count}画",
     pinchToDraw: "指をつまんで枠内に書きます。",
     touchDraw: "タッチやマウスでも書けます。",
@@ -661,6 +937,9 @@ const UI_TEXT = {
   },
   ko: {
     brandTagline: "한 과에 한자 5개",
+    logoutAction: "로그아웃",
+    logoutConfirm: "로그아웃하고 ID 로그인 화면으로 돌아갈까요?",
+    logoutToast: "로그아웃했습니다.",
     dailyLesson: "오늘의 수업",
     startToday: "오늘의 수업 시작",
     uiLanguage: "UI 언어",
@@ -698,6 +977,8 @@ const UI_TEXT = {
     nextCharacter: "다음 글자",
     meaning: "뜻",
     fontEvolution: "글자체 변화",
+    fontEvolutionVideo: "글자 변화 영상",
+    fontEvolutionVideoAria: "한자 글자 변화 영상",
     words: "단어",
     strokeOrder: "필순",
     animate: "재생",
@@ -729,6 +1010,8 @@ const UI_TEXT = {
     characterCount: "{current} / {total}번째 글자.",
     playLabel: "{label} 재생",
     playingLabel: "{label} 재생 중.",
+    readMeaning: "중국어 뜻 읽기",
+    playingMeaning: "{char}의 중국어 뜻을 읽는 중.",
     strokesCount: "{char} · {count}획",
     pinchToDraw: "손가락을 오므려 네모 안에 쓰세요.",
     touchDraw: "터치나 마우스로도 쓸 수 있습니다.",
@@ -799,6 +1082,23 @@ const UI_TEXT = {
 const els = {
   loginView: document.querySelector("#loginView"),
   loginUserList: document.querySelector("#loginUserList"),
+  loginForm: document.querySelector("#loginForm"),
+  loginUsernameInput: document.querySelector("#loginUsernameInput"),
+  loginPinInput: document.querySelector("#loginPinInput"),
+  loginValidation: document.querySelector("#loginValidation"),
+  guestLoginBtn: document.querySelector("#guestLoginBtn"),
+  registerPrompt: document.querySelector("#registerPrompt"),
+  openRegisterBtn: document.querySelector("#openRegisterBtn"),
+  cancelRegisterBtn: document.querySelector("#cancelRegisterBtn"),
+  registerForm: document.querySelector("#registerForm"),
+  registerUsernameInput: document.querySelector("#registerUsernameInput"),
+  registerPinInput: document.querySelector("#registerPinInput"),
+  registerEmailInput: document.querySelector("#registerEmailInput"),
+  registerChildNameInput: document.querySelector("#registerChildNameInput"),
+  registerAgeInput: document.querySelector("#registerAgeInput"),
+  registerAvatarInput: document.querySelector("#registerAvatarInput"),
+  registerInterestsInput: document.querySelector("#registerInterestsInput"),
+  registerValidation: document.querySelector("#registerValidation"),
   profileEditDialog: document.querySelector("#profileEditDialog"),
   profileEditForm: document.querySelector("#profileEditForm"),
   profileEditTitle: document.querySelector("#profileEditTitle"),
@@ -814,8 +1114,11 @@ const els = {
   customCharacterView: document.querySelector("#customCharacterView"),
   searchView: document.querySelector("#searchView"),
   idiomView: document.querySelector("#idiomView"),
+  knownCharactersView: document.querySelector("#knownCharactersView"),
+  wrongWordsView: document.querySelector("#wrongWordsView"),
   dialogueView: document.querySelector("#dialogueView"),
   roleplayView: document.querySelector("#roleplayView"),
+  aiTeacherView: document.querySelector("#aiTeacherView"),
   lessonView: document.querySelector("#lessonView"),
   testView: document.querySelector("#testView"),
   resultView: document.querySelector("#resultView"),
@@ -825,11 +1128,18 @@ const els = {
   xpBar: document.querySelector("#xpBar"),
   streakValue: document.querySelector("#streakValue"),
   currentUserName: document.querySelector("#currentUserName"),
+  logoutBtn: document.querySelector("#logoutBtn"),
+  homeLogoutBtn: document.querySelector("#homeLogoutBtn"),
   homeCurrentUserName: document.querySelector("#homeCurrentUserName"),
+  knownCharactersProgressMeter: document.querySelector("#knownCharactersProgressMeter"),
+  knownCharactersProgressValue: document.querySelector("#knownCharactersProgressValue"),
+  knownCharactersProgressPercent: document.querySelector("#knownCharactersProgressPercent"),
+  knownCharactersProgressBar: document.querySelector("#knownCharactersProgressBar"),
   lessonSelect: document.querySelector("#lessonSelect"),
   startLessonBtn: document.querySelector("#startLessonBtn"),
   uiLanguageSelect: document.querySelector("#uiLanguageSelect"),
   uiSkinSelect: document.querySelector("#uiSkinSelect"),
+  homeAmbientLayer: document.querySelector("#homeAmbientLayer"),
   dailyMonth: document.querySelector("#dailyMonth"),
   dailyDay: document.querySelector("#dailyDay"),
   dailyLessonTitle: document.querySelector("#dailyLessonTitle"),
@@ -843,6 +1153,12 @@ const els = {
   customCharacterCount: document.querySelector("#customCharacterCount"),
   searchModeBtn: document.querySelector("#searchModeBtn"),
   idiomModeBtn: document.querySelector("#idiomModeBtn"),
+  knownCharactersBtn: document.querySelector("#knownCharactersBtn"),
+  knownCharactersHomeCount: document.querySelector("#knownCharactersHomeCount"),
+  examModeBtn: document.querySelector("#examModeBtn"),
+  examHomeSummary: document.querySelector("#examHomeSummary"),
+  wrongWordsBtn: document.querySelector("#wrongWordsBtn"),
+  wrongWordsHomeCount: document.querySelector("#wrongWordsHomeCount"),
   idiomHomeCount: document.querySelector("#idiomHomeCount"),
   databaseCharacterCount: document.querySelector("#databaseCharacterCount"),
   databaseWordCount: document.querySelector("#databaseWordCount"),
@@ -865,6 +1181,7 @@ const els = {
   searchDetailEmpty: document.querySelector("#searchDetailEmpty"),
   searchDetailBody: document.querySelector("#searchDetailBody"),
   searchDetailChar: document.querySelector("#searchDetailChar"),
+  searchCharStatus: document.querySelector("#searchCharStatus"),
   searchDetailPinyin: document.querySelector("#searchDetailPinyin"),
   searchSpeakBtn: document.querySelector("#searchSpeakBtn"),
   searchDetailMeaningZh: document.querySelector("#searchDetailMeaningZh"),
@@ -880,12 +1197,35 @@ const els = {
   idiomSearchInput: document.querySelector("#idiomSearchInput"),
   idiomCount: document.querySelector("#idiomCount"),
   idiomList: document.querySelector("#idiomList"),
+  knownCharactersForm: document.querySelector("#knownCharactersForm"),
+  knownCharactersGrid: document.querySelector("#knownCharactersGrid"),
+  knownCharactersSummary: document.querySelector("#knownCharactersSummary"),
+  knownCharactersBatchMeta: document.querySelector("#knownCharactersBatchMeta"),
+  knownCharactersNewBatchBtn: document.querySelector("#knownCharactersNewBatchBtn"),
+  knownCharactersSelectAllBtn: document.querySelector("#knownCharactersSelectAllBtn"),
+  knownCharactersClearBtn: document.querySelector("#knownCharactersClearBtn"),
+  knownCharactersValidation: document.querySelector("#knownCharactersValidation"),
+  wrongWordsCount: document.querySelector("#wrongWordsCount"),
+  lastExamSummary: document.querySelector("#lastExamSummary"),
+  wrongWordsList: document.querySelector("#wrongWordsList"),
+  startExamFromWrongWordsBtn: document.querySelector("#startExamFromWrongWordsBtn"),
   customWords: [1, 2, 3].map((index) => ({
     word: document.querySelector(`#customWord${index}`),
     meaningEn: document.querySelector(`#customWordMeaning${index}`),
   })),
   dialogueModeBtn: document.querySelector("#dialogueModeBtn"),
   roleplayModeBtn: document.querySelector("#roleplayModeBtn"),
+  aiTeacherBtn: document.querySelector("#aiTeacherBtn"),
+  aiTeacherKnownCount: document.querySelector("#aiTeacherKnownCount"),
+  aiTeacherGenerateBtn: document.querySelector("#aiTeacherGenerateBtn"),
+  aiTeacherReadBtn: document.querySelector("#aiTeacherReadBtn"),
+  aiTeacherStatus: document.querySelector("#aiTeacherStatus"),
+  aiTeacherReadArea: document.querySelector("#aiTeacherReadArea"),
+  aiTeacherArticleTitle: document.querySelector("#aiTeacherArticleTitle"),
+  aiTeacherArticleMeta: document.querySelector("#aiTeacherArticleMeta"),
+  aiTeacherArticleText: document.querySelector("#aiTeacherArticleText"),
+  aiTeacherUsedKnownCount: document.querySelector("#aiTeacherUsedKnownCount"),
+  aiTeacherNewWordsList: document.querySelector("#aiTeacherNewWordsList"),
   dialogueTopicSelect: document.querySelector("#dialogueTopicSelect"),
   dialogueIcon: document.querySelector("#dialogueIcon"),
   dialogueTopic: document.querySelector("#dialogueTopic"),
@@ -912,11 +1252,15 @@ const els = {
   speakBtn: document.querySelector("#speakBtn"),
   speakLabel: document.querySelector("#speakLabel"),
   bigChar: document.querySelector("#bigChar"),
+  lessonCharStatus: document.querySelector("#lessonCharStatus"),
   pinyin: document.querySelector("#pinyin"),
   meaning: document.querySelector("#meaning"),
+  meaningSpeakBtn: document.querySelector("#meaningSpeakBtn"),
   meaningZh: document.querySelector("#meaningZh"),
   meaningEn: document.querySelector("#meaningEn"),
   fontEvolutionList: document.querySelector("#fontEvolutionList"),
+  evolutionVideoSection: document.querySelector("#evolutionVideoSection"),
+  evolutionVideo: document.querySelector("#evolutionVideo"),
   wordList: document.querySelector("#wordList"),
   lessonZdicPanel: document.querySelector("#lessonZdicPanel"),
   strokeTarget: document.querySelector("#strokeTarget"),
@@ -961,9 +1305,42 @@ let toastTimer = null;
 let cameraScriptPromise = null;
 let activeSpeechJob = null;
 let speechJobId = 0;
+let evolutionVideoRequestId = 0;
 let cachedChineseVoice = null;
 const SPARKLE_GLYPHS = ["✦", "★", "星", "好", "棒"];
 const SPARKLE_COLORS = ["#ff7078", "#2f80ed", "#54b86a", "#ffd45d", "#8d65d8"];
+const HOME_AMBIENT_GROUPS = [
+  {
+    kind: "cloud",
+    glyphs: ["☁"],
+    count: 9,
+    top: [3, 86],
+    size: [3.8, 8.2],
+    duration: [34, 58],
+    opacity: [0.18, 0.42],
+    drift: [-8, 8],
+  },
+  {
+    kind: "bird",
+    glyphs: ["🐦", "🕊️", "🐤", "🐥"],
+    count: 10,
+    top: [5, 78],
+    size: [2.0, 4.0],
+    duration: [16, 32],
+    opacity: [0.46, 0.78],
+    drift: [-14, 14],
+  },
+  {
+    kind: "animal",
+    glyphs: ["🐼", "🐰", "🦊", "🐵", "🐢", "🐸", "🐨", "🐯", "🐱", "🐧"],
+    count: 8,
+    top: [24, 90],
+    size: [2.3, 4.6],
+    duration: [22, 42],
+    opacity: [0.42, 0.72],
+    drift: [-10, 12],
+  },
+];
 
 const MEDIAPIPE_HANDS_SCRIPT = "https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js";
 const MEDIAPIPE_HANDS_ASSET_BASE = "https://cdn.jsdelivr.net/npm/@mediapipe/hands";
@@ -1087,6 +1464,13 @@ const defaultState = {
   attempts: {},
   uiLanguage: "bilingual",
   uiSkin: "classic",
+  learnedCharacters: [],
+  knownCharacters: [],
+  knownCharacterBatch: [],
+  knownCharactersUpdatedAt: "",
+  examHistory: [],
+  wrongCharacters: {},
+  aiTeacherStory: null,
   dialogueCategoryIndex: 0,
   roleplayIndex: 0,
 };
@@ -1098,6 +1482,11 @@ let state = freshDefaultState();
 let lastRenderedXp = null;
 let lastRenderedLevel = null;
 let editingProfileId = null;
+let saveStateQueue = Promise.resolve();
+let saveFailureNotified = false;
+let activeLesson = null;
+let aiTeacherBusy = false;
+let loginUrlAttempted = false;
 
 function freshDefaultState() {
   return {
@@ -1105,6 +1494,12 @@ function freshDefaultState() {
     completedLessons: [],
     stickers: [],
     attempts: {},
+    learnedCharacters: [],
+    knownCharacters: [],
+    knownCharacterBatch: [],
+    examHistory: [],
+    wrongCharacters: {},
+    aiTeacherStory: null,
   };
 }
 
@@ -1129,6 +1524,57 @@ function normalizeLoadedState(loadedState) {
   if (!merged.attempts || typeof merged.attempts !== "object" || Array.isArray(merged.attempts)) {
     merged.attempts = {};
   }
+  if (!Array.isArray(merged.learnedCharacters)) {
+    merged.learnedCharacters = [];
+  } else {
+    merged.learnedCharacters = [...new Set(merged.learnedCharacters.map(cleanText).filter(isSingleChineseCharacter))];
+  }
+  if (!Array.isArray(merged.knownCharacters)) {
+    merged.knownCharacters = [];
+  } else {
+    merged.knownCharacters = [...new Set(merged.knownCharacters.map(cleanText).filter(isSingleChineseCharacter))];
+  }
+  if (!Array.isArray(merged.examHistory)) {
+    merged.examHistory = [];
+  } else {
+    merged.examHistory = merged.examHistory
+      .filter((item) => item && typeof item === "object")
+      .map((item) => ({
+        takenAt: typeof item.takenAt === "string" ? item.takenAt : "",
+        score: Math.max(0, Number(item.score) || 0),
+        total: Math.max(0, Number(item.total) || 0),
+        percent: Math.max(0, Number(item.percent) || 0),
+        wrongChars: Array.isArray(item.wrongChars) ? [...new Set(item.wrongChars.map(cleanText).filter(isSingleChineseCharacter))] : [],
+      }))
+      .slice(-50);
+  }
+  if (!merged.wrongCharacters || typeof merged.wrongCharacters !== "object" || Array.isArray(merged.wrongCharacters)) {
+    merged.wrongCharacters = {};
+  } else {
+    merged.wrongCharacters = Object.fromEntries(
+      Object.entries(merged.wrongCharacters)
+        .map(([char, raw]) => {
+          const cleanChar = cleanText(char);
+          if (!isSingleChineseCharacter(cleanChar)) return null;
+          const value = raw && typeof raw === "object" ? raw : {};
+          return [cleanChar, {
+            count: Math.max(1, Number(value.count) || 1),
+            lastWrongAt: typeof value.lastWrongAt === "string" ? value.lastWrongAt : "",
+            lastTestedAt: typeof value.lastTestedAt === "string" ? value.lastTestedAt : "",
+          }];
+        })
+        .filter(Boolean)
+    );
+  }
+  merged.aiTeacherStory = normalizeAiTeacherStory(merged.aiTeacherStory);
+  if (!Array.isArray(merged.knownCharacterBatch)) {
+    merged.knownCharacterBatch = [];
+  } else {
+    merged.knownCharacterBatch = [...new Set(merged.knownCharacterBatch.map(cleanText).filter(isSingleChineseCharacter))].slice(0, 100);
+  }
+  if (typeof merged.knownCharactersUpdatedAt !== "string") {
+    merged.knownCharactersUpdatedAt = "";
+  }
   if (!UI_LANGUAGE_OPTIONS.some((option) => option.value === merged.uiLanguage)) {
     merged.uiLanguage = "en";
   }
@@ -1149,13 +1595,72 @@ function loadState() {
   return activeUser ? loadStateForUser(activeUser.id) : normalizeLoadedState(state);
 }
 
-function saveState() {
-  if (!activeUser) return;
-  localStorage.setItem(stateStorageKey(activeUser.id), JSON.stringify(state));
+async function apiRequest(path, options = {}) {
+  if (!window.fetch) {
+    throw new Error(t("authBackendUnavailable"));
+  }
+  const { body, headers = {}, ...rest } = options;
+  const requestOptions = {
+    credentials: "same-origin",
+    ...rest,
+    headers: {
+      ...(body === undefined ? {} : { "Content-Type": "application/json" }),
+      ...headers,
+    },
+  };
+  if (body !== undefined) requestOptions.body = JSON.stringify(body);
+  const response = await fetch(`${API_BASE}${path}`, requestOptions);
+  const text = await response.text();
+  let payload = {};
+  if (text) {
+    try {
+      payload = JSON.parse(text);
+    } catch {
+      payload = {};
+    }
+  }
+  if (!response.ok) {
+    const fallbackMessage = response.status === 404 && path.startsWith("/api/")
+      ? t("authBackendUnavailable")
+      : response.statusText || "Request failed.";
+    const error = new Error(payload.error || fallbackMessage);
+    error.status = response.status;
+    throw error;
+  }
+  return payload;
 }
 
-function cleanText(value) {
-  return String(value ?? "").replace(/\s+/g, " ").trim();
+function cloneStateForSave() {
+  return JSON.parse(JSON.stringify(state));
+}
+
+function saveState(growthEvent = null) {
+  if (!activeUser) return;
+  const body = { state: cloneStateForSave() };
+  if (growthEvent) body.growthEvent = growthEvent;
+  saveStateQueue = saveStateQueue
+    .catch(() => {})
+    .then(() =>
+      apiRequest("/api/profile/state", {
+        method: "PUT",
+        body,
+      })
+        .then(() => {
+          saveFailureNotified = false;
+        })
+        .catch((error) => {
+          console.warn("Could not save profile state:", error);
+          if (!saveFailureNotified) {
+            showToast(error.message || t("authBackendUnavailable"));
+            saveFailureNotified = true;
+          }
+        })
+    );
+}
+
+function cleanText(value, maxLength = Infinity) {
+  const text = String(value ?? "").replace(/\s+/g, " ").trim();
+  return Number.isFinite(maxLength) ? text.slice(0, maxLength) : text;
 }
 
 function cleanMultiline(value) {
@@ -1327,10 +1832,19 @@ function t(key, values = {}) {
   return formatTemplate(UI_TEXT[language][key] || UI_TEXT.en[key] || key, values);
 }
 
+function localizedEntryMeaning(entry) {
+  const zh = cleanText(entry?.meaningZh);
+  const en = cleanText(entry?.meaningEn);
+  if (state.uiLanguage === "zh") return zh || en || "";
+  if (state.uiLanguage === "bilingual") {
+    if (zh && en && zh !== en) return `${zh} / ${en}`;
+    return zh || en || "";
+  }
+  return en || zh || "";
+}
+
 function applyUiSkin() {
-  document.body.dataset.skin = UI_SKIN_OPTIONS.some((option) => option.value === state.uiSkin)
-    ? state.uiSkin
-    : "classic";
+  document.body.dataset.skin = "classic";
 }
 
 function applyStaticText() {
@@ -1344,14 +1858,16 @@ function applyStaticText() {
     option.selected = language.value === state.uiLanguage;
     els.uiLanguageSelect.append(option);
   });
-  els.uiSkinSelect.innerHTML = "";
-  UI_SKIN_OPTIONS.forEach((skin) => {
-    const option = document.createElement("option");
-    option.value = skin.value;
-    option.textContent = t(skin.labelKey);
-    option.selected = skin.value === state.uiSkin;
-    els.uiSkinSelect.append(option);
-  });
+  if (els.uiSkinSelect) {
+    els.uiSkinSelect.innerHTML = "";
+    UI_SKIN_OPTIONS.forEach((skin) => {
+      const option = document.createElement("option");
+      option.value = skin.value;
+      option.textContent = t(skin.labelKey);
+      option.selected = skin.value === state.uiSkin;
+      els.uiSkinSelect.append(option);
+    });
+  }
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     node.textContent = t(node.dataset.i18n);
   });
@@ -1365,6 +1881,7 @@ function applyStaticText() {
     node.setAttribute("placeholder", t(node.dataset.i18nPlaceholder));
   });
   populateProfileAvatarOptions(els.profileMarkInput?.value);
+  populateRegisterAvatarOptions(els.registerAvatarInput?.value);
 }
 
 function refreshCurrentScreen() {
@@ -1384,11 +1901,20 @@ function refreshCurrentScreen() {
   } else if (screen === "idiom") {
     renderIdiomSeries();
     renderStats();
+  } else if (screen === "knownCharacters") {
+    renderKnownCharacters();
+    renderStats();
+  } else if (screen === "wrongWords") {
+    renderWrongWords();
+    renderStats();
   } else if (screen === "dialogue") {
     renderDialoguePractice();
     renderStats();
   } else if (screen === "roleplay") {
     renderRoleplayPractice();
+    renderStats();
+  } else if (screen === "aiTeacher") {
+    renderAiTeacher();
     renderStats();
   } else if (screen === "lesson") {
     renderLesson();
@@ -1436,8 +1962,12 @@ function shuffle(items) {
   return copy;
 }
 
-function lessonEntries(lessonIndex = state.lessonIndex) {
-  const start = lessonIndex * LESSON_SIZE;
+function lessonEntries(lessonIndex) {
+  if (lessonIndex === undefined && activeLesson?.entries?.length) {
+    return activeLesson.entries;
+  }
+  const index = lessonIndex ?? state.lessonIndex;
+  const start = index * LESSON_SIZE;
   return allEntries().slice(start, start + LESSON_SIZE);
 }
 
@@ -1445,8 +1975,9 @@ function currentEntry() {
   return lessonEntries()[state.charIndex] || lessonEntries()[0] || allEntries()[0];
 }
 
-function lessonKey(index = state.lessonIndex) {
-  return String(index);
+function lessonKey(index) {
+  if (index === undefined && activeLesson?.key) return activeLesson.key;
+  return String(index ?? state.lessonIndex);
 }
 
 function levelInfo() {
@@ -1501,12 +2032,65 @@ function hashText(value) {
 }
 
 function dailyLessonInfo(dateKey = melbourneDateKey()) {
-  const index = hashText(`daily-lesson-${dateKey}`) % lessonCount();
+  const entries = generatedDailyLessonEntries();
+  const firstCourseIndex = allEntries().findIndex((entry) => entry.char === entries[0]?.char);
+  const index = firstCourseIndex >= 0 ? Math.floor(firstCourseIndex / LESSON_SIZE) : 0;
   return {
     dateKey,
     index,
-    entries: lessonEntries(index),
+    key: `daily-${dateKey}-${entries.map((entry) => entry.char).join("")}`,
+    entries,
   };
+}
+
+function completedCourseCharacters() {
+  const characters = new Set();
+  (Array.isArray(state.completedLessons) ? state.completedLessons : []).forEach((key) => {
+    if (!/^\d+$/.test(String(key))) return;
+    lessonEntries(Number(key)).forEach((entry) => characters.add(entry.char));
+  });
+  return characters;
+}
+
+function learnedCharactersForDailyLesson() {
+  const learned = savedKnownCharacters();
+  (Array.isArray(state.learnedCharacters) ? state.learnedCharacters : []).forEach((char) => learned.add(char));
+  completedCourseCharacters().forEach((char) => learned.add(char));
+  return learned;
+}
+
+function isCharacterLearned(char, learnedSet = learnedCharactersForDailyLesson()) {
+  return learnedSet.has(char);
+}
+
+function updateLearnedStatusBadge(badge, char, learnedSet = learnedCharactersForDailyLesson()) {
+  if (!badge) return;
+  const learned = isCharacterLearned(char, learnedSet);
+  badge.textContent = t(learned ? "learnedStatus" : "notLearnedStatus");
+  badge.classList.toggle("is-learned", learned);
+  badge.classList.toggle("is-new", !learned);
+  badge.title = badge.textContent;
+}
+
+function makeLearnedStatusBadge(char, options = {}) {
+  const badge = document.createElement("span");
+  badge.className = `learned-status-badge${options.compact ? " compact" : ""}`;
+  updateLearnedStatusBadge(badge, char, options.learnedSet);
+  return badge;
+}
+
+function generatedDailyLessonEntries() {
+  const entries = allEntries();
+  const learned = learnedCharactersForDailyLesson();
+  const newEntries = entries.filter((entry) => !learned.has(entry.char));
+  const selected = newEntries.slice(0, LESSON_SIZE);
+  if (selected.length < LESSON_SIZE) {
+    entries.some((entry) => {
+      if (!selected.some((item) => item.char === entry.char)) selected.push(entry);
+      return selected.length >= LESSON_SIZE;
+    });
+  }
+  return selected;
 }
 
 function currentStreak() {
@@ -1776,86 +2360,213 @@ function resetSessionViews() {
   selectedSearchEntry = null;
   quiz = null;
   lastResult = null;
+  activeLesson = null;
   writer = null;
   searchWriter = null;
   lastRenderedXp = null;
   lastRenderedLevel = null;
 }
 
-function renderLoginUsers() {
-  if (!els.loginUserList) return;
-  const lastUserId = localStorage.getItem(ACTIVE_USER_KEY);
-  els.loginUserList.innerHTML = "";
-  userProfiles.forEach((profile) => {
-    const card = document.createElement("article");
-    card.className = "login-user-card";
-    if (profile.id === lastUserId) card.classList.add("last-used");
-    card.dataset.userId = profile.id;
+function normalizeBackendUser(raw) {
+  const fallbackMark = PROFILE_AVATAR_OPTIONS[0].value;
+  return {
+    id: cleanText(raw?.id),
+    username: cleanText(raw?.username),
+    name: cleanText(raw?.name || raw?.childName || raw?.username).slice(0, 40) || t("currentUser"),
+    mark: normalizeProfileMark(raw?.mark || raw?.avatar, fallbackMark),
+    email: cleanText(raw?.email),
+    childAge: raw?.childAge ?? "",
+    childInterests: cleanText(raw?.childInterests || raw?.interests, 500),
+  };
+}
 
-    const avatar = document.createElement("span");
-    avatar.className = "login-user-avatar";
-    avatar.textContent = profile.mark;
-
-    const copy = document.createElement("span");
-    copy.className = "login-user-copy";
-    const name = document.createElement("strong");
-    name.textContent = profile.name;
-    copy.append(name);
-
-    const actions = document.createElement("span");
-    actions.className = "login-user-actions";
-
-    const editAction = document.createElement("button");
-    editAction.className = "login-profile-edit";
-    editAction.type = "button";
-    editAction.dataset.editProfileId = profile.id;
-    editAction.textContent = "✎";
-    editAction.title = t("editProfile");
-    editAction.setAttribute("aria-label", t("editProfileFor", { name: profile.name }));
-
-    actions.append(editAction);
-    card.append(avatar, copy, actions);
-
-    if (profile.id === lastUserId) {
-      const badge = document.createElement("em");
-      badge.textContent = t("lastUser");
-      card.append(badge);
-    }
-
-    els.loginUserList.append(card);
+function populateRegisterAvatarOptions(selectedMark = "") {
+  if (!els.registerAvatarInput) return;
+  const currentMark = normalizeProfileMark(selectedMark || els.registerAvatarInput.value, PROFILE_AVATAR_OPTIONS[0].value);
+  els.registerAvatarInput.innerHTML = "";
+  PROFILE_AVATAR_OPTIONS.forEach((avatar) => {
+    const option = document.createElement("option");
+    option.value = avatar.value;
+    option.textContent = profileAvatarLabel(avatar);
+    option.selected = avatar.value === currentMark;
+    els.registerAvatarInput.append(option);
   });
 }
 
-function renderLogin() {
-  renderLoginUsers();
-  setScreen("login");
+function setAuthValidation(target, message, tone = "") {
+  if (!target) return;
+  target.textContent = message;
+  target.className = `custom-validation${tone ? ` ${tone}` : ""}`;
 }
 
-function loginUser(userId) {
-  const user = userById(userId);
-  if (!user) return;
-  unlockHomeAnimalAudio();
-  activeUser = user;
-  state = loadStateForUser(user.id);
+function setAuthBusy(form, busy) {
+  if (!form) return;
+  form.querySelectorAll("button, input, select, textarea").forEach((field) => {
+    field.disabled = busy;
+  });
+}
+
+function showRegisterForm() {
+  els.loginUserList?.classList.add("is-registering");
+  els.registerPrompt?.classList.add("hidden");
+  els.registerForm?.classList.remove("hidden");
+  setAuthValidation(els.registerValidation, "");
+  requestAnimationFrame(() => els.registerUsernameInput?.focus({ preventScroll: true }));
+}
+
+function hideRegisterForm({ reset = false } = {}) {
+  els.loginUserList?.classList.remove("is-registering");
+  els.registerForm?.classList.add("hidden");
+  els.registerPrompt?.classList.remove("hidden");
+  setAuthValidation(els.registerValidation, "");
+  if (reset) {
+    els.registerForm?.reset();
+    populateRegisterAvatarOptions();
+  }
+}
+
+function readLoginDraft() {
+  return {
+    username: cleanText(els.loginUsernameInput?.value),
+    pin: cleanText(els.loginPinInput?.value),
+  };
+}
+
+function readRegisterDraft() {
+  return {
+    username: cleanText(els.registerUsernameInput?.value),
+    pin: cleanText(els.registerPinInput?.value),
+    email: cleanText(els.registerEmailInput?.value),
+    childName: cleanText(els.registerChildNameInput?.value),
+    age: cleanText(els.registerAgeInput?.value),
+    interests: cleanText(els.registerInterestsInput?.value, 500),
+    avatar: normalizeProfileMark(els.registerAvatarInput?.value, PROFILE_AVATAR_OPTIONS[0].value),
+    initialState: freshDefaultState(),
+  };
+}
+
+function pinIsValid(pin) {
+  return /^\d{4}$/.test(pin);
+}
+
+function applyAuthenticatedProfile(payload, toastMessage = "") {
+  activeUser = normalizeBackendUser(payload.user);
+  state = normalizeLoadedState(payload.state || {});
   normalizeStateCoursePointers();
-  localStorage.setItem(ACTIVE_USER_KEY, user.id);
   resetSessionViews();
   applyStaticText();
   updateActiveUserLabels();
   renderHome();
-  showToast(t("loginToast", { name: user.name }));
+  if (toastMessage) showToast(toastMessage);
 }
 
-function handleLoginUserClick(event) {
-  const source = event.target instanceof Element ? event.target : null;
-  const editButton = source?.closest("[data-edit-profile-id]");
-  if (editButton) {
-    openProfileEditor(editButton.dataset.editProfileId);
+async function submitLogin(event) {
+  event.preventDefault();
+  const draft = readLoginDraft();
+  if (!draft.username || !draft.pin) {
+    setAuthValidation(els.loginValidation, t("authRequired"), "needs-review");
     return;
   }
-  const card = source?.closest("[data-user-id]");
-  if (!card) return;
-  loginUser(card.dataset.userId);
+  if (!pinIsValid(draft.pin)) {
+    setAuthValidation(els.loginValidation, t("authPinInvalid"), "needs-review");
+    return;
+  }
+  setAuthValidation(els.loginValidation, t("authSigningIn"));
+  setAuthBusy(els.loginForm, true);
+  try {
+    const payload = await apiRequest("/api/login", {
+      method: "POST",
+      body: { username: draft.username, pin: draft.pin },
+    });
+    if (els.loginPinInput) els.loginPinInput.value = "";
+    applyAuthenticatedProfile(payload, t("loginToast", { name: payload.user?.name || draft.username }));
+  } catch (error) {
+    setAuthValidation(els.loginValidation, error.message || t("authBackendUnavailable"), "needs-review");
+  } finally {
+    setAuthBusy(els.loginForm, false);
+  }
+}
+
+async function loginAsGuest() {
+  if (els.loginUsernameInput) els.loginUsernameInput.value = "guest";
+  if (els.loginPinInput) els.loginPinInput.value = "";
+  setAuthValidation(els.loginValidation, t("authSigningIn"));
+  setAuthBusy(els.loginForm, true);
+  try {
+    const payload = await apiRequest("/api/login", {
+      method: "POST",
+      body: { username: "guest", pin: "" },
+    });
+    applyAuthenticatedProfile(payload, t("loginToast", { name: payload.user?.name || "Guest" }));
+  } catch (error) {
+    setAuthValidation(els.loginValidation, error.message || t("authBackendUnavailable"), "needs-review");
+  } finally {
+    setAuthBusy(els.loginForm, false);
+  }
+}
+
+async function submitRegister(event) {
+  event.preventDefault();
+  const draft = readRegisterDraft();
+  if (!draft.username || !draft.pin || !draft.email || !draft.childName) {
+    setAuthValidation(els.registerValidation, t("authRequired"), "needs-review");
+    return;
+  }
+  if (!pinIsValid(draft.pin)) {
+    setAuthValidation(els.registerValidation, t("authPinInvalid"), "needs-review");
+    return;
+  }
+  setAuthValidation(els.registerValidation, t("authRegistering"));
+  setAuthBusy(els.registerForm, true);
+  try {
+    const payload = await apiRequest("/api/register", {
+      method: "POST",
+      body: draft,
+    });
+    els.registerForm?.reset();
+    populateRegisterAvatarOptions();
+    applyAuthenticatedProfile(payload, t("registerToast", { name: payload.user?.name || draft.childName }));
+  } catch (error) {
+    setAuthValidation(els.registerValidation, error.message || t("authBackendUnavailable"), "needs-review");
+  } finally {
+    setAuthBusy(els.registerForm, false);
+  }
+}
+
+function renderLogin() {
+  activeUser = null;
+  state = freshDefaultState();
+  resetSessionViews();
+  applyStaticText();
+  populateRegisterAvatarOptions();
+  hideRegisterForm({ reset: true });
+  updateActiveUserLabels();
+  setScreen("login");
+}
+
+async function restoreSession() {
+  try {
+    const payload = await apiRequest("/api/session");
+    applyAuthenticatedProfile(payload);
+    return true;
+  } catch (error) {
+    if (error.status && error.status !== 401) {
+      console.warn("Could not restore session:", error);
+    }
+    return false;
+  }
+}
+
+async function logoutCurrentUser() {
+  if (!window.confirm(t("logoutConfirm"))) return;
+  try {
+    await saveStateQueue.catch(() => {});
+    await apiRequest("/api/logout", { method: "POST", body: {} });
+  } catch (error) {
+    console.warn("Could not clear backend session:", error);
+  }
+  renderLogin();
+  showToast(t("logoutToast"));
 }
 
 function setProfileValidation(message, tone = "") {
@@ -1942,8 +2653,11 @@ function screenElementFor(screen) {
     customCharacter: els.customCharacterView,
     search: els.searchView,
     idiom: els.idiomView,
+    knownCharacters: els.knownCharactersView,
+    wrongWords: els.wrongWordsView,
     dialogue: els.dialogueView,
     roleplay: els.roleplayView,
+    aiTeacher: els.aiTeacherView,
     lesson: els.lessonView,
     test: els.testView,
     result: els.resultView,
@@ -1961,11 +2675,15 @@ function setScreen(screen) {
   els.customCharacterView.classList.toggle("hidden", screen !== "customCharacter");
   els.searchView.classList.toggle("hidden", screen !== "search");
   els.idiomView.classList.toggle("hidden", screen !== "idiom");
+  els.knownCharactersView.classList.toggle("hidden", screen !== "knownCharacters");
+  els.wrongWordsView.classList.toggle("hidden", screen !== "wrongWords");
   els.dialogueView.classList.toggle("hidden", screen !== "dialogue");
   els.roleplayView.classList.toggle("hidden", screen !== "roleplay");
+  els.aiTeacherView.classList.toggle("hidden", screen !== "aiTeacher");
   els.lessonView.classList.toggle("hidden", screen !== "lesson");
   els.testView.classList.toggle("hidden", screen !== "test");
   els.resultView.classList.toggle("hidden", screen !== "result");
+  if (els.logoutBtn) els.logoutBtn.hidden = screen === "login";
   const screenElement = screenElementFor(screen);
   if (previousScreen !== screen && screenElement) {
     replayClass(screenElement, "screen-enter");
@@ -1998,13 +2716,117 @@ function renderDailyLesson() {
   const parts = dateParts(daily.dateKey);
   els.dailyMonth.textContent = parts.month;
   els.dailyDay.textContent = parts.day;
-  els.dailyLessonTitle.textContent = t("lessonN", { n: daily.index + 1 });
-  els.dailyLessonChars.textContent = daily.entries.map((entry) => entry.char).join(" ");
-  els.dailyLessonBtn.setAttribute("aria-label", t("startTodayAria", { n: daily.index + 1 }));
+  els.dailyLessonTitle.textContent = t("dailyPersonalLesson");
+  els.dailyLessonChars.innerHTML = "";
+  const learnedSet = learnedCharactersForDailyLesson();
+  daily.entries.forEach((entry) => {
+    const item = document.createElement("span");
+    item.className = "daily-char-status";
+    const char = document.createElement("strong");
+    char.textContent = entry.char;
+    item.append(char, makeLearnedStatusBadge(entry.char, { compact: true, learnedSet }));
+    els.dailyLessonChars.append(item);
+  });
+  els.dailyLessonBtn.setAttribute("aria-label", t("startDailyGeneratedAria"));
 }
 
 function formatCount(value) {
   return new Intl.NumberFormat(UI_DATE_LOCALE[state.uiLanguage] || "en-AU").format(value);
+}
+
+function formatProgressPercent(known, total) {
+  if (!total) return "0";
+  return ((known / total) * 100).toFixed(2).replace(/\.?0+$/, "");
+}
+
+function renderKnownCharactersProgress() {
+  const known = savedKnownCharacters().size;
+  const total = databaseTotals().characters;
+  const percent = formatProgressPercent(known, total);
+  const progressText = `${formatCount(known)} / ${formatCount(total)}`;
+  const percentText = `${percent}%`;
+  if (els.knownCharactersProgressValue) {
+    els.knownCharactersProgressValue.textContent = progressText;
+  }
+  if (els.knownCharactersProgressPercent) {
+    els.knownCharactersProgressPercent.textContent = percentText;
+  }
+  if (els.knownCharactersProgressBar) {
+    els.knownCharactersProgressBar.style.width = `${Math.min(Number(percent) || 0, 100)}%`;
+  }
+  if (els.knownCharactersProgressMeter) {
+    els.knownCharactersProgressMeter.setAttribute("aria-label", t("knownCharactersProgressLabel"));
+    els.knownCharactersProgressMeter.setAttribute("aria-valuenow", String(Math.min(Number(percent) || 0, 100)));
+    els.knownCharactersProgressMeter.setAttribute("aria-valuetext", `${progressText}, ${percentText}`);
+  }
+}
+
+function examPercent(score, total) {
+  if (!total) return 0;
+  return Math.round((score / total) * 100);
+}
+
+function latestExamRecord() {
+  const history = Array.isArray(state.examHistory) ? state.examHistory : [];
+  return history.length ? history[history.length - 1] : null;
+}
+
+function formatExamTime(value) {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return "-";
+  return new Intl.DateTimeFormat(UI_DATE_LOCALE[state.uiLanguage] || "en-AU", {
+    month: "short",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    timeZone: "Australia/Melbourne",
+  }).format(date);
+}
+
+function formatExamRecord(record, templateKey = "lastExamSummary") {
+  if (!record) return t("examNoHistory");
+  const score = Number(record.score) || 0;
+  const total = Number(record.total) || 0;
+  return t(templateKey, {
+    score,
+    total,
+    percent: Number(record.percent) || examPercent(score, total),
+    time: formatExamTime(record.takenAt),
+  });
+}
+
+function wrongCharactersCount() {
+  return wrongCharacterRecords().length;
+}
+
+function wrongWordCountLabel(count) {
+  return count === 1 ? t("wrongWordsCountOne") : t("wrongWordsCount", { count });
+}
+
+function wrongMistakeLabel(count) {
+  return count === 1 ? t("wrongWordMistakesOne") : t("wrongWordMistakes", { count });
+}
+
+function wrongCharacterRecords() {
+  const entryByChar = new Map(allEntries().map((entry) => [entry.char, entry]));
+  return Object.entries(state.wrongCharacters || {})
+    .map(([char, raw]) => {
+      const entry = entryByChar.get(char);
+      if (!entry) return null;
+      const count = Math.max(1, Number(raw?.count) || 1);
+      return {
+        char,
+        entry,
+        count,
+        lastWrongAt: typeof raw?.lastWrongAt === "string" ? raw.lastWrongAt : "",
+        lastTestedAt: typeof raw?.lastTestedAt === "string" ? raw.lastTestedAt : "",
+      };
+    })
+    .filter(Boolean)
+    .sort((a, b) => {
+      if (b.count !== a.count) return b.count - a.count;
+      return new Date(b.lastWrongAt).getTime() - new Date(a.lastWrongAt).getTime();
+    });
 }
 
 function renderDatabaseTotals() {
@@ -2018,14 +2840,74 @@ function renderDatabaseTotals() {
   });
 }
 
+function randomBetween(min, max) {
+  return min + Math.random() * (max - min);
+}
+
+function randomItem(items) {
+  return items[Math.floor(Math.random() * items.length)];
+}
+
+function seedHomeAmbientLayer() {
+  if (!els.homeAmbientLayer) return;
+  els.homeAmbientLayer.innerHTML = "";
+  HOME_AMBIENT_GROUPS.forEach((group) => {
+    for (let index = 0; index < group.count; index += 1) {
+      const sprite = document.createElement("span");
+      const glyph = document.createElement("span");
+      const duration = randomBetween(group.duration[0], group.duration[1]);
+      const direction = Math.random() > 0.5 ? "reverse" : "forward";
+      const size = randomBetween(group.size[0], group.size[1]);
+      const driftY = randomBetween(group.drift[0], group.drift[1]);
+      const restX = randomBetween(2, 96);
+      sprite.className = `home-float home-float-${group.kind} home-float-${direction}`;
+      glyph.className = "home-float-glyph";
+      glyph.textContent = randomItem(group.glyphs);
+      sprite.style.setProperty("--top", `${randomBetween(group.top[0], group.top[1]).toFixed(2)}%`);
+      sprite.style.setProperty("--size", `${size.toFixed(2)}cqw`);
+      sprite.style.setProperty("--duration", `${duration.toFixed(2)}s`);
+      sprite.style.setProperty("--delay", `${(-Math.random() * duration).toFixed(2)}s`);
+      sprite.style.setProperty("--opacity", randomBetween(group.opacity[0], group.opacity[1]).toFixed(2));
+      sprite.style.setProperty("--drift-y", `${driftY.toFixed(2)}cqw`);
+      sprite.style.setProperty("--drift-y-end", `${(driftY * -0.45).toFixed(2)}cqw`);
+      sprite.style.setProperty("--rest-x", `${restX.toFixed(2)}cqw`);
+      sprite.style.setProperty("--scale", randomBetween(0.86, 1.18).toFixed(2));
+      sprite.style.setProperty("--tilt-start", `${randomBetween(-12, 12).toFixed(1)}deg`);
+      sprite.style.setProperty("--tilt-mid", `${randomBetween(-18, 18).toFixed(1)}deg`);
+      sprite.style.setProperty("--tilt-end", `${randomBetween(-12, 12).toFixed(1)}deg`);
+      sprite.style.setProperty("--bob-duration", `${randomBetween(2.4, 5.2).toFixed(2)}s`);
+      sprite.style.setProperty("--bob-delay", `${(-Math.random() * 4).toFixed(2)}s`);
+      sprite.append(glyph);
+      els.homeAmbientLayer.append(sprite);
+    }
+  });
+}
+
 function renderCustomSummary() {
   els.customCharacterCount.textContent = customEntries.length
     ? t("customCharacterCount", { count: customEntries.length })
     : t("customCharacterEmpty");
+  if (els.knownCharactersHomeCount) {
+    els.knownCharactersHomeCount.textContent = knownCharactersCountLabel(savedKnownCharacters().size);
+  }
+  if (els.examHomeSummary) {
+    els.examHomeSummary.textContent = latestExamRecord()
+      ? formatExamRecord(latestExamRecord(), "examResultSummary")
+      : t("examHomeReady");
+  }
+  if (els.wrongWordsHomeCount) {
+    els.wrongWordsHomeCount.textContent = wrongWordCountLabel(wrongCharactersCount());
+  }
+  renderKnownCharactersProgress();
   if (els.idiomHomeCount) {
     els.idiomHomeCount.textContent = idiomCountLabel(IDIOMS.length);
   }
   renderDatabaseTotals();
+}
+
+function knownCharactersCountLabel(count) {
+  if (!count) return t("knownCharactersEmpty");
+  return count === 1 ? t("knownCharactersCountOne") : t("knownCharactersCount", { count });
 }
 
 function idiomCountLabel(count) {
@@ -2053,6 +2935,7 @@ function renderHome() {
   renderDailyLesson();
   renderCustomSummary();
   updateActiveUserLabels();
+  seedHomeAmbientLayer();
   setScreen("home");
 }
 
@@ -2152,13 +3035,15 @@ function renderCustomSavedList() {
     return;
   }
 
+  const learnedSet = learnedCharactersForDailyLesson();
   customEntries.forEach((entry, index) => {
     const item = document.createElement("div");
     item.className = "custom-saved-item";
     const char = document.createElement("strong");
     char.textContent = entry.char;
     const text = document.createElement("span");
-    text.textContent = `${entry.pinyin} · ${entry.meaningEn}`;
+    text.className = "character-meta-line";
+    text.append(document.createTextNode(`${entry.pinyin} · ${localizedEntryMeaning(entry)}`), makeLearnedStatusBadge(entry.char, { compact: true, learnedSet }));
     const lesson = document.createElement("em");
     const courseIndex = BASE_ENTRIES.length + index;
     lesson.textContent = t("lessonN", { n: Math.floor(courseIndex / LESSON_SIZE) + 1 });
@@ -2222,6 +3107,7 @@ function renderSearchResults(results) {
     return;
   }
 
+  const learnedSet = learnedCharactersForDailyLesson();
   results.forEach((entry) => {
     const button = document.createElement("button");
     button.type = "button";
@@ -2230,10 +3116,14 @@ function renderSearchResults(results) {
     const char = document.createElement("strong");
     char.textContent = entry.char;
     const text = document.createElement("span");
+    text.className = "character-meta-line";
     const index = entryCourseIndex(entry);
-    text.textContent = `${entry.pinyin || t("pinyinFallback")} · ${index >= 0 ? t("lessonN", { n: Math.floor(index / LESSON_SIZE) + 1 }) : ""}`;
+    text.append(
+      document.createTextNode(`${entry.pinyin || t("pinyinFallback")} · ${index >= 0 ? t("lessonN", { n: Math.floor(index / LESSON_SIZE) + 1 }) : ""}`),
+      makeLearnedStatusBadge(entry.char, { compact: true, learnedSet })
+    );
     const meaning = document.createElement("em");
-    meaning.textContent = entry.meaningEn || "";
+    meaning.textContent = localizedEntryMeaning(entry);
     button.append(char, text, meaning);
     button.addEventListener("click", () => {
       selectedSearchEntry = entry;
@@ -2294,6 +3184,7 @@ function renderSearchDetail(entry) {
   els.searchDetailEmpty.classList.add("hidden");
   els.searchDetailBody.classList.remove("hidden");
   els.searchDetailChar.textContent = entry.char;
+  updateLearnedStatusBadge(els.searchCharStatus, entry.char);
   els.searchDetailPinyin.textContent = entry.pinyin || t("pinyinFallback");
   els.searchDetailMeaningZh.textContent = entry.meaningZh || "";
   els.searchDetailMeaningEn.textContent = entry.meaningEn || "";
@@ -2422,6 +3313,216 @@ function renderIdiomSeries() {
 function openIdiomSeries() {
   renderIdiomSeries();
   requestAnimationFrame(() => els.idiomSearchInput.focus({ preventScroll: true }));
+}
+
+function savedKnownCharacters() {
+  const databaseChars = new Set(allEntries().map((entry) => entry.char));
+  return new Set((Array.isArray(state.knownCharacters) ? state.knownCharacters : []).filter((char) => databaseChars.has(char)));
+}
+
+function orderedKnownCharacters(characters) {
+  const knownSet = characters instanceof Set ? characters : new Set(characters);
+  return allEntries()
+    .filter((entry) => knownSet.has(entry.char))
+    .map((entry) => entry.char);
+}
+
+function knownCharacterBatchEntries() {
+  const entryByChar = new Map(allEntries().map((entry) => [entry.char, entry]));
+  return (Array.isArray(state.knownCharacterBatch) ? state.knownCharacterBatch : [])
+    .map((char) => entryByChar.get(char))
+    .filter(Boolean);
+}
+
+function createKnownCharacterBatch() {
+  const entries = allEntries();
+  return shuffle(entries).slice(0, Math.min(100, entries.length));
+}
+
+function ensureKnownCharacterBatch({ force = false } = {}) {
+  const targetCount = Math.min(100, allEntries().length);
+  let entries = force ? [] : knownCharacterBatchEntries();
+  if (force || entries.length !== targetCount) {
+    entries = createKnownCharacterBatch();
+    state.knownCharacterBatch = entries.map((entry) => entry.char);
+    saveState();
+  }
+  return entries;
+}
+
+function selectedKnownCharactersInBatch() {
+  return [...els.knownCharactersGrid.querySelectorAll("input[type='checkbox']:checked")].map((input) => input.value);
+}
+
+function projectedKnownCharacters() {
+  const nextKnown = savedKnownCharacters();
+  const selected = new Set(selectedKnownCharactersInBatch());
+  const batchChars = new Set(knownCharacterBatchEntries().map((entry) => entry.char));
+  selected.forEach((char) => nextKnown.add(char));
+  batchChars.forEach((char) => {
+    if (!selected.has(char)) nextKnown.delete(char);
+  });
+  return nextKnown;
+}
+
+function setKnownCharactersValidation(message, type = "") {
+  els.knownCharactersValidation.textContent = message;
+  els.knownCharactersValidation.className = "custom-validation";
+  if (type) els.knownCharactersValidation.classList.add(type);
+}
+
+function updateKnownCharactersSummary() {
+  const selected = selectedKnownCharactersInBatch();
+  const total = projectedKnownCharacters().size;
+  els.knownCharactersSummary.textContent = `${selected.length} / ${knownCharacterBatchEntries().length}`;
+  els.knownCharactersBatchMeta.textContent = t("knownCharactersBatch", { count: knownCharacterBatchEntries().length });
+  setKnownCharactersValidation(t("knownCharactersSelected", { selected: selected.length, total }));
+}
+
+function renderKnownCharactersGrid(entries) {
+  els.knownCharactersGrid.innerHTML = "";
+  if (!entries.length) {
+    const empty = document.createElement("p");
+    empty.className = "search-empty";
+    empty.textContent = t("searchNoMatches");
+    els.knownCharactersGrid.append(empty);
+    return;
+  }
+
+  const known = savedKnownCharacters();
+  const learnedSet = learnedCharactersForDailyLesson();
+  entries.forEach((entry) => {
+    const label = document.createElement("label");
+    label.className = "known-character-option";
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.value = entry.char;
+    checkbox.checked = known.has(entry.char);
+    checkbox.addEventListener("change", updateKnownCharactersSummary);
+
+    const mark = document.createElement("span");
+    mark.className = "known-character-check";
+    mark.setAttribute("aria-hidden", "true");
+
+    const char = document.createElement("strong");
+    char.textContent = entry.char;
+
+    const pinyin = document.createElement("span");
+    pinyin.className = "character-meta-line";
+    pinyin.append(document.createTextNode(entry.pinyin || t("pinyinFallback")), makeLearnedStatusBadge(entry.char, { compact: true, learnedSet }));
+
+    const meaning = document.createElement("em");
+    meaning.textContent = localizedEntryMeaning(entry);
+
+    label.append(checkbox, mark, char, pinyin, meaning);
+    els.knownCharactersGrid.append(label);
+  });
+  staggerChildren(els.knownCharactersGrid, ".known-character-option");
+}
+
+function renderKnownCharacters(options = {}) {
+  const entries = ensureKnownCharacterBatch(options);
+  renderKnownCharactersGrid(entries);
+  updateKnownCharactersSummary();
+  setScreen("knownCharacters");
+}
+
+function openKnownCharacters() {
+  renderKnownCharacters();
+}
+
+function showNewKnownCharacterBatch() {
+  renderKnownCharacters({ force: true });
+  setKnownCharactersValidation(t("knownCharactersSelected", { selected: selectedKnownCharactersInBatch().length, total: projectedKnownCharacters().size }));
+  sparkleAt(els.knownCharactersGrid, { count: 10, spread: 120, glyphs: ["字", "会", "✦"] });
+}
+
+function setKnownCharacterChecks(checked) {
+  els.knownCharactersGrid.querySelectorAll("input[type='checkbox']").forEach((input) => {
+    input.checked = checked;
+  });
+  updateKnownCharactersSummary();
+}
+
+function saveKnownCharacters(event) {
+  event.preventDefault();
+  const selected = selectedKnownCharactersInBatch();
+  state.knownCharacters = orderedKnownCharacters(projectedKnownCharacters());
+  state.knownCharactersUpdatedAt = new Date().toISOString();
+  saveState({
+    eventType: "known_characters_saved",
+    payload: {
+      selectedInBatch: selected.length,
+      knownTotal: state.knownCharacters.length,
+    },
+  });
+  renderCustomSummary();
+  renderKnownCharactersGrid(knownCharacterBatchEntries());
+  updateKnownCharactersSummary();
+  const message = t("knownCharactersSavedToast", { selected: selected.length, total: state.knownCharacters.length });
+  setKnownCharactersValidation(message, "success");
+  showToast(message);
+  sparkleAt(els.knownCharactersSummary, { count: 10, spread: 88, glyphs: ["会", "字", "★"] });
+}
+
+function renderWrongWords() {
+  const records = wrongCharacterRecords();
+  if (els.wrongWordsCount) {
+    els.wrongWordsCount.textContent = wrongWordCountLabel(records.length);
+  }
+  if (els.lastExamSummary) {
+    els.lastExamSummary.textContent = formatExamRecord(latestExamRecord());
+  }
+  if (!els.wrongWordsList) return;
+  els.wrongWordsList.innerHTML = "";
+
+  if (!records.length) {
+    const empty = document.createElement("p");
+    empty.className = "search-empty";
+    empty.textContent = t("wrongWordsEmpty");
+    els.wrongWordsList.append(empty);
+    setScreen("wrongWords");
+    return;
+  }
+
+  const learnedSet = learnedCharactersForDailyLesson();
+  records.forEach(({ entry, count, lastWrongAt }) => {
+    const card = document.createElement("article");
+    card.className = "wrong-word-item";
+
+    const char = document.createElement("strong");
+    char.textContent = entry.char;
+
+    const body = document.createElement("div");
+    body.className = "wrong-word-body";
+
+    const title = document.createElement("span");
+    title.className = "character-meta-line";
+    title.append(document.createTextNode(entry.pinyin || t("pinyinFallback")), makeLearnedStatusBadge(entry.char, { compact: true, learnedSet }));
+
+    const meaning = document.createElement("em");
+    meaning.textContent = localizedEntryMeaning(entry);
+
+    body.append(title, meaning);
+
+    const meta = document.createElement("div");
+    meta.className = "wrong-word-meta";
+    const mistakes = document.createElement("b");
+    mistakes.textContent = wrongMistakeLabel(count);
+    const time = document.createElement("small");
+    time.textContent = formatExamTime(lastWrongAt);
+    meta.append(mistakes, time);
+
+    card.append(char, body, meta);
+    els.wrongWordsList.append(card);
+  });
+  staggerChildren(els.wrongWordsList, ".wrong-word-item");
+  setScreen("wrongWords");
+}
+
+function openWrongWords() {
+  renderWrongWords();
 }
 
 function saveCustomCharacter(event) {
@@ -2569,18 +3670,317 @@ function renderRoleplayPractice() {
   setScreen("roleplay");
 }
 
+function countChineseCharacters(value) {
+  return [...String(value || "")].filter(isSingleChineseCharacter).length;
+}
+
+function truncateAiTeacherText(value) {
+  let count = 0;
+  const output = [];
+  for (const char of cleanMultiline(value)) {
+    if (isSingleChineseCharacter(char)) {
+      if (count >= AI_TEACHER_STORY_MAX_CHINESE_CHARS) break;
+      count += 1;
+    }
+    output.push(char);
+  }
+  return output.join("").trim();
+}
+
+function normalizeAiTeacherCharacters(value) {
+  if (!Array.isArray(value)) return [];
+  const seen = new Set();
+  return value
+    .map((item) => ({
+      char: cleanText(item?.char).slice(0, 1),
+      pinyin: cleanText(item?.pinyin, 32),
+    }))
+    .filter((item) => {
+      if (!isSingleChineseCharacter(item.char) || !item.pinyin || seen.has(item.char)) return false;
+      seen.add(item.char);
+      return true;
+    })
+    .slice(0, AI_TEACHER_STORY_MAX_CHINESE_CHARS);
+}
+
+function normalizeAiTeacherVocabulary(value) {
+  if (!Array.isArray(value)) return [];
+  const seen = new Set();
+  return value
+    .map((item) => ({
+      word: cleanText(item?.word, 12),
+      pinyin: cleanText(item?.pinyin, 80),
+      meaningZh: cleanText(item?.meaningZh, 80),
+      meaningEn: cleanText(item?.meaningEn, 100),
+    }))
+    .filter((item) => {
+      if (!item.word || seen.has(item.word) || !uniqueCharactersFromText(item.word).length) return false;
+      seen.add(item.word);
+      return true;
+    })
+    .slice(0, 5);
+}
+
+function normalizeAiTeacherStory(raw) {
+  if (!raw || typeof raw !== "object") return null;
+  const text = truncateAiTeacherText(raw.text);
+  if (!text) return null;
+  return {
+    title: cleanText(raw.title, 24) || t("aiTeacherTitle"),
+    text,
+    characters: normalizeAiTeacherCharacters(raw.characters),
+    newVocabulary: normalizeAiTeacherVocabulary(raw.newVocabulary),
+    usedKnownCharacters: cleanStringArray(raw.usedKnownCharacters, 100).filter(isSingleChineseCharacter),
+    model: cleanText(raw.model, 40),
+    generatedAt: cleanText(raw.generatedAt, 40),
+    chineseCharacterCount: countChineseCharacters(text),
+  };
+}
+
+function cleanStringArray(value, maxItems = 100, maxLength = 24) {
+  if (!Array.isArray(value)) return [];
+  const seen = new Set();
+  return value
+    .map((item) => cleanText(item, maxLength))
+    .filter((item) => {
+      if (!item || seen.has(item)) return false;
+      seen.add(item);
+      return true;
+    })
+    .slice(0, maxItems);
+}
+
+function aiTeacherKnownCountLabel(count) {
+  return count === 1 ? t("aiTeacherKnownSummaryOne") : t("aiTeacherKnownSummary", { count });
+}
+
+function entryPinyinForChar(char) {
+  return allEntries().find((entry) => entry.char === char)?.pinyin || "";
+}
+
+function aiTeacherCharacterPinyinMap(story) {
+  const map = new Map();
+  story?.characters?.forEach((item) => {
+    if (item.char && item.pinyin) map.set(item.char, item.pinyin);
+  });
+  uniqueCharactersFromText(story?.text || "").forEach((char) => {
+    if (!map.has(char)) map.set(char, entryPinyinForChar(char) || t("pinyinFallback"));
+  });
+  return map;
+}
+
+function knownWordsForAiTeacher(knownSet) {
+  const words = [];
+  const seen = new Set();
+  allEntries().forEach((entry) => {
+    if (!knownSet.has(entry.char)) return;
+    (entry.words || []).forEach((word) => {
+      const text = cleanText(word?.word, 12);
+      if (!text || seen.has(text)) return;
+      seen.add(text);
+      words.push({
+        word: text,
+        meaningEn: cleanText(word?.meaningEn, 100),
+      });
+    });
+  });
+  return words.slice(0, 120);
+}
+
+function aiTeacherRequestPayload() {
+  const knownSet = learnedCharactersForDailyLesson();
+  return {
+    knownCharacters: [...knownSet].filter(isSingleChineseCharacter).slice(0, 500),
+    knownWords: knownWordsForAiTeacher(knownSet),
+    recentCharacters: generatedDailyLessonEntries().map((entry) => entry.char).filter(isSingleChineseCharacter),
+    interests: activeUser?.childInterests || "",
+    age: activeUser?.childAge || "",
+  };
+}
+
+function setAiTeacherStatus(message, type = "") {
+  if (!els.aiTeacherStatus) return;
+  els.aiTeacherStatus.textContent = message;
+  els.aiTeacherStatus.className = "custom-validation";
+  if (type) els.aiTeacherStatus.classList.add(type);
+}
+
+function setAiTeacherBusy(busy) {
+  aiTeacherBusy = busy;
+  if (els.aiTeacherGenerateBtn) {
+    els.aiTeacherGenerateBtn.disabled = busy;
+    els.aiTeacherGenerateBtn.textContent = busy ? t("aiTeacherGenerating") : t("aiTeacherGenerate");
+  }
+  if (els.aiTeacherReadBtn) els.aiTeacherReadBtn.disabled = busy || !state.aiTeacherStory?.text;
+  if (els.aiTeacherReadArea) els.aiTeacherReadArea.classList.toggle("is-loading", busy);
+}
+
+function renderAiTeacherArticle(story) {
+  const hasStory = Boolean(story?.text);
+  if (els.aiTeacherArticleTitle) {
+    els.aiTeacherArticleTitle.textContent = hasStory ? story.title : t("aiTeacherEmptyTitle");
+  }
+  if (els.aiTeacherArticleMeta) {
+    els.aiTeacherArticleMeta.textContent = hasStory
+      ? t("aiTeacherCharCount", { count: story.chineseCharacterCount || countChineseCharacters(story.text) })
+      : t("aiTeacherEmptyMeta");
+  }
+  if (!els.aiTeacherArticleText) return;
+  els.aiTeacherArticleText.innerHTML = "";
+  if (!hasStory) {
+    const empty = document.createElement("p");
+    empty.className = "search-empty";
+    empty.textContent = t("aiTeacherEmptyText");
+    els.aiTeacherArticleText.append(empty);
+    return;
+  }
+
+  const pinyinMap = aiTeacherCharacterPinyinMap(story);
+  [...story.text].forEach((char) => {
+    if (!isSingleChineseCharacter(char)) {
+      const punctuation = document.createElement("span");
+      punctuation.className = "ai-reader-punctuation";
+      punctuation.textContent = char;
+      els.aiTeacherArticleText.append(punctuation);
+      return;
+    }
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "ai-reader-character";
+    button.setAttribute("aria-label", t("playLabel", { label: char }));
+    const pinyin = document.createElement("span");
+    pinyin.className = "ai-reader-pinyin";
+    pinyin.textContent = pinyinMap.get(char) || t("pinyinFallback");
+    const hanzi = document.createElement("strong");
+    hanzi.textContent = char;
+    button.append(pinyin, hanzi);
+    button.addEventListener("click", (event) => {
+      event.stopPropagation();
+      speakText(char, t("playingLabel", { label: char }), { button, mode: "character" });
+    });
+    els.aiTeacherArticleText.append(button);
+  });
+}
+
+function renderAiTeacherVocabulary(story) {
+  if (!els.aiTeacherNewWordsList) return;
+  els.aiTeacherNewWordsList.innerHTML = "";
+  const words = story?.newVocabulary || [];
+  if (!words.length) {
+    const empty = document.createElement("p");
+    empty.className = "search-empty";
+    empty.textContent = t("aiTeacherNoNewWords");
+    els.aiTeacherNewWordsList.append(empty);
+    return;
+  }
+  words.forEach((word) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "dialogue-word-card ai-teacher-word-card";
+    button.setAttribute("aria-label", t("playLabel", { label: word.word }));
+
+    const zh = document.createElement("strong");
+    zh.textContent = word.word;
+    const pinyin = document.createElement("span");
+    pinyin.className = "pinyin-line";
+    pinyin.textContent = word.pinyin || t("pinyinFallback");
+    const meaning = document.createElement("span");
+    meaning.className = "practice-english";
+    meaning.textContent = state.uiLanguage === "zh" ? word.meaningZh || word.meaningEn : word.meaningEn || word.meaningZh;
+    const icon = document.createElement("span");
+    icon.className = "word-audio-icon";
+    icon.setAttribute("aria-hidden", "true");
+    icon.append(makeSpeakerIcon("speaker-icon-small"));
+
+    button.append(zh, pinyin, meaning, icon);
+    button.addEventListener("click", () => speakText(word.word, t("playingLabel", { label: word.word }), { button, mode: "word" }));
+    els.aiTeacherNewWordsList.append(button);
+  });
+  staggerChildren(els.aiTeacherNewWordsList, ".ai-teacher-word-card");
+}
+
+function renderAiTeacher() {
+  const knownCount = learnedCharactersForDailyLesson().size;
+  if (els.aiTeacherKnownCount) els.aiTeacherKnownCount.textContent = aiTeacherKnownCountLabel(knownCount);
+  if (els.aiTeacherUsedKnownCount) {
+    const usedCount = state.aiTeacherStory?.usedKnownCharacters?.length || 0;
+    els.aiTeacherUsedKnownCount.textContent = usedCount ? t("aiTeacherUsedKnownSummary", { count: usedCount }) : "";
+  }
+  renderAiTeacherArticle(state.aiTeacherStory);
+  renderAiTeacherVocabulary(state.aiTeacherStory);
+  setAiTeacherBusy(aiTeacherBusy);
+  setScreen("aiTeacher");
+}
+
+function openAiTeacher() {
+  renderAiTeacher();
+  const knownCount = learnedCharactersForDailyLesson().size;
+  setAiTeacherStatus(knownCount ? "" : t("aiTeacherNeedsKnown"), knownCount ? "" : "needs-review");
+  requestAnimationFrame(() => replayClass(els.aiTeacherReadArea, "screen-enter"));
+}
+
+async function generateAiTeacherArticle() {
+  if (aiTeacherBusy) return;
+  setAiTeacherBusy(true);
+  setAiTeacherStatus(t("aiTeacherGenerating"));
+  try {
+    const payload = await apiRequest("/api/ai-teacher/story", {
+      method: "POST",
+      body: aiTeacherRequestPayload(),
+    });
+    const story = normalizeAiTeacherStory(payload.story);
+    if (!story) throw new Error(t("aiTeacherGenerateFailed"));
+    state.aiTeacherStory = story;
+    saveState({
+      eventType: "ai_teacher_story_saved",
+      payload: {
+        chineseCharacterCount: story.chineseCharacterCount,
+        newVocabularyCount: story.newVocabulary.length,
+      },
+    });
+    renderAiTeacher();
+    setAiTeacherStatus(t("aiTeacherReady"), "success");
+    showToast(t("aiTeacherReady"));
+    sparkleAt(els.aiTeacherReadArea, { count: 12, spread: 140, glyphs: ["师", "读", "字"] });
+  } catch (error) {
+    const message = error.message || t("aiTeacherGenerateFailed");
+    setAiTeacherStatus(message, "needs-review");
+    showToast(message);
+  } finally {
+    setAiTeacherBusy(false);
+  }
+}
+
+function readAiTeacherArticle(triggerButton = els.aiTeacherReadBtn) {
+  const story = state.aiTeacherStory;
+  if (!story?.text) return;
+  const played = speakText(story.text, t("playingLabel", { label: story.title || t("aiTeacherTitle") }), {
+    button: triggerButton,
+    mode: "sentence",
+  });
+  if (played) sparkleAt(triggerButton || els.aiTeacherReadArea, { count: 8, spread: 86, glyphs: ["声", "读", "✦"] });
+}
+
+function handleAiTeacherReadAreaKeydown(event) {
+  if (event.key !== "Enter" && event.key !== " ") return;
+  event.preventDefault();
+  readAiTeacherArticle(els.aiTeacherReadArea);
+}
+
 function renderLesson() {
   const entries = lessonEntries();
   const entry = currentEntry();
   const isLast = state.charIndex === entries.length - 1;
 
-  els.lessonTitle.textContent = t("lessonN", { n: state.lessonIndex + 1 });
+  els.lessonTitle.textContent = activeLesson?.kind === "daily" ? t("dailyPersonalLesson") : t("lessonN", { n: state.lessonIndex + 1 });
   els.lessonProgress.textContent = `${state.charIndex + 1} / ${entries.length}`;
   els.bigChar.textContent = entry.char;
+  updateLearnedStatusBadge(els.lessonCharStatus, entry.char);
   els.pinyin.textContent = entry.pinyin || t("pinyinFallback");
-  els.meaning.textContent = entry.meaningEn;
+  els.meaning.textContent = localizedEntryMeaning(entry);
   els.meaningZh.textContent = entry.meaningZh;
   els.meaningEn.textContent = entry.meaningEn;
+  els.meaningSpeakBtn.disabled = !cleanMultiline(entry.meaningZh);
   els.radicalValue.textContent = entry.radical || "—";
   els.strokeValue.textContent = entry.strokes || "—";
   els.structureValue.textContent = entry.structure || "—";
@@ -2589,6 +3989,7 @@ function renderLesson() {
   els.continueBtn.textContent = isLast ? t("startTest") : t("next");
 
   renderFontEvolution(els.fontEvolutionList, entry);
+  renderEvolutionVideo(entry);
   renderWords(entry);
   renderZdicPanel(els.lessonZdicPanel, entry);
   renderWriter(entry);
@@ -2656,6 +4057,55 @@ function renderFontEvolution(container, entry) {
     container.append(tile);
   });
   staggerChildren(container, ".font-evolution-item");
+}
+
+function evolutionVideoUrl(entry) {
+  const configuredUrl = cleanText(
+    entry?.fontEvolutionVideoUrl ||
+      entry?.evolutionVideoUrl ||
+      entry?.evolutionVideo ||
+      entry?.videoUrl ||
+      entry?.media?.fontEvolutionVideoUrl
+  );
+  if (configuredUrl) return configuredUrl;
+
+  const char = cleanText(entry?.char);
+  return char ? `${EVOLUTION_VIDEO_DIR}/${encodeURIComponent(char)}.mp4` : "";
+}
+
+function renderEvolutionVideo(entry) {
+  if (!els.evolutionVideoSection || !els.evolutionVideo) return;
+
+  const requestId = ++evolutionVideoRequestId;
+  const video = els.evolutionVideo;
+  const section = els.evolutionVideoSection;
+  const url = evolutionVideoUrl(entry);
+
+  section.classList.add("hidden");
+  video.pause();
+  video.onloadedmetadata = null;
+  video.oncanplay = null;
+  video.onerror = null;
+  video.removeAttribute("src");
+  video.load();
+
+  if (!url) return;
+
+  const showVideo = () => {
+    if (requestId !== evolutionVideoRequestId) return;
+    section.classList.remove("hidden");
+  };
+  const hideVideo = () => {
+    if (requestId !== evolutionVideoRequestId) return;
+    section.classList.add("hidden");
+    video.pause();
+  };
+
+  video.onloadedmetadata = showVideo;
+  video.oncanplay = showVideo;
+  video.onerror = hideVideo;
+  video.src = url;
+  video.load();
 }
 
 function appendZdicText(container, text, className = "zdic-text") {
@@ -3301,6 +4751,7 @@ function endCameraPointerStroke(event) {
 
 function startLessonByIndex(lessonIndex) {
   stopCameraWriting({ quiet: true });
+  activeLesson = null;
   state.lessonIndex = clamp(Number(lessonIndex), 0, lessonCount() - 1);
   state.charIndex = 0;
   quiz = null;
@@ -3318,8 +4769,23 @@ function startLesson() {
 
 function startDailyLesson() {
   const daily = dailyLessonInfo();
-  startLessonByIndex(daily.index);
-  showToast(t("dailyToast", { n: daily.index + 1 }));
+  stopCameraWriting({ quiet: true });
+  activeLesson = {
+    kind: "daily",
+    dateKey: daily.dateKey,
+    key: daily.key,
+    entries: daily.entries,
+  };
+  state.lessonIndex = clamp(Number(daily.index), 0, lessonCount() - 1);
+  state.charIndex = 0;
+  quiz = null;
+  lastResult = null;
+  if (els.lessonSelect) els.lessonSelect.value = String(state.lessonIndex);
+  saveState();
+  setScreen("lesson");
+  renderLesson();
+  sparkleAt(els.bigChar, { count: 8, spread: 90, glyphs: ["中", "文", "✦"] });
+  showToast(t("dailyGeneratedToast"));
 }
 
 function openDialoguePractice() {
@@ -3790,6 +5256,16 @@ function speakCurrent() {
   if (played) sparkleAt(els.speakBtn, { count: 6, spread: 70, glyphs: ["声", "♪", "✦"] });
 }
 
+function speakCurrentMeaning() {
+  const entry = currentEntry();
+  const text = cleanMultiline(entry.meaningZh);
+  const played = speakText(text, t("playingMeaning", { char: entry.char }), {
+    button: els.meaningSpeakBtn,
+    mode: "sentence",
+  });
+  if (played) sparkleAt(els.meaningSpeakBtn, { count: 6, spread: 64, glyphs: ["意", "声", "✦"] });
+}
+
 function animateCurrent() {
   if (!writer) return;
   writer.cancelQuiz();
@@ -3825,6 +5301,7 @@ function traceCurrent() {
 
 function makeQuestion(entry, type) {
   const entries = allEntries();
+  const entryMeaning = localizedEntryMeaning(entry);
   if (type === "pinyin") {
     return {
       type,
@@ -3840,10 +5317,22 @@ function makeQuestion(entry, type) {
     return {
       type,
       entry,
-      prompt: t("pickCharacter", { meaning: entry.meaningEn }),
+      prompt: t("pickCharacter", { meaning: entryMeaning }),
       display: entry.pinyin,
       answer: entry.char,
       options: makeOptions(entry.char, entries.map((item) => item.char)),
+    };
+  }
+
+  if (type === "strokes") {
+    const answer = String(entry.strokes);
+    return {
+      type,
+      entry,
+      prompt: t("howManyStrokes", { char: entry.char }),
+      display: entry.char,
+      answer,
+      options: makeOptions(answer, entries.map((item) => (Number(item.strokes) > 0 ? String(item.strokes) : ""))),
     };
   }
 
@@ -3852,14 +5341,58 @@ function makeQuestion(entry, type) {
     entry,
     prompt: t("whatMeaning", { char: entry.char }),
     display: entry.char,
-    answer: entry.meaningEn,
-    options: makeOptions(entry.meaningEn, entries.map((item) => item.meaningEn)),
+    answer: entryMeaning,
+    options: makeOptions(entryMeaning, entries.map(localizedEntryMeaning)),
   };
 }
 
 function makeOptions(answer, pool) {
   const distractors = shuffle([...new Set(pool.filter((item) => item && item !== answer))]).slice(0, 3);
   return shuffle([answer, ...distractors]);
+}
+
+function questionTypesForEntry(entry, types = ["pinyin", "meaning", "character"]) {
+  return types.filter((type) => {
+    if (type === "pinyin") return Boolean(entry.pinyin);
+    if (type === "meaning" || type === "character") return Boolean(entry.meaningEn || entry.meaningZh);
+    if (type === "strokes") return Number(entry.strokes) > 0;
+    return false;
+  });
+}
+
+function examQuestionType(entry, index) {
+  const validTypes = questionTypesForEntry(entry, EXAM_TYPES);
+  for (let offset = 0; offset < EXAM_TYPES.length; offset += 1) {
+    const type = EXAM_TYPES[(index + offset) % EXAM_TYPES.length];
+    if (validTypes.includes(type)) return type;
+  }
+  return validTypes[0] || "pinyin";
+}
+
+function examCandidateEntries() {
+  const known = savedKnownCharacters();
+  return allEntries().filter((entry) => known.has(entry.char) && questionTypesForEntry(entry, EXAM_TYPES).length);
+}
+
+function examEntryWeight(entry) {
+  const wrongCount = Number(state.wrongCharacters?.[entry.char]?.count) || 0;
+  return 1 + Math.min(wrongCount * 3, 18);
+}
+
+function pickWeightedExamEntries(candidates, limit = EXAM_SIZE) {
+  const remaining = [...candidates];
+  const picked = [];
+  while (remaining.length && picked.length < limit) {
+    const totalWeight = remaining.reduce((total, entry) => total + examEntryWeight(entry), 0);
+    let cursor = Math.random() * totalWeight;
+    const selectedIndex = remaining.findIndex((entry) => {
+      cursor -= examEntryWeight(entry);
+      return cursor <= 0;
+    });
+    const index = selectedIndex >= 0 ? selectedIndex : remaining.length - 1;
+    picked.push(remaining.splice(index, 1)[0]);
+  }
+  return picked;
 }
 
 function passThreshold(total) {
@@ -3871,13 +5404,42 @@ function startQuiz() {
   const types = ["meaning", "pinyin", "character", "meaning", "pinyin"];
   const entries = lessonEntries();
   quiz = {
+    mode: "lesson",
     questions: entries.map((entry, index) => makeQuestion(entry, types[index % types.length])),
     index: 0,
     correct: 0,
     answered: false,
+    wrongAnswers: [],
   };
   setScreen("test");
   renderQuiz();
+}
+
+function startExam() {
+  stopCameraWriting({ quiet: true });
+  const candidates = examCandidateEntries();
+  if (!candidates.length) {
+    showToast(t("examNeedsKnown"));
+    renderKnownCharacters();
+    return;
+  }
+
+  const entries = pickWeightedExamEntries(candidates);
+  activeLesson = null;
+  lastResult = null;
+  quiz = {
+    mode: "exam",
+    questions: entries.map((entry, index) => makeQuestion(entry, examQuestionType(entry, index))),
+    index: 0,
+    correct: 0,
+    answered: false,
+    wrongAnswers: [],
+  };
+  setScreen("test");
+  renderQuiz();
+  if (entries.length < EXAM_SIZE) {
+    showToast(t("examNotEnoughKnown", { count: entries.length }));
+  }
 }
 
 function renderQuiz() {
@@ -3921,6 +5483,14 @@ function answerQuestion(button, option) {
   const correct = option === question.answer;
   quiz.answered = true;
   if (correct) quiz.correct += 1;
+  if (!correct) {
+    quiz.wrongAnswers.push({
+      char: question.entry.char,
+      type: question.type,
+      answer: question.answer,
+      selected: option,
+    });
+  }
 
   [...els.quizBody.querySelectorAll(".answer-option")].forEach((item) => {
     item.disabled = true;
@@ -3954,11 +5524,74 @@ function nextQuestion() {
   renderQuiz();
 }
 
+function finishExam() {
+  const takenAt = new Date().toISOString();
+  const score = quiz.correct;
+  const total = quiz.questions.length;
+  const percent = examPercent(score, total);
+  const wrongChars = [...new Set(quiz.wrongAnswers.map((answer) => answer.char))];
+  const testedChars = [...new Set(quiz.questions.map((question) => question.entry.char))];
+  const wrongCharacters = { ...(state.wrongCharacters || {}) };
+
+  testedChars.forEach((char) => {
+    if (wrongCharacters[char]) {
+      wrongCharacters[char] = {
+        ...wrongCharacters[char],
+        count: Math.max(1, Number(wrongCharacters[char].count) || 1),
+        lastWrongAt: wrongCharacters[char].lastWrongAt || "",
+        lastTestedAt: takenAt,
+      };
+    }
+  });
+  wrongChars.forEach((char) => {
+    const current = wrongCharacters[char] || {};
+    wrongCharacters[char] = {
+      count: Math.max(0, Number(current.count) || 0) + 1,
+      lastWrongAt: takenAt,
+      lastTestedAt: takenAt,
+    };
+  });
+
+  state.wrongCharacters = wrongCharacters;
+  state.examHistory = [
+    ...(Array.isArray(state.examHistory) ? state.examHistory : []),
+    { takenAt, score, total, percent, wrongChars },
+  ].slice(-50);
+
+  lastResult = {
+    mode: "exam",
+    score,
+    total,
+    percent,
+    wrongChars,
+    takenAt,
+  };
+  quiz = null;
+  saveState({
+    eventType: "exam_result",
+    payload: {
+      score,
+      total,
+      percent,
+      wrongCount: wrongChars.length,
+      takenAt,
+    },
+  });
+  renderCustomSummary();
+  renderResult();
+}
+
 function finishQuiz() {
+  if (quiz?.mode === "exam") {
+    finishExam();
+    return;
+  }
+
   const needed = passThreshold(quiz.questions.length);
   const passed = quiz.correct >= needed;
   const key = lessonKey();
   const today = melbourneDateKey();
+  const lessonLabel = activeLesson?.kind === "daily" ? t("dailyPersonalLesson") : state.lessonIndex + 1;
   const firstPass = passed && !state.completedLessons.includes(key);
   const todaySticker = state.stickers.some((sticker) => sticker.date === today);
   const xpGain = quiz.correct * 10 + (passed ? 25 : 5) + (firstPass ? 20 : 0);
@@ -3968,11 +5601,16 @@ function finishQuiz() {
   if (passed && !state.completedLessons.includes(key)) {
     state.completedLessons.push(key);
   }
+  if (passed) {
+    const learned = new Set(Array.isArray(state.learnedCharacters) ? state.learnedCharacters : []);
+    lessonEntries().forEach((entry) => learned.add(entry.char));
+    state.learnedCharacters = orderedKnownCharacters(learned);
+  }
   if (passed && !todaySticker) {
     state.stickers.push({
       date: today,
       icon: STICKERS[state.stickers.length % STICKERS.length],
-      lesson: state.lessonIndex + 1,
+      lesson: lessonLabel,
     });
   }
 
@@ -3984,7 +5622,17 @@ function finishQuiz() {
     stickerEarned: passed && !todaySticker,
   };
   quiz = null;
-  saveState();
+  saveState({
+    eventType: "lesson_result",
+    payload: {
+      lesson: lessonLabel,
+      score: lastResult.score,
+      total: lastResult.total,
+      passed,
+      xpGain,
+      stickerEarned: lastResult.stickerEarned,
+    },
+  });
   renderResult();
 }
 
@@ -4011,12 +5659,37 @@ function renderStickers() {
 
 function renderResult({ quiet = false } = {}) {
   const result = lastResult || { score: 0, total: 5, passed: false, xpGain: 0, stickerEarned: false };
+  if (result.mode === "exam") {
+    els.resultTitle.textContent = t("examComplete");
+    els.resultScore.textContent = `${result.score} / ${result.total}`;
+    els.resultMessage.textContent = t("examResultSummary", {
+      score: result.score,
+      total: result.total,
+      percent: result.percent,
+      time: formatExamTime(result.takenAt),
+    });
+    els.retryBtn.textContent = t("startExam");
+    els.nextLessonBtn.classList.add("hidden");
+    renderStickers();
+    setScreen("result");
+    if (!quiet) {
+      showToast(t("resultSaved"));
+      replayClass(els.resultView, "is-celebrating");
+      window.setTimeout(() => {
+        sparkleAt(els.resultScore, { count: 18, spread: 170, glyphs: ["考", "分", "★", "好"] });
+      }, 180);
+    }
+    return;
+  }
+
   els.resultTitle.textContent = result.passed ? t("lessonComplete") : t("keepPractising");
   els.resultScore.textContent = `${result.score} / ${result.total}`;
   els.resultMessage.textContent = result.passed
     ? t(result.stickerEarned ? "resultEarnedSticker" : "resultEarned", { xp: result.xpGain })
     : t("resultPractice", { needed: passThreshold(result.total), total: result.total });
-  els.nextLessonBtn.disabled = state.lessonIndex >= lessonCount() - 1;
+  els.retryBtn.textContent = t("tryTestAgain");
+  els.nextLessonBtn.classList.remove("hidden");
+  els.nextLessonBtn.disabled = activeLesson?.kind === "daily" || state.lessonIndex >= lessonCount() - 1;
   renderStickers();
   setScreen("result");
   if (!quiet) {
@@ -4029,6 +5702,14 @@ function renderResult({ quiet = false } = {}) {
       }, 180);
     }
   }
+}
+
+function retryCurrentResult() {
+  if (lastResult?.mode === "exam") {
+    startExam();
+    return;
+  }
+  startQuiz();
 }
 
 function goNextLesson() {
@@ -4069,7 +5750,13 @@ function handleHomeHotspotPress(event) {
 }
 
 function bindEvents() {
-  els.loginUserList.addEventListener("click", handleLoginUserClick);
+  els.loginForm?.addEventListener("submit", submitLogin);
+  els.openRegisterBtn?.addEventListener("click", showRegisterForm);
+  els.cancelRegisterBtn?.addEventListener("click", () => hideRegisterForm({ reset: true }));
+  els.registerForm?.addEventListener("submit", submitRegister);
+  els.guestLoginBtn?.addEventListener("click", loginAsGuest);
+  els.logoutBtn?.addEventListener("click", logoutCurrentUser);
+  els.homeLogoutBtn?.addEventListener("click", logoutCurrentUser);
   els.profileEditForm?.addEventListener("submit", saveProfileEdit);
   els.profileEditForm?.addEventListener("click", (event) => {
     const source = event.target instanceof Element ? event.target : null;
@@ -4095,7 +5782,7 @@ function bindEvents() {
     sparkleAt(els.startLessonBtn, { count: 5, spread: 58, glyphs: ["课", "✦", "学"] });
   });
   els.uiLanguageSelect.addEventListener("change", changeUiLanguage);
-  els.uiSkinSelect.addEventListener("change", changeUiSkin);
+  els.uiSkinSelect?.addEventListener("change", changeUiSkin);
   els.lessonPickerBtn.addEventListener("click", openLessonPicker);
   els.customCharacterBtn.addEventListener("click", openCustomCharacter);
   els.customCharacterForm.addEventListener("submit", saveCustomCharacter);
@@ -4107,9 +5794,22 @@ function bindEvents() {
   els.searchOpenLessonBtn.addEventListener("click", openSelectedSearchEntryInLesson);
   els.idiomModeBtn.addEventListener("click", openIdiomSeries);
   els.idiomSearchInput.addEventListener("input", renderIdiomSeries);
+  els.knownCharactersBtn.addEventListener("click", openKnownCharacters);
+  els.examModeBtn.addEventListener("click", startExam);
+  els.wrongWordsBtn.addEventListener("click", openWrongWords);
+  els.startExamFromWrongWordsBtn.addEventListener("click", startExam);
+  els.knownCharactersForm.addEventListener("submit", saveKnownCharacters);
+  els.knownCharactersNewBatchBtn.addEventListener("click", showNewKnownCharacterBatch);
+  els.knownCharactersSelectAllBtn.addEventListener("click", () => setKnownCharacterChecks(true));
+  els.knownCharactersClearBtn.addEventListener("click", () => setKnownCharacterChecks(false));
   els.startLessonBtn.addEventListener("click", startLesson);
   els.dailyLessonBtn.addEventListener("click", startDailyLesson);
   els.dailyLessonCtaBtn?.addEventListener("click", startDailyLesson);
+  els.aiTeacherBtn.addEventListener("click", openAiTeacher);
+  els.aiTeacherGenerateBtn.addEventListener("click", generateAiTeacherArticle);
+  els.aiTeacherReadBtn.addEventListener("click", () => readAiTeacherArticle(els.aiTeacherReadBtn));
+  els.aiTeacherReadArea.addEventListener("click", () => readAiTeacherArticle(els.aiTeacherReadArea));
+  els.aiTeacherReadArea.addEventListener("keydown", handleAiTeacherReadAreaKeydown);
   els.dialogueModeBtn.addEventListener("click", openDialoguePractice);
   els.roleplayModeBtn.addEventListener("click", openRoleplayPractice);
   els.dialogueTopicSelect.addEventListener("change", changeDialogueCategory);
@@ -4123,6 +5823,7 @@ function bindEvents() {
   els.prevCharBtn.addEventListener("click", () => moveChar(-1));
   els.nextCharBtn.addEventListener("click", () => moveChar(1));
   els.speakBtn.addEventListener("click", speakCurrent);
+  els.meaningSpeakBtn.addEventListener("click", speakCurrentMeaning);
   els.animateBtn.addEventListener("click", animateCurrent);
   els.traceBtn.addEventListener("click", traceCurrent);
   els.cameraWriteBtn.addEventListener("click", startCameraWriting);
@@ -4135,7 +5836,7 @@ function bindEvents() {
   els.cameraCanvas.addEventListener("pointerleave", endCameraPointerStroke);
   els.continueBtn.addEventListener("click", continueLesson);
   els.nextQuestionBtn.addEventListener("click", nextQuestion);
-  els.retryBtn.addEventListener("click", startQuiz);
+  els.retryBtn.addEventListener("click", retryCurrentResult);
   els.nextLessonBtn.addEventListener("click", goNextLesson);
   document.addEventListener("pointerdown", (event) => {
     const source = event.target instanceof Element ? event.target : null;
@@ -4145,14 +5846,19 @@ function bindEvents() {
   document.addEventListener("click", (event) => {
     const source = event.target instanceof Element ? event.target : null;
     const target = source?.closest(
-      ".function-action, .audio-button, .dialogue-word-card, .search-result-card, .small-button, .speak-button, .login-user-card"
+      ".function-action, .audio-button, .dialogue-word-card, .ai-reader-character, .search-result-card, .known-character-option, .small-button, .speak-button, .login-user-card"
     );
     if (!target || target.disabled) return;
     sparkleAt(target, { count: 3, spread: 46, glyphs: ["✦", "星"] });
   });
 }
 
-bindEvents();
-prepareSpeechVoices();
-applyStaticText();
-renderLogin();
+async function initializeApp() {
+  bindEvents();
+  prepareSpeechVoices();
+  applyStaticText();
+  const restored = await restoreSession();
+  if (!restored) renderLogin();
+}
+
+initializeApp();

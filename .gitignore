@@ -1,0 +1,6 @@
+data/user-data.sqlite
+data/user-data.sqlite-*
+__pycache__/
+.env
+.env.local
+.DS_Store

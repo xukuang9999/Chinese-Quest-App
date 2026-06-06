@@ -5,10 +5,28 @@ A static web app for Australian primary students who speak English and are learn
 ## Run
 
 ```bash
-python3 -m http.server 4173
+python3 server.py
 ```
 
 Open `http://localhost:4173`.
+
+`server.py` serves the static app and exposes the profile API used by the login
+and registration screens. It creates `data/user-data.sqlite` on first run.
+
+## AI teacher
+
+The AI teacher generates one short article from the learner's known characters
+and words. The browser calls `POST /api/ai-teacher/story`; only `server.py`
+calls the OpenAI API, so the API key is never sent to the frontend.
+
+Create a local `.env.local` or export the variables before running the server:
+
+```bash
+OPENAI_API_KEY=your-server-side-openai-key
+OPENAI_MODEL=gpt-5.4-mini
+```
+
+`OPENAI_MODEL` is optional and defaults to `gpt-5.4-mini`.
 
 ## Data
 
@@ -43,3 +61,12 @@ stored separately in browser `localStorage` under
 `chinese-quest-custom-entries-v1`, then appended to the course at runtime. Do not
 overwrite this key during app updates. The original 300 generated characters are
 locked in the UI, and saved custom characters have no delete action.
+
+## User profiles
+
+Learner accounts are stored in `data/user-data.sqlite`, separate from the
+generated course database. The backend stores profile metadata, a salted PBKDF2
+hash of the 4-digit password, the per-profile progress state, and growth-log
+events. Do not delete or replace `data/user-data.sqlite` during app updates.
+Schema changes should be additive migrations in `server.py`, not destructive
+rebuilds.
